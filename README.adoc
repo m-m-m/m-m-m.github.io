@@ -5,6 +5,4 @@ image:https://raw.github.com/m-m-m/mmm/master/src/site/resources/images/logo.png
 Welcome to the wonderful world of http://m-m-m.github.io[mmm]
 
 == m-m-m.github.io
-This is the repository for the github pages:
-
-* https://m-m-m.github.io/maven/apidocs/[JavaDoc]
+This is the repository for the github page.
