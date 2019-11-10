@@ -1,8 +1,8 @@
-= Mature Modular Meta-framework (mmm)
+= mmm
 
 image:https://raw.github.com/m-m-m/mmm/master/src/site/resources/images/logo.png[logo]
 
-Welcome to the wonderful world of http://m-m-m.sourceforge.net/index.html[mmm]
+Welcome to the wonderful world of http://m-m-m.github.io[mmm]
 
 == m-m-m.github.io
 This is the repository for the github pages:
