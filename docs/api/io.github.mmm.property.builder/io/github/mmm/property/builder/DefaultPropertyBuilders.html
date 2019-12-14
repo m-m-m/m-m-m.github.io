@@ -1,0 +1,898 @@
+<!DOCTYPE HTML>
+<!-- NewPage -->
+<html lang="en">
+<head>
+<title>DefaultPropertyBuilders (JavaDocs for mmm-all 1.0.0-SNAPSHOT)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="../../../../../../stylesheet.css" title="Style">
+<link rel="stylesheet" type="text/css" href="../../../../../../jquery/jquery-ui.css" title="Style">
+<script type="text/javascript" src="../../../../../../script.js"></script>
+<script type="text/javascript" src="../../../../../../jquery/jszip/dist/jszip.min.js"></script>
+<script type="text/javascript" src="../../../../../../jquery/jszip-utils/dist/jszip-utils.min.js"></script>
+<!--[if IE]>
+<script type="text/javascript" src="../../../../../../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="../../../../../../jquery/jquery-3.3.1.js"></script>
+<script type="text/javascript" src="../../../../../../jquery/jquery-migrate-3.0.1.js"></script>
+<script type="text/javascript" src="../../../../../../jquery/jquery-ui.js"></script>
+</head>
+<body>
+<script type="text/javascript"><!--
+    try {
+        if (location.href.indexOf('is-external=true') == -1) {
+            parent.document.title="DefaultPropertyBuilders (JavaDocs for mmm-all 1.0.0-SNAPSHOT)";
+        }
+    }
+    catch(err) {
+    }
+//-->
+var data = {"i0":18,"i1":18,"i2":18,"i3":18,"i4":18,"i5":18,"i6":18,"i7":18,"i8":18,"i9":18,"i10":18,"i11":18,"i12":18,"i13":18,"i14":18,"i15":18,"i16":18,"i17":18,"i18":18,"i19":18,"i20":18,"i21":18,"i22":18,"i23":18,"i24":18,"i25":18,"i26":18,"i27":18,"i28":18,"i29":18,"i30":18,"i31":18,"i32":18,"i33":18};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],16:["t5","Default Methods"]};
+var altColor = "altColor";
+var rowColor = "rowColor";
+var tableTab = "tableTab";
+var activeTableTab = "activeTableTab";
+var pathtoroot = "../../../../../../";
+var useModuleDirectories = true;
+loadScripts(document, 'script');</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<header role="banner">
+<nav role="navigation">
+<div class="fixedNav">
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a id="navbar.top">
+<!--   -->
+</a>
+<div class="skipNav"><a href="#skip.navbar.top" title="Skip navigation links">Skip navigation links</a></div>
+<a id="navbar.top.firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../index.html">Overview</a></li>
+<li><a href="../../../../../module-summary.html">Module</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/DefaultPropertyBuilders.html">Use</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../../allclasses.html">All&nbsp;Classes</a></li>
+</ul>
+<ul class="navListSearch">
+<li><label for="search">SEARCH:</label>
+<input type="text" id="search" value="search" disabled="disabled">
+<input type="reset" id="reset" value="reset" disabled="disabled">
+</li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method.summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method.detail">Method</a></li>
+</ul>
+</div>
+<a id="skip.navbar.top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+</div>
+<div class="navPadding">&nbsp;</div>
+<script type="text/javascript"><!--
+$('.navPadding').css('padding-top', $('.fixedNav').css("height"));
+//-->
+</script>
+</nav>
+</header>
+<!-- ======== START OF CLASS DATA ======== -->
+<main role="main">
+<div class="header">
+<div class="subTitle"><span class="moduleLabelInType">Module</span>&nbsp;<a href="../../../../../module-summary.html">io.github.mmm.property.builder</a></div>
+<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">io.github.mmm.property.builder</a></div>
+<h2 title="Interface DefaultPropertyBuilders" class="title">Interface DefaultPropertyBuilders</h2>
+</div>
+<div class="contentContainer">
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Known Implementing Classes:</dt>
+<dd><code><a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/AbstractBean.PropertyBuilders.html" title="class in io.github.mmm.bean">AbstractBean.PropertyBuilders</a></code></dd>
+</dl>
+<hr>
+<pre>public interface <span class="typeNameLabel">DefaultPropertyBuilders</span></pre>
+<div class="block">Interface for a factory of <a href="PropertyBuilder.html" title="class in io.github.mmm.property.builder"><code>PropertyBuilder</code></a>s and <a href="../../../../../../io.github.mmm.property/io/github/mmm/property/Property.html" title="class in io.github.mmm.property"><code>properties</code></a>. May optionally implement one of
+ the following features:
+ <ul>
+ <li><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function" class="externalLink"><code>Consumer</code></a>&lt;[Writable]Property&lt;?&gt;&gt; to receive any property that has been created.</li>
+ <li><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink"><code>Function</code></a>&lt;String, [Writable]Property&lt;?&gt;&gt; to provide tweaked or already existing
+ properties.</li>
+ </ul></div>
+<dl>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>1.0.0</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- ========== METHOD SUMMARY =========== -->
+<section role="region">
+<ul class="blockList">
+<li class="blockList"><a id="method.summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="memberSummary">
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t5" class="tableTab"><span><a href="javascript:show(16);">Default Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tr id="i0" class="altColor">
+<td class="colFirst"><code>default <a href="number/BigDecimalPropertyBuilder.html" title="class in io.github.mmm.property.builder.number">BigDecimalPropertyBuilder</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#newBigDecimal()">newBigDecimal</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>default <a href="../../../../../../io.github.mmm.property/io/github/mmm/property/number/bigdecimal/BigDecimalProperty.html" title="class in io.github.mmm.property.number.bigdecimal">BigDecimalProperty</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#newBigDecimal(java.lang.String)">newBigDecimal</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>default <a href="number/BigIntegerPropertyBuilder.html" title="class in io.github.mmm.property.builder.number">BigIntegerPropertyBuilder</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#newBigInteger()">newBigInteger</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>default <a href="../../../../../../io.github.mmm.property/io/github/mmm/property/number/biginteger/BigIntegerProperty.html" title="class in io.github.mmm.property.number.biginteger">BigIntegerProperty</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#newBigInteger(java.lang.String)">newBigInteger</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>default <a href="lang/BooleanPropertyBuilder.html" title="class in io.github.mmm.property.builder.lang">BooleanPropertyBuilder</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#newBoolean()">newBoolean</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>default <a href="../../../../../../io.github.mmm.property/io/github/mmm/property/booleans/BooleanProperty.html" title="class in io.github.mmm.property.booleans">BooleanProperty</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#newBoolean(java.lang.String)">newBoolean</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>default <a href="number/BytePropertyBuilder.html" title="class in io.github.mmm.property.builder.number">BytePropertyBuilder</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#newByte()">newByte</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>default <a href="../../../../../../io.github.mmm.property/io/github/mmm/property/number/bytes/ByteProperty.html" title="class in io.github.mmm.property.number.bytes">ByteProperty</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#newByte(java.lang.String)">newByte</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>default <a href="number/DoublePropertyBuilder.html" title="class in io.github.mmm.property.builder.number">DoublePropertyBuilder</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#newDouble()">newDouble</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>default <a href="../../../../../../io.github.mmm.property/io/github/mmm/property/number/doubles/DoubleProperty.html" title="class in io.github.mmm.property.number.doubles">DoubleProperty</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#newDouble(java.lang.String)">newDouble</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code>default <a href="number/FloatPropertyBuilder.html" title="class in io.github.mmm.property.builder.number">FloatPropertyBuilder</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#newFloat()">newFloat</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code>default <a href="../../../../../../io.github.mmm.property/io/github/mmm/property/number/floats/FloatProperty.html" title="class in io.github.mmm.property.number.floats">FloatProperty</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#newFloat(java.lang.String)">newFloat</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i12" class="altColor">
+<td class="colFirst"><code>default <a href="temporal/InstantPropertyBuilder.html" title="class in io.github.mmm.property.builder.temporal">InstantPropertyBuilder</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#newInstant()">newInstant</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i13" class="rowColor">
+<td class="colFirst"><code>default <a href="../../../../../../io.github.mmm.property/io/github/mmm/property/temporal/instant/InstantProperty.html" title="class in io.github.mmm.property.temporal.instant">InstantProperty</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#newInstant(java.lang.String)">newInstant</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i14" class="altColor">
+<td class="colFirst"><code>default <a href="number/IntegerPropertyBuilder.html" title="class in io.github.mmm.property.builder.number">IntegerPropertyBuilder</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#newInteger()">newInteger</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i15" class="rowColor">
+<td class="colFirst"><code>default <a href="../../../../../../io.github.mmm.property/io/github/mmm/property/number/integers/IntegerProperty.html" title="class in io.github.mmm.property.number.integers">IntegerProperty</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#newInteger(java.lang.String)">newInteger</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i16" class="altColor">
+<td class="colFirst"><code>default <a href="temporal/LocalDatePropertyBuilder.html" title="class in io.github.mmm.property.builder.temporal">LocalDatePropertyBuilder</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#newLocalDate()">newLocalDate</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i17" class="rowColor">
+<td class="colFirst"><code>default <a href="../../../../../../io.github.mmm.property/io/github/mmm/property/temporal/localdate/LocalDateProperty.html" title="class in io.github.mmm.property.temporal.localdate">LocalDateProperty</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#newLocalDate(java.lang.String)">newLocalDate</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i18" class="altColor">
+<td class="colFirst"><code>default <a href="temporal/LocalDateTimePropertyBuilder.html" title="class in io.github.mmm.property.builder.temporal">LocalDateTimePropertyBuilder</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#newLocalDateTime()">newLocalDateTime</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i19" class="rowColor">
+<td class="colFirst"><code>default <a href="../../../../../../io.github.mmm.property/io/github/mmm/property/temporal/localdatetime/LocalDateTimeProperty.html" title="class in io.github.mmm.property.temporal.localdatetime">LocalDateTimeProperty</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#newLocalDateTime(java.lang.String)">newLocalDateTime</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i20" class="altColor">
+<td class="colFirst"><code>default <a href="temporal/LocalTimePropertyBuilder.html" title="class in io.github.mmm.property.builder.temporal">LocalTimePropertyBuilder</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#newLocalTime()">newLocalTime</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i21" class="rowColor">
+<td class="colFirst"><code>default <a href="../../../../../../io.github.mmm.property/io/github/mmm/property/temporal/localtime/LocalTimeProperty.html" title="class in io.github.mmm.property.temporal.localtime">LocalTimeProperty</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#newLocalTime(java.lang.String)">newLocalTime</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i22" class="altColor">
+<td class="colFirst"><code>default <a href="number/LongPropertyBuilder.html" title="class in io.github.mmm.property.builder.number">LongPropertyBuilder</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#newLong()">newLong</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i23" class="rowColor">
+<td class="colFirst"><code>default <a href="../../../../../../io.github.mmm.property/io/github/mmm/property/number/longs/LongProperty.html" title="class in io.github.mmm.property.number.longs">LongProperty</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#newLong(java.lang.String)">newLong</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i24" class="altColor">
+<td class="colFirst"><code>default <a href="temporal/OffsetDateTimePropertyBuilder.html" title="class in io.github.mmm.property.builder.temporal">OffsetDateTimePropertyBuilder</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#newOffsetDateTime()">newOffsetDateTime</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i25" class="rowColor">
+<td class="colFirst"><code>default <a href="../../../../../../io.github.mmm.property/io/github/mmm/property/temporal/offsetdatetime/OffsetDateTimeProperty.html" title="class in io.github.mmm.property.temporal.offsetdatetime">OffsetDateTimeProperty</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#newOffsetDateTime(java.lang.String)">newOffsetDateTime</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i26" class="altColor">
+<td class="colFirst"><code>default <a href="temporal/OffsetTimePropertyBuilder.html" title="class in io.github.mmm.property.builder.temporal">OffsetTimePropertyBuilder</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#newOffsetTime()">newOffsetTime</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i27" class="rowColor">
+<td class="colFirst"><code>default <a href="../../../../../../io.github.mmm.property/io/github/mmm/property/temporal/offsettime/OffsetTimeProperty.html" title="class in io.github.mmm.property.temporal.offsettime">OffsetTimeProperty</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#newOffsetTime(java.lang.String)">newOffsetTime</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i28" class="altColor">
+<td class="colFirst"><code>default <a href="number/ShortPropertyBuilder.html" title="class in io.github.mmm.property.builder.number">ShortPropertyBuilder</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#newShort()">newShort</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i29" class="rowColor">
+<td class="colFirst"><code>default <a href="../../../../../../io.github.mmm.property/io/github/mmm/property/number/shorts/ShortProperty.html" title="class in io.github.mmm.property.number.shorts">ShortProperty</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#newShort(java.lang.String)">newShort</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i30" class="altColor">
+<td class="colFirst"><code>default <a href="lang/StringPropertyBuilder.html" title="class in io.github.mmm.property.builder.lang">StringPropertyBuilder</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#newString()">newString</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i31" class="rowColor">
+<td class="colFirst"><code>default <a href="../../../../../../io.github.mmm.property/io/github/mmm/property/string/StringProperty.html" title="class in io.github.mmm.property.string">StringProperty</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#newString(java.lang.String)">newString</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i32" class="altColor">
+<td class="colFirst"><code>default <a href="temporal/ZonedDateTimePropertyBuilder.html" title="class in io.github.mmm.property.builder.temporal">ZonedDateTimePropertyBuilder</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#newZonedDateTime()">newZonedDateTime</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i33" class="rowColor">
+<td class="colFirst"><code>default <a href="../../../../../../io.github.mmm.property/io/github/mmm/property/temporal/zoneddatetime/ZonedDateTimeProperty.html" title="class in io.github.mmm.property.temporal.zoneddatetime">ZonedDateTimeProperty</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#newZonedDateTime(java.lang.String)">newZonedDateTime</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+</section>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ METHOD DETAIL ========== -->
+<section role="region">
+<ul class="blockList">
+<li class="blockList"><a id="method.detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a id="newString(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>newString</h4>
+<pre class="methodSignature">default&nbsp;<a href="../../../../../../io.github.mmm.property/io/github/mmm/property/string/StringProperty.html" title="class in io.github.mmm.property.string">StringProperty</a>&nbsp;newString&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>name</code> - the <a href="../../../../../../io.github.mmm.property/io/github/mmm/property/Property.html#getName()"><code>property name</code></a>.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new <a href="../../../../../../io.github.mmm.property/io/github/mmm/property/string/StringProperty.html" title="class in io.github.mmm.property.string"><code>StringProperty</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="newString()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>newString</h4>
+<pre class="methodSignature">default&nbsp;<a href="lang/StringPropertyBuilder.html" title="class in io.github.mmm.property.builder.lang">StringPropertyBuilder</a>&nbsp;newString()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new <a href="lang/StringPropertyBuilder.html" title="class in io.github.mmm.property.builder.lang"><code>StringPropertyBuilder</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="newBoolean(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>newBoolean</h4>
+<pre class="methodSignature">default&nbsp;<a href="../../../../../../io.github.mmm.property/io/github/mmm/property/booleans/BooleanProperty.html" title="class in io.github.mmm.property.booleans">BooleanProperty</a>&nbsp;newBoolean&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>name</code> - the <a href="../../../../../../io.github.mmm.property/io/github/mmm/property/Property.html#getName()"><code>property name</code></a>.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new <a href="../../../../../../io.github.mmm.property/io/github/mmm/property/booleans/BooleanProperty.html" title="class in io.github.mmm.property.booleans"><code>BooleanProperty</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="newBoolean()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>newBoolean</h4>
+<pre class="methodSignature">default&nbsp;<a href="lang/BooleanPropertyBuilder.html" title="class in io.github.mmm.property.builder.lang">BooleanPropertyBuilder</a>&nbsp;newBoolean()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new <a href="lang/BooleanPropertyBuilder.html" title="class in io.github.mmm.property.builder.lang"><code>BooleanPropertyBuilder</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="newLong(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>newLong</h4>
+<pre class="methodSignature">default&nbsp;<a href="../../../../../../io.github.mmm.property/io/github/mmm/property/number/longs/LongProperty.html" title="class in io.github.mmm.property.number.longs">LongProperty</a>&nbsp;newLong&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>name</code> - the <a href="../../../../../../io.github.mmm.property/io/github/mmm/property/Property.html#getName()"><code>property name</code></a>.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new <a href="../../../../../../io.github.mmm.property/io/github/mmm/property/number/longs/LongProperty.html" title="class in io.github.mmm.property.number.longs"><code>LongProperty</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="newBigDecimal(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>newBigDecimal</h4>
+<pre class="methodSignature">default&nbsp;<a href="../../../../../../io.github.mmm.property/io/github/mmm/property/number/bigdecimal/BigDecimalProperty.html" title="class in io.github.mmm.property.number.bigdecimal">BigDecimalProperty</a>&nbsp;newBigDecimal&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>name</code> - the <a href="../../../../../../io.github.mmm.property/io/github/mmm/property/Property.html#getName()"><code>property name</code></a>.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new <a href="../../../../../../io.github.mmm.property/io/github/mmm/property/number/bigdecimal/BigDecimalProperty.html" title="class in io.github.mmm.property.number.bigdecimal"><code>BigDecimalProperty</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="newBigDecimal()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>newBigDecimal</h4>
+<pre class="methodSignature">default&nbsp;<a href="number/BigDecimalPropertyBuilder.html" title="class in io.github.mmm.property.builder.number">BigDecimalPropertyBuilder</a>&nbsp;newBigDecimal()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new <a href="number/BigDecimalPropertyBuilder.html" title="class in io.github.mmm.property.builder.number"><code>BigDecimalPropertyBuilder</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="newBigInteger(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>newBigInteger</h4>
+<pre class="methodSignature">default&nbsp;<a href="../../../../../../io.github.mmm.property/io/github/mmm/property/number/biginteger/BigIntegerProperty.html" title="class in io.github.mmm.property.number.biginteger">BigIntegerProperty</a>&nbsp;newBigInteger&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>name</code> - the <a href="../../../../../../io.github.mmm.property/io/github/mmm/property/Property.html#getName()"><code>property name</code></a>.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new <a href="../../../../../../io.github.mmm.property/io/github/mmm/property/number/biginteger/BigIntegerProperty.html" title="class in io.github.mmm.property.number.biginteger"><code>BigIntegerProperty</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="newBigInteger()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>newBigInteger</h4>
+<pre class="methodSignature">default&nbsp;<a href="number/BigIntegerPropertyBuilder.html" title="class in io.github.mmm.property.builder.number">BigIntegerPropertyBuilder</a>&nbsp;newBigInteger()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new <a href="number/BigIntegerPropertyBuilder.html" title="class in io.github.mmm.property.builder.number"><code>BigIntegerPropertyBuilder</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="newLong()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>newLong</h4>
+<pre class="methodSignature">default&nbsp;<a href="number/LongPropertyBuilder.html" title="class in io.github.mmm.property.builder.number">LongPropertyBuilder</a>&nbsp;newLong()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new <a href="number/LongPropertyBuilder.html" title="class in io.github.mmm.property.builder.number"><code>LongPropertyBuilder</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="newInteger(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>newInteger</h4>
+<pre class="methodSignature">default&nbsp;<a href="../../../../../../io.github.mmm.property/io/github/mmm/property/number/integers/IntegerProperty.html" title="class in io.github.mmm.property.number.integers">IntegerProperty</a>&nbsp;newInteger&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>name</code> - the <a href="../../../../../../io.github.mmm.property/io/github/mmm/property/Property.html#getName()"><code>property name</code></a>.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new <a href="../../../../../../io.github.mmm.property/io/github/mmm/property/number/integers/IntegerProperty.html" title="class in io.github.mmm.property.number.integers"><code>IntegerProperty</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="newInteger()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>newInteger</h4>
+<pre class="methodSignature">default&nbsp;<a href="number/IntegerPropertyBuilder.html" title="class in io.github.mmm.property.builder.number">IntegerPropertyBuilder</a>&nbsp;newInteger()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new <a href="number/IntegerPropertyBuilder.html" title="class in io.github.mmm.property.builder.number"><code>IntegerPropertyBuilder</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="newDouble(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>newDouble</h4>
+<pre class="methodSignature">default&nbsp;<a href="../../../../../../io.github.mmm.property/io/github/mmm/property/number/doubles/DoubleProperty.html" title="class in io.github.mmm.property.number.doubles">DoubleProperty</a>&nbsp;newDouble&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>name</code> - the <a href="../../../../../../io.github.mmm.property/io/github/mmm/property/Property.html#getName()"><code>property name</code></a>.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new <a href="../../../../../../io.github.mmm.property/io/github/mmm/property/number/doubles/DoubleProperty.html" title="class in io.github.mmm.property.number.doubles"><code>DoubleProperty</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="newDouble()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>newDouble</h4>
+<pre class="methodSignature">default&nbsp;<a href="number/DoublePropertyBuilder.html" title="class in io.github.mmm.property.builder.number">DoublePropertyBuilder</a>&nbsp;newDouble()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new <a href="number/DoublePropertyBuilder.html" title="class in io.github.mmm.property.builder.number"><code>DoublePropertyBuilder</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="newFloat(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>newFloat</h4>
+<pre class="methodSignature">default&nbsp;<a href="../../../../../../io.github.mmm.property/io/github/mmm/property/number/floats/FloatProperty.html" title="class in io.github.mmm.property.number.floats">FloatProperty</a>&nbsp;newFloat&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>name</code> - the <a href="../../../../../../io.github.mmm.property/io/github/mmm/property/Property.html#getName()"><code>property name</code></a>.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new <a href="../../../../../../io.github.mmm.property/io/github/mmm/property/number/floats/FloatProperty.html" title="class in io.github.mmm.property.number.floats"><code>FloatProperty</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="newFloat()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>newFloat</h4>
+<pre class="methodSignature">default&nbsp;<a href="number/FloatPropertyBuilder.html" title="class in io.github.mmm.property.builder.number">FloatPropertyBuilder</a>&nbsp;newFloat()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new <a href="number/FloatPropertyBuilder.html" title="class in io.github.mmm.property.builder.number"><code>FloatPropertyBuilder</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="newShort(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>newShort</h4>
+<pre class="methodSignature">default&nbsp;<a href="../../../../../../io.github.mmm.property/io/github/mmm/property/number/shorts/ShortProperty.html" title="class in io.github.mmm.property.number.shorts">ShortProperty</a>&nbsp;newShort&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>name</code> - the <a href="../../../../../../io.github.mmm.property/io/github/mmm/property/Property.html#getName()"><code>property name</code></a>.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new <a href="../../../../../../io.github.mmm.property/io/github/mmm/property/number/shorts/ShortProperty.html" title="class in io.github.mmm.property.number.shorts"><code>ShortProperty</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="newShort()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>newShort</h4>
+<pre class="methodSignature">default&nbsp;<a href="number/ShortPropertyBuilder.html" title="class in io.github.mmm.property.builder.number">ShortPropertyBuilder</a>&nbsp;newShort()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new <a href="number/ShortPropertyBuilder.html" title="class in io.github.mmm.property.builder.number"><code>ShortPropertyBuilder</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="newByte(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>newByte</h4>
+<pre class="methodSignature">default&nbsp;<a href="../../../../../../io.github.mmm.property/io/github/mmm/property/number/bytes/ByteProperty.html" title="class in io.github.mmm.property.number.bytes">ByteProperty</a>&nbsp;newByte&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>name</code> - the <a href="../../../../../../io.github.mmm.property/io/github/mmm/property/Property.html#getName()"><code>property name</code></a>.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new <a href="../../../../../../io.github.mmm.property/io/github/mmm/property/number/bytes/ByteProperty.html" title="class in io.github.mmm.property.number.bytes"><code>ByteProperty</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="newByte()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>newByte</h4>
+<pre class="methodSignature">default&nbsp;<a href="number/BytePropertyBuilder.html" title="class in io.github.mmm.property.builder.number">BytePropertyBuilder</a>&nbsp;newByte()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new <a href="number/BytePropertyBuilder.html" title="class in io.github.mmm.property.builder.number"><code>BytePropertyBuilder</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="newInstant(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>newInstant</h4>
+<pre class="methodSignature">default&nbsp;<a href="../../../../../../io.github.mmm.property/io/github/mmm/property/temporal/instant/InstantProperty.html" title="class in io.github.mmm.property.temporal.instant">InstantProperty</a>&nbsp;newInstant&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>name</code> - the <a href="../../../../../../io.github.mmm.property/io/github/mmm/property/Property.html#getName()"><code>property name</code></a>.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new <a href="../../../../../../io.github.mmm.property/io/github/mmm/property/temporal/instant/InstantProperty.html" title="class in io.github.mmm.property.temporal.instant"><code>InstantProperty</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="newInstant()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>newInstant</h4>
+<pre class="methodSignature">default&nbsp;<a href="temporal/InstantPropertyBuilder.html" title="class in io.github.mmm.property.builder.temporal">InstantPropertyBuilder</a>&nbsp;newInstant()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new <a href="temporal/InstantPropertyBuilder.html" title="class in io.github.mmm.property.builder.temporal"><code>InstantPropertyBuilder</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="newLocalDateTime(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>newLocalDateTime</h4>
+<pre class="methodSignature">default&nbsp;<a href="../../../../../../io.github.mmm.property/io/github/mmm/property/temporal/localdatetime/LocalDateTimeProperty.html" title="class in io.github.mmm.property.temporal.localdatetime">LocalDateTimeProperty</a>&nbsp;newLocalDateTime&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>name</code> - the <a href="../../../../../../io.github.mmm.property/io/github/mmm/property/Property.html#getName()"><code>property name</code></a>.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new <a href="../../../../../../io.github.mmm.property/io/github/mmm/property/temporal/localdatetime/LocalDateTimeProperty.html" title="class in io.github.mmm.property.temporal.localdatetime"><code>LocalDateTimeProperty</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="newLocalDateTime()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>newLocalDateTime</h4>
+<pre class="methodSignature">default&nbsp;<a href="temporal/LocalDateTimePropertyBuilder.html" title="class in io.github.mmm.property.builder.temporal">LocalDateTimePropertyBuilder</a>&nbsp;newLocalDateTime()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new <a href="temporal/LocalDateTimePropertyBuilder.html" title="class in io.github.mmm.property.builder.temporal"><code>LocalDateTimePropertyBuilder</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="newLocalDate(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>newLocalDate</h4>
+<pre class="methodSignature">default&nbsp;<a href="../../../../../../io.github.mmm.property/io/github/mmm/property/temporal/localdate/LocalDateProperty.html" title="class in io.github.mmm.property.temporal.localdate">LocalDateProperty</a>&nbsp;newLocalDate&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>name</code> - the <a href="../../../../../../io.github.mmm.property/io/github/mmm/property/Property.html#getName()"><code>property name</code></a>.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new <a href="../../../../../../io.github.mmm.property/io/github/mmm/property/temporal/localdate/LocalDateProperty.html" title="class in io.github.mmm.property.temporal.localdate"><code>LocalDateProperty</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="newLocalDate()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>newLocalDate</h4>
+<pre class="methodSignature">default&nbsp;<a href="temporal/LocalDatePropertyBuilder.html" title="class in io.github.mmm.property.builder.temporal">LocalDatePropertyBuilder</a>&nbsp;newLocalDate()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new <a href="temporal/LocalDatePropertyBuilder.html" title="class in io.github.mmm.property.builder.temporal"><code>LocalDatePropertyBuilder</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="newLocalTime(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>newLocalTime</h4>
+<pre class="methodSignature">default&nbsp;<a href="../../../../../../io.github.mmm.property/io/github/mmm/property/temporal/localtime/LocalTimeProperty.html" title="class in io.github.mmm.property.temporal.localtime">LocalTimeProperty</a>&nbsp;newLocalTime&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>name</code> - the <a href="../../../../../../io.github.mmm.property/io/github/mmm/property/Property.html#getName()"><code>property name</code></a>.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new <a href="../../../../../../io.github.mmm.property/io/github/mmm/property/temporal/localtime/LocalTimeProperty.html" title="class in io.github.mmm.property.temporal.localtime"><code>LocalTimeProperty</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="newLocalTime()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>newLocalTime</h4>
+<pre class="methodSignature">default&nbsp;<a href="temporal/LocalTimePropertyBuilder.html" title="class in io.github.mmm.property.builder.temporal">LocalTimePropertyBuilder</a>&nbsp;newLocalTime()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new <a href="temporal/LocalTimePropertyBuilder.html" title="class in io.github.mmm.property.builder.temporal"><code>LocalTimePropertyBuilder</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="newOffsetDateTime(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>newOffsetDateTime</h4>
+<pre class="methodSignature">default&nbsp;<a href="../../../../../../io.github.mmm.property/io/github/mmm/property/temporal/offsetdatetime/OffsetDateTimeProperty.html" title="class in io.github.mmm.property.temporal.offsetdatetime">OffsetDateTimeProperty</a>&nbsp;newOffsetDateTime&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>name</code> - the <a href="../../../../../../io.github.mmm.property/io/github/mmm/property/Property.html#getName()"><code>property name</code></a>.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new <a href="../../../../../../io.github.mmm.property/io/github/mmm/property/temporal/offsetdatetime/OffsetDateTimeProperty.html" title="class in io.github.mmm.property.temporal.offsetdatetime"><code>OffsetDateTimeProperty</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="newOffsetDateTime()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>newOffsetDateTime</h4>
+<pre class="methodSignature">default&nbsp;<a href="temporal/OffsetDateTimePropertyBuilder.html" title="class in io.github.mmm.property.builder.temporal">OffsetDateTimePropertyBuilder</a>&nbsp;newOffsetDateTime()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new <a href="temporal/OffsetDateTimePropertyBuilder.html" title="class in io.github.mmm.property.builder.temporal"><code>OffsetDateTimePropertyBuilder</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="newOffsetTime(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>newOffsetTime</h4>
+<pre class="methodSignature">default&nbsp;<a href="../../../../../../io.github.mmm.property/io/github/mmm/property/temporal/offsettime/OffsetTimeProperty.html" title="class in io.github.mmm.property.temporal.offsettime">OffsetTimeProperty</a>&nbsp;newOffsetTime&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>name</code> - the <a href="../../../../../../io.github.mmm.property/io/github/mmm/property/Property.html#getName()"><code>property name</code></a>.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new <a href="../../../../../../io.github.mmm.property/io/github/mmm/property/temporal/offsettime/OffsetTimeProperty.html" title="class in io.github.mmm.property.temporal.offsettime"><code>OffsetTimeProperty</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="newOffsetTime()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>newOffsetTime</h4>
+<pre class="methodSignature">default&nbsp;<a href="temporal/OffsetTimePropertyBuilder.html" title="class in io.github.mmm.property.builder.temporal">OffsetTimePropertyBuilder</a>&nbsp;newOffsetTime()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new <a href="temporal/OffsetTimePropertyBuilder.html" title="class in io.github.mmm.property.builder.temporal"><code>OffsetTimePropertyBuilder</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="newZonedDateTime(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>newZonedDateTime</h4>
+<pre class="methodSignature">default&nbsp;<a href="../../../../../../io.github.mmm.property/io/github/mmm/property/temporal/zoneddatetime/ZonedDateTimeProperty.html" title="class in io.github.mmm.property.temporal.zoneddatetime">ZonedDateTimeProperty</a>&nbsp;newZonedDateTime&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>name</code> - the <a href="../../../../../../io.github.mmm.property/io/github/mmm/property/Property.html#getName()"><code>property name</code></a>.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new <a href="../../../../../../io.github.mmm.property/io/github/mmm/property/temporal/zoneddatetime/ZonedDateTimeProperty.html" title="class in io.github.mmm.property.temporal.zoneddatetime"><code>ZonedDateTimeProperty</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="newZonedDateTime()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>newZonedDateTime</h4>
+<pre class="methodSignature">default&nbsp;<a href="temporal/ZonedDateTimePropertyBuilder.html" title="class in io.github.mmm.property.builder.temporal">ZonedDateTimePropertyBuilder</a>&nbsp;newZonedDateTime()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new <a href="temporal/ZonedDateTimePropertyBuilder.html" title="class in io.github.mmm.property.builder.temporal"><code>ZonedDateTimePropertyBuilder</code></a>.</dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+</li>
+</ul>
+</div>
+</div>
+</main>
+<!-- ========= END OF CLASS DATA ========= -->
+<footer role="contentinfo">
+<nav role="navigation">
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a id="navbar.bottom">
+<!--   -->
+</a>
+<div class="skipNav"><a href="#skip.navbar.bottom" title="Skip navigation links">Skip navigation links</a></div>
+<a id="navbar.bottom.firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../index.html">Overview</a></li>
+<li><a href="../../../../../module-summary.html">Module</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/DefaultPropertyBuilders.html">Use</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../../allclasses.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method.summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method.detail">Method</a></li>
+</ul>
+</div>
+<a id="skip.navbar.bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+</nav>
+<p class="legalCopy"><small>Copyright &#169; 2001&#x2013;2019 <a href="https://m-m-m.github.io">mmm-team</a>. All rights reserved.</small></p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE HTML>
+<!-- NewPage -->
+<html lang="en">
+<head>
+<title>CryptoAlgorithm (JavaDocs for mmm-all 1.0.0-SNAPSHOT)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="../../../../../../stylesheet.css" title="Style">
+<link rel="stylesheet" type="text/css" href="../../../../../../jquery/jquery-ui.css" title="Style">
+<script type="text/javascript" src="../../../../../../script.js"></script>
+<script type="text/javascript" src="../../../../../../jquery/jszip/dist/jszip.min.js"></script>
+<script type="text/javascript" src="../../../../../../jquery/jszip-utils/dist/jszip-utils.min.js"></script>
+<!--[if IE]>
+<script type="text/javascript" src="../../../../../../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="../../../../../../jquery/jquery-3.3.1.js"></script>
+<script type="text/javascript" src="../../../../../../jquery/jquery-migrate-3.0.1.js"></script>
+<script type="text/javascript" src="../../../../../../jquery/jquery-ui.js"></script>
+</head>
+<body>
+<script type="text/javascript"><!--
+    try {
+        if (location.href.indexOf('is-external=true') == -1) {
+            parent.document.title="CryptoAlgorithm (JavaDocs for mmm-all 1.0.0-SNAPSHOT)";
+        }
+    }
+    catch(err) {
+    }
+//-->
+var data = {"i0":6};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
+var altColor = "altColor";
+var rowColor = "rowColor";
+var tableTab = "tableTab";
+var activeTableTab = "activeTableTab";
+var pathtoroot = "../../../../../../";
+var useModuleDirectories = true;
+loadScripts(document, 'script');</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<header role="banner">
+<nav role="navigation">
+<div class="fixedNav">
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a id="navbar.top">
+<!--   -->
+</a>
+<div class="skipNav"><a href="#skip.navbar.top" title="Skip navigation links">Skip navigation links</a></div>
+<a id="navbar.top.firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../index.html">Overview</a></li>
+<li><a href="../../../../../module-summary.html">Module</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/CryptoAlgorithm.html">Use</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../../allclasses.html">All&nbsp;Classes</a></li>
+</ul>
+<ul class="navListSearch">
+<li><label for="search">SEARCH:</label>
+<input type="text" id="search" value="search" disabled="disabled">
+<input type="reset" id="reset" value="reset" disabled="disabled">
+</li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method.summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method.detail">Method</a></li>
+</ul>
+</div>
+<a id="skip.navbar.top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+</div>
+<div class="navPadding">&nbsp;</div>
+<script type="text/javascript"><!--
+$('.navPadding').css('padding-top', $('.fixedNav').css("height"));
+//-->
+</script>
+</nav>
+</header>
+<!-- ======== START OF CLASS DATA ======== -->
+<main role="main">
+<div class="header">
+<div class="subTitle"><span class="moduleLabelInType">Module</span>&nbsp;<a href="../../../../../module-summary.html">io.github.mmm.crypto</a></div>
+<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">io.github.mmm.crypto.algorithm</a></div>
+<h2 title="Interface CryptoAlgorithm" class="title">Interface CryptoAlgorithm</h2>
+</div>
+<div class="contentContainer">
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Known Subinterfaces:</dt>
+<dd><code><a href="../crypt/AbstractDecryptor.html" title="interface in io.github.mmm.crypto.crypt">AbstractDecryptor</a></code>, <code><a href="../crypt/AbstractEncryptor.html" title="interface in io.github.mmm.crypto.crypt">AbstractEncryptor</a></code>, <code><a href="../asymmetric/key/AsymmetricKeyCreator.html" title="interface in io.github.mmm.crypto.asymmetric.key">AsymmetricKeyCreator</a>&lt;PR,&#8203;PU,&#8203;PAIR&gt;</code>, <code><a href="../CryptoChunker.html" title="interface in io.github.mmm.crypto">CryptoChunker</a></code>, <code><a href="../CryptoProcessor.html" title="interface in io.github.mmm.crypto">CryptoProcessor</a></code>, <code><a href="../crypt/Cryptor.html" title="interface in io.github.mmm.crypto.crypt">Cryptor</a></code>, <code><a href="../crypt/Decryptor.html" title="interface in io.github.mmm.crypto.crypt">Decryptor</a></code>, <code><a href="../crypt/Encryptor.html" title="interface in io.github.mmm.crypto.crypt">Encryptor</a></code>, <code><a href="../hash/HashCreator.html" title="interface in io.github.mmm.crypto.hash">HashCreator</a></code>, <code><a href="../key/KeyCreator.html" title="interface in io.github.mmm.crypto.key">KeyCreator</a></code>, <code><a href="../random/RandomCreator.html" title="interface in io.github.mmm.crypto.random">RandomCreator</a></code>, <code><a href="../asymmetric/sign/SignatureProcessor.html" title="interface in io.github.mmm.crypto.asymmetric.sign">SignatureProcessor</a></code>, <code><a href="../asymmetric/sign/SignatureSigner.html" title="interface in io.github.mmm.crypto.asymmetric.sign">SignatureSigner</a>&lt;S&gt;</code>, <code><a href="../asymmetric/sign/SignatureSignerSimple.html" title="interface in io.github.mmm.crypto.asymmetric.sign">SignatureSignerSimple</a></code>, <code><a href="../asymmetric/sign/SignatureVerifier.html" title="interface in io.github.mmm.crypto.asymmetric.sign">SignatureVerifier</a>&lt;S&gt;</code>, <code><a href="../asymmetric/sign/SignatureVerifierSimple.html" title="interface in io.github.mmm.crypto.asymmetric.sign">SignatureVerifierSimple</a></code>, <code><a href="../symmetric/key/SymmetricKeyCreator.html" title="interface in io.github.mmm.crypto.symmetric.key">SymmetricKeyCreator</a>&lt;K&gt;</code></dd>
+</dl>
+<dl>
+<dt>All Known Implementing Classes:</dt>
+<dd><code><a href="../asymmetric/key/AbstractAsymmetricKeyCreator.html" title="class in io.github.mmm.crypto.asymmetric.key">AbstractAsymmetricKeyCreator</a></code>, <code><a href="AbstractCryptoAlgorithmWithProvider.html" title="class in io.github.mmm.crypto.algorithm">AbstractCryptoAlgorithmWithProvider</a></code>, <code><a href="AbstractCryptoAlgorithmWithRandom.html" title="class in io.github.mmm.crypto.algorithm">AbstractCryptoAlgorithmWithRandom</a></code>, <code><a href="AbstractSecurityAlgorithm.html" title="class in io.github.mmm.crypto.algorithm">AbstractSecurityAlgorithm</a></code>, <code><a href="../asymmetric/crypt/AsymmetricCryptorConfig.html" title="class in io.github.mmm.crypto.asymmetric.crypt">AsymmetricCryptorConfig</a></code>, <code><a href="../asymmetric/crypt/ec/AsymmetricCryptorConfigEcIes.html" title="class in io.github.mmm.crypto.asymmetric.crypt.ec">AsymmetricCryptorConfigEcIes</a></code>, <code><a href="../asymmetric/crypt/rsa/AsymmetricCryptorConfigRsa.html" title="class in io.github.mmm.crypto.asymmetric.crypt.rsa">AsymmetricCryptorConfigRsa</a></code>, <code><a href="../asymmetric/crypt/AsymmetricCryptorFactoryImpl.html" title="class in io.github.mmm.crypto.asymmetric.crypt">AsymmetricCryptorFactoryImpl</a></code>, <code><a href="../../../../../../io.github.mmm.crypto.bc/io/github/mmm/crypto/asymmetric/key/ec/bc/AsymmetricKeyCreatorEcBc.html" title="class in io.github.mmm.crypto.asymmetric.key.ec.bc">AsymmetricKeyCreatorEcBc</a></code>, <code><a href="../asymmetric/key/generic/AsymmetricKeyCreatorImpl.html" title="class in io.github.mmm.crypto.asymmetric.key.generic">AsymmetricKeyCreatorImpl</a></code>, <code><a href="../asymmetric/key/rsa/AsymmetricKeyCreatorRsa.html" title="class in io.github.mmm.crypto.asymmetric.key.rsa">AsymmetricKeyCreatorRsa</a></code>, <code><a href="../crypt/CipherTransformation.html" title="class in io.github.mmm.crypto.crypt">CipherTransformation</a></code>, <code><a href="CryptoAlgorithmConfig.html" title="class in io.github.mmm.crypto.algorithm">CryptoAlgorithmConfig</a></code>, <code><a href="CryptoAlgorithmImpl.html" title="class in io.github.mmm.crypto.algorithm">CryptoAlgorithmImpl</a></code>, <code><a href="CryptoAlgorithmImplWithRandom.html" title="class in io.github.mmm.crypto.algorithm">CryptoAlgorithmImplWithRandom</a></code>, <code><a href="../crypt/CryptorConfig.html" title="class in io.github.mmm.crypto.crypt">CryptorConfig</a></code>, <code><a href="../crypt/CryptorFactoryImpl.html" title="class in io.github.mmm.crypto.crypt">CryptorFactoryImpl</a></code>, <code><a href="../crypt/CryptorImplCipher.html" title="class in io.github.mmm.crypto.crypt">CryptorImplCipher</a></code>, <code><a href="../crypt/CryptorImplCombined.html" title="class in io.github.mmm.crypto.crypt">CryptorImplCombined</a></code>, <code><a href="../crypt/DecryptorImplCipher.html" title="class in io.github.mmm.crypto.crypt">DecryptorImplCipher</a></code>, <code><a href="../crypt/DecryptorImplCombined.html" title="class in io.github.mmm.crypto.crypt">DecryptorImplCombined</a></code>, <code><a href="../crypt/EncryptorImplCiper.html" title="class in io.github.mmm.crypto.crypt">EncryptorImplCiper</a></code>, <code><a href="../crypt/EncryptorImplCombined.html" title="class in io.github.mmm.crypto.crypt">EncryptorImplCombined</a></code>, <code><a href="../hash/HashConfig.html" title="class in io.github.mmm.crypto.hash">HashConfig</a></code>, <code><a href="../hash/HashCreatorImplCombined.html" title="class in io.github.mmm.crypto.hash">HashCreatorImplCombined</a></code>, <code><a href="../hash/HashCreatorImplDigest.html" title="class in io.github.mmm.crypto.hash">HashCreatorImplDigest</a></code>, <code><a href="../hash/HashCreatorImplMultipleRounds.html" title="class in io.github.mmm.crypto.hash">HashCreatorImplMultipleRounds</a></code>, <code><a href="../key/KeyConfig.html" title="class in io.github.mmm.crypto.key">KeyConfig</a></code>, <code><a href="../hash/md5/Md5.html" title="class in io.github.mmm.crypto.hash.md5">Md5</a></code>, <code><a href="../random/RandomConfig.html" title="class in io.github.mmm.crypto.random">RandomConfig</a></code>, <code><a href="../random/RandomConfigSha1Prng.html" title="class in io.github.mmm.crypto.random">RandomConfigSha1Prng</a></code>, <code><a href="../random/RandomCreatorImpl.html" title="class in io.github.mmm.crypto.random">RandomCreatorImpl</a></code>, <code><a href="../random/RandomFactoryImpl.html" title="class in io.github.mmm.crypto.random">RandomFactoryImpl</a></code>, <code><a href="../../../../../../io.github.mmm.crypto.bc/io/github/mmm/crypto/hash/ripemd/RipeMd.html" title="class in io.github.mmm.crypto.hash.ripemd">RipeMd</a></code>, <code><a href="../../../../../../io.github.mmm.crypto.bc/io/github/mmm/crypto/hash/ripemd/RipeMd128.html" title="class in io.github.mmm.crypto.hash.ripemd">RipeMd128</a></code>, <code><a href="../../../../../../io.github.mmm.crypto.bc/io/github/mmm/crypto/hash/ripemd/RipeMd160.html" title="class in io.github.mmm.crypto.hash.ripemd">RipeMd160</a></code>, <code><a href="../../../../../../io.github.mmm.crypto.bc/io/github/mmm/crypto/hash/ripemd/RipeMd256.html" title="class in io.github.mmm.crypto.hash.ripemd">RipeMd256</a></code>, <code><a href="../../../../../../io.github.mmm.crypto.bc/io/github/mmm/crypto/hash/ripemd/RipeMd320.html" title="class in io.github.mmm.crypto.hash.ripemd">RipeMd320</a></code>, <code><a href="../hash/sha1/Sha1.html" title="class in io.github.mmm.crypto.hash.sha1">Sha1</a></code>, <code><a href="../hash/sha2/Sha2.html" title="class in io.github.mmm.crypto.hash.sha2">Sha2</a></code>, <code><a href="../hash/sha2/Sha224.html" title="class in io.github.mmm.crypto.hash.sha2">Sha224</a></code>, <code><a href="../hash/sha2/Sha256.html" title="class in io.github.mmm.crypto.hash.sha2">Sha256</a></code>, <code><a href="../hash/sha2/Sha384.html" title="class in io.github.mmm.crypto.hash.sha2">Sha384</a></code>, <code><a href="../hash/sha2/Sha512.html" title="class in io.github.mmm.crypto.hash.sha2">Sha512</a></code>, <code><a href="../asymmetric/sign/SignatureAlgorithm.html" title="class in io.github.mmm.crypto.asymmetric.sign">SignatureAlgorithm</a></code>, <code><a href="../asymmetric/sign/SignatureConfig.html" title="class in io.github.mmm.crypto.asymmetric.sign">SignatureConfig</a></code>, <code><a href="../asymmetric/sign/ec/SignatureConfigEcDsa.html" title="class in io.github.mmm.crypto.asymmetric.sign.ec">SignatureConfigEcDsa</a></code>, <code><a href="../asymmetric/sign/rsa/SignatureConfigRsa.html" title="class in io.github.mmm.crypto.asymmetric.sign.rsa">SignatureConfigRsa</a></code>, <code><a href="../asymmetric/sign/SignatureProcessorFactoryImpl.html" title="class in io.github.mmm.crypto.asymmetric.sign">SignatureProcessorFactoryImpl</a></code>, <code><a href="../../../../../../io.github.mmm.crypto.bc/io/github/mmm/crypto/asymmetric/sign/ec/bc/SignatureProcessorFactoryImplEcBc.html" title="class in io.github.mmm.crypto.asymmetric.sign.ec.bc">SignatureProcessorFactoryImplEcBc</a></code>, <code><a href="../asymmetric/sign/SignatureProcessorImpl.html" title="class in io.github.mmm.crypto.asymmetric.sign">SignatureProcessorImpl</a></code>, <code><a href="../../../../../../io.github.mmm.crypto.bc/io/github/mmm/crypto/asymmetric/sign/ec/bc/SignatureProcessorImplEcBc.html" title="class in io.github.mmm.crypto.asymmetric.sign.ec.bc">SignatureProcessorImplEcBc</a></code>, <code><a href="../asymmetric/sign/SignatureProcessorImplWithHash.html" title="class in io.github.mmm.crypto.asymmetric.sign">SignatureProcessorImplWithHash</a></code>, <code><a href="../asymmetric/sign/SignatureSignerImpl.html" title="class in io.github.mmm.crypto.asymmetric.sign">SignatureSignerImpl</a></code>, <code><a href="../asymmetric/sign/SignatureSignerImplCryptorWithHash.html" title="class in io.github.mmm.crypto.asymmetric.sign">SignatureSignerImplCryptorWithHash</a></code>, <code><a href="../../../../../../io.github.mmm.crypto.bc/io/github/mmm/crypto/asymmetric/sign/ec/bc/SignatureSignerImplEcBc.html" title="class in io.github.mmm.crypto.asymmetric.sign.ec.bc">SignatureSignerImplEcBc</a></code>, <code><a href="../asymmetric/sign/SignatureSignerImplWithHash.html" title="class in io.github.mmm.crypto.asymmetric.sign">SignatureSignerImplWithHash</a></code>, <code><a href="../asymmetric/sign/SignatureVerifierImpl.html" title="class in io.github.mmm.crypto.asymmetric.sign">SignatureVerifierImpl</a></code>, <code><a href="../asymmetric/sign/SignatureVerifierImplCryptorWithHash.html" title="class in io.github.mmm.crypto.asymmetric.sign">SignatureVerifierImplCryptorWithHash</a></code>, <code><a href="../../../../../../io.github.mmm.crypto.bc/io/github/mmm/crypto/asymmetric/sign/ec/bc/SignatureVerifierImplEcBc.html" title="class in io.github.mmm.crypto.asymmetric.sign.ec.bc">SignatureVerifierImplEcBc</a></code>, <code><a href="../asymmetric/sign/SignatureVerifierImplWithHash.html" title="class in io.github.mmm.crypto.asymmetric.sign">SignatureVerifierImplWithHash</a></code>, <code><a href="../symmetric/crypt/SymmetricCryptorConfig.html" title="class in io.github.mmm.crypto.symmetric.crypt">SymmetricCryptorConfig</a></code>, <code><a href="../symmetric/crypt/aes/SymmetricCryptorConfigAes.html" title="class in io.github.mmm.crypto.symmetric.crypt.aes">SymmetricCryptorConfigAes</a></code>, <code><a href="../symmetric/crypt/SymmetricCryptorFactoryImpl.html" title="class in io.github.mmm.crypto.symmetric.crypt">SymmetricCryptorFactoryImpl</a></code>, <code><a href="../symmetric/key/SymmetricKeyConfig.html" title="class in io.github.mmm.crypto.symmetric.key">SymmetricKeyConfig</a></code>, <code><a href="../symmetric/key/pbe/SymmetricKeyConfigPbe.html" title="class in io.github.mmm.crypto.symmetric.key.pbe">SymmetricKeyConfigPbe</a></code>, <code><a href="../symmetric/key/SymmetricKeyCreatorImpl.html" title="class in io.github.mmm.crypto.symmetric.key">SymmetricKeyCreatorImpl</a></code></dd>
+</dl>
+<hr>
+<pre>public interface <span class="typeNameLabel">CryptoAlgorithm</span></pre>
+<div class="block">The abstract interface for any object that is based on a security <a href="#getAlgorithm()"><code>algorithm</code></a>.</div>
+<dl>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>1.0.0</dd>
+<dt><span class="simpleTagLabel">Author:</span></dt>
+<dd>Joerg Hohwiller (hohwille at users.sourceforge.net)</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- ========== METHOD SUMMARY =========== -->
+<section role="region">
+<ul class="blockList">
+<li class="blockList"><a id="method.summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="memberSummary">
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tr id="i0" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getAlgorithm()">getAlgorithm</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+</section>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ METHOD DETAIL ========== -->
+<section role="region">
+<ul class="blockList">
+<li class="blockList"><a id="method.detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a id="getAlgorithm()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getAlgorithm</h4>
+<pre class="methodSignature"><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getAlgorithm()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the name of the underlying algorithm (e.g. "RSA", "NONEwithECDSA", etc.).</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Key.html?is-external=true#getAlgorithm()" title="class or interface in java.security" class="externalLink"><code>Key.getAlgorithm()</code></a>, 
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Signature.html?is-external=true#getAlgorithm()" title="class or interface in java.security" class="externalLink"><code>Signature.getAlgorithm()</code></a>, 
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/MessageDigest.html?is-external=true#getAlgorithm()" title="class or interface in java.security" class="externalLink"><code>MessageDigest.getAlgorithm()</code></a>, 
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SecureRandom.html?is-external=true#getAlgorithm()" title="class or interface in java.security" class="externalLink"><code>SecureRandom.getAlgorithm()</code></a>, 
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html?is-external=true#getAlgorithm()" title="class or interface in javax.crypto" class="externalLink"><code>Cipher.getAlgorithm()</code></a></dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+</li>
+</ul>
+</div>
+</div>
+</main>
+<!-- ========= END OF CLASS DATA ========= -->
+<footer role="contentinfo">
+<nav role="navigation">
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a id="navbar.bottom">
+<!--   -->
+</a>
+<div class="skipNav"><a href="#skip.navbar.bottom" title="Skip navigation links">Skip navigation links</a></div>
+<a id="navbar.bottom.firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../index.html">Overview</a></li>
+<li><a href="../../../../../module-summary.html">Module</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/CryptoAlgorithm.html">Use</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../../allclasses.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method.summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method.detail">Method</a></li>
+</ul>
+</div>
+<a id="skip.navbar.bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+</nav>
+<p class="legalCopy"><small>Copyright &#169; 2001&#x2013;2019 <a href="https://m-m-m.github.io">mmm-team</a>. All rights reserved.</small></p>
+</footer>
+</body>
+</html>

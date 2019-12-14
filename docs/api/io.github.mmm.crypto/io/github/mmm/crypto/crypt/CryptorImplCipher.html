@@ -1,0 +1,598 @@
+<!DOCTYPE HTML>
+<!-- NewPage -->
+<html lang="en">
+<head>
+<title>CryptorImplCipher (JavaDocs for mmm-all 1.0.0-SNAPSHOT)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="../../../../../../stylesheet.css" title="Style">
+<link rel="stylesheet" type="text/css" href="../../../../../../jquery/jquery-ui.css" title="Style">
+<script type="text/javascript" src="../../../../../../script.js"></script>
+<script type="text/javascript" src="../../../../../../jquery/jszip/dist/jszip.min.js"></script>
+<script type="text/javascript" src="../../../../../../jquery/jszip-utils/dist/jszip-utils.min.js"></script>
+<!--[if IE]>
+<script type="text/javascript" src="../../../../../../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="../../../../../../jquery/jquery-3.3.1.js"></script>
+<script type="text/javascript" src="../../../../../../jquery/jquery-migrate-3.0.1.js"></script>
+<script type="text/javascript" src="../../../../../../jquery/jquery-ui.js"></script>
+</head>
+<body>
+<script type="text/javascript"><!--
+    try {
+        if (location.href.indexOf('is-external=true') == -1) {
+            parent.document.title="CryptorImplCipher (JavaDocs for mmm-all 1.0.0-SNAPSHOT)";
+        }
+    }
+    catch(err) {
+    }
+//-->
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":6,"i7":10,"i8":10};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"]};
+var altColor = "altColor";
+var rowColor = "rowColor";
+var tableTab = "tableTab";
+var activeTableTab = "activeTableTab";
+var pathtoroot = "../../../../../../";
+var useModuleDirectories = true;
+loadScripts(document, 'script');</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<header role="banner">
+<nav role="navigation">
+<div class="fixedNav">
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a id="navbar.top">
+<!--   -->
+</a>
+<div class="skipNav"><a href="#skip.navbar.top" title="Skip navigation links">Skip navigation links</a></div>
+<a id="navbar.top.firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../index.html">Overview</a></li>
+<li><a href="../../../../../module-summary.html">Module</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/CryptorImplCipher.html">Use</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../../allclasses.html">All&nbsp;Classes</a></li>
+</ul>
+<ul class="navListSearch">
+<li><label for="search">SEARCH:</label>
+<input type="text" id="search" value="search" disabled="disabled">
+<input type="reset" id="reset" value="reset" disabled="disabled">
+</li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method.summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method.detail">Method</a></li>
+</ul>
+</div>
+<a id="skip.navbar.top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+</div>
+<div class="navPadding">&nbsp;</div>
+<script type="text/javascript"><!--
+$('.navPadding').css('padding-top', $('.fixedNav').css("height"));
+//-->
+</script>
+</nav>
+</header>
+<!-- ======== START OF CLASS DATA ======== -->
+<main role="main">
+<div class="header">
+<div class="subTitle"><span class="moduleLabelInType">Module</span>&nbsp;<a href="../../../../../module-summary.html">io.github.mmm.crypto</a></div>
+<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">io.github.mmm.crypto.crypt</a></div>
+<h2 title="Class CryptorImplCipher" class="title">Class CryptorImplCipher</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../algorithm/AbstractSecurityAlgorithm.html" title="class in io.github.mmm.crypto.algorithm">io.github.mmm.crypto.algorithm.AbstractSecurityAlgorithm</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../algorithm/AbstractCryptoAlgorithmWithProvider.html" title="class in io.github.mmm.crypto.algorithm">io.github.mmm.crypto.algorithm.AbstractCryptoAlgorithmWithProvider</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../algorithm/AbstractCryptoAlgorithmWithRandom.html" title="class in io.github.mmm.crypto.algorithm">io.github.mmm.crypto.algorithm.AbstractCryptoAlgorithmWithRandom</a></li>
+<li>
+<ul class="inheritance">
+<li>io.github.mmm.crypto.crypt.CryptorImplCipher</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><code><a href="../algorithm/CryptoAlgorithm.html" title="interface in io.github.mmm.crypto.algorithm">CryptoAlgorithm</a></code>, <code><a href="AbstractGetNonceSize.html" title="interface in io.github.mmm.crypto.crypt">AbstractGetNonceSize</a></code>, <code><a href="Cryptor.html" title="interface in io.github.mmm.crypto.crypt">Cryptor</a></code>, <code><a href="../CryptoProcessor.html" title="interface in io.github.mmm.crypto">CryptoProcessor</a></code></dd>
+</dl>
+<dl>
+<dt>Direct Known Subclasses:</dt>
+<dd><code><a href="DecryptorImplCipher.html" title="class in io.github.mmm.crypto.crypt">DecryptorImplCipher</a></code>, <code><a href="EncryptorImplCiper.html" title="class in io.github.mmm.crypto.crypt">EncryptorImplCiper</a></code></dd>
+</dl>
+<hr>
+<pre>public abstract class <span class="typeNameLabel">CryptorImplCipher</span>
+extends <a href="../algorithm/AbstractCryptoAlgorithmWithRandom.html" title="class in io.github.mmm.crypto.algorithm">AbstractCryptoAlgorithmWithRandom</a>
+implements <a href="Cryptor.html" title="interface in io.github.mmm.crypto.crypt">Cryptor</a></pre>
+<div class="block">Abstract implementation of <a href="Cryptor.html" title="interface in io.github.mmm.crypto.crypt"><code>Cryptor</code></a> based on <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html?is-external=true" title="class or interface in javax.crypto" class="externalLink"><code>Cipher</code></a>.</div>
+<dl>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>1.0.0</dd>
+<dt><span class="simpleTagLabel">Author:</span></dt>
+<dd>Joerg Hohwiller (hohwille at users.sourceforge.net)</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<section role="region">
+<ul class="blockList">
+<li class="blockList"><a id="field.summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<ul class="blockList">
+<li class="blockList"><a id="fields.inherited.from.class.io.github.mmm.crypto.algorithm.AbstractCryptoAlgorithmWithProvider">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;io.github.mmm.crypto.algorithm.<a href="../algorithm/AbstractCryptoAlgorithmWithProvider.html" title="class in io.github.mmm.crypto.algorithm">AbstractCryptoAlgorithmWithProvider</a></h3>
+<code><a href="../algorithm/AbstractCryptoAlgorithmWithProvider.html#provider">provider</a></code></li>
+</ul>
+</li>
+</ul>
+</section>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<section role="region">
+<ul class="blockList">
+<li class="blockList"><a id="constructor.summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="memberSummary">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Constructor</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tr class="altColor">
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(io.github.mmm.crypto.random.RandomFactory,io.github.mmm.crypto.crypt.CryptorConfig,java.security.Key)">CryptorImplCipher</a></span>&#8203;(<a href="../random/RandomFactory.html" title="interface in io.github.mmm.crypto.random">RandomFactory</a>&nbsp;randomFactory,
+                 <a href="CryptorConfig.html" title="class in io.github.mmm.crypto.crypt">CryptorConfig</a>&nbsp;config,
+                 <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Key.html?is-external=true" title="class or interface in java.security" class="externalLink">Key</a>&nbsp;key)</code></th>
+<td class="colLast">
+<div class="block">The constructor.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+</section>
+<!-- ========== METHOD SUMMARY =========== -->
+<section role="region">
+<ul class="blockList">
+<li class="blockList"><a id="method.summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="memberSummary">
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tr id="i0" class="altColor">
+<td class="colFirst"><code>byte[]</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#crypt(byte%5B%5D,int,int,boolean)">crypt</a></span>&#8203;(byte[]&nbsp;input,
+     int&nbsp;offset,
+     int&nbsp;length,
+     boolean&nbsp;complete)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getAlgorithm()">getAlgorithm</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>protected <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html?is-external=true" title="class or interface in javax.crypto" class="externalLink">Cipher</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getCipher()">getCipher</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="CryptorConfig.html" title="class in io.github.mmm.crypto.crypt">CryptorConfig</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getConfig()">getConfig</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>protected <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getMode()">getMode</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getNonceSize()">getNonceSize</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Unlike <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html?is-external=true" title="class or interface in javax.crypto" class="externalLink"><code>Cipher</code></a> this API is designed for ease of use.</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>protected abstract boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isEncryptor()">isEncryptor</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#reset()">reset</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Will reset the internal state of this object.</div>
+</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>protected <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang" class="externalLink">RuntimeException</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#wrapSecurityException(java.lang.Exception)">wrapSecurityException</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Exception.html?is-external=true" title="class or interface in java.lang" class="externalLink">Exception</a>&nbsp;e)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.crypto.algorithm.AbstractCryptoAlgorithmWithRandom">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;io.github.mmm.crypto.algorithm.<a href="../algorithm/AbstractCryptoAlgorithmWithRandom.html" title="class in io.github.mmm.crypto.algorithm">AbstractCryptoAlgorithmWithRandom</a></h3>
+<code><a href="../algorithm/AbstractCryptoAlgorithmWithRandom.html#createSecureRandom()">createSecureRandom</a>, <a href="../algorithm/AbstractCryptoAlgorithmWithRandom.html#getRandomFactory()">getRandomFactory</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.crypto.algorithm.AbstractCryptoAlgorithmWithProvider">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;io.github.mmm.crypto.algorithm.<a href="../algorithm/AbstractCryptoAlgorithmWithProvider.html" title="class in io.github.mmm.crypto.algorithm">AbstractCryptoAlgorithmWithProvider</a></h3>
+<code><a href="../algorithm/AbstractCryptoAlgorithmWithProvider.html#getProvider()">getProvider</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.crypto.algorithm.AbstractSecurityAlgorithm">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;io.github.mmm.crypto.algorithm.<a href="../algorithm/AbstractSecurityAlgorithm.html" title="class in io.github.mmm.crypto.algorithm">AbstractSecurityAlgorithm</a></h3>
+<code><a href="../algorithm/AbstractSecurityAlgorithm.html#creationFailedException(java.lang.Exception,java.lang.Class)">creationFailedException</a>, <a href="../algorithm/AbstractSecurityAlgorithm.html#creationFailedException(java.lang.Exception,java.lang.Class,java.lang.String)">creationFailedException</a>, <a href="../algorithm/AbstractSecurityAlgorithm.html#creationFailedException(java.lang.Exception,java.lang.String)">creationFailedException</a>, <a href="../algorithm/AbstractSecurityAlgorithm.html#creationFailedException(java.lang.Exception,java.lang.String,java.lang.String)">creationFailedException</a>, <a href="../algorithm/AbstractSecurityAlgorithm.html#getAlgorithm(io.github.mmm.crypto.algorithm.CryptoAlgorithm%5B%5D)">getAlgorithm</a>, <a href="../algorithm/AbstractSecurityAlgorithm.html#toString()">toString</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></h3>
+<code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang" class="externalLink">clone</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang" class="externalLink">equals</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang" class="externalLink">finalize</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang" class="externalLink">getClass</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang" class="externalLink">hashCode</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang" class="externalLink">notify</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang" class="externalLink">notifyAll</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#wait(long,int)" title="class or interface in java.lang" class="externalLink">wait</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.crypto.CryptoProcessor">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;io.github.mmm.crypto.<a href="../CryptoProcessor.html" title="interface in io.github.mmm.crypto">CryptoProcessor</a></h3>
+<code><a href="../CryptoProcessor.html#process(byte%5B%5D)">process</a>, <a href="../CryptoProcessor.html#process(byte%5B%5D,int,int)">process</a>, <a href="../CryptoProcessor.html#process(io.github.mmm.crypto.CryptoBinary,boolean)">process</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.crypto.crypt.Cryptor">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;io.github.mmm.crypto.crypt.<a href="Cryptor.html" title="interface in io.github.mmm.crypto.crypt">Cryptor</a></h3>
+<code><a href="Cryptor.html#crypt(byte%5B%5D,boolean)">crypt</a>, <a href="Cryptor.html#crypt(io.github.mmm.crypto.CryptoBinary,boolean)">crypt</a>, <a href="Cryptor.html#doFinal()">doFinal</a>, <a href="Cryptor.html#process(byte%5B%5D,int,int,boolean)">process</a></code></li>
+</ul>
+</li>
+</ul>
+</section>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<section role="region">
+<ul class="blockList">
+<li class="blockList"><a id="constructor.detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a id="&lt;init&gt;(io.github.mmm.crypto.random.RandomFactory,io.github.mmm.crypto.crypt.CryptorConfig,java.security.Key)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>CryptorImplCipher</h4>
+<pre>public&nbsp;CryptorImplCipher&#8203;(<a href="../random/RandomFactory.html" title="interface in io.github.mmm.crypto.random">RandomFactory</a>&nbsp;randomFactory,
+                         <a href="CryptorConfig.html" title="class in io.github.mmm.crypto.crypt">CryptorConfig</a>&nbsp;config,
+                         <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Key.html?is-external=true" title="class or interface in java.security" class="externalLink">Key</a>&nbsp;key)</pre>
+<div class="block">The constructor.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>randomFactory</code> - the <a href="../random/RandomFactory.html" title="interface in io.github.mmm.crypto.random"><code>RandomFactory</code></a> to use.</dd>
+<dd><code>config</code> - the <a href="CryptorConfig.html" title="class in io.github.mmm.crypto.crypt"><code>CryptorConfig</code></a>.</dd>
+<dd><code>key</code> - the <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Key.html?is-external=true" title="class or interface in java.security" class="externalLink"><code>Key</code></a> to use.</dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<!-- ============ METHOD DETAIL ========== -->
+<section role="region">
+<ul class="blockList">
+<li class="blockList"><a id="method.detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a id="getAlgorithm()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getAlgorithm</h4>
+<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getAlgorithm()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../algorithm/CryptoAlgorithm.html#getAlgorithm()">getAlgorithm</a></code>&nbsp;in interface&nbsp;<code><a href="../algorithm/CryptoAlgorithm.html" title="interface in io.github.mmm.crypto.algorithm">CryptoAlgorithm</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the name of the underlying algorithm (e.g. "RSA", "NONEwithECDSA", etc.).</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Key.html?is-external=true#getAlgorithm()" title="class or interface in java.security" class="externalLink"><code>Key.getAlgorithm()</code></a>, 
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Signature.html?is-external=true#getAlgorithm()" title="class or interface in java.security" class="externalLink"><code>Signature.getAlgorithm()</code></a>, 
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/MessageDigest.html?is-external=true#getAlgorithm()" title="class or interface in java.security" class="externalLink"><code>MessageDigest.getAlgorithm()</code></a>, 
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SecureRandom.html?is-external=true#getAlgorithm()" title="class or interface in java.security" class="externalLink"><code>SecureRandom.getAlgorithm()</code></a>, 
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html?is-external=true#getAlgorithm()" title="class or interface in javax.crypto" class="externalLink"><code>Cipher.getAlgorithm()</code></a></dd>
+</dl>
+</li>
+</ul>
+<a id="getNonceSize()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getNonceSize</h4>
+<pre class="methodSignature">public&nbsp;int&nbsp;getNonceSize()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="AbstractGetNonceSize.html#getNonceSize()">AbstractGetNonceSize</a></code></span></div>
+<div class="block">Unlike <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html?is-external=true" title="class or interface in javax.crypto" class="externalLink"><code>Cipher</code></a> this API is designed for ease of use. Some cryptographic algorithms require an
+ <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html?is-external=true#getIV()" title="class or interface in javax.crypto" class="externalLink"><code>initialization vector</code></a> (IV) and others do not. With this API you do not have to
+ care and cannot do things wrong. The nonce will be prepended automatically to the encrypted payload and
+ reconstructed from there on decryption. This works both for <a href="Cryptor.html#crypt(byte%5B%5D,boolean)"><code>crypt</code></a>
+ and for <a href="Encryptor.html#wrapStream(java.io.OutputStream)"><code>streaming</code></a>.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="AbstractGetNonceSize.html#getNonceSize()">getNonceSize</a></code>&nbsp;in interface&nbsp;<code><a href="AbstractGetNonceSize.html" title="interface in io.github.mmm.crypto.crypt">AbstractGetNonceSize</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the size of the nonce in bytes or <code>0</code> for none.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html?is-external=true#getIV()" title="class or interface in javax.crypto" class="externalLink"><code>Cipher.getIV()</code></a></dd>
+</dl>
+</li>
+</ul>
+<a id="getCipher()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCipher</h4>
+<pre class="methodSignature">protected&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html?is-external=true" title="class or interface in javax.crypto" class="externalLink">Cipher</a>&nbsp;getCipher()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the underlying <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html?is-external=true" title="class or interface in javax.crypto" class="externalLink"><code>Cipher</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="isEncryptor()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isEncryptor</h4>
+<pre class="methodSignature">protected abstract&nbsp;boolean&nbsp;isEncryptor()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>true</code> if <a href="Encryptor.html" title="interface in io.github.mmm.crypto.crypt"><code>Encryptor</code></a>, <code>false</code> if <a href="Decryptor.html" title="interface in io.github.mmm.crypto.crypt"><code>Decryptor</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="getConfig()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getConfig</h4>
+<pre class="methodSignature">public final&nbsp;<a href="CryptorConfig.html" title="class in io.github.mmm.crypto.crypt">CryptorConfig</a>&nbsp;getConfig()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the <a href="CryptorConfig.html" title="class in io.github.mmm.crypto.crypt"><code>CryptorConfig</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="getMode()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getMode</h4>
+<pre class="methodSignature">protected&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getMode()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>"decryption" for <a href="Decryptor.html" title="interface in io.github.mmm.crypto.crypt"><code>Decryptor</code></a> and "encryption" for <a href="Encryptor.html" title="interface in io.github.mmm.crypto.crypt"><code>Encryptor</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="crypt(byte[],int,int,boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>crypt</h4>
+<pre class="methodSignature">public&nbsp;byte[]&nbsp;crypt&#8203;(byte[]&nbsp;input,
+                    int&nbsp;offset,
+                    int&nbsp;length,
+                    boolean&nbsp;complete)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="Cryptor.html#crypt(byte%5B%5D,int,int,boolean)">crypt</a></code>&nbsp;in interface&nbsp;<code><a href="Cryptor.html" title="interface in io.github.mmm.crypto.crypt">Cryptor</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>input</code> - the next chunk of data to encrypt or decrypt.</dd>
+<dd><code>offset</code> - the offset where to start in the <code>input</code> array.</dd>
+<dd><code>length</code> - the number of bytes to read from the <code>input</code> array.</dd>
+<dd><code>complete</code> - - <code>true</code> to complete the encryption or decryption in case this is the last chunk of data,
+        <code>false</code> otherwise.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the number of bytes that have been written into the <code>output</code> array.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html?is-external=true#update(byte%5B%5D,int,int)" title="class or interface in javax.crypto" class="externalLink"><code>Cipher.update(byte[], int, int)</code></a>, 
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html?is-external=true#doFinal(byte%5B%5D,int,int)" title="class or interface in javax.crypto" class="externalLink"><code>Cipher.doFinal(byte[], int, int)</code></a></dd>
+</dl>
+</li>
+</ul>
+<a id="wrapSecurityException(java.lang.Exception)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>wrapSecurityException</h4>
+<pre class="methodSignature">protected&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang" class="externalLink">RuntimeException</a>&nbsp;wrapSecurityException&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Exception.html?is-external=true" title="class or interface in java.lang" class="externalLink">Exception</a>&nbsp;e)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>e</code> - the <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Exception.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Exception</code></a> to wrap.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the wrapped <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>RuntimeException</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="reset()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>reset</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;reset()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../CryptoProcessor.html#reset()">CryptoProcessor</a></code></span></div>
+<div class="block">Will reset the internal state of this object. Please note that complex algorithms especially for
+ <a href="Cryptor.html" title="interface in io.github.mmm.crypto.crypt"><code>Cryptor</code></a> may <b>not</b> reusable. It is therefore preferable to always create a
+ fresh instance for each cryptographic task.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../CryptoProcessor.html#reset()">reset</a></code>&nbsp;in interface&nbsp;<code><a href="../CryptoProcessor.html" title="interface in io.github.mmm.crypto">CryptoProcessor</a></code></dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/MessageDigest.html?is-external=true#reset()" title="class or interface in java.security" class="externalLink"><code>MessageDigest.reset()</code></a></dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+</li>
+</ul>
+</div>
+</div>
+</main>
+<!-- ========= END OF CLASS DATA ========= -->
+<footer role="contentinfo">
+<nav role="navigation">
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a id="navbar.bottom">
+<!--   -->
+</a>
+<div class="skipNav"><a href="#skip.navbar.bottom" title="Skip navigation links">Skip navigation links</a></div>
+<a id="navbar.bottom.firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../index.html">Overview</a></li>
+<li><a href="../../../../../module-summary.html">Module</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/CryptorImplCipher.html">Use</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../../allclasses.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method.summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method.detail">Method</a></li>
+</ul>
+</div>
+<a id="skip.navbar.bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+</nav>
+<p class="legalCopy"><small>Copyright &#169; 2001&#x2013;2019 <a href="https://m-m-m.github.io">mmm-team</a>. All rights reserved.</small></p>
+</footer>
+</body>
+</html>

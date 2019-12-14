@@ -1,0 +1,214 @@
+<!DOCTYPE HTML>
+<!-- NewPage -->
+<html lang="en">
+<head>
+<title>AbstractCryptoFactory (JavaDocs for mmm-all 1.0.0-SNAPSHOT)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
+<link rel="stylesheet" type="text/css" href="../../../../../jquery/jquery-ui.css" title="Style">
+<script type="text/javascript" src="../../../../../script.js"></script>
+<script type="text/javascript" src="../../../../../jquery/jszip/dist/jszip.min.js"></script>
+<script type="text/javascript" src="../../../../../jquery/jszip-utils/dist/jszip-utils.min.js"></script>
+<!--[if IE]>
+<script type="text/javascript" src="../../../../../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="../../../../../jquery/jquery-3.3.1.js"></script>
+<script type="text/javascript" src="../../../../../jquery/jquery-migrate-3.0.1.js"></script>
+<script type="text/javascript" src="../../../../../jquery/jquery-ui.js"></script>
+</head>
+<body>
+<script type="text/javascript"><!--
+    try {
+        if (location.href.indexOf('is-external=true') == -1) {
+            parent.document.title="AbstractCryptoFactory (JavaDocs for mmm-all 1.0.0-SNAPSHOT)";
+        }
+    }
+    catch(err) {
+    }
+//-->
+var pathtoroot = "../../../../../";
+var useModuleDirectories = true;
+loadScripts(document, 'script');</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<header role="banner">
+<nav role="navigation">
+<div class="fixedNav">
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a id="navbar.top">
+<!--   -->
+</a>
+<div class="skipNav"><a href="#skip.navbar.top" title="Skip navigation links">Skip navigation links</a></div>
+<a id="navbar.top.firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../index.html">Overview</a></li>
+<li><a href="../../../../module-summary.html">Module</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/AbstractCryptoFactory.html">Use</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../allclasses.html">All&nbsp;Classes</a></li>
+</ul>
+<ul class="navListSearch">
+<li><label for="search">SEARCH:</label>
+<input type="text" id="search" value="search" disabled="disabled">
+<input type="reset" id="reset" value="reset" disabled="disabled">
+</li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li>Method</li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li>Method</li>
+</ul>
+</div>
+<a id="skip.navbar.top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+</div>
+<div class="navPadding">&nbsp;</div>
+<script type="text/javascript"><!--
+$('.navPadding').css('padding-top', $('.fixedNav').css("height"));
+//-->
+</script>
+</nav>
+</header>
+<!-- ======== START OF CLASS DATA ======== -->
+<main role="main">
+<div class="header">
+<div class="subTitle"><span class="moduleLabelInType">Module</span>&nbsp;<a href="../../../../module-summary.html">io.github.mmm.crypto</a></div>
+<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">io.github.mmm.crypto</a></div>
+<h2 title="Interface AbstractCryptoFactory" class="title">Interface AbstractCryptoFactory</h2>
+</div>
+<div class="contentContainer">
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Known Subinterfaces:</dt>
+<dd><code><a href="asymmetric/crypt/AsymmetricCryptorFactory.html" title="interface in io.github.mmm.crypto.asymmetric.crypt">AsymmetricCryptorFactory</a>&lt;PR,&#8203;PU&gt;</code>, <code><a href="crypt/CryptorFactory.html" title="interface in io.github.mmm.crypto.crypt">CryptorFactory</a></code>, <code><a href="hash/HashFactory.html" title="interface in io.github.mmm.crypto.hash">HashFactory</a></code>, <code><a href="random/RandomFactory.html" title="interface in io.github.mmm.crypto.random">RandomFactory</a></code>, <code><a href="symmetric/crypt/SymmetricCryptorFactory.html" title="interface in io.github.mmm.crypto.symmetric.crypt">SymmetricCryptorFactory</a>&lt;K&gt;</code></dd>
+</dl>
+<dl>
+<dt>All Known Implementing Classes:</dt>
+<dd><code><a href="asymmetric/access/AsymmetricAccess.html" title="class in io.github.mmm.crypto.asymmetric.access">AsymmetricAccess</a></code>, <code><a href="../../../../../io.github.mmm.crypto.bc/io/github/mmm/crypto/asymmetric/access/ec/bc/AsymmetricAccessEcBc.html" title="class in io.github.mmm.crypto.asymmetric.access.ec.bc">AsymmetricAccessEcBc</a></code>, <code><a href="asymmetric/crypt/AsymmetricCryptorFactoryImpl.html" title="class in io.github.mmm.crypto.asymmetric.crypt">AsymmetricCryptorFactoryImpl</a></code>, <code><a href="crypt/CryptorFactoryImpl.html" title="class in io.github.mmm.crypto.crypt">CryptorFactoryImpl</a></code>, <code><a href="../../../../../io.github.mmm.crypto.bc/io/github/mmm/crypto/asymmetric/access/ec/bc/Curve25519.html" title="class in io.github.mmm.crypto.asymmetric.access.ec.bc">Curve25519</a></code>, <code><a href="hash/access/HashAccess.html" title="class in io.github.mmm.crypto.hash.access">HashAccess</a></code>, <code><a href="hash/HashConfig.html" title="class in io.github.mmm.crypto.hash">HashConfig</a></code>, <code><a href="hash/HashFactoryCombined.html" title="class in io.github.mmm.crypto.hash">HashFactoryCombined</a></code>, <code><a href="hash/md5/Md5.html" title="class in io.github.mmm.crypto.hash.md5">Md5</a></code>, <code><a href="symmetric/access/pbe/PbeAccess.html" title="class in io.github.mmm.crypto.symmetric.access.pbe">PbeAccess</a></code>, <code><a href="random/RandomFactoryImpl.html" title="class in io.github.mmm.crypto.random">RandomFactoryImpl</a></code>, <code><a href="../../../../../io.github.mmm.crypto.bc/io/github/mmm/crypto/hash/ripemd/RipeMd.html" title="class in io.github.mmm.crypto.hash.ripemd">RipeMd</a></code>, <code><a href="../../../../../io.github.mmm.crypto.bc/io/github/mmm/crypto/hash/ripemd/RipeMd128.html" title="class in io.github.mmm.crypto.hash.ripemd">RipeMd128</a></code>, <code><a href="../../../../../io.github.mmm.crypto.bc/io/github/mmm/crypto/hash/ripemd/RipeMd160.html" title="class in io.github.mmm.crypto.hash.ripemd">RipeMd160</a></code>, <code><a href="../../../../../io.github.mmm.crypto.bc/io/github/mmm/crypto/hash/ripemd/RipeMd256.html" title="class in io.github.mmm.crypto.hash.ripemd">RipeMd256</a></code>, <code><a href="../../../../../io.github.mmm.crypto.bc/io/github/mmm/crypto/hash/ripemd/RipeMd320.html" title="class in io.github.mmm.crypto.hash.ripemd">RipeMd320</a></code>, <code><a href="asymmetric/access/rsa/Rsa.html" title="class in io.github.mmm.crypto.asymmetric.access.rsa">Rsa</a></code>, <code><a href="../../../../../io.github.mmm.crypto.bc/io/github/mmm/crypto/asymmetric/access/ec/bc/Secp256k1.html" title="class in io.github.mmm.crypto.asymmetric.access.ec.bc">Secp256k1</a></code>, <code><a href="hash/sha1/Sha1.html" title="class in io.github.mmm.crypto.hash.sha1">Sha1</a></code>, <code><a href="hash/sha2/Sha2.html" title="class in io.github.mmm.crypto.hash.sha2">Sha2</a></code>, <code><a href="hash/sha2/Sha224.html" title="class in io.github.mmm.crypto.hash.sha2">Sha224</a></code>, <code><a href="hash/sha2/Sha256.html" title="class in io.github.mmm.crypto.hash.sha2">Sha256</a></code>, <code><a href="hash/sha2/Sha384.html" title="class in io.github.mmm.crypto.hash.sha2">Sha384</a></code>, <code><a href="hash/sha2/Sha512.html" title="class in io.github.mmm.crypto.hash.sha2">Sha512</a></code>, <code><a href="symmetric/access/SymmetricAccess.html" title="class in io.github.mmm.crypto.symmetric.access">SymmetricAccess</a></code>, <code><a href="symmetric/crypt/SymmetricCryptorFactoryImpl.html" title="class in io.github.mmm.crypto.symmetric.crypt">SymmetricCryptorFactoryImpl</a></code></dd>
+</dl>
+<hr>
+<pre>public interface <span class="typeNameLabel">AbstractCryptoFactory</span></pre>
+<div class="block">Abstract interface for any factory of this security library. All such factories are thread-safe and represent a
+ specific configuration (see <a href="algorithm/CryptoAlgorithmConfig.html" title="class in io.github.mmm.crypto.algorithm"><code>CryptoAlgorithmConfig</code></a>).</div>
+<dl>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>1.0.0</dd>
+<dt><span class="simpleTagLabel">Author:</span></dt>
+<dd>Joerg Hohwiller (hohwille at users.sourceforge.net)</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="random/RandomFactory.html" title="interface in io.github.mmm.crypto.random"><code>RandomFactory</code></a>, 
+<a href="hash/HashFactory.html" title="interface in io.github.mmm.crypto.hash"><code>HashFactory</code></a>, 
+<a href="crypt/CryptorFactory.html" title="interface in io.github.mmm.crypto.crypt"><code>CryptorFactory</code></a>, 
+<a href="asymmetric/sign/SignatureProcessorFactory.html" title="interface in io.github.mmm.crypto.asymmetric.sign"><code>SignatureProcessorFactory</code></a>, 
+<a href="asymmetric/key/AsymmetricKeyCreatorFactory.html" title="interface in io.github.mmm.crypto.asymmetric.key"><code>AsymmetricKeyCreatorFactory</code></a>, 
+<a href="symmetric/key/SymmetricKeyCreatorFactory.html" title="interface in io.github.mmm.crypto.symmetric.key"><code>SymmetricKeyCreatorFactory</code></a></dd>
+</dl>
+</li>
+</ul>
+</div>
+</div>
+</main>
+<!-- ========= END OF CLASS DATA ========= -->
+<footer role="contentinfo">
+<nav role="navigation">
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a id="navbar.bottom">
+<!--   -->
+</a>
+<div class="skipNav"><a href="#skip.navbar.bottom" title="Skip navigation links">Skip navigation links</a></div>
+<a id="navbar.bottom.firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../index.html">Overview</a></li>
+<li><a href="../../../../module-summary.html">Module</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/AbstractCryptoFactory.html">Use</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../allclasses.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li>Method</li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li>Method</li>
+</ul>
+</div>
+<a id="skip.navbar.bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+</nav>
+<p class="legalCopy"><small>Copyright &#169; 2001&#x2013;2019 <a href="https://m-m-m.github.io">mmm-team</a>. All rights reserved.</small></p>
+</footer>
+</body>
+</html>

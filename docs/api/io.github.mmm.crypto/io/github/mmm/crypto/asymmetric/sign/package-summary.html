@@ -1,0 +1,320 @@
+<!DOCTYPE HTML>
+<!-- NewPage -->
+<html lang="en">
+<head>
+<title>io.github.mmm.crypto.asymmetric.sign (JavaDocs for mmm-all 1.0.0-SNAPSHOT)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="../../../../../../../stylesheet.css" title="Style">
+<link rel="stylesheet" type="text/css" href="../../../../../../../jquery/jquery-ui.css" title="Style">
+<script type="text/javascript" src="../../../../../../../script.js"></script>
+<script type="text/javascript" src="../../../../../../../jquery/jszip/dist/jszip.min.js"></script>
+<script type="text/javascript" src="../../../../../../../jquery/jszip-utils/dist/jszip-utils.min.js"></script>
+<!--[if IE]>
+<script type="text/javascript" src="../../../../../../../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="../../../../../../../jquery/jquery-3.3.1.js"></script>
+<script type="text/javascript" src="../../../../../../../jquery/jquery-migrate-3.0.1.js"></script>
+<script type="text/javascript" src="../../../../../../../jquery/jquery-ui.js"></script>
+</head>
+<body>
+<script type="text/javascript"><!--
+    try {
+        if (location.href.indexOf('is-external=true') == -1) {
+            parent.document.title="io.github.mmm.crypto.asymmetric.sign (JavaDocs for mmm-all 1.0.0-SNAPSHOT)";
+        }
+    }
+    catch(err) {
+    }
+//-->
+var pathtoroot = "../../../../../../../";
+var useModuleDirectories = true;
+loadScripts(document, 'script');</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<header role="banner">
+<nav role="navigation">
+<div class="fixedNav">
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a id="navbar.top">
+<!--   -->
+</a>
+<div class="skipNav"><a href="#skip.navbar.top" title="Skip navigation links">Skip navigation links</a></div>
+<a id="navbar.top.firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../../index.html">Overview</a></li>
+<li><a href="../../../../../../module-summary.html">Module</a></li>
+<li class="navBarCell1Rev">Package</li>
+<li>Class</li>
+<li><a href="package-use.html">Use</a></li>
+<li><a href="../../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../../../allclasses.html">All&nbsp;Classes</a></li>
+</ul>
+<ul class="navListSearch">
+<li><label for="search">SEARCH:</label>
+<input type="text" id="search" value="search" disabled="disabled">
+<input type="reset" id="reset" value="reset" disabled="disabled">
+</li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+</div>
+<a id="skip.navbar.top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+</div>
+<div class="navPadding">&nbsp;</div>
+<script type="text/javascript"><!--
+$('.navPadding').css('padding-top', $('.fixedNav').css("height"));
+//-->
+</script>
+</nav>
+</header>
+<main role="main">
+<div class="header">
+<div class="subTitle"><span class="moduleLabelInPackage">Module</span>&nbsp;<a href="../../../../../../module-summary.html">io.github.mmm.crypto</a></div>
+<h1 title="Package" class="title">Package&nbsp;io.github.mmm.crypto.asymmetric.sign</h1>
+</div>
+<div class="contentContainer">
+<ul class="blockList">
+<li class="blockList">
+<table class="typeSummary">
+<caption><span>Interface Summary</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Interface</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="SignatureFactory.html" title="interface in io.github.mmm.crypto.asymmetric.sign">SignatureFactory</a>&lt;S extends <a href="SignatureBinary.html" title="class in io.github.mmm.crypto.asymmetric.sign">SignatureBinary</a>&gt;</th>
+<td class="colLast">
+<div class="block">Interface for factory to create instances of <a href="SignatureBinary.html" title="class in io.github.mmm.crypto.asymmetric.sign"><code>SignatureBinary</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="SignatureProcessor.html" title="interface in io.github.mmm.crypto.asymmetric.sign">SignatureProcessor</a></th>
+<td class="colLast">
+<div class="block">The abstract interface for an signing or verification function of an asymmetric
+ <a href="../../crypt/Cryptor.html" title="interface in io.github.mmm.crypto.crypt"><code>cryptographic algorithm</code></a> typically in combination with a
+ <a href="../../hash/HashCreator.html" title="interface in io.github.mmm.crypto.hash"><code>hasing algorithm</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="SignatureProcessorFactory.html" title="interface in io.github.mmm.crypto.asymmetric.sign">SignatureProcessorFactory</a>&lt;S extends <a href="SignatureBinary.html" title="class in io.github.mmm.crypto.asymmetric.sign">SignatureBinary</a>,&#8203;PR extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PrivateKey.html?is-external=true" title="class or interface in java.security" class="externalLink">PrivateKey</a>,&#8203;PU extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PublicKey.html?is-external=true" title="class or interface in java.security" class="externalLink">PublicKey</a>&gt;</th>
+<td class="colLast">
+<div class="block">Interface for a <a href="../../AbstractCryptoFactory.html" title="interface in io.github.mmm.crypto"><code>factory</code></a> to create instances of <a href="SignatureProcessor.html" title="interface in io.github.mmm.crypto.asymmetric.sign"><code>SignatureProcessor</code></a> for
+ <a href="../key/AsymmetricKeyPair.html" title="interface in io.github.mmm.crypto.asymmetric.key"><code>asymmetric cryptography</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="SignatureSigner.html" title="interface in io.github.mmm.crypto.asymmetric.sign">SignatureSigner</a>&lt;S extends <a href="SignatureBinary.html" title="class in io.github.mmm.crypto.asymmetric.sign">SignatureBinary</a>&gt;</th>
+<td class="colLast">
+<div class="block">Extends <a href="SignatureProcessor.html" title="interface in io.github.mmm.crypto.asymmetric.sign"><code>SignatureProcessor</code></a> with ability to <a href="SignatureSigner.html#signAfterUpdate(boolean)"><code>sign</code></a> the
+ <a href="../../CryptoChunker.html#update(byte%5B%5D)"><code>processed data</code></a> generating a signature.</div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="SignatureSignerSimple.html" title="interface in io.github.mmm.crypto.asymmetric.sign">SignatureSignerSimple</a></th>
+<td class="colLast">
+<div class="block">Extends <a href="SignatureProcessor.html" title="interface in io.github.mmm.crypto.asymmetric.sign"><code>SignatureProcessor</code></a> with ability to <a href="SignatureSignerSimple.html#signAfterUpdateRaw(boolean)"><code>sign</code></a> the
+ <a href="../../CryptoChunker.html#update(byte%5B%5D)"><code>processed data</code></a> generating a signature.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="SignatureVerifier.html" title="interface in io.github.mmm.crypto.asymmetric.sign">SignatureVerifier</a>&lt;S extends <a href="SignatureBinary.html" title="class in io.github.mmm.crypto.asymmetric.sign">SignatureBinary</a>&gt;</th>
+<td class="colLast">
+<div class="block">Extends <a href="SignatureProcessor.html" title="interface in io.github.mmm.crypto.asymmetric.sign"><code>SignatureProcessor</code></a> with ability to <a href="SignatureVerifier.html#verify(io.github.mmm.crypto.CryptoBinary,S)"><code>verify</code></a> a message with a given expected signature.</div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="SignatureVerifierSimple.html" title="interface in io.github.mmm.crypto.asymmetric.sign">SignatureVerifierSimple</a></th>
+<td class="colLast">
+<div class="block">Extends <a href="SignatureProcessor.html" title="interface in io.github.mmm.crypto.asymmetric.sign"><code>SignatureProcessor</code></a> with ability to <a href="SignatureVerifierSimple.html#verify(byte%5B%5D,byte%5B%5D)"><code>verify</code></a> a message with a
+ given expected signature.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="SignatureWithPublicKeyRecovery.html" title="interface in io.github.mmm.crypto.asymmetric.sign">SignatureWithPublicKeyRecovery</a></th>
+<td class="colLast">
+<div class="block">Interface for <a href="SignatureBinary.html" title="class in io.github.mmm.crypto.asymmetric.sign"><code>SignatureBinary</code></a> that allows to <a href="SignatureWithPublicKeyRecovery.html#recoverPublicKey(byte%5B%5D)"><code>recover public key</code></a>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList">
+<table class="typeSummary">
+<caption><span>Class Summary</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Class</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="SignatureAlgorithm.html" title="class in io.github.mmm.crypto.asymmetric.sign">SignatureAlgorithm</a></th>
+<td class="colLast">
+<div class="block">Little helper to workaround quirks in JCE/JCA for <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Signature.html?is-external=true#getAlgorithm()" title="class or interface in java.security" class="externalLink"><code>signature algorithm</code></a>
+ names.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="SignatureBinary.html" title="class in io.github.mmm.crypto.asymmetric.sign">SignatureBinary</a></th>
+<td class="colLast">
+<div class="block">Simple datatype as container for a <a href="SignatureSigner.html#signAfterUpdate(boolean)"><code>signature</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="SignatureConfig.html" title="class in io.github.mmm.crypto.asymmetric.sign">SignatureConfig</a>&lt;S extends <a href="SignatureBinary.html" title="class in io.github.mmm.crypto.asymmetric.sign">SignatureBinary</a>&gt;</th>
+<td class="colLast">
+<div class="block"><a href="../../algorithm/CryptoAlgorithmConfig.html" title="class in io.github.mmm.crypto.algorithm"><code>CryptoAlgorithmConfig</code></a> for <a href="SignatureSigner.html#sign(byte%5B%5D,boolean)"><code>signing</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="SignatureProcessorFactoryImpl.html" title="class in io.github.mmm.crypto.asymmetric.sign">SignatureProcessorFactoryImpl</a>&lt;S extends <a href="SignatureBinary.html" title="class in io.github.mmm.crypto.asymmetric.sign">SignatureBinary</a>,&#8203;PR extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PrivateKey.html?is-external=true" title="class or interface in java.security" class="externalLink">PrivateKey</a>,&#8203;PU extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PublicKey.html?is-external=true" title="class or interface in java.security" class="externalLink">PublicKey</a>&gt;</th>
+<td class="colLast">
+<div class="block">Default implementation of <a href="SignatureProcessorFactory.html" title="interface in io.github.mmm.crypto.asymmetric.sign"><code>SignatureProcessorFactory</code></a> based on <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Signature.html?is-external=true" title="class or interface in java.security" class="externalLink"><code>Signature</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="SignatureProcessorFactoryImplCryptorWithHash.html" title="class in io.github.mmm.crypto.asymmetric.sign">SignatureProcessorFactoryImplCryptorWithHash</a>&lt;PR extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PrivateKey.html?is-external=true" title="class or interface in java.security" class="externalLink">PrivateKey</a>,&#8203;PU extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PublicKey.html?is-external=true" title="class or interface in java.security" class="externalLink">PublicKey</a>&gt;</th>
+<td class="colLast">
+<div class="block">Implementation of <a href="SignatureProcessorFactory.html" title="interface in io.github.mmm.crypto.asymmetric.sign"><code>SignatureProcessorFactory</code></a> combining a <a href="../../crypt/Cryptor.html" title="interface in io.github.mmm.crypto.crypt"><code>Cryptor</code></a> with a
+ <a href="../../hash/HashCreator.html" title="interface in io.github.mmm.crypto.hash"><code>HashCreator</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="SignatureProcessorFactoryImplWithHash.html" title="class in io.github.mmm.crypto.asymmetric.sign">SignatureProcessorFactoryImplWithHash</a>&lt;S extends <a href="SignatureBinary.html" title="class in io.github.mmm.crypto.asymmetric.sign">SignatureBinary</a>,&#8203;PR extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PrivateKey.html?is-external=true" title="class or interface in java.security" class="externalLink">PrivateKey</a>,&#8203;PU extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PublicKey.html?is-external=true" title="class or interface in java.security" class="externalLink">PublicKey</a>&gt;</th>
+<td class="colLast">
+<div class="block">Implementation of <a href="SignatureProcessorFactory.html" title="interface in io.github.mmm.crypto.asymmetric.sign"><code>SignatureProcessorFactory</code></a> combining a <a href="SignatureProcessor.html" title="interface in io.github.mmm.crypto.asymmetric.sign"><code>SignatureProcessor</code></a> with a
+ <a href="../../hash/HashCreator.html" title="interface in io.github.mmm.crypto.hash"><code>HashCreator</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="SignatureProcessorImpl.html" title="class in io.github.mmm.crypto.asymmetric.sign">SignatureProcessorImpl</a></th>
+<td class="colLast">
+<div class="block">Implementation of <a href="SignatureProcessor.html" title="interface in io.github.mmm.crypto.asymmetric.sign"><code>SignatureProcessor</code></a> based on <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Signature.html?is-external=true" title="class or interface in java.security" class="externalLink"><code>Signature</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="SignatureProcessorImplWithHash.html" title="class in io.github.mmm.crypto.asymmetric.sign">SignatureProcessorImplWithHash</a></th>
+<td class="colLast">
+<div class="block">Implementation of <a href="SignatureProcessor.html" title="interface in io.github.mmm.crypto.asymmetric.sign"><code>SignatureProcessor</code></a> combining a <a href="SignatureSigner.html" title="interface in io.github.mmm.crypto.asymmetric.sign"><code>SignatureSigner</code></a> with a
+ <a href="../../hash/HashCreator.html" title="interface in io.github.mmm.crypto.hash"><code>HashCreator</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="SignatureSignerImpl.html" title="class in io.github.mmm.crypto.asymmetric.sign">SignatureSignerImpl</a>&lt;S extends <a href="SignatureBinary.html" title="class in io.github.mmm.crypto.asymmetric.sign">SignatureBinary</a>&gt;</th>
+<td class="colLast">
+<div class="block">Implementation of <a href="SignatureSigner.html" title="interface in io.github.mmm.crypto.asymmetric.sign"><code>SignatureSigner</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="SignatureSignerImplCryptorWithHash.html" title="class in io.github.mmm.crypto.asymmetric.sign">SignatureSignerImplCryptorWithHash</a></th>
+<td class="colLast">
+<div class="block">Implementation of <a href="SignatureSigner.html" title="interface in io.github.mmm.crypto.asymmetric.sign"><code>SignatureSigner</code></a> combining a <a href="../../crypt/Encryptor.html" title="interface in io.github.mmm.crypto.crypt"><code>Encryptor</code></a> with a
+ <a href="../../hash/HashCreator.html" title="interface in io.github.mmm.crypto.hash"><code>HashCreator</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="SignatureSignerImplWithHash.html" title="class in io.github.mmm.crypto.asymmetric.sign">SignatureSignerImplWithHash</a>&lt;S extends <a href="SignatureBinary.html" title="class in io.github.mmm.crypto.asymmetric.sign">SignatureBinary</a>&gt;</th>
+<td class="colLast">
+<div class="block">Implementation of <a href="SignatureSigner.html" title="interface in io.github.mmm.crypto.asymmetric.sign"><code>SignatureSigner</code></a> combining a <a href="../../hash/HashCreator.html" title="interface in io.github.mmm.crypto.hash"><code>HashCreator</code></a> with another
+ <a href="SignatureSigner.html" title="interface in io.github.mmm.crypto.asymmetric.sign"><code>SignatureSigner</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="SignatureVerifierImpl.html" title="class in io.github.mmm.crypto.asymmetric.sign">SignatureVerifierImpl</a>&lt;S extends <a href="SignatureBinary.html" title="class in io.github.mmm.crypto.asymmetric.sign">SignatureBinary</a>&gt;</th>
+<td class="colLast">
+<div class="block">Implementation of <a href="SignatureVerifier.html" title="interface in io.github.mmm.crypto.asymmetric.sign"><code>SignatureVerifier</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="SignatureVerifierImplCryptorWithHash.html" title="class in io.github.mmm.crypto.asymmetric.sign">SignatureVerifierImplCryptorWithHash</a></th>
+<td class="colLast">
+<div class="block">Implementation of <a href="SignatureVerifier.html" title="interface in io.github.mmm.crypto.asymmetric.sign"><code>SignatureVerifier</code></a> combining a <a href="../../crypt/Decryptor.html" title="interface in io.github.mmm.crypto.crypt"><code>Decryptor</code></a> with a
+ <a href="../../hash/HashCreator.html" title="interface in io.github.mmm.crypto.hash"><code>HashCreator</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="SignatureVerifierImplWithHash.html" title="class in io.github.mmm.crypto.asymmetric.sign">SignatureVerifierImplWithHash</a>&lt;S extends <a href="SignatureBinary.html" title="class in io.github.mmm.crypto.asymmetric.sign">SignatureBinary</a>&gt;</th>
+<td class="colLast">
+<div class="block">Implementation of <a href="SignatureVerifier.html" title="interface in io.github.mmm.crypto.asymmetric.sign"><code>SignatureVerifier</code></a> combining a <a href="SignatureVerifier.html" title="interface in io.github.mmm.crypto.asymmetric.sign"><code>SignatureVerifier</code></a> with a
+ <a href="../../hash/HashCreator.html" title="interface in io.github.mmm.crypto.hash"><code>HashCreator</code></a>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+</div>
+</main>
+<footer role="contentinfo">
+<nav role="navigation">
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a id="navbar.bottom">
+<!--   -->
+</a>
+<div class="skipNav"><a href="#skip.navbar.bottom" title="Skip navigation links">Skip navigation links</a></div>
+<a id="navbar.bottom.firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../../index.html">Overview</a></li>
+<li><a href="../../../../../../module-summary.html">Module</a></li>
+<li class="navBarCell1Rev">Package</li>
+<li>Class</li>
+<li><a href="package-use.html">Use</a></li>
+<li><a href="../../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../../../allclasses.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+</div>
+<a id="skip.navbar.bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+</nav>
+<p class="legalCopy"><small>Copyright &#169; 2001&#x2013;2019 <a href="https://m-m-m.github.io">mmm-team</a>. All rights reserved.</small></p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,542 @@
+<!DOCTYPE HTML>
+<!-- NewPage -->
+<html lang="en">
+<head>
+<title>HashCreatorImplDigest (JavaDocs for mmm-all 1.0.0-SNAPSHOT)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="../../../../../../stylesheet.css" title="Style">
+<link rel="stylesheet" type="text/css" href="../../../../../../jquery/jquery-ui.css" title="Style">
+<script type="text/javascript" src="../../../../../../script.js"></script>
+<script type="text/javascript" src="../../../../../../jquery/jszip/dist/jszip.min.js"></script>
+<script type="text/javascript" src="../../../../../../jquery/jszip-utils/dist/jszip-utils.min.js"></script>
+<!--[if IE]>
+<script type="text/javascript" src="../../../../../../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="../../../../../../jquery/jquery-3.3.1.js"></script>
+<script type="text/javascript" src="../../../../../../jquery/jquery-migrate-3.0.1.js"></script>
+<script type="text/javascript" src="../../../../../../jquery/jquery-ui.js"></script>
+</head>
+<body>
+<script type="text/javascript"><!--
+    try {
+        if (location.href.indexOf('is-external=true') == -1) {
+            parent.document.title="HashCreatorImplDigest (JavaDocs for mmm-all 1.0.0-SNAPSHOT)";
+        }
+    }
+    catch(err) {
+    }
+//-->
+var data = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10};
+var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var altColor = "altColor";
+var rowColor = "rowColor";
+var tableTab = "tableTab";
+var activeTableTab = "activeTableTab";
+var pathtoroot = "../../../../../../";
+var useModuleDirectories = true;
+loadScripts(document, 'script');</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<header role="banner">
+<nav role="navigation">
+<div class="fixedNav">
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a id="navbar.top">
+<!--   -->
+</a>
+<div class="skipNav"><a href="#skip.navbar.top" title="Skip navigation links">Skip navigation links</a></div>
+<a id="navbar.top.firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../index.html">Overview</a></li>
+<li><a href="../../../../../module-summary.html">Module</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/HashCreatorImplDigest.html">Use</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../../allclasses.html">All&nbsp;Classes</a></li>
+</ul>
+<ul class="navListSearch">
+<li><label for="search">SEARCH:</label>
+<input type="text" id="search" value="search" disabled="disabled">
+<input type="reset" id="reset" value="reset" disabled="disabled">
+</li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method.summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method.detail">Method</a></li>
+</ul>
+</div>
+<a id="skip.navbar.top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+</div>
+<div class="navPadding">&nbsp;</div>
+<script type="text/javascript"><!--
+$('.navPadding').css('padding-top', $('.fixedNav').css("height"));
+//-->
+</script>
+</nav>
+</header>
+<!-- ======== START OF CLASS DATA ======== -->
+<main role="main">
+<div class="header">
+<div class="subTitle"><span class="moduleLabelInType">Module</span>&nbsp;<a href="../../../../../module-summary.html">io.github.mmm.crypto</a></div>
+<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">io.github.mmm.crypto.hash</a></div>
+<h2 title="Class HashCreatorImplDigest" class="title">Class HashCreatorImplDigest</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../algorithm/AbstractSecurityAlgorithm.html" title="class in io.github.mmm.crypto.algorithm">io.github.mmm.crypto.algorithm.AbstractSecurityAlgorithm</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../algorithm/AbstractCryptoAlgorithmWithProvider.html" title="class in io.github.mmm.crypto.algorithm">io.github.mmm.crypto.algorithm.AbstractCryptoAlgorithmWithProvider</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../algorithm/CryptoAlgorithmImpl.html" title="class in io.github.mmm.crypto.algorithm">io.github.mmm.crypto.algorithm.CryptoAlgorithmImpl</a></li>
+<li>
+<ul class="inheritance">
+<li>io.github.mmm.crypto.hash.HashCreatorImplDigest</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><code><a href="../algorithm/CryptoAlgorithm.html" title="interface in io.github.mmm.crypto.algorithm">CryptoAlgorithm</a></code>, <code><a href="../CryptoChunker.html" title="interface in io.github.mmm.crypto">CryptoChunker</a></code>, <code><a href="../CryptoProcessor.html" title="interface in io.github.mmm.crypto">CryptoProcessor</a></code>, <code><a href="HashCreator.html" title="interface in io.github.mmm.crypto.hash">HashCreator</a></code></dd>
+</dl>
+<dl>
+<dt>Direct Known Subclasses:</dt>
+<dd><code><a href="HashCreatorImplMultipleRounds.html" title="class in io.github.mmm.crypto.hash">HashCreatorImplMultipleRounds</a></code></dd>
+</dl>
+<hr>
+<pre>public class <span class="typeNameLabel">HashCreatorImplDigest</span>
+extends <a href="../algorithm/CryptoAlgorithmImpl.html" title="class in io.github.mmm.crypto.algorithm">CryptoAlgorithmImpl</a>
+implements <a href="HashCreator.html" title="interface in io.github.mmm.crypto.hash">HashCreator</a></pre>
+<div class="block">This is a simple implementation of <a href="HashCreator.html" title="interface in io.github.mmm.crypto.hash"><code>HashCreator</code></a> that only wraps <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/MessageDigest.html?is-external=true" title="class or interface in java.security" class="externalLink"><code>MessageDigest</code></a>.</div>
+<dl>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>1.0.0</dd>
+<dt><span class="simpleTagLabel">Author:</span></dt>
+<dd>Joerg Hohwiller (hohwille at users.sourceforge.net)</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<section role="region">
+<ul class="blockList">
+<li class="blockList"><a id="field.summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<ul class="blockList">
+<li class="blockList"><a id="fields.inherited.from.class.io.github.mmm.crypto.algorithm.AbstractCryptoAlgorithmWithProvider">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;io.github.mmm.crypto.algorithm.<a href="../algorithm/AbstractCryptoAlgorithmWithProvider.html" title="class in io.github.mmm.crypto.algorithm">AbstractCryptoAlgorithmWithProvider</a></h3>
+<code><a href="../algorithm/AbstractCryptoAlgorithmWithProvider.html#provider">provider</a></code></li>
+</ul>
+</li>
+</ul>
+</section>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<section role="region">
+<ul class="blockList">
+<li class="blockList"><a id="constructor.summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="memberSummary">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Constructor</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tr class="altColor">
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.String,io.github.mmm.crypto.provider.SecurityProvider)">HashCreatorImplDigest</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;hashAlgorithm,
+                     <a href="../provider/SecurityProvider.html" title="class in io.github.mmm.crypto.provider">SecurityProvider</a>&nbsp;provider)</code></th>
+<td class="colLast">
+<div class="block">The constructor.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+</section>
+<!-- ========== METHOD SUMMARY =========== -->
+<section role="region">
+<ul class="blockList">
+<li class="blockList"><a id="method.summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="memberSummary">
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tr id="i0" class="altColor">
+<td class="colFirst"><code>protected static <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/MessageDigest.html?is-external=true" title="class or interface in java.security" class="externalLink">MessageDigest</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getOrCloneMessageDigest(java.security.MessageDigest,boolean)">getOrCloneMessageDigest</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/MessageDigest.html?is-external=true" title="class or interface in java.security" class="externalLink">MessageDigest</a>&nbsp;messageDigest,
+                       boolean&nbsp;clone)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>byte[]</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hash(boolean)">hash</a></span>&#8203;(boolean&nbsp;reset)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#reset()">reset</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Will reset the internal state of this object.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#update(byte%5B%5D,int,int)">update</a></span>&#8203;(byte[]&nbsp;input,
+      int&nbsp;offset,
+      int&nbsp;length)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/OutputStream.html?is-external=true" title="class or interface in java.io" class="externalLink">OutputStream</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#wrapStream(java.io.OutputStream)">wrapStream</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/OutputStream.html?is-external=true" title="class or interface in java.io" class="externalLink">OutputStream</a>&nbsp;out)</code></th>
+<td class="colLast">
+<div class="block">Creates a new <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/OutputStream.html?is-external=true" title="class or interface in java.io" class="externalLink"><code>OutputStream</code></a> wraps the given <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/OutputStream.html?is-external=true" title="class or interface in java.io" class="externalLink"><code>OutputStream</code></a>.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.crypto.algorithm.CryptoAlgorithmImpl">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;io.github.mmm.crypto.algorithm.<a href="../algorithm/CryptoAlgorithmImpl.html" title="class in io.github.mmm.crypto.algorithm">CryptoAlgorithmImpl</a></h3>
+<code><a href="../algorithm/CryptoAlgorithmImpl.html#getAlgorithm()">getAlgorithm</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.crypto.algorithm.AbstractCryptoAlgorithmWithProvider">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;io.github.mmm.crypto.algorithm.<a href="../algorithm/AbstractCryptoAlgorithmWithProvider.html" title="class in io.github.mmm.crypto.algorithm">AbstractCryptoAlgorithmWithProvider</a></h3>
+<code><a href="../algorithm/AbstractCryptoAlgorithmWithProvider.html#getProvider()">getProvider</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.crypto.algorithm.AbstractSecurityAlgorithm">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;io.github.mmm.crypto.algorithm.<a href="../algorithm/AbstractSecurityAlgorithm.html" title="class in io.github.mmm.crypto.algorithm">AbstractSecurityAlgorithm</a></h3>
+<code><a href="../algorithm/AbstractSecurityAlgorithm.html#creationFailedException(java.lang.Exception,java.lang.Class)">creationFailedException</a>, <a href="../algorithm/AbstractSecurityAlgorithm.html#creationFailedException(java.lang.Exception,java.lang.Class,java.lang.String)">creationFailedException</a>, <a href="../algorithm/AbstractSecurityAlgorithm.html#creationFailedException(java.lang.Exception,java.lang.String)">creationFailedException</a>, <a href="../algorithm/AbstractSecurityAlgorithm.html#creationFailedException(java.lang.Exception,java.lang.String,java.lang.String)">creationFailedException</a>, <a href="../algorithm/AbstractSecurityAlgorithm.html#getAlgorithm(io.github.mmm.crypto.algorithm.CryptoAlgorithm%5B%5D)">getAlgorithm</a>, <a href="../algorithm/AbstractSecurityAlgorithm.html#toString()">toString</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></h3>
+<code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang" class="externalLink">clone</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang" class="externalLink">equals</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang" class="externalLink">finalize</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang" class="externalLink">getClass</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang" class="externalLink">hashCode</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang" class="externalLink">notify</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang" class="externalLink">notifyAll</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#wait(long,int)" title="class or interface in java.lang" class="externalLink">wait</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.crypto.algorithm.CryptoAlgorithm">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;io.github.mmm.crypto.algorithm.<a href="../algorithm/CryptoAlgorithm.html" title="interface in io.github.mmm.crypto.algorithm">CryptoAlgorithm</a></h3>
+<code><a href="../algorithm/CryptoAlgorithm.html#getAlgorithm()">getAlgorithm</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.crypto.CryptoChunker">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;io.github.mmm.crypto.<a href="../CryptoChunker.html" title="interface in io.github.mmm.crypto">CryptoChunker</a></h3>
+<code><a href="../CryptoChunker.html#update(byte%5B%5D)">update</a>, <a href="../CryptoChunker.html#update(io.github.mmm.crypto.CryptoBinary)">update</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.crypto.CryptoProcessor">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;io.github.mmm.crypto.<a href="../CryptoProcessor.html" title="interface in io.github.mmm.crypto">CryptoProcessor</a></h3>
+<code><a href="../CryptoProcessor.html#process(byte%5B%5D)">process</a>, <a href="../CryptoProcessor.html#process(byte%5B%5D,int,int)">process</a>, <a href="../CryptoProcessor.html#process(io.github.mmm.crypto.CryptoBinary,boolean)">process</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.crypto.hash.HashCreator">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;io.github.mmm.crypto.hash.<a href="HashCreator.html" title="interface in io.github.mmm.crypto.hash">HashCreator</a></h3>
+<code><a href="HashCreator.html#hash()">hash</a>, <a href="HashCreator.html#hash(byte%5B%5D,boolean)">hash</a>, <a href="HashCreator.html#hash(byte%5B%5D,int,int,boolean)">hash</a>, <a href="HashCreator.html#hash(io.github.mmm.crypto.CryptoBinary,boolean)">hash</a>, <a href="HashCreator.html#process(byte%5B%5D,int,int,boolean)">process</a>, <a href="HashCreator.html#wrapStream()">wrapStream</a></code></li>
+</ul>
+</li>
+</ul>
+</section>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<section role="region">
+<ul class="blockList">
+<li class="blockList"><a id="constructor.detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a id="&lt;init&gt;(java.lang.String,io.github.mmm.crypto.provider.SecurityProvider)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>HashCreatorImplDigest</h4>
+<pre>public&nbsp;HashCreatorImplDigest&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;hashAlgorithm,
+                             <a href="../provider/SecurityProvider.html" title="class in io.github.mmm.crypto.provider">SecurityProvider</a>&nbsp;provider)</pre>
+<div class="block">The constructor.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>hashAlgorithm</code> - the name of the hash algorithm to use (e.g. "SHA-256").</dd>
+<dd><code>provider</code> - the <a href="../provider/SecurityProvider.html" title="class in io.github.mmm.crypto.provider"><code>SecurityProvider</code></a> to use.</dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<!-- ============ METHOD DETAIL ========== -->
+<section role="region">
+<ul class="blockList">
+<li class="blockList"><a id="method.detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a id="wrapStream(java.io.OutputStream)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>wrapStream</h4>
+<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/OutputStream.html?is-external=true" title="class or interface in java.io" class="externalLink">OutputStream</a>&nbsp;wrapStream&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/OutputStream.html?is-external=true" title="class or interface in java.io" class="externalLink">OutputStream</a>&nbsp;out)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="HashCreator.html#wrapStream(java.io.OutputStream)">HashCreator</a></code></span></div>
+<div class="block">Creates a new <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/OutputStream.html?is-external=true" title="class or interface in java.io" class="externalLink"><code>OutputStream</code></a> wraps the given <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/OutputStream.html?is-external=true" title="class or interface in java.io" class="externalLink"><code>OutputStream</code></a>. It will automatically
+ <a href="../CryptoChunker.html#update(byte%5B%5D)"><code>update</code></a> all <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/OutputStream.html?is-external=true#write(byte%5B%5D)" title="class or interface in java.io" class="externalLink"><code>written</code></a> data. After data has been written,
+ you may call <a href="HashCreator.html#hash(boolean)"><code>HashCreator.hash(boolean)</code></a> to get the hash of the data. This method will not <a href="../CryptoProcessor.html#reset()"><code>reset</code></a> this
+ hasher. Therefore any previous <a href="../CryptoChunker.html#update(byte%5B%5D)"><code>updated data</code></a> will also influence the hash. The typical usage
+ is to call this method once on a fresh instance of <a href="HashCreator.html" title="interface in io.github.mmm.crypto.hash"><code>HashCreator</code></a>, then write data to that stream and
+ finally get the <a href="HashCreator.html#hash(boolean)"><code>hash</code></a>.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="HashCreator.html#wrapStream(java.io.OutputStream)">wrapStream</a></code>&nbsp;in interface&nbsp;<code><a href="HashCreator.html" title="interface in io.github.mmm.crypto.hash">HashCreator</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>out</code> - the <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/OutputStream.html?is-external=true" title="class or interface in java.io" class="externalLink"><code>OutputStream</code></a> to wrap.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a wrapped <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/OutputStream.html?is-external=true" title="class or interface in java.io" class="externalLink"><code>OutputStream</code></a>.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="HashCreator.html#wrapStream()"><code>HashCreator.wrapStream()</code></a>, 
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DigestOutputStream.html?is-external=true" title="class or interface in java.security" class="externalLink"><code>DigestOutputStream</code></a></dd>
+</dl>
+</li>
+</ul>
+<a id="update(byte[],int,int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>update</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;update&#8203;(byte[]&nbsp;input,
+                   int&nbsp;offset,
+                   int&nbsp;length)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../CryptoChunker.html#update(byte%5B%5D,int,int)">update</a></code>&nbsp;in interface&nbsp;<code><a href="../CryptoChunker.html" title="interface in io.github.mmm.crypto">CryptoChunker</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>input</code> - the next chunk of data.</dd>
+<dd><code>offset</code> - the index where to start reading data from <code>input</code>.</dd>
+<dd><code>length</code> - the number of bytes to read from <code>input</code>.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/MessageDigest.html?is-external=true#update(byte%5B%5D,int,int)" title="class or interface in java.security" class="externalLink"><code>MessageDigest.update(byte[], int, int)</code></a>, 
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Signature.html?is-external=true#update(byte%5B%5D,int,int)" title="class or interface in java.security" class="externalLink"><code>Signature.update(byte[], int, int)</code></a></dd>
+</dl>
+</li>
+</ul>
+<a id="hash(boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>hash</h4>
+<pre class="methodSignature">public&nbsp;byte[]&nbsp;hash&#8203;(boolean&nbsp;reset)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="HashCreator.html#hash(boolean)">hash</a></code>&nbsp;in interface&nbsp;<code><a href="HashCreator.html" title="interface in io.github.mmm.crypto.hash">HashCreator</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>reset</code> - - <code>true</code> if this <a href="HashCreator.html" title="interface in io.github.mmm.crypto.hash"><code>HashCreator</code></a> shall be <a href="../CryptoProcessor.html#reset()"><code>reset</code></a> after the hash
+        calculation, <code>false</code> otherwise. A design problem of <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/MessageDigest.html?is-external=true" title="class or interface in java.security" class="externalLink"><code>MessageDigest</code></a> is that it
+        automatically <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/MessageDigest.html?is-external=true#reset()" title="class or interface in java.security" class="externalLink"><code>resets</code></a> itself on
+        <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/MessageDigest.html?is-external=true#digest()" title="class or interface in java.security" class="externalLink"><code>hashing</code></a> what prevents calculating intermediate hashes but also
+        continue the hash calculation. This API allows to workaround this limitation.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the calculated hash of the current data.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/MessageDigest.html?is-external=true#digest()" title="class or interface in java.security" class="externalLink"><code>MessageDigest.digest()</code></a></dd>
+</dl>
+</li>
+</ul>
+<a id="getOrCloneMessageDigest(java.security.MessageDigest,boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getOrCloneMessageDigest</h4>
+<pre class="methodSignature">protected static&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/MessageDigest.html?is-external=true" title="class or interface in java.security" class="externalLink">MessageDigest</a>&nbsp;getOrCloneMessageDigest&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/MessageDigest.html?is-external=true" title="class or interface in java.security" class="externalLink">MessageDigest</a>&nbsp;messageDigest,
+                                                       boolean&nbsp;clone)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>messageDigest</code> - the original <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/MessageDigest.html?is-external=true" title="class or interface in java.security" class="externalLink"><code>MessageDigest</code></a>.</dd>
+<dd><code>clone</code> - - <code>true</code> to return a clone or copy of the original <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/MessageDigest.html?is-external=true" title="class or interface in java.security" class="externalLink"><code>MessageDigest</code></a>, <code>false</code>
+        otherwise.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the original <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/MessageDigest.html?is-external=true" title="class or interface in java.security" class="externalLink"><code>MessageDigest</code></a> or a <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang" class="externalLink"><code>clone</code></a> of it in case the given <code>clone</code> flag
+         was <code>true</code>.</dd>
+</dl>
+</li>
+</ul>
+<a id="reset()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>reset</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;reset()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../CryptoProcessor.html#reset()">CryptoProcessor</a></code></span></div>
+<div class="block">Will reset the internal state of this object. Please note that complex algorithms especially for
+ <a href="../crypt/Cryptor.html" title="interface in io.github.mmm.crypto.crypt"><code>Cryptor</code></a> may <b>not</b> reusable. It is therefore preferable to always create a
+ fresh instance for each cryptographic task.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../CryptoProcessor.html#reset()">reset</a></code>&nbsp;in interface&nbsp;<code><a href="../CryptoProcessor.html" title="interface in io.github.mmm.crypto">CryptoProcessor</a></code></dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/MessageDigest.html?is-external=true#reset()" title="class or interface in java.security" class="externalLink"><code>MessageDigest.reset()</code></a></dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+</li>
+</ul>
+</div>
+</div>
+</main>
+<!-- ========= END OF CLASS DATA ========= -->
+<footer role="contentinfo">
+<nav role="navigation">
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a id="navbar.bottom">
+<!--   -->
+</a>
+<div class="skipNav"><a href="#skip.navbar.bottom" title="Skip navigation links">Skip navigation links</a></div>
+<a id="navbar.bottom.firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../index.html">Overview</a></li>
+<li><a href="../../../../../module-summary.html">Module</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/HashCreatorImplDigest.html">Use</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../../allclasses.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method.summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method.detail">Method</a></li>
+</ul>
+</div>
+<a id="skip.navbar.bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+</nav>
+<p class="legalCopy"><small>Copyright &#169; 2001&#x2013;2019 <a href="https://m-m-m.github.io">mmm-team</a>. All rights reserved.</small></p>
+</footer>
+</body>
+</html>

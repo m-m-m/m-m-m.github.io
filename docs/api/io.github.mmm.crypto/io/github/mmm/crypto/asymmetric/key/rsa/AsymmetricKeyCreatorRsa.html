@@ -1,0 +1,510 @@
+<!DOCTYPE HTML>
+<!-- NewPage -->
+<html lang="en">
+<head>
+<title>AsymmetricKeyCreatorRsa (JavaDocs for mmm-all 1.0.0-SNAPSHOT)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="../../../../../../../../stylesheet.css" title="Style">
+<link rel="stylesheet" type="text/css" href="../../../../../../../../jquery/jquery-ui.css" title="Style">
+<script type="text/javascript" src="../../../../../../../../script.js"></script>
+<script type="text/javascript" src="../../../../../../../../jquery/jszip/dist/jszip.min.js"></script>
+<script type="text/javascript" src="../../../../../../../../jquery/jszip-utils/dist/jszip-utils.min.js"></script>
+<!--[if IE]>
+<script type="text/javascript" src="../../../../../../../../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="../../../../../../../../jquery/jquery-3.3.1.js"></script>
+<script type="text/javascript" src="../../../../../../../../jquery/jquery-migrate-3.0.1.js"></script>
+<script type="text/javascript" src="../../../../../../../../jquery/jquery-ui.js"></script>
+</head>
+<body>
+<script type="text/javascript"><!--
+    try {
+        if (location.href.indexOf('is-external=true') == -1) {
+            parent.document.title="AsymmetricKeyCreatorRsa (JavaDocs for mmm-all 1.0.0-SNAPSHOT)";
+        }
+    }
+    catch(err) {
+    }
+//-->
+var data = {"i0":10,"i1":10,"i2":10};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var altColor = "altColor";
+var rowColor = "rowColor";
+var tableTab = "tableTab";
+var activeTableTab = "activeTableTab";
+var pathtoroot = "../../../../../../../../";
+var useModuleDirectories = true;
+loadScripts(document, 'script');</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<header role="banner">
+<nav role="navigation">
+<div class="fixedNav">
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a id="navbar.top">
+<!--   -->
+</a>
+<div class="skipNav"><a href="#skip.navbar.top" title="Skip navigation links">Skip navigation links</a></div>
+<a id="navbar.top.firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../../../index.html">Overview</a></li>
+<li><a href="../../../../../../../module-summary.html">Module</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/AsymmetricKeyCreatorRsa.html">Use</a></li>
+<li><a href="../../../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../../../../allclasses.html">All&nbsp;Classes</a></li>
+</ul>
+<ul class="navListSearch">
+<li><label for="search">SEARCH:</label>
+<input type="text" id="search" value="search" disabled="disabled">
+<input type="reset" id="reset" value="reset" disabled="disabled">
+</li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method.summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method.detail">Method</a></li>
+</ul>
+</div>
+<a id="skip.navbar.top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+</div>
+<div class="navPadding">&nbsp;</div>
+<script type="text/javascript"><!--
+$('.navPadding').css('padding-top', $('.fixedNav').css("height"));
+//-->
+</script>
+</nav>
+</header>
+<!-- ======== START OF CLASS DATA ======== -->
+<main role="main">
+<div class="header">
+<div class="subTitle"><span class="moduleLabelInType">Module</span>&nbsp;<a href="../../../../../../../module-summary.html">io.github.mmm.crypto</a></div>
+<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">io.github.mmm.crypto.asymmetric.key.rsa</a></div>
+<h2 title="Class AsymmetricKeyCreatorRsa" class="title">Class AsymmetricKeyCreatorRsa</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../algorithm/AbstractSecurityAlgorithm.html" title="class in io.github.mmm.crypto.algorithm">io.github.mmm.crypto.algorithm.AbstractSecurityAlgorithm</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../algorithm/AbstractCryptoAlgorithmWithProvider.html" title="class in io.github.mmm.crypto.algorithm">io.github.mmm.crypto.algorithm.AbstractCryptoAlgorithmWithProvider</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../algorithm/CryptoAlgorithmImpl.html" title="class in io.github.mmm.crypto.algorithm">io.github.mmm.crypto.algorithm.CryptoAlgorithmImpl</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../algorithm/CryptoAlgorithmImplWithRandom.html" title="class in io.github.mmm.crypto.algorithm">io.github.mmm.crypto.algorithm.CryptoAlgorithmImplWithRandom</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../AbstractAsymmetricKeyCreator.html" title="class in io.github.mmm.crypto.asymmetric.key">io.github.mmm.crypto.asymmetric.key.AbstractAsymmetricKeyCreator</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAPrivateKey.html?is-external=true" title="class or interface in java.security.interfaces" class="externalLink">RSAPrivateKey</a>,&#8203;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAPublicKey.html?is-external=true" title="class or interface in java.security.interfaces" class="externalLink">RSAPublicKey</a>,&#8203;<a href="AsymmetricKeyPairRsa.html" title="class in io.github.mmm.crypto.asymmetric.key.rsa">AsymmetricKeyPairRsa</a>&gt;</li>
+<li>
+<ul class="inheritance">
+<li>io.github.mmm.crypto.asymmetric.key.rsa.AsymmetricKeyCreatorRsa</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><code><a href="../../../algorithm/CryptoAlgorithm.html" title="interface in io.github.mmm.crypto.algorithm">CryptoAlgorithm</a></code>, <code><a href="../AsymmetricKeyCreator.html" title="interface in io.github.mmm.crypto.asymmetric.key">AsymmetricKeyCreator</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAPrivateKey.html?is-external=true" title="class or interface in java.security.interfaces" class="externalLink">RSAPrivateKey</a>,&#8203;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAPublicKey.html?is-external=true" title="class or interface in java.security.interfaces" class="externalLink">RSAPublicKey</a>,&#8203;<a href="AsymmetricKeyPairRsa.html" title="class in io.github.mmm.crypto.asymmetric.key.rsa">AsymmetricKeyPairRsa</a>&gt;</code>, <code><a href="../AsymmetricKeyPairFactory.html" title="interface in io.github.mmm.crypto.asymmetric.key">AsymmetricKeyPairFactory</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAPrivateKey.html?is-external=true" title="class or interface in java.security.interfaces" class="externalLink">RSAPrivateKey</a>,&#8203;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAPublicKey.html?is-external=true" title="class or interface in java.security.interfaces" class="externalLink">RSAPublicKey</a>,&#8203;<a href="AsymmetricKeyPairRsa.html" title="class in io.github.mmm.crypto.asymmetric.key.rsa">AsymmetricKeyPairRsa</a>&gt;</code>, <code><a href="../AsymmetricKeyPairFactorySimple.html" title="interface in io.github.mmm.crypto.asymmetric.key">AsymmetricKeyPairFactorySimple</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAPrivateKey.html?is-external=true" title="class or interface in java.security.interfaces" class="externalLink">RSAPrivateKey</a>,&#8203;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAPublicKey.html?is-external=true" title="class or interface in java.security.interfaces" class="externalLink">RSAPublicKey</a>,&#8203;<a href="AsymmetricKeyPairRsa.html" title="class in io.github.mmm.crypto.asymmetric.key.rsa">AsymmetricKeyPairRsa</a>&gt;</code>, <code><a href="../PrivateKeyFactory.html" title="interface in io.github.mmm.crypto.asymmetric.key">PrivateKeyFactory</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAPrivateKey.html?is-external=true" title="class or interface in java.security.interfaces" class="externalLink">RSAPrivateKey</a>&gt;</code>, <code><a href="../PublicKeyFactory.html" title="interface in io.github.mmm.crypto.asymmetric.key">PublicKeyFactory</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAPublicKey.html?is-external=true" title="class or interface in java.security.interfaces" class="externalLink">RSAPublicKey</a>&gt;</code>, <code><a href="../../../key/KeyCreator.html" title="interface in io.github.mmm.crypto.key">KeyCreator</a></code></dd>
+</dl>
+<hr>
+<pre>public class <span class="typeNameLabel">AsymmetricKeyCreatorRsa</span>
+extends <a href="../AbstractAsymmetricKeyCreator.html" title="class in io.github.mmm.crypto.asymmetric.key">AbstractAsymmetricKeyCreator</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAPrivateKey.html?is-external=true" title="class or interface in java.security.interfaces" class="externalLink">RSAPrivateKey</a>,&#8203;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAPublicKey.html?is-external=true" title="class or interface in java.security.interfaces" class="externalLink">RSAPublicKey</a>,&#8203;<a href="AsymmetricKeyPairRsa.html" title="class in io.github.mmm.crypto.asymmetric.key.rsa">AsymmetricKeyPairRsa</a>&gt;</pre>
+<div class="block">Implementation of <a href="../AsymmetricKeyCreator.html" title="interface in io.github.mmm.crypto.asymmetric.key"><code>AsymmetricKeyCreator</code></a> for <a href="AsymmetricKeyPairRsa.html" title="class in io.github.mmm.crypto.asymmetric.key.rsa"><code>RSA</code></a>.</div>
+<dl>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>1.0.0</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<section role="region">
+<ul class="blockList">
+<li class="blockList"><a id="field.summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<ul class="blockList">
+<li class="blockList"><a id="fields.inherited.from.class.io.github.mmm.crypto.algorithm.AbstractCryptoAlgorithmWithProvider">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;io.github.mmm.crypto.algorithm.<a href="../../../algorithm/AbstractCryptoAlgorithmWithProvider.html" title="class in io.github.mmm.crypto.algorithm">AbstractCryptoAlgorithmWithProvider</a></h3>
+<code><a href="../../../algorithm/AbstractCryptoAlgorithmWithProvider.html#provider">provider</a></code></li>
+</ul>
+</li>
+</ul>
+</section>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<section role="region">
+<ul class="blockList">
+<li class="blockList"><a id="constructor.summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="memberSummary">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Constructor</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tr class="altColor">
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(int)">AsymmetricKeyCreatorRsa</a></span>&#8203;(int&nbsp;keyLength)</code></th>
+<td class="colLast">
+<div class="block">The constructor.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(int,io.github.mmm.crypto.provider.SecurityProvider,io.github.mmm.crypto.random.RandomFactory)">AsymmetricKeyCreatorRsa</a></span>&#8203;(int&nbsp;keyLength,
+                       <a href="../../../provider/SecurityProvider.html" title="class in io.github.mmm.crypto.provider">SecurityProvider</a>&nbsp;provider,
+                       <a href="../../../random/RandomFactory.html" title="interface in io.github.mmm.crypto.random">RandomFactory</a>&nbsp;randomFactory)</code></th>
+<td class="colLast">
+<div class="block">The constructor.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+</section>
+<!-- ========== METHOD SUMMARY =========== -->
+<section role="region">
+<ul class="blockList">
+<li class="blockList"><a id="method.summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="memberSummary">
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tr id="i0" class="altColor">
+<td class="colFirst"><code><a href="AsymmetricKeyPairRsa.html" title="class in io.github.mmm.crypto.asymmetric.key.rsa">AsymmetricKeyPairRsa</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createKeyPair(java.security.interfaces.RSAPrivateKey,java.security.interfaces.RSAPublicKey)">createKeyPair</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAPrivateKey.html?is-external=true" title="class or interface in java.security.interfaces" class="externalLink">RSAPrivateKey</a>&nbsp;privateKey,
+             <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAPublicKey.html?is-external=true" title="class or interface in java.security.interfaces" class="externalLink">RSAPublicKey</a>&nbsp;publicKey)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getKeyLength(java.security.interfaces.RSAPrivateKey)">getKeyLength</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAPrivateKey.html?is-external=true" title="class or interface in java.security.interfaces" class="externalLink">RSAPrivateKey</a>&nbsp;privateKey)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getKeyLength(java.security.interfaces.RSAPublicKey)">getKeyLength</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAPublicKey.html?is-external=true" title="class or interface in java.security.interfaces" class="externalLink">RSAPublicKey</a>&nbsp;publicKey)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.crypto.asymmetric.key.AbstractAsymmetricKeyCreator">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;io.github.mmm.crypto.asymmetric.key.<a href="../AbstractAsymmetricKeyCreator.html" title="class in io.github.mmm.crypto.asymmetric.key">AbstractAsymmetricKeyCreator</a></h3>
+<code><a href="../AbstractAsymmetricKeyCreator.html#asData(PAIR,java.lang.String)">asData</a>, <a href="../AbstractAsymmetricKeyCreator.html#asData(PR,java.lang.String)">asData</a>, <a href="../AbstractAsymmetricKeyCreator.html#asData(PU,java.lang.String)">asData</a>, <a href="../AbstractAsymmetricKeyCreator.html#createKeyPair(byte%5B%5D,java.lang.String)">createKeyPair</a>, <a href="../AbstractAsymmetricKeyCreator.html#createPrivateKey(byte%5B%5D,java.lang.String)">createPrivateKey</a>, <a href="../AbstractAsymmetricKeyCreator.html#createPublicKey(byte%5B%5D,java.lang.String)">createPublicKey</a>, <a href="../AbstractAsymmetricKeyCreator.html#generateKeyPair()">generateKeyPair</a>, <a href="../AbstractAsymmetricKeyCreator.html#getKeyLength()">getKeyLength</a>, <a href="../AbstractAsymmetricKeyCreator.html#init(java.security.KeyPairGenerator)">init</a>, <a href="../AbstractAsymmetricKeyCreator.html#register(io.github.mmm.crypto.asymmetric.key.AsymmetricKeyPairFactory)">register</a>, <a href="../AbstractAsymmetricKeyCreator.html#register(io.github.mmm.crypto.asymmetric.key.AsymmetricKeyPairFactory,java.lang.String)">register</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.crypto.algorithm.CryptoAlgorithmImplWithRandom">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;io.github.mmm.crypto.algorithm.<a href="../../../algorithm/CryptoAlgorithmImplWithRandom.html" title="class in io.github.mmm.crypto.algorithm">CryptoAlgorithmImplWithRandom</a></h3>
+<code><a href="../../../algorithm/CryptoAlgorithmImplWithRandom.html#createSecureRandom()">createSecureRandom</a>, <a href="../../../algorithm/CryptoAlgorithmImplWithRandom.html#getRandomFactory()">getRandomFactory</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.crypto.algorithm.CryptoAlgorithmImpl">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;io.github.mmm.crypto.algorithm.<a href="../../../algorithm/CryptoAlgorithmImpl.html" title="class in io.github.mmm.crypto.algorithm">CryptoAlgorithmImpl</a></h3>
+<code><a href="../../../algorithm/CryptoAlgorithmImpl.html#getAlgorithm()">getAlgorithm</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.crypto.algorithm.AbstractCryptoAlgorithmWithProvider">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;io.github.mmm.crypto.algorithm.<a href="../../../algorithm/AbstractCryptoAlgorithmWithProvider.html" title="class in io.github.mmm.crypto.algorithm">AbstractCryptoAlgorithmWithProvider</a></h3>
+<code><a href="../../../algorithm/AbstractCryptoAlgorithmWithProvider.html#getProvider()">getProvider</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.crypto.algorithm.AbstractSecurityAlgorithm">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;io.github.mmm.crypto.algorithm.<a href="../../../algorithm/AbstractSecurityAlgorithm.html" title="class in io.github.mmm.crypto.algorithm">AbstractSecurityAlgorithm</a></h3>
+<code><a href="../../../algorithm/AbstractSecurityAlgorithm.html#creationFailedException(java.lang.Exception,java.lang.Class)">creationFailedException</a>, <a href="../../../algorithm/AbstractSecurityAlgorithm.html#creationFailedException(java.lang.Exception,java.lang.Class,java.lang.String)">creationFailedException</a>, <a href="../../../algorithm/AbstractSecurityAlgorithm.html#creationFailedException(java.lang.Exception,java.lang.String)">creationFailedException</a>, <a href="../../../algorithm/AbstractSecurityAlgorithm.html#creationFailedException(java.lang.Exception,java.lang.String,java.lang.String)">creationFailedException</a>, <a href="../../../algorithm/AbstractSecurityAlgorithm.html#getAlgorithm(io.github.mmm.crypto.algorithm.CryptoAlgorithm%5B%5D)">getAlgorithm</a>, <a href="../../../algorithm/AbstractSecurityAlgorithm.html#toString()">toString</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></h3>
+<code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang" class="externalLink">clone</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang" class="externalLink">equals</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang" class="externalLink">finalize</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang" class="externalLink">getClass</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang" class="externalLink">hashCode</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang" class="externalLink">notify</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang" class="externalLink">notifyAll</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#wait(long,int)" title="class or interface in java.lang" class="externalLink">wait</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.crypto.asymmetric.key.AsymmetricKeyCreator">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;io.github.mmm.crypto.asymmetric.key.<a href="../AsymmetricKeyCreator.html" title="interface in io.github.mmm.crypto.asymmetric.key">AsymmetricKeyCreator</a></h3>
+<code><a href="../AsymmetricKeyCreator.html#asBinary(PAIR,java.lang.String)">asBinary</a>, <a href="../AsymmetricKeyCreator.html#asBinary(PR,java.lang.String)">asBinary</a>, <a href="../AsymmetricKeyCreator.html#asBinary(PU,java.lang.String)">asBinary</a>, <a href="../AsymmetricKeyCreator.html#asData(PAIR)">asData</a>, <a href="../AsymmetricKeyCreator.html#asData(PR)">asData</a>, <a href="../AsymmetricKeyCreator.html#asData(PU)">asData</a>, <a href="../AsymmetricKeyCreator.html#createKeyPair(byte%5B%5D)">createKeyPair</a>, <a href="../AsymmetricKeyCreator.html#createPrivateKey(byte%5B%5D)">createPrivateKey</a>, <a href="../AsymmetricKeyCreator.html#createPublicKey(byte%5B%5D)">createPublicKey</a>, <a href="../AsymmetricKeyCreator.html#verifyKey(PR)">verifyKey</a>, <a href="../AsymmetricKeyCreator.html#verifyKey(PU)">verifyKey</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.crypto.asymmetric.key.AsymmetricKeyPairFactory">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;io.github.mmm.crypto.asymmetric.key.<a href="../AsymmetricKeyPairFactory.html" title="interface in io.github.mmm.crypto.asymmetric.key">AsymmetricKeyPairFactory</a></h3>
+<code><a href="../AsymmetricKeyPairFactory.html#asBinary(PAIR)">asBinary</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.crypto.algorithm.CryptoAlgorithm">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;io.github.mmm.crypto.algorithm.<a href="../../../algorithm/CryptoAlgorithm.html" title="interface in io.github.mmm.crypto.algorithm">CryptoAlgorithm</a></h3>
+<code><a href="../../../algorithm/CryptoAlgorithm.html#getAlgorithm()">getAlgorithm</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.crypto.asymmetric.key.PrivateKeyFactory">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;io.github.mmm.crypto.asymmetric.key.<a href="../PrivateKeyFactory.html" title="interface in io.github.mmm.crypto.asymmetric.key">PrivateKeyFactory</a></h3>
+<code><a href="../PrivateKeyFactory.html#asBinary(PR)">asBinary</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.crypto.asymmetric.key.PublicKeyFactory">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;io.github.mmm.crypto.asymmetric.key.<a href="../PublicKeyFactory.html" title="interface in io.github.mmm.crypto.asymmetric.key">PublicKeyFactory</a></h3>
+<code><a href="../PublicKeyFactory.html#asBinary(PU)">asBinary</a></code></li>
+</ul>
+</li>
+</ul>
+</section>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<section role="region">
+<ul class="blockList">
+<li class="blockList"><a id="constructor.detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a id="&lt;init&gt;(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>AsymmetricKeyCreatorRsa</h4>
+<pre>public&nbsp;AsymmetricKeyCreatorRsa&#8203;(int&nbsp;keyLength)</pre>
+<div class="block">The constructor.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>keyLength</code> - the <a href="../AbstractAsymmetricKeyCreator.html#getKeyLength()"><code>key length</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="&lt;init&gt;(int,io.github.mmm.crypto.provider.SecurityProvider,io.github.mmm.crypto.random.RandomFactory)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>AsymmetricKeyCreatorRsa</h4>
+<pre>public&nbsp;AsymmetricKeyCreatorRsa&#8203;(int&nbsp;keyLength,
+                               <a href="../../../provider/SecurityProvider.html" title="class in io.github.mmm.crypto.provider">SecurityProvider</a>&nbsp;provider,
+                               <a href="../../../random/RandomFactory.html" title="interface in io.github.mmm.crypto.random">RandomFactory</a>&nbsp;randomFactory)</pre>
+<div class="block">The constructor.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>keyLength</code> - the <a href="../AbstractAsymmetricKeyCreator.html#getKeyLength()"><code>key length</code></a>.</dd>
+<dd><code>provider</code> - the <a href="../../../algorithm/AbstractCryptoAlgorithmWithProvider.html#getProvider()"><code>provider</code></a>.</dd>
+<dd><code>randomFactory</code> - the <a href="../../../algorithm/CryptoAlgorithmImplWithRandom.html#getRandomFactory()"><code>random factory</code></a>.</dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<!-- ============ METHOD DETAIL ========== -->
+<section role="region">
+<ul class="blockList">
+<li class="blockList"><a id="method.detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a id="createKeyPair(java.security.interfaces.RSAPrivateKey,java.security.interfaces.RSAPublicKey)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createKeyPair</h4>
+<pre class="methodSignature">public&nbsp;<a href="AsymmetricKeyPairRsa.html" title="class in io.github.mmm.crypto.asymmetric.key.rsa">AsymmetricKeyPairRsa</a>&nbsp;createKeyPair&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAPrivateKey.html?is-external=true" title="class or interface in java.security.interfaces" class="externalLink">RSAPrivateKey</a>&nbsp;privateKey,
+                                          <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAPublicKey.html?is-external=true" title="class or interface in java.security.interfaces" class="externalLink">RSAPublicKey</a>&nbsp;publicKey)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>privateKey</code> - the <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PrivateKey.html?is-external=true" title="class or interface in java.security" class="externalLink"><code>PrivateKey</code></a>.</dd>
+<dd><code>publicKey</code> - the corresponding <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PublicKey.html?is-external=true" title="class or interface in java.security" class="externalLink"><code>PublicKey</code></a>.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the <a href="../AsymmetricKeyPair.html" title="interface in io.github.mmm.crypto.asymmetric.key"><code>AsymmetricKeyPair</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="getKeyLength(java.security.interfaces.RSAPrivateKey)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getKeyLength</h4>
+<pre class="methodSignature">public&nbsp;int&nbsp;getKeyLength&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAPrivateKey.html?is-external=true" title="class or interface in java.security.interfaces" class="externalLink">RSAPrivateKey</a>&nbsp;privateKey)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>privateKey</code> - the <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PrivateKey.html?is-external=true" title="class or interface in java.security" class="externalLink"><code>PrivateKey</code></a>.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the <a href="../../../key/KeyCreator.html#getKeyLength()"><code>key length</code></a> of the given key in bits.</dd>
+</dl>
+</li>
+</ul>
+<a id="getKeyLength(java.security.interfaces.RSAPublicKey)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getKeyLength</h4>
+<pre class="methodSignature">public&nbsp;int&nbsp;getKeyLength&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAPublicKey.html?is-external=true" title="class or interface in java.security.interfaces" class="externalLink">RSAPublicKey</a>&nbsp;publicKey)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>publicKey</code> - the <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PublicKey.html?is-external=true" title="class or interface in java.security" class="externalLink"><code>PublicKey</code></a>.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the <a href="../../../key/KeyCreator.html#getKeyLength()"><code>key length</code></a> of the given key in bits.</dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+</li>
+</ul>
+</div>
+</div>
+</main>
+<!-- ========= END OF CLASS DATA ========= -->
+<footer role="contentinfo">
+<nav role="navigation">
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a id="navbar.bottom">
+<!--   -->
+</a>
+<div class="skipNav"><a href="#skip.navbar.bottom" title="Skip navigation links">Skip navigation links</a></div>
+<a id="navbar.bottom.firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../../../index.html">Overview</a></li>
+<li><a href="../../../../../../../module-summary.html">Module</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/AsymmetricKeyCreatorRsa.html">Use</a></li>
+<li><a href="../../../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../../../../allclasses.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method.summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method.detail">Method</a></li>
+</ul>
+</div>
+<a id="skip.navbar.bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+</nav>
+<p class="legalCopy"><small>Copyright &#169; 2001&#x2013;2019 <a href="https://m-m-m.github.io">mmm-team</a>. All rights reserved.</small></p>
+</footer>
+</body>
+</html>
