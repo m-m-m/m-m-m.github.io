@@ -171,8 +171,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 
  <h3>Interface only</h3><br>
  If you want to have no boilerplate code at all, like to have multi-inheritance and do not fear magic, you can even
- define your beans as interfaces. To instantiate such bean, you need to use
- <a href="io/github/mmm/bean/BeanFactory.html#create(java.lang.Class)"><code>BeanFactory.create(Class)</code></a>.</div>
+ define your beans as interfaces only. Then you can instantiate them using <code>BeanFactory</code> from the module
+ <code>io.github.mmm.bean.factory</code> of <code>mmm-bean-factory</code>.</div>
 </section>
 <ul class="blockList">
 <li class="blockList">
@@ -198,7 +198,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr class="rowColor" id="i1">
 <th class="colFirst" scope="row"><a href="io/github/mmm/bean/property/package-summary.html">io.github.mmm.bean.property</a></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Contains <a href="io/github/mmm/bean/property/BeanProperty.html" title="class in io.github.mmm.bean.property"><code>BeanProperty</code></a> to allow a bean to contain another bean.</div>
+</td>
 </tr>
 </tbody>
 </table>
@@ -421,7 +423,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
 </nav>
-<p class="legalCopy"><small>Copyright &#169; 2001&#x2013;2019 <a href="https://m-m-m.github.io">mmm-team</a>. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2001&#x2013;2020 <a href="https://m-m-m.github.io">mmm-team</a>. All rights reserved.</small></p>
 </footer>
 </body>
 </html>

@@ -26,8 +26,8 @@
     catch(err) {
     }
 //-->
-var data = {"i0":1,"i1":6};
-var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
+var data = {"i0":1,"i1":6,"i2":18};
+var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -129,13 +129,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 <dl>
 <dt>All Known Implementing Classes:</dt>
-<dd><code><a href="AdvancedBean.html" title="class in io.github.mmm.bean">AdvancedBean</a></code></dd>
+<dd><code><a href="AbstractVirtualBean.html" title="class in io.github.mmm.bean">AbstractVirtualBean</a></code>, <code><a href="AdvancedBean.html" title="class in io.github.mmm.bean">AdvancedBean</a></code></dd>
 </dl>
 <hr>
 <pre>public interface <span class="typeNameLabel">VirtualBean</span>
 extends <a href="WritableBean.html" title="interface in io.github.mmm.bean">WritableBean</a></pre>
 <div class="block"><a href="WritableBean.html" title="interface in io.github.mmm.bean"><code>WritableBean</code></a> that may be <a href="BeanType.html#isVirtual()"><code>virtual</code></a> so it can potentially represent types that do
- not exist as Java <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Class</code></a>.</div>
+ not exist as Java <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Class</code></a>. Further, it has a <a href="BeanClass.html#getPrototype()"><code>prototype</code></a> that is typically
+ <a href="ReadableBean.html#isDynamic()"><code>dynamic</code></a>. If a <a href="../../../../../io.github.mmm.property/io/github/mmm/property/Property.html" title="class in io.github.mmm.property"><code>Property</code></a> is added to the prototype, it will
+ automatically be available by all instances and <a href="BeanClass.html#isSubclassOf(io.github.mmm.bean.BeanClass)"><code>subclasses</code></a>.</div>
 </li>
 </ul>
 </div>
@@ -167,7 +169,7 @@ extends <a href="WritableBean.html" title="interface in io.github.mmm.bean">Writ
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t5" class="tableTab"><span><a href="javascript:show(16);">Default Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colSecond" scope="col">Method</th>
@@ -181,6 +183,11 @@ extends <a href="WritableBean.html" title="interface in io.github.mmm.bean">Writ
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="BeanClass.html" title="interface in io.github.mmm.bean">BeanClass</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getType()">getType</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>default boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isInstanceOf(io.github.mmm.bean.BeanClass)">isInstanceOf</a></span>&#8203;(<a href="BeanClass.html" title="interface in io.github.mmm.bean">BeanClass</a>&nbsp;beanClass)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -229,6 +236,22 @@ extends <a href="WritableBean.html" title="interface in io.github.mmm.bean">Writ
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="#getType()"><code>getType()</code></a>, 
 <a href="BeanClass.html" title="interface in io.github.mmm.bean"><code>BeanClass</code></a></dd>
+</dl>
+</li>
+</ul>
+<a id="isInstanceOf(io.github.mmm.bean.BeanClass)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isInstanceOf</h4>
+<pre class="methodSignature">default&nbsp;boolean&nbsp;isInstanceOf&#8203;(<a href="BeanClass.html" title="interface in io.github.mmm.bean">BeanClass</a>&nbsp;beanClass)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>beanClass</code> - the <a href="BeanClass.html" title="interface in io.github.mmm.bean"><code>BeanClass</code></a> to check.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>true</code> if this <a href="VirtualBean.html" title="interface in io.github.mmm.bean"><code>VirtualBean</code></a> is an instance of the given <a href="BeanClass.html" title="interface in io.github.mmm.bean"><code>BeanClass</code></a>, <code>false</code>
+         otherwise.</dd>
 </dl>
 </li>
 </ul>
@@ -320,7 +343,7 @@ extends <a href="WritableBean.html" title="interface in io.github.mmm.bean">Writ
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
 </nav>
-<p class="legalCopy"><small>Copyright &#169; 2001&#x2013;2019 <a href="https://m-m-m.github.io">mmm-team</a>. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2001&#x2013;2020 <a href="https://m-m-m.github.io">mmm-team</a>. All rights reserved.</small></p>
 </footer>
 </body>
 </html>

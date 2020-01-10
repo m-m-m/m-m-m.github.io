@@ -114,7 +114,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr class="rowColor">
 <th class="colFirst" scope="row"><a href="#io.github.mmm.bean.property">io.github.mmm.bean.property</a></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Contains <a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/property/BeanProperty.html" title="class in io.github.mmm.bean.property"><code>BeanProperty</code></a> to allow a bean to contain another bean.</div>
+</td>
 </tr>
 <tr class="altColor">
 <th class="colFirst" scope="row"><a href="#io.github.mmm.entity.property.id">io.github.mmm.entity.property.id</a></th>
@@ -251,6 +253,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colLast">
 <div class="block">Contains property infrastructure for <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html?is-external=true" title="class or interface in java.time" class="externalLink"><code>ZonedDateTime</code></a>.</div>
 </td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="#io.github.mmm.ui.binding">io.github.mmm.ui.binding</a></th>
+<td class="colLast">&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -876,15 +882,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>default &lt;V,&#8203;P extends <a href="../ReadableProperty.html" title="interface in io.github.mmm.property">ReadableProperty</a>&lt;V&gt;&gt;<br>P</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">PropertyFactoryManager.</span><code><span class="memberNameLink"><a href="../factory/PropertyFactoryManager.html#create(java.lang.Class,java.lang.Class,java.lang.String,io.github.mmm.property.PropertyMetadata)">create</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;P&gt;&nbsp;propertyType,
+<th class="colSecond" scope="row"><span class="typeNameLabel">PropertyFactoryManager.</span><code><span class="memberNameLink"><a href="../factory/PropertyFactoryManager.html#create(java.lang.Class,java.lang.Class,java.lang.String)">create</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;P&gt;&nbsp;propertyType,
       <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;V&gt;&nbsp;valueClass,
-      <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
-      <a href="../PropertyMetadata.html" title="interface in io.github.mmm.property">PropertyMetadata</a>&lt;V&gt;&nbsp;metadata)</code></th>
+      <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>&lt;V,&#8203;PROPERTY extends <a href="../ReadableProperty.html" title="interface in io.github.mmm.property">ReadableProperty</a>&lt;V&gt;&gt;<br>PROPERTY</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">PropertyFactoryManagerImpl.</span><code><span class="memberNameLink"><a href="../factory/PropertyFactoryManagerImpl.html#create(java.lang.Class,java.lang.Class,java.lang.String,io.github.mmm.property.PropertyMetadata)">create</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;PROPERTY&gt;&nbsp;propertyType,
+<td class="colFirst"><code>default &lt;V,&#8203;P extends <a href="../ReadableProperty.html" title="interface in io.github.mmm.property">ReadableProperty</a>&lt;V&gt;&gt;<br>P</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">PropertyFactoryManager.</span><code><span class="memberNameLink"><a href="../factory/PropertyFactoryManager.html#create(java.lang.Class,java.lang.Class,java.lang.String,io.github.mmm.property.PropertyMetadata)">create</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;P&gt;&nbsp;propertyType,
       <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;V&gt;&nbsp;valueClass,
       <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
       <a href="../PropertyMetadata.html" title="interface in io.github.mmm.property">PropertyMetadata</a>&lt;V&gt;&nbsp;metadata)</code></th>
@@ -902,11 +907,6 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>&lt;V,&#8203;PROPERTY extends <a href="../ReadableProperty.html" title="interface in io.github.mmm.property">ReadableProperty</a>&lt;V&gt;&gt;<br><a href="../factory/PropertyFactory.html" title="interface in io.github.mmm.property.factory">PropertyFactory</a>&lt;V,&#8203;? extends PROPERTY&gt;</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">PropertyFactoryManagerImpl.</span><code><span class="memberNameLink"><a href="../factory/PropertyFactoryManagerImpl.html#getFactoryForPropertyType(java.lang.Class)">getFactoryForPropertyType</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;PROPERTY&gt;&nbsp;propertyType)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>default &lt;V,&#8203;P extends <a href="../ReadableProperty.html" title="interface in io.github.mmm.property">ReadableProperty</a>&lt;V&gt;&gt;<br><a href="../factory/PropertyFactory.html" title="interface in io.github.mmm.property.factory">PropertyFactory</a>&lt;V,&#8203;? extends P&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">PropertyFactoryManager.</span><code><span class="memberNameLink"><a href="../factory/PropertyFactoryManager.html#getRequiredFactory(java.lang.Class,java.lang.Class)">getRequiredFactory</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;P&gt;&nbsp;propertyType,
                   <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;V&gt;&nbsp;valueType)</code></th>
@@ -928,11 +928,6 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>&lt;V&gt;&nbsp;<a href="../factory/PropertyFactory.html" title="interface in io.github.mmm.property.factory">PropertyFactory</a>&lt;V,&#8203;? extends <a href="../ReadableProperty.html" title="interface in io.github.mmm.property">ReadableProperty</a>&lt;V&gt;&gt;</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">PropertyFactoryManagerImpl.</span><code><span class="memberNameLink"><a href="../factory/PropertyFactoryManagerImpl.html#getFactoryForValueType(java.lang.Class)">getFactoryForValueType</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends V&gt;&nbsp;valueClass)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../ReadableProperty.html" title="interface in io.github.mmm.property">ReadableProperty</a>&lt;<a href="../factory/PropertyFactory.html" title="type parameter in PropertyFactory">V</a>&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">PropertyFactory.</span><code><span class="memberNameLink"><a href="../factory/PropertyFactory.html#getReadableInterface()">getReadableInterface</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
@@ -2130,6 +2125,58 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </table>
 </section>
 </li>
+<li class="blockList">
+<section role="region"><a id="io.github.mmm.ui.binding">
+<!--   -->
+</a>
+<h3>Uses of <a href="../ReadableProperty.html" title="interface in io.github.mmm.property">ReadableProperty</a> in <a href="../../../../../../io.github.mmm.ui.binding/io/github/mmm/ui/binding/package-summary.html">io.github.mmm.ui.binding</a></h3>
+<table class="useSummary">
+<caption><span>Methods in <a href="../../../../../../io.github.mmm.ui.binding/io/github/mmm/ui/binding/package-summary.html">io.github.mmm.ui.binding</a> with parameters of type <a href="../ReadableProperty.html" title="interface in io.github.mmm.property">ReadableProperty</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>&lt;V&gt;&nbsp;void</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">UiBinding.</span><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui.binding/io/github/mmm/ui/binding/UiBinding.html#bindProperty(io.github.mmm.property.ReadableProperty,io.github.mmm.ui.widget.input.UiInput,java.lang.Object)">bindProperty</a></span>&#8203;(<a href="../ReadableProperty.html" title="interface in io.github.mmm.property">ReadableProperty</a>&lt;V&gt;&nbsp;property,
+            <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/input/UiInput.html" title="interface in io.github.mmm.ui.widget.input">UiInput</a>&lt;V&gt;&nbsp;input,
+            <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;source)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">UiBinding.</span><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui.binding/io/github/mmm/ui/binding/UiBinding.html#createFieldLabel(java.lang.String,boolean,io.github.mmm.property.ReadableProperty,java.lang.Object)">createFieldLabel</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;label,
+                boolean&nbsp;mandatory,
+                <a href="../ReadableProperty.html" title="interface in io.github.mmm.property">ReadableProperty</a>&lt;?&gt;&nbsp;property,
+                <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;source)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">UiBinding.</span><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui.binding/io/github/mmm/ui/binding/UiBinding.html#createId(io.github.mmm.property.ReadableProperty,java.lang.Object)">createId</a></span>&#8203;(<a href="../ReadableProperty.html" title="interface in io.github.mmm.property">ReadableProperty</a>&lt;?&gt;&nbsp;property,
+        <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;source)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>&lt;V&gt;&nbsp;<a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/input/UiInput.html" title="interface in io.github.mmm.ui.widget.input">UiInput</a>&lt;V&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">UiBinding.</span><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui.binding/io/github/mmm/ui/binding/UiBinding.html#createInput(io.github.mmm.property.ReadableProperty,io.github.mmm.ui.UiContext,java.lang.Object)">createInput</a></span>&#8203;(<a href="../ReadableProperty.html" title="interface in io.github.mmm.property">ReadableProperty</a>&lt;V&gt;&nbsp;property,
+           <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/UiContext.html" title="interface in io.github.mmm.ui">UiContext</a>&nbsp;context,
+           <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;source)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">UiBinding.</span><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui.binding/io/github/mmm/ui/binding/UiBinding.html#localizeLabel(io.github.mmm.ui.UiContext,io.github.mmm.property.ReadableProperty,java.lang.Object)">localizeLabel</a></span>&#8203;(<a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/UiContext.html" title="interface in io.github.mmm.ui">UiContext</a>&nbsp;context,
+             <a href="../ReadableProperty.html" title="interface in io.github.mmm.property">ReadableProperty</a>&lt;?&gt;&nbsp;property,
+             <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;source)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
 </ul>
 </li>
 </ul>
@@ -2181,7 +2228,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
 </nav>
-<p class="legalCopy"><small>Copyright &#169; 2001&#x2013;2019 <a href="https://m-m-m.github.io">mmm-team</a>. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2001&#x2013;2020 <a href="https://m-m-m.github.io">mmm-team</a>. All rights reserved.</small></p>
 </footer>
 </body>
 </html>

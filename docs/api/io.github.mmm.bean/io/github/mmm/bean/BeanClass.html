@@ -26,8 +26,8 @@
     catch(err) {
     }
 //-->
-var data = {"i0":1,"i1":6,"i2":6,"i3":6};
-var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
+var data = {"i0":1,"i1":6,"i2":6,"i3":6,"i4":18,"i5":18,"i6":18,"i7":18};
+var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -127,6 +127,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt>All Superinterfaces:</dt>
 <dd><code><a href="BeanType.html" title="interface in io.github.mmm.bean">BeanType</a></code></dd>
 </dl>
+<dl>
+<dt>All Known Implementing Classes:</dt>
+<dd><code><a href="impl/BeanClassImpl.html" title="class in io.github.mmm.bean.impl">BeanClassImpl</a></code></dd>
+</dl>
 <hr>
 <pre>public interface <span class="typeNameLabel">BeanClass</span>
 extends <a href="BeanType.html" title="interface in io.github.mmm.bean">BeanType</a></pre>
@@ -152,7 +156,7 @@ extends <a href="BeanType.html" title="interface in io.github.mmm.bean">BeanType
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t5" class="tableTab"><span><a href="javascript:show(16);">Default Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colSecond" scope="col">Method</th>
@@ -177,8 +181,32 @@ extends <a href="BeanType.html" title="interface in io.github.mmm.bean">BeanType
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="BeanClass.html" title="interface in io.github.mmm.bean">BeanClass</a>&gt;</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="BeanClass.html" title="interface in io.github.mmm.bean">BeanClass</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSuperClasses()">getSuperClasses</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>default boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isSubclassOf(io.github.mmm.bean.BeanClass)">isSubclassOf</a></span>&#8203;(<a href="BeanClass.html" title="interface in io.github.mmm.bean">BeanClass</a>&nbsp;beanClass)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>default boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isSubclassOf(io.github.mmm.bean.BeanClass,boolean,boolean)">isSubclassOf</a></span>&#8203;(<a href="BeanClass.html" title="interface in io.github.mmm.bean">BeanClass</a>&nbsp;beanClass,
+            boolean&nbsp;transitive,
+            boolean&nbsp;equal)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>default boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isSuperclassOf(io.github.mmm.bean.BeanClass)">isSuperclassOf</a></span>&#8203;(<a href="BeanClass.html" title="interface in io.github.mmm.bean">BeanClass</a>&nbsp;beanClass)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>default boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isSuperclassOf(io.github.mmm.bean.BeanClass,boolean,boolean)">isSuperclassOf</a></span>&#8203;(<a href="BeanClass.html" title="interface in io.github.mmm.bean">BeanClass</a>&nbsp;beanClass,
+              boolean&nbsp;transitive,
+              boolean&nbsp;equal)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -187,7 +215,7 @@ extends <a href="BeanType.html" title="interface in io.github.mmm.bean">BeanType
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;io.github.mmm.bean.<a href="BeanType.html" title="interface in io.github.mmm.bean">BeanType</a></h3>
-<code><a href="BeanType.html#getPackageName()">getPackageName</a>, <a href="BeanType.html#getQualifiedName()">getQualifiedName</a>, <a href="BeanType.html#getSimpleName()">getSimpleName</a>, <a href="BeanType.html#getStableName()">getStableName</a>, <a href="BeanType.html#isVirtual()">isVirtual</a></code></li>
+<code><a href="BeanType.html#getJavaClasses()">getJavaClasses</a>, <a href="BeanType.html#getPackageName()">getPackageName</a>, <a href="BeanType.html#getQualifiedName()">getQualifiedName</a>, <a href="BeanType.html#getSimpleName()">getSimpleName</a>, <a href="BeanType.html#getStableName()">getStableName</a>, <a href="BeanType.html#isVirtual()">isVirtual</a></code></li>
 </ul>
 </li>
 </ul>
@@ -211,10 +239,10 @@ extends <a href="BeanType.html" title="interface in io.github.mmm.bean">BeanType
 <ul class="blockList">
 <li class="blockList">
 <h4>getSuperClasses</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="BeanClass.html" title="interface in io.github.mmm.bean">BeanClass</a>&gt;&nbsp;getSuperClasses()</pre>
+<pre class="methodSignature"><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="BeanClass.html" title="interface in io.github.mmm.bean">BeanClass</a>&gt;&nbsp;getSuperClasses()</pre>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>List</code></a> of the super</dd>
+<dd>the <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Collection</code></a> of the super <a href="BeanClass.html" title="interface in io.github.mmm.bean"><code>BeanClass</code></a> this class inherits from.</dd>
 </dl>
 </li>
 </ul>
@@ -229,7 +257,7 @@ extends <a href="BeanType.html" title="interface in io.github.mmm.bean">BeanType
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="BeanType.html#getJavaClass()">getJavaClass</a></code>&nbsp;in interface&nbsp;<code><a href="BeanType.html" title="interface in io.github.mmm.bean">BeanType</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Class</code></a> (or interface) reflecting the "implementation" of this <a href="BeanType.html" title="interface in io.github.mmm.bean"><code>BeanType</code></a>. If this
+<dd>the primary <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Class</code></a> (or interface) reflecting the "implementation" of this <a href="BeanType.html" title="interface in io.github.mmm.bean"><code>BeanType</code></a>. If this
          <a href="BeanType.html" title="interface in io.github.mmm.bean"><code>BeanType</code></a> is <a href="BeanType.html#isVirtual()"><code>virtual</code></a> this will be inherited from the first parent class.</dd>
 </dl>
 </li>
@@ -245,6 +273,81 @@ extends <a href="BeanType.html" title="interface in io.github.mmm.bean">BeanType
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the prototype of this <a href="BeanClass.html" title="interface in io.github.mmm.bean"><code>BeanClass</code></a>. Properties added to this prototype will be inherited by all
          instances of this <a href="BeanClass.html" title="interface in io.github.mmm.bean"><code>BeanClass</code></a> including those created before adding the new property.</dd>
+</dl>
+</li>
+</ul>
+<a id="isSuperclassOf(io.github.mmm.bean.BeanClass)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isSuperclassOf</h4>
+<pre class="methodSignature">default&nbsp;boolean&nbsp;isSuperclassOf&#8203;(<a href="BeanClass.html" title="interface in io.github.mmm.bean">BeanClass</a>&nbsp;beanClass)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>beanClass</code> - the <a href="BeanClass.html" title="interface in io.github.mmm.bean"><code>BeanClass</code></a> to check hierarchical relationship with.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>true</code> if <code>this</code> <a href="BeanClass.html" title="interface in io.github.mmm.bean"><code>BeanClass</code></a> is a transitive <a href="#getSuperClasses()"><code>super-class</code></a> of
+         the given <a href="BeanClass.html" title="interface in io.github.mmm.bean"><code>BeanClass</code></a>, <code>false</code> otherwise.</dd>
+</dl>
+</li>
+</ul>
+<a id="isSuperclassOf(io.github.mmm.bean.BeanClass,boolean,boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isSuperclassOf</h4>
+<pre class="methodSignature">default&nbsp;boolean&nbsp;isSuperclassOf&#8203;(<a href="BeanClass.html" title="interface in io.github.mmm.bean">BeanClass</a>&nbsp;beanClass,
+                               boolean&nbsp;transitive,
+                               boolean&nbsp;equal)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>beanClass</code> - the <a href="BeanClass.html" title="interface in io.github.mmm.bean"><code>BeanClass</code></a> to check hierarchical relationship with.</dd>
+<dd><code>transitive</code> - <code>true</code> to check hierarchy transitive, <code>false</code> otherwise (only check for direct
+        superclass).</dd>
+<dd><code>equal</code> - <code>true</code> if equality of <code>this</code> and the given <a href="BeanClass.html" title="interface in io.github.mmm.bean"><code>BeanClass</code></a> will be accepted (returning
+        <code>true</code>), <code>false</code> otherwise.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>true</code> if <code>this</code> <a href="BeanClass.html" title="interface in io.github.mmm.bean"><code>BeanClass</code></a> is a (<code>transitive</code>) <a href="#getSuperClasses()"><code>super-class</code></a> of (or <code>equal</code> to) the given <a href="BeanClass.html" title="interface in io.github.mmm.bean"><code>BeanClass</code></a>, <code>false</code> otherwise.</dd>
+</dl>
+</li>
+</ul>
+<a id="isSubclassOf(io.github.mmm.bean.BeanClass)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isSubclassOf</h4>
+<pre class="methodSignature">default&nbsp;boolean&nbsp;isSubclassOf&#8203;(<a href="BeanClass.html" title="interface in io.github.mmm.bean">BeanClass</a>&nbsp;beanClass)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>beanClass</code> - the <a href="BeanClass.html" title="interface in io.github.mmm.bean"><code>BeanClass</code></a> to check hierarchical relationship with.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>true</code> if <code>this</code> <a href="BeanClass.html" title="interface in io.github.mmm.bean"><code>BeanClass</code></a> is a transitive sub-class of (or in other words inherits
+         from) the given <a href="BeanClass.html" title="interface in io.github.mmm.bean"><code>BeanClass</code></a>, <code>false</code> otherwise.</dd>
+</dl>
+</li>
+</ul>
+<a id="isSubclassOf(io.github.mmm.bean.BeanClass,boolean,boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isSubclassOf</h4>
+<pre class="methodSignature">default&nbsp;boolean&nbsp;isSubclassOf&#8203;(<a href="BeanClass.html" title="interface in io.github.mmm.bean">BeanClass</a>&nbsp;beanClass,
+                             boolean&nbsp;transitive,
+                             boolean&nbsp;equal)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>beanClass</code> - the <a href="BeanClass.html" title="interface in io.github.mmm.bean"><code>BeanClass</code></a> to check hierarchical relationship with.</dd>
+<dd><code>transitive</code> - <code>true</code> to check hierarchy transitive, <code>false</code> otherwise (only check for direct
+        subclass).</dd>
+<dd><code>equal</code> - <code>true</code> if equality of <code>this</code> and the given <a href="BeanClass.html" title="interface in io.github.mmm.bean"><code>BeanClass</code></a> will be accepted (returning
+        <code>true</code>), <code>false</code> otherwise.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>true</code> if <code>this</code> <a href="BeanClass.html" title="interface in io.github.mmm.bean"><code>BeanClass</code></a> is a (<code>transitive</code>) sub-class of (or <code>equal</code> to)
+         the given <a href="BeanClass.html" title="interface in io.github.mmm.bean"><code>BeanClass</code></a>, <code>false</code> otherwise.</dd>
 </dl>
 </li>
 </ul>
@@ -340,7 +443,7 @@ extends <a href="BeanType.html" title="interface in io.github.mmm.bean">BeanType
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
 </nav>
-<p class="legalCopy"><small>Copyright &#169; 2001&#x2013;2019 <a href="https://m-m-m.github.io">mmm-team</a>. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2001&#x2013;2020 <a href="https://m-m-m.github.io">mmm-team</a>. All rights reserved.</small></p>
 </footer>
 </body>
 </html>

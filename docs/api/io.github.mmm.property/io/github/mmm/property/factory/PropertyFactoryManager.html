@@ -26,8 +26,8 @@
     catch(err) {
     }
 //-->
-var data = {"i0":18,"i1":18,"i2":18,"i3":18,"i4":6,"i5":6,"i6":18};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
+var data = {"i0":18,"i1":18,"i2":18,"i3":18,"i4":1,"i5":18,"i6":6,"i7":6,"i8":18};
+var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -123,10 +123,6 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
-<dl>
-<dt>All Known Implementing Classes:</dt>
-<dd><code><a href="PropertyFactoryManagerImpl.html" title="class in io.github.mmm.property.factory">PropertyFactoryManagerImpl</a></code></dd>
-</dl>
 <hr>
 <pre>public interface <span class="typeNameLabel">PropertyFactoryManager</span></pre>
 <div class="block">This is the interface for the manager where all <a href="PropertyFactory.html" title="interface in io.github.mmm.property.factory"><code>PropertyFactory</code></a> variants are registered.</div>
@@ -148,7 +144,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t5" class="tableTab"><span><a href="javascript:show(16);">Default Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t5" class="tableTab"><span><a href="javascript:show(16);">Default Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colSecond" scope="col">Method</th>
@@ -156,44 +152,54 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>default &lt;V,&#8203;P extends <a href="../ReadableProperty.html" title="interface in io.github.mmm.property">ReadableProperty</a>&lt;V&gt;&gt;<br>P</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#create(java.lang.Class,java.lang.Class,java.lang.String)">create</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;P&gt;&nbsp;propertyType,
+      <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;V&gt;&nbsp;valueClass,
+      <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>default &lt;V,&#8203;P extends <a href="../ReadableProperty.html" title="interface in io.github.mmm.property">ReadableProperty</a>&lt;V&gt;&gt;<br>P</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#create(java.lang.Class,java.lang.Class,java.lang.String,io.github.mmm.property.PropertyMetadata)">create</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;P&gt;&nbsp;propertyType,
       <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;V&gt;&nbsp;valueClass,
       <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
       <a href="../PropertyMetadata.html" title="interface in io.github.mmm.property">PropertyMetadata</a>&lt;V&gt;&nbsp;metadata)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>default &lt;V&gt;&nbsp;<a href="../WritableProperty.html" title="interface in io.github.mmm.property">WritableProperty</a>&lt;V&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#create(java.lang.Class,boolean,java.lang.String)">create</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;V&gt;&nbsp;valueClass,
-      boolean&nbsp;polymorphic,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#create(java.lang.Class,java.lang.String)">create</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;V&gt;&nbsp;valueClass,
       <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>default &lt;V&gt;&nbsp;<a href="../WritableProperty.html" title="interface in io.github.mmm.property">WritableProperty</a>&lt;V&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#create(java.lang.Class,boolean,java.lang.String,io.github.mmm.property.PropertyMetadata)">create</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;V&gt;&nbsp;valueClass,
-      boolean&nbsp;polymorphic,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#create(java.lang.Class,java.lang.String,io.github.mmm.property.PropertyMetadata)">create</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;V&gt;&nbsp;valueClass,
       <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
       <a href="../PropertyMetadata.html" title="interface in io.github.mmm.property">PropertyMetadata</a>&lt;V&gt;&nbsp;metadata)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>static <a href="PropertyFactoryManager.html" title="interface in io.github.mmm.property.factory">PropertyFactoryManager</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#get()">get</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>default &lt;V,&#8203;P extends <a href="../ReadableProperty.html" title="interface in io.github.mmm.property">ReadableProperty</a>&lt;V&gt;&gt;<br><a href="PropertyFactory.html" title="interface in io.github.mmm.property.factory">PropertyFactory</a>&lt;V,&#8203;? extends P&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getFactory(java.lang.Class,java.lang.Class)">getFactory</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;P&gt;&nbsp;propertyType,
           <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends V&gt;&nbsp;valueType)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>&lt;V,&#8203;P extends <a href="../ReadableProperty.html" title="interface in io.github.mmm.property">ReadableProperty</a>&lt;V&gt;&gt;<br><a href="PropertyFactory.html" title="interface in io.github.mmm.property.factory">PropertyFactory</a>&lt;V,&#8203;? extends P&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getFactoryForPropertyType(java.lang.Class)">getFactoryForPropertyType</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;P&gt;&nbsp;propertyType)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>&lt;V&gt;&nbsp;<a href="PropertyFactory.html" title="interface in io.github.mmm.property.factory">PropertyFactory</a>&lt;V,&#8203;? extends <a href="../ReadableProperty.html" title="interface in io.github.mmm.property">ReadableProperty</a>&lt;V&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getFactoryForValueType(java.lang.Class)">getFactoryForValueType</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends V&gt;&nbsp;valueType)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>default &lt;V,&#8203;P extends <a href="../ReadableProperty.html" title="interface in io.github.mmm.property">ReadableProperty</a>&lt;V&gt;&gt;<br><a href="PropertyFactory.html" title="interface in io.github.mmm.property.factory">PropertyFactory</a>&lt;V,&#8203;? extends P&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getRequiredFactory(java.lang.Class,java.lang.Class)">getRequiredFactory</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;P&gt;&nbsp;propertyType,
                   <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;V&gt;&nbsp;valueType)</code></th>
@@ -302,6 +308,34 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 </li>
 </ul>
+<a id="create(java.lang.Class,java.lang.Class,java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>create</h4>
+<pre class="methodSignature">default&nbsp;&lt;V,&#8203;P extends <a href="../ReadableProperty.html" title="interface in io.github.mmm.property">ReadableProperty</a>&lt;V&gt;&gt;&nbsp;P&nbsp;create&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;P&gt;&nbsp;propertyType,
+                                                         <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;V&gt;&nbsp;valueClass,
+                                                         <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</pre>
+<dl>
+<dt><span class="paramLabel">Type Parameters:</span></dt>
+<dd><code>V</code> - the generic type of the <a href="../../../../../../io.github.mmm.value/io/github/mmm/value/ReadableValue.html#get()"><code>property value</code></a>.</dd>
+<dd><code>P</code> - the generic type of the <a href="../WritableProperty.html" title="interface in io.github.mmm.property"><code>property</code></a> to create.</dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>propertyType</code> - the <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Class</code></a> reflecting the property to create. May be the
+        <a href="PropertyFactory.html#getReadableInterface()"><code>readable interface</code></a>,
+        <a href="PropertyFactory.html#getWritableInterface()"><code>writable interface</code></a>, or the
+        <a href="PropertyFactory.html#getImplementationClass()"><code>implementation</code></a>.</dd>
+<dd><code>valueClass</code> - the <a href="../../../../../../io.github.mmm.value/io/github/mmm/value/ReadableTypedValue.html#getValueClass()"><code>value class</code></a>.</dd>
+<dd><code>name</code> - the <a href="../ReadableProperty.html#getName()"><code>property name</code></a>.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the new instance of the property.</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></code> - if no <a href="PropertyFactory.html" title="interface in io.github.mmm.property.factory"><code>PropertyFactory</code></a> was <a href="#getFactoryForPropertyType(java.lang.Class)"><code>found</code></a>
+         for <code>propertyType</code>.</dd>
+</dl>
+</li>
+</ul>
 <a id="create(java.lang.Class,java.lang.Class,java.lang.String,io.github.mmm.property.PropertyMetadata)">
 <!--   -->
 </a>
@@ -323,7 +357,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
         <a href="PropertyFactory.html#getImplementationClass()"><code>implementation</code></a>.</dd>
 <dd><code>valueClass</code> - the <a href="../../../../../../io.github.mmm.value/io/github/mmm/value/ReadableTypedValue.html#getValueClass()"><code>value class</code></a>.</dd>
 <dd><code>name</code> - the <a href="../ReadableProperty.html#getName()"><code>property name</code></a>.</dd>
-<dd><code>metadata</code> - TODO</dd>
+<dd><code>metadata</code> - the <a href="../PropertyMetadata.html" title="interface in io.github.mmm.property"><code>PropertyMetadata</code></a>.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the new instance of the property.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -332,21 +366,19 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 </li>
 </ul>
-<a id="create(java.lang.Class,boolean,java.lang.String)">
+<a id="create(java.lang.Class,java.lang.String)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>create</h4>
 <pre class="methodSignature">default&nbsp;&lt;V&gt;&nbsp;<a href="../WritableProperty.html" title="interface in io.github.mmm.property">WritableProperty</a>&lt;V&gt;&nbsp;create&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;V&gt;&nbsp;valueClass,
-                                       boolean&nbsp;polymorphic,
                                        <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</pre>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
 <dd><code>V</code> - the generic type of the <a href="../../../../../../io.github.mmm.value/io/github/mmm/value/ReadableValue.html#get()"><code>property value</code></a>.</dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>valueClass</code> - the <a href="../../../../../../io.github.mmm.value/io/github/mmm/value/ReadableTypedValue.html#getValueClass()"><code>value class</code></a>.</dd>
-<dd><code>polymorphic</code> - - see <a href="#getFactoryForValueType(java.lang.Class)"><code>getFactoryForValueType(Class)</code></a>.</dd>
 <dd><code>name</code> - the <a href="../ReadableProperty.html#getName()"><code>property name</code></a>.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the new instance of the property.</dd>
@@ -356,14 +388,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 </li>
 </ul>
-<a id="create(java.lang.Class,boolean,java.lang.String,io.github.mmm.property.PropertyMetadata)">
+<a id="create(java.lang.Class,java.lang.String,io.github.mmm.property.PropertyMetadata)">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>create</h4>
 <pre class="methodSignature">default&nbsp;&lt;V&gt;&nbsp;<a href="../WritableProperty.html" title="interface in io.github.mmm.property">WritableProperty</a>&lt;V&gt;&nbsp;create&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;V&gt;&nbsp;valueClass,
-                                       boolean&nbsp;polymorphic,
                                        <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
                                        <a href="../PropertyMetadata.html" title="interface in io.github.mmm.property">PropertyMetadata</a>&lt;V&gt;&nbsp;metadata)</pre>
 <dl>
@@ -371,7 +402,6 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd><code>V</code> - the generic type of the <a href="../../../../../../io.github.mmm.value/io/github/mmm/value/ReadableValue.html#get()"><code>property value</code></a>.</dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>valueClass</code> - the <a href="../../../../../../io.github.mmm.value/io/github/mmm/value/ReadableTypedValue.html#getValueClass()"><code>value class</code></a>.</dd>
-<dd><code>polymorphic</code> - - see <a href="#getFactoryForValueType(java.lang.Class)"><code>getFactoryForValueType(Class)</code></a>.</dd>
 <dd><code>name</code> - the <a href="../ReadableProperty.html#getName()"><code>property name</code></a>.</dd>
 <dd><code>metadata</code> - the <a href="../ReadableProperty.html#getMetadata()"><code>metadata</code></a>.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -379,6 +409,19 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></code> - if no <a href="PropertyFactory.html" title="interface in io.github.mmm.property.factory"><code>PropertyFactory</code></a> was <a href="#getFactoryForPropertyType(java.lang.Class)"><code>found</code></a>
          for <code>propertyType</code>.</dd>
+</dl>
+</li>
+</ul>
+<a id="get()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>get</h4>
+<pre class="methodSignature">static&nbsp;<a href="PropertyFactoryManager.html" title="interface in io.github.mmm.property.factory">PropertyFactoryManager</a>&nbsp;get()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the <a href="PropertyFactoryManager.html" title="interface in io.github.mmm.property.factory"><code>PropertyFactoryManager</code></a> instance.</dd>
 </dl>
 </li>
 </ul>
@@ -451,7 +494,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
 </nav>
-<p class="legalCopy"><small>Copyright &#169; 2001&#x2013;2019 <a href="https://m-m-m.github.io">mmm-team</a>. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2001&#x2013;2020 <a href="https://m-m-m.github.io">mmm-team</a>. All rights reserved.</small></p>
 </footer>
 </body>
 </html>

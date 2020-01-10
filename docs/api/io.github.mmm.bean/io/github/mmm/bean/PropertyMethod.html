@@ -121,10 +121,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/Documented.html?is-external=true" title="class or interface in java.lang.annotation" class="externalLink">@Documented</a>
 public @interface <span class="memberNameLabel">PropertyMethod</span></pre>
 <div class="block">Annotation indicating that a default method of a <a href="WritableBean.html" title="interface in io.github.mmm.bean"><code>WritableBean</code></a> interface is a factory method for a
- <a href="../../../../../io.github.mmm.property/io/github/mmm/property/Property.html" title="class in io.github.mmm.property"><code>Property</code></a>. When <a href="BeanFactory.html" title="interface in io.github.mmm.bean"><code>BeanFactory</code></a> is used to instantiate <a href="WritableBean.html" title="interface in io.github.mmm.bean"><code>WritableBean</code></a>s from
- interface as dynamic <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Proxy.html?is-external=true" title="class or interface in java.lang.reflect" class="externalLink"><code>Proxy</code></a>, such annotated method will be used only internally to create
- the <a href="../../../../../io.github.mmm.property/io/github/mmm/property/Property.html" title="class in io.github.mmm.property"><code>Property</code></a> that is then stored in the dynamic proxy. Further invocations will then
- return the exact same instance instead of calling the default method again.</div>
+ <a href="../../../../../io.github.mmm.property/io/github/mmm/property/Property.html" title="class in io.github.mmm.property"><code>Property</code></a>. When <code>BeanFactory</code> is used to instantiate <a href="WritableBean.html" title="interface in io.github.mmm.bean"><code>WritableBean</code></a>s from
+ interface as dynamic <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Proxy.html?is-external=true" title="class or interface in java.lang.reflect" class="externalLink"><code>Proxy</code></a>, such annotated default method will be used only internally to
+ create the <a href="../../../../../io.github.mmm.property/io/github/mmm/property/Property.html" title="class in io.github.mmm.property"><code>Property</code></a> that is then stored in the dynamic proxy. Further invocations of
+ the annotated default method will then return the exact same instance instead of calling the default method
+ again.<br>
+ Please note that we put the annotation into this module for simplicity so your API can depend on less modules even
+ though it technically belongs to <code>mmm-bean-factory</code>.</div>
 </li>
 </ul>
 </div>
@@ -189,7 +192,7 @@ public @interface <span class="memberNameLabel">PropertyMethod</span></pre>
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
 </nav>
-<p class="legalCopy"><small>Copyright &#169; 2001&#x2013;2019 <a href="https://m-m-m.github.io">mmm-team</a>. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2001&#x2013;2020 <a href="https://m-m-m.github.io">mmm-team</a>. All rights reserved.</small></p>
 </footer>
 </body>
 </html>

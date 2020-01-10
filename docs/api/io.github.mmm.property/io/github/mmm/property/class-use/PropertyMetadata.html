@@ -108,7 +108,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tbody>
 <tr class="altColor">
 <th class="colFirst" scope="row"><a href="#io.github.mmm.bean.property">io.github.mmm.bean.property</a></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Contains <a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/property/BeanProperty.html" title="class in io.github.mmm.bean.property"><code>BeanProperty</code></a> to allow a bean to contain another bean.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <th class="colFirst" scope="row"><a href="#io.github.mmm.entity.property.id">io.github.mmm.entity.property.id</a></th>
@@ -338,6 +340,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/id/IdProperty.html" title="class in io.github.mmm.entity.property.id">IdProperty</a>&lt;<a href="../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/id/IdPropertyBuilder.html" title="type parameter in IdPropertyBuilder">E</a>&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">IdPropertyBuilder.</span><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/id/IdPropertyBuilder.html#build(java.lang.String,io.github.mmm.property.PropertyMetadata)">build</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
+     <a href="../PropertyMetadata.html" title="interface in io.github.mmm.property">PropertyMetadata</a>&lt;<a href="../../../../../../io.github.mmm.entity/io/github/mmm/entity/id/Id.html" title="interface in io.github.mmm.entity.id">Id</a>&lt;<a href="../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/id/IdPropertyBuilder.html" title="type parameter in IdPropertyBuilder">E</a>&gt;&gt;&nbsp;metadata)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/id/IdProperty.html" title="class in io.github.mmm.entity.property.id">IdProperty</a>&lt;<a href="../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/id/PropertyFactoryId.html" title="type parameter in PropertyFactoryId">E</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">PropertyFactoryId.</span><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/id/PropertyFactoryId.html#create(java.lang.String,java.lang.Class,io.github.mmm.property.PropertyMetadata)">create</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
       <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../../../../../../io.github.mmm.entity/io/github/mmm/entity/id/Id.html" title="interface in io.github.mmm.entity.id">Id</a>&lt;<a href="../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/id/PropertyFactoryId.html" title="type parameter in PropertyFactoryId">E</a>&gt;&gt;&nbsp;valueClass,
@@ -354,28 +362,26 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/id/IdProperty.html#%3Cinit%3E(java.lang.Class,io.github.mmm.property.PropertyMetadata,java.lang.Class)">IdProperty</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../../../../../../io.github.mmm.entity/io/github/mmm/entity/id/Id.html" title="interface in io.github.mmm.entity.id">Id</a>&gt;&nbsp;idClass,
-          <a href="../PropertyMetadata.html" title="interface in io.github.mmm.property">PropertyMetadata</a>&lt;<a href="../../../../../../io.github.mmm.entity/io/github/mmm/entity/id/Id.html" title="interface in io.github.mmm.entity.id">Id</a>&lt;<a href="../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/id/IdProperty.html" title="type parameter in IdProperty">E</a>&gt;&gt;&nbsp;metadata,
-          <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;<a href="../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/id/IdProperty.html" title="type parameter in IdProperty">E</a>&gt;&nbsp;entityClass)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/id/IdProperty.html#%3Cinit%3E(io.github.mmm.entity.id.IdFactory,java.lang.Class,io.github.mmm.property.PropertyMetadata)">IdProperty</a></span>&#8203;(<a href="../../../../../../io.github.mmm.entity/io/github/mmm/entity/id/IdFactory.html" title="interface in io.github.mmm.entity.id">IdFactory</a>&lt;?,&#8203;?,&#8203;?&gt;&nbsp;idFactory,
+          <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;<a href="../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/id/IdProperty.html" title="type parameter in IdProperty">E</a>&gt;&nbsp;entityClass,
+          <a href="../PropertyMetadata.html" title="interface in io.github.mmm.property">PropertyMetadata</a>&lt;<a href="../../../../../../io.github.mmm.entity/io/github/mmm/entity/id/Id.html" title="interface in io.github.mmm.entity.id">Id</a>&lt;<a href="../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/id/IdProperty.html" title="type parameter in IdProperty">E</a>&gt;&gt;&nbsp;metadata)</code></th>
 <td class="colLast">
 <div class="block">The constructor.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/id/IdProperty.html#%3Cinit%3E(java.lang.String,java.lang.Class,io.github.mmm.property.PropertyMetadata,java.lang.Class)">IdProperty</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
-          <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../../../../../../io.github.mmm.entity/io/github/mmm/entity/id/Id.html" title="interface in io.github.mmm.entity.id">Id</a>&gt;&nbsp;idClass,
-          <a href="../PropertyMetadata.html" title="interface in io.github.mmm.property">PropertyMetadata</a>&lt;<a href="../../../../../../io.github.mmm.entity/io/github/mmm/entity/id/Id.html" title="interface in io.github.mmm.entity.id">Id</a>&lt;<a href="../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/id/IdProperty.html" title="type parameter in IdProperty">E</a>&gt;&gt;&nbsp;metadata,
-          <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;<a href="../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/id/IdProperty.html" title="type parameter in IdProperty">E</a>&gt;&nbsp;entityClass)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/id/IdProperty.html#%3Cinit%3E(java.lang.String,io.github.mmm.entity.id.IdFactory,java.lang.Class,io.github.mmm.property.PropertyMetadata)">IdProperty</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
+          <a href="../../../../../../io.github.mmm.entity/io/github/mmm/entity/id/IdFactory.html" title="interface in io.github.mmm.entity.id">IdFactory</a>&lt;?,&#8203;?,&#8203;?&gt;&nbsp;idFactory,
+          <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;<a href="../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/id/IdProperty.html" title="type parameter in IdProperty">E</a>&gt;&nbsp;entityClass,
+          <a href="../PropertyMetadata.html" title="interface in io.github.mmm.property">PropertyMetadata</a>&lt;<a href="../../../../../../io.github.mmm.entity/io/github/mmm/entity/id/Id.html" title="interface in io.github.mmm.entity.id">Id</a>&lt;<a href="../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/id/IdProperty.html" title="type parameter in IdProperty">E</a>&gt;&gt;&nbsp;metadata)</code></th>
 <td class="colLast">
 <div class="block">The constructor.</div>
 </td>
 </tr>
 <tr class="altColor">
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/id/IdProperty.html#%3Cinit%3E(java.lang.String,java.lang.Class,io.github.mmm.property.PropertyMetadata,java.lang.Class,io.github.mmm.entity.id.IdFactory)">IdProperty</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/id/IdProperty.html#%3Cinit%3E(java.lang.String,java.lang.Class,io.github.mmm.property.PropertyMetadata)">IdProperty</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
           <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../../../../../../io.github.mmm.entity/io/github/mmm/entity/id/Id.html" title="interface in io.github.mmm.entity.id">Id</a>&gt;&nbsp;idClass,
-          <a href="../PropertyMetadata.html" title="interface in io.github.mmm.property">PropertyMetadata</a>&lt;<a href="../../../../../../io.github.mmm.entity/io/github/mmm/entity/id/Id.html" title="interface in io.github.mmm.entity.id">Id</a>&lt;<a href="../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/id/IdProperty.html" title="type parameter in IdProperty">E</a>&gt;&gt;&nbsp;metadata,
-          <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;<a href="../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/id/IdProperty.html" title="type parameter in IdProperty">E</a>&gt;&nbsp;entityClass,
-          <a href="../../../../../../io.github.mmm.entity/io/github/mmm/entity/id/IdFactory.html" title="interface in io.github.mmm.entity.id">IdFactory</a>&lt;?,&#8203;?,&#8203;?&gt;&nbsp;idFactory)</code></th>
+          <a href="../PropertyMetadata.html" title="interface in io.github.mmm.property">PropertyMetadata</a>&lt;<a href="../../../../../../io.github.mmm.entity/io/github/mmm/entity/id/Id.html" title="interface in io.github.mmm.entity.id">Id</a>&lt;<a href="../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/id/IdProperty.html" title="type parameter in IdProperty">E</a>&gt;&gt;&nbsp;metadata)</code></th>
 <td class="colLast">
 <div class="block">The constructor.</div>
 </td>
@@ -398,6 +404,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/link/LinkProperty.html" title="class in io.github.mmm.entity.property.link">LinkProperty</a>&lt;<a href="../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/link/LinkPropertyBuilder.html" title="type parameter in LinkPropertyBuilder">E</a>&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">LinkPropertyBuilder.</span><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/link/LinkPropertyBuilder.html#build(java.lang.String,io.github.mmm.property.PropertyMetadata)">build</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
+     <a href="../PropertyMetadata.html" title="interface in io.github.mmm.property">PropertyMetadata</a>&lt;<a href="../../../../../../io.github.mmm.entity/io/github/mmm/entity/link/Link.html" title="interface in io.github.mmm.entity.link">Link</a>&lt;<a href="../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/link/LinkPropertyBuilder.html" title="type parameter in LinkPropertyBuilder">E</a>&gt;&gt;&nbsp;metadata)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/link/LinkProperty.html" title="class in io.github.mmm.entity.property.link">LinkProperty</a>&lt;<a href="../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/link/PropertyFactoryLink.html" title="type parameter in PropertyFactoryLink">E</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">PropertyFactoryLink.</span><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/link/PropertyFactoryLink.html#create(java.lang.String,java.lang.Class,io.github.mmm.property.PropertyMetadata)">create</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
       <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../../../../../../io.github.mmm.entity/io/github/mmm/entity/link/Link.html" title="interface in io.github.mmm.entity.link">Link</a>&lt;<a href="../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/link/PropertyFactoryLink.html" title="type parameter in PropertyFactoryLink">E</a>&gt;&gt;&nbsp;valueClass,
@@ -414,6 +426,25 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/link/LinkProperty.html#%3Cinit%3E(java.lang.String,io.github.mmm.entity.id.IdFactory,java.lang.Class,io.github.mmm.property.PropertyMetadata)">LinkProperty</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
+            <a href="../../../../../../io.github.mmm.entity/io/github/mmm/entity/id/IdFactory.html" title="interface in io.github.mmm.entity.id">IdFactory</a>&lt;?,&#8203;?,&#8203;?&gt;&nbsp;idFactory,
+            <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;<a href="../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/link/LinkProperty.html" title="type parameter in LinkProperty">E</a>&gt;&nbsp;entityClass,
+            <a href="../PropertyMetadata.html" title="interface in io.github.mmm.property">PropertyMetadata</a>&lt;<a href="../../../../../../io.github.mmm.entity/io/github/mmm/entity/link/Link.html" title="interface in io.github.mmm.entity.link">Link</a>&lt;<a href="../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/link/LinkProperty.html" title="type parameter in LinkProperty">E</a>&gt;&gt;&nbsp;metadata)</code></th>
+<td class="colLast">
+<div class="block">The constructor.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/link/LinkProperty.html#%3Cinit%3E(java.lang.String,io.github.mmm.entity.id.IdFactory,java.lang.Class,java.util.function.Function,io.github.mmm.property.PropertyMetadata)">LinkProperty</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
+            <a href="../../../../../../io.github.mmm.entity/io/github/mmm/entity/id/IdFactory.html" title="interface in io.github.mmm.entity.id">IdFactory</a>&lt;?,&#8203;?,&#8203;?&gt;&nbsp;idFactory,
+            <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;<a href="../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/link/LinkProperty.html" title="type parameter in LinkProperty">E</a>&gt;&nbsp;entityClass,
+            <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;<a href="../../../../../../io.github.mmm.entity/io/github/mmm/entity/id/Id.html" title="interface in io.github.mmm.entity.id">Id</a>&lt;<a href="../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/link/LinkProperty.html" title="type parameter in LinkProperty">E</a>&gt;,&#8203;<a href="../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/link/LinkProperty.html" title="type parameter in LinkProperty">E</a>&gt;&nbsp;resolver,
+            <a href="../PropertyMetadata.html" title="interface in io.github.mmm.property">PropertyMetadata</a>&lt;<a href="../../../../../../io.github.mmm.entity/io/github/mmm/entity/link/Link.html" title="interface in io.github.mmm.entity.link">Link</a>&lt;<a href="../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/link/LinkProperty.html" title="type parameter in LinkProperty">E</a>&gt;&gt;&nbsp;metadata)</code></th>
+<td class="colLast">
+<div class="block">The constructor.</div>
+</td>
+</tr>
+<tr class="altColor">
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/link/LinkProperty.html#%3Cinit%3E(java.lang.String,io.github.mmm.property.PropertyMetadata)">LinkProperty</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
             <a href="../PropertyMetadata.html" title="interface in io.github.mmm.property">PropertyMetadata</a>&lt;<a href="../../../../../../io.github.mmm.entity/io/github/mmm/entity/link/Link.html" title="interface in io.github.mmm.entity.link">Link</a>&lt;<a href="../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/link/LinkProperty.html" title="type parameter in LinkProperty">E</a>&gt;&gt;&nbsp;metadata)</code></th>
 <td class="colLast">
@@ -421,28 +452,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="rowColor">
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/link/LinkProperty.html#%3Cinit%3E(java.lang.String,io.github.mmm.property.PropertyMetadata,java.lang.Class)">LinkProperty</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
-            <a href="../PropertyMetadata.html" title="interface in io.github.mmm.property">PropertyMetadata</a>&lt;<a href="../../../../../../io.github.mmm.entity/io/github/mmm/entity/link/Link.html" title="interface in io.github.mmm.entity.link">Link</a>&lt;<a href="../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/link/LinkProperty.html" title="type parameter in LinkProperty">E</a>&gt;&gt;&nbsp;metadata,
-            <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;<a href="../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/link/LinkProperty.html" title="type parameter in LinkProperty">E</a>&gt;&nbsp;entityClass)</code></th>
-<td class="colLast">
-<div class="block">The constructor.</div>
-</td>
-</tr>
-<tr class="altColor">
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/link/LinkProperty.html#%3Cinit%3E(java.lang.String,io.github.mmm.property.PropertyMetadata,java.lang.Class,io.github.mmm.entity.id.IdFactory)">LinkProperty</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
-            <a href="../PropertyMetadata.html" title="interface in io.github.mmm.property">PropertyMetadata</a>&lt;<a href="../../../../../../io.github.mmm.entity/io/github/mmm/entity/link/Link.html" title="interface in io.github.mmm.entity.link">Link</a>&lt;<a href="../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/link/LinkProperty.html" title="type parameter in LinkProperty">E</a>&gt;&gt;&nbsp;metadata,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/link/LinkProperty.html#%3Cinit%3E(java.lang.String,java.lang.Class,io.github.mmm.property.PropertyMetadata)">LinkProperty</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
             <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;<a href="../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/link/LinkProperty.html" title="type parameter in LinkProperty">E</a>&gt;&nbsp;entityClass,
-            <a href="../../../../../../io.github.mmm.entity/io/github/mmm/entity/id/IdFactory.html" title="interface in io.github.mmm.entity.id">IdFactory</a>&lt;?,&#8203;?,&#8203;?&gt;&nbsp;idFactory)</code></th>
-<td class="colLast">
-<div class="block">The constructor.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/link/LinkProperty.html#%3Cinit%3E(java.lang.String,io.github.mmm.property.PropertyMetadata,java.lang.Class,io.github.mmm.entity.id.IdFactory,java.util.function.Function)">LinkProperty</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
-            <a href="../PropertyMetadata.html" title="interface in io.github.mmm.property">PropertyMetadata</a>&lt;<a href="../../../../../../io.github.mmm.entity/io/github/mmm/entity/link/Link.html" title="interface in io.github.mmm.entity.link">Link</a>&lt;<a href="../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/link/LinkProperty.html" title="type parameter in LinkProperty">E</a>&gt;&gt;&nbsp;metadata,
-            <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;<a href="../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/link/LinkProperty.html" title="type parameter in LinkProperty">E</a>&gt;&nbsp;entityClass,
-            <a href="../../../../../../io.github.mmm.entity/io/github/mmm/entity/id/IdFactory.html" title="interface in io.github.mmm.entity.id">IdFactory</a>&lt;?,&#8203;?,&#8203;?&gt;&nbsp;idFactory,
-            <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;<a href="../../../../../../io.github.mmm.entity/io/github/mmm/entity/id/Id.html" title="interface in io.github.mmm.entity.id">Id</a>&lt;<a href="../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/link/LinkProperty.html" title="type parameter in LinkProperty">E</a>&gt;,&#8203;<a href="../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/link/LinkProperty.html" title="type parameter in LinkProperty">E</a>&gt;&nbsp;resolver)</code></th>
+            <a href="../PropertyMetadata.html" title="interface in io.github.mmm.property">PropertyMetadata</a>&lt;<a href="../../../../../../io.github.mmm.entity/io/github/mmm/entity/link/Link.html" title="interface in io.github.mmm.entity.link">Link</a>&lt;<a href="../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/link/LinkProperty.html" title="type parameter in LinkProperty">E</a>&gt;&gt;&nbsp;metadata)</code></th>
 <td class="colLast">
 <div class="block">The constructor.</div>
 </td>
@@ -978,16 +990,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>default &lt;V&gt;&nbsp;<a href="../WritableProperty.html" title="interface in io.github.mmm.property">WritableProperty</a>&lt;V&gt;</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">PropertyFactoryManager.</span><code><span class="memberNameLink"><a href="../factory/PropertyFactoryManager.html#create(java.lang.Class,boolean,java.lang.String,io.github.mmm.property.PropertyMetadata)">create</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;V&gt;&nbsp;valueClass,
-      boolean&nbsp;polymorphic,
-      <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
-      <a href="../PropertyMetadata.html" title="interface in io.github.mmm.property">PropertyMetadata</a>&lt;V&gt;&nbsp;metadata)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>&lt;V,&#8203;PROPERTY extends <a href="../ReadableProperty.html" title="interface in io.github.mmm.property">ReadableProperty</a>&lt;V&gt;&gt;<br>PROPERTY</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">PropertyFactoryManagerImpl.</span><code><span class="memberNameLink"><a href="../factory/PropertyFactoryManagerImpl.html#create(java.lang.Class,java.lang.Class,java.lang.String,io.github.mmm.property.PropertyMetadata)">create</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;PROPERTY&gt;&nbsp;propertyType,
-      <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;V&gt;&nbsp;valueClass,
+<th class="colSecond" scope="row"><span class="typeNameLabel">PropertyFactoryManager.</span><code><span class="memberNameLink"><a href="../factory/PropertyFactoryManager.html#create(java.lang.Class,java.lang.String,io.github.mmm.property.PropertyMetadata)">create</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;V&gt;&nbsp;valueClass,
       <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
       <a href="../PropertyMetadata.html" title="interface in io.github.mmm.property">PropertyMetadata</a>&lt;V&gt;&nbsp;metadata)</code></th>
 <td class="colLast">&nbsp;</td>
@@ -1795,7 +1798,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
 </nav>
-<p class="legalCopy"><small>Copyright &#169; 2001&#x2013;2019 <a href="https://m-m-m.github.io">mmm-team</a>. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2001&#x2013;2020 <a href="https://m-m-m.github.io">mmm-team</a>. All rights reserved.</small></p>
 </footer>
 </body>
 </html>

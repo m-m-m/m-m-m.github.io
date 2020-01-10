@@ -203,8 +203,8 @@ extends <a href="AbstractValidator.html" title="class in io.github.mmm.validatio
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="AbstractValidator.html" title="class in io.github.mmm.validation">AbstractValidator</a>&lt;<a href="AbstractComposedValidator.html" title="type parameter in AbstractComposedValidator">V</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#append(io.github.mmm.validation.AbstractValidator...)">append</a></span>&#8203;(<a href="AbstractValidator.html" title="class in io.github.mmm.validation">AbstractValidator</a>&lt;? super <a href="AbstractComposedValidator.html" title="type parameter in AbstractComposedValidator">V</a>&gt;...&nbsp;validators)</code></th>
+<td class="colFirst"><code><a href="Validator.html" title="interface in io.github.mmm.validation">Validator</a>&lt;<a href="AbstractComposedValidator.html" title="type parameter in AbstractComposedValidator">V</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#append(io.github.mmm.validation.Validator...)">append</a></span>&#8203;(<a href="Validator.html" title="interface in io.github.mmm.validation">Validator</a>&lt;? super <a href="AbstractComposedValidator.html" title="type parameter in AbstractComposedValidator">V</a>&gt;...&nbsp;validators)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
@@ -271,7 +271,7 @@ extends <a href="AbstractValidator.html" title="class in io.github.mmm.validatio
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;io.github.mmm.validation.<a href="Validator.html" title="interface in io.github.mmm.validation">Validator</a></h3>
-<code><a href="Validator.html#append(io.github.mmm.validation.Validator...)">append</a>, <a href="Validator.html#isMandatory()">isMandatory</a>, <a href="Validator.html#validate(V)">validate</a>, <a href="Validator.html#validate(V,java.lang.Object)">validate</a></code></li>
+<code><a href="Validator.html#isMandatory()">isMandatory</a>, <a href="Validator.html#validate(V)">validate</a>, <a href="Validator.html#validate(V,java.lang.Object)">validate</a></code></li>
 </ul>
 </li>
 </ul>
@@ -391,21 +391,22 @@ public&nbsp;AbstractComposedValidator&#8203;(<a href="Validator.html" title="int
 </dl>
 </li>
 </ul>
-<a id="append(io.github.mmm.validation.AbstractValidator...)">
+<a id="append(io.github.mmm.validation.Validator...)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>append</h4>
-<pre class="methodSignature">public&nbsp;<a href="AbstractValidator.html" title="class in io.github.mmm.validation">AbstractValidator</a>&lt;<a href="AbstractComposedValidator.html" title="type parameter in AbstractComposedValidator">V</a>&gt;&nbsp;append&#8203;(<a href="AbstractValidator.html" title="class in io.github.mmm.validation">AbstractValidator</a>&lt;? super <a href="AbstractComposedValidator.html" title="type parameter in AbstractComposedValidator">V</a>&gt;...&nbsp;validators)</pre>
+<pre class="methodSignature">public&nbsp;<a href="Validator.html" title="interface in io.github.mmm.validation">Validator</a>&lt;<a href="AbstractComposedValidator.html" title="type parameter in AbstractComposedValidator">V</a>&gt;&nbsp;append&#8203;(<a href="Validator.html" title="interface in io.github.mmm.validation">Validator</a>&lt;? super <a href="AbstractComposedValidator.html" title="type parameter in AbstractComposedValidator">V</a>&gt;...&nbsp;validators)</pre>
 <dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="Validator.html#append(io.github.mmm.validation.Validator...)">append</a></code>&nbsp;in interface&nbsp;<code><a href="Validator.html" title="interface in io.github.mmm.validation">Validator</a>&lt;<a href="AbstractComposedValidator.html" title="type parameter in AbstractComposedValidator">V</a>&gt;</code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="AbstractValidator.html#append(io.github.mmm.validation.AbstractValidator...)">append</a></code>&nbsp;in class&nbsp;<code><a href="AbstractValidator.html" title="class in io.github.mmm.validation">AbstractValidator</a>&lt;<a href="AbstractComposedValidator.html" title="type parameter in AbstractComposedValidator">V</a>&gt;</code></dd>
+<dd><code><a href="AbstractValidator.html#append(io.github.mmm.validation.Validator...)">append</a></code>&nbsp;in class&nbsp;<code><a href="AbstractValidator.html" title="class in io.github.mmm.validation">AbstractValidator</a>&lt;<a href="AbstractComposedValidator.html" title="type parameter in AbstractComposedValidator">V</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>validators</code> - the <a href="AbstractValidator.html" title="class in io.github.mmm.validation"><code>validators</code></a> to append.</dd>
+<dd><code>validators</code> - the <a href="Validator.html" title="interface in io.github.mmm.validation"><code>Validator</code></a>s to append.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>a new <a href="ComposedValidator.html" title="class in io.github.mmm.validation"><code>ComposedValidator</code></a> instance composing the current validator (<code>this</code>) with the given
-         validator.</dd>
+<dd>a new <a href="Validator.html" title="interface in io.github.mmm.validation"><code>Validator</code></a> instance composing this <a href="Validator.html" title="interface in io.github.mmm.validation"><code>Validator</code></a> with the given <code>validators</code>.</dd>
 </dl>
 </li>
 </ul>
@@ -491,7 +492,7 @@ public&nbsp;AbstractComposedValidator&#8203;(<a href="Validator.html" title="int
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
 </nav>
-<p class="legalCopy"><small>Copyright &#169; 2001&#x2013;2019 <a href="https://m-m-m.github.io">mmm-team</a>. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2001&#x2013;2020 <a href="https://m-m-m.github.io">mmm-team</a>. All rights reserved.</small></p>
 </footer>
 </body>
 </html>

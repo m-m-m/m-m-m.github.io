@@ -146,9 +146,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
  object that is called <a href="io/github/mmm/nls/NlsMessage.html" title="interface in io.github.mmm.nls"><code>NlsMessage</code></a>. For exceptions there is additional support via
  <a href="../io.github.mmm.base/io/github/mmm/base/exception/ApplicationException.html" title="class in io.github.mmm.base.exception"><code>ApplicationException</code></a>. Here is an example to clarify the idea of
  <a href="io/github/mmm/nls/NlsMessage.html" title="interface in io.github.mmm.nls"><code>NlsMessage</code></a>: The i18n message is "Hi {name}! How are you?" and the dynamic argument is the
- users name e.g. "Lilli". Now if we store these informations together we have all we need. To get the localized
- message we simply translate the i18n message to the proper language and then fill in the arguments. If we can NOT
- translate we always have the message in default language which is "Hi Lilli! How are you?". <br>
+ users name e.g. "Lilli". Now if we store this information together we have all we need. To get the localized message
+ we simply translate the i18n message to the proper language and then fill in the arguments. If we can NOT translate
+ we always have the message in default language which is "Hi Lilli! How are you?". <br>
  But how do we translate the i18n message to other languages? The answer is quite easy:
  <h4>NlsBundle</h4> The recommended approach is to create a final class derived from
  <a href="io/github/mmm/nls/NlsBundle.html" title="class in io.github.mmm.nls"><code>NlsBundle</code></a>. For each message you define a method that takes the arguments to fill in and
@@ -157,9 +157,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
  <pre>
  package foo.bar;
 
- public final class NlsBundleFooBar extends <a href="io/github/mmm/nls/NlsBundle.html" title="class in io.github.mmm.nls"><code>NlsBundle</code></a> {
+ public final class NlsBundleExample extends <a href="io/github/mmm/nls/NlsBundle.html" title="class in io.github.mmm.nls"><code>NlsBundle</code></a> {
 
-   public static final NlsBundleFooBar INSTANCE = new NlsBundleFooBar();
+   public static final NlsBundleExample INSTANCE = new NlsBundleExample();
 
    <a href="io/github/mmm/nls/NlsMessage.html" title="interface in io.github.mmm.nls"><code>NlsMessage</code></a> messageSayHi(String name) {
      return create("messageSayHi", "Hi {name}! How are you?", <a href="io/github/mmm/nls/argument/NlsArguments.html#ofName(java.lang.Object)"><code>NlsArguments.ofName</code></a>(name));
@@ -175,7 +175,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 
  <pre>
  String userName = "Lilli";
- <a href="io/github/mmm/nls/NlsMessage.html" title="interface in io.github.mmm.nls"><code>NlsMessage</code></a> msg = NlsBundleFooBar.INSTANCE.messageSayHi(userName);
+ <a href="io/github/mmm/nls/NlsMessage.html" title="interface in io.github.mmm.nls"><code>NlsMessage</code></a> msg = NlsBundleExample.INSTANCE.messageSayHi(userName);
+ String text = msg.<a href="../io.github.mmm.base/io/github/mmm/base/i18n/Localizable.html#getMessage()"><code>getMessage</code></a>());
  String textDefault = msg.<a href="../io.github.mmm.base/io/github/mmm/base/i18n/Localizable.html#getLocalizedMessage()"><code>getLocalizedMessage</code></a>());
  String textDe = msg.<a href="io/github/mmm/nls/NlsMessage.html#getLocalizedMessage(java.util.Locale)"><code>getLocalizedMessage</code></a>(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html?is-external=true#GERMAN" title="class or interface in java.util" class="externalLink"><code>Locale.GERMAN</code></a>));
  </pre>
@@ -190,7 +191,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
    }
 
    public LoginAlreadyInUseException(Throwable cause, String login) {
-     super(NlsBundleFooBar.INSTANCE.errorLoginInUse(login), cause);
+     super(NlsBundleExample.INSTANCE.errorLoginInUse(login), cause);
    }
  }
  </pre>
@@ -198,16 +199,16 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
  For further details see <a href="io/github/mmm/nls/NlsBundle.html" title="class in io.github.mmm.nls"><code>NlsBundle</code></a>. <br>
  <br>
  For localization you can create property files with the translations of your NLS-bundle. E.g.
- <code>foo/bar/NlsBundleFooBar_de.properties</code> with this content:
+ <code>foo/bar/NlsBundleExample_de.properties</code> with this content:
 
  <pre>
  messageSayHi = Hallo {name}! Wie geht es Dir?
  errorLoginInUse = Es tut uns leid. Das Login "{login}" ist bereits vergeben. Bitte wählen Sie ein anderes Login.
  </pre>
 
- Unlike the Java defaults, you can use named parameters as instead of indexes what makes it much easier for
- localizers. There are even more advanced features such as recursive translation of arguments and choice format type.
- See <a href="io/github/mmm/nls/NlsMessage.html" title="interface in io.github.mmm.nls"><code>NlsMessage</code></a> for further details.
+ Unlike the Java defaults, you will use named parameters instead of indexes what makes it much easier for localizers.
+ There are even more advanced features such as recursive translation of arguments and choice format type. See
+ <a href="io/github/mmm/nls/NlsMessage.html" title="interface in io.github.mmm.nls"><code>NlsMessage</code></a> for further details.
 
  In order to support you with creating and maintaining the localized properties, this solution also comes with the
  <code>io.github.mmm.nls.sync.NlsSynchronizer</code>. <br>
@@ -403,7 +404,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
 </nav>
-<p class="legalCopy"><small>Copyright &#169; 2001&#x2013;2019 <a href="https://m-m-m.github.io">mmm-team</a>. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2001&#x2013;2020 <a href="https://m-m-m.github.io">mmm-team</a>. All rights reserved.</small></p>
 </footer>
 </body>
 </html>

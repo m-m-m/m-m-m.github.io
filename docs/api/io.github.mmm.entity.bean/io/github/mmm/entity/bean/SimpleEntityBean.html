@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10};
+var data = {"i0":10,"i1":10,"i2":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -88,7 +88,7 @@ loadScripts(document, 'script');</script>
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
 <li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
@@ -160,23 +160,6 @@ implements <a href="EntityBean.html" title="interface in io.github.mmm.entity.be
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
-<!-- ======== NESTED CLASS SUMMARY ======== -->
-<section role="region">
-<ul class="blockList">
-<li class="blockList"><a id="nested.class.summary">
-<!--   -->
-</a>
-<h3>Nested Class Summary</h3>
-<ul class="blockList">
-<li class="blockList"><a id="nested.classes.inherited.from.class.io.github.mmm.bean.AbstractBean">
-<!--   -->
-</a>
-<h3>Nested classes/interfaces inherited from class&nbsp;io.github.mmm.bean.<a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/AbstractBean.html" title="class in io.github.mmm.bean">AbstractBean</a></h3>
-<code><a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/AbstractBean.PropertyBuilders.html" title="class in io.github.mmm.bean">AbstractBean.PropertyBuilders</a></code></li>
-</ul>
-</li>
-</ul>
-</section>
 <!-- =========== FIELD SUMMARY =========== -->
 <section role="region">
 <ul class="blockList">
@@ -243,8 +226,8 @@ implements <a href="EntityBean.html" title="interface in io.github.mmm.entity.be
 </td>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(io.github.mmm.bean.AbstractBean,java.lang.Class,boolean)">SimpleEntityBean</a></span>&#8203;(<a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/AbstractBean.html" title="class in io.github.mmm.bean">AbstractBean</a>&nbsp;writable,
-                <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../../../../../../io.github.mmm.entity/io/github/mmm/entity/id/Id.html" title="interface in io.github.mmm.entity.id">Id</a>&gt;&nbsp;idClass,
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(io.github.mmm.bean.AbstractBean,io.github.mmm.entity.id.IdFactory,boolean)">SimpleEntityBean</a></span>&#8203;(<a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/AbstractBean.html" title="class in io.github.mmm.bean">AbstractBean</a>&nbsp;writable,
+                <a href="../../../../../../io.github.mmm.entity/io/github/mmm/entity/id/IdFactory.html" title="interface in io.github.mmm.entity.id">IdFactory</a>&lt;?,&#8203;?,&#8203;?&gt;&nbsp;idFactory,
                 boolean&nbsp;dynamic)</code></th>
 <td class="colLast">
 <div class="block">The constructor.</div>
@@ -269,6 +252,18 @@ implements <a href="EntityBean.html" title="interface in io.github.mmm.entity.be
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>protected io.github.mmm.entity.property.builder.EntityPropertyBuilders</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#add()">add</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>protected <a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/PropertyBuilders.html" title="class in io.github.mmm.bean">PropertyBuilders</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createPropertyBuilders()">createPropertyBuilders</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Internal method that may be overridden to replace the <a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/PropertyBuilders.html" title="class in io.github.mmm.bean"><code>PropertyBuilders</code></a> implementation.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../property/id/IdProperty.html" title="class in io.github.mmm.entity.property.id">IdProperty</a>&lt;? extends <a href="SimpleEntityBean.html" title="class in io.github.mmm.entity.bean">SimpleEntityBean</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Id()">Id</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
@@ -286,7 +281,7 @@ implements <a href="EntityBean.html" title="interface in io.github.mmm.entity.be
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;io.github.mmm.bean.<a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/AbstractBean.html" title="class in io.github.mmm.bean">AbstractBean</a></h3>
-<code><a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/AbstractBean.html#add()">add</a>, <a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/AbstractBean.html#add(P)">add</a>, <a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/AbstractBean.html#addProperty(P)">addProperty</a>, <a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/AbstractBean.html#create(io.github.mmm.bean.AbstractBean,boolean)">create</a>, <a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/AbstractBean.html#createProperty(java.lang.String,java.lang.Class,java.lang.reflect.Type)">createProperty</a>, <a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/AbstractBean.html#getProperties()">getProperties</a>, <a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/AbstractBean.html#getProperty(java.lang.String)">getProperty</a>, <a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/AbstractBean.html#getPropertyCount()">getPropertyCount</a>, <a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/AbstractBean.html#getReadOnly()">getReadOnly</a>, <a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/AbstractBean.html#isDynamic()">isDynamic</a>, <a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/AbstractBean.html#isReadOnly()">isReadOnly</a>, <a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/AbstractBean.html#isThreadSafe()">isThreadSafe</a>, <a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/AbstractBean.html#onPropertyAdded(io.github.mmm.property.WritableProperty)">onPropertyAdded</a>, <a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/AbstractBean.html#requireDynamic()">requireDynamic</a>, <a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/AbstractBean.html#requireWritable()">requireWritable</a>, <a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/AbstractBean.html#toString()">toString</a>, <a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/AbstractBean.html#toString(java.lang.StringBuilder)">toString</a>, <a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/AbstractBean.html#updateProperties()">updateProperties</a></code></li>
+<code><a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/AbstractBean.html#add(P)">add</a>, <a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/AbstractBean.html#addProperty(P)">addProperty</a>, <a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/AbstractBean.html#create(io.github.mmm.bean.AbstractBean,boolean)">create</a>, <a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/AbstractBean.html#createProperty(java.lang.String,java.lang.Class,java.lang.reflect.Type)">createProperty</a>, <a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/AbstractBean.html#getProperties()">getProperties</a>, <a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/AbstractBean.html#getProperty(java.lang.String)">getProperty</a>, <a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/AbstractBean.html#getPropertyCount()">getPropertyCount</a>, <a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/AbstractBean.html#getReadOnly()">getReadOnly</a>, <a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/AbstractBean.html#isDynamic()">isDynamic</a>, <a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/AbstractBean.html#isReadOnly()">isReadOnly</a>, <a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/AbstractBean.html#isThreadSafe()">isThreadSafe</a>, <a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/AbstractBean.html#onPropertyAdded(io.github.mmm.property.WritableProperty)">onPropertyAdded</a>, <a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/AbstractBean.html#requireDynamic()">requireDynamic</a>, <a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/AbstractBean.html#requireWritable()">requireWritable</a>, <a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/AbstractBean.html#toString()">toString</a>, <a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/AbstractBean.html#toString(java.lang.StringBuilder)">toString</a>, <a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/AbstractBean.html#updateProperties()">updateProperties</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
@@ -379,21 +374,21 @@ implements <a href="EntityBean.html" title="interface in io.github.mmm.entity.be
 </dl>
 </li>
 </ul>
-<a id="&lt;init&gt;(io.github.mmm.bean.AbstractBean,java.lang.Class,boolean)">
+<a id="&lt;init&gt;(io.github.mmm.bean.AbstractBean,io.github.mmm.entity.id.IdFactory,boolean)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>SimpleEntityBean</h4>
 <pre>public&nbsp;SimpleEntityBean&#8203;(<a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/AbstractBean.html" title="class in io.github.mmm.bean">AbstractBean</a>&nbsp;writable,
-                        <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../../../../../../io.github.mmm.entity/io/github/mmm/entity/id/Id.html" title="interface in io.github.mmm.entity.id">Id</a>&gt;&nbsp;idClass,
+                        <a href="../../../../../../io.github.mmm.entity/io/github/mmm/entity/id/IdFactory.html" title="interface in io.github.mmm.entity.id">IdFactory</a>&lt;?,&#8203;?,&#8203;?&gt;&nbsp;idFactory,
                         boolean&nbsp;dynamic)</pre>
 <div class="block">The constructor.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>writable</code> - the writable <a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/Bean.html" title="class in io.github.mmm.bean"><code>Bean</code></a> to create a <a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/AbstractBean.html#isReadOnly()"><code>read-only</code></a> view on or <code>null</code> to
         create a regular mutable <a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/Bean.html" title="class in io.github.mmm.bean"><code>Bean</code></a>.</dd>
-<dd><code>idClass</code> - the <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Class</code></a> of the <a href="../../../../../../io.github.mmm.entity/io/github/mmm/entity/id/Id.html" title="interface in io.github.mmm.entity.id"><code>Id</code></a> implementation.</dd>
+<dd><code>idFactory</code> - the <a href="../../../../../../io.github.mmm.entity/io/github/mmm/entity/id/IdFactory.html" title="interface in io.github.mmm.entity.id"><code>IdFactory</code></a> to marshal data.</dd>
 <dd><code>dynamic</code> - the <a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/AbstractBean.html#isDynamic()"><code>dynamic flag</code></a>.</dd>
 </dl>
 </li>
@@ -411,7 +406,7 @@ implements <a href="EntityBean.html" title="interface in io.github.mmm.entity.be
 <a id="Id()">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>Id</h4>
 <pre class="methodSignature">public&nbsp;<a href="../property/id/IdProperty.html" title="class in io.github.mmm.entity.property.id">IdProperty</a>&lt;? extends <a href="SimpleEntityBean.html" title="class in io.github.mmm.entity.bean">SimpleEntityBean</a>&gt;&nbsp;Id()</pre>
@@ -420,6 +415,38 @@ implements <a href="EntityBean.html" title="interface in io.github.mmm.entity.be
 <dd><code><a href="EntityBean.html#Id()">Id</a></code>&nbsp;in interface&nbsp;<code><a href="EntityBean.html" title="interface in io.github.mmm.entity.bean">EntityBean</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the <a href="../property/id/IdProperty.html" title="class in io.github.mmm.entity.property.id"><code>property</code></a> with the <a href="../../../../../../io.github.mmm.entity/io/github/mmm/entity/id/Id.html" title="interface in io.github.mmm.entity.id"><code>Id</code></a> (primary key) of this entity.</dd>
+</dl>
+</li>
+</ul>
+<a id="add()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>add</h4>
+<pre class="methodSignature">protected&nbsp;io.github.mmm.entity.property.builder.EntityPropertyBuilders&nbsp;add()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/AbstractBean.html#add()">add</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/AbstractBean.html" title="class in io.github.mmm.bean">AbstractBean</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the builder factory to build properties to be added to this bean.</dd>
+</dl>
+</li>
+</ul>
+<a id="createPropertyBuilders()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>createPropertyBuilders</h4>
+<pre class="methodSignature">protected&nbsp;<a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/PropertyBuilders.html" title="class in io.github.mmm.bean">PropertyBuilders</a>&nbsp;createPropertyBuilders()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/AbstractBean.html#createPropertyBuilders()">AbstractBean</a></code></span></div>
+<div class="block">Internal method that may be overridden to replace the <a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/PropertyBuilders.html" title="class in io.github.mmm.bean"><code>PropertyBuilders</code></a> implementation.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/AbstractBean.html#createPropertyBuilders()">createPropertyBuilders</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/AbstractBean.html" title="class in io.github.mmm.bean">AbstractBean</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the <a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/PropertyBuilders.html" title="class in io.github.mmm.bean"><code>PropertyBuilders</code></a> instance.</dd>
 </dl>
 </li>
 </ul>
@@ -475,7 +502,7 @@ implements <a href="EntityBean.html" title="interface in io.github.mmm.entity.be
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
 <li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
@@ -492,7 +519,7 @@ implements <a href="EntityBean.html" title="interface in io.github.mmm.entity.be
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
 </nav>
-<p class="legalCopy"><small>Copyright &#169; 2001&#x2013;2019 <a href="https://m-m-m.github.io">mmm-team</a>. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2001&#x2013;2020 <a href="https://m-m-m.github.io">mmm-team</a>. All rights reserved.</small></p>
 </footer>
 </body>
 </html>

@@ -108,7 +108,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tbody>
 <tr class="altColor">
 <th class="colFirst" scope="row"><a href="#io.github.mmm.bean.property">io.github.mmm.bean.property</a></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Contains <a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/property/BeanProperty.html" title="class in io.github.mmm.bean.property"><code>BeanProperty</code></a> to allow a bean to contain another bean.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <th class="colFirst" scope="row"><a href="#io.github.mmm.entity.property.id">io.github.mmm.entity.property.id</a></th>
@@ -247,6 +249,46 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colLast">
 <div class="block">Contains property infrastructure for <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html?is-external=true" title="class or interface in java.time" class="externalLink"><code>ZonedDateTime</code></a>.</div>
 </td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="#io.github.mmm.ui.spi.widget">io.github.mmm.ui.spi.widget</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="#io.github.mmm.ui.widget">io.github.mmm.ui.widget</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="#io.github.mmm.ui.widget.button">io.github.mmm.ui.widget.button</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="#io.github.mmm.ui.widget.composite">io.github.mmm.ui.widget.composite</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="#io.github.mmm.ui.widget.custom">io.github.mmm.ui.widget.custom</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="#io.github.mmm.ui.widget.input">io.github.mmm.ui.widget.input</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="#io.github.mmm.ui.widget.menu">io.github.mmm.ui.widget.menu</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="#io.github.mmm.ui.widget.panel">io.github.mmm.ui.widget.panel</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="#io.github.mmm.ui.widget.value">io.github.mmm.ui.widget.value</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="#io.github.mmm.ui.widget.window">io.github.mmm.ui.widget.window</a></th>
+<td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
 <th class="colFirst" scope="row"><a href="#io.github.mmm.value.observable">io.github.mmm.value.observable</a></th>
@@ -1794,6 +1836,701 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </section>
 </li>
 <li class="blockList">
+<section role="region"><a id="io.github.mmm.ui.spi.widget">
+<!--   -->
+</a>
+<h3>Uses of <a href="../EventSource.html" title="interface in io.github.mmm.event">EventSource</a> in <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/spi/widget/package-summary.html">io.github.mmm.ui.spi.widget</a></h3>
+<table class="useSummary">
+<caption><span>Subinterfaces of <a href="../EventSource.html" title="interface in io.github.mmm.event">EventSource</a> in <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/spi/widget/package-summary.html">io.github.mmm.ui.spi.widget</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Interface</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/spi/widget/UiNativeWidgetWrapper.html" title="interface in io.github.mmm.ui.spi.widget">UiNativeWidgetWrapper</a>&lt;W&gt;</span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/UiNativeWidget.html" title="interface in io.github.mmm.ui.widget"><code>UiNativeWidget</code></a> implementations that wrap widgets from an existing UI toolkit should implement this interface.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary">
+<caption><span>Classes in <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/spi/widget/package-summary.html">io.github.mmm.ui.spi.widget</a> that implement <a href="../EventSource.html" title="interface in io.github.mmm.event">EventSource</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Class</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html" title="class in io.github.mmm.ui.spi.widget">AbstractUiNativeWidget</a></span></code></th>
+<td class="colLast">
+<div class="block">Abstract base implementation of <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/UiNativeWidget.html" title="interface in io.github.mmm.ui.widget"><code>UiNativeWidget</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/spi/widget/AbstractUiNativeWidgetWrapper.html" title="class in io.github.mmm.ui.spi.widget">AbstractUiNativeWidgetWrapper</a>&lt;W&gt;</span></code></th>
+<td class="colLast">
+<div class="block">Abstract base implementation of <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/UiNativeWidget.html" title="interface in io.github.mmm.ui.widget"><code>UiNativeWidget</code></a> implementing <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/spi/widget/AbstractUiNativeWidgetWrapper.html#getStyles()"><code>AbstractUiNativeWidgetWrapper.getStyles()</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/spi/widget/AbstractUiWidget.html" title="class in io.github.mmm.ui.spi.widget">AbstractUiWidget</a></span></code></th>
+<td class="colLast">
+<div class="block">Abstract base implementation of <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/UiWidget.html" title="interface in io.github.mmm.ui.widget"><code>UiWidget</code></a>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
+<section role="region"><a id="io.github.mmm.ui.widget">
+<!--   -->
+</a>
+<h3>Uses of <a href="../EventSource.html" title="interface in io.github.mmm.event">EventSource</a> in <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/package-summary.html">io.github.mmm.ui.widget</a></h3>
+<table class="useSummary">
+<caption><span>Subinterfaces of <a href="../EventSource.html" title="interface in io.github.mmm.event">EventSource</a> in <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/package-summary.html">io.github.mmm.ui.widget</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Interface</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/UiActiveWidget.html" title="interface in io.github.mmm.ui.widget">UiActiveWidget</a></span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/UiWidget.html" title="interface in io.github.mmm.ui.widget"><code>UiWidget</code></a> that is <em>active</em> so it can be <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/UiWidget.html#setFocused()"><code>focused</code></a> and allows to
+ <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/UiActiveWidget.html#setAccessKey(char)"><code>assign an access-key</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/UiAtomicWidget.html" title="interface in io.github.mmm.ui.widget">UiAtomicWidget</a></span></code></th>
+<td class="colLast">
+<div class="block">Interface for a <em>regular</em> <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/UiWidget.html" title="interface in io.github.mmm.ui.widget"><code>UiWidget</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/UiClickableWidget.html" title="interface in io.github.mmm.ui.widget">UiClickableWidget</a></span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/UiActiveWidget.html" title="interface in io.github.mmm.ui.widget"><code>UiActiveWidget</code></a> that has a <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/UiLabelledWidget.html#getLabel()"><code>label</code></a> and is <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/UiClickableWidget.html#click()"><code>clickable</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/UiClosableWidget.html" title="interface in io.github.mmm.ui.widget">UiClosableWidget</a></span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/UiWidget.html" title="interface in io.github.mmm.ui.widget"><code>UiWidget</code></a> that has a <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/UiClosableWidget.html#isClosable()"><code>closable</code></a> property to configure if it can be closed by the end-user.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/UiFailureWidget.html" title="interface in io.github.mmm.ui.widget">UiFailureWidget</a></span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/UiWidget.html" title="interface in io.github.mmm.ui.widget"><code>UiWidget</code></a> with <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/UiFailureWidget.html#getValidationFailure()"><code>validation failure</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/UiLabel.html" title="interface in io.github.mmm.ui.widget">UiLabel</a></span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/UiRegularWidget.html" title="interface in io.github.mmm.ui.widget"><code>UiRegularWidget</code></a> that represents a label.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/UiLabelledWidget.html" title="interface in io.github.mmm.ui.widget">UiLabelledWidget</a></span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/UiWidget.html" title="interface in io.github.mmm.ui.widget"><code>UiWidget</code></a> that has a label.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/UiNativeWidget.html" title="interface in io.github.mmm.ui.widget">UiNativeWidget</a></span></code></th>
+<td class="colLast">
+<div class="block">This is the marker interface for native <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/UiWidget.html" title="interface in io.github.mmm.ui.widget"><code>UiWidget</code></a>s that can be
+ <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/UiContext.html#create(java.lang.Class)"><code>created from their interface</code></a> via
+ <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/UiContext.html" title="interface in io.github.mmm.ui"><code>UiContext</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/UiRegularWidget.html" title="interface in io.github.mmm.ui.widget">UiRegularWidget</a></span></code></th>
+<td class="colLast">
+<div class="block">Interface for a <em>regular</em> <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/UiWidget.html" title="interface in io.github.mmm.ui.widget"><code>UiWidget</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/UiWidget.html" title="interface in io.github.mmm.ui.widget">UiWidget</a></span></code></th>
+<td class="colLast">
+<div class="block">Interface for an adapter to a physical <em>widget</em> of the underlying native widget toolkit.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
+<section role="region"><a id="io.github.mmm.ui.widget.button">
+<!--   -->
+</a>
+<h3>Uses of <a href="../EventSource.html" title="interface in io.github.mmm.event">EventSource</a> in <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/button/package-summary.html">io.github.mmm.ui.widget.button</a></h3>
+<table class="useSummary">
+<caption><span>Subinterfaces of <a href="../EventSource.html" title="interface in io.github.mmm.event">EventSource</a> in <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/button/package-summary.html">io.github.mmm.ui.widget.button</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Interface</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/button/UiAbstractButton.html" title="interface in io.github.mmm.ui.widget.button">UiAbstractButton</a></span></code></th>
+<td class="colLast">
+<div class="block">This is the abstract interface for an <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/UiRegularWidget.html" title="interface in io.github.mmm.ui.widget"><code>regular widget</code></a> that represents a <em>button</em>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/button/UiButton.html" title="interface in io.github.mmm.ui.widget.button">UiButton</a></span></code></th>
+<td class="colLast">
+<div class="block">This is the interface for an normal <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/button/UiAbstractButton.html" title="interface in io.github.mmm.ui.widget.button"><code>button</code></a>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
+<section role="region"><a id="io.github.mmm.ui.widget.composite">
+<!--   -->
+</a>
+<h3>Uses of <a href="../EventSource.html" title="interface in io.github.mmm.event">EventSource</a> in <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/composite/package-summary.html">io.github.mmm.ui.widget.composite</a></h3>
+<table class="useSummary">
+<caption><span>Subinterfaces of <a href="../EventSource.html" title="interface in io.github.mmm.event">EventSource</a> in <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/composite/package-summary.html">io.github.mmm.ui.widget.composite</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Interface</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/composite/UiComposite.html" title="interface in io.github.mmm.ui.widget.composite">UiComposite</a>&lt;C extends <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/UiWidget.html" title="interface in io.github.mmm.ui.widget">UiWidget</a>&gt;</span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/UiWidget.html" title="interface in io.github.mmm.ui.widget"><code>UiWidget</code></a> that is <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/composite/UiComposite.html#getChild(int)"><code>composed out of child widgets</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/composite/UiDynamicComposite.html" title="interface in io.github.mmm.ui.widget.composite">UiDynamicComposite</a>&lt;C extends <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/UiWidget.html" title="interface in io.github.mmm.ui.widget">UiWidget</a>&gt;</span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/composite/UiComposite.html" title="interface in io.github.mmm.ui.widget.composite"><code>UiComposite</code></a> that allows to <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/composite/UiDynamicComposite.html#addChild(C)"><code>add</code></a> and <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/composite/UiDynamicComposite.html#removeChild(C)"><code>remove</code></a> its
+ children dynamically with no additional arguments (e.g.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/composite/UiFailureComposite.html" title="interface in io.github.mmm.ui.widget.composite">UiFailureComposite</a>&lt;C extends <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/UiWidget.html" title="interface in io.github.mmm.ui.widget">UiWidget</a>&gt;</span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/value/UiValidatableWidget.html" title="interface in io.github.mmm.ui.widget.value"><code>UiValidatableWidget</code></a> that is a <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/composite/UiComposite.html" title="interface in io.github.mmm.ui.widget.composite"><code>UiComposite</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/composite/UiMutableSingleComposite.html" title="interface in io.github.mmm.ui.widget.composite">UiMutableSingleComposite</a>&lt;C extends <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/UiWidget.html" title="interface in io.github.mmm.ui.widget">UiWidget</a>&gt;</span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/composite/UiSingleComposite.html" title="interface in io.github.mmm.ui.widget.composite"><code>UiSingleComposite</code></a> that is mutable and allows to <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/composite/UiMutableSingleComposite.html#setChild(C)"><code>set its child widget</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/composite/UiSingleComposite.html" title="interface in io.github.mmm.ui.widget.composite">UiSingleComposite</a>&lt;C extends <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/UiWidget.html" title="interface in io.github.mmm.ui.widget">UiWidget</a>&gt;</span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/composite/UiComposite.html" title="interface in io.github.mmm.ui.widget.composite"><code>UiComposite</code></a> that contains a single <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/composite/UiSingleComposite.html#getChild()"><code>child</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/composite/UiSwitchComposite.html" title="interface in io.github.mmm.ui.widget.composite">UiSwitchComposite</a>&lt;C extends <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/UiWidget.html" title="interface in io.github.mmm.ui.widget">UiWidget</a>&gt;</span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/composite/UiDynamicComposite.html" title="interface in io.github.mmm.ui.widget.composite"><code>UiDynamicComposite</code></a> that only shows a single <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/composite/UiComposite.html#getChild(int)"><code>child</code></a> at a time.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/composite/UiTab.html" title="interface in io.github.mmm.ui.widget.composite">UiTab</a></span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/composite/UiMutableSingleComposite.html" title="interface in io.github.mmm.ui.widget.composite"><code>UiMutableSingleComposite</code></a> that represents a single <code>tab</code>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
+<section role="region"><a id="io.github.mmm.ui.widget.custom">
+<!--   -->
+</a>
+<h3>Uses of <a href="../EventSource.html" title="interface in io.github.mmm.event">EventSource</a> in <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/custom/package-summary.html">io.github.mmm.ui.widget.custom</a></h3>
+<table class="useSummary">
+<caption><span>Classes in <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/custom/package-summary.html">io.github.mmm.ui.widget.custom</a> that implement <a href="../EventSource.html" title="interface in io.github.mmm.event">EventSource</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Class</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/custom/UiCustomComposite.html" title="class in io.github.mmm.ui.widget.custom">UiCustomComposite</a>&lt;W extends <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/composite/UiComposite.html" title="interface in io.github.mmm.ui.widget.composite">UiComposite</a>&lt;C&gt;,&#8203;C extends <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/UiWidget.html" title="interface in io.github.mmm.ui.widget">UiWidget</a>&gt;</span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/custom/UiCustomWidget.html" title="class in io.github.mmm.ui.widget.custom"><code>UiCustomWidget</code></a> that is a <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/composite/UiComposite.html" title="interface in io.github.mmm.ui.widget.composite"><code>UiComposite</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/custom/UiCustomDynamicComposite.html" title="class in io.github.mmm.ui.widget.custom">UiCustomDynamicComposite</a>&lt;W extends <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/composite/UiDynamicComposite.html" title="interface in io.github.mmm.ui.widget.composite">UiDynamicComposite</a>&lt;C&gt;,&#8203;C extends <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/UiWidget.html" title="interface in io.github.mmm.ui.widget">UiWidget</a>&gt;</span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/custom/UiCustomWidget.html" title="class in io.github.mmm.ui.widget.custom"><code>UiCustomWidget</code></a> that is a <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/composite/UiDynamicComposite.html" title="interface in io.github.mmm.ui.widget.composite"><code>UiDynamicComposite</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/custom/UiCustomForm.html" title="class in io.github.mmm.ui.widget.custom">UiCustomForm</a>&lt;V&gt;</span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/custom/UiCustomWidget.html" title="class in io.github.mmm.ui.widget.custom"><code>UiCustomWidget</code></a> that is a <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/panel/UiFormPanel.html" title="interface in io.github.mmm.ui.widget.panel"><code>UiFormPanel</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/custom/UiCustomWidget.html" title="class in io.github.mmm.ui.widget.custom">UiCustomWidget</a>&lt;W extends <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/UiWidget.html" title="interface in io.github.mmm.ui.widget">UiWidget</a>&gt;</span></code></th>
+<td class="colLast">
+<div class="block">This is the abstract base class for <em>custom widgets</em>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
+<section role="region"><a id="io.github.mmm.ui.widget.input">
+<!--   -->
+</a>
+<h3>Uses of <a href="../EventSource.html" title="interface in io.github.mmm.event">EventSource</a> in <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/input/package-summary.html">io.github.mmm.ui.widget.input</a></h3>
+<table class="useSummary">
+<caption><span>Subinterfaces of <a href="../EventSource.html" title="interface in io.github.mmm.event">EventSource</a> in <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/input/package-summary.html">io.github.mmm.ui.widget.input</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Interface</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/input/UiAbstractChoice.html" title="interface in io.github.mmm.ui.widget.input">UiAbstractChoice</a>&lt;O,&#8203;V&gt;</span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/input/UiInput.html" title="interface in io.github.mmm.ui.widget.input"><code>UiInput</code></a> for a choice out of a pre-define <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>List</code></a> of <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/input/UiAbstractChoice.html#getOptions()"><code>options</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/input/UiAbstractInput.html" title="interface in io.github.mmm.ui.widget.input">UiAbstractInput</a>&lt;V&gt;</span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/value/UiValuedWidget.html" title="interface in io.github.mmm.ui.widget.value"><code>UiValuedWidget</code></a> for an <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/UiAtomicWidget.html" title="interface in io.github.mmm.ui.widget"><code>atomic</code></a> input field.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/input/UiAbstractMultiChoice.html" title="interface in io.github.mmm.ui.widget.input">UiAbstractMultiChoice</a>&lt;V&gt;</span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/input/UiAbstractChoice.html" title="interface in io.github.mmm.ui.widget.input"><code>UiAbstractChoice</code></a> for a multiple choice out of a pre-define <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>List</code></a> of <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/input/UiAbstractChoice.html#getOptions()"><code>options</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/input/UiAbstractSingleChoice.html" title="interface in io.github.mmm.ui.widget.input">UiAbstractSingleChoice</a>&lt;V&gt;</span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/input/UiAbstractChoice.html" title="interface in io.github.mmm.ui.widget.input"><code>UiAbstractChoice</code></a> for a single choice out of a pre-define <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>List</code></a> of <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/input/UiAbstractChoice.html#getOptions()"><code>options</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/input/UiCheckbox.html" title="interface in io.github.mmm.ui.widget.input">UiCheckbox</a></span></code></th>
+<td class="colLast">
+<div class="block">A regular <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/value/UiAbstractCheckbox.html" title="interface in io.github.mmm.ui.widget.value"><code>checkbox widget</code></a>.<br>
+ Example:</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/input/UiComboBox.html" title="interface in io.github.mmm.ui.widget.input">UiComboBox</a>&lt;V&gt;</span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/input/UiAbstractSingleChoice.html" title="interface in io.github.mmm.ui.widget.input"><code>UiAbstractSingleChoice</code></a> for a <em>combo-box</em> that allows the end-user to expand a drop-down menu and
+ select the <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/value/UiValuedWidget.html#getValue()"><code>value</code></a> from a given list of <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/input/UiAbstractChoice.html#getOptions()"><code>options</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/input/UiHtmlEditor.html" title="interface in io.github.mmm.ui.widget.input">UiHtmlEditor</a></span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/input/UiInput.html" title="interface in io.github.mmm.ui.widget.input"><code>UiInput</code></a> for a rich text editor using HTML as its <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/value/UiValuedWidget.html#getValue()"><code>value</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/input/UiInput.html" title="interface in io.github.mmm.ui.widget.input">UiInput</a>&lt;V&gt;</span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/value/UiValuedWidget.html" title="interface in io.github.mmm.ui.widget.value"><code>UiValuedWidget</code></a> for an <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/UiAtomicWidget.html" title="interface in io.github.mmm.ui.widget"><code>atomic</code></a> input field.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/input/UiPasswordInput.html" title="interface in io.github.mmm.ui.widget.input">UiPasswordInput</a></span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/input/UiTextualInput.html" title="interface in io.github.mmm.ui.widget.input"><code>UiTextualInput</code></a> for a password input.<br>
+ Example:</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/input/UiRadioButton.html" title="interface in io.github.mmm.ui.widget.input">UiRadioButton</a></span></code></th>
+<td class="colLast">
+<div class="block">A regular <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/value/UiAbstractRadioButton.html" title="interface in io.github.mmm.ui.widget.value"><code>radio-button widget</code></a>.<br>
+ Example:</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/input/UiRadioButtonChoice.html" title="interface in io.github.mmm.ui.widget.input">UiRadioButtonChoice</a>&lt;V&gt;</span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/input/UiAbstractSingleChoice.html" title="interface in io.github.mmm.ui.widget.input"><code>UiAbstractSingleChoice</code></a> to select a value from a group of <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/input/UiRadioButton.html" title="interface in io.github.mmm.ui.widget.input"><code>UiRadioButton</code></a>s.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/input/UiTextArea.html" title="interface in io.github.mmm.ui.widget.input">UiTextArea</a></span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/input/UiTextualInput.html" title="interface in io.github.mmm.ui.widget.input"><code>UiTextualInput</code></a> for a multi-line text area.<br>
+ Example:</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/input/UiTextInput.html" title="interface in io.github.mmm.ui.widget.input">UiTextInput</a></span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/input/UiTextualInput.html" title="interface in io.github.mmm.ui.widget.input"><code>UiTextualInput</code></a> for a single-line text input.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/input/UiTextualInput.html" title="interface in io.github.mmm.ui.widget.input">UiTextualInput</a></span></code></th>
+<td class="colLast">
+<div class="block">Abstract <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/UiRegularWidget.html" title="interface in io.github.mmm.ui.widget"><code>UiRegularWidget</code></a> for textual input.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
+<section role="region"><a id="io.github.mmm.ui.widget.menu">
+<!--   -->
+</a>
+<h3>Uses of <a href="../EventSource.html" title="interface in io.github.mmm.event">EventSource</a> in <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/menu/package-summary.html">io.github.mmm.ui.widget.menu</a></h3>
+<table class="useSummary">
+<caption><span>Subinterfaces of <a href="../EventSource.html" title="interface in io.github.mmm.event">EventSource</a> in <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/menu/package-summary.html">io.github.mmm.ui.widget.menu</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Interface</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/menu/UiAbstractActiveMenuItem.html" title="interface in io.github.mmm.ui.widget.menu">UiAbstractActiveMenuItem</a></span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/menu/UiAbstractMenuItem.html" title="interface in io.github.mmm.ui.widget.menu"><code>UiAbstractMenuItem</code></a> for a active menu item that can be <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/UiClickableWidget.html#click()"><code>clicked</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/menu/UiAbstractMenuItem.html" title="interface in io.github.mmm.ui.widget.menu">UiAbstractMenuItem</a></span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/UiWidget.html" title="interface in io.github.mmm.ui.widget"><code>widget</code></a> representing a <em>menu item</em>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/menu/UiMenu.html" title="interface in io.github.mmm.ui.widget.menu">UiMenu</a></span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/composite/UiDynamicComposite.html" title="interface in io.github.mmm.ui.widget.composite"><code>UiDynamicComposite</code></a> representing a <em>menu</em>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/menu/UiMenuBar.html" title="interface in io.github.mmm.ui.widget.menu">UiMenuBar</a></span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/composite/UiDynamicComposite.html" title="interface in io.github.mmm.ui.widget.composite"><code>UiDynamicComposite</code></a> representing a <em>menu bar</em>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/menu/UiMenuItem.html" title="interface in io.github.mmm.ui.widget.menu">UiMenuItem</a></span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/menu/UiAbstractMenuItem.html" title="interface in io.github.mmm.ui.widget.menu"><code>UiAbstractMenuItem</code></a> for a normal menu item that acts like a button.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/menu/UiMenuItemCheckbox.html" title="interface in io.github.mmm.ui.widget.menu">UiMenuItemCheckbox</a></span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/menu/UiAbstractActiveMenuItem.html" title="interface in io.github.mmm.ui.widget.menu"><code>UiAbstractActiveMenuItem</code></a> that additionally has a <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/value/UiAbstractCheckbox.html" title="interface in io.github.mmm.ui.widget.value"><code>checkbox</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/menu/UiMenuItemRadioButton.html" title="interface in io.github.mmm.ui.widget.menu">UiMenuItemRadioButton</a></span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/menu/UiAbstractActiveMenuItem.html" title="interface in io.github.mmm.ui.widget.menu"><code>UiAbstractActiveMenuItem</code></a> that additionally has a <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/value/UiAbstractRadioButton.html" title="interface in io.github.mmm.ui.widget.value"><code>radio button</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/menu/UiMenuItemSeparator.html" title="interface in io.github.mmm.ui.widget.menu">UiMenuItemSeparator</a></span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/menu/UiAbstractMenuItem.html" title="interface in io.github.mmm.ui.widget.menu"><code>UiAbstractMenuItem</code></a> that acts as a <em>separator</em>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
+<section role="region"><a id="io.github.mmm.ui.widget.panel">
+<!--   -->
+</a>
+<h3>Uses of <a href="../EventSource.html" title="interface in io.github.mmm.event">EventSource</a> in <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/panel/package-summary.html">io.github.mmm.ui.widget.panel</a></h3>
+<table class="useSummary">
+<caption><span>Subinterfaces of <a href="../EventSource.html" title="interface in io.github.mmm.event">EventSource</a> in <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/panel/package-summary.html">io.github.mmm.ui.widget.panel</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Interface</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/panel/UiAbstractButtonContainer.html" title="interface in io.github.mmm.ui.widget.panel">UiAbstractButtonContainer</a></span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/composite/UiDynamicComposite.html" title="interface in io.github.mmm.ui.widget.composite"><code>UiDynamicComposite</code></a> containing a number of <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/button/UiAbstractButton.html" title="interface in io.github.mmm.ui.widget.button"><code>buttons</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/panel/UiAbstractSplitPanel.html" title="interface in io.github.mmm.ui.widget.panel">UiAbstractSplitPanel</a></span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/panel/UiDynamicPanel.html" title="interface in io.github.mmm.ui.widget.panel"><code>UiDynamicPanel</code></a> that shows split-bars between each of its <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/composite/UiComposite.html#getChild(int)"><code>children</code></a> and allows the user
+ to slide these split-bars to dynamically adjust the size of the <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/composite/UiComposite.html#getChild(int)"><code>children</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/panel/UiButtonPanel.html" title="interface in io.github.mmm.ui.widget.panel">UiButtonPanel</a></span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/panel/UiAbstractButtonContainer.html" title="interface in io.github.mmm.ui.widget.panel"><code>button container</code></a> showing a number of
+ <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/button/UiAbstractButton.html" title="interface in io.github.mmm.ui.widget.button"><code>buttons</code></a> horizontally (e.g.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/panel/UiDynamicPanel.html" title="interface in io.github.mmm.ui.widget.panel">UiDynamicPanel</a></span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/composite/UiDynamicComposite.html" title="interface in io.github.mmm.ui.widget.composite"><code>UiDynamicComposite</code></a> for a generic panel that accepts any <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/UiRegularWidget.html" title="interface in io.github.mmm.ui.widget"><code>UiRegularWidget</code></a> as <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/composite/UiComposite.html#getChild(int)"><code>child</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/panel/UiFormGroup.html" title="interface in io.github.mmm.ui.widget.panel">UiFormGroup</a>&lt;V&gt;</span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/composite/UiDynamicComposite.html" title="interface in io.github.mmm.ui.widget.composite"><code>UiDynamicComposite</code></a> for a <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/input/UiAbstractInput.html#getName()"><code>named</code></a> sub-group in a <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/panel/UiFormPanel.html" title="interface in io.github.mmm.ui.widget.panel"><code>form</code></a> of <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/input/UiInput.html" title="interface in io.github.mmm.ui.widget.input"><code>UiInput</code></a>s
+ as <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/composite/UiComposite.html#getChild(int)"><code>children</code></a> shown vertically from the top to the bottom.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/panel/UiFormPanel.html" title="interface in io.github.mmm.ui.widget.panel">UiFormPanel</a></span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/composite/UiDynamicComposite.html" title="interface in io.github.mmm.ui.widget.composite"><code>UiDynamicComposite</code></a> for a form of <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/input/UiInput.html" title="interface in io.github.mmm.ui.widget.input"><code>UiInput</code></a>s as <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/composite/UiComposite.html#getChild(int)"><code>children</code></a> shown vertically from
+ the top to the bottom.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/panel/UiHorizontalPanel.html" title="interface in io.github.mmm.ui.widget.panel">UiHorizontalPanel</a></span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/panel/UiDynamicPanel.html" title="interface in io.github.mmm.ui.widget.panel"><code>UiDynamicPanel</code></a> that shows its <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/composite/UiComposite.html#getChild(int)"><code>children</code></a> horizontally from the left to the right.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/panel/UiHorizontalSplitPanel.html" title="interface in io.github.mmm.ui.widget.panel">UiHorizontalSplitPanel</a></span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/panel/UiAbstractSplitPanel.html" title="interface in io.github.mmm.ui.widget.panel"><code>UiAbstractSplitPanel</code></a> that shows its <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/composite/UiComposite.html#getChild(int)"><code>children</code></a> horizontally from the left to the right.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/panel/UiResponsiveColumnPanel.html" title="interface in io.github.mmm.ui.widget.panel">UiResponsiveColumnPanel</a></span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/composite/UiDynamicComposite.html" title="interface in io.github.mmm.ui.widget.composite"><code>UiDynamicComposite</code></a> showing multiple <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/panel/UiFormPanel.html" title="interface in io.github.mmm.ui.widget.panel"><code>UiFormPanel</code></a> <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/composite/UiComposite.html#getChild(int)"><code>children</code></a> as columns in a
+ responsive layout.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/panel/UiScrollPanel.html" title="interface in io.github.mmm.ui.widget.panel">UiScrollPanel</a></span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/composite/UiMutableSingleComposite.html" title="interface in io.github.mmm.ui.widget.composite"><code>UiMutableSingleComposite</code></a> for a <em>scroll panel</em>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/panel/UiTabPanel.html" title="interface in io.github.mmm.ui.widget.panel">UiTabPanel</a></span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/composite/UiSwitchComposite.html" title="interface in io.github.mmm.ui.widget.composite"><code>UiSwitchComposite</code></a> representing a <em>tab panel</em>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/panel/UiVerticalPanel.html" title="interface in io.github.mmm.ui.widget.panel">UiVerticalPanel</a></span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/panel/UiDynamicPanel.html" title="interface in io.github.mmm.ui.widget.panel"><code>UiDynamicPanel</code></a> that shows its <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/composite/UiComposite.html#getChild(int)"><code>children</code></a> vertically from the top to the bottom.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/panel/UiVerticalSplitPanel.html" title="interface in io.github.mmm.ui.widget.panel">UiVerticalSplitPanel</a></span></code></th>
+<td class="colLast">
+<div class="block">This is the interface for a <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/panel/UiAbstractSplitPanel.html" title="interface in io.github.mmm.ui.widget.panel"><code>split panel</code></a> that shows its <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/composite/UiComposite.html#getChild(int)"><code>children</code></a>
+ vertically from the top to the bottom.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
+<section role="region"><a id="io.github.mmm.ui.widget.value">
+<!--   -->
+</a>
+<h3>Uses of <a href="../EventSource.html" title="interface in io.github.mmm.event">EventSource</a> in <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/value/package-summary.html">io.github.mmm.ui.widget.value</a></h3>
+<table class="useSummary">
+<caption><span>Subinterfaces of <a href="../EventSource.html" title="interface in io.github.mmm.event">EventSource</a> in <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/value/package-summary.html">io.github.mmm.ui.widget.value</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Interface</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/value/UiAbstractCheckbox.html" title="interface in io.github.mmm.ui.widget.value">UiAbstractCheckbox</a></span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/input/UiInput.html" title="interface in io.github.mmm.ui.widget.input"><code>UiInput</code></a> for a checkbox.<br>
+ Example:</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/value/UiAbstractRadioButton.html" title="interface in io.github.mmm.ui.widget.value">UiAbstractRadioButton</a></span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/input/UiInput.html" title="interface in io.github.mmm.ui.widget.input"><code>UiInput</code></a> for a radio-button (option).<br>
+ Example:</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/value/UiSelectWidget.html" title="interface in io.github.mmm.ui.widget.value">UiSelectWidget</a></span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/input/UiInput.html" title="interface in io.github.mmm.ui.widget.input"><code>UiInput</code></a> providing an option that can be <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/value/UiSelectWidget.html#isSelected()"><code>selected</code></a> (e.g.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/value/UiValidatableWidget.html" title="interface in io.github.mmm.ui.widget.value">UiValidatableWidget</a>&lt;V&gt;</span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/value/UiValuedWidget.html" title="interface in io.github.mmm.ui.widget.value"><code>UiValuedWidget</code></a> with real <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/value/UiValidatableWidget.html#getValidator()"><code>validation</code></a> support.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/value/UiValuedWidget.html" title="interface in io.github.mmm.ui.widget.value">UiValuedWidget</a>&lt;V&gt;</span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/UiWidget.html" title="interface in io.github.mmm.ui.widget"><code>UiWidget</code></a> that has a <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/value/UiValuedWidget.html#getValue()"><code>value</code></a>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
+<section role="region"><a id="io.github.mmm.ui.widget.window">
+<!--   -->
+</a>
+<h3>Uses of <a href="../EventSource.html" title="interface in io.github.mmm.event">EventSource</a> in <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/window/package-summary.html">io.github.mmm.ui.widget.window</a></h3>
+<table class="useSummary">
+<caption><span>Subinterfaces of <a href="../EventSource.html" title="interface in io.github.mmm.event">EventSource</a> in <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/window/package-summary.html">io.github.mmm.ui.widget.window</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Interface</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/window/UiAbstractWindow.html" title="interface in io.github.mmm.ui.widget.window">UiAbstractWindow</a></span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/composite/UiDynamicComposite.html" title="interface in io.github.mmm.ui.widget.composite"><code>UiDynamicComposite</code></a> that represents a <em>window</em>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/window/UiMainWindow.html" title="interface in io.github.mmm.ui.widget.window">UiMainWindow</a></span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/window/UiAbstractWindow.html" title="interface in io.github.mmm.ui.widget.window"><code>UiAbstractWindow</code></a> that represents the <em>main window</em>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/window/UiPopup.html" title="interface in io.github.mmm.ui.widget.window">UiPopup</a></span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/window/UiAbstractWindow.html" title="interface in io.github.mmm.ui.widget.window"><code>UiAbstractWindow</code></a> representing a modal popup window that blocks the client application until it is
+ <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/UiWidget.html#setVisible(boolean)"><code>closed</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/window/UiWindow.html" title="interface in io.github.mmm.ui.widget.window">UiWindow</a></span></code></th>
+<td class="colLast">
+<div class="block">A normal window (no popup).</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
 <section role="region"><a id="io.github.mmm.value.observable">
 <!--   -->
 </a>
@@ -3021,7 +3758,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
 </nav>
-<p class="legalCopy"><small>Copyright &#169; 2001&#x2013;2019 <a href="https://m-m-m.github.io">mmm-team</a>. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2001&#x2013;2020 <a href="https://m-m-m.github.io">mmm-team</a>. All rights reserved.</small></p>
 </footer>
 </body>
 </html>

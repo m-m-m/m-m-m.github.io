@@ -112,6 +112,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Provides the API for generic java beans defined as simple class or interface avoiding lots of boilerplate code.</div>
 </td>
 </tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="#io.github.mmm.bean.impl">io.github.mmm.bean.impl</a></th>
+<td class="colLast">
+<div class="block">Contains internal implementation.</div>
+</td>
+</tr>
 </tbody>
 </table>
 </li>
@@ -140,7 +146,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../BeanClass.html" title="interface in io.github.mmm.bean">BeanClass</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">AdvancedBean.</span><code><span class="memberNameLink"><a href="../AdvancedBean.html#getType()">getType</a></span>()</code></th>
+<th class="colSecond" scope="row"><span class="typeNameLabel">AbstractVirtualBean.</span><code><span class="memberNameLink"><a href="../AbstractVirtualBean.html#getType()">getType</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -159,7 +165,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../BeanClass.html" title="interface in io.github.mmm.bean">BeanClass</a>&gt;</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="../BeanClass.html" title="interface in io.github.mmm.bean">BeanClass</a>&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">BeanClass.</span><code><span class="memberNameLink"><a href="../BeanClass.html#getSuperClasses()">getSuperClasses</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -181,6 +187,35 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
              <a href="../BeanClass.html" title="interface in io.github.mmm.bean">BeanClass</a>...&nbsp;superClasses)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
+<tr class="rowColor">
+<td class="colFirst"><code>default boolean</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">VirtualBean.</span><code><span class="memberNameLink"><a href="../VirtualBean.html#isInstanceOf(io.github.mmm.bean.BeanClass)">isInstanceOf</a></span>&#8203;(<a href="../BeanClass.html" title="interface in io.github.mmm.bean">BeanClass</a>&nbsp;beanClass)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>default boolean</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">BeanClass.</span><code><span class="memberNameLink"><a href="../BeanClass.html#isSubclassOf(io.github.mmm.bean.BeanClass)">isSubclassOf</a></span>&#8203;(<a href="../BeanClass.html" title="interface in io.github.mmm.bean">BeanClass</a>&nbsp;beanClass)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>default boolean</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">BeanClass.</span><code><span class="memberNameLink"><a href="../BeanClass.html#isSubclassOf(io.github.mmm.bean.BeanClass,boolean,boolean)">isSubclassOf</a></span>&#8203;(<a href="../BeanClass.html" title="interface in io.github.mmm.bean">BeanClass</a>&nbsp;beanClass,
+            boolean&nbsp;transitive,
+            boolean&nbsp;equal)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>default boolean</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">BeanClass.</span><code><span class="memberNameLink"><a href="../BeanClass.html#isSuperclassOf(io.github.mmm.bean.BeanClass)">isSuperclassOf</a></span>&#8203;(<a href="../BeanClass.html" title="interface in io.github.mmm.bean">BeanClass</a>&nbsp;beanClass)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>default boolean</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">BeanClass.</span><code><span class="memberNameLink"><a href="../BeanClass.html#isSuperclassOf(io.github.mmm.bean.BeanClass,boolean,boolean)">isSuperclassOf</a></span>&#8203;(<a href="../BeanClass.html" title="interface in io.github.mmm.bean">BeanClass</a>&nbsp;beanClass,
+              boolean&nbsp;transitive,
+              boolean&nbsp;equal)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
 </tbody>
 </table>
 <table class="useSummary">
@@ -191,12 +226,59 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../AbstractVirtualBean.html#%3Cinit%3E(io.github.mmm.bean.AbstractBean,boolean,io.github.mmm.bean.BeanClass)">AbstractVirtualBean</a></span>&#8203;(<a href="../AbstractBean.html" title="class in io.github.mmm.bean">AbstractBean</a>&nbsp;writable,
+                   boolean&nbsp;dynamic,
+                   <a href="../BeanClass.html" title="interface in io.github.mmm.bean">BeanClass</a>&nbsp;type)</code></th>
+<td class="colLast">
+<div class="block">The constructor.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../AdvancedBean.html#%3Cinit%3E(io.github.mmm.bean.AbstractBean,boolean,io.github.mmm.bean.BeanClass)">AdvancedBean</a></span>&#8203;(<a href="../AbstractBean.html" title="class in io.github.mmm.bean">AbstractBean</a>&nbsp;writable,
             boolean&nbsp;dynamic,
             <a href="../BeanClass.html" title="interface in io.github.mmm.bean">BeanClass</a>&nbsp;type)</code></th>
 <td class="colLast">
 <div class="block">The constructor.</div>
 </td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
+<section role="region"><a id="io.github.mmm.bean.impl">
+<!--   -->
+</a>
+<h3>Uses of <a href="../BeanClass.html" title="interface in io.github.mmm.bean">BeanClass</a> in <a href="../impl/package-summary.html">io.github.mmm.bean.impl</a></h3>
+<table class="useSummary">
+<caption><span>Classes in <a href="../impl/package-summary.html">io.github.mmm.bean.impl</a> that implement <a href="../BeanClass.html" title="interface in io.github.mmm.bean">BeanClass</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Class</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../impl/BeanClassImpl.html" title="class in io.github.mmm.bean.impl">BeanClassImpl</a></span></code></th>
+<td class="colLast">
+<div class="block">A <a href="../BeanClass.html" title="interface in io.github.mmm.bean"><code>BeanClass</code></a> reflects a <a href="../Bean.html" title="class in io.github.mmm.bean"><code>Bean</code></a> (similar to a Java <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Class</code></a>).</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary">
+<caption><span>Methods in <a href="../impl/package-summary.html">io.github.mmm.bean.impl</a> that return types with arguments of type <a href="../BeanClass.html" title="interface in io.github.mmm.bean">BeanClass</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../BeanClass.html" title="interface in io.github.mmm.bean">BeanClass</a>&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">BeanClassImpl.</span><code><span class="memberNameLink"><a href="../impl/BeanClassImpl.html#getSuperClasses()">getSuperClasses</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -253,7 +335,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
 </nav>
-<p class="legalCopy"><small>Copyright &#169; 2001&#x2013;2019 <a href="https://m-m-m.github.io">mmm-team</a>. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2001&#x2013;2020 <a href="https://m-m-m.github.io">mmm-team</a>. All rights reserved.</small></p>
 </footer>
 </body>
 </html>

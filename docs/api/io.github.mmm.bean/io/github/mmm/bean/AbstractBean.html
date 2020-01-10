@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -88,7 +88,7 @@ loadScripts(document, 'script');</script>
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
 <li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
@@ -137,7 +137,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><code><a href="AdvancedBean.html" title="class in io.github.mmm.bean">AdvancedBean</a></code>, <code><a href="Bean.html" title="class in io.github.mmm.bean">Bean</a></code></dd>
+<dd><code><a href="AbstractVirtualBean.html" title="class in io.github.mmm.bean">AbstractVirtualBean</a></code>, <code><a href="Bean.html" title="class in io.github.mmm.bean">Bean</a></code></dd>
 </dl>
 <hr>
 <pre>public abstract class <span class="typeNameLabel">AbstractBean</span>
@@ -154,32 +154,6 @@ implements <a href="WritableBean.html" title="interface in io.github.mmm.bean">W
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
-<!-- ======== NESTED CLASS SUMMARY ======== -->
-<section role="region">
-<ul class="blockList">
-<li class="blockList"><a id="nested.class.summary">
-<!--   -->
-</a>
-<h3>Nested Class Summary</h3>
-<table class="memberSummary">
-<caption><span>Nested Classes</span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colSecond" scope="col">Class</th>
-<th class="colLast" scope="col">Description</th>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>protected class&nbsp;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="AbstractBean.PropertyBuilders.html" title="class in io.github.mmm.bean">AbstractBean.PropertyBuilders</a></span></code></th>
-<td class="colLast">
-<div class="block">Implementation of <a href="../../../../../io.github.mmm.property.builder/io/github/mmm/property/builder/DefaultPropertyBuilders.html" title="interface in io.github.mmm.property.builder"><code>DefaultPropertyBuilders</code></a> that auto registers build properties and redirects to read-only
- properties if <a href="#isReadOnly()"><code>read-only</code></a>.</div>
-</td>
-</tr>
-</table>
-</li>
-</ul>
-</section>
 <!-- =========== FIELD SUMMARY =========== -->
 <section role="region">
 <ul class="blockList">
@@ -273,70 +247,77 @@ implements <a href="WritableBean.html" title="interface in io.github.mmm.bean">W
 </td>
 </tr>
 <tr id="i5" class="rowColor">
+<td class="colFirst"><code>protected <a href="PropertyBuilders.html" title="class in io.github.mmm.bean">PropertyBuilders</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createPropertyBuilders()">createPropertyBuilders</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Internal method that may be overridden to replace the <a href="PropertyBuilders.html" title="class in io.github.mmm.bean"><code>PropertyBuilders</code></a> implementation.</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;? extends <a href="../../../../../io.github.mmm.property/io/github/mmm/property/WritableProperty.html" title="interface in io.github.mmm.property">WritableProperty</a>&lt;?&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getProperties()">getProperties</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../io.github.mmm.property/io/github/mmm/property/WritableProperty.html" title="interface in io.github.mmm.property">WritableProperty</a>&lt;?&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getProperty(java.lang.String)">getProperty</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPropertyCount()">getPropertyCount</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="AbstractBean.html" title="class in io.github.mmm.bean">AbstractBean</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getReadOnly()">getReadOnly</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isDynamic()">isDynamic</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isReadOnly()">isReadOnly</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>protected boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isThreadSafe()">isThreadSafe</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onPropertyAdded(io.github.mmm.property.WritableProperty)">onPropertyAdded</a></span>&#8203;(<a href="../../../../../io.github.mmm.property/io/github/mmm/property/WritableProperty.html" title="interface in io.github.mmm.property">WritableProperty</a>&lt;?&gt;&nbsp;property)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#requireDynamic()">requireDynamic</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Verifies that this <a href="Bean.html" title="class in io.github.mmm.bean"><code>Bean</code></a> is <a href="#isDynamic()"><code>dynamic</code></a> (extensible).</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#requireWritable()">requireWritable</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Verifies that this <a href="Bean.html" title="class in io.github.mmm.bean"><code>Bean</code></a> is writable (not <a href="#isReadOnly()"><code>read-only</code></a>).</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toString()">toString</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toString(java.lang.StringBuilder)">toString</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StringBuilder.html?is-external=true" title="class or interface in java.lang" class="externalLink">StringBuilder</a>&nbsp;sb)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#updateProperties()">updateProperties</a></span>()</code></th>
 <td class="colLast">
@@ -667,6 +648,20 @@ implements <a href="WritableBean.html" title="interface in io.github.mmm.bean">W
 </dl>
 </li>
 </ul>
+<a id="createPropertyBuilders()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createPropertyBuilders</h4>
+<pre class="methodSignature">protected&nbsp;<a href="PropertyBuilders.html" title="class in io.github.mmm.bean">PropertyBuilders</a>&nbsp;createPropertyBuilders()</pre>
+<div class="block">Internal method that may be overridden to replace the <a href="PropertyBuilders.html" title="class in io.github.mmm.bean"><code>PropertyBuilders</code></a> implementation.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the <a href="PropertyBuilders.html" title="class in io.github.mmm.bean"><code>PropertyBuilders</code></a> instance.</dd>
+</dl>
+</li>
+</ul>
 <a id="onPropertyAdded(io.github.mmm.property.WritableProperty)">
 <!--   -->
 </a>
@@ -759,7 +754,7 @@ implements <a href="WritableBean.html" title="interface in io.github.mmm.bean">W
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
 <li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
@@ -776,7 +771,7 @@ implements <a href="WritableBean.html" title="interface in io.github.mmm.bean">W
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
 </nav>
-<p class="legalCopy"><small>Copyright &#169; 2001&#x2013;2019 <a href="https://m-m-m.github.io">mmm-team</a>. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2001&#x2013;2020 <a href="https://m-m-m.github.io">mmm-team</a>. All rights reserved.</small></p>
 </footer>
 </body>
 </html>

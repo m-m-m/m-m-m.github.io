@@ -107,18 +107,24 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
+<th class="colFirst" scope="row"><a href="#io.github.mmm.entity.bean">io.github.mmm.entity.bean</a></th>
+<td class="colLast">
+<div class="block">Contains the API for entity beans.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="#io.github.mmm.entity.id">io.github.mmm.entity.id</a></th>
 <td class="colLast">
 <div class="block">Contains API and implementation for primary keys that uniquely identify an entity.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="#io.github.mmm.entity.property.id">io.github.mmm.entity.property.id</a></th>
 <td class="colLast">
 <div class="block">Contains property support for IDs.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="#io.github.mmm.entity.property.link">io.github.mmm.entity.property.link</a></th>
 <td class="colLast">
 <div class="block">Contains property support for links to entity bean (one-to-one relation).</div>
@@ -129,6 +135,30 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </li>
 <li class="blockList">
 <ul class="blockList">
+<li class="blockList">
+<section role="region"><a id="io.github.mmm.entity.bean">
+<!--   -->
+</a>
+<h3>Uses of <a href="../IdFactory.html" title="interface in io.github.mmm.entity.id">IdFactory</a> in <a href="../../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/bean/package-summary.html">io.github.mmm.entity.bean</a></h3>
+<table class="useSummary">
+<caption><span>Constructors in <a href="../../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/bean/package-summary.html">io.github.mmm.entity.bean</a> with parameters of type <a href="../IdFactory.html" title="interface in io.github.mmm.entity.id">IdFactory</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Constructor</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/bean/SimpleEntityBean.html#%3Cinit%3E(io.github.mmm.bean.AbstractBean,io.github.mmm.entity.id.IdFactory,boolean)">SimpleEntityBean</a></span>&#8203;(<a href="../../../../../../../io.github.mmm.bean/io/github/mmm/bean/AbstractBean.html" title="class in io.github.mmm.bean">AbstractBean</a>&nbsp;writable,
+                <a href="../IdFactory.html" title="interface in io.github.mmm.entity.id">IdFactory</a>&lt;?,&#8203;?,&#8203;?&gt;&nbsp;idFactory,
+                boolean&nbsp;dynamic)</code></th>
+<td class="colLast">
+<div class="block">The constructor.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
 <li class="blockList">
 <section role="region"><a id="io.github.mmm.entity.id">
 <!--   -->
@@ -249,6 +279,21 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tbody>
 </table>
 <table class="useSummary">
+<caption><span>Methods in <a href="../../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/id/package-summary.html">io.github.mmm.entity.property.id</a> with parameters of type <a href="../IdFactory.html" title="interface in io.github.mmm.entity.id">IdFactory</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/id/IdPropertyBuilder.html" title="class in io.github.mmm.entity.property.id">IdPropertyBuilder</a>&lt;<a href="../../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/id/IdPropertyBuilder.html" title="type parameter in IdPropertyBuilder">E</a>&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">IdPropertyBuilder.</span><code><span class="memberNameLink"><a href="../../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/id/IdPropertyBuilder.html#idFactory(io.github.mmm.entity.id.IdFactory)">idFactory</a></span>&#8203;(<a href="../IdFactory.html" title="interface in io.github.mmm.entity.id">IdFactory</a>&lt;?,&#8203;?,&#8203;?&gt;&nbsp;factory)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary">
 <caption><span>Constructors in <a href="../../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/id/package-summary.html">io.github.mmm.entity.property.id</a> with parameters of type <a href="../IdFactory.html" title="interface in io.github.mmm.entity.id">IdFactory</a></span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
 <th class="colFirst" scope="col">Constructor</th>
@@ -256,11 +301,40 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/id/IdProperty.html#%3Cinit%3E(java.lang.String,java.lang.Class,io.github.mmm.property.PropertyMetadata,java.lang.Class,io.github.mmm.entity.id.IdFactory)">IdProperty</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
-          <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../Id.html" title="interface in io.github.mmm.entity.id">Id</a>&gt;&nbsp;idClass,
-          <a href="../../../../../../../io.github.mmm.property/io/github/mmm/property/PropertyMetadata.html" title="interface in io.github.mmm.property">PropertyMetadata</a>&lt;<a href="../Id.html" title="interface in io.github.mmm.entity.id">Id</a>&lt;<a href="../../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/id/IdProperty.html" title="type parameter in IdProperty">E</a>&gt;&gt;&nbsp;metadata,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/id/IdProperty.html#%3Cinit%3E(io.github.mmm.entity.id.IdFactory,java.lang.Class)">IdProperty</a></span>&#8203;(<a href="../IdFactory.html" title="interface in io.github.mmm.entity.id">IdFactory</a>&lt;?,&#8203;?,&#8203;?&gt;&nbsp;idFactory,
+          <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;<a href="../../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/id/IdProperty.html" title="type parameter in IdProperty">E</a>&gt;&nbsp;entityClass)</code></th>
+<td class="colLast">
+<div class="block">The constructor.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/id/IdProperty.html#%3Cinit%3E(io.github.mmm.entity.id.IdFactory,java.lang.Class,io.github.mmm.property.PropertyMetadata)">IdProperty</a></span>&#8203;(<a href="../IdFactory.html" title="interface in io.github.mmm.entity.id">IdFactory</a>&lt;?,&#8203;?,&#8203;?&gt;&nbsp;idFactory,
           <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;<a href="../../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/id/IdProperty.html" title="type parameter in IdProperty">E</a>&gt;&nbsp;entityClass,
-          <a href="../IdFactory.html" title="interface in io.github.mmm.entity.id">IdFactory</a>&lt;?,&#8203;?,&#8203;?&gt;&nbsp;idFactory)</code></th>
+          <a href="../../../../../../../io.github.mmm.property/io/github/mmm/property/PropertyMetadata.html" title="interface in io.github.mmm.property">PropertyMetadata</a>&lt;<a href="../Id.html" title="interface in io.github.mmm.entity.id">Id</a>&lt;<a href="../../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/id/IdProperty.html" title="type parameter in IdProperty">E</a>&gt;&gt;&nbsp;metadata)</code></th>
+<td class="colLast">
+<div class="block">The constructor.</div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/id/IdProperty.html#%3Cinit%3E(java.lang.String,io.github.mmm.entity.id.IdFactory,java.lang.Class)">IdProperty</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
+          <a href="../IdFactory.html" title="interface in io.github.mmm.entity.id">IdFactory</a>&lt;?,&#8203;?,&#8203;?&gt;&nbsp;idFactory,
+          <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;<a href="../../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/id/IdProperty.html" title="type parameter in IdProperty">E</a>&gt;&nbsp;entityClass)</code></th>
+<td class="colLast">
+<div class="block">The constructor.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/id/IdProperty.html#%3Cinit%3E(java.lang.String,io.github.mmm.entity.id.IdFactory,java.lang.Class,io.github.mmm.property.PropertyMetadata)">IdProperty</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
+          <a href="../IdFactory.html" title="interface in io.github.mmm.entity.id">IdFactory</a>&lt;?,&#8203;?,&#8203;?&gt;&nbsp;idFactory,
+          <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;<a href="../../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/id/IdProperty.html" title="type parameter in IdProperty">E</a>&gt;&nbsp;entityClass,
+          <a href="../../../../../../../io.github.mmm.property/io/github/mmm/property/PropertyMetadata.html" title="interface in io.github.mmm.property">PropertyMetadata</a>&lt;<a href="../Id.html" title="interface in io.github.mmm.entity.id">Id</a>&lt;<a href="../../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/id/IdProperty.html" title="type parameter in IdProperty">E</a>&gt;&gt;&nbsp;metadata)</code></th>
+<td class="colLast">
+<div class="block">The constructor.</div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/id/IdPropertyBuilder.html#%3Cinit%3E(io.github.mmm.entity.id.IdFactory,java.lang.Class)">IdPropertyBuilder</a></span>&#8203;(<a href="../IdFactory.html" title="interface in io.github.mmm.entity.id">IdFactory</a>&lt;?,&#8203;?,&#8203;?&gt;&nbsp;idFactory,
+                 <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;<a href="../../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/id/IdPropertyBuilder.html" title="type parameter in IdPropertyBuilder">E</a>&gt;&nbsp;entityClass)</code></th>
 <td class="colLast">
 <div class="block">The constructor.</div>
 </td>
@@ -275,6 +349,21 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </a>
 <h3>Uses of <a href="../IdFactory.html" title="interface in io.github.mmm.entity.id">IdFactory</a> in <a href="../../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/link/package-summary.html">io.github.mmm.entity.property.link</a></h3>
 <table class="useSummary">
+<caption><span>Methods in <a href="../../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/link/package-summary.html">io.github.mmm.entity.property.link</a> with parameters of type <a href="../IdFactory.html" title="interface in io.github.mmm.entity.id">IdFactory</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/link/LinkPropertyBuilder.html" title="class in io.github.mmm.entity.property.link">LinkPropertyBuilder</a>&lt;<a href="../../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/link/LinkPropertyBuilder.html" title="type parameter in LinkPropertyBuilder">E</a>&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">LinkPropertyBuilder.</span><code><span class="memberNameLink"><a href="../../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/link/LinkPropertyBuilder.html#idFactory(io.github.mmm.entity.id.IdFactory)">idFactory</a></span>&#8203;(<a href="../IdFactory.html" title="interface in io.github.mmm.entity.id">IdFactory</a>&lt;?,&#8203;?,&#8203;?&gt;&nbsp;factory)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary">
 <caption><span>Constructors in <a href="../../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/link/package-summary.html">io.github.mmm.entity.property.link</a> with parameters of type <a href="../IdFactory.html" title="interface in io.github.mmm.entity.id">IdFactory</a></span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
 <th class="colFirst" scope="col">Constructor</th>
@@ -282,20 +371,27 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/link/LinkProperty.html#%3Cinit%3E(java.lang.String,io.github.mmm.property.PropertyMetadata,java.lang.Class,io.github.mmm.entity.id.IdFactory)">LinkProperty</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
-            <a href="../../../../../../../io.github.mmm.property/io/github/mmm/property/PropertyMetadata.html" title="interface in io.github.mmm.property">PropertyMetadata</a>&lt;<a href="../../link/Link.html" title="interface in io.github.mmm.entity.link">Link</a>&lt;<a href="../../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/link/LinkProperty.html" title="type parameter in LinkProperty">E</a>&gt;&gt;&nbsp;metadata,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/link/LinkProperty.html#%3Cinit%3E(java.lang.String,io.github.mmm.entity.id.IdFactory,java.lang.Class,io.github.mmm.property.PropertyMetadata)">LinkProperty</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
+            <a href="../IdFactory.html" title="interface in io.github.mmm.entity.id">IdFactory</a>&lt;?,&#8203;?,&#8203;?&gt;&nbsp;idFactory,
             <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;<a href="../../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/link/LinkProperty.html" title="type parameter in LinkProperty">E</a>&gt;&nbsp;entityClass,
-            <a href="../IdFactory.html" title="interface in io.github.mmm.entity.id">IdFactory</a>&lt;?,&#8203;?,&#8203;?&gt;&nbsp;idFactory)</code></th>
+            <a href="../../../../../../../io.github.mmm.property/io/github/mmm/property/PropertyMetadata.html" title="interface in io.github.mmm.property">PropertyMetadata</a>&lt;<a href="../../link/Link.html" title="interface in io.github.mmm.entity.link">Link</a>&lt;<a href="../../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/link/LinkProperty.html" title="type parameter in LinkProperty">E</a>&gt;&gt;&nbsp;metadata)</code></th>
 <td class="colLast">
 <div class="block">The constructor.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/link/LinkProperty.html#%3Cinit%3E(java.lang.String,io.github.mmm.property.PropertyMetadata,java.lang.Class,io.github.mmm.entity.id.IdFactory,java.util.function.Function)">LinkProperty</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
-            <a href="../../../../../../../io.github.mmm.property/io/github/mmm/property/PropertyMetadata.html" title="interface in io.github.mmm.property">PropertyMetadata</a>&lt;<a href="../../link/Link.html" title="interface in io.github.mmm.entity.link">Link</a>&lt;<a href="../../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/link/LinkProperty.html" title="type parameter in LinkProperty">E</a>&gt;&gt;&nbsp;metadata,
-            <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;<a href="../../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/link/LinkProperty.html" title="type parameter in LinkProperty">E</a>&gt;&nbsp;entityClass,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/link/LinkProperty.html#%3Cinit%3E(java.lang.String,io.github.mmm.entity.id.IdFactory,java.lang.Class,java.util.function.Function,io.github.mmm.property.PropertyMetadata)">LinkProperty</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
             <a href="../IdFactory.html" title="interface in io.github.mmm.entity.id">IdFactory</a>&lt;?,&#8203;?,&#8203;?&gt;&nbsp;idFactory,
-            <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;<a href="../Id.html" title="interface in io.github.mmm.entity.id">Id</a>&lt;<a href="../../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/link/LinkProperty.html" title="type parameter in LinkProperty">E</a>&gt;,&#8203;<a href="../../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/link/LinkProperty.html" title="type parameter in LinkProperty">E</a>&gt;&nbsp;resolver)</code></th>
+            <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;<a href="../../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/link/LinkProperty.html" title="type parameter in LinkProperty">E</a>&gt;&nbsp;entityClass,
+            <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;<a href="../Id.html" title="interface in io.github.mmm.entity.id">Id</a>&lt;<a href="../../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/link/LinkProperty.html" title="type parameter in LinkProperty">E</a>&gt;,&#8203;<a href="../../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/link/LinkProperty.html" title="type parameter in LinkProperty">E</a>&gt;&nbsp;resolver,
+            <a href="../../../../../../../io.github.mmm.property/io/github/mmm/property/PropertyMetadata.html" title="interface in io.github.mmm.property">PropertyMetadata</a>&lt;<a href="../../link/Link.html" title="interface in io.github.mmm.entity.link">Link</a>&lt;<a href="../../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/link/LinkProperty.html" title="type parameter in LinkProperty">E</a>&gt;&gt;&nbsp;metadata)</code></th>
+<td class="colLast">
+<div class="block">The constructor.</div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/link/LinkPropertyBuilder.html#%3Cinit%3E(io.github.mmm.entity.id.IdFactory,java.lang.Class)">LinkPropertyBuilder</a></span>&#8203;(<a href="../IdFactory.html" title="interface in io.github.mmm.entity.id">IdFactory</a>&lt;?,&#8203;?,&#8203;?&gt;&nbsp;idFactory,
+                   <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;<a href="../../../../../../../io.github.mmm.entity.bean/io/github/mmm/entity/property/link/LinkPropertyBuilder.html" title="type parameter in LinkPropertyBuilder">E</a>&gt;&nbsp;entityClass)</code></th>
 <td class="colLast">
 <div class="block">The constructor.</div>
 </td>
@@ -355,7 +451,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
 </nav>
-<p class="legalCopy"><small>Copyright &#169; 2001&#x2013;2019 <a href="https://m-m-m.github.io">mmm-team</a>. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2001&#x2013;2020 <a href="https://m-m-m.github.io">mmm-team</a>. All rights reserved.</small></p>
 </footer>
 </body>
 </html>
