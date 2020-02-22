@@ -133,7 +133,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colSecond" scope="row"><span class="typeNameLabel">UiTabPanel.</span><code><span class="memberNameLink"><a href="../../panel/UiTabPanel.html#addChild(io.github.mmm.ui.widget.UiRegularWidget,java.lang.String)">addChild</a></span>&#8203;(<a href="../../UiRegularWidget.html" title="interface in io.github.mmm.ui.widget">UiRegularWidget</a>&nbsp;child,
         <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;label)</code></th>
 <td class="colLast">
-<div class="block">Adds the given <a href="../../UiRegularWidget.html" title="interface in io.github.mmm.ui.widget"><code>UiRegularWidget</code></a> as new tab (and the end of all existing tabs).</div>
+<div class="block">Adds the given <a href="../../UiRegularWidget.html" title="interface in io.github.mmm.ui.widget"><code>UiRegularWidget</code></a> as new tab (and the end of all existing tabs).<br>
+ <b>IMPORTANT:</b> In case you <a href="../../attribute/UiWidgetWithClosable.html#setClosable(boolean)"><code>make</code></a> the <a href="../UiTab.html" title="interface in io.github.mmm.ui.widget.composite"><code>UiTab</code></a> <a href="../../attribute/UiWidgetWithClosable.html#isClosable()"><code>closable</code></a>, it will remove itself as <a href="../UiComposite.html#getChild(int)"><code>child</code></a> from this <a href="../../panel/UiTabPanel.html" title="interface in io.github.mmm.ui.widget.panel"><code>UiTabPanel</code></a> when the end-user
+ closes it.</div>
 </td>
 </tr>
 </tbody>

@@ -110,6 +110,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colFirst" scope="row"><a href="#io.github.mmm.ui.factory">io.github.mmm.ui.factory</a></th>
 <td class="colLast">&nbsp;</td>
 </tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="#io.github.mmm.ui.spi.factory">io.github.mmm.ui.spi.factory</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
 </tbody>
 </table>
 </li>
@@ -132,21 +136,45 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colFirst"><code>interface&nbsp;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../UiSingleWidgetFactoryDatatype.html" title="interface in io.github.mmm.ui.factory">UiSingleWidgetFactoryDatatype</a>&lt;V&gt;</span></code></th>
 <td class="colLast">
-<div class="block">Factory for <a href="../../widget/input/UiInput.html" title="interface in io.github.mmm.ui.widget.input"><code>UiInput</code></a> for a single <a href="../UiSingleWidgetFactoryDatatype.html#getDatatype()"><code>datatype</code></a>.</div>
+<div class="block">Factory for <a href="../../widget/input/UiInput.html" title="interface in io.github.mmm.ui.widget.input"><code>UiInput</code></a> for a single <a href="../UiSingleWidgetFactoryDatatype.html#getType()"><code>datatype</code></a>.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>interface&nbsp;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../UiSingleWidgetFactoryNative.html" title="interface in io.github.mmm.ui.factory">UiSingleWidgetFactoryNative</a>&lt;W extends <a href="../../widget/UiNativeWidget.html" title="interface in io.github.mmm.ui.widget">UiNativeWidget</a>&gt;</span></code></th>
 <td class="colLast">
-<div class="block">Factory for <a href="../../widget/UiNativeWidget.html" title="interface in io.github.mmm.ui.widget"><code>UiNativeWidget</code></a> of a single <a href="../UiSingleWidgetFactoryNative.html#getWidgetInterface()"><code>type</code></a>.</div>
+<div class="block">Factory for <a href="../../widget/UiNativeWidget.html" title="interface in io.github.mmm.ui.widget"><code>UiNativeWidget</code></a> of a single <a href="../UiSingleWidgetFactoryNative.html#getType()"><code>type</code></a>.</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>interface&nbsp;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../UiSingleWidgetFactoryProperty.html" title="interface in io.github.mmm.ui.factory">UiSingleWidgetFactoryProperty</a>&lt;V&gt;</span></code></th>
 <td class="colLast">
-<div class="block">Factory for <a href="../../widget/input/UiInput.html" title="interface in io.github.mmm.ui.widget.input"><code>UiInput</code></a> for a single <a href="../UiSingleWidgetFactoryProperty.html#getProperty()"><code>property</code></a>.</div>
+<div class="block">Factory for <a href="../../widget/input/UiInput.html" title="interface in io.github.mmm.ui.widget.input"><code>UiInput</code></a> for a single <a href="../UiSingleWidgetFactoryProperty.html#getType()"><code>property</code></a>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
+<section role="region"><a id="io.github.mmm.ui.spi.factory">
+<!--   -->
+</a>
+<h3>Uses of <a href="../UiSingleWidgetFactory.html" title="interface in io.github.mmm.ui.factory">UiSingleWidgetFactory</a> in <a href="../../spi/factory/package-summary.html">io.github.mmm.ui.spi.factory</a></h3>
+<table class="useSummary">
+<caption><span>Classes in <a href="../../spi/factory/package-summary.html">io.github.mmm.ui.spi.factory</a> with type parameters of type <a href="../UiSingleWidgetFactory.html" title="interface in io.github.mmm.ui.factory">UiSingleWidgetFactory</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Class</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../spi/factory/AbstractUiWidgetFactory.html" title="class in io.github.mmm.ui.spi.factory">AbstractUiWidgetFactory</a>&lt;F extends <a href="../UiSingleWidgetFactory.html" title="interface in io.github.mmm.ui.factory">UiSingleWidgetFactory</a>&lt;?&gt;&gt;</span></code></th>
+<td class="colLast">
+<div class="block">Abstract base implementation for widget factor based on <a href="../UiSingleWidgetFactory.html" title="interface in io.github.mmm.ui.factory"><code>UiSingleWidgetFactory</code></a>.</div>
 </td>
 </tr>
 </tbody>

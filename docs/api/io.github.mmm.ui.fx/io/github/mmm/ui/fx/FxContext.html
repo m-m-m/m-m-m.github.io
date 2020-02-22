@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -144,6 +144,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <pre>public class <span class="typeNameLabel">FxContext</span>
 extends <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/spi/AbstractUiContext.html" title="class in io.github.mmm.ui.spi">AbstractUiContext</a></pre>
 <div class="block">Implementation of <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/UiContext.html" title="interface in io.github.mmm.ui"><code>UiContext</code></a> for JavaFx.</div>
+<dl>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>1.0.0</dd>
+</dl>
 </li>
 </ul>
 </div>
@@ -188,9 +192,35 @@ extends <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/spi/Abstrac
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/UiToggleGroup.html" title="interface in io.github.mmm.ui">UiToggleGroup</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createToggleGroup()">createToggleGroup</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/UiDispatcher.html" title="interface in io.github.mmm.ui">UiDispatcher</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDispatcher()">getDispatcher</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/window/UiMainWindow.html" title="interface in io.github.mmm.ui.widget.window">UiMainWindow</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getMainWindow()">getMainWindow</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/UiScreen.html" title="interface in io.github.mmm.ui">UiScreen</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getScreen()">getScreen</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#showPopup(java.lang.String,io.github.mmm.ui.datatype.UiSeverity,java.lang.String,java.lang.String,io.github.mmm.ui.event.action.UiAction...)">showPopup</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;message,
+         <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/datatype/UiSeverity.html" title="class in io.github.mmm.ui.datatype">UiSeverity</a>&nbsp;severity,
+         <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;title,
+         <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;details,
+         <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/event/action/UiAction.html" title="interface in io.github.mmm.ui.event.action">UiAction</a>...&nbsp;actions)</code></th>
+<td class="colLast">
+<div class="block">This method opens a popup window with the given <code>message</code>.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -198,7 +228,7 @@ extends <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/spi/Abstrac
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;io.github.mmm.ui.spi.<a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/spi/AbstractUiContext.html" title="class in io.github.mmm.ui.spi">AbstractUiContext</a></h3>
-<code><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/spi/AbstractUiContext.html#create(java.lang.Class,boolean)">create</a>, <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/spi/AbstractUiContext.html#createInput(io.github.mmm.value.ReadableTypedValue,boolean)">createInput</a>, <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/spi/AbstractUiContext.html#createInput(java.lang.Class,boolean)">createInput</a>, <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/spi/AbstractUiContext.html#getLocale()">getLocale</a>, <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/spi/AbstractUiContext.html#setLocale(java.util.Locale)">setLocale</a></code></li>
+<code><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/spi/AbstractUiContext.html#create(java.lang.Class,boolean)">create</a>, <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/spi/AbstractUiContext.html#createButton(io.github.mmm.ui.event.action.UiAction)">createButton</a>, <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/spi/AbstractUiContext.html#createInput(io.github.mmm.value.ReadableTypedValue,boolean)">createInput</a>, <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/spi/AbstractUiContext.html#createInput(java.lang.Class,boolean)">createInput</a>, <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/spi/AbstractUiContext.html#getBundle()">getBundle</a>, <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/spi/AbstractUiContext.html#getLocale()">getLocale</a>, <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/spi/AbstractUiContext.html#getTitle(io.github.mmm.ui.datatype.UiSeverity)">getTitle</a>, <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/spi/AbstractUiContext.html#localize(java.lang.String)">localize</a>, <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/spi/AbstractUiContext.html#setLocale(java.util.Locale)">setLocale</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
@@ -212,7 +242,7 @@ extends <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/spi/Abstrac
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;io.github.mmm.ui.<a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/UiContext.html" title="interface in io.github.mmm.ui">UiContext</a></h3>
-<code><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/UiContext.html#create(java.lang.Class)">create</a>, <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/UiContext.html#createButton(java.lang.String,io.github.mmm.ui.event.UiClickEventListener)">createButton</a>, <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/UiContext.html#createCheckbox(java.lang.String)">createCheckbox</a>, <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/UiContext.html#createFormPanel(io.github.mmm.ui.widget.input.UiInput...)">createFormPanel</a>, <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/UiContext.html#createHorizontalPanel()">createHorizontalPanel</a>, <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/UiContext.html#createInput(io.github.mmm.value.ReadableTypedValue)">createInput</a>, <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/UiContext.html#createInput(java.lang.Class)">createInput</a>, <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/UiContext.html#createLabel(java.lang.String)">createLabel</a>, <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/UiContext.html#createPasswordInput(java.lang.String)">createPasswordInput</a>, <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/UiContext.html#createTabPanel()">createTabPanel</a>, <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/UiContext.html#createTextArea(java.lang.String)">createTextArea</a>, <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/UiContext.html#createTextInput(java.lang.String)">createTextInput</a>, <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/UiContext.html#createVerticalPanel()">createVerticalPanel</a></code></li>
+<code><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/UiContext.html#create(java.lang.Class)">create</a>, <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/UiContext.html#createButton(java.lang.String,io.github.mmm.ui.event.UiClickEventListener)">createButton</a>, <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/UiContext.html#createButtonPanel(io.github.mmm.ui.widget.button.UiAbstractButton...)">createButtonPanel</a>, <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/UiContext.html#createCheckbox(java.lang.String)">createCheckbox</a>, <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/UiContext.html#createFormGroup(java.lang.String,io.github.mmm.ui.widget.input.UiInput...)">createFormGroup</a>, <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/UiContext.html#createFormPanel(io.github.mmm.ui.widget.input.UiAbstractInput...)">createFormPanel</a>, <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/UiContext.html#createHorizontalPanel()">createHorizontalPanel</a>, <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/UiContext.html#createInput(io.github.mmm.value.ReadableTypedValue)">createInput</a>, <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/UiContext.html#createInput(java.lang.Class)">createInput</a>, <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/UiContext.html#createLabel(java.lang.String)">createLabel</a>, <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/UiContext.html#createPasswordInput(java.lang.String)">createPasswordInput</a>, <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/UiContext.html#createRadioButton(java.lang.String)">createRadioButton</a>, <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/UiContext.html#createRadioChoice(java.lang.String,java.util.List)">createRadioChoice</a>, <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/UiContext.html#createRadioChoice(java.lang.String,V...)">createRadioChoice</a>, <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/UiContext.html#createRadioChoiceByEnum(java.lang.String,java.lang.Class)">createRadioChoiceByEnum</a>, <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/UiContext.html#createTabPanel()">createTabPanel</a>, <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/UiContext.html#createTextArea(java.lang.String)">createTextArea</a>, <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/UiContext.html#createTextInput(java.lang.String)">createTextInput</a>, <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/UiContext.html#createVerticalPanel()">createVerticalPanel</a>, <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/UiContext.html#getDefaultValidationFailure()">getDefaultValidationFailure</a>, <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/UiContext.html#newValidState()">newValidState</a>, <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/UiContext.html#showPopupOk(java.lang.String)">showPopupOk</a>, <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/UiContext.html#showPopupOk(java.lang.String,io.github.mmm.ui.datatype.UiSeverity)">showPopupOk</a>, <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/UiContext.html#showPopupOk(java.lang.String,io.github.mmm.ui.datatype.UiSeverity,java.lang.String)">showPopupOk</a>, <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/UiContext.html#showPopupOk(java.lang.String,io.github.mmm.ui.datatype.UiSeverity,java.lang.String,io.github.mmm.ui.event.action.UiActionOk)">showPopupOk</a>, <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/UiContext.html#showPopupOk(java.lang.Throwable)">showPopupOk</a>, <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/UiContext.html#showPopupOk(java.lang.Throwable,java.lang.String)">showPopupOk</a>, <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/UiContext.html#showPopupOk(java.lang.Throwable,java.lang.String,io.github.mmm.ui.event.action.UiActionOk)">showPopupOk</a>, <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/UiContext.html#showPopupYesNo(java.lang.String,java.lang.String,java.util.function.Consumer)">showPopupYesNo</a></code></li>
 </ul>
 </li>
 </ul>
@@ -257,7 +287,7 @@ extends <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/spi/Abstrac
 <a id="getMainWindow()">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getMainWindow</h4>
 <pre class="methodSignature">public&nbsp;<a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/window/UiMainWindow.html" title="interface in io.github.mmm.ui.widget.window">UiMainWindow</a>&nbsp;getMainWindow()</pre>
@@ -265,6 +295,72 @@ extends <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/spi/Abstrac
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/window/UiMainWindow.html" title="interface in io.github.mmm.ui.widget.window"><code>UiMainWindow</code></a> running this application. It will hold the <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/window/UiMainWindow.html#getMenuBar()"><code>menu
          bar</code></a> and should be the main entry point to your application for end-users.</dd>
+</dl>
+</li>
+</ul>
+<a id="getScreen()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getScreen</h4>
+<pre class="methodSignature">public&nbsp;<a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/UiScreen.html" title="interface in io.github.mmm.ui">UiScreen</a>&nbsp;getScreen()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/UiScreen.html" title="interface in io.github.mmm.ui"><code>UiScreen</code></a> to read the current screen resolution.</dd>
+</dl>
+</li>
+</ul>
+<a id="getDispatcher()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDispatcher</h4>
+<pre class="methodSignature">public&nbsp;<a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/UiDispatcher.html" title="interface in io.github.mmm.ui">UiDispatcher</a>&nbsp;getDispatcher()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/UiDispatcher.html" title="interface in io.github.mmm.ui"><code>UiDispatcher</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="createToggleGroup()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createToggleGroup</h4>
+<pre class="methodSignature">public&nbsp;<a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/UiToggleGroup.html" title="interface in io.github.mmm.ui">UiToggleGroup</a>&nbsp;createToggleGroup()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/UiToggleGroup.html" title="interface in io.github.mmm.ui"><code>UiToggleGroup</code></a> instance.</dd>
+</dl>
+</li>
+</ul>
+<a id="showPopup(java.lang.String,io.github.mmm.ui.datatype.UiSeverity,java.lang.String,java.lang.String,io.github.mmm.ui.event.action.UiAction...)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>showPopup</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;showPopup&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;message,
+                      <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/datatype/UiSeverity.html" title="class in io.github.mmm.ui.datatype">UiSeverity</a>&nbsp;severity,
+                      <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;title,
+                      <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;details,
+                      <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/event/action/UiAction.html" title="interface in io.github.mmm.ui.event.action">UiAction</a>...&nbsp;actions)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/UiContext.html#showPopup(java.lang.String,io.github.mmm.ui.datatype.UiSeverity,java.lang.String,java.lang.String,io.github.mmm.ui.event.action.UiAction...)">UiContext</a></code></span></div>
+<div class="block">This method opens a popup window with the given <code>message</code>. It is the most generic and flexible but also the
+ most inconvenient <code>showPopup</code> method variant.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>message</code> - is the message to display.</dd>
+<dd><code>severity</code> - is the <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/datatype/UiSeverity.html" title="class in io.github.mmm.ui.datatype"><code>UiSeverity</code></a>.</dd>
+<dd><code>title</code> - is the title that will be displayed in the title-bar of the popup. May be <code>null</code> to use the
+        default title for the given <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/datatype/UiSeverity.html" title="class in io.github.mmm.ui.datatype"><code>UiSeverity</code></a>.</dd>
+<dd><code>details</code> - the optional details. If not <code>null</code> details will be shown but are initially collapsed and have
+        to be expanded by the end user.</dd>
+<dd><code>actions</code> - are the <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/event/action/UiAction.html" title="interface in io.github.mmm.ui.event.action"><code>UiAction</code></a>s for the buttons to close (answer, confirm, or cancel) the popup. Has to be
+        at least one <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/event/action/UiAction.html" title="interface in io.github.mmm.ui.event.action"><code>UiAction</code></a>.</dd>
 </dl>
 </li>
 </ul>

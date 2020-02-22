@@ -125,7 +125,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
-<dd><code>W</code> - the generic type of the <a href="#getWidgetInterface()"><code>widget</code></a> to <a href="#create(io.github.mmm.ui.UiContext)"><code>create</code></a>.</dd>
+<dd><code>W</code> - the generic type of the <a href="#getType()"><code>widget</code></a> to <a href="#create(io.github.mmm.ui.UiContext)"><code>create</code></a>.</dd>
 </dl>
 <dl>
 <dt>All Superinterfaces:</dt>
@@ -134,7 +134,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <hr>
 <pre>public interface <span class="typeNameLabel">UiSingleWidgetFactoryNative&lt;W extends <a href="../widget/UiNativeWidget.html" title="interface in io.github.mmm.ui.widget">UiNativeWidget</a>&gt;</span>
 extends <a href="UiSingleWidgetFactory.html" title="interface in io.github.mmm.ui.factory">UiSingleWidgetFactory</a>&lt;W&gt;</pre>
-<div class="block">Factory for <a href="../widget/UiNativeWidget.html" title="interface in io.github.mmm.ui.widget"><code>UiNativeWidget</code></a> of a single <a href="#getWidgetInterface()"><code>type</code></a>.</div>
+<div class="block">Factory for <a href="../widget/UiNativeWidget.html" title="interface in io.github.mmm.ui.widget"><code>UiNativeWidget</code></a> of a single <a href="#getType()"><code>type</code></a>.</div>
 <dl>
 <dt><span class="simpleTagLabel">Since:</span></dt>
 <dd>1.0.0</dd>
@@ -169,7 +169,7 @@ extends <a href="UiSingleWidgetFactory.html" title="interface in io.github.mmm.u
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;<a href="UiSingleWidgetFactoryNative.html" title="type parameter in UiSingleWidgetFactoryNative">W</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getWidgetInterface()">getWidgetInterface</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getType()">getType</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -189,14 +189,16 @@ extends <a href="UiSingleWidgetFactory.html" title="interface in io.github.mmm.u
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="getWidgetInterface()">
+<a id="getType()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getWidgetInterface</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;<a href="UiSingleWidgetFactoryNative.html" title="type parameter in UiSingleWidgetFactoryNative">W</a>&gt;&nbsp;getWidgetInterface()</pre>
+<h4>getType</h4>
+<pre class="methodSignature"><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;<a href="UiSingleWidgetFactoryNative.html" title="type parameter in UiSingleWidgetFactoryNative">W</a>&gt;&nbsp;getType()</pre>
 <dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="UiSingleWidgetFactory.html#getType()">getType</a></code>&nbsp;in interface&nbsp;<code><a href="UiSingleWidgetFactory.html" title="interface in io.github.mmm.ui.factory">UiSingleWidgetFactory</a>&lt;<a href="UiSingleWidgetFactoryNative.html" title="type parameter in UiSingleWidgetFactoryNative">W</a> extends <a href="../widget/UiNativeWidget.html" title="interface in io.github.mmm.ui.widget">UiNativeWidget</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Class</code></a> reflecting the <a href="../widget/UiNativeWidget.html" title="interface in io.github.mmm.ui.widget"><code>UiNativeWidget</code></a> interface.</dd>
 </dl>

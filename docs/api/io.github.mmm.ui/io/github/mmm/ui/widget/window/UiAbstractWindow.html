@@ -26,8 +26,8 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":18,"i16":18,"i17":6,"i18":6};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
+var data = {"i0":6,"i1":6,"i2":6,"i3":6};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -125,7 +125,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Superinterfaces:</dt>
-<dd><code><a href="../../../../../../../io.github.mmm.event/io/github/mmm/event/EventSource.html" title="interface in io.github.mmm.event">EventSource</a>&lt;<a href="../../event/UiEvent.html" title="class in io.github.mmm.ui.event">UiEvent</a>,&#8203;<a href="../../event/UiEventListener.html" title="interface in io.github.mmm.ui.event">UiEventListener</a>&gt;</code>, <code><a href="../UiClosableWidget.html" title="interface in io.github.mmm.ui.widget">UiClosableWidget</a></code>, <code><a href="../composite/UiComposite.html" title="interface in io.github.mmm.ui.widget.composite">UiComposite</a>&lt;<a href="../UiRegularWidget.html" title="interface in io.github.mmm.ui.widget">UiRegularWidget</a>&gt;</code>, <code><a href="../composite/UiDynamicComposite.html" title="interface in io.github.mmm.ui.widget.composite">UiDynamicComposite</a>&lt;<a href="../UiRegularWidget.html" title="interface in io.github.mmm.ui.widget">UiRegularWidget</a>&gt;</code>, <code><a href="../UiWidget.html" title="interface in io.github.mmm.ui.widget">UiWidget</a></code></dd>
+<dd><code><a href="../../attribute/AttributeReadSizeInPixel.html" title="interface in io.github.mmm.ui.attribute">AttributeReadSizeInPixel</a></code>, <code><a href="../../../../../../../io.github.mmm.event/io/github/mmm/event/EventSource.html" title="interface in io.github.mmm.event">EventSource</a>&lt;<a href="../../event/UiEvent.html" title="class in io.github.mmm.ui.event">UiEvent</a>,&#8203;<a href="../../event/UiEventListener.html" title="interface in io.github.mmm.ui.event">UiEventListener</a>&gt;</code>, <code><a href="../composite/UiComposite.html" title="interface in io.github.mmm.ui.widget.composite">UiComposite</a>&lt;<a href="../UiRegularWidget.html" title="interface in io.github.mmm.ui.widget">UiRegularWidget</a>&gt;</code>, <code><a href="../composite/UiDynamicComposite.html" title="interface in io.github.mmm.ui.widget.composite">UiDynamicComposite</a>&lt;<a href="../UiRegularWidget.html" title="interface in io.github.mmm.ui.widget">UiRegularWidget</a>&gt;</code>, <code><a href="../UiWidget.html" title="interface in io.github.mmm.ui.widget">UiWidget</a></code>, <code><a href="../attribute/UiWidgetWithClosable.html" title="interface in io.github.mmm.ui.widget.attribute">UiWidgetWithClosable</a></code>, <code><a href="../attribute/UiWidgetWithMaximizable.html" title="interface in io.github.mmm.ui.widget.attribute">UiWidgetWithMaximizable</a></code>, <code><a href="../attribute/UiWidgetWithPosition.html" title="interface in io.github.mmm.ui.widget.attribute">UiWidgetWithPosition</a></code>, <code><a href="../attribute/UiWidgetWithSize.html" title="interface in io.github.mmm.ui.widget.attribute">UiWidgetWithSize</a></code>, <code><a href="../attribute/UiWidgetWithTitle.html" title="interface in io.github.mmm.ui.widget.attribute">UiWidgetWithTitle</a></code></dd>
 </dl>
 <dl>
 <dt>All Known Subinterfaces:</dt>
@@ -133,9 +133,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 <hr>
 <pre>public interface <span class="typeNameLabel">UiAbstractWindow</span>
-extends <a href="../composite/UiDynamicComposite.html" title="interface in io.github.mmm.ui.widget.composite">UiDynamicComposite</a>&lt;<a href="../UiRegularWidget.html" title="interface in io.github.mmm.ui.widget">UiRegularWidget</a>&gt;, <a href="../UiClosableWidget.html" title="interface in io.github.mmm.ui.widget">UiClosableWidget</a></pre>
+extends <a href="../composite/UiDynamicComposite.html" title="interface in io.github.mmm.ui.widget.composite">UiDynamicComposite</a>&lt;<a href="../UiRegularWidget.html" title="interface in io.github.mmm.ui.widget">UiRegularWidget</a>&gt;, <a href="../attribute/UiWidgetWithTitle.html" title="interface in io.github.mmm.ui.widget.attribute">UiWidgetWithTitle</a>, <a href="../attribute/UiWidgetWithClosable.html" title="interface in io.github.mmm.ui.widget.attribute">UiWidgetWithClosable</a>, <a href="../attribute/UiWidgetWithSize.html" title="interface in io.github.mmm.ui.widget.attribute">UiWidgetWithSize</a>, <a href="../attribute/UiWidgetWithPosition.html" title="interface in io.github.mmm.ui.widget.attribute">UiWidgetWithPosition</a>, <a href="../attribute/UiWidgetWithMaximizable.html" title="interface in io.github.mmm.ui.widget.attribute">UiWidgetWithMaximizable</a></pre>
 <div class="block"><a href="../composite/UiDynamicComposite.html" title="interface in io.github.mmm.ui.widget.composite"><code>UiDynamicComposite</code></a> that represents a <em>window</em>. To open the window use <a href="../UiWidget.html#setVisible(boolean)"><code>setVisible(true)</code></a> and to close it use <a href="../UiWidget.html#setVisible(boolean)"><code>setVisible(false)</code></a>. Some underlying UI toolkits do
- not support to dynamically change the features of the window so configure them via <a href="#setClosable(boolean)"><code>setClosable(boolean)</code></a>,
+ not support to dynamically change the features of the window so configure them via <a href="../attribute/UiWidgetWithClosable.html#setClosable(boolean)"><code>UiWidgetWithClosable.setClosable(boolean)</code></a>,
  <a href="#setResizable(boolean)"><code>setResizable(boolean)</code></a>, etc. before opening the window.</div>
 <dl>
 <dt><span class="simpleTagLabel">Since:</span></dt>
@@ -172,123 +172,30 @@ extends <a href="../composite/UiDynamicComposite.html" title="interface in io.gi
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t5" class="tableTab"><span><a href="javascript:show(16);">Default Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colSecond" scope="col">Method</th>
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../datatype/UiLength.html" title="class in io.github.mmm.ui.datatype">UiLength</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getHeight()">getHeight</a></span>()</code></th>
-<td class="colLast">
-<div class="block">This method gets the height of this object.</div>
-</td>
-</tr>
-<tr id="i1" class="rowColor">
-<td class="colFirst"><code>double</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPositionX()">getPositionX</a></span>()</code></th>
-<td class="colLast">
-<div class="block">This method gets the pixel position of the left border object on the x-axis (horizontal).</div>
-</td>
-</tr>
-<tr id="i2" class="altColor">
-<td class="colFirst"><code>double</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPositionY()">getPositionY</a></span>()</code></th>
-<td class="colLast">
-<div class="block">This method gets the pixel position of the top border of this object on the y-axis (vertical).</div>
-</td>
-</tr>
-<tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getTitle()">getTitle</a></span>()</code></th>
-<td class="colLast">
-<div class="block">This method gets the title of this object.</div>
-</td>
-</tr>
-<tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="../../datatype/UiLength.html" title="class in io.github.mmm.ui.datatype">UiLength</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getWidth()">getWidth</a></span>()</code></th>
-<td class="colLast">
-<div class="block">This method gets the width of this object.</div>
-</td>
-</tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isClosable()">isClosable</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i6" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isMaximized()">isMaximized</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i7" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isMovable()">isMovable</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isResizable()">isResizable</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setClosable(boolean)">setClosable</a></span>&#8203;(boolean&nbsp;closable)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i10" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setHeight(io.github.mmm.ui.datatype.UiLength)">setHeight</a></span>&#8203;(<a href="../../datatype/UiLength.html" title="class in io.github.mmm.ui.datatype">UiLength</a>&nbsp;height)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i11" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setMaximized(boolean)">setMaximized</a></span>&#8203;(boolean&nbsp;maximized)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i12" class="altColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setMovable(boolean)">setMovable</a></span>&#8203;(boolean&nbsp;movable)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setPosition(double,double)">setPosition</a></span>&#8203;(double&nbsp;x,
-           double&nbsp;y)</code></th>
-<td class="colLast">
-<div class="block">This method sets the position of the object.</div>
-</td>
-</tr>
-<tr id="i14" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setResizable(boolean)">setResizable</a></span>&#8203;(boolean&nbsp;resizable)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i15" class="rowColor">
-<td class="colFirst"><code>default void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setSize(double,double,io.github.mmm.ui.datatype.UiLengthUnit)">setSize</a></span>&#8203;(double&nbsp;width,
-       double&nbsp;height,
-       <a href="../../datatype/UiLengthUnit.html" title="enum in io.github.mmm.ui.datatype">UiLengthUnit</a>&nbsp;unit)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i16" class="altColor">
-<td class="colFirst"><code>default void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setSize(io.github.mmm.ui.datatype.UiLength,io.github.mmm.ui.datatype.UiLength)">setSize</a></span>&#8203;(<a href="../../datatype/UiLength.html" title="class in io.github.mmm.ui.datatype">UiLength</a>&nbsp;width,
-       <a href="../../datatype/UiLength.html" title="class in io.github.mmm.ui.datatype">UiLength</a>&nbsp;height)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i17" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setTitle(java.lang.String)">setTitle</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;title)</code></th>
-<td class="colLast">
-<div class="block">This method sets the title of this object.</div>
-</td>
-</tr>
-<tr id="i18" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setWidth(io.github.mmm.ui.datatype.UiLength)">setWidth</a></span>&#8203;(<a href="../../datatype/UiLength.html" title="class in io.github.mmm.ui.datatype">UiLength</a>&nbsp;width)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -318,7 +225,42 @@ extends <a href="../composite/UiDynamicComposite.html" title="interface in io.gi
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;io.github.mmm.ui.widget.<a href="../UiWidget.html" title="interface in io.github.mmm.ui.widget">UiWidget</a></h3>
-<code><a href="../UiWidget.html#dispose()">dispose</a>, <a href="../UiWidget.html#getContext()">getContext</a>, <a href="../UiWidget.html#getId()">getId</a>, <a href="../UiWidget.html#getParent()">getParent</a>, <a href="../UiWidget.html#getReadOnlyFixed()">getReadOnlyFixed</a>, <a href="../UiWidget.html#getStyles()">getStyles</a>, <a href="../UiWidget.html#isDisposed()">isDisposed</a>, <a href="../UiWidget.html#isEnabled()">isEnabled</a>, <a href="../UiWidget.html#isEnabled(io.github.mmm.ui.datatype.UiFlagMode)">isEnabled</a>, <a href="../UiWidget.html#isFocused()">isFocused</a>, <a href="../UiWidget.html#isModified()">isModified</a>, <a href="../UiWidget.html#isReadOnly()">isReadOnly</a>, <a href="../UiWidget.html#isVisible()">isVisible</a>, <a href="../UiWidget.html#isVisible(io.github.mmm.ui.datatype.UiFlagMode)">isVisible</a>, <a href="../UiWidget.html#setEnabled(boolean)">setEnabled</a>, <a href="../UiWidget.html#setEnabled(boolean,io.github.mmm.ui.datatype.UiFlagMode)">setEnabled</a>, <a href="../UiWidget.html#setId(java.lang.String)">setId</a>, <a href="../UiWidget.html#setReadOnly(boolean)">setReadOnly</a>, <a href="../UiWidget.html#setReadOnlyFixed(java.lang.Boolean)">setReadOnlyFixed</a>, <a href="../UiWidget.html#setVisible(boolean)">setVisible</a>, <a href="../UiWidget.html#setVisible(boolean,io.github.mmm.ui.datatype.UiFlagMode)">setVisible</a></code></li>
+<code><a href="../UiWidget.html#dispose()">dispose</a>, <a href="../UiWidget.html#getContext()">getContext</a>, <a href="../UiWidget.html#getId()">getId</a>, <a href="../UiWidget.html#getParent()">getParent</a>, <a href="../UiWidget.html#getReadOnlyFixed()">getReadOnlyFixed</a>, <a href="../UiWidget.html#getStyles()">getStyles</a>, <a href="../UiWidget.html#isDisposed()">isDisposed</a>, <a href="../UiWidget.html#isEnabled()">isEnabled</a>, <a href="../UiWidget.html#isEnabled(io.github.mmm.ui.datatype.BitMask)">isEnabled</a>, <a href="../UiWidget.html#isFocused()">isFocused</a>, <a href="../UiWidget.html#isModified()">isModified</a>, <a href="../UiWidget.html#isReadOnly()">isReadOnly</a>, <a href="../UiWidget.html#isVisible()">isVisible</a>, <a href="../UiWidget.html#isVisible(io.github.mmm.ui.datatype.BitMask)">isVisible</a>, <a href="../UiWidget.html#setEnabled(boolean)">setEnabled</a>, <a href="../UiWidget.html#setEnabled(boolean,io.github.mmm.ui.datatype.BitMask)">setEnabled</a>, <a href="../UiWidget.html#setId(java.lang.String)">setId</a>, <a href="../UiWidget.html#setReadOnly(boolean)">setReadOnly</a>, <a href="../UiWidget.html#setReadOnlyFixed(java.lang.Boolean)">setReadOnlyFixed</a>, <a href="../UiWidget.html#setVisible(boolean)">setVisible</a>, <a href="../UiWidget.html#setVisible(boolean,io.github.mmm.ui.datatype.BitMask)">setVisible</a>, <a href="../UiWidget.html#validateDown(io.github.mmm.ui.datatype.UiValidState)">validateDown</a>, <a href="../UiWidget.html#validateUp(boolean)">validateUp</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.widget.attribute.UiWidgetWithClosable">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;io.github.mmm.ui.widget.attribute.<a href="../attribute/UiWidgetWithClosable.html" title="interface in io.github.mmm.ui.widget.attribute">UiWidgetWithClosable</a></h3>
+<code><a href="../attribute/UiWidgetWithClosable.html#isClosable()">isClosable</a>, <a href="../attribute/UiWidgetWithClosable.html#setClosable(boolean)">setClosable</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.widget.attribute.UiWidgetWithMaximizable">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;io.github.mmm.ui.widget.attribute.<a href="../attribute/UiWidgetWithMaximizable.html" title="interface in io.github.mmm.ui.widget.attribute">UiWidgetWithMaximizable</a></h3>
+<code><a href="../attribute/UiWidgetWithMaximizable.html#isMaximized()">isMaximized</a>, <a href="../attribute/UiWidgetWithMaximizable.html#setMaximized(boolean)">setMaximized</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.widget.attribute.UiWidgetWithPosition">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;io.github.mmm.ui.widget.attribute.<a href="../attribute/UiWidgetWithPosition.html" title="interface in io.github.mmm.ui.widget.attribute">UiWidgetWithPosition</a></h3>
+<code><a href="../attribute/UiWidgetWithPosition.html#getX()">getX</a>, <a href="../attribute/UiWidgetWithPosition.html#getY()">getY</a>, <a href="../attribute/UiWidgetWithPosition.html#setPosition(double,double)">setPosition</a>, <a href="../attribute/UiWidgetWithPosition.html#setX(double)">setX</a>, <a href="../attribute/UiWidgetWithPosition.html#setY(double)">setY</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.widget.attribute.UiWidgetWithSize">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;io.github.mmm.ui.widget.attribute.<a href="../attribute/UiWidgetWithSize.html" title="interface in io.github.mmm.ui.widget.attribute">UiWidgetWithSize</a></h3>
+<code><a href="../attribute/UiWidgetWithSize.html#getHeight()">getHeight</a>, <a href="../attribute/UiWidgetWithSize.html#getHeightInPixel()">getHeightInPixel</a>, <a href="../attribute/UiWidgetWithSize.html#getWidth()">getWidth</a>, <a href="../attribute/UiWidgetWithSize.html#getWidthInPixel()">getWidthInPixel</a>, <a href="../attribute/UiWidgetWithSize.html#setHeight(io.github.mmm.ui.datatype.UiLength)">setHeight</a>, <a href="../attribute/UiWidgetWithSize.html#setSize(double,double,io.github.mmm.ui.datatype.UiLengthUnit)">setSize</a>, <a href="../attribute/UiWidgetWithSize.html#setSize(io.github.mmm.ui.datatype.UiLength,io.github.mmm.ui.datatype.UiLength)">setSize</a>, <a href="../attribute/UiWidgetWithSize.html#setWidth(io.github.mmm.ui.datatype.UiLength)">setWidth</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.widget.attribute.UiWidgetWithTitle">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;io.github.mmm.ui.widget.attribute.<a href="../attribute/UiWidgetWithTitle.html" title="interface in io.github.mmm.ui.widget.attribute">UiWidgetWithTitle</a></h3>
+<code><a href="../attribute/UiWidgetWithTitle.html#getTitle()">getTitle</a>, <a href="../attribute/UiWidgetWithTitle.html#setTitle(java.lang.String)">setTitle</a></code></li>
 </ul>
 </li>
 </ul>
@@ -336,171 +278,6 @@ extends <a href="../composite/UiDynamicComposite.html" title="interface in io.gi
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="getTitle()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getTitle</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getTitle()</pre>
-<div class="block">This method gets the title of this object. The detailed meaning of the title depends on the type of object. E.g. a
- window will have the title in the top-level bar.</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the title.</dd>
-</dl>
-</li>
-</ul>
-<a id="setTitle(java.lang.String)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setTitle</h4>
-<pre class="methodSignature">void&nbsp;setTitle&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;title)</pre>
-<div class="block">This method sets the title of this object.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>title</code> - is the new title.</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="#getTitle()"><code>getTitle()</code></a></dd>
-</dl>
-</li>
-</ul>
-<a id="getPositionX()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getPositionX</h4>
-<pre class="methodSignature">double&nbsp;getPositionX()</pre>
-<div class="block">This method gets the pixel position of the left border object on the x-axis (horizontal).</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the x position.</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="#getPositionY()"><code>getPositionY()</code></a></dd>
-</dl>
-</li>
-</ul>
-<a id="getPositionY()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getPositionY</h4>
-<pre class="methodSignature">double&nbsp;getPositionY()</pre>
-<div class="block">This method gets the pixel position of the top border of this object on the y-axis (vertical).</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the y position.</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="#getPositionX()"><code>getPositionX()</code></a></dd>
-</dl>
-</li>
-</ul>
-<a id="setPosition(double,double)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setPosition</h4>
-<pre class="methodSignature">void&nbsp;setPosition&#8203;(double&nbsp;x,
-                 double&nbsp;y)</pre>
-<div class="block">This method sets the position of the object.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>x</code> - is the <a href="#getPositionX()"><code>position on the x-axsis</code></a> (horizontal).</dd>
-<dd><code>y</code> - is the <a href="#getPositionY()"><code>position on the y-axsis</code></a> (vertical).</dd>
-</dl>
-</li>
-</ul>
-<a id="getWidth()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getWidth</h4>
-<pre class="methodSignature"><a href="../../datatype/UiLength.html" title="class in io.github.mmm.ui.datatype">UiLength</a>&nbsp;getWidth()</pre>
-<div class="block">This method gets the width of this object.</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the width. Will be <a href="../../datatype/UiLength.html#ZERO"><code>UiLength.ZERO</code></a> if undefined (NOT set).</dd>
-</dl>
-</li>
-</ul>
-<a id="setWidth(io.github.mmm.ui.datatype.UiLength)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setWidth</h4>
-<pre class="methodSignature">void&nbsp;setWidth&#8203;(<a href="../../datatype/UiLength.html" title="class in io.github.mmm.ui.datatype">UiLength</a>&nbsp;width)</pre>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>width</code> - the new <a href="#getWidth()"><code>width</code></a>.</dd>
-</dl>
-</li>
-</ul>
-<a id="getHeight()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getHeight</h4>
-<pre class="methodSignature"><a href="../../datatype/UiLength.html" title="class in io.github.mmm.ui.datatype">UiLength</a>&nbsp;getHeight()</pre>
-<div class="block">This method gets the height of this object.</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the height. Will be <a href="../../datatype/UiLength.html#ZERO"><code>UiLength.ZERO</code></a> if undefined (NOT set).</dd>
-</dl>
-</li>
-</ul>
-<a id="setHeight(io.github.mmm.ui.datatype.UiLength)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setHeight</h4>
-<pre class="methodSignature">void&nbsp;setHeight&#8203;(<a href="../../datatype/UiLength.html" title="class in io.github.mmm.ui.datatype">UiLength</a>&nbsp;height)</pre>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>height</code> - the new <a href="#getHeight()"><code>height</code></a>.</dd>
-</dl>
-</li>
-</ul>
-<a id="setSize(io.github.mmm.ui.datatype.UiLength,io.github.mmm.ui.datatype.UiLength)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setSize</h4>
-<pre class="methodSignature">default&nbsp;void&nbsp;setSize&#8203;(<a href="../../datatype/UiLength.html" title="class in io.github.mmm.ui.datatype">UiLength</a>&nbsp;width,
-                     <a href="../../datatype/UiLength.html" title="class in io.github.mmm.ui.datatype">UiLength</a>&nbsp;height)</pre>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>width</code> - is the new <a href="#getWidth()"><code>width</code></a> of the object.</dd>
-<dd><code>height</code> - is the new <a href="#getHeight()"><code>height</code></a> of the object.</dd>
-</dl>
-</li>
-</ul>
-<a id="setSize(double,double,io.github.mmm.ui.datatype.UiLengthUnit)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setSize</h4>
-<pre class="methodSignature">default&nbsp;void&nbsp;setSize&#8203;(double&nbsp;width,
-                     double&nbsp;height,
-                     <a href="../../datatype/UiLengthUnit.html" title="enum in io.github.mmm.ui.datatype">UiLengthUnit</a>&nbsp;unit)</pre>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>width</code> - is the new <a href="#getWidth()"><code>width</code></a> of the object.</dd>
-<dd><code>height</code> - is the new <a href="#getHeight()"><code>height</code></a> of the object.</dd>
-<dd><code>unit</code> - is the <a href="../../datatype/UiLengthUnit.html" title="enum in io.github.mmm.ui.datatype"><code>unit</code></a> of <code>width</code> and <code>height</code>.</dd>
-</dl>
-</li>
-</ul>
 <a id="isResizable()">
 <!--   -->
 </a>
@@ -510,7 +287,7 @@ extends <a href="../composite/UiDynamicComposite.html" title="interface in io.gi
 <pre class="methodSignature">boolean&nbsp;isResizable()</pre>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd><code>true</code> if this window can be <a href="#setSize(io.github.mmm.ui.datatype.UiLength,io.github.mmm.ui.datatype.UiLength)"><code>resized</code></a> by the end-user,
+<dd><code>true</code> if this window can be <a href="../attribute/UiWidgetWithSize.html#setSize(io.github.mmm.ui.datatype.UiLength,io.github.mmm.ui.datatype.UiLength)"><code>resized</code></a> by the end-user,
          <code>false</code> otherwise.</dd>
 </dl>
 </li>
@@ -544,74 +321,13 @@ extends <a href="../composite/UiDynamicComposite.html" title="interface in io.gi
 <a id="setMovable(boolean)">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>setMovable</h4>
 <pre class="methodSignature">void&nbsp;setMovable&#8203;(boolean&nbsp;movable)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>movable</code> - is the new value of <a href="#isMovable()"><code>isMovable()</code></a>.</dd>
-</dl>
-</li>
-</ul>
-<a id="isClosable()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>isClosable</h4>
-<pre class="methodSignature">boolean&nbsp;isClosable()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../UiClosableWidget.html#isClosable()">isClosable</a></code>&nbsp;in interface&nbsp;<code><a href="../UiClosableWidget.html" title="interface in io.github.mmm.ui.widget">UiClosableWidget</a></code></dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd><code>true</code> if this window is closable (the end-user can close this window via an icon-button or by
-         hitting escape), <code>false</code> otherwise.</dd>
-</dl>
-</li>
-</ul>
-<a id="setClosable(boolean)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setClosable</h4>
-<pre class="methodSignature">void&nbsp;setClosable&#8203;(boolean&nbsp;closable)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../UiClosableWidget.html#setClosable(boolean)">setClosable</a></code>&nbsp;in interface&nbsp;<code><a href="../UiClosableWidget.html" title="interface in io.github.mmm.ui.widget">UiClosableWidget</a></code></dd>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>closable</code> - is the new value of <a href="#isClosable()"><code>isClosable()</code></a>.</dd>
-</dl>
-</li>
-</ul>
-<a id="isMaximized()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>isMaximized</h4>
-<pre class="methodSignature">boolean&nbsp;isMaximized()</pre>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd><code>true</code> if this window is currently maximized (fully expanded to cover the entire screen),
-         <code>false</code> otherwise.</dd>
-</dl>
-</li>
-</ul>
-<a id="setMaximized(boolean)">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>setMaximized</h4>
-<pre class="methodSignature">void&nbsp;setMaximized&#8203;(boolean&nbsp;maximized)</pre>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>maximized</code> - <code>true</code> to maximize, <code>false</code> to un-maximize (size and position will be restored to the
-        values before it was maximized).</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="#isMaximized()"><code>isMaximized()</code></a></dd>
 </dl>
 </li>
 </ul>

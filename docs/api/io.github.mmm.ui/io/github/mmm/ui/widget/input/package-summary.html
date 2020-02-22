@@ -138,10 +138,34 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="rowColor">
+<th class="colFirst" scope="row"><a href="UiCheckboxChoice.html" title="interface in io.github.mmm.ui.widget.input">UiCheckboxChoice</a>&lt;V&gt;</th>
+<td class="colLast">
+<div class="block"><a href="UiAbstractMultiChoice.html" title="interface in io.github.mmm.ui.widget.input"><code>UiAbstractMultiChoice</code></a> to select <code>0-N</code> <a href="UiAbstractChoice.html#getOptions()"><code>options</code></a> via <a href="UiCheckbox.html" title="interface in io.github.mmm.ui.widget.input"><code>UiCheckbox</code></a>es.</div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="UiColorInput.html" title="interface in io.github.mmm.ui.widget.input">UiColorInput</a></th>
+<td class="colLast">
+<div class="block"><a href="UiInput.html" title="interface in io.github.mmm.ui.widget.input"><code>UiInput</code></a> for a <code>Color</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="UiComboBox.html" title="interface in io.github.mmm.ui.widget.input">UiComboBox</a>&lt;V&gt;</th>
 <td class="colLast">
 <div class="block"><a href="UiAbstractSingleChoice.html" title="interface in io.github.mmm.ui.widget.input"><code>UiAbstractSingleChoice</code></a> for a <em>combo-box</em> that allows the end-user to expand a drop-down menu and
  select the <a href="../value/UiValuedWidget.html#getValue()"><code>value</code></a> from a given list of <a href="UiAbstractChoice.html#getOptions()"><code>options</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="UiDateInput.html" title="interface in io.github.mmm.ui.widget.input">UiDateInput</a></th>
+<td class="colLast">
+<div class="block"><a href="UiInput.html" title="interface in io.github.mmm.ui.widget.input"><code>UiInput</code></a> for a <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink"><code>LocalDate</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="UiDateTimeInput.html" title="interface in io.github.mmm.ui.widget.input">UiDateTimeInput</a></th>
+<td class="colLast">
+<div class="block"><a href="UiInput.html" title="interface in io.github.mmm.ui.widget.input"><code>UiInput</code></a> for a <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDateTime.html?is-external=true" title="class or interface in java.time" class="externalLink"><code>LocalDateTime</code></a>.</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -157,42 +181,60 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="altColor">
-<th class="colFirst" scope="row"><a href="UiPasswordInput.html" title="interface in io.github.mmm.ui.widget.input">UiPasswordInput</a></th>
+<th class="colFirst" scope="row"><a href="UiMultiComboBox.html" title="interface in io.github.mmm.ui.widget.input">UiMultiComboBox</a>&lt;V&gt;</th>
 <td class="colLast">
-<div class="block"><a href="UiTextualInput.html" title="interface in io.github.mmm.ui.widget.input"><code>UiTextualInput</code></a> for a password input.<br>
- Example:</div>
+<div class="block"><a href="UiAbstractMultiChoice.html" title="interface in io.github.mmm.ui.widget.input"><code>UiAbstractMultiChoice</code></a> for a <a href="UiComboBox.html" title="interface in io.github.mmm.ui.widget.input"><code>UiComboBox</code></a> that allows choosing multiple options.</div>
 </td>
 </tr>
 <tr class="rowColor">
+<th class="colFirst" scope="row"><a href="UiPasswordInput.html" title="interface in io.github.mmm.ui.widget.input">UiPasswordInput</a></th>
+<td class="colLast">
+<div class="block"><a href="UiStringInput.html" title="interface in io.github.mmm.ui.widget.input"><code>UiStringInput</code></a> for a password input.<br>
+ Example:</div>
+</td>
+</tr>
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="UiRadioButton.html" title="interface in io.github.mmm.ui.widget.input">UiRadioButton</a></th>
 <td class="colLast">
 <div class="block">A regular <a href="../value/UiAbstractRadioButton.html" title="interface in io.github.mmm.ui.widget.value"><code>radio-button widget</code></a>.<br>
  Example:</div>
 </td>
 </tr>
-<tr class="altColor">
-<th class="colFirst" scope="row"><a href="UiRadioButtonChoice.html" title="interface in io.github.mmm.ui.widget.input">UiRadioButtonChoice</a>&lt;V&gt;</th>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="UiRadioChoice.html" title="interface in io.github.mmm.ui.widget.input">UiRadioChoice</a>&lt;V&gt;</th>
 <td class="colLast">
 <div class="block"><a href="UiAbstractSingleChoice.html" title="interface in io.github.mmm.ui.widget.input"><code>UiAbstractSingleChoice</code></a> to select a value from a group of <a href="UiRadioButton.html" title="interface in io.github.mmm.ui.widget.input"><code>UiRadioButton</code></a>s.</div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="UiStringInput.html" title="interface in io.github.mmm.ui.widget.input">UiStringInput</a></th>
+<td class="colLast">
+<div class="block">Abstract <a href="UiTextualInput.html" title="interface in io.github.mmm.ui.widget.input"><code>UiTextualInput</code></a> with <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>String</code></a> <a href="../value/UiValuedWidget.html#getValue()"><code>value</code></a>.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <th class="colFirst" scope="row"><a href="UiTextArea.html" title="interface in io.github.mmm.ui.widget.input">UiTextArea</a></th>
 <td class="colLast">
-<div class="block"><a href="UiTextualInput.html" title="interface in io.github.mmm.ui.widget.input"><code>UiTextualInput</code></a> for a multi-line text area.<br>
+<div class="block"><a href="UiStringInput.html" title="interface in io.github.mmm.ui.widget.input"><code>UiStringInput</code></a> for a multi-line text area.<br>
  Example:</div>
 </td>
 </tr>
 <tr class="altColor">
 <th class="colFirst" scope="row"><a href="UiTextInput.html" title="interface in io.github.mmm.ui.widget.input">UiTextInput</a></th>
 <td class="colLast">
-<div class="block"><a href="UiTextualInput.html" title="interface in io.github.mmm.ui.widget.input"><code>UiTextualInput</code></a> for a single-line text input.</div>
+<div class="block"><a href="UiStringInput.html" title="interface in io.github.mmm.ui.widget.input"><code>UiStringInput</code></a> for a single-line text input.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<th class="colFirst" scope="row"><a href="UiTextualInput.html" title="interface in io.github.mmm.ui.widget.input">UiTextualInput</a></th>
+<th class="colFirst" scope="row"><a href="UiTextualInput.html" title="interface in io.github.mmm.ui.widget.input">UiTextualInput</a>&lt;V&gt;</th>
 <td class="colLast">
 <div class="block">Abstract <a href="../UiRegularWidget.html" title="interface in io.github.mmm.ui.widget"><code>UiRegularWidget</code></a> for textual input.</div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="UiTimeInput.html" title="interface in io.github.mmm.ui.widget.input">UiTimeInput</a></th>
+<td class="colLast">
+<div class="block"><a href="UiInput.html" title="interface in io.github.mmm.ui.widget.input"><code>UiInput</code></a> for a <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html?is-external=true" title="class or interface in java.time" class="externalLink"><code>LocalTime</code></a>.</div>
 </td>
 </tr>
 </tbody>

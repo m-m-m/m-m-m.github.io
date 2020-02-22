@@ -26,12 +26,6 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
-var altColor = "altColor";
-var rowColor = "rowColor";
-var tableTab = "tableTab";
-var activeTableTab = "activeTableTab";
 var pathtoroot = "../../../../../../../";
 var useModuleDirectories = true;
 loadScripts(document, 'script');</script>
@@ -97,7 +91,7 @@ loadScripts(document, 'script');</script>
 <li>Detail:&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
-<li><a href="#method.detail">Method</a></li>
+<li>Method</li>
 </ul>
 </div>
 <a id="skip.navbar.top">
@@ -129,15 +123,25 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 <dl>
 <dt>All Superinterfaces:</dt>
-<dd><code><a href="../../../../../../../io.github.mmm.event/io/github/mmm/event/EventSource.html" title="interface in io.github.mmm.event">EventSource</a>&lt;<a href="../../event/UiEvent.html" title="class in io.github.mmm.ui.event">UiEvent</a>,&#8203;<a href="../../event/UiEventListener.html" title="interface in io.github.mmm.ui.event">UiEventListener</a>&gt;</code>, <code><a href="UiAbstractChoice.html" title="interface in io.github.mmm.ui.widget.input">UiAbstractChoice</a>&lt;V,&#8203;V&gt;</code>, <code><a href="UiAbstractInput.html" title="interface in io.github.mmm.ui.widget.input">UiAbstractInput</a>&lt;V&gt;</code>, <code><a href="UiAbstractSingleChoice.html" title="interface in io.github.mmm.ui.widget.input">UiAbstractSingleChoice</a>&lt;V&gt;</code>, <code><a href="../UiAtomicWidget.html" title="interface in io.github.mmm.ui.widget">UiAtomicWidget</a></code>, <code><a href="../UiFailureWidget.html" title="interface in io.github.mmm.ui.widget">UiFailureWidget</a></code>, <code><a href="UiInput.html" title="interface in io.github.mmm.ui.widget.input">UiInput</a>&lt;V&gt;</code>, <code><a href="../UiNativeWidget.html" title="interface in io.github.mmm.ui.widget">UiNativeWidget</a></code>, <code><a href="../UiRegularWidget.html" title="interface in io.github.mmm.ui.widget">UiRegularWidget</a></code>, <code><a href="../value/UiValidatableWidget.html" title="interface in io.github.mmm.ui.widget.value">UiValidatableWidget</a>&lt;V&gt;</code>, <code><a href="../value/UiValuedWidget.html" title="interface in io.github.mmm.ui.widget.value">UiValuedWidget</a>&lt;V&gt;</code>, <code><a href="../UiWidget.html" title="interface in io.github.mmm.ui.widget">UiWidget</a></code></dd>
+<dd><code><a href="../../../../../../../io.github.mmm.event/io/github/mmm/event/EventSource.html" title="interface in io.github.mmm.event">EventSource</a>&lt;<a href="../../event/UiEvent.html" title="class in io.github.mmm.ui.event">UiEvent</a>,&#8203;<a href="../../event/UiEventListener.html" title="interface in io.github.mmm.ui.event">UiEventListener</a>&gt;</code>, <code><a href="UiAbstractChoice.html" title="interface in io.github.mmm.ui.widget.input">UiAbstractChoice</a>&lt;V,&#8203;V&gt;</code>, <code><a href="UiAbstractInput.html" title="interface in io.github.mmm.ui.widget.input">UiAbstractInput</a>&lt;V&gt;</code>, <code><a href="UiAbstractSingleChoice.html" title="interface in io.github.mmm.ui.widget.input">UiAbstractSingleChoice</a>&lt;V&gt;</code>, <code><a href="../UiAtomicWidget.html" title="interface in io.github.mmm.ui.widget">UiAtomicWidget</a></code>, <code><a href="UiInput.html" title="interface in io.github.mmm.ui.widget.input">UiInput</a>&lt;V&gt;</code>, <code><a href="../UiNativeWidget.html" title="interface in io.github.mmm.ui.widget">UiNativeWidget</a></code>, <code><a href="../UiRegularWidget.html" title="interface in io.github.mmm.ui.widget">UiRegularWidget</a></code>, <code><a href="UiTextualInput.html" title="interface in io.github.mmm.ui.widget.input">UiTextualInput</a>&lt;V&gt;</code>, <code><a href="../value/UiValidatableWidget.html" title="interface in io.github.mmm.ui.widget.value">UiValidatableWidget</a>&lt;V&gt;</code>, <code><a href="../value/UiValuedWidget.html" title="interface in io.github.mmm.ui.widget.value">UiValuedWidget</a>&lt;V&gt;</code>, <code><a href="../UiWidget.html" title="interface in io.github.mmm.ui.widget">UiWidget</a></code>, <code><a href="../attribute/UiWidgetWithTooltip.html" title="interface in io.github.mmm.ui.widget.attribute">UiWidgetWithTooltip</a></code>, <code><a href="../attribute/UiWidgetWithValidationFailure.html" title="interface in io.github.mmm.ui.widget.attribute">UiWidgetWithValidationFailure</a></code></dd>
 </dl>
 <hr>
 <pre>public interface <span class="typeNameLabel">UiComboBox&lt;V&gt;</span>
-extends <a href="UiAbstractSingleChoice.html" title="interface in io.github.mmm.ui.widget.input">UiAbstractSingleChoice</a>&lt;V&gt;, <a href="../UiNativeWidget.html" title="interface in io.github.mmm.ui.widget">UiNativeWidget</a></pre>
+extends <a href="UiAbstractSingleChoice.html" title="interface in io.github.mmm.ui.widget.input">UiAbstractSingleChoice</a>&lt;V&gt;, <a href="UiTextualInput.html" title="interface in io.github.mmm.ui.widget.input">UiTextualInput</a>&lt;V&gt;, <a href="../UiNativeWidget.html" title="interface in io.github.mmm.ui.widget">UiNativeWidget</a></pre>
 <div class="block"><a href="UiAbstractSingleChoice.html" title="interface in io.github.mmm.ui.widget.input"><code>UiAbstractSingleChoice</code></a> for a <em>combo-box</em> that allows the end-user to expand a drop-down menu and
  select the <a href="../value/UiValuedWidget.html#getValue()"><code>value</code></a> from a given list of <a href="UiAbstractChoice.html#getOptions()"><code>options</code></a>. However, the combo-box is
  also and editable text input field that allows the user to enter the value manually including auto-completion from
- the given <a href="UiAbstractChoice.html#getOptions()"><code>options</code></a> what is a valuable feature for accessibility and power-usage.</div>
+ the given <a href="UiAbstractChoice.html#getOptions()"><code>options</code></a> what is a valuable feature for accessibility and power-usage.<br>
+ (Simplified) example (press arrow down in the text field):
+
+ <pre>
+ Fruits: <input type="text" list="fruits" placeholder="Enter a fruit">
+ <datalist id="fruits">
+   <option value="Apple"></option>
+   <option value="Orange"></option>
+   <option value="Peach"></option>
+ </datalist>
+ </pre></div>
 <dl>
 <dt><span class="simpleTagLabel">Since:</span></dt>
 <dd>1.0.0</dd>
@@ -162,6 +166,13 @@ extends <a href="UiAbstractSingleChoice.html" title="interface in io.github.mmm.
 <h3>Fields inherited from interface&nbsp;io.github.mmm.ui.widget.<a href="../UiWidget.html" title="interface in io.github.mmm.ui.widget">UiWidget</a></h3>
 <code><a href="../UiWidget.html#ID_SEPARATOR">ID_SEPARATOR</a></code></li>
 </ul>
+<ul class="blockList">
+<li class="blockList"><a id="fields.inherited.from.class.io.github.mmm.ui.widget.attribute.UiWidgetWithValidationFailure">
+<!--   -->
+</a>
+<h3>Fields inherited from interface&nbsp;io.github.mmm.ui.widget.attribute.<a href="../attribute/UiWidgetWithValidationFailure.html" title="interface in io.github.mmm.ui.widget.attribute">UiWidgetWithValidationFailure</a></h3>
+<code><a href="../attribute/UiWidgetWithValidationFailure.html#STYLE_INVALID">STYLE_INVALID</a></code></li>
+</ul>
 </li>
 </ul>
 </section>
@@ -172,19 +183,6 @@ extends <a href="UiAbstractSingleChoice.html" title="interface in io.github.mmm.
 <!--   -->
 </a>
 <h3>Method Summary</h3>
-<table class="memberSummary">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colSecond" scope="col">Method</th>
-<th class="colLast" scope="col">Description</th>
-</tr>
-<tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getText()">getText</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-</table>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.event.EventSource">
 <!--   -->
@@ -197,35 +195,35 @@ extends <a href="UiAbstractSingleChoice.html" title="interface in io.github.mmm.
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;io.github.mmm.ui.widget.input.<a href="UiAbstractChoice.html" title="interface in io.github.mmm.ui.widget.input">UiAbstractChoice</a></h3>
-<code><a href="UiAbstractChoice.html#getFormatter()">getFormatter</a>, <a href="UiAbstractChoice.html#getOptions()">getOptions</a>, <a href="UiAbstractChoice.html#setFormatter(java.util.function.Function)">setFormatter</a>, <a href="UiAbstractChoice.html#setOptions(java.util.List)">setOptions</a></code></li>
+<code><a href="UiAbstractChoice.html#getFormatter()">getFormatter</a>, <a href="UiAbstractChoice.html#getOptions()">getOptions</a>, <a href="UiAbstractChoice.html#setFormatter(java.util.function.Function)">setFormatter</a>, <a href="UiAbstractChoice.html#setOptions(java.util.List)">setOptions</a>, <a href="UiAbstractChoice.html#setOptions(O...)">setOptions</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.widget.input.UiAbstractInput">
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;io.github.mmm.ui.widget.input.<a href="UiAbstractInput.html" title="interface in io.github.mmm.ui.widget.input">UiAbstractInput</a></h3>
-<code><a href="UiAbstractInput.html#getName()">getName</a>, <a href="UiAbstractInput.html#getNameWidget()">getNameWidget</a>, <a href="UiAbstractInput.html#getValidator()">getValidator</a>, <a href="UiAbstractInput.html#hasNameWidget()">hasNameWidget</a>, <a href="UiAbstractInput.html#setName(java.lang.String)">setName</a>, <a href="UiAbstractInput.html#setValidationFailure(java.lang.String)">setValidationFailure</a>, <a href="UiAbstractInput.html#setValidator(io.github.mmm.validation.Validator)">setValidator</a></code></li>
+<code><a href="UiAbstractInput.html#getName()">getName</a>, <a href="UiAbstractInput.html#setName(java.lang.String)">setName</a></code></li>
 </ul>
 <ul class="blockList">
-<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.widget.UiAtomicWidget">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.widget.input.UiInput">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;io.github.mmm.ui.widget.<a href="../UiAtomicWidget.html" title="interface in io.github.mmm.ui.widget">UiAtomicWidget</a></h3>
-<code><a href="../UiAtomicWidget.html#getTooltip()">getTooltip</a>, <a href="../UiAtomicWidget.html#setTooltip(java.lang.String)">setTooltip</a></code></li>
+<h3>Methods inherited from interface&nbsp;io.github.mmm.ui.widget.input.<a href="UiInput.html" title="interface in io.github.mmm.ui.widget.input">UiInput</a></h3>
+<code><a href="UiInput.html#getNameWidget()">getNameWidget</a>, <a href="UiInput.html#hasNameWidget()">hasNameWidget</a></code></li>
 </ul>
 <ul class="blockList">
-<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.widget.UiFailureWidget">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.widget.input.UiTextualInput">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;io.github.mmm.ui.widget.<a href="../UiFailureWidget.html" title="interface in io.github.mmm.ui.widget">UiFailureWidget</a></h3>
-<code><a href="../UiFailureWidget.html#getValidationFailure()">getValidationFailure</a>, <a href="../UiFailureWidget.html#isValid()">isValid</a></code></li>
+<h3>Methods inherited from interface&nbsp;io.github.mmm.ui.widget.input.<a href="UiTextualInput.html" title="interface in io.github.mmm.ui.widget.input">UiTextualInput</a></h3>
+<code><a href="UiTextualInput.html#getPlaceholder()">getPlaceholder</a>, <a href="UiTextualInput.html#getText()">getText</a>, <a href="UiTextualInput.html#setPlaceholder(java.lang.String)">setPlaceholder</a>, <a href="UiTextualInput.html#setText(java.lang.String)">setText</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.widget.value.UiValidatableWidget">
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;io.github.mmm.ui.widget.value.<a href="../value/UiValidatableWidget.html" title="interface in io.github.mmm.ui.widget.value">UiValidatableWidget</a></h3>
-<code><a href="../value/UiValidatableWidget.html#getOriginalValue()">getOriginalValue</a>, <a href="../value/UiValidatableWidget.html#resetValue()">resetValue</a>, <a href="../value/UiValidatableWidget.html#setOriginalValue(V)">setOriginalValue</a>, <a href="../value/UiValidatableWidget.html#setValue(V)">setValue</a>, <a href="../value/UiValidatableWidget.html#setValueForUser(V)">setValueForUser</a></code></li>
+<code><a href="../value/UiValidatableWidget.html#getOriginalValue()">getOriginalValue</a>, <a href="../value/UiValidatableWidget.html#getValidator()">getValidator</a>, <a href="../value/UiValidatableWidget.html#resetValue()">resetValue</a>, <a href="../value/UiValidatableWidget.html#setOriginalValue(V)">setOriginalValue</a>, <a href="../value/UiValidatableWidget.html#setValidator(io.github.mmm.validation.Validator)">setValidator</a>, <a href="../value/UiValidatableWidget.html#setValue(V)">setValue</a>, <a href="../value/UiValidatableWidget.html#setValueForUser(V)">setValueForUser</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.widget.value.UiValuedWidget">
@@ -239,39 +237,21 @@ extends <a href="UiAbstractSingleChoice.html" title="interface in io.github.mmm.
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;io.github.mmm.ui.widget.<a href="../UiWidget.html" title="interface in io.github.mmm.ui.widget">UiWidget</a></h3>
-<code><a href="../UiWidget.html#dispose()">dispose</a>, <a href="../UiWidget.html#getContext()">getContext</a>, <a href="../UiWidget.html#getId()">getId</a>, <a href="../UiWidget.html#getParent()">getParent</a>, <a href="../UiWidget.html#getReadOnlyFixed()">getReadOnlyFixed</a>, <a href="../UiWidget.html#getStyles()">getStyles</a>, <a href="../UiWidget.html#isDisposed()">isDisposed</a>, <a href="../UiWidget.html#isEnabled()">isEnabled</a>, <a href="../UiWidget.html#isEnabled(io.github.mmm.ui.datatype.UiFlagMode)">isEnabled</a>, <a href="../UiWidget.html#isFocused()">isFocused</a>, <a href="../UiWidget.html#isModified()">isModified</a>, <a href="../UiWidget.html#isReadOnly()">isReadOnly</a>, <a href="../UiWidget.html#isVisible()">isVisible</a>, <a href="../UiWidget.html#isVisible(io.github.mmm.ui.datatype.UiFlagMode)">isVisible</a>, <a href="../UiWidget.html#setEnabled(boolean)">setEnabled</a>, <a href="../UiWidget.html#setEnabled(boolean,io.github.mmm.ui.datatype.UiFlagMode)">setEnabled</a>, <a href="../UiWidget.html#setFocused()">setFocused</a>, <a href="../UiWidget.html#setId(java.lang.String)">setId</a>, <a href="../UiWidget.html#setReadOnly(boolean)">setReadOnly</a>, <a href="../UiWidget.html#setReadOnlyFixed(java.lang.Boolean)">setReadOnlyFixed</a>, <a href="../UiWidget.html#setVisible(boolean)">setVisible</a>, <a href="../UiWidget.html#setVisible(boolean,io.github.mmm.ui.datatype.UiFlagMode)">setVisible</a>, <a href="../UiWidget.html#validate()">validate</a></code></li>
+<code><a href="../UiWidget.html#dispose()">dispose</a>, <a href="../UiWidget.html#getContext()">getContext</a>, <a href="../UiWidget.html#getId()">getId</a>, <a href="../UiWidget.html#getParent()">getParent</a>, <a href="../UiWidget.html#getReadOnlyFixed()">getReadOnlyFixed</a>, <a href="../UiWidget.html#getStyles()">getStyles</a>, <a href="../UiWidget.html#isDisposed()">isDisposed</a>, <a href="../UiWidget.html#isEnabled()">isEnabled</a>, <a href="../UiWidget.html#isEnabled(io.github.mmm.ui.datatype.BitMask)">isEnabled</a>, <a href="../UiWidget.html#isFocused()">isFocused</a>, <a href="../UiWidget.html#isModified()">isModified</a>, <a href="../UiWidget.html#isReadOnly()">isReadOnly</a>, <a href="../UiWidget.html#isVisible()">isVisible</a>, <a href="../UiWidget.html#isVisible(io.github.mmm.ui.datatype.BitMask)">isVisible</a>, <a href="../UiWidget.html#setEnabled(boolean)">setEnabled</a>, <a href="../UiWidget.html#setEnabled(boolean,io.github.mmm.ui.datatype.BitMask)">setEnabled</a>, <a href="../UiWidget.html#setFocused()">setFocused</a>, <a href="../UiWidget.html#setId(java.lang.String)">setId</a>, <a href="../UiWidget.html#setReadOnly(boolean)">setReadOnly</a>, <a href="../UiWidget.html#setReadOnlyFixed(java.lang.Boolean)">setReadOnlyFixed</a>, <a href="../UiWidget.html#setVisible(boolean)">setVisible</a>, <a href="../UiWidget.html#setVisible(boolean,io.github.mmm.ui.datatype.BitMask)">setVisible</a>, <a href="../UiWidget.html#validate()">validate</a>, <a href="../UiWidget.html#validateDown(io.github.mmm.ui.datatype.UiValidState)">validateDown</a>, <a href="../UiWidget.html#validateUp(boolean)">validateUp</a></code></li>
 </ul>
-</li>
-</ul>
-</section>
-</li>
-</ul>
-</div>
-<div class="details">
 <ul class="blockList">
-<li class="blockList">
-<!-- ============ METHOD DETAIL ========== -->
-<section role="region">
-<ul class="blockList">
-<li class="blockList"><a id="method.detail">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.widget.attribute.UiWidgetWithTooltip">
 <!--   -->
 </a>
-<h3>Method Detail</h3>
-<a id="getText()">
+<h3>Methods inherited from interface&nbsp;io.github.mmm.ui.widget.attribute.<a href="../attribute/UiWidgetWithTooltip.html" title="interface in io.github.mmm.ui.widget.attribute">UiWidgetWithTooltip</a></h3>
+<code><a href="../attribute/UiWidgetWithTooltip.html#getTooltip()">getTooltip</a>, <a href="../attribute/UiWidgetWithTooltip.html#setTooltip(java.lang.String)">setTooltip</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.widget.attribute.UiWidgetWithValidationFailure">
 <!--   -->
 </a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>getText</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getText()</pre>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the current text from the combo-box text input field. Typically the end-user shall only select one of the
-         given <a href="UiAbstractChoice.html#getOptions()"><code>options</code></a> so you only need to use <a href="../value/UiValuedWidget.html#getValue()"><code>UiValuedWidget.getValue()</code></a>. In some cases it may be
-         necessary to get the text the user entered manually into the combo-box text input field e.g. in cases where
-         this would be accepted as a new option (e.g. for a tag).</dd>
-</dl>
-</li>
+<h3>Methods inherited from interface&nbsp;io.github.mmm.ui.widget.attribute.<a href="../attribute/UiWidgetWithValidationFailure.html" title="interface in io.github.mmm.ui.widget.attribute">UiWidgetWithValidationFailure</a></h3>
+<code><a href="../attribute/UiWidgetWithValidationFailure.html#getValidationFailure()">getValidationFailure</a>, <a href="../attribute/UiWidgetWithValidationFailure.html#isValid()">isValid</a>, <a href="../attribute/UiWidgetWithValidationFailure.html#setValidationFailure(java.lang.String)">setValidationFailure</a></code></li>
 </ul>
 </li>
 </ul>
@@ -334,7 +314,7 @@ extends <a href="UiAbstractSingleChoice.html" title="interface in io.github.mmm.
 <li>Detail:&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
-<li><a href="#method.detail">Method</a></li>
+<li>Method</li>
 </ul>
 </div>
 <a id="skip.navbar.bottom">

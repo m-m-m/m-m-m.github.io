@@ -116,25 +116,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tr class="rowColor">
 <th class="colFirst" scope="row"><a href="UiAtomicWidget.html" title="interface in io.github.mmm.ui.widget">UiAtomicWidget</a></th>
 <td class="colLast">
-<div class="block">Interface for a <em>regular</em> <a href="UiWidget.html" title="interface in io.github.mmm.ui.widget"><code>UiWidget</code></a>.</div>
+<div class="block">Abstract interface for an <em>atomic</em> <a href="UiWidget.html" title="interface in io.github.mmm.ui.widget"><code>UiWidget</code></a>.</div>
 </td>
 </tr>
 <tr class="altColor">
 <th class="colFirst" scope="row"><a href="UiClickableWidget.html" title="interface in io.github.mmm.ui.widget">UiClickableWidget</a></th>
 <td class="colLast">
-<div class="block"><a href="UiActiveWidget.html" title="interface in io.github.mmm.ui.widget"><code>UiActiveWidget</code></a> that has a <a href="UiLabelledWidget.html#getLabel()"><code>label</code></a> and is <a href="UiClickableWidget.html#click()"><code>clickable</code></a>.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<th class="colFirst" scope="row"><a href="UiClosableWidget.html" title="interface in io.github.mmm.ui.widget">UiClosableWidget</a></th>
-<td class="colLast">
-<div class="block"><a href="UiWidget.html" title="interface in io.github.mmm.ui.widget"><code>UiWidget</code></a> that has a <a href="UiClosableWidget.html#isClosable()"><code>closable</code></a> property to configure if it can be closed by the end-user.</div>
-</td>
-</tr>
-<tr class="altColor">
-<th class="colFirst" scope="row"><a href="UiFailureWidget.html" title="interface in io.github.mmm.ui.widget">UiFailureWidget</a></th>
-<td class="colLast">
-<div class="block"><a href="UiWidget.html" title="interface in io.github.mmm.ui.widget"><code>UiWidget</code></a> with <a href="UiFailureWidget.html#getValidationFailure()"><code>validation failure</code></a>.</div>
+<div class="block"><a href="UiActiveWidget.html" title="interface in io.github.mmm.ui.widget"><code>UiActiveWidget</code></a> that has a <a href="attribute/UiWidgetWithLabel.html#getLabel()"><code>label</code></a> and is <a href="attribute/UiWidgetWithClick.html#click()"><code>clickable</code></a>.</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -144,12 +132,6 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="altColor">
-<th class="colFirst" scope="row"><a href="UiLabelledWidget.html" title="interface in io.github.mmm.ui.widget">UiLabelledWidget</a></th>
-<td class="colLast">
-<div class="block"><a href="UiWidget.html" title="interface in io.github.mmm.ui.widget"><code>UiWidget</code></a> that has a label.</div>
-</td>
-</tr>
-<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="UiNativeWidget.html" title="interface in io.github.mmm.ui.widget">UiNativeWidget</a></th>
 <td class="colLast">
 <div class="block">This is the marker interface for native <a href="UiWidget.html" title="interface in io.github.mmm.ui.widget"><code>UiWidget</code></a>s that can be
@@ -157,13 +139,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
  <a href="../UiContext.html" title="interface in io.github.mmm.ui"><code>UiContext</code></a>.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="UiRegularWidget.html" title="interface in io.github.mmm.ui.widget">UiRegularWidget</a></th>
 <td class="colLast">
 <div class="block">Interface for a <em>regular</em> <a href="UiWidget.html" title="interface in io.github.mmm.ui.widget"><code>UiWidget</code></a>.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="UiWidget.html" title="interface in io.github.mmm.ui.widget">UiWidget</a></th>
 <td class="colLast">
 <div class="block">Interface for an adapter to a physical <em>widget</em> of the underlying native widget toolkit.</div>

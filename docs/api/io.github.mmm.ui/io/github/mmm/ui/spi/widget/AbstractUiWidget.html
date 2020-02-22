@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":9,"i2":6,"i3":9};
+var data = {"i0":10,"i1":9,"i2":6,"i3":9,"i4":6,"i5":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -228,7 +228,7 @@ implements <a href="../../widget/UiWidget.html" title="interface in io.github.mm
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>protected static boolean</code></td>
+<td class="colFirst"><code>static boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isEmpty(java.lang.String)">isEmpty</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;value)</code></th>
 <td class="colLast">
 <div class="block">Null-safe variant of <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true#isEmpty()" title="class or interface in java.lang" class="externalLink"><code>String.isEmpty()</code></a> for convenience.</div>
@@ -243,6 +243,16 @@ implements <a href="../../widget/UiWidget.html" title="interface in io.github.mm
 <td class="colFirst"><code>protected static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setParent(io.github.mmm.ui.widget.UiWidget,io.github.mmm.ui.widget.composite.UiComposite)">setParent</a></span>&#8203;(<a href="../../widget/UiWidget.html" title="interface in io.github.mmm.ui.widget">UiWidget</a>&nbsp;widget,
          <a href="../../widget/composite/UiComposite.html" title="interface in io.github.mmm.ui.widget.composite">UiComposite</a>&lt;?&gt;&nbsp;parent)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>protected abstract <a href="../../widget/UiNativeWidget.html" title="interface in io.github.mmm.ui.widget">UiNativeWidget</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#unwrap()">unwrap</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>protected &lt;T extends <a href="../../widget/UiNativeWidget.html" title="interface in io.github.mmm.ui.widget">UiNativeWidget</a>&gt;<br>T</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#unwrap(io.github.mmm.ui.widget.UiWidget)">unwrap</a></span>&#8203;(<a href="../../widget/UiWidget.html" title="interface in io.github.mmm.ui.widget">UiWidget</a>&nbsp;widget)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -272,7 +282,7 @@ implements <a href="../../widget/UiWidget.html" title="interface in io.github.mm
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;io.github.mmm.ui.widget.<a href="../../widget/UiWidget.html" title="interface in io.github.mmm.ui.widget">UiWidget</a></h3>
-<code><a href="../../widget/UiWidget.html#dispose()">dispose</a>, <a href="../../widget/UiWidget.html#getId()">getId</a>, <a href="../../widget/UiWidget.html#getParent()">getParent</a>, <a href="../../widget/UiWidget.html#getReadOnlyFixed()">getReadOnlyFixed</a>, <a href="../../widget/UiWidget.html#getStyles()">getStyles</a>, <a href="../../widget/UiWidget.html#isDisposed()">isDisposed</a>, <a href="../../widget/UiWidget.html#isEnabled()">isEnabled</a>, <a href="../../widget/UiWidget.html#isEnabled(io.github.mmm.ui.datatype.UiFlagMode)">isEnabled</a>, <a href="../../widget/UiWidget.html#isFocused()">isFocused</a>, <a href="../../widget/UiWidget.html#isModified()">isModified</a>, <a href="../../widget/UiWidget.html#isReadOnly()">isReadOnly</a>, <a href="../../widget/UiWidget.html#isValid()">isValid</a>, <a href="../../widget/UiWidget.html#isVisible()">isVisible</a>, <a href="../../widget/UiWidget.html#isVisible(io.github.mmm.ui.datatype.UiFlagMode)">isVisible</a>, <a href="../../widget/UiWidget.html#setEnabled(boolean)">setEnabled</a>, <a href="../../widget/UiWidget.html#setEnabled(boolean,io.github.mmm.ui.datatype.UiFlagMode)">setEnabled</a>, <a href="../../widget/UiWidget.html#setFocused()">setFocused</a>, <a href="../../widget/UiWidget.html#setId(java.lang.String)">setId</a>, <a href="../../widget/UiWidget.html#setReadOnly(boolean)">setReadOnly</a>, <a href="../../widget/UiWidget.html#setReadOnlyFixed(java.lang.Boolean)">setReadOnlyFixed</a>, <a href="../../widget/UiWidget.html#setVisible(boolean)">setVisible</a>, <a href="../../widget/UiWidget.html#setVisible(boolean,io.github.mmm.ui.datatype.UiFlagMode)">setVisible</a>, <a href="../../widget/UiWidget.html#validate()">validate</a></code></li>
+<code><a href="../../widget/UiWidget.html#dispose()">dispose</a>, <a href="../../widget/UiWidget.html#getId()">getId</a>, <a href="../../widget/UiWidget.html#getParent()">getParent</a>, <a href="../../widget/UiWidget.html#getReadOnlyFixed()">getReadOnlyFixed</a>, <a href="../../widget/UiWidget.html#getStyles()">getStyles</a>, <a href="../../widget/UiWidget.html#isDisposed()">isDisposed</a>, <a href="../../widget/UiWidget.html#isEnabled()">isEnabled</a>, <a href="../../widget/UiWidget.html#isEnabled(io.github.mmm.ui.datatype.BitMask)">isEnabled</a>, <a href="../../widget/UiWidget.html#isFocused()">isFocused</a>, <a href="../../widget/UiWidget.html#isModified()">isModified</a>, <a href="../../widget/UiWidget.html#isReadOnly()">isReadOnly</a>, <a href="../../widget/UiWidget.html#isValid()">isValid</a>, <a href="../../widget/UiWidget.html#isVisible()">isVisible</a>, <a href="../../widget/UiWidget.html#isVisible(io.github.mmm.ui.datatype.BitMask)">isVisible</a>, <a href="../../widget/UiWidget.html#setEnabled(boolean)">setEnabled</a>, <a href="../../widget/UiWidget.html#setEnabled(boolean,io.github.mmm.ui.datatype.BitMask)">setEnabled</a>, <a href="../../widget/UiWidget.html#setFocused()">setFocused</a>, <a href="../../widget/UiWidget.html#setId(java.lang.String)">setId</a>, <a href="../../widget/UiWidget.html#setReadOnly(boolean)">setReadOnly</a>, <a href="../../widget/UiWidget.html#setReadOnlyFixed(java.lang.Boolean)">setReadOnlyFixed</a>, <a href="../../widget/UiWidget.html#setVisible(boolean)">setVisible</a>, <a href="../../widget/UiWidget.html#setVisible(boolean,io.github.mmm.ui.datatype.BitMask)">setVisible</a>, <a href="../../widget/UiWidget.html#validate()">validate</a>, <a href="../../widget/UiWidget.html#validateDown(io.github.mmm.ui.datatype.UiValidState)">validateDown</a>, <a href="../../widget/UiWidget.html#validateUp(boolean)">validateUp</a></code></li>
 </ul>
 </li>
 </ul>
@@ -382,13 +392,47 @@ implements <a href="../../widget/UiWidget.html" title="interface in io.github.mm
 </dl>
 </li>
 </ul>
+<a id="unwrap()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>unwrap</h4>
+<pre class="methodSignature">protected abstract&nbsp;<a href="../../widget/UiNativeWidget.html" title="interface in io.github.mmm.ui.widget">UiNativeWidget</a>&nbsp;unwrap()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the unwrapped widget.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../widget/custom/UiCustomWidget.html#getDelegate()"><code>UiCustomWidget.getDelegate()</code></a></dd>
+</dl>
+</li>
+</ul>
+<a id="unwrap(io.github.mmm.ui.widget.UiWidget)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>unwrap</h4>
+<pre class="methodSignature">protected&nbsp;&lt;T extends <a href="../../widget/UiNativeWidget.html" title="interface in io.github.mmm.ui.widget">UiNativeWidget</a>&gt;&nbsp;T&nbsp;unwrap&#8203;(<a href="../../widget/UiWidget.html" title="interface in io.github.mmm.ui.widget">UiWidget</a>&nbsp;widget)</pre>
+<dl>
+<dt><span class="paramLabel">Type Parameters:</span></dt>
+<dd><code>T</code> - type of the expected widget.</dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>widget</code> - the <a href="../../widget/UiWidget.html" title="interface in io.github.mmm.ui.widget"><code>UiWidget</code></a> to <a href="#unwrap()"><code>unwrap</code></a>.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the unwrapped native widget.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="#unwrap()"><code>unwrap()</code></a></dd>
+</dl>
+</li>
+</ul>
 <a id="isEmpty(java.lang.String)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>isEmpty</h4>
-<pre class="methodSignature">protected static&nbsp;boolean&nbsp;isEmpty&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;value)</pre>
+<pre class="methodSignature">public static&nbsp;boolean&nbsp;isEmpty&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;value)</pre>
 <div class="block">Null-safe variant of <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true#isEmpty()" title="class or interface in java.lang" class="externalLink"><code>String.isEmpty()</code></a> for convenience.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>

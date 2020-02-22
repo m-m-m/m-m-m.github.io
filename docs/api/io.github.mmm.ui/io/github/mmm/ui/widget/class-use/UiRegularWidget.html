@@ -123,6 +123,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
+<th class="colFirst" scope="row"><a href="#io.github.mmm.ui.widget.media">io.github.mmm.ui.widget.media</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="#io.github.mmm.ui.widget.panel">io.github.mmm.ui.widget.panel</a></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -148,7 +152,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colFirst"><code>interface&nbsp;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../UiAtomicWidget.html" title="interface in io.github.mmm.ui.widget">UiAtomicWidget</a></span></code></th>
 <td class="colLast">
-<div class="block">Interface for a <em>regular</em> <a href="../UiWidget.html" title="interface in io.github.mmm.ui.widget"><code>UiWidget</code></a>.</div>
+<div class="block">Abstract interface for an <em>atomic</em> <a href="../UiWidget.html" title="interface in io.github.mmm.ui.widget"><code>UiWidget</code></a>.</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -268,10 +272,38 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../input/UiCheckboxChoice.html" title="interface in io.github.mmm.ui.widget.input">UiCheckboxChoice</a>&lt;V&gt;</span></code></th>
+<td class="colLast">
+<div class="block"><a href="../input/UiAbstractMultiChoice.html" title="interface in io.github.mmm.ui.widget.input"><code>UiAbstractMultiChoice</code></a> to select <code>0-N</code> <a href="../input/UiAbstractChoice.html#getOptions()"><code>options</code></a> via <a href="../input/UiCheckbox.html" title="interface in io.github.mmm.ui.widget.input"><code>UiCheckbox</code></a>es.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../input/UiColorInput.html" title="interface in io.github.mmm.ui.widget.input">UiColorInput</a></span></code></th>
+<td class="colLast">
+<div class="block"><a href="../input/UiInput.html" title="interface in io.github.mmm.ui.widget.input"><code>UiInput</code></a> for a <code>Color</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../input/UiComboBox.html" title="interface in io.github.mmm.ui.widget.input">UiComboBox</a>&lt;V&gt;</span></code></th>
 <td class="colLast">
 <div class="block"><a href="../input/UiAbstractSingleChoice.html" title="interface in io.github.mmm.ui.widget.input"><code>UiAbstractSingleChoice</code></a> for a <em>combo-box</em> that allows the end-user to expand a drop-down menu and
  select the <a href="../value/UiValuedWidget.html#getValue()"><code>value</code></a> from a given list of <a href="../input/UiAbstractChoice.html#getOptions()"><code>options</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../input/UiDateInput.html" title="interface in io.github.mmm.ui.widget.input">UiDateInput</a></span></code></th>
+<td class="colLast">
+<div class="block"><a href="../input/UiInput.html" title="interface in io.github.mmm.ui.widget.input"><code>UiInput</code></a> for a <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink"><code>LocalDate</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../input/UiDateTimeInput.html" title="interface in io.github.mmm.ui.widget.input">UiDateTimeInput</a></span></code></th>
+<td class="colLast">
+<div class="block"><a href="../input/UiInput.html" title="interface in io.github.mmm.ui.widget.input"><code>UiInput</code></a> for a <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDateTime.html?is-external=true" title="class or interface in java.time" class="externalLink"><code>LocalDateTime</code></a>.</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -290,13 +322,20 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>interface&nbsp;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../input/UiPasswordInput.html" title="interface in io.github.mmm.ui.widget.input">UiPasswordInput</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../input/UiMultiComboBox.html" title="interface in io.github.mmm.ui.widget.input">UiMultiComboBox</a>&lt;V&gt;</span></code></th>
 <td class="colLast">
-<div class="block"><a href="../input/UiTextualInput.html" title="interface in io.github.mmm.ui.widget.input"><code>UiTextualInput</code></a> for a password input.<br>
- Example:</div>
+<div class="block"><a href="../input/UiAbstractMultiChoice.html" title="interface in io.github.mmm.ui.widget.input"><code>UiAbstractMultiChoice</code></a> for a <a href="../input/UiComboBox.html" title="interface in io.github.mmm.ui.widget.input"><code>UiComboBox</code></a> that allows choosing multiple options.</div>
 </td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../input/UiPasswordInput.html" title="interface in io.github.mmm.ui.widget.input">UiPasswordInput</a></span></code></th>
+<td class="colLast">
+<div class="block"><a href="../input/UiStringInput.html" title="interface in io.github.mmm.ui.widget.input"><code>UiStringInput</code></a> for a password input.<br>
+ Example:</div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>interface&nbsp;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../input/UiRadioButton.html" title="interface in io.github.mmm.ui.widget.input">UiRadioButton</a></span></code></th>
 <td class="colLast">
@@ -304,18 +343,25 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
  Example:</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>interface&nbsp;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../input/UiRadioButtonChoice.html" title="interface in io.github.mmm.ui.widget.input">UiRadioButtonChoice</a>&lt;V&gt;</span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../input/UiRadioChoice.html" title="interface in io.github.mmm.ui.widget.input">UiRadioChoice</a>&lt;V&gt;</span></code></th>
 <td class="colLast">
 <div class="block"><a href="../input/UiAbstractSingleChoice.html" title="interface in io.github.mmm.ui.widget.input"><code>UiAbstractSingleChoice</code></a> to select a value from a group of <a href="../input/UiRadioButton.html" title="interface in io.github.mmm.ui.widget.input"><code>UiRadioButton</code></a>s.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../input/UiStringInput.html" title="interface in io.github.mmm.ui.widget.input">UiStringInput</a></span></code></th>
+<td class="colLast">
+<div class="block">Abstract <a href="../input/UiTextualInput.html" title="interface in io.github.mmm.ui.widget.input"><code>UiTextualInput</code></a> with <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>String</code></a> <a href="../value/UiValuedWidget.html#getValue()"><code>value</code></a>.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>interface&nbsp;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../input/UiTextArea.html" title="interface in io.github.mmm.ui.widget.input">UiTextArea</a></span></code></th>
 <td class="colLast">
-<div class="block"><a href="../input/UiTextualInput.html" title="interface in io.github.mmm.ui.widget.input"><code>UiTextualInput</code></a> for a multi-line text area.<br>
+<div class="block"><a href="../input/UiStringInput.html" title="interface in io.github.mmm.ui.widget.input"><code>UiStringInput</code></a> for a multi-line text area.<br>
  Example:</div>
 </td>
 </tr>
@@ -323,14 +369,80 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colFirst"><code>interface&nbsp;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../input/UiTextInput.html" title="interface in io.github.mmm.ui.widget.input">UiTextInput</a></span></code></th>
 <td class="colLast">
-<div class="block"><a href="../input/UiTextualInput.html" title="interface in io.github.mmm.ui.widget.input"><code>UiTextualInput</code></a> for a single-line text input.</div>
+<div class="block"><a href="../input/UiStringInput.html" title="interface in io.github.mmm.ui.widget.input"><code>UiStringInput</code></a> for a single-line text input.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>interface&nbsp;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../input/UiTextualInput.html" title="interface in io.github.mmm.ui.widget.input">UiTextualInput</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../input/UiTextualInput.html" title="interface in io.github.mmm.ui.widget.input">UiTextualInput</a>&lt;V&gt;</span></code></th>
 <td class="colLast">
 <div class="block">Abstract <a href="../UiRegularWidget.html" title="interface in io.github.mmm.ui.widget"><code>UiRegularWidget</code></a> for textual input.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../input/UiTimeInput.html" title="interface in io.github.mmm.ui.widget.input">UiTimeInput</a></span></code></th>
+<td class="colLast">
+<div class="block"><a href="../input/UiInput.html" title="interface in io.github.mmm.ui.widget.input"><code>UiInput</code></a> for a <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html?is-external=true" title="class or interface in java.time" class="externalLink"><code>LocalTime</code></a>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
+<section role="region"><a id="io.github.mmm.ui.widget.media">
+<!--   -->
+</a>
+<h3>Uses of <a href="../UiRegularWidget.html" title="interface in io.github.mmm.ui.widget">UiRegularWidget</a> in <a href="../media/package-summary.html">io.github.mmm.ui.widget.media</a></h3>
+<table class="useSummary">
+<caption><span>Subinterfaces of <a href="../UiRegularWidget.html" title="interface in io.github.mmm.ui.widget">UiRegularWidget</a> in <a href="../media/package-summary.html">io.github.mmm.ui.widget.media</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Interface</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../media/UiAbstractMediaWidget.html" title="interface in io.github.mmm.ui.widget.media">UiAbstractMediaWidget</a></span></code></th>
+<td class="colLast">
+<div class="block">Abstract <a href="../UiWidget.html" title="interface in io.github.mmm.ui.widget"><code>UiWidget</code></a> for a media.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../media/UiAudioPlayer.html" title="interface in io.github.mmm.ui.widget.media">UiAudioPlayer</a></span></code></th>
+<td class="colLast">
+<div class="block"><a href="../media/UiMediaWidget.html" title="interface in io.github.mmm.ui.widget.media"><code>UiMediaWidget</code></a> that plays audio tracks.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../media/UiImage.html" title="interface in io.github.mmm.ui.widget.media">UiImage</a></span></code></th>
+<td class="colLast">
+<div class="block"><a href="../media/UiAbstractMediaWidget.html" title="interface in io.github.mmm.ui.widget.media"><code>UiAbstractMediaWidget</code></a> for an image (or icon).</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../media/UiMediaPlayer.html" title="interface in io.github.mmm.ui.widget.media">UiMediaPlayer</a></span></code></th>
+<td class="colLast">
+<div class="block"><a href="../media/UiMediaWidget.html" title="interface in io.github.mmm.ui.widget.media"><code>UiMediaWidget</code></a> that represents a media-player.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../media/UiMediaWidget.html" title="interface in io.github.mmm.ui.widget.media">UiMediaWidget</a></span></code></th>
+<td class="colLast">
+<div class="block">Abstract <a href="../UiWidget.html" title="interface in io.github.mmm.ui.widget"><code>UiWidget</code></a> for a media player.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../media/UiVideoPlayer.html" title="interface in io.github.mmm.ui.widget.media">UiVideoPlayer</a></span></code></th>
+<td class="colLast">
+<div class="block">This is the interface for a <a href="../media/UiMediaWidget.html" title="interface in io.github.mmm.ui.widget.media"><code>media-player widget</code></a> that plays videos (movies).</div>
 </td>
 </tr>
 </tbody>
@@ -352,10 +464,26 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../panel/UiAbstractFormGroup.html" title="interface in io.github.mmm.ui.widget.panel">UiAbstractFormGroup</a>&lt;V&gt;</span></code></th>
+<td class="colLast">
+<div class="block"><a href="../composite/UiDynamicComposite.html" title="interface in io.github.mmm.ui.widget.composite"><code>UiDynamicComposite</code></a> for a <a href="../input/UiAbstractInput.html#getName()"><code>named</code></a> sub-group in a <a href="../panel/UiFormPanel.html" title="interface in io.github.mmm.ui.widget.panel"><code>form</code></a> of <a href="../input/UiInput.html" title="interface in io.github.mmm.ui.widget.input"><code>UiInput</code></a>s
+ as <a href="../composite/UiComposite.html#getChild(int)"><code>children</code></a> shown vertically from the top to the bottom.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../panel/UiAbstractSplitPanel.html" title="interface in io.github.mmm.ui.widget.panel">UiAbstractSplitPanel</a></span></code></th>
 <td class="colLast">
 <div class="block"><a href="../panel/UiDynamicPanel.html" title="interface in io.github.mmm.ui.widget.panel"><code>UiDynamicPanel</code></a> that shows split-bars between each of its <a href="../composite/UiComposite.html#getChild(int)"><code>children</code></a> and allows the user
  to slide these split-bars to dynamically adjust the size of the <a href="../composite/UiComposite.html#getChild(int)"><code>children</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../panel/UiButtonPanel.html" title="interface in io.github.mmm.ui.widget.panel">UiButtonPanel</a></span></code></th>
+<td class="colLast">
+<div class="block"><a href="../panel/UiAbstractButtonContainer.html" title="interface in io.github.mmm.ui.widget.panel"><code>button container</code></a> showing a number of
+ <a href="../button/UiAbstractButton.html" title="interface in io.github.mmm.ui.widget.button"><code>buttons</code></a> horizontally (e.g.</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -367,10 +495,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>interface&nbsp;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../panel/UiFormGroup.html" title="interface in io.github.mmm.ui.widget.panel">UiFormGroup</a>&lt;V&gt;</span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../panel/UiFormGroup.html" title="interface in io.github.mmm.ui.widget.panel">UiFormGroup</a></span></code></th>
 <td class="colLast">
-<div class="block"><a href="../composite/UiDynamicComposite.html" title="interface in io.github.mmm.ui.widget.composite"><code>UiDynamicComposite</code></a> for a <a href="../input/UiAbstractInput.html#getName()"><code>named</code></a> sub-group in a <a href="../panel/UiFormPanel.html" title="interface in io.github.mmm.ui.widget.panel"><code>form</code></a> of <a href="../input/UiInput.html" title="interface in io.github.mmm.ui.widget.input"><code>UiInput</code></a>s
- as <a href="../composite/UiComposite.html#getChild(int)"><code>children</code></a> shown vertically from the top to the bottom.</div>
+<div class="block"><a href="../panel/UiAbstractFormGroup.html" title="interface in io.github.mmm.ui.widget.panel"><code>UiAbstractFormGroup</code></a> as <a href="../UiNativeWidget.html" title="interface in io.github.mmm.ui.widget"><code>native widget</code></a> without <a href="../panel/UiFormGroup.html#getValue()"><code>value</code></a>.</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -432,7 +559,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colSecond" scope="row"><span class="typeNameLabel">UiTabPanel.</span><code><span class="memberNameLink"><a href="../panel/UiTabPanel.html#addChild(io.github.mmm.ui.widget.UiRegularWidget,java.lang.String)">addChild</a></span>&#8203;(<a href="../UiRegularWidget.html" title="interface in io.github.mmm.ui.widget">UiRegularWidget</a>&nbsp;child,
         <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;label)</code></th>
 <td class="colLast">
-<div class="block">Adds the given <a href="../UiRegularWidget.html" title="interface in io.github.mmm.ui.widget"><code>UiRegularWidget</code></a> as new tab (and the end of all existing tabs).</div>
+<div class="block">Adds the given <a href="../UiRegularWidget.html" title="interface in io.github.mmm.ui.widget"><code>UiRegularWidget</code></a> as new tab (and the end of all existing tabs).<br>
+ <b>IMPORTANT:</b> In case you <a href="../attribute/UiWidgetWithClosable.html#setClosable(boolean)"><code>make</code></a> the <a href="../composite/UiTab.html" title="interface in io.github.mmm.ui.widget.composite"><code>UiTab</code></a> <a href="../attribute/UiWidgetWithClosable.html#isClosable()"><code>closable</code></a>, it will remove itself as <a href="../composite/UiComposite.html#getChild(int)"><code>child</code></a> from this <a href="../panel/UiTabPanel.html" title="interface in io.github.mmm.ui.widget.panel"><code>UiTabPanel</code></a> when the end-user
+ closes it.</div>
 </td>
 </tr>
 </tbody>

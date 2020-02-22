@@ -153,7 +153,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>&lt;V&gt;&nbsp;<a href="../widget/input/UiInput.html" title="interface in io.github.mmm.ui.widget.input">UiInput</a>&lt;V&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#create(java.lang.Class,boolean,io.github.mmm.ui.UiContext)">create</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../../../../../../io.github.mmm.value/io/github/mmm/value/ReadableTypedValue.html" title="interface in io.github.mmm.value">ReadableTypedValue</a>&lt;V&gt;&gt;&nbsp;property,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#create(java.lang.Class,boolean,io.github.mmm.ui.UiContext)">create</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../../../../../../io.github.mmm.value/io/github/mmm/value/ReadableTypedValue.html" title="interface in io.github.mmm.value">ReadableTypedValue</a>&lt;V&gt;&gt;&nbsp;propertyType,
       boolean&nbsp;required,
       <a href="../UiContext.html" title="interface in io.github.mmm.ui">UiContext</a>&nbsp;context)</code></th>
 <td class="colLast">&nbsp;</td>
@@ -186,14 +186,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>create</h4>
-<pre class="methodSignature">&lt;V&gt;&nbsp;<a href="../widget/input/UiInput.html" title="interface in io.github.mmm.ui.widget.input">UiInput</a>&lt;V&gt;&nbsp;create&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../../../../../../io.github.mmm.value/io/github/mmm/value/ReadableTypedValue.html" title="interface in io.github.mmm.value">ReadableTypedValue</a>&lt;V&gt;&gt;&nbsp;property,
+<pre class="methodSignature">&lt;V&gt;&nbsp;<a href="../widget/input/UiInput.html" title="interface in io.github.mmm.ui.widget.input">UiInput</a>&lt;V&gt;&nbsp;create&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../../../../../../io.github.mmm.value/io/github/mmm/value/ReadableTypedValue.html" title="interface in io.github.mmm.value">ReadableTypedValue</a>&lt;V&gt;&gt;&nbsp;propertyType,
                       boolean&nbsp;required,
                       <a href="../UiContext.html" title="interface in io.github.mmm.ui">UiContext</a>&nbsp;context)</pre>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
-<dd><code>V</code> - type of the <a href="UiSingleWidgetFactoryDatatype.html#getDatatype()"><code>datatype</code></a>.</dd>
+<dd><code>V</code> - type of the <a href="UiSingleWidgetFactoryDatatype.html#getType()"><code>datatype</code></a>.</dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>property</code> - is the <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Class</code></a> reflecting the <a href="UiSingleWidgetFactoryProperty.html#getProperty()"><code>property</code></a>.</dd>
+<dd><code>propertyType</code> - is the <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Class</code></a> reflecting the <a href="UiSingleWidgetFactoryProperty.html#getType()"><code>property</code></a>.</dd>
 <dd><code>required</code> - <code>true</code> if a <a href="UiSingleWidgetFactoryDatatype.html" title="interface in io.github.mmm.ui.factory"><code>UiSingleWidgetFactoryDatatype</code></a> has to be
         registered for the given <code>datatype</code>, <code>false</code> otherwise.</dd>
 <dd><code>context</code> - the <a href="../UiContext.html" title="interface in io.github.mmm.ui"><code>UiContext</code></a>.</dd>

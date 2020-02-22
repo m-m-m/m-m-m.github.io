@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":9,"i4":9,"i5":10,"i6":9,"i7":10,"i8":9,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":6,"i17":10,"i18":10,"i19":10,"i20":10,"i21":6,"i22":10,"i23":10,"i24":10,"i25":10,"i26":6,"i27":10,"i28":6,"i29":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":9,"i4":9,"i5":10,"i6":9,"i7":10,"i8":10,"i9":9,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":6,"i26":10,"i27":10,"i28":10,"i29":10,"i30":6,"i31":10,"i32":10,"i33":6,"i34":10,"i35":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -143,7 +143,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../../../../../../../io.github.mmm.event/io/github/mmm/event/EventSource.html" title="interface in io.github.mmm.event">EventSource</a>&lt;<a href="../../event/UiEvent.html" title="class in io.github.mmm.ui.event">UiEvent</a>,&#8203;<a href="../../event/UiEventListener.html" title="interface in io.github.mmm.ui.event">UiEventListener</a>&gt;</code>, <code><a href="../../widget/UiNativeWidget.html" title="interface in io.github.mmm.ui.widget">UiNativeWidget</a></code>, <code><a href="../../widget/UiWidget.html" title="interface in io.github.mmm.ui.widget">UiWidget</a></code></dd>
+<dd><code><a href="../../../../../../../io.github.mmm.event/io/github/mmm/event/EventSource.html" title="interface in io.github.mmm.event">EventSource</a>&lt;<a href="../../event/UiEvent.html" title="class in io.github.mmm.ui.event">UiEvent</a>,&#8203;<a href="../../event/UiEventListener.html" title="interface in io.github.mmm.ui.event">UiEventListener</a>&gt;</code>, <code><a href="../../widget/attribute/UiWidgetWithValidationFailure.html" title="interface in io.github.mmm.ui.widget.attribute">UiWidgetWithValidationFailure</a></code>, <code><a href="../../widget/UiNativeWidget.html" title="interface in io.github.mmm.ui.widget">UiNativeWidget</a></code>, <code><a href="../../widget/UiWidget.html" title="interface in io.github.mmm.ui.widget">UiWidget</a></code></dd>
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
@@ -152,7 +152,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <hr>
 <pre>public abstract class <span class="typeNameLabel">AbstractUiNativeWidget</span>
 extends <a href="AbstractUiWidget.html" title="class in io.github.mmm.ui.spi.widget">AbstractUiWidget</a>
-implements <a href="../../widget/UiNativeWidget.html" title="interface in io.github.mmm.ui.widget">UiNativeWidget</a></pre>
+implements <a href="../../widget/UiNativeWidget.html" title="interface in io.github.mmm.ui.widget">UiNativeWidget</a>, <a href="../../widget/attribute/UiWidgetWithValidationFailure.html" title="interface in io.github.mmm.ui.widget.attribute">UiWidgetWithValidationFailure</a></pre>
 <div class="block">Abstract base implementation of <a href="../../widget/UiNativeWidget.html" title="interface in io.github.mmm.ui.widget"><code>UiNativeWidget</code></a>.</div>
 <dl>
 <dt><span class="simpleTagLabel">Since:</span></dt>
@@ -184,6 +184,13 @@ implements <a href="../../widget/UiNativeWidget.html" title="interface in io.git
 </a>
 <h3>Fields inherited from interface&nbsp;io.github.mmm.ui.widget.<a href="../../widget/UiWidget.html" title="interface in io.github.mmm.ui.widget">UiWidget</a></h3>
 <code><a href="../../widget/UiWidget.html#ID_SEPARATOR">ID_SEPARATOR</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="fields.inherited.from.class.io.github.mmm.ui.widget.attribute.UiWidgetWithValidationFailure">
+<!--   -->
+</a>
+<h3>Fields inherited from interface&nbsp;io.github.mmm.ui.widget.attribute.<a href="../../widget/attribute/UiWidgetWithValidationFailure.html" title="interface in io.github.mmm.ui.widget.attribute">UiWidgetWithValidationFailure</a></h3>
+<code><a href="../../widget/attribute/UiWidgetWithValidationFailure.html#STYLE_INVALID">STYLE_INVALID</a></code></li>
 </ul>
 </li>
 </ul>
@@ -248,153 +255,186 @@ implements <a href="../../widget/UiNativeWidget.html" title="interface in io.git
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>protected static long</code></td>
+<td class="colFirst"><code>protected static int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#doGetEnabledState(io.github.mmm.ui.spi.widget.AbstractUiNativeWidget)">doGetEnabledState</a></span>&#8203;(<a href="AbstractUiNativeWidget.html" title="class in io.github.mmm.ui.spi.widget">AbstractUiNativeWidget</a>&nbsp;widget)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>protected static long</code></td>
+<td class="colFirst"><code>protected static int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#doGetVisibleState(io.github.mmm.ui.spi.widget.AbstractUiNativeWidget)">doGetVisibleState</a></span>&#8203;(<a href="AbstractUiNativeWidget.html" title="class in io.github.mmm.ui.spi.widget">AbstractUiNativeWidget</a>&nbsp;widget)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#doSetEnabledState(long)">doSetEnabledState</a></span>&#8203;(long&nbsp;state)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#doSetEnabledState(int)">doSetEnabledState</a></span>&#8203;(int&nbsp;state)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>protected static void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#doSetEnabledState(io.github.mmm.ui.spi.widget.AbstractUiNativeWidget,long)">doSetEnabledState</a></span>&#8203;(<a href="AbstractUiNativeWidget.html" title="class in io.github.mmm.ui.spi.widget">AbstractUiNativeWidget</a>&nbsp;widget,
-                 long&nbsp;state)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#doSetEnabledState(io.github.mmm.ui.spi.widget.AbstractUiNativeWidget,int)">doSetEnabledState</a></span>&#8203;(<a href="AbstractUiNativeWidget.html" title="class in io.github.mmm.ui.spi.widget">AbstractUiNativeWidget</a>&nbsp;widget,
+                 int&nbsp;state)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#doSetVisibleState(long)">doSetVisibleState</a></span>&#8203;(long&nbsp;state)</code></th>
-<td class="colLast">&nbsp;</td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#doSetValidationFailure(java.lang.String)">doSetValidationFailure</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;error)</code></th>
+<td class="colLast">
+<div class="block">Called from <a href="#setValidationFailure(java.lang.String)"><code>setValidationFailure(String)</code></a> if the failure actually changed.</div>
+</td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code>protected static void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#doSetVisibleState(io.github.mmm.ui.spi.widget.AbstractUiNativeWidget,long)">doSetVisibleState</a></span>&#8203;(<a href="AbstractUiNativeWidget.html" title="class in io.github.mmm.ui.spi.widget">AbstractUiNativeWidget</a>&nbsp;widget,
-                 long&nbsp;state)</code></th>
+<td class="colFirst"><code>protected void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#doSetVisibleState(int)">doSetVisibleState</a></span>&#8203;(int&nbsp;state)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
+<td class="colFirst"><code>protected static void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#doSetVisibleState(io.github.mmm.ui.spi.widget.AbstractUiNativeWidget,int)">doSetVisibleState</a></span>&#8203;(<a href="AbstractUiNativeWidget.html" title="class in io.github.mmm.ui.spi.widget">AbstractUiNativeWidget</a>&nbsp;widget,
+                 int&nbsp;state)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ensureHandlers()">ensureHandlers</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Ensures that the event handlers (adapters) are <a href="#registerHandlers()"><code>registered</code></a>.</div>
+</td>
+</tr>
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../widget/composite/UiComposite.html" title="interface in io.github.mmm.ui.widget.composite">UiComposite</a>&lt;?&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getParent()">getParent</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>protected <a href="../../event/UiEventType.html" title="class in io.github.mmm.ui.event">UiEventType</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getProgrammaticEventType()">getProgrammaticEventType</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getReadOnlyFixed()">getReadOnlyFixed</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isDisposed()">isDisposed</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i13" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isEnabled(io.github.mmm.ui.datatype.UiFlagMode)">isEnabled</a></span>&#8203;(<a href="../../datatype/UiFlagMode.html" title="class in io.github.mmm.ui.datatype">UiFlagMode</a>&nbsp;flagMode)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
 <tr id="i14" class="altColor">
-<td class="colFirst"><code>protected boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isInitiallyVisible()">isInitiallyVisible</a></span>()</code></th>
+<td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getValidationFailure()">getValidationFailure</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isReadOnly()">isReadOnly</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isDisposed()">isDisposed</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i16" class="altColor">
-<td class="colFirst"><code>protected abstract boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isReadOnlyNative()">isReadOnlyNative</a></span>()</code></th>
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isEnabled(io.github.mmm.ui.datatype.BitMask)">isEnabled</a></span>&#8203;(<a href="../../datatype/BitMask.html" title="class in io.github.mmm.ui.datatype">BitMask</a>&nbsp;mask)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i17" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isVisible(io.github.mmm.ui.datatype.UiFlagMode)">isVisible</a></span>&#8203;(<a href="../../datatype/UiFlagMode.html" title="class in io.github.mmm.ui.datatype">UiFlagMode</a>&nbsp;flagMode)</code></th>
+<td class="colFirst"><code>protected boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isInitiallyVisible()">isInitiallyVisible</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i18" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isReadOnly()">isReadOnly</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i19" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isValid()">isValid</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i20" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isVisible(io.github.mmm.ui.datatype.BitMask)">isVisible</a></span>&#8203;(<a href="../../datatype/BitMask.html" title="class in io.github.mmm.ui.datatype">BitMask</a>&nbsp;mask)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i21" class="rowColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isVisibleWithoutRoot()">isVisibleWithoutRoot</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#registerHandlers()">registerHandlers</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Registers the according handlers to the underlying native widget.</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#requireNotDisposed()">requireNotDisposed</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Ensures that this widget is not <a href="#isDisposed()"><code>disposed</code></a>.</div>
 </td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setEnabled(boolean,io.github.mmm.ui.datatype.UiFlagMode)">setEnabled</a></span>&#8203;(boolean&nbsp;enabled,
-          <a href="../../datatype/UiFlagMode.html" title="class in io.github.mmm.ui.datatype">UiFlagMode</a>&nbsp;flagMode)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setEnabled(boolean,io.github.mmm.ui.datatype.BitMask)">setEnabled</a></span>&#8203;(boolean&nbsp;enabled,
+          <a href="../../datatype/BitMask.html" title="class in io.github.mmm.ui.datatype">BitMask</a>&nbsp;mask)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>protected abstract void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setEnabledNative(boolean)">setEnabledNative</a></span>&#8203;(boolean&nbsp;enabled)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setParent(io.github.mmm.ui.widget.composite.UiComposite)">setParent</a></span>&#8203;(<a href="../../widget/composite/UiComposite.html" title="interface in io.github.mmm.ui.widget.composite">UiComposite</a>&lt;?&gt;&nbsp;parent)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setProgrammaticEventType(io.github.mmm.ui.event.UiEventType)">setProgrammaticEventType</a></span>&#8203;(<a href="../../event/UiEventType.html" title="class in io.github.mmm.ui.event">UiEventType</a>&nbsp;eventType)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setReadOnly(boolean)">setReadOnly</a></span>&#8203;(boolean&nbsp;readOnly)</code></th>
 <td class="colLast">
 <div class="block">Switches this widget between view (read-only <code>true</code>) and edit (read-only <code>false</code>) mode.</div>
 </td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setReadOnlyFixed(java.lang.Boolean)">setReadOnlyFixed</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&nbsp;readOnlyFixed)</code></th>
 <td class="colLast">
 <div class="block">Sets a fixed <a href="../../widget/UiWidget.html#isReadOnly()"><code>read-only</code></a> mode.</div>
 </td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code>protected abstract void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setReadOnlyNative(boolean)">setReadOnlyNative</a></span>&#8203;(boolean&nbsp;readOnly)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setVisible(boolean,io.github.mmm.ui.datatype.UiFlagMode)">setVisible</a></span>&#8203;(boolean&nbsp;visible,
-          <a href="../../datatype/UiFlagMode.html" title="class in io.github.mmm.ui.datatype">UiFlagMode</a>&nbsp;flagMode)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setValidationFailure(java.lang.String)">setValidationFailure</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;validationFailure)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i32" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setVisible(boolean,io.github.mmm.ui.datatype.BitMask)">setVisible</a></span>&#8203;(boolean&nbsp;visible,
+          <a href="../../datatype/BitMask.html" title="class in io.github.mmm.ui.datatype">BitMask</a>&nbsp;mask)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code>protected abstract void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setVisibleNative(boolean)">setVisibleNative</a></span>&#8203;(boolean&nbsp;visible)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i34" class="altColor">
+<td class="colFirst"><code>protected <a href="../../widget/UiNativeWidget.html" title="interface in io.github.mmm.ui.widget">UiNativeWidget</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#unwrap()">unwrap</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i35" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#validate()">validate</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#validateDown(io.github.mmm.ui.datatype.UiValidState)">validateDown</a></span>&#8203;(<a href="../../datatype/UiValidState.html" title="class in io.github.mmm.ui.datatype">UiValidState</a>&nbsp;state)</code></th>
 <td class="colLast">
-<div class="block">Triggers a validation of this widget (including all potential
- <a href="../../widget/composite/UiComposite.html#getChild(int)"><code>children</code></a>).</div>
+<div class="block">Performs <a href="../../widget/UiWidget.html#validate()"><code>validation</code></a> without <a href="../../widget/UiWidget.html#validateUp(boolean)"><code>upwards propagation</code></a>.</div>
 </td>
 </tr>
 </table>
@@ -403,7 +443,7 @@ implements <a href="../../widget/UiNativeWidget.html" title="interface in io.git
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;io.github.mmm.ui.spi.widget.<a href="AbstractUiWidget.html" title="class in io.github.mmm.ui.spi.widget">AbstractUiWidget</a></h3>
-<code><a href="AbstractUiWidget.html#getContext()">getContext</a>, <a href="AbstractUiWidget.html#isEmpty(java.lang.String)">isEmpty</a>, <a href="AbstractUiWidget.html#setParent(io.github.mmm.ui.widget.UiWidget,io.github.mmm.ui.widget.composite.UiComposite)">setParent</a></code></li>
+<code><a href="AbstractUiWidget.html#getContext()">getContext</a>, <a href="AbstractUiWidget.html#isEmpty(java.lang.String)">isEmpty</a>, <a href="AbstractUiWidget.html#setParent(io.github.mmm.ui.widget.UiWidget,io.github.mmm.ui.widget.composite.UiComposite)">setParent</a>, <a href="AbstractUiWidget.html#unwrap(io.github.mmm.ui.widget.UiWidget)">unwrap</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.event.AbstractEventSource">
@@ -431,7 +471,7 @@ implements <a href="../../widget/UiNativeWidget.html" title="interface in io.git
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;io.github.mmm.ui.widget.<a href="../../widget/UiWidget.html" title="interface in io.github.mmm.ui.widget">UiWidget</a></h3>
-<code><a href="../../widget/UiWidget.html#getContext()">getContext</a>, <a href="../../widget/UiWidget.html#getId()">getId</a>, <a href="../../widget/UiWidget.html#getStyles()">getStyles</a>, <a href="../../widget/UiWidget.html#isEnabled()">isEnabled</a>, <a href="../../widget/UiWidget.html#isFocused()">isFocused</a>, <a href="../../widget/UiWidget.html#isModified()">isModified</a>, <a href="../../widget/UiWidget.html#isValid()">isValid</a>, <a href="../../widget/UiWidget.html#isVisible()">isVisible</a>, <a href="../../widget/UiWidget.html#setEnabled(boolean)">setEnabled</a>, <a href="../../widget/UiWidget.html#setFocused()">setFocused</a>, <a href="../../widget/UiWidget.html#setId(java.lang.String)">setId</a>, <a href="../../widget/UiWidget.html#setVisible(boolean)">setVisible</a></code></li>
+<code><a href="../../widget/UiWidget.html#getContext()">getContext</a>, <a href="../../widget/UiWidget.html#getId()">getId</a>, <a href="../../widget/UiWidget.html#getStyles()">getStyles</a>, <a href="../../widget/UiWidget.html#isEnabled()">isEnabled</a>, <a href="../../widget/UiWidget.html#isFocused()">isFocused</a>, <a href="../../widget/UiWidget.html#isModified()">isModified</a>, <a href="../../widget/UiWidget.html#isVisible()">isVisible</a>, <a href="../../widget/UiWidget.html#setEnabled(boolean)">setEnabled</a>, <a href="../../widget/UiWidget.html#setFocused()">setFocused</a>, <a href="../../widget/UiWidget.html#setId(java.lang.String)">setId</a>, <a href="../../widget/UiWidget.html#setVisible(boolean)">setVisible</a>, <a href="../../widget/UiWidget.html#validate()">validate</a>, <a href="../../widget/UiWidget.html#validateUp(boolean)">validateUp</a></code></li>
 </ul>
 </li>
 </ul>
@@ -517,39 +557,53 @@ implements <a href="../../widget/UiNativeWidget.html" title="interface in io.git
 </dl>
 </li>
 </ul>
-<a id="isVisible(io.github.mmm.ui.datatype.UiFlagMode)">
+<a id="isVisible(io.github.mmm.ui.datatype.BitMask)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>isVisible</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;isVisible&#8203;(<a href="../../datatype/UiFlagMode.html" title="class in io.github.mmm.ui.datatype">UiFlagMode</a>&nbsp;flagMode)</pre>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;isVisible&#8203;(<a href="../../datatype/BitMask.html" title="class in io.github.mmm.ui.datatype">BitMask</a>&nbsp;mask)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../widget/UiWidget.html#isVisible(io.github.mmm.ui.datatype.UiFlagMode)">isVisible</a></code>&nbsp;in interface&nbsp;<code><a href="../../widget/UiWidget.html" title="interface in io.github.mmm.ui.widget">UiWidget</a></code></dd>
+<dd><code><a href="../../widget/UiWidget.html#isVisible(io.github.mmm.ui.datatype.BitMask)">isVisible</a></code>&nbsp;in interface&nbsp;<code><a href="../../widget/UiWidget.html" title="interface in io.github.mmm.ui.widget">UiWidget</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>flagMode</code> - the <a href="../../datatype/UiFlagMode.html" title="class in io.github.mmm.ui.datatype"><code>UiFlagMode</code></a> to check the visibility of. May be <code>null</code> to check all modes including
-        the <a href="../../widget/UiWidget.html#getParent()"><code>parent</code></a> widget.</dd>
+<dd><code>mask</code> - the <a href="../../datatype/BitMask.html" title="class in io.github.mmm.ui.datatype"><code>BitMask</code></a> to check the visibility of. See <a href="../../datatype/UiVisibleFlags.html" title="interface in io.github.mmm.ui.datatype"><code>UiVisibleFlags</code></a> for available options. May
+        be <code>null</code> to check all modes including the <a href="../../widget/UiWidget.html#getParent()"><code>parent</code></a> widget.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd><code>true</code> if visible, <code>false</code> if hidden.</dd>
 </dl>
 </li>
 </ul>
-<a id="setVisible(boolean,io.github.mmm.ui.datatype.UiFlagMode)">
+<a id="isVisibleWithoutRoot()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isVisibleWithoutRoot</h4>
+<pre class="methodSignature">protected&nbsp;boolean&nbsp;isVisibleWithoutRoot()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>true</code> if this is a root widget (e.g. UiMainWindow) that is visible without a parent, <code>false</code>
+         otherwise.</dd>
+</dl>
+</li>
+</ul>
+<a id="setVisible(boolean,io.github.mmm.ui.datatype.BitMask)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setVisible</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;setVisible&#8203;(boolean&nbsp;visible,
-                       <a href="../../datatype/UiFlagMode.html" title="class in io.github.mmm.ui.datatype">UiFlagMode</a>&nbsp;flagMode)</pre>
+                       <a href="../../datatype/BitMask.html" title="class in io.github.mmm.ui.datatype">BitMask</a>&nbsp;mask)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../widget/UiWidget.html#setVisible(boolean,io.github.mmm.ui.datatype.UiFlagMode)">setVisible</a></code>&nbsp;in interface&nbsp;<code><a href="../../widget/UiWidget.html" title="interface in io.github.mmm.ui.widget">UiWidget</a></code></dd>
+<dd><code><a href="../../widget/UiWidget.html#setVisible(boolean,io.github.mmm.ui.datatype.BitMask)">setVisible</a></code>&nbsp;in interface&nbsp;<code><a href="../../widget/UiWidget.html" title="interface in io.github.mmm.ui.widget">UiWidget</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>visible</code> - <code>true</code> to show this widget (in case its parent is also visible), <code>false</code> to hide this
         widget.</dd>
-<dd><code>flagMode</code> - the <a href="../../datatype/UiFlagMode.html" title="class in io.github.mmm.ui.datatype"><code>UiFlagMode</code></a> to modify.</dd>
+<dd><code>mask</code> - the <a href="../../datatype/BitMask.html" title="class in io.github.mmm.ui.datatype"><code>BitMask</code></a> to apply. See <a href="../../datatype/UiVisibleFlags.html" title="interface in io.github.mmm.ui.datatype"><code>UiVisibleFlags</code></a> for available options.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../widget/UiWidget.html#isVisible()"><code>UiWidget.isVisible()</code></a></dd>
 </dl>
@@ -575,36 +629,36 @@ implements <a href="../../widget/UiNativeWidget.html" title="interface in io.git
 <ul class="blockList">
 <li class="blockList">
 <h4>doGetVisibleState</h4>
-<pre class="methodSignature">protected static final&nbsp;long&nbsp;doGetVisibleState&#8203;(<a href="AbstractUiNativeWidget.html" title="class in io.github.mmm.ui.spi.widget">AbstractUiNativeWidget</a>&nbsp;widget)</pre>
+<pre class="methodSignature">protected static final&nbsp;int&nbsp;doGetVisibleState&#8203;(<a href="AbstractUiNativeWidget.html" title="class in io.github.mmm.ui.spi.widget">AbstractUiNativeWidget</a>&nbsp;widget)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>widget</code> - the <a href="AbstractUiNativeWidget.html" title="class in io.github.mmm.ui.spi.widget"><code>AbstractUiNativeWidget</code></a>.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the internal <a href="#isVisible(io.github.mmm.ui.datatype.UiFlagMode)"><code>visible state</code></a> of the given <code>widget</code>.</dd>
+<dd>the internal <a href="#isVisible(io.github.mmm.ui.datatype.BitMask)"><code>visible state</code></a> of the given <code>widget</code>.</dd>
 </dl>
 </li>
 </ul>
-<a id="doSetVisibleState(long)">
+<a id="doSetVisibleState(int)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>doSetVisibleState</h4>
-<pre class="methodSignature">protected final&nbsp;void&nbsp;doSetVisibleState&#8203;(long&nbsp;state)</pre>
+<pre class="methodSignature">protected final&nbsp;void&nbsp;doSetVisibleState&#8203;(int&nbsp;state)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>state</code> - new value of <a href="#doGetVisibleState(io.github.mmm.ui.spi.widget.AbstractUiNativeWidget)"><code>doGetVisibleState(AbstractUiNativeWidget)</code></a>.</dd>
 </dl>
 </li>
 </ul>
-<a id="doSetVisibleState(io.github.mmm.ui.spi.widget.AbstractUiNativeWidget,long)">
+<a id="doSetVisibleState(io.github.mmm.ui.spi.widget.AbstractUiNativeWidget,int)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>doSetVisibleState</h4>
 <pre class="methodSignature">protected static final&nbsp;void&nbsp;doSetVisibleState&#8203;(<a href="AbstractUiNativeWidget.html" title="class in io.github.mmm.ui.spi.widget">AbstractUiNativeWidget</a>&nbsp;widget,
-                                              long&nbsp;state)</pre>
+                                              int&nbsp;state)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>widget</code> - the <a href="AbstractUiNativeWidget.html" title="class in io.github.mmm.ui.spi.widget"><code>AbstractUiNativeWidget</code></a>.</dd>
@@ -612,40 +666,42 @@ implements <a href="../../widget/UiNativeWidget.html" title="interface in io.git
 </dl>
 </li>
 </ul>
-<a id="isEnabled(io.github.mmm.ui.datatype.UiFlagMode)">
+<a id="isEnabled(io.github.mmm.ui.datatype.BitMask)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>isEnabled</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;isEnabled&#8203;(<a href="../../datatype/UiFlagMode.html" title="class in io.github.mmm.ui.datatype">UiFlagMode</a>&nbsp;flagMode)</pre>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;isEnabled&#8203;(<a href="../../datatype/BitMask.html" title="class in io.github.mmm.ui.datatype">BitMask</a>&nbsp;mask)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../widget/UiWidget.html#isEnabled(io.github.mmm.ui.datatype.UiFlagMode)">isEnabled</a></code>&nbsp;in interface&nbsp;<code><a href="../../widget/UiWidget.html" title="interface in io.github.mmm.ui.widget">UiWidget</a></code></dd>
+<dd><code><a href="../../widget/UiWidget.html#isEnabled(io.github.mmm.ui.datatype.BitMask)">isEnabled</a></code>&nbsp;in interface&nbsp;<code><a href="../../widget/UiWidget.html" title="interface in io.github.mmm.ui.widget">UiWidget</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>flagMode</code> - the <a href="../../datatype/UiFlagMode.html" title="class in io.github.mmm.ui.datatype"><code>UiFlagMode</code></a> to check the enabled state of. May be <code>null</code> to check all modes
-        including the <a href="../../widget/UiWidget.html#getParent()"><code>parent</code></a> widget.</dd>
+<dd><code>mask</code> - the <a href="../../datatype/BitMask.html" title="class in io.github.mmm.ui.datatype"><code>BitMask</code></a> to check the enabled state of. See <a href="../../datatype/UiEnabledFlags.html" title="interface in io.github.mmm.ui.datatype"><code>UiEnabledFlags</code></a> for available options.
+        May be <code>null</code> to check all modes including the <a href="../../widget/UiWidget.html#getParent()"><code>parent</code></a> widget.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd><code>true</code> if enabled, <code>false</code> if disabled (end-user cannot interact with this widget or its
          children).</dd>
 </dl>
 </li>
 </ul>
-<a id="setEnabled(boolean,io.github.mmm.ui.datatype.UiFlagMode)">
+<a id="setEnabled(boolean,io.github.mmm.ui.datatype.BitMask)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setEnabled</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;setEnabled&#8203;(boolean&nbsp;enabled,
-                       <a href="../../datatype/UiFlagMode.html" title="class in io.github.mmm.ui.datatype">UiFlagMode</a>&nbsp;flagMode)</pre>
+                       <a href="../../datatype/BitMask.html" title="class in io.github.mmm.ui.datatype">BitMask</a>&nbsp;mask)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../widget/UiWidget.html#setEnabled(boolean,io.github.mmm.ui.datatype.UiFlagMode)">setEnabled</a></code>&nbsp;in interface&nbsp;<code><a href="../../widget/UiWidget.html" title="interface in io.github.mmm.ui.widget">UiWidget</a></code></dd>
+<dd><code><a href="../../widget/UiWidget.html#setEnabled(boolean,io.github.mmm.ui.datatype.BitMask)">setEnabled</a></code>&nbsp;in interface&nbsp;<code><a href="../../widget/UiWidget.html" title="interface in io.github.mmm.ui.widget">UiWidget</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>enabled</code> - the new <a href="../../widget/UiWidget.html#isEnabled()"><code>enabled state</code></a>. Use <code>true</code> to enable and <code>false</code> to disable
         this widget.</dd>
-<dd><code>flagMode</code> - the <a href="../../datatype/UiFlagMode.html" title="class in io.github.mmm.ui.datatype"><code>UiFlagMode</code></a> to modify.</dd>
+<dd><code>mask</code> - the <a href="../../datatype/BitMask.html" title="class in io.github.mmm.ui.datatype"><code>BitMask</code></a> to apply. See <a href="../../datatype/UiEnabledFlags.html" title="interface in io.github.mmm.ui.datatype"><code>UiEnabledFlags</code></a> for available options.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../widget/UiWidget.html#setEnabled(boolean)"><code>UiWidget.setEnabled(boolean)</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -669,36 +725,36 @@ implements <a href="../../widget/UiNativeWidget.html" title="interface in io.git
 <ul class="blockList">
 <li class="blockList">
 <h4>doGetEnabledState</h4>
-<pre class="methodSignature">protected static final&nbsp;long&nbsp;doGetEnabledState&#8203;(<a href="AbstractUiNativeWidget.html" title="class in io.github.mmm.ui.spi.widget">AbstractUiNativeWidget</a>&nbsp;widget)</pre>
+<pre class="methodSignature">protected static final&nbsp;int&nbsp;doGetEnabledState&#8203;(<a href="AbstractUiNativeWidget.html" title="class in io.github.mmm.ui.spi.widget">AbstractUiNativeWidget</a>&nbsp;widget)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>widget</code> - the <a href="AbstractUiNativeWidget.html" title="class in io.github.mmm.ui.spi.widget"><code>AbstractUiNativeWidget</code></a>.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the internal <a href="#isEnabled(io.github.mmm.ui.datatype.UiFlagMode)"><code>enabled state</code></a> of the given <code>widget</code>.</dd>
+<dd>the internal <a href="#isEnabled(io.github.mmm.ui.datatype.BitMask)"><code>enabled state</code></a> of the given <code>widget</code>.</dd>
 </dl>
 </li>
 </ul>
-<a id="doSetEnabledState(long)">
+<a id="doSetEnabledState(int)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>doSetEnabledState</h4>
-<pre class="methodSignature">protected final&nbsp;void&nbsp;doSetEnabledState&#8203;(long&nbsp;state)</pre>
+<pre class="methodSignature">protected final&nbsp;void&nbsp;doSetEnabledState&#8203;(int&nbsp;state)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>state</code> - new value of <a href="#doGetEnabledState(io.github.mmm.ui.spi.widget.AbstractUiNativeWidget)"><code>doGetEnabledState(AbstractUiNativeWidget)</code></a>.</dd>
 </dl>
 </li>
 </ul>
-<a id="doSetEnabledState(io.github.mmm.ui.spi.widget.AbstractUiNativeWidget,long)">
+<a id="doSetEnabledState(io.github.mmm.ui.spi.widget.AbstractUiNativeWidget,int)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>doSetEnabledState</h4>
 <pre class="methodSignature">protected static final&nbsp;void&nbsp;doSetEnabledState&#8203;(<a href="AbstractUiNativeWidget.html" title="class in io.github.mmm.ui.spi.widget">AbstractUiNativeWidget</a>&nbsp;widget,
-                                              long&nbsp;state)</pre>
+                                              int&nbsp;state)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>widget</code> - the <a href="AbstractUiNativeWidget.html" title="class in io.github.mmm.ui.spi.widget"><code>AbstractUiNativeWidget</code></a>.</dd>
@@ -719,19 +775,6 @@ implements <a href="../../widget/UiNativeWidget.html" title="interface in io.git
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd><code>true</code> if this input widget is read-only (value can not be edited by the user and is displayed as
          view only like a label), <code>false</code> otherwise.</dd>
-</dl>
-</li>
-</ul>
-<a id="isReadOnlyNative()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>isReadOnlyNative</h4>
-<pre class="methodSignature">protected abstract&nbsp;boolean&nbsp;isReadOnlyNative()</pre>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the native <a href="#isReadOnly()"><code>read-only mode</code></a>.</dd>
 </dl>
 </li>
 </ul>
@@ -766,7 +809,7 @@ implements <a href="../../widget/UiNativeWidget.html" title="interface in io.git
 <pre class="methodSignature">protected abstract&nbsp;void&nbsp;setReadOnlyNative&#8203;(boolean&nbsp;readOnly)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>readOnly</code> - the new value of <a href="#isReadOnlyNative()"><code>isReadOnlyNative()</code></a>.</dd>
+<dd><code>readOnly</code> - the new value of <a href="#isReadOnly()"><code>isReadOnly()</code></a>.</dd>
 </dl>
 </li>
 </ul>
@@ -806,28 +849,95 @@ implements <a href="../../widget/UiNativeWidget.html" title="interface in io.git
 </dl>
 </li>
 </ul>
-<a id="validate()">
+<a id="isValid()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>validate</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;validate()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../widget/UiWidget.html#validate()">UiWidget</a></code></span></div>
-<div class="block">Triggers a validation of this widget (including all potential
- <a href="../../widget/composite/UiComposite.html#getChild(int)"><code>children</code></a>). This will update the
- <a href="../../widget/UiWidget.html#isValid()"><code>valid state</code></a> and <a href="../../widget/UiFailureWidget.html#getValidationFailure()"><code>failure message</code></a> of all involved widgets. For an immutable widget (e.g. a <a href="../../widget/UiLabel.html" title="interface in io.github.mmm.ui.widget"><code>UiLabel</code></a>) this method will have no
- effect and immediately returns <code>true</code>.</div>
+<h4>isValid</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;isValid()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../widget/UiWidget.html#validate()">validate</a></code>&nbsp;in interface&nbsp;<code><a href="../../widget/UiWidget.html" title="interface in io.github.mmm.ui.widget">UiWidget</a></code></dd>
+<dd><code><a href="../../widget/UiWidget.html#isValid()">isValid</a></code>&nbsp;in interface&nbsp;<code><a href="../../widget/UiWidget.html" title="interface in io.github.mmm.ui.widget">UiWidget</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../widget/attribute/UiWidgetWithValidationFailure.html#isValid()">isValid</a></code>&nbsp;in interface&nbsp;<code><a href="../../widget/attribute/UiWidgetWithValidationFailure.html" title="interface in io.github.mmm.ui.widget.attribute">UiWidgetWithValidationFailure</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>true</code> if valid (no <a href="../../widget/attribute/UiWidgetWithValidationFailure.html#getValidationFailure()"><code>validation failure</code></a> is present), <code>false</code> otherwise. A
+         <a href="../../widget/composite/UiComposite.html" title="interface in io.github.mmm.ui.widget.composite"><code>UiComposite</code></a> is only valid if all its children are valid
+         (recursive check). An <a href="../../widget/UiAtomicWidget.html" title="interface in io.github.mmm.ui.widget"><code>atomic widget</code></a> that does not implement
+         <a href="../../widget/value/UiValidatableWidget.html" title="interface in io.github.mmm.ui.widget.value"><code>UiValidatableWidget</code></a> will always return <code>true</code> here.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../widget/value/UiValidatableWidget.html" title="interface in io.github.mmm.ui.widget.value"><code>UiValidatableWidget</code></a>, 
+<a href="../../widget/UiWidget.html#validate()"><code>UiWidget.validate()</code></a></dd>
+</dl>
+</li>
+</ul>
+<a id="validateDown(io.github.mmm.ui.datatype.UiValidState)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>validateDown</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;validateDown&#8203;(<a href="../../datatype/UiValidState.html" title="class in io.github.mmm.ui.datatype">UiValidState</a>&nbsp;state)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../widget/UiWidget.html#validateDown(io.github.mmm.ui.datatype.UiValidState)">UiWidget</a></code></span></div>
+<div class="block">Performs <a href="../../widget/UiWidget.html#validate()"><code>validation</code></a> without <a href="../../widget/UiWidget.html#validateUp(boolean)"><code>upwards propagation</code></a>.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../widget/UiWidget.html#validateDown(io.github.mmm.ui.datatype.UiValidState)">validateDown</a></code>&nbsp;in interface&nbsp;<code><a href="../../widget/UiWidget.html" title="interface in io.github.mmm.ui.widget">UiWidget</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>state</code> - the new <a href="../../datatype/UiValidState.html" title="class in io.github.mmm.ui.datatype"><code>UiValidState</code></a>.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the new <a href="../../widget/UiWidget.html#isValid()"><code>valid status</code></a> as result of this validation. In other words <code>true</code> if this
          widget and all its potential <a href="../../widget/composite/UiComposite.html#getChild(int)"><code>children</code></a>
-         have been successfully validated, <code>false</code> otherwise.</dd>
+         have been successfully validated, <code>false</code> otherwise. Can differ from <a href="../../datatype/UiValidState.html#isValid()"><code>UiValidState.isValid()</code></a>
+         if the subtree of this widget is valid but other widgets have been validated before.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../widget/value/UiValidatableWidget.html" title="interface in io.github.mmm.ui.widget.value"><code>UiValidatableWidget</code></a>, 
-<a href="../../widget/UiWidget.html#isValid()"><code>UiWidget.isValid()</code></a></dd>
+<dd><a href="../../widget/UiWidget.html#validate()"><code>UiWidget.validate()</code></a></dd>
+</dl>
+</li>
+</ul>
+<a id="getValidationFailure()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getValidationFailure</h4>
+<pre class="methodSignature">public final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getValidationFailure()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../widget/attribute/UiWidgetWithValidationFailure.html#getValidationFailure()">getValidationFailure</a></code>&nbsp;in interface&nbsp;<code><a href="../../widget/attribute/UiWidgetWithValidationFailure.html" title="interface in io.github.mmm.ui.widget.attribute">UiWidgetWithValidationFailure</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the validation error text of this widget itself (not recursive) or <code>null</code> for no error.</dd>
+</dl>
+</li>
+</ul>
+<a id="setValidationFailure(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setValidationFailure</h4>
+<pre class="methodSignature">public final&nbsp;void&nbsp;setValidationFailure&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;validationFailure)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../widget/attribute/UiWidgetWithValidationFailure.html#setValidationFailure(java.lang.String)">setValidationFailure</a></code>&nbsp;in interface&nbsp;<code><a href="../../widget/attribute/UiWidgetWithValidationFailure.html" title="interface in io.github.mmm.ui.widget.attribute">UiWidgetWithValidationFailure</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>validationFailure</code> - is the validation failure text. The empty string or <code>null</code> will clear the error and
+        mark the field as valid. Otherwise the field will be invalid.</dd>
+</dl>
+</li>
+</ul>
+<a id="doSetValidationFailure(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>doSetValidationFailure</h4>
+<pre class="methodSignature">protected&nbsp;void&nbsp;doSetValidationFailure&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;error)</pre>
+<div class="block">Called from <a href="#setValidationFailure(java.lang.String)"><code>setValidationFailure(String)</code></a> if the failure actually changed. Do not call manually.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>error</code> - the new <a href="#getValidationFailure()"><code>validation failure</code></a>. Will be <code>null</code> if valid.</dd>
 </dl>
 </li>
 </ul>
@@ -861,6 +971,16 @@ implements <a href="../../widget/UiNativeWidget.html" title="interface in io.git
 </dl>
 </li>
 </ul>
+<a id="ensureHandlers()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ensureHandlers</h4>
+<pre class="methodSignature">protected&nbsp;void&nbsp;ensureHandlers()</pre>
+<div class="block">Ensures that the event handlers (adapters) are <a href="#registerHandlers()"><code>registered</code></a>.</div>
+</li>
+</ul>
 <a id="registerHandlers()">
 <!--   -->
 </a>
@@ -868,7 +988,8 @@ implements <a href="../../widget/UiNativeWidget.html" title="interface in io.git
 <li class="blockList">
 <h4>registerHandlers</h4>
 <pre class="methodSignature">protected&nbsp;void&nbsp;registerHandlers()</pre>
-<div class="block">Registers the according handlers to the underlying native widget.</div>
+<div class="block">Registers the according handlers to the underlying native widget. Never call manually, only via
+ <a href="#ensureHandlers()"><code>ensureHandlers()</code></a>.</div>
 </li>
 </ul>
 <a id="getProgrammaticEventType()">
@@ -898,6 +1019,23 @@ implements <a href="../../widget/UiNativeWidget.html" title="interface in io.git
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>eventType</code> - the <a href="../../event/UiEventType.html" title="class in io.github.mmm.ui.event"><code>UiEventType</code></a> to mark as <a href="../../event/UiEvent.html#isProgrammatic()"><code>programmatic</code></a>. If the next event is of this type, it will be set as
         <a href="../../event/UiEvent.html#isProgrammatic()"><code>programmatic</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="unwrap()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>unwrap</h4>
+<pre class="methodSignature">protected&nbsp;<a href="../../widget/UiNativeWidget.html" title="interface in io.github.mmm.ui.widget">UiNativeWidget</a>&nbsp;unwrap()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="AbstractUiWidget.html#unwrap()">unwrap</a></code>&nbsp;in class&nbsp;<code><a href="AbstractUiWidget.html" title="class in io.github.mmm.ui.spi.widget">AbstractUiWidget</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the unwrapped widget.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../widget/custom/UiCustomWidget.html#getDelegate()"><code>UiCustomWidget.getDelegate()</code></a></dd>
 </dl>
 </li>
 </ul>

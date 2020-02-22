@@ -204,26 +204,26 @@ implements <a href="WritableObservableValue.html" title="interface in io.github.
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#bindInternal(io.github.mmm.value.observable.ObservableValue)">bindInternal</a></span>&#8203;(<a href="ObservableValue.html" title="interface in io.github.mmm.value.observable">ObservableValue</a>&lt;? extends <a href="AbstractWritableObservableValue.html" title="type parameter in AbstractWritableObservableValue">V</a>&gt;&nbsp;observable)</code></th>
+<td class="colLast">
+<div class="block">Internal method of <a href="#bindOneWay(io.github.mmm.value.observable.ObservableValue)"><code>bindOneWay(ObservableValue)</code></a>.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#bind(io.github.mmm.value.observable.ObservableValue)">bind</a></span>&#8203;(<a href="ObservableValue.html" title="interface in io.github.mmm.value.observable">ObservableValue</a>&lt;? extends <a href="AbstractWritableObservableValue.html" title="type parameter in AbstractWritableObservableValue">V</a>&gt;&nbsp;observable)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#bindOneWay(io.github.mmm.value.observable.ObservableValue)">bindOneWay</a></span>&#8203;(<a href="ObservableValue.html" title="interface in io.github.mmm.value.observable">ObservableValue</a>&lt;? extends <a href="AbstractWritableObservableValue.html" title="type parameter in AbstractWritableObservableValue">V</a>&gt;&nbsp;observable)</code></th>
 <td class="colLast">
 <div class="block">Creates a unidirection binding for this object.<br>
  <b>ATTENTION:</b><br>
  An unidirectional binding is very strict.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#bindBidirectional(io.github.mmm.value.observable.WritableObservableValue)">bindBidirectional</a></span>&#8203;(<a href="WritableObservableValue.html" title="interface in io.github.mmm.value.observable">WritableObservableValue</a>&lt;<a href="AbstractWritableObservableValue.html" title="type parameter in AbstractWritableObservableValue">V</a>&gt;&nbsp;other)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#bindTwoWay(io.github.mmm.value.observable.WritableObservableValue)">bindTwoWay</a></span>&#8203;(<a href="WritableObservableValue.html" title="interface in io.github.mmm.value.observable">WritableObservableValue</a>&lt;<a href="AbstractWritableObservableValue.html" title="type parameter in AbstractWritableObservableValue">V</a>&gt;&nbsp;other)</code></th>
 <td class="colLast">
 <div class="block">Create a bidirectional binding between this object and the given one.</div>
-</td>
-</tr>
-<tr id="i2" class="altColor">
-<td class="colFirst"><code>protected void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#bindInternal(io.github.mmm.value.observable.ObservableValue)">bindInternal</a></span>&#8203;(<a href="ObservableValue.html" title="interface in io.github.mmm.value.observable">ObservableValue</a>&lt;? extends <a href="AbstractWritableObservableValue.html" title="type parameter in AbstractWritableObservableValue">V</a>&gt;&nbsp;observable)</code></th>
-<td class="colLast">
-<div class="block">Internal method of <a href="#bind(io.github.mmm.value.observable.ObservableValue)"><code>bind(ObservableValue)</code></a>.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
@@ -243,7 +243,7 @@ implements <a href="WritableObservableValue.html" title="interface in io.github.
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isBound()">isBound</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isBoundOneWay()">isBoundOneWay</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
@@ -266,16 +266,16 @@ implements <a href="WritableObservableValue.html" title="interface in io.github.
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#unbind()">unbind</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#unbindOneWay()">unbindOneWay</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Removes the <a href="WritableObservableValue.html#bind(io.github.mmm.value.observable.ObservableValue)"><code>unidirectional binding</code></a> from this object.</div>
+<div class="block">Removes the <a href="WritableObservableValue.html#bindOneWay(io.github.mmm.value.observable.ObservableValue)"><code>unidirectional binding</code></a> from this object.</div>
 </td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#unbindBidirectional(io.github.mmm.value.observable.WritableObservableValue)">unbindBidirectional</a></span>&#8203;(<a href="WritableObservableValue.html" title="interface in io.github.mmm.value.observable">WritableObservableValue</a>&lt;<a href="AbstractWritableObservableValue.html" title="type parameter in AbstractWritableObservableValue">V</a>&gt;&nbsp;other)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#unbindTwoWay(io.github.mmm.value.observable.WritableObservableValue)">unbindTwoWay</a></span>&#8203;(<a href="WritableObservableValue.html" title="interface in io.github.mmm.value.observable">WritableObservableValue</a>&lt;<a href="AbstractWritableObservableValue.html" title="type parameter in AbstractWritableObservableValue">V</a>&gt;&nbsp;other)</code></th>
 <td class="colLast">
-<div class="block">Removes a <a href="WritableObservableValue.html#bindBidirectional(io.github.mmm.value.observable.WritableObservableValue)"><code>bidirectional binding</code></a> between this object and the
+<div class="block">Removes a <a href="WritableObservableValue.html#bindTwoWay(io.github.mmm.value.observable.WritableObservableValue)"><code>bidirectional binding</code></a> between this object and the
  given one.</div>
 </td>
 </tr>
@@ -387,27 +387,27 @@ implements <a href="WritableObservableValue.html" title="interface in io.github.
 </dl>
 </li>
 </ul>
-<a id="bind(io.github.mmm.value.observable.ObservableValue)">
+<a id="bindOneWay(io.github.mmm.value.observable.ObservableValue)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>bind</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;bind&#8203;(<a href="ObservableValue.html" title="interface in io.github.mmm.value.observable">ObservableValue</a>&lt;? extends <a href="AbstractWritableObservableValue.html" title="type parameter in AbstractWritableObservableValue">V</a>&gt;&nbsp;observable)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="WritableObservableValue.html#bind(io.github.mmm.value.observable.ObservableValue)">WritableObservableValue</a></code></span></div>
+<h4>bindOneWay</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;bindOneWay&#8203;(<a href="ObservableValue.html" title="interface in io.github.mmm.value.observable">ObservableValue</a>&lt;? extends <a href="AbstractWritableObservableValue.html" title="type parameter in AbstractWritableObservableValue">V</a>&gt;&nbsp;observable)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="WritableObservableValue.html#bindOneWay(io.github.mmm.value.observable.ObservableValue)">WritableObservableValue</a></code></span></div>
 <div class="block">Creates a unidirection binding for this object.<br>
  <b>ATTENTION:</b><br>
  An unidirectional binding is very strict. It makes this object to appear exactly as the <a href="ObservableValue.html" title="interface in io.github.mmm.value.observable"><code>ObservableValue</code></a> it
  is bound to. After creating the unidirectional binding, calls to <a href="../../../../../../io.github.mmm.value/io/github/mmm/value/WritableValue.html#set(V)"><code>WritableValue.set(Object)</code></a> will fail. This is very
- different to an <a href="WritableObservableValue.html#bindBidirectional(io.github.mmm.value.observable.WritableObservableValue)"><code>bidirectional binding</code></a>.</div>
+ different to an <a href="WritableObservableValue.html#bindTwoWay(io.github.mmm.value.observable.WritableObservableValue)"><code>bidirectional binding</code></a>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="WritableObservableValue.html#bind(io.github.mmm.value.observable.ObservableValue)">bind</a></code>&nbsp;in interface&nbsp;<code><a href="WritableObservableValue.html" title="interface in io.github.mmm.value.observable">WritableObservableValue</a>&lt;<a href="AbstractWritableObservableValue.html" title="type parameter in AbstractWritableObservableValue">V</a>&gt;</code></dd>
+<dd><code><a href="WritableObservableValue.html#bindOneWay(io.github.mmm.value.observable.ObservableValue)">bindOneWay</a></code>&nbsp;in interface&nbsp;<code><a href="WritableObservableValue.html" title="interface in io.github.mmm.value.observable">WritableObservableValue</a>&lt;<a href="AbstractWritableObservableValue.html" title="type parameter in AbstractWritableObservableValue">V</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>observable</code> - the <a href="ObservableValue.html" title="interface in io.github.mmm.value.observable"><code>ObservableValue</code></a> this object should be bound to.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="WritableObservableValue.html#unbind()"><code>WritableObservableValue.unbind()</code></a>, 
-<a href="WritableObservableValue.html#isBound()"><code>WritableObservableValue.isBound()</code></a></dd>
+<dd><a href="WritableObservableValue.html#unbindOneWay()"><code>WritableObservableValue.unbindOneWay()</code></a>, 
+<a href="WritableObservableValue.html#isBoundOneWay()"><code>WritableObservableValue.isBoundOneWay()</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -418,93 +418,93 @@ implements <a href="WritableObservableValue.html" title="interface in io.github.
 <li class="blockList">
 <h4>bindInternal</h4>
 <pre class="methodSignature">protected&nbsp;void&nbsp;bindInternal&#8203;(<a href="ObservableValue.html" title="interface in io.github.mmm.value.observable">ObservableValue</a>&lt;? extends <a href="AbstractWritableObservableValue.html" title="type parameter in AbstractWritableObservableValue">V</a>&gt;&nbsp;observable)</pre>
-<div class="block">Internal method of <a href="#bind(io.github.mmm.value.observable.ObservableValue)"><code>bind(ObservableValue)</code></a>. Do not call.</div>
+<div class="block">Internal method of <a href="#bindOneWay(io.github.mmm.value.observable.ObservableValue)"><code>bindOneWay(ObservableValue)</code></a>. Do not call.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>observable</code> - the <a href="ObservableValue.html" title="interface in io.github.mmm.value.observable"><code>ObservableValue</code></a> to bind.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="#bind(io.github.mmm.value.observable.ObservableValue)"><code>bind(ObservableValue)</code></a></dd>
+<dd><a href="#bindOneWay(io.github.mmm.value.observable.ObservableValue)"><code>bindOneWay(ObservableValue)</code></a></dd>
 </dl>
 </li>
 </ul>
-<a id="unbind()">
+<a id="unbindOneWay()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>unbind</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;unbind()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="WritableObservableValue.html#unbind()">WritableObservableValue</a></code></span></div>
-<div class="block">Removes the <a href="WritableObservableValue.html#bind(io.github.mmm.value.observable.ObservableValue)"><code>unidirectional binding</code></a> from this object. If this object is not
- <a href="WritableObservableValue.html#isBound()"><code>bound</code></a>, this method has no effect.</div>
+<h4>unbindOneWay</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;unbindOneWay()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="WritableObservableValue.html#unbindOneWay()">WritableObservableValue</a></code></span></div>
+<div class="block">Removes the <a href="WritableObservableValue.html#bindOneWay(io.github.mmm.value.observable.ObservableValue)"><code>unidirectional binding</code></a> from this object. If this object is not
+ <a href="WritableObservableValue.html#isBoundOneWay()"><code>bound</code></a>, this method has no effect.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="WritableObservableValue.html#unbind()">unbind</a></code>&nbsp;in interface&nbsp;<code><a href="WritableObservableValue.html" title="interface in io.github.mmm.value.observable">WritableObservableValue</a>&lt;<a href="AbstractWritableObservableValue.html" title="type parameter in AbstractWritableObservableValue">V</a>&gt;</code></dd>
+<dd><code><a href="WritableObservableValue.html#unbindOneWay()">unbindOneWay</a></code>&nbsp;in interface&nbsp;<code><a href="WritableObservableValue.html" title="interface in io.github.mmm.value.observable">WritableObservableValue</a>&lt;<a href="AbstractWritableObservableValue.html" title="type parameter in AbstractWritableObservableValue">V</a>&gt;</code></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="WritableObservableValue.html#bind(io.github.mmm.value.observable.ObservableValue)"><code>WritableObservableValue.bind(ObservableValue)</code></a></dd>
+<dd><a href="WritableObservableValue.html#bindOneWay(io.github.mmm.value.observable.ObservableValue)"><code>WritableObservableValue.bindOneWay(ObservableValue)</code></a></dd>
 </dl>
 </li>
 </ul>
-<a id="isBound()">
+<a id="isBoundOneWay()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>isBound</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;isBound()</pre>
+<h4>isBoundOneWay</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;isBoundOneWay()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="WritableObservableValue.html#isBound()">isBound</a></code>&nbsp;in interface&nbsp;<code><a href="WritableObservableValue.html" title="interface in io.github.mmm.value.observable">WritableObservableValue</a>&lt;<a href="AbstractWritableObservableValue.html" title="type parameter in AbstractWritableObservableValue">V</a>&gt;</code></dd>
+<dd><code><a href="WritableObservableValue.html#isBoundOneWay()">isBoundOneWay</a></code>&nbsp;in interface&nbsp;<code><a href="WritableObservableValue.html" title="interface in io.github.mmm.value.observable">WritableObservableValue</a>&lt;<a href="AbstractWritableObservableValue.html" title="type parameter in AbstractWritableObservableValue">V</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd><code>true</code> if this object is <a href="WritableObservableValue.html#bind(io.github.mmm.value.observable.ObservableValue)"><code>bound</code></a>, <code>false</code> otherwise.</dd>
+<dd><code>true</code> if this object is <a href="WritableObservableValue.html#bindOneWay(io.github.mmm.value.observable.ObservableValue)"><code>bound</code></a>, <code>false</code> otherwise.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="WritableObservableValue.html#bind(io.github.mmm.value.observable.ObservableValue)"><code>WritableObservableValue.bind(ObservableValue)</code></a></dd>
+<dd><a href="WritableObservableValue.html#bindOneWay(io.github.mmm.value.observable.ObservableValue)"><code>WritableObservableValue.bindOneWay(ObservableValue)</code></a></dd>
 </dl>
 </li>
 </ul>
-<a id="bindBidirectional(io.github.mmm.value.observable.WritableObservableValue)">
+<a id="bindTwoWay(io.github.mmm.value.observable.WritableObservableValue)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>bindBidirectional</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;bindBidirectional&#8203;(<a href="WritableObservableValue.html" title="interface in io.github.mmm.value.observable">WritableObservableValue</a>&lt;<a href="AbstractWritableObservableValue.html" title="type parameter in AbstractWritableObservableValue">V</a>&gt;&nbsp;other)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="WritableObservableValue.html#bindBidirectional(io.github.mmm.value.observable.WritableObservableValue)">WritableObservableValue</a></code></span></div>
+<h4>bindTwoWay</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;bindTwoWay&#8203;(<a href="WritableObservableValue.html" title="interface in io.github.mmm.value.observable">WritableObservableValue</a>&lt;<a href="AbstractWritableObservableValue.html" title="type parameter in AbstractWritableObservableValue">V</a>&gt;&nbsp;other)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="WritableObservableValue.html#bindTwoWay(io.github.mmm.value.observable.WritableObservableValue)">WritableObservableValue</a></code></span></div>
 <div class="block">Create a bidirectional binding between this object and the given one. After a bidirectional binding,
  <a href="../../../../../../io.github.mmm.value/io/github/mmm/value/WritableValue.html#set(V)"><code>WritableValue.set(Object)</code></a> on this object will propagate its value to the bound one and vice versa. Bidirectional
- bindings exists independently of <a href="WritableObservableValue.html#bind(io.github.mmm.value.observable.ObservableValue)"><code>unidirectional bindings</code></a>. However, it is bad
+ bindings exists independently of <a href="WritableObservableValue.html#bindOneWay(io.github.mmm.value.observable.ObservableValue)"><code>unidirectional bindings</code></a>. However, it is bad
  practice to combine both. It is possible to have multiple bidirectional bindings for the same object.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="WritableObservableValue.html#bindBidirectional(io.github.mmm.value.observable.WritableObservableValue)">bindBidirectional</a></code>&nbsp;in interface&nbsp;<code><a href="WritableObservableValue.html" title="interface in io.github.mmm.value.observable">WritableObservableValue</a>&lt;<a href="AbstractWritableObservableValue.html" title="type parameter in AbstractWritableObservableValue">V</a>&gt;</code></dd>
+<dd><code><a href="WritableObservableValue.html#bindTwoWay(io.github.mmm.value.observable.WritableObservableValue)">bindTwoWay</a></code>&nbsp;in interface&nbsp;<code><a href="WritableObservableValue.html" title="interface in io.github.mmm.value.observable">WritableObservableValue</a>&lt;<a href="AbstractWritableObservableValue.html" title="type parameter in AbstractWritableObservableValue">V</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>other</code> - the other <code>WritableObservableValue</code> to bind bidirectional.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="WritableObservableValue.html#unbindBidirectional(io.github.mmm.value.observable.WritableObservableValue)"><code>WritableObservableValue.unbindBidirectional(WritableObservableValue)</code></a></dd>
+<dd><a href="WritableObservableValue.html#unbindTwoWay(io.github.mmm.value.observable.WritableObservableValue)"><code>WritableObservableValue.unbindTwoWay(WritableObservableValue)</code></a></dd>
 </dl>
 </li>
 </ul>
-<a id="unbindBidirectional(io.github.mmm.value.observable.WritableObservableValue)">
+<a id="unbindTwoWay(io.github.mmm.value.observable.WritableObservableValue)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>unbindBidirectional</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;unbindBidirectional&#8203;(<a href="WritableObservableValue.html" title="interface in io.github.mmm.value.observable">WritableObservableValue</a>&lt;<a href="AbstractWritableObservableValue.html" title="type parameter in AbstractWritableObservableValue">V</a>&gt;&nbsp;other)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="WritableObservableValue.html#unbindBidirectional(io.github.mmm.value.observable.WritableObservableValue)">WritableObservableValue</a></code></span></div>
-<div class="block">Removes a <a href="WritableObservableValue.html#bindBidirectional(io.github.mmm.value.observable.WritableObservableValue)"><code>bidirectional binding</code></a> between this object and the
+<h4>unbindTwoWay</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;unbindTwoWay&#8203;(<a href="WritableObservableValue.html" title="interface in io.github.mmm.value.observable">WritableObservableValue</a>&lt;<a href="AbstractWritableObservableValue.html" title="type parameter in AbstractWritableObservableValue">V</a>&gt;&nbsp;other)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="WritableObservableValue.html#unbindTwoWay(io.github.mmm.value.observable.WritableObservableValue)">WritableObservableValue</a></code></span></div>
+<div class="block">Removes a <a href="WritableObservableValue.html#bindTwoWay(io.github.mmm.value.observable.WritableObservableValue)"><code>bidirectional binding</code></a> between this object and the
  given one. If no bidirectional binding between these objects exists, this method has no effect. It is possible to
- <a href="WritableObservableValue.html#unbindBidirectional(io.github.mmm.value.observable.WritableObservableValue)"><code>unbind</code></a> in inverse order. So to unbind two
- <a href="WritableObservableValue.html#bindBidirectional(io.github.mmm.value.observable.WritableObservableValue)"><code>bidirectional bound</code></a> objects it does not matter if you call
- <a href="WritableObservableValue.html#unbindBidirectional(io.github.mmm.value.observable.WritableObservableValue)"><code>unbindBidirectional</code></a> on the first with the second as argument
+ <a href="WritableObservableValue.html#unbindTwoWay(io.github.mmm.value.observable.WritableObservableValue)"><code>unbind</code></a> in inverse order. So to unbind two
+ <a href="WritableObservableValue.html#bindTwoWay(io.github.mmm.value.observable.WritableObservableValue)"><code>bidirectional bound</code></a> objects it does not matter if you call
+ <a href="WritableObservableValue.html#unbindTwoWay(io.github.mmm.value.observable.WritableObservableValue)"><code>unbindBidirectional</code></a> on the first with the second as argument
  or vice versa.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="WritableObservableValue.html#unbindBidirectional(io.github.mmm.value.observable.WritableObservableValue)">unbindBidirectional</a></code>&nbsp;in interface&nbsp;<code><a href="WritableObservableValue.html" title="interface in io.github.mmm.value.observable">WritableObservableValue</a>&lt;<a href="AbstractWritableObservableValue.html" title="type parameter in AbstractWritableObservableValue">V</a>&gt;</code></dd>
+<dd><code><a href="WritableObservableValue.html#unbindTwoWay(io.github.mmm.value.observable.WritableObservableValue)">unbindTwoWay</a></code>&nbsp;in interface&nbsp;<code><a href="WritableObservableValue.html" title="interface in io.github.mmm.value.observable">WritableObservableValue</a>&lt;<a href="AbstractWritableObservableValue.html" title="type parameter in AbstractWritableObservableValue">V</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>other</code> - the other <code>WritableObservableValue</code> to unbind bidirectional.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="WritableObservableValue.html#bindBidirectional(io.github.mmm.value.observable.WritableObservableValue)"><code>WritableObservableValue.bindBidirectional(WritableObservableValue)</code></a></dd>
+<dd><a href="WritableObservableValue.html#bindTwoWay(io.github.mmm.value.observable.WritableObservableValue)"><code>WritableObservableValue.bindTwoWay(WritableObservableValue)</code></a></dd>
 </dl>
 </li>
 </ul>

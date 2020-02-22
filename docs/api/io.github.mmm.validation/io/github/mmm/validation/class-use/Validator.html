@@ -117,7 +117,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<th class="colFirst" scope="row"><a href="#io.github.mmm.ui.widget.input">io.github.mmm.ui.widget.input</a></th>
+<th class="colFirst" scope="row"><a href="#io.github.mmm.ui.widget.panel">io.github.mmm.ui.widget.panel</a></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -303,12 +303,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </section>
 </li>
 <li class="blockList">
-<section role="region"><a id="io.github.mmm.ui.widget.input">
+<section role="region"><a id="io.github.mmm.ui.widget.panel">
 <!--   -->
 </a>
-<h3>Uses of <a href="../Validator.html" title="interface in io.github.mmm.validation">Validator</a> in <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/input/package-summary.html">io.github.mmm.ui.widget.input</a></h3>
+<h3>Uses of <a href="../Validator.html" title="interface in io.github.mmm.validation">Validator</a> in <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/panel/package-summary.html">io.github.mmm.ui.widget.panel</a></h3>
 <table class="useSummary">
-<caption><span>Methods in <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/input/package-summary.html">io.github.mmm.ui.widget.input</a> that return <a href="../Validator.html" title="interface in io.github.mmm.validation">Validator</a></span><span class="tabEnd">&nbsp;</span></caption>
+<caption><span>Methods in <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/panel/package-summary.html">io.github.mmm.ui.widget.panel</a> that return <a href="../Validator.html" title="interface in io.github.mmm.validation">Validator</a></span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colSecond" scope="col">Method</th>
@@ -316,14 +316,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../Validator.html" title="interface in io.github.mmm.validation">Validator</a>&lt;? super <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/input/UiAbstractInput.html" title="type parameter in UiAbstractInput">V</a>&gt;</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">UiAbstractInput.</span><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/input/UiAbstractInput.html#getValidator()">getValidator</a></span>()</code></th>
+<td class="colFirst"><code>default <a href="../Validator.html" title="interface in io.github.mmm.validation">Validator</a>&lt;? super <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Void.html?is-external=true" title="class or interface in java.lang" class="externalLink">Void</a>&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">UiFormGroup.</span><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/panel/UiFormGroup.html#getValidator()">getValidator</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </tbody>
 </table>
 <table class="useSummary">
-<caption><span>Methods in <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/input/package-summary.html">io.github.mmm.ui.widget.input</a> with parameters of type <a href="../Validator.html" title="interface in io.github.mmm.validation">Validator</a></span><span class="tabEnd">&nbsp;</span></caption>
+<caption><span>Methods in <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/panel/package-summary.html">io.github.mmm.ui.widget.panel</a> with parameters of type <a href="../Validator.html" title="interface in io.github.mmm.validation">Validator</a></span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colSecond" scope="col">Method</th>
@@ -331,8 +331,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">UiAbstractInput.</span><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/input/UiAbstractInput.html#setValidator(io.github.mmm.validation.Validator)">setValidator</a></span>&#8203;(<a href="../Validator.html" title="interface in io.github.mmm.validation">Validator</a>&lt;? super <a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/input/UiAbstractInput.html" title="type parameter in UiAbstractInput">V</a>&gt;&nbsp;validator)</code></th>
+<td class="colFirst"><code>default void</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">UiFormGroup.</span><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.ui/io/github/mmm/ui/widget/panel/UiFormGroup.html#setValidator(io.github.mmm.validation.Validator)">setValidator</a></span>&#8203;(<a href="../Validator.html" title="interface in io.github.mmm.validation">Validator</a>&lt;? super <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Void.html?is-external=true" title="class or interface in java.lang" class="externalLink">Void</a>&gt;&nbsp;validator)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </tbody>
@@ -750,6 +750,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.validation.main/io/github/mmm/validation/string/ValidatorPasswordConfirmation.html" title="class in io.github.mmm.validation.string">ValidatorPasswordConfirmation</a></span></code></th>
+<td class="colLast">
+<div class="block"><a href="../Validator.html" title="interface in io.github.mmm.validation"><code>Validator</code></a> <code>validating</code> that a given
+ <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>CharSequence</code></a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html?is-external=true#matcher(java.lang.CharSequence)" title="class or interface in java.util.regex" class="externalLink"><code>matches</code></a> a given <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html?is-external=true" title="class or interface in java.util.regex" class="externalLink"><code>Pattern</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.validation.main/io/github/mmm/validation/string/ValidatorPattern.html" title="class in io.github.mmm.validation.string">ValidatorPattern</a></span></code></th>
 <td class="colLast">

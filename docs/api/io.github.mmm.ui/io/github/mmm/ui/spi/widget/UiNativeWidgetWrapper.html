@@ -26,8 +26,8 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
+var data = {"i0":18,"i1":6};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -125,7 +125,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
-<dd><code>W</code> - type of <a href="#getNativeWidget()"><code>native widget</code></a>.</dd>
+<dd><code>W</code> - type of <a href="#getWidget()"><code>native widget</code></a>.</dd>
 </dl>
 <dl>
 <dt>All Superinterfaces:</dt>
@@ -174,15 +174,20 @@ extends <a href="../../widget/UiNativeWidget.html" title="interface in io.github
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t5" class="tableTab"><span><a href="javascript:show(16);">Default Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colSecond" scope="col">Method</th>
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>default <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getTopWidget()">getTopWidget</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="UiNativeWidgetWrapper.html" title="type parameter in UiNativeWidgetWrapper">W</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getNativeWidget()">getNativeWidget</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getWidget()">getWidget</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -198,7 +203,7 @@ extends <a href="../../widget/UiNativeWidget.html" title="interface in io.github
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;io.github.mmm.ui.widget.<a href="../../widget/UiWidget.html" title="interface in io.github.mmm.ui.widget">UiWidget</a></h3>
-<code><a href="../../widget/UiWidget.html#dispose()">dispose</a>, <a href="../../widget/UiWidget.html#getContext()">getContext</a>, <a href="../../widget/UiWidget.html#getId()">getId</a>, <a href="../../widget/UiWidget.html#getParent()">getParent</a>, <a href="../../widget/UiWidget.html#getReadOnlyFixed()">getReadOnlyFixed</a>, <a href="../../widget/UiWidget.html#getStyles()">getStyles</a>, <a href="../../widget/UiWidget.html#isDisposed()">isDisposed</a>, <a href="../../widget/UiWidget.html#isEnabled()">isEnabled</a>, <a href="../../widget/UiWidget.html#isEnabled(io.github.mmm.ui.datatype.UiFlagMode)">isEnabled</a>, <a href="../../widget/UiWidget.html#isFocused()">isFocused</a>, <a href="../../widget/UiWidget.html#isModified()">isModified</a>, <a href="../../widget/UiWidget.html#isReadOnly()">isReadOnly</a>, <a href="../../widget/UiWidget.html#isValid()">isValid</a>, <a href="../../widget/UiWidget.html#isVisible()">isVisible</a>, <a href="../../widget/UiWidget.html#isVisible(io.github.mmm.ui.datatype.UiFlagMode)">isVisible</a>, <a href="../../widget/UiWidget.html#setEnabled(boolean)">setEnabled</a>, <a href="../../widget/UiWidget.html#setEnabled(boolean,io.github.mmm.ui.datatype.UiFlagMode)">setEnabled</a>, <a href="../../widget/UiWidget.html#setFocused()">setFocused</a>, <a href="../../widget/UiWidget.html#setId(java.lang.String)">setId</a>, <a href="../../widget/UiWidget.html#setReadOnly(boolean)">setReadOnly</a>, <a href="../../widget/UiWidget.html#setReadOnlyFixed(java.lang.Boolean)">setReadOnlyFixed</a>, <a href="../../widget/UiWidget.html#setVisible(boolean)">setVisible</a>, <a href="../../widget/UiWidget.html#setVisible(boolean,io.github.mmm.ui.datatype.UiFlagMode)">setVisible</a>, <a href="../../widget/UiWidget.html#validate()">validate</a></code></li>
+<code><a href="../../widget/UiWidget.html#dispose()">dispose</a>, <a href="../../widget/UiWidget.html#getContext()">getContext</a>, <a href="../../widget/UiWidget.html#getId()">getId</a>, <a href="../../widget/UiWidget.html#getParent()">getParent</a>, <a href="../../widget/UiWidget.html#getReadOnlyFixed()">getReadOnlyFixed</a>, <a href="../../widget/UiWidget.html#getStyles()">getStyles</a>, <a href="../../widget/UiWidget.html#isDisposed()">isDisposed</a>, <a href="../../widget/UiWidget.html#isEnabled()">isEnabled</a>, <a href="../../widget/UiWidget.html#isEnabled(io.github.mmm.ui.datatype.BitMask)">isEnabled</a>, <a href="../../widget/UiWidget.html#isFocused()">isFocused</a>, <a href="../../widget/UiWidget.html#isModified()">isModified</a>, <a href="../../widget/UiWidget.html#isReadOnly()">isReadOnly</a>, <a href="../../widget/UiWidget.html#isValid()">isValid</a>, <a href="../../widget/UiWidget.html#isVisible()">isVisible</a>, <a href="../../widget/UiWidget.html#isVisible(io.github.mmm.ui.datatype.BitMask)">isVisible</a>, <a href="../../widget/UiWidget.html#setEnabled(boolean)">setEnabled</a>, <a href="../../widget/UiWidget.html#setEnabled(boolean,io.github.mmm.ui.datatype.BitMask)">setEnabled</a>, <a href="../../widget/UiWidget.html#setFocused()">setFocused</a>, <a href="../../widget/UiWidget.html#setId(java.lang.String)">setId</a>, <a href="../../widget/UiWidget.html#setReadOnly(boolean)">setReadOnly</a>, <a href="../../widget/UiWidget.html#setReadOnlyFixed(java.lang.Boolean)">setReadOnlyFixed</a>, <a href="../../widget/UiWidget.html#setVisible(boolean)">setVisible</a>, <a href="../../widget/UiWidget.html#setVisible(boolean,io.github.mmm.ui.datatype.BitMask)">setVisible</a>, <a href="../../widget/UiWidget.html#validate()">validate</a>, <a href="../../widget/UiWidget.html#validateDown(io.github.mmm.ui.datatype.UiValidState)">validateDown</a>, <a href="../../widget/UiWidget.html#validateUp(boolean)">validateUp</a></code></li>
 </ul>
 </li>
 </ul>
@@ -216,13 +221,27 @@ extends <a href="../../widget/UiNativeWidget.html" title="interface in io.github
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="getNativeWidget()">
+<a id="getTopWidget()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTopWidget</h4>
+<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;getTopWidget()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the top-level native widget of this wrapper. In many cases this is the same as <a href="#getWidget()"><code>getWidget()</code></a> but in
+         some cases this may be some kind of internal composite containing the <a href="#getWidget()"><code>main widget</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="getWidget()">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>getNativeWidget</h4>
-<pre class="methodSignature"><a href="UiNativeWidgetWrapper.html" title="type parameter in UiNativeWidgetWrapper">W</a>&nbsp;getNativeWidget()</pre>
+<h4>getWidget</h4>
+<pre class="methodSignature"><a href="UiNativeWidgetWrapper.html" title="type parameter in UiNativeWidgetWrapper">W</a>&nbsp;getWidget()</pre>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the underlying native widget wrapped by this <a href="../../widget/UiNativeWidget.html" title="interface in io.github.mmm.ui.widget"><code>UiNativeWidget</code></a>.</dd>

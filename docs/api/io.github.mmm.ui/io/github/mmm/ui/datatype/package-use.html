@@ -107,7 +107,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
+<th class="colFirst" scope="row"><a href="#io.github.mmm.ui">io.github.mmm.ui</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="#io.github.mmm.ui.datatype">io.github.mmm.ui.datatype</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="#io.github.mmm.ui.fx">io.github.mmm.ui.fx</a></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -119,7 +127,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<th class="colFirst" scope="row"><a href="#io.github.mmm.ui.tvm">io.github.mmm.ui.tvm</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="#io.github.mmm.ui.widget">io.github.mmm.ui.widget</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="#io.github.mmm.ui.widget.attribute">io.github.mmm.ui.widget.attribute</a></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -131,11 +147,40 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<th class="colFirst" scope="row"><a href="#io.github.mmm.ui.widget.panel">io.github.mmm.ui.widget.panel</a></th>
+<th class="colFirst" scope="row"><a href="#io.github.mmm.ui.widget.media">io.github.mmm.ui.widget.media</a></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<th class="colFirst" scope="row"><a href="#io.github.mmm.ui.widget.window">io.github.mmm.ui.widget.window</a></th>
+<th class="colFirst" scope="row"><a href="#io.github.mmm.ui.widget.panel">io.github.mmm.ui.widget.panel</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a id="io.github.mmm.ui">
+<!--   -->
+</a>
+<table class="useSummary">
+<caption><span>Classes in <a href="package-summary.html">io.github.mmm.ui.datatype</a> used by <a href="../package-summary.html">io.github.mmm.ui</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Class</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="class-use/UiDisplayType.html#io.github.mmm.ui">UiDisplayType</a></th>
+<td class="colLast">
+<div class="block">Enum with the <a href="../UiScreen.html#getType()"><code>types</code></a> of a <a href="../UiScreen.html" title="interface in io.github.mmm.ui"><code>UiScreen</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="class-use/UiSeverity.html#io.github.mmm.ui">UiSeverity</a></th>
+<td class="colLast">
+<div class="block">This is the interface that represents the <em>severity</em> of a message.</div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="class-use/UiValidState.html#io.github.mmm.ui">UiValidState</a></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </tbody>
@@ -152,20 +197,92 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
-<th class="colFirst" scope="row"><a href="class-use/UiFlagMode.html#io.github.mmm.ui.datatype">UiFlagMode</a></th>
+<th class="colFirst" scope="row"><a href="class-use/BitFlag.html#io.github.mmm.ui.datatype">BitFlag</a></th>
+<td class="colLast">
+<div class="block"><a href="RegularBitMask.html" title="class in io.github.mmm.ui.datatype"><code>RegularBitMask</code></a> for a flag (a single bit as <a href="BitFlag.html#getValue(int)"><code>value</code></a>).</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="class-use/BitMask.html#io.github.mmm.ui.datatype">BitMask</a></th>
+<td class="colLast">
+<div class="block">An <a href="BitMask.html#getValue(int)"><code>value</code></a> and <a href="BitMask.html#getFlag(int)"><code>flag</code></a> that can be encoded into a primitive <code>int</code>
+ value.</div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="class-use/BitValue.html#io.github.mmm.ui.datatype">BitValue</a></th>
+<td class="colLast">
+<div class="block"><a href="RegularBitMask.html" title="class in io.github.mmm.ui.datatype"><code>RegularBitMask</code></a> for a <a href="BitValue.html#getValue(int)"><code>value</code></a> of multiple bit of information.<br></div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="class-use/BitValueBoolean.html#io.github.mmm.ui.datatype">BitValueBoolean</a></th>
+<td class="colLast">
+<div class="block"><a href="BitValue.html" title="class in io.github.mmm.ui.datatype"><code>BitValue</code></a> that encodes a a <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Boolean</code></a> that unlike <code>boolean</code> may also be <code>null</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="class-use/InverseBitFlag.html#io.github.mmm.ui.datatype">InverseBitFlag</a></th>
+<td class="colLast">
+<div class="block"><a href="InverseBitMask.html" title="class in io.github.mmm.ui.datatype"><code>InverseBitMask</code></a> for a flag (a single bit as <a href="InverseBitFlag.html#getValue(int)"><code>value</code></a>).</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="class-use/InverseBitMask.html#io.github.mmm.ui.datatype">InverseBitMask</a></th>
+<td class="colLast">
+<div class="block"><a href="BitMask.html" title="class in io.github.mmm.ui.datatype"><code>BitMask</code></a> with <a href="InverseBitMask.html#isInverse()"><code>inverse flag-logic</code></a> so for <code>false</code> a bit is set to <code>1</code> and for
+ <code>true</code></div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="class-use/RegularBitMask.html#io.github.mmm.ui.datatype">RegularBitMask</a></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<th class="colFirst" scope="row"><a href="class-use/UiDisplayType.html#io.github.mmm.ui.datatype">UiDisplayType</a></th>
+<td class="colLast">
+<div class="block">Enum with the <a href="../UiScreen.html#getType()"><code>types</code></a> of a <a href="../UiScreen.html" title="interface in io.github.mmm.ui"><code>UiScreen</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="class-use/UiLength.html#io.github.mmm.ui.datatype">UiLength</a></th>
 <td class="colLast">
 <div class="block"><a href="UiLength.html" title="class in io.github.mmm.ui.datatype"><code>UiLength</code></a> represents a width or height of a <a href="../widget/UiWidget.html" title="interface in io.github.mmm.ui.widget"><code>UiWidget</code></a>.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="class-use/UiLengthUnit.html#io.github.mmm.ui.datatype">UiLengthUnit</a></th>
 <td class="colLast">
 <div class="block">This enum contains the available units for size measures.</div>
 </td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="class-use/UiMedia.html#io.github.mmm.ui.datatype">UiMedia</a></th>
+<td class="colLast">
+<div class="block">Datatype representing a media.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="class-use/UiMediaPreview.html#io.github.mmm.ui.datatype">UiMediaPreview</a></th>
+<td class="colLast">
+<div class="block">Datatype representing a preview of a <a href="UiMedia.html" title="interface in io.github.mmm.ui.datatype"><code>UiMedia</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="class-use/UiMediaSource.html#io.github.mmm.ui.datatype">UiMediaSource</a></th>
+<td class="colLast">
+<div class="block">Datatype representing a single source of a <a href="UiMedia.html" title="interface in io.github.mmm.ui.datatype"><code>UiMedia</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="class-use/UiMediaTrack.html#io.github.mmm.ui.datatype">UiMediaTrack</a></th>
+<td class="colLast">
+<div class="block">Datatype representing a track of a <a href="UiMedia.html" title="interface in io.github.mmm.ui.datatype"><code>UiMedia</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="class-use/UiMediaType.html#io.github.mmm.ui.datatype">UiMediaType</a></th>
+<td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <th class="colFirst" scope="row"><a href="class-use/UiPropagation.html#io.github.mmm.ui.datatype">UiPropagation</a></th>
@@ -178,6 +295,31 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colFirst" scope="row"><a href="class-use/UiScrolling.html#io.github.mmm.ui.datatype">UiScrolling</a></th>
 <td class="colLast">
 <div class="block">The scrolling behavior (visibility of a scrollbar).</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="class-use/UiSeverity.html#io.github.mmm.ui.datatype">UiSeverity</a></th>
+<td class="colLast">
+<div class="block">This is the interface that represents the <em>severity</em> of a message.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a id="io.github.mmm.ui.fx">
+<!--   -->
+</a>
+<table class="useSummary">
+<caption><span>Classes in <a href="package-summary.html">io.github.mmm.ui.datatype</a> used by <a href="../../../../../../io.github.mmm.ui.fx/io/github/mmm/ui/fx/package-summary.html">io.github.mmm.ui.fx</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Class</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="class-use/UiSeverity.html#io.github.mmm.ui.fx">UiSeverity</a></th>
+<td class="colLast">
+<div class="block">This is the interface that represents the <em>severity</em> of a message.</div>
 </td>
 </tr>
 </tbody>
@@ -193,6 +335,18 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tbody>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="class-use/UiDisplayType.html#io.github.mmm.ui.spi">UiDisplayType</a></th>
+<td class="colLast">
+<div class="block">Enum with the <a href="../UiScreen.html#getType()"><code>types</code></a> of a <a href="../UiScreen.html" title="interface in io.github.mmm.ui"><code>UiScreen</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="class-use/UiSeverity.html#io.github.mmm.ui.spi">UiSeverity</a></th>
+<td class="colLast">
+<div class="block">This is the interface that represents the <em>severity</em> of a message.</div>
+</td>
+</tr>
 <tr class="altColor">
 <th class="colFirst" scope="row"><a href="class-use/UiStyles.html#io.github.mmm.ui.spi">UiStyles</a></th>
 <td class="colLast">
@@ -213,13 +367,39 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
-<th class="colFirst" scope="row"><a href="class-use/UiFlagMode.html#io.github.mmm.ui.spi.widget">UiFlagMode</a></th>
-<td class="colLast">&nbsp;</td>
+<th class="colFirst" scope="row"><a href="class-use/BitMask.html#io.github.mmm.ui.spi.widget">BitMask</a></th>
+<td class="colLast">
+<div class="block">An <a href="BitMask.html#getValue(int)"><code>value</code></a> and <a href="BitMask.html#getFlag(int)"><code>flag</code></a> that can be encoded into a primitive <code>int</code>
+ value.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <th class="colFirst" scope="row"><a href="class-use/UiStyles.html#io.github.mmm.ui.spi.widget">UiStyles</a></th>
 <td class="colLast">
 <div class="block">Container for styles.</div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="class-use/UiValidState.html#io.github.mmm.ui.spi.widget">UiValidState</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a id="io.github.mmm.ui.tvm">
+<!--   -->
+</a>
+<table class="useSummary">
+<caption><span>Classes in <a href="package-summary.html">io.github.mmm.ui.datatype</a> used by <a href="../../../../../../io.github.mmm.ui.tvm/io/github/mmm/ui/tvm/package-summary.html">io.github.mmm.ui.tvm</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Class</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="class-use/UiSeverity.html#io.github.mmm.ui.tvm">UiSeverity</a></th>
+<td class="colLast">
+<div class="block">This is the interface that represents the <em>severity</em> of a message.</div>
 </td>
 </tr>
 </tbody>
@@ -236,13 +416,45 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
-<th class="colFirst" scope="row"><a href="class-use/UiFlagMode.html#io.github.mmm.ui.widget">UiFlagMode</a></th>
-<td class="colLast">&nbsp;</td>
+<th class="colFirst" scope="row"><a href="class-use/BitMask.html#io.github.mmm.ui.widget">BitMask</a></th>
+<td class="colLast">
+<div class="block">An <a href="BitMask.html#getValue(int)"><code>value</code></a> and <a href="BitMask.html#getFlag(int)"><code>flag</code></a> that can be encoded into a primitive <code>int</code>
+ value.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <th class="colFirst" scope="row"><a href="class-use/UiStyles.html#io.github.mmm.ui.widget">UiStyles</a></th>
 <td class="colLast">
 <div class="block">Container for styles.</div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="class-use/UiValidState.html#io.github.mmm.ui.widget">UiValidState</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a id="io.github.mmm.ui.widget.attribute">
+<!--   -->
+</a>
+<table class="useSummary">
+<caption><span>Classes in <a href="package-summary.html">io.github.mmm.ui.datatype</a> used by <a href="../widget/attribute/package-summary.html">io.github.mmm.ui.widget.attribute</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Class</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="class-use/UiLength.html#io.github.mmm.ui.widget.attribute">UiLength</a></th>
+<td class="colLast">
+<div class="block"><a href="UiLength.html" title="class in io.github.mmm.ui.datatype"><code>UiLength</code></a> represents a width or height of a <a href="../widget/UiWidget.html" title="interface in io.github.mmm.ui.widget"><code>UiWidget</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="class-use/UiLengthUnit.html#io.github.mmm.ui.widget.attribute">UiLengthUnit</a></th>
+<td class="colLast">
+<div class="block">This enum contains the available units for size measures.</div>
 </td>
 </tr>
 </tbody>
@@ -279,13 +491,39 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
-<th class="colFirst" scope="row"><a href="class-use/UiFlagMode.html#io.github.mmm.ui.widget.custom">UiFlagMode</a></th>
-<td class="colLast">&nbsp;</td>
+<th class="colFirst" scope="row"><a href="class-use/BitMask.html#io.github.mmm.ui.widget.custom">BitMask</a></th>
+<td class="colLast">
+<div class="block">An <a href="BitMask.html#getValue(int)"><code>value</code></a> and <a href="BitMask.html#getFlag(int)"><code>flag</code></a> that can be encoded into a primitive <code>int</code>
+ value.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <th class="colFirst" scope="row"><a href="class-use/UiStyles.html#io.github.mmm.ui.widget.custom">UiStyles</a></th>
 <td class="colLast">
 <div class="block">Container for styles.</div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="class-use/UiValidState.html#io.github.mmm.ui.widget.custom">UiValidState</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a id="io.github.mmm.ui.widget.media">
+<!--   -->
+</a>
+<table class="useSummary">
+<caption><span>Classes in <a href="package-summary.html">io.github.mmm.ui.datatype</a> used by <a href="../widget/media/package-summary.html">io.github.mmm.ui.widget.media</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Class</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="class-use/UiMedia.html#io.github.mmm.ui.widget.media">UiMedia</a></th>
+<td class="colLast">
+<div class="block">Datatype representing a media.</div>
 </td>
 </tr>
 </tbody>
@@ -305,31 +543,6 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colFirst" scope="row"><a href="class-use/UiScrolling.html#io.github.mmm.ui.widget.panel">UiScrolling</a></th>
 <td class="colLast">
 <div class="block">The scrolling behavior (visibility of a scrollbar).</div>
-</td>
-</tr>
-</tbody>
-</table>
-</li>
-<li class="blockList"><a id="io.github.mmm.ui.widget.window">
-<!--   -->
-</a>
-<table class="useSummary">
-<caption><span>Classes in <a href="package-summary.html">io.github.mmm.ui.datatype</a> used by <a href="../widget/window/package-summary.html">io.github.mmm.ui.widget.window</a></span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Class</th>
-<th class="colLast" scope="col">Description</th>
-</tr>
-<tbody>
-<tr class="altColor">
-<th class="colFirst" scope="row"><a href="class-use/UiLength.html#io.github.mmm.ui.widget.window">UiLength</a></th>
-<td class="colLast">
-<div class="block"><a href="UiLength.html" title="class in io.github.mmm.ui.datatype"><code>UiLength</code></a> represents a width or height of a <a href="../widget/UiWidget.html" title="interface in io.github.mmm.ui.widget"><code>UiWidget</code></a>.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<th class="colFirst" scope="row"><a href="class-use/UiLengthUnit.html#io.github.mmm.ui.widget.window">UiLengthUnit</a></th>
-<td class="colLast">
-<div class="block">This enum contains the available units for size measures.</div>
 </td>
 </tr>
 </tbody>

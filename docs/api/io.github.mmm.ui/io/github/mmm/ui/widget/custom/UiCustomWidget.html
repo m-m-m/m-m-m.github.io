@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":9,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":9,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -307,7 +307,7 @@ extends <a href="../../spi/widget/AbstractUiWidget.html" title="class in io.gith
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isEnabled(io.github.mmm.ui.datatype.UiFlagMode)">isEnabled</a></span>&#8203;(<a href="../../datatype/UiFlagMode.html" title="class in io.github.mmm.ui.datatype">UiFlagMode</a>&nbsp;flagMode)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isEnabled(io.github.mmm.ui.datatype.BitMask)">isEnabled</a></span>&#8203;(<a href="../../datatype/BitMask.html" title="class in io.github.mmm.ui.datatype">BitMask</a>&nbsp;flagMode)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i11" class="rowColor">
@@ -317,13 +317,13 @@ extends <a href="../../spi/widget/AbstractUiWidget.html" title="class in io.gith
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isVisible(io.github.mmm.ui.datatype.UiFlagMode)">isVisible</a></span>&#8203;(<a href="../../datatype/UiFlagMode.html" title="class in io.github.mmm.ui.datatype">UiFlagMode</a>&nbsp;flagMode)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isVisible(io.github.mmm.ui.datatype.BitMask)">isVisible</a></span>&#8203;(<a href="../../datatype/BitMask.html" title="class in io.github.mmm.ui.datatype">BitMask</a>&nbsp;flagMode)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setEnabled(boolean,io.github.mmm.ui.datatype.UiFlagMode)">setEnabled</a></span>&#8203;(boolean&nbsp;enabled,
-          <a href="../../datatype/UiFlagMode.html" title="class in io.github.mmm.ui.datatype">UiFlagMode</a>&nbsp;flagMode)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setEnabled(boolean,io.github.mmm.ui.datatype.BitMask)">setEnabled</a></span>&#8203;(boolean&nbsp;enabled,
+          <a href="../../datatype/BitMask.html" title="class in io.github.mmm.ui.datatype">BitMask</a>&nbsp;flagMode)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i14" class="altColor">
@@ -354,9 +354,21 @@ extends <a href="../../spi/widget/AbstractUiWidget.html" title="class in io.gith
 </tr>
 <tr id="i18" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setVisible(boolean,io.github.mmm.ui.datatype.UiFlagMode)">setVisible</a></span>&#8203;(boolean&nbsp;visible,
-          <a href="../../datatype/UiFlagMode.html" title="class in io.github.mmm.ui.datatype">UiFlagMode</a>&nbsp;flagMode)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setVisible(boolean,io.github.mmm.ui.datatype.BitMask)">setVisible</a></span>&#8203;(boolean&nbsp;visible,
+          <a href="../../datatype/BitMask.html" title="class in io.github.mmm.ui.datatype">BitMask</a>&nbsp;flagMode)</code></th>
 <td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i19" class="rowColor">
+<td class="colFirst"><code>protected <a href="../UiNativeWidget.html" title="interface in io.github.mmm.ui.widget">UiNativeWidget</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#unwrap()">unwrap</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i20" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#validateDown(io.github.mmm.ui.datatype.UiValidState)">validateDown</a></span>&#8203;(<a href="../../datatype/UiValidState.html" title="class in io.github.mmm.ui.datatype">UiValidState</a>&nbsp;state)</code></th>
+<td class="colLast">
+<div class="block">Performs <a href="../UiWidget.html#validate()"><code>validation</code></a> without <a href="../UiWidget.html#validateUp(boolean)"><code>upwards propagation</code></a>.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -364,7 +376,7 @@ extends <a href="../../spi/widget/AbstractUiWidget.html" title="class in io.gith
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;io.github.mmm.ui.spi.widget.<a href="../../spi/widget/AbstractUiWidget.html" title="class in io.github.mmm.ui.spi.widget">AbstractUiWidget</a></h3>
-<code><a href="../../spi/widget/AbstractUiWidget.html#getContext()">getContext</a>, <a href="../../spi/widget/AbstractUiWidget.html#isEmpty(java.lang.String)">isEmpty</a>, <a href="../../spi/widget/AbstractUiWidget.html#setParent(io.github.mmm.ui.widget.UiWidget,io.github.mmm.ui.widget.composite.UiComposite)">setParent</a></code></li>
+<code><a href="../../spi/widget/AbstractUiWidget.html#getContext()">getContext</a>, <a href="../../spi/widget/AbstractUiWidget.html#isEmpty(java.lang.String)">isEmpty</a>, <a href="../../spi/widget/AbstractUiWidget.html#setParent(io.github.mmm.ui.widget.UiWidget,io.github.mmm.ui.widget.composite.UiComposite)">setParent</a>, <a href="../../spi/widget/AbstractUiWidget.html#unwrap(io.github.mmm.ui.widget.UiWidget)">unwrap</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.event.AbstractEventSource">
@@ -392,7 +404,7 @@ extends <a href="../../spi/widget/AbstractUiWidget.html" title="class in io.gith
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;io.github.mmm.ui.widget.<a href="../UiWidget.html" title="interface in io.github.mmm.ui.widget">UiWidget</a></h3>
-<code><a href="../UiWidget.html#isEnabled()">isEnabled</a>, <a href="../UiWidget.html#isFocused()">isFocused</a>, <a href="../UiWidget.html#isModified()">isModified</a>, <a href="../UiWidget.html#isValid()">isValid</a>, <a href="../UiWidget.html#isVisible()">isVisible</a>, <a href="../UiWidget.html#setEnabled(boolean)">setEnabled</a>, <a href="../UiWidget.html#setFocused()">setFocused</a>, <a href="../UiWidget.html#setVisible(boolean)">setVisible</a>, <a href="../UiWidget.html#validate()">validate</a></code></li>
+<code><a href="../UiWidget.html#isEnabled()">isEnabled</a>, <a href="../UiWidget.html#isFocused()">isFocused</a>, <a href="../UiWidget.html#isModified()">isModified</a>, <a href="../UiWidget.html#isValid()">isValid</a>, <a href="../UiWidget.html#isVisible()">isVisible</a>, <a href="../UiWidget.html#setEnabled(boolean)">setEnabled</a>, <a href="../UiWidget.html#setFocused()">setFocused</a>, <a href="../UiWidget.html#setVisible(boolean)">setVisible</a>, <a href="../UiWidget.html#validate()">validate</a>, <a href="../UiWidget.html#validateUp(boolean)">validateUp</a></code></li>
 </ul>
 </li>
 </ul>
@@ -490,6 +502,23 @@ extends <a href="../../spi/widget/AbstractUiWidget.html" title="class in io.gith
 </dl>
 </li>
 </ul>
+<a id="unwrap()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>unwrap</h4>
+<pre class="methodSignature">protected&nbsp;<a href="../UiNativeWidget.html" title="interface in io.github.mmm.ui.widget">UiNativeWidget</a>&nbsp;unwrap()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../spi/widget/AbstractUiWidget.html#unwrap()">unwrap</a></code>&nbsp;in class&nbsp;<code><a href="../../spi/widget/AbstractUiWidget.html" title="class in io.github.mmm.ui.spi.widget">AbstractUiWidget</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the unwrapped widget.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="#getDelegate()"><code>getDelegate()</code></a></dd>
+</dl>
+</li>
+</ul>
 <a id="initialize()">
 <!--   -->
 </a>
@@ -572,70 +601,72 @@ extends <a href="../../spi/widget/AbstractUiWidget.html" title="class in io.gith
 </dl>
 </li>
 </ul>
-<a id="isVisible(io.github.mmm.ui.datatype.UiFlagMode)">
+<a id="isVisible(io.github.mmm.ui.datatype.BitMask)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>isVisible</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;isVisible&#8203;(<a href="../../datatype/UiFlagMode.html" title="class in io.github.mmm.ui.datatype">UiFlagMode</a>&nbsp;flagMode)</pre>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;isVisible&#8203;(<a href="../../datatype/BitMask.html" title="class in io.github.mmm.ui.datatype">BitMask</a>&nbsp;flagMode)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>flagMode</code> - the <a href="../../datatype/UiFlagMode.html" title="class in io.github.mmm.ui.datatype"><code>UiFlagMode</code></a> to check the visibility of. May be <code>null</code> to check all modes including
-        the <a href="../UiWidget.html#getParent()"><code>parent</code></a> widget.</dd>
+<dd><code>flagMode</code> - the <a href="../../datatype/BitMask.html" title="class in io.github.mmm.ui.datatype"><code>BitMask</code></a> to check the visibility of. See <a href="../../datatype/UiVisibleFlags.html" title="interface in io.github.mmm.ui.datatype"><code>UiVisibleFlags</code></a> for available options. May
+        be <code>null</code> to check all modes including the <a href="../UiWidget.html#getParent()"><code>parent</code></a> widget.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd><code>true</code> if visible, <code>false</code> if hidden.</dd>
 </dl>
 </li>
 </ul>
-<a id="setVisible(boolean,io.github.mmm.ui.datatype.UiFlagMode)">
+<a id="setVisible(boolean,io.github.mmm.ui.datatype.BitMask)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setVisible</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;setVisible&#8203;(boolean&nbsp;visible,
-                       <a href="../../datatype/UiFlagMode.html" title="class in io.github.mmm.ui.datatype">UiFlagMode</a>&nbsp;flagMode)</pre>
+                       <a href="../../datatype/BitMask.html" title="class in io.github.mmm.ui.datatype">BitMask</a>&nbsp;flagMode)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>visible</code> - <code>true</code> to show this widget (in case its parent is also visible), <code>false</code> to hide this
         widget.</dd>
-<dd><code>flagMode</code> - the <a href="../../datatype/UiFlagMode.html" title="class in io.github.mmm.ui.datatype"><code>UiFlagMode</code></a> to modify.</dd>
+<dd><code>flagMode</code> - the <a href="../../datatype/BitMask.html" title="class in io.github.mmm.ui.datatype"><code>BitMask</code></a> to apply. See <a href="../../datatype/UiVisibleFlags.html" title="interface in io.github.mmm.ui.datatype"><code>UiVisibleFlags</code></a> for available options.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../UiWidget.html#isVisible()"><code>UiWidget.isVisible()</code></a></dd>
 </dl>
 </li>
 </ul>
-<a id="isEnabled(io.github.mmm.ui.datatype.UiFlagMode)">
+<a id="isEnabled(io.github.mmm.ui.datatype.BitMask)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>isEnabled</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;isEnabled&#8203;(<a href="../../datatype/UiFlagMode.html" title="class in io.github.mmm.ui.datatype">UiFlagMode</a>&nbsp;flagMode)</pre>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;isEnabled&#8203;(<a href="../../datatype/BitMask.html" title="class in io.github.mmm.ui.datatype">BitMask</a>&nbsp;flagMode)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>flagMode</code> - the <a href="../../datatype/UiFlagMode.html" title="class in io.github.mmm.ui.datatype"><code>UiFlagMode</code></a> to check the enabled state of. May be <code>null</code> to check all modes
-        including the <a href="../UiWidget.html#getParent()"><code>parent</code></a> widget.</dd>
+<dd><code>flagMode</code> - the <a href="../../datatype/BitMask.html" title="class in io.github.mmm.ui.datatype"><code>BitMask</code></a> to check the enabled state of. See <a href="../../datatype/UiEnabledFlags.html" title="interface in io.github.mmm.ui.datatype"><code>UiEnabledFlags</code></a> for available options.
+        May be <code>null</code> to check all modes including the <a href="../UiWidget.html#getParent()"><code>parent</code></a> widget.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd><code>true</code> if enabled, <code>false</code> if disabled (end-user cannot interact with this widget or its
          children).</dd>
 </dl>
 </li>
 </ul>
-<a id="setEnabled(boolean,io.github.mmm.ui.datatype.UiFlagMode)">
+<a id="setEnabled(boolean,io.github.mmm.ui.datatype.BitMask)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setEnabled</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;setEnabled&#8203;(boolean&nbsp;enabled,
-                       <a href="../../datatype/UiFlagMode.html" title="class in io.github.mmm.ui.datatype">UiFlagMode</a>&nbsp;flagMode)</pre>
+                       <a href="../../datatype/BitMask.html" title="class in io.github.mmm.ui.datatype">BitMask</a>&nbsp;flagMode)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>enabled</code> - the new <a href="../UiWidget.html#isEnabled()"><code>enabled state</code></a>. Use <code>true</code> to enable and <code>false</code> to disable
         this widget.</dd>
-<dd><code>flagMode</code> - the <a href="../../datatype/UiFlagMode.html" title="class in io.github.mmm.ui.datatype"><code>UiFlagMode</code></a> to modify.</dd>
+<dd><code>flagMode</code> - the <a href="../../datatype/BitMask.html" title="class in io.github.mmm.ui.datatype"><code>BitMask</code></a> to apply. See <a href="../../datatype/UiEnabledFlags.html" title="interface in io.github.mmm.ui.datatype"><code>UiEnabledFlags</code></a> for available options.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../UiWidget.html#setEnabled(boolean)"><code>UiWidget.setEnabled(boolean)</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -688,6 +719,9 @@ extends <a href="../../spi/widget/AbstractUiWidget.html" title="class in io.gith
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>id</code> - is the new <a href="../UiWidget.html#getId()"><code>ID</code></a> for the object.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../UiWidget.html#getId()"><code>UiWidget.getId()</code></a>, 
+<a href="../UiWidget.html#ID_SEPARATOR"><code>UiWidget.ID_SEPARATOR</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -741,7 +775,7 @@ extends <a href="../../spi/widget/AbstractUiWidget.html" title="class in io.gith
 <a id="setReadOnlyFixed(java.lang.Boolean)">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>setReadOnlyFixed</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;setReadOnlyFixed&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&nbsp;readOnlyFixed)</pre>
@@ -754,6 +788,28 @@ extends <a href="../../spi/widget/AbstractUiWidget.html" title="class in io.gith
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>readOnlyFixed</code> - the new value of <a href="../UiWidget.html#getReadOnlyFixed()"><code>UiWidget.getReadOnlyFixed()</code></a>. May be <code>null</code> to reset.</dd>
+</dl>
+</li>
+</ul>
+<a id="validateDown(io.github.mmm.ui.datatype.UiValidState)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>validateDown</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;validateDown&#8203;(<a href="../../datatype/UiValidState.html" title="class in io.github.mmm.ui.datatype">UiValidState</a>&nbsp;state)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../UiWidget.html#validateDown(io.github.mmm.ui.datatype.UiValidState)">UiWidget</a></code></span></div>
+<div class="block">Performs <a href="../UiWidget.html#validate()"><code>validation</code></a> without <a href="../UiWidget.html#validateUp(boolean)"><code>upwards propagation</code></a>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>state</code> - the new <a href="../../datatype/UiValidState.html" title="class in io.github.mmm.ui.datatype"><code>UiValidState</code></a>.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the new <a href="../UiWidget.html#isValid()"><code>valid status</code></a> as result of this validation. In other words <code>true</code> if this
+         widget and all its potential <a href="../composite/UiComposite.html#getChild(int)"><code>children</code></a>
+         have been successfully validated, <code>false</code> otherwise. Can differ from <a href="../../datatype/UiValidState.html#isValid()"><code>UiValidState.isValid()</code></a>
+         if the subtree of this widget is valid but other widgets have been validated before.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../UiWidget.html#validate()"><code>UiWidget.validate()</code></a></dd>
 </dl>
 </li>
 </ul>

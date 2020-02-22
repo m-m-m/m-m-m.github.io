@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":18,"i1":6,"i2":18,"i3":18,"i4":18,"i5":18,"i6":18,"i7":6,"i8":18,"i9":6,"i10":18,"i11":18,"i12":18,"i13":18,"i14":18,"i15":18,"i16":6,"i17":6};
+var data = {"i0":18,"i1":6,"i2":6,"i3":18,"i4":18,"i5":18,"i6":18,"i7":18,"i8":18,"i9":18,"i10":6,"i11":18,"i12":6,"i13":18,"i14":18,"i15":18,"i16":18,"i17":18,"i18":18,"i19":18,"i20":18,"i21":18,"i22":6,"i23":18,"i24":18,"i25":6,"i26":6,"i27":6,"i28":6,"i29":18,"i30":6,"i31":18,"i32":18,"i33":18,"i34":18,"i35":18,"i36":18,"i37":18,"i38":18};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -125,7 +125,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Known Implementing Classes:</dt>
-<dd><code><a href="spi/AbstractUiContext.html" title="class in io.github.mmm.ui.spi">AbstractUiContext</a></code>, <code><a href="../../../../../io.github.mmm.ui.fx/io/github/mmm/ui/fx/FxContext.html" title="class in io.github.mmm.ui.fx">FxContext</a></code></dd>
+<dd><code><a href="spi/AbstractUiContext.html" title="class in io.github.mmm.ui.spi">AbstractUiContext</a></code>, <code><a href="../../../../../io.github.mmm.ui.fx/io/github/mmm/ui/fx/FxContext.html" title="class in io.github.mmm.ui.fx">FxContext</a></code>, <code><a href="../../../../../io.github.mmm.ui.tvm/io/github/mmm/ui/tvm/TvmContext.html" title="class in io.github.mmm.ui.tvm">TvmContext</a></code></dd>
 </dl>
 <hr>
 <pre>public interface <span class="typeNameLabel">UiContext</span></pre>
@@ -169,6 +169,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="widget/button/UiButton.html" title="interface in io.github.mmm.ui.widget.button">UiButton</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createButton(io.github.mmm.ui.event.action.UiAction)">createButton</a></span>&#8203;(<a href="event/action/UiAction.html" title="interface in io.github.mmm.ui.event.action">UiAction</a>&nbsp;action)</code></th>
+<td class="colLast">
+<div class="block">Creates a new <a href="widget/button/UiButton.html" title="interface in io.github.mmm.ui.widget.button"><code>UiButton</code></a> for the given <a href="event/action/UiAction.html" title="interface in io.github.mmm.ui.event.action"><code>UiAction</code></a>.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>default <a href="widget/button/UiButton.html" title="interface in io.github.mmm.ui.widget.button">UiButton</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createButton(java.lang.String,io.github.mmm.ui.event.UiClickEventListener)">createButton</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;label,
             <a href="event/UiClickEventListener.html" title="interface in io.github.mmm.ui.event">UiClickEventListener</a>&nbsp;listener)</code></th>
@@ -176,84 +183,222 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Creates a new <a href="widget/button/UiButton.html" title="interface in io.github.mmm.ui.widget.button"><code>UiButton</code></a>.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>default <a href="widget/panel/UiButtonPanel.html" title="interface in io.github.mmm.ui.widget.panel">UiButtonPanel</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createButtonPanel(io.github.mmm.ui.widget.button.UiAbstractButton...)">createButtonPanel</a></span>&#8203;(<a href="widget/button/UiAbstractButton.html" title="interface in io.github.mmm.ui.widget.button">UiAbstractButton</a>...&nbsp;buttons)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>default <a href="widget/input/UiCheckbox.html" title="interface in io.github.mmm.ui.widget.input">UiCheckbox</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createCheckbox(java.lang.String)">createCheckbox</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;label)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
-<td class="colFirst"><code>default <a href="widget/panel/UiFormPanel.html" title="interface in io.github.mmm.ui.widget.panel">UiFormPanel</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createFormPanel(io.github.mmm.ui.widget.input.UiInput...)">createFormPanel</a></span>&#8203;(<a href="widget/input/UiInput.html" title="interface in io.github.mmm.ui.widget.input">UiInput</a>&lt;?&gt;...&nbsp;inputs)</code></th>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>default <a href="widget/panel/UiFormGroup.html" title="interface in io.github.mmm.ui.widget.panel">UiFormGroup</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createFormGroup(java.lang.String,io.github.mmm.ui.widget.input.UiInput...)">createFormGroup</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
+               <a href="widget/input/UiInput.html" title="interface in io.github.mmm.ui.widget.input">UiInput</a>&lt;?&gt;...&nbsp;inputs)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>default <a href="widget/panel/UiFormPanel.html" title="interface in io.github.mmm.ui.widget.panel">UiFormPanel</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createFormPanel(io.github.mmm.ui.widget.input.UiAbstractInput...)">createFormPanel</a></span>&#8203;(<a href="widget/input/UiAbstractInput.html" title="interface in io.github.mmm.ui.widget.input">UiAbstractInput</a>&lt;?&gt;...&nbsp;inputs)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>default <a href="widget/panel/UiHorizontalPanel.html" title="interface in io.github.mmm.ui.widget.panel">UiHorizontalPanel</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createHorizontalPanel()">createHorizontalPanel</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>default &lt;V&gt;&nbsp;<a href="widget/input/UiInput.html" title="interface in io.github.mmm.ui.widget.input">UiInput</a>&lt;V&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createInput(io.github.mmm.value.ReadableTypedValue)">createInput</a></span>&#8203;(<a href="../../../../../io.github.mmm.value/io/github/mmm/value/ReadableTypedValue.html" title="interface in io.github.mmm.value">ReadableTypedValue</a>&lt;V&gt;&nbsp;property)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>&lt;V&gt;&nbsp;<a href="widget/input/UiInput.html" title="interface in io.github.mmm.ui.widget.input">UiInput</a>&lt;V&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createInput(io.github.mmm.value.ReadableTypedValue,boolean)">createInput</a></span>&#8203;(<a href="../../../../../io.github.mmm.value/io/github/mmm/value/ReadableTypedValue.html" title="interface in io.github.mmm.value">ReadableTypedValue</a>&lt;V&gt;&nbsp;property,
            boolean&nbsp;required)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>default &lt;V&gt;&nbsp;<a href="widget/input/UiInput.html" title="interface in io.github.mmm.ui.widget.input">UiInput</a>&lt;V&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createInput(java.lang.Class)">createInput</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;V&gt;&nbsp;datatype)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>&lt;V&gt;&nbsp;<a href="widget/input/UiInput.html" title="interface in io.github.mmm.ui.widget.input">UiInput</a>&lt;V&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createInput(java.lang.Class,boolean)">createInput</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;V&gt;&nbsp;datatype,
            boolean&nbsp;required)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>default <a href="widget/UiLabel.html" title="interface in io.github.mmm.ui.widget">UiLabel</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createLabel(java.lang.String)">createLabel</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;label)</code></th>
 <td class="colLast">
 <div class="block">Creates a new <a href="widget/UiLabel.html" title="interface in io.github.mmm.ui.widget"><code>UiLabel</code></a>.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>default <a href="widget/input/UiPasswordInput.html" title="interface in io.github.mmm.ui.widget.input">UiPasswordInput</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createPasswordInput(java.lang.String)">createPasswordInput</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;label)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i15" class="rowColor">
+<td class="colFirst"><code>default <a href="widget/input/UiRadioButton.html" title="interface in io.github.mmm.ui.widget.input">UiRadioButton</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createRadioButton(java.lang.String)">createRadioButton</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;label)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i16" class="altColor">
+<td class="colFirst"><code>default &lt;V&gt;&nbsp;<a href="widget/input/UiRadioChoice.html" title="interface in io.github.mmm.ui.widget.input">UiRadioChoice</a>&lt;V&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createRadioChoice(java.lang.String,java.util.List)">createRadioChoice</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;label,
+                 <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;V&gt;&nbsp;options)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i17" class="rowColor">
+<td class="colFirst"><code>default &lt;V&gt;&nbsp;<a href="widget/input/UiRadioChoice.html" title="interface in io.github.mmm.ui.widget.input">UiRadioChoice</a>&lt;V&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createRadioChoice(java.lang.String,V...)">createRadioChoice</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;label,
+                 V...&nbsp;options)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i18" class="altColor">
+<td class="colFirst"><code>default &lt;V extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Enum.html?is-external=true" title="class or interface in java.lang" class="externalLink">Enum</a>&lt;?&gt;&gt;<br><a href="widget/input/UiRadioChoice.html" title="interface in io.github.mmm.ui.widget.input">UiRadioChoice</a>&lt;V&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createRadioChoiceByEnum(java.lang.String,java.lang.Class)">createRadioChoiceByEnum</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;label,
+                       <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;V&gt;&nbsp;enumOptions)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>default <a href="widget/panel/UiTabPanel.html" title="interface in io.github.mmm.ui.widget.panel">UiTabPanel</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createTabPanel()">createTabPanel</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>default <a href="widget/input/UiTextArea.html" title="interface in io.github.mmm.ui.widget.input">UiTextArea</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createTextArea(java.lang.String)">createTextArea</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;label)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>default <a href="widget/input/UiTextInput.html" title="interface in io.github.mmm.ui.widget.input">UiTextInput</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createTextInput(java.lang.String)">createTextInput</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;label)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i22" class="altColor">
+<td class="colFirst"><code><a href="UiToggleGroup.html" title="interface in io.github.mmm.ui">UiToggleGroup</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createToggleGroup()">createToggleGroup</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>default <a href="widget/panel/UiVerticalPanel.html" title="interface in io.github.mmm.ui.widget.panel">UiVerticalPanel</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createVerticalPanel()">createVerticalPanel</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i24" class="altColor">
+<td class="colFirst"><code>default <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDefaultValidationFailure()">getDefaultValidationFailure</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i25" class="rowColor">
+<td class="colFirst"><code><a href="UiDispatcher.html" title="interface in io.github.mmm.ui">UiDispatcher</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDispatcher()">getDispatcher</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i26" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html?is-external=true" title="class or interface in java.util" class="externalLink">Locale</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getLocale()">getLocale</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code><a href="widget/window/UiMainWindow.html" title="interface in io.github.mmm.ui.widget.window">UiMainWindow</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getMainWindow()">getMainWindow</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i28" class="altColor">
+<td class="colFirst"><code><a href="UiScreen.html" title="interface in io.github.mmm.ui">UiScreen</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getScreen()">getScreen</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i29" class="rowColor">
+<td class="colFirst"><code>default <a href="datatype/UiValidState.html" title="class in io.github.mmm.ui.datatype">UiValidState</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#newValidState()">newValidState</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i30" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#showPopup(java.lang.String,io.github.mmm.ui.datatype.UiSeverity,java.lang.String,java.lang.String,io.github.mmm.ui.event.action.UiAction...)">showPopup</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;message,
+         <a href="datatype/UiSeverity.html" title="class in io.github.mmm.ui.datatype">UiSeverity</a>&nbsp;severity,
+         <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;title,
+         <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;details,
+         <a href="event/action/UiAction.html" title="interface in io.github.mmm.ui.event.action">UiAction</a>...&nbsp;actions)</code></th>
+<td class="colLast">
+<div class="block">This method opens a popup window with the given <code>message</code>.</div>
+</td>
+</tr>
+<tr id="i31" class="rowColor">
+<td class="colFirst"><code>default void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#showPopupOk(java.lang.String)">showPopupOk</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;message)</code></th>
+<td class="colLast">
+<div class="block">This method opens a confirmation popup window with the given <code>message</code>.</div>
+</td>
+</tr>
+<tr id="i32" class="altColor">
+<td class="colFirst"><code>default void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#showPopupOk(java.lang.String,io.github.mmm.ui.datatype.UiSeverity)">showPopupOk</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;message,
+           <a href="datatype/UiSeverity.html" title="class in io.github.mmm.ui.datatype">UiSeverity</a>&nbsp;severity)</code></th>
+<td class="colLast">
+<div class="block">This method opens a confirmation popup window with the given <code>message</code>.</div>
+</td>
+</tr>
+<tr id="i33" class="rowColor">
+<td class="colFirst"><code>default void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#showPopupOk(java.lang.String,io.github.mmm.ui.datatype.UiSeverity,java.lang.String)">showPopupOk</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;message,
+           <a href="datatype/UiSeverity.html" title="class in io.github.mmm.ui.datatype">UiSeverity</a>&nbsp;severity,
+           <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;title)</code></th>
+<td class="colLast">
+<div class="block">This method opens a confirmation popup window with the given <code>message</code> and an .</div>
+</td>
+</tr>
+<tr id="i34" class="altColor">
+<td class="colFirst"><code>default void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#showPopupOk(java.lang.String,io.github.mmm.ui.datatype.UiSeverity,java.lang.String,io.github.mmm.ui.event.action.UiActionOk)">showPopupOk</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;message,
+           <a href="datatype/UiSeverity.html" title="class in io.github.mmm.ui.datatype">UiSeverity</a>&nbsp;severity,
+           <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;title,
+           <a href="event/action/UiActionOk.html" title="interface in io.github.mmm.ui.event.action">UiActionOk</a>&nbsp;action)</code></th>
+<td class="colLast">
+<div class="block">This method opens a confirmation popup window with the given <code>message</code> and an "OK" button.</div>
+</td>
+</tr>
+<tr id="i35" class="rowColor">
+<td class="colFirst"><code>default void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#showPopupOk(java.lang.Throwable)">showPopupOk</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Throwable</a>&nbsp;error)</code></th>
+<td class="colLast">
+<div class="block">This method opens a confirmation popup window showing the given <code>error</code>.</div>
+</td>
+</tr>
+<tr id="i36" class="altColor">
+<td class="colFirst"><code>default void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#showPopupOk(java.lang.Throwable,java.lang.String)">showPopupOk</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Throwable</a>&nbsp;error,
+           <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;message)</code></th>
+<td class="colLast">
+<div class="block">This method opens a confirmation popup dialog showing the given <code>error</code>.</div>
+</td>
+</tr>
+<tr id="i37" class="rowColor">
+<td class="colFirst"><code>default void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#showPopupOk(java.lang.Throwable,java.lang.String,io.github.mmm.ui.event.action.UiActionOk)">showPopupOk</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Throwable</a>&nbsp;error,
+           <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;message,
+           <a href="event/action/UiActionOk.html" title="interface in io.github.mmm.ui.event.action">UiActionOk</a>&nbsp;action)</code></th>
+<td class="colLast">
+<div class="block">This method opens a confirmation popup dialog showing the given <code>error</code>.</div>
+</td>
+</tr>
+<tr id="i38" class="altColor">
+<td class="colFirst"><code>default void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#showPopupYesNo(java.lang.String,java.lang.String,java.util.function.Consumer)">showPopupYesNo</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;message,
+              <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;title,
+              <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Consumer</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;&nbsp;callback)</code></th>
+<td class="colLast">
+<div class="block">This method opens a <a href="datatype/UiSeverity.html#QUESTION"><code>question</code></a> popup window with the given <code>message</code> and two
+ buttons for the options <a href="event/action/UiActionYes.html" title="interface in io.github.mmm.ui.event.action"><code>yes</code></a> and <a href="event/action/UiActionNo.html" title="interface in io.github.mmm.ui.event.action"><code>no</code></a>.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -296,6 +441,228 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Locale</code></a> of the current user.</dd>
+</dl>
+</li>
+</ul>
+<a id="getScreen()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getScreen</h4>
+<pre class="methodSignature"><a href="UiScreen.html" title="interface in io.github.mmm.ui">UiScreen</a>&nbsp;getScreen()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the <a href="UiScreen.html" title="interface in io.github.mmm.ui"><code>UiScreen</code></a> to read the current screen resolution.</dd>
+</dl>
+</li>
+</ul>
+<a id="getDispatcher()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDispatcher</h4>
+<pre class="methodSignature"><a href="UiDispatcher.html" title="interface in io.github.mmm.ui">UiDispatcher</a>&nbsp;getDispatcher()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the <a href="UiDispatcher.html" title="interface in io.github.mmm.ui"><code>UiDispatcher</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="createToggleGroup()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createToggleGroup</h4>
+<pre class="methodSignature"><a href="UiToggleGroup.html" title="interface in io.github.mmm.ui">UiToggleGroup</a>&nbsp;createToggleGroup()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new <a href="UiToggleGroup.html" title="interface in io.github.mmm.ui"><code>UiToggleGroup</code></a> instance.</dd>
+</dl>
+</li>
+</ul>
+<a id="showPopupOk(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>showPopupOk</h4>
+<pre class="methodSignature">default&nbsp;void&nbsp;showPopupOk&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;message)</pre>
+<div class="block">This method opens a confirmation popup window with the given <code>message</code>. The title of the popup is
+ automatically derived from the given <a href="datatype/UiSeverity.html" title="class in io.github.mmm.ui.datatype"><code>UiSeverity</code></a>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>message</code> - is the message to display.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="#showPopupOk(java.lang.String,io.github.mmm.ui.datatype.UiSeverity,java.lang.String)"><code>showPopupOk(String, UiSeverity, String)</code></a></dd>
+</dl>
+</li>
+</ul>
+<a id="showPopupOk(java.lang.String,io.github.mmm.ui.datatype.UiSeverity)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>showPopupOk</h4>
+<pre class="methodSignature">default&nbsp;void&nbsp;showPopupOk&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;message,
+                         <a href="datatype/UiSeverity.html" title="class in io.github.mmm.ui.datatype">UiSeverity</a>&nbsp;severity)</pre>
+<div class="block">This method opens a confirmation popup window with the given <code>message</code>. The title of the popup is
+ automatically derived from the given <a href="datatype/UiSeverity.html" title="class in io.github.mmm.ui.datatype"><code>UiSeverity</code></a>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>message</code> - is the message to display.</dd>
+<dd><code>severity</code> - is the <a href="datatype/UiSeverity.html" title="class in io.github.mmm.ui.datatype"><code>UiSeverity</code></a>. Should NOT be <a href="datatype/UiSeverity.html#QUESTION"><code>UiSeverity.QUESTION</code></a>.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="#showPopupOk(java.lang.String,io.github.mmm.ui.datatype.UiSeverity,java.lang.String)"><code>showPopupOk(String, UiSeverity, String)</code></a></dd>
+</dl>
+</li>
+</ul>
+<a id="showPopupOk(java.lang.String,io.github.mmm.ui.datatype.UiSeverity,java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>showPopupOk</h4>
+<pre class="methodSignature">default&nbsp;void&nbsp;showPopupOk&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;message,
+                         <a href="datatype/UiSeverity.html" title="class in io.github.mmm.ui.datatype">UiSeverity</a>&nbsp;severity,
+                         <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;title)</pre>
+<div class="block">This method opens a confirmation popup window with the given <code>message</code> and an .</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>message</code> - is the message to display.</dd>
+<dd><code>severity</code> - is the <a href="datatype/UiSeverity.html" title="class in io.github.mmm.ui.datatype"><code>UiSeverity</code></a>. Should NOT be <a href="datatype/UiSeverity.html#QUESTION"><code>UiSeverity.QUESTION</code></a>.</dd>
+<dd><code>title</code> - is the title that will be displayed in the title-bar of the popup.</dd>
+</dl>
+</li>
+</ul>
+<a id="showPopupOk(java.lang.String,io.github.mmm.ui.datatype.UiSeverity,java.lang.String,io.github.mmm.ui.event.action.UiActionOk)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>showPopupOk</h4>
+<pre class="methodSignature">default&nbsp;void&nbsp;showPopupOk&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;message,
+                         <a href="datatype/UiSeverity.html" title="class in io.github.mmm.ui.datatype">UiSeverity</a>&nbsp;severity,
+                         <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;title,
+                         <a href="event/action/UiActionOk.html" title="interface in io.github.mmm.ui.event.action">UiActionOk</a>&nbsp;action)</pre>
+<div class="block">This method opens a confirmation popup window with the given <code>message</code> and an "OK" button.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>message</code> - is the message to display.</dd>
+<dd><code>title</code> - is the title that will be displayed in the title-bar of the popup.</dd>
+<dd><code>severity</code> - is the <a href="datatype/UiSeverity.html" title="class in io.github.mmm.ui.datatype"><code>UiSeverity</code></a>. Should NOT be <a href="datatype/UiSeverity.html#QUESTION"><code>UiSeverity.QUESTION</code></a>.</dd>
+<dd><code>action</code> - is the <a href="event/action/UiActionOk.html" title="interface in io.github.mmm.ui.event.action"><code>UiActionOk</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="showPopupOk(java.lang.Throwable)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>showPopupOk</h4>
+<pre class="methodSignature">default&nbsp;void&nbsp;showPopupOk&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Throwable</a>&nbsp;error)</pre>
+<div class="block">This method opens a confirmation popup window showing the given <code>error</code>. It will use
+ <a href="datatype/UiSeverity.html#ERROR"><code>UiSeverity.ERROR</code></a>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>error</code> - is the <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Throwable</code></a> that has occurred.</dd>
+</dl>
+</li>
+</ul>
+<a id="showPopupOk(java.lang.Throwable,java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>showPopupOk</h4>
+<pre class="methodSignature">default&nbsp;void&nbsp;showPopupOk&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Throwable</a>&nbsp;error,
+                         <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;message)</pre>
+<div class="block">This method opens a confirmation popup dialog showing the given <code>error</code>. It will use
+ <a href="datatype/UiSeverity.html#ERROR"><code>UiSeverity.ERROR</code></a>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>error</code> - is the <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Throwable</code></a> that has occurred.</dd>
+<dd><code>message</code> - is the message to display.</dd>
+</dl>
+</li>
+</ul>
+<a id="showPopupOk(java.lang.Throwable,java.lang.String,io.github.mmm.ui.event.action.UiActionOk)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>showPopupOk</h4>
+<pre class="methodSignature">default&nbsp;void&nbsp;showPopupOk&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Throwable</a>&nbsp;error,
+                         <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;message,
+                         <a href="event/action/UiActionOk.html" title="interface in io.github.mmm.ui.event.action">UiActionOk</a>&nbsp;action)</pre>
+<div class="block">This method opens a confirmation popup dialog showing the given <code>error</code>. It will use
+ <a href="datatype/UiSeverity.html#ERROR"><code>UiSeverity.ERROR</code></a>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>error</code> - is the <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Throwable</code></a> that has occurred.</dd>
+<dd><code>message</code> - is the message to display.</dd>
+<dd><code>action</code> - is the <a href="event/action/UiActionOk.html" title="interface in io.github.mmm.ui.event.action"><code>UiActionOk</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="showPopupYesNo(java.lang.String,java.lang.String,java.util.function.Consumer)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>showPopupYesNo</h4>
+<pre class="methodSignature">default&nbsp;void&nbsp;showPopupYesNo&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;message,
+                            <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;title,
+                            <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Consumer</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;&nbsp;callback)</pre>
+<div class="block">This method opens a <a href="datatype/UiSeverity.html#QUESTION"><code>question</code></a> popup window with the given <code>message</code> and two
+ buttons for the options <a href="event/action/UiActionYes.html" title="interface in io.github.mmm.ui.event.action"><code>yes</code></a> and <a href="event/action/UiActionNo.html" title="interface in io.github.mmm.ui.event.action"><code>no</code></a>. <br>
+ <b>ATTENTION:</b><br>
+ This is a very common also also very often misused feature of UI toolkits or frameworks. A suitable example is e.g.
+ to use this with the message "Do you really want to delete this object?". However, it would still be more explicit
+ to have the buttons labeled with "Delete" and "Cancel" using
+ <a href="#showPopup(java.lang.String,io.github.mmm.ui.datatype.UiSeverity,java.lang.String,java.lang.String,io.github.mmm.ui.event.action.UiAction...)"><code>showPopup(String, UiSeverity, String, String, UiAction...)</code></a>. An example for a misuse of this method would
+ be the message "Do you want to delete this occurrence or the series of the appointment? Press 'Yes' to delete the
+ series and 'No' for this occurrence.". From this bad example that confuses the user, you should learn that it is
+ always better to use more explicit button labels.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>message</code> - is the message to display.</dd>
+<dd><code>title</code> - is the title that will be displayed in the title-bar of the popup. May be <code>null</code> to use the
+        default title for <a href="datatype/UiSeverity.html#QUESTION"><code>UiSeverity.QUESTION</code></a>.</dd>
+<dd><code>callback</code> - is the <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function" class="externalLink"><code>Consumer</code></a> invoked after the popup has been confirmed. <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html?is-external=true#accept(T)" title="class or interface in java.util.function" class="externalLink"><code>Consumer.accept(Object)</code></a>
+        will receive <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html?is-external=true#TRUE" title="class or interface in java.lang" class="externalLink"><code>Boolean.TRUE</code></a> if the user clicked "Yes" and <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html?is-external=true#FALSE" title="class or interface in java.lang" class="externalLink"><code>Boolean.FALSE</code></a> for "No".</dd>
+</dl>
+</li>
+</ul>
+<a id="showPopup(java.lang.String,io.github.mmm.ui.datatype.UiSeverity,java.lang.String,java.lang.String,io.github.mmm.ui.event.action.UiAction...)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>showPopup</h4>
+<pre class="methodSignature">void&nbsp;showPopup&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;message,
+               <a href="datatype/UiSeverity.html" title="class in io.github.mmm.ui.datatype">UiSeverity</a>&nbsp;severity,
+               <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;title,
+               <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;details,
+               <a href="event/action/UiAction.html" title="interface in io.github.mmm.ui.event.action">UiAction</a>...&nbsp;actions)</pre>
+<div class="block">This method opens a popup window with the given <code>message</code>. It is the most generic and flexible but also the
+ most inconvenient <code>showPopup</code> method variant.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>message</code> - is the message to display.</dd>
+<dd><code>severity</code> - is the <a href="datatype/UiSeverity.html" title="class in io.github.mmm.ui.datatype"><code>UiSeverity</code></a>.</dd>
+<dd><code>title</code> - is the title that will be displayed in the title-bar of the popup. May be <code>null</code> to use the
+        default title for the given <a href="datatype/UiSeverity.html" title="class in io.github.mmm.ui.datatype"><code>UiSeverity</code></a>.</dd>
+<dd><code>callback</code> - is the <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function" class="externalLink"><code>Consumer</code></a> invoked after the popup has been confirmed (the user has clicked on one of
+        the buttons). The <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>String</code></a> value received by <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html?is-external=true#accept(T)" title="class or interface in java.util.function" class="externalLink"><code>Consumer.accept(Object)</code></a> will be the ID of the
+        button that has been clicked what is the <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html?is-external=true#keySet()" title="class or interface in java.util" class="externalLink"><code>key</code></a> of the given <code>id2buttonLabelMap</code>.</dd>
+<dd><code>details</code> - the optional details. If not <code>null</code> details will be shown but are initially collapsed and have
+        to be expanded by the end user.</dd>
+<dd><code>actions</code> - are the <a href="event/action/UiAction.html" title="interface in io.github.mmm.ui.event.action"><code>UiAction</code></a>s for the buttons to close (answer, confirm, or cancel) the popup. Has to be
+        at least one <a href="event/action/UiAction.html" title="interface in io.github.mmm.ui.event.action"><code>UiAction</code></a>.</dd>
 </dl>
 </li>
 </ul>
@@ -347,10 +714,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <pre class="methodSignature">default&nbsp;&lt;V&gt;&nbsp;<a href="widget/input/UiInput.html" title="interface in io.github.mmm.ui.widget.input">UiInput</a>&lt;V&gt;&nbsp;createInput&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;V&gt;&nbsp;datatype)</pre>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
-<dd><code>V</code> - type of the <a href="factory/UiSingleWidgetFactoryDatatype.html#getDatatype()"><code>datatype</code></a>.</dd>
+<dd><code>V</code> - type of the <a href="factory/UiSingleWidgetFactoryDatatype.html#getType()"><code>datatype</code></a>.</dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>datatype</code> - the <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Class</code></a> reflecting the
-        <a href="factory/UiSingleWidgetFactoryDatatype.html#getDatatype()"><code>datatype</code></a>.</dd>
+        <a href="factory/UiSingleWidgetFactoryDatatype.html#getType()"><code>datatype</code></a>.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the <a href="widget/input/UiInput.html" title="interface in io.github.mmm.ui.widget.input"><code>UiInput</code></a> for the given <code>datatype</code>.</dd>
 </dl>
@@ -366,10 +733,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
                            boolean&nbsp;required)</pre>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
-<dd><code>V</code> - type of the <a href="factory/UiSingleWidgetFactoryDatatype.html#getDatatype()"><code>datatype</code></a>.</dd>
+<dd><code>V</code> - type of the <a href="factory/UiSingleWidgetFactoryDatatype.html#getType()"><code>datatype</code></a>.</dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>datatype</code> - the <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Class</code></a> reflecting the
-        <a href="factory/UiSingleWidgetFactoryDatatype.html#getDatatype()"><code>datatype</code></a>.</dd>
+        <a href="factory/UiSingleWidgetFactoryDatatype.html#getType()"><code>datatype</code></a>.</dd>
 <dd><code>required</code> - <code>true</code> if a <a href="factory/UiSingleWidgetFactoryDatatype.html" title="interface in io.github.mmm.ui.factory"><code>UiSingleWidgetFactoryDatatype</code></a> has to be
         registered for the given <code>datatype</code>, <code>false</code> otherwise.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -428,12 +795,28 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Creates a new <a href="widget/button/UiButton.html" title="interface in io.github.mmm.ui.widget.button"><code>UiButton</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>label</code> - the <a href="widget/UiLabelledWidget.html#getLabel()"><code>label</code></a>.</dd>
+<dd><code>label</code> - the <a href="widget/attribute/UiWidgetWithLabel.html#getLabel()"><code>label</code></a>.</dd>
 <dd><code>listener</code> - the <a href="event/UiEventListener.html" title="interface in io.github.mmm.ui.event"><code>UiEventListener</code></a>.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the new widget instance.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><code>#createButton(UiHandlerAction)</code></dd>
+<dd><a href="#createButton(io.github.mmm.ui.event.action.UiAction)"><code>createButton(UiAction)</code></a></dd>
+</dl>
+</li>
+</ul>
+<a id="createButton(io.github.mmm.ui.event.action.UiAction)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createButton</h4>
+<pre class="methodSignature"><a href="widget/button/UiButton.html" title="interface in io.github.mmm.ui.widget.button">UiButton</a>&nbsp;createButton&#8203;(<a href="event/action/UiAction.html" title="interface in io.github.mmm.ui.event.action">UiAction</a>&nbsp;action)</pre>
+<div class="block">Creates a new <a href="widget/button/UiButton.html" title="interface in io.github.mmm.ui.widget.button"><code>UiButton</code></a> for the given <a href="event/action/UiAction.html" title="interface in io.github.mmm.ui.event.action"><code>UiAction</code></a>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>action</code> - the <a href="event/action/UiAction.html" title="interface in io.github.mmm.ui.event.action"><code>UiAction</code></a>.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the new widget instance.</dd>
 </dl>
 </li>
 </ul>
@@ -446,7 +829,81 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <pre class="methodSignature">default&nbsp;<a href="widget/input/UiCheckbox.html" title="interface in io.github.mmm.ui.widget.input">UiCheckbox</a>&nbsp;createCheckbox&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;label)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>label</code> - the <a href="widget/UiLabelledWidget.html#getLabel()"><code>label</code></a>.</dd>
+<dd><code>label</code> - the <a href="widget/attribute/UiWidgetWithLabel.html#getLabel()"><code>label</code></a>.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the new widget instance.</dd>
+</dl>
+</li>
+</ul>
+<a id="createRadioButton(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createRadioButton</h4>
+<pre class="methodSignature">default&nbsp;<a href="widget/input/UiRadioButton.html" title="interface in io.github.mmm.ui.widget.input">UiRadioButton</a>&nbsp;createRadioButton&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;label)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>label</code> - the <a href="widget/attribute/UiWidgetWithLabel.html#getLabel()"><code>label</code></a>.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the new widget instance.</dd>
+</dl>
+</li>
+</ul>
+<a id="createRadioChoice(java.lang.String,java.util.List)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createRadioChoice</h4>
+<pre class="methodSignature">default&nbsp;&lt;V&gt;&nbsp;<a href="widget/input/UiRadioChoice.html" title="interface in io.github.mmm.ui.widget.input">UiRadioChoice</a>&lt;V&gt;&nbsp;createRadioChoice&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;label,
+                                               <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;V&gt;&nbsp;options)</pre>
+<dl>
+<dt><span class="paramLabel">Type Parameters:</span></dt>
+<dd><code>V</code> - type of the <a href="widget/input/UiAbstractChoice.html#getOptions()"><code>options</code></a>.</dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>label</code> - the <a href="widget/input/UiAbstractInput.html#getName()"><code>label</code></a>.</dd>
+<dd><code>options</code> - the <a href="widget/input/UiAbstractChoice.html#setOptions(java.util.List)"><code>options</code></a>.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the new widget instance.</dd>
+</dl>
+</li>
+</ul>
+<a id="createRadioChoice(java.lang.String,java.lang.Object[])">
+<!--   -->
+</a><a id="createRadioChoice(java.lang.String,V...)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createRadioChoice</h4>
+<pre class="methodSignature">default&nbsp;&lt;V&gt;&nbsp;<a href="widget/input/UiRadioChoice.html" title="interface in io.github.mmm.ui.widget.input">UiRadioChoice</a>&lt;V&gt;&nbsp;createRadioChoice&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;label,
+                                               V...&nbsp;options)</pre>
+<dl>
+<dt><span class="paramLabel">Type Parameters:</span></dt>
+<dd><code>V</code> - type of the <a href="widget/input/UiAbstractChoice.html#getOptions()"><code>options</code></a>.</dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>label</code> - the <a href="widget/input/UiAbstractInput.html#getName()"><code>label</code></a>.</dd>
+<dd><code>options</code> - the <a href="widget/input/UiAbstractChoice.html#setOptions(O...)"><code>options</code></a>.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the new widget instance.</dd>
+</dl>
+</li>
+</ul>
+<a id="createRadioChoiceByEnum(java.lang.String,java.lang.Class)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createRadioChoiceByEnum</h4>
+<pre class="methodSignature">default&nbsp;&lt;V extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Enum.html?is-external=true" title="class or interface in java.lang" class="externalLink">Enum</a>&lt;?&gt;&gt;&nbsp;<a href="widget/input/UiRadioChoice.html" title="interface in io.github.mmm.ui.widget.input">UiRadioChoice</a>&lt;V&gt;&nbsp;createRadioChoiceByEnum&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;label,
+                                                                     <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;V&gt;&nbsp;enumOptions)</pre>
+<dl>
+<dt><span class="paramLabel">Type Parameters:</span></dt>
+<dd><code>V</code> - type of the <a href="widget/input/UiAbstractChoice.html#getOptions()"><code>options</code></a>.</dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>label</code> - the <a href="widget/input/UiAbstractInput.html#getName()"><code>label</code></a>.</dd>
+<dd><code>enumOptions</code> - the <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Class</code></a> reflecting an <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Enum.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Enum</code></a> defining the options.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the new widget instance.</dd>
 </dl>
@@ -507,7 +964,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Creates a new <a href="widget/UiLabel.html" title="interface in io.github.mmm.ui.widget"><code>UiLabel</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>label</code> - is the <a href="widget/UiLabelledWidget.html#getLabel()"><code>label</code></a>.</dd>
+<dd><code>label</code> - is the <a href="widget/attribute/UiWidgetWithLabel.html#getLabel()"><code>label</code></a>.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the new widget instance.</dd>
 </dl>
@@ -552,18 +1009,78 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 </li>
 </ul>
-<a id="createFormPanel(io.github.mmm.ui.widget.input.UiInput...)">
+<a id="createFormPanel(io.github.mmm.ui.widget.input.UiAbstractInput...)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createFormPanel</h4>
+<pre class="methodSignature">default&nbsp;<a href="widget/panel/UiFormPanel.html" title="interface in io.github.mmm.ui.widget.panel">UiFormPanel</a>&nbsp;createFormPanel&#8203;(<a href="widget/input/UiAbstractInput.html" title="interface in io.github.mmm.ui.widget.input">UiAbstractInput</a>&lt;?&gt;...&nbsp;inputs)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>inputs</code> - the <a href="widget/input/UiAbstractInput.html" title="interface in io.github.mmm.ui.widget.input"><code>input widgets</code></a> to <code>add</code>.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the new widget instance.</dd>
+</dl>
+</li>
+</ul>
+<a id="createFormGroup(java.lang.String,io.github.mmm.ui.widget.input.UiInput...)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createFormGroup</h4>
+<pre class="methodSignature">default&nbsp;<a href="widget/panel/UiFormGroup.html" title="interface in io.github.mmm.ui.widget.panel">UiFormGroup</a>&nbsp;createFormGroup&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
+                                    <a href="widget/input/UiInput.html" title="interface in io.github.mmm.ui.widget.input">UiInput</a>&lt;?&gt;...&nbsp;inputs)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>name</code> - the <a href="widget/input/UiAbstractInput.html#getName()"><code>name</code></a> of the <a href="widget/panel/UiFormGroup.html" title="interface in io.github.mmm.ui.widget.panel"><code>UiFormGroup</code></a> that groups the given
+        <a href="widget/input/UiInput.html" title="interface in io.github.mmm.ui.widget.input"><code>UiInput</code></a>s.</dd>
+<dd><code>inputs</code> - the <a href="widget/input/UiInput.html" title="interface in io.github.mmm.ui.widget.input"><code>UiInput</code></a> widgets to <code>add</code>.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the new widget instance.</dd>
+</dl>
+</li>
+</ul>
+<a id="createButtonPanel(io.github.mmm.ui.widget.button.UiAbstractButton...)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createButtonPanel</h4>
+<pre class="methodSignature">default&nbsp;<a href="widget/panel/UiButtonPanel.html" title="interface in io.github.mmm.ui.widget.panel">UiButtonPanel</a>&nbsp;createButtonPanel&#8203;(<a href="widget/button/UiAbstractButton.html" title="interface in io.github.mmm.ui.widget.button">UiAbstractButton</a>...&nbsp;buttons)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>buttons</code> - the <a href="widget/button/UiAbstractButton.html" title="interface in io.github.mmm.ui.widget.button"><code>button</code></a>s.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the new widget instance.</dd>
+</dl>
+</li>
+</ul>
+<a id="getDefaultValidationFailure()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDefaultValidationFailure</h4>
+<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getDefaultValidationFailure()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the default <a href="widget/attribute/UiWidgetWithValidationFailure.html#getValidationFailure()"><code>validation failure</code></a> message to show if something is invalid (e.g. for
+         <a href="widget/composite/UiTab.html" title="interface in io.github.mmm.ui.widget.composite"><code>UiTab</code></a>s).</dd>
+</dl>
+</li>
+</ul>
+<a id="newValidState()">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>createFormPanel</h4>
-<pre class="methodSignature">default&nbsp;<a href="widget/panel/UiFormPanel.html" title="interface in io.github.mmm.ui.widget.panel">UiFormPanel</a>&nbsp;createFormPanel&#8203;(<a href="widget/input/UiInput.html" title="interface in io.github.mmm.ui.widget.input">UiInput</a>&lt;?&gt;...&nbsp;inputs)</pre>
+<h4>newValidState</h4>
+<pre class="methodSignature">default&nbsp;<a href="datatype/UiValidState.html" title="class in io.github.mmm.ui.datatype">UiValidState</a>&nbsp;newValidState()</pre>
 <dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>inputs</code> - the <a href="widget/input/UiInput.html" title="interface in io.github.mmm.ui.widget.input"><code>UiInput</code></a> widgets to <code>add</code>.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the new widget instance.</dd>
+<dd>a new instance of <a href="datatype/UiValidState.html" title="class in io.github.mmm.ui.datatype"><code>UiValidState</code></a>.</dd>
 </dl>
 </li>
 </ul>

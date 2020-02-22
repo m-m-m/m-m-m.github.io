@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6};
+var data = {"i0":6,"i1":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -166,6 +166,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
  factory.</div>
 </td>
 </tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;?&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getType()">getType</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
 </table>
 </li>
 </ul>
@@ -186,7 +191,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <a id="create(io.github.mmm.ui.UiContext)">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>create</h4>
 <pre class="methodSignature"><a href="UiSingleWidgetFactory.html" title="type parameter in UiSingleWidgetFactory">W</a>&nbsp;create&#8203;(<a href="../UiContext.html" title="interface in io.github.mmm.ui">UiContext</a>&nbsp;context)</pre>
@@ -197,6 +202,19 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd><code>context</code> - is the instance of <a href="../UiContext.html" title="interface in io.github.mmm.ui"><code>UiContext</code></a>.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the new <a href="../widget/UiWidget.html" title="interface in io.github.mmm.ui.widget"><code>UiWidget</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="getType()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getType</h4>
+<pre class="methodSignature"><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;?&gt;&nbsp;getType()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Class</code></a> this factory is responsible for.</dd>
 </dl>
 </li>
 </ul>
