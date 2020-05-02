@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":18,"i3":1,"i4":1,"i5":1,"i6":1,"i7":1,"i8":1,"i9":1,"i10":1,"i11":1,"i12":1,"i13":1,"i14":1,"i15":1,"i16":1,"i17":1,"i18":1,"i19":1,"i20":1,"i21":6,"i22":6};
+var data = {"i0":6,"i1":6,"i2":18,"i3":1,"i4":1,"i5":1,"i6":1,"i7":1,"i8":1,"i9":1,"i10":1,"i11":1,"i12":1,"i13":1,"i14":1,"i15":1,"i16":1,"i17":1,"i18":1,"i19":1,"i20":1,"i21":1,"i22":6,"i23":6};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -278,27 +278,33 @@ extends <a href="NlsArgumentsKeys.html" title="interface in io.github.mmm.nls.ar
 </tr>
 <tr id="i18" class="altColor">
 <td class="colFirst"><code>static <a href="NlsArguments.html" title="interface in io.github.mmm.nls.argument">NlsArguments</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ofType(java.lang.Object)">ofType</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;value)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ofObjectKey(java.lang.Object,java.lang.Object)">ofObjectKey</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;object,
+           <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;key)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i19" class="rowColor">
 <td class="colFirst"><code>static <a href="NlsArguments.html" title="interface in io.github.mmm.nls.argument">NlsArguments</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ofValue(java.lang.Object)">ofValue</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;value)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ofType(java.lang.Object)">ofType</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;value)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i20" class="altColor">
+<td class="colFirst"><code>static <a href="NlsArguments.html" title="interface in io.github.mmm.nls.argument">NlsArguments</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ofValue(java.lang.Object)">ofValue</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;value)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>static <a href="NlsArguments.html" title="interface in io.github.mmm.nls.argument">NlsArguments</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ofValueMinMax(java.lang.Object,java.lang.Object,java.lang.Object)">ofValueMinMax</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;value,
              <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;min,
              <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;max)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#size()">size</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code><a href="NlsArguments.html" title="interface in io.github.mmm.nls.argument">NlsArguments</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#with(java.lang.String,java.lang.Object)">with</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;key,
     <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;value)</code></th>
@@ -650,6 +656,23 @@ extends <a href="NlsArgumentsKeys.html" title="interface in io.github.mmm.nls.ar
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>key</code> - the <a href="#get(java.lang.String)"><code>value</code></a> for <a href="NlsArgumentsKeys.html#KEY_KEY"><code>NlsArgumentsKeys.KEY_KEY</code></a>.</dd>
 <dd><code>value</code> - the <a href="#get(java.lang.String)"><code>value</code></a> for <a href="NlsArgumentsKeys.html#KEY_VALUE"><code>NlsArgumentsKeys.KEY_VALUE</code></a>.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>an instance of <a href="NlsArguments.html" title="interface in io.github.mmm.nls.argument"><code>NlsArguments</code></a> containing the single specified arguments.</dd>
+</dl>
+</li>
+</ul>
+<a id="ofObjectKey(java.lang.Object,java.lang.Object)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ofObjectKey</h4>
+<pre class="methodSignature">static&nbsp;<a href="NlsArguments.html" title="interface in io.github.mmm.nls.argument">NlsArguments</a>&nbsp;ofObjectKey&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;object,
+                                <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;key)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>object</code> - the <a href="#get(java.lang.String)"><code>value</code></a> for <a href="NlsArgumentsKeys.html#KEY_OBJECT"><code>NlsArgumentsKeys.KEY_OBJECT</code></a>.</dd>
+<dd><code>key</code> - the <a href="#get(java.lang.String)"><code>value</code></a> for <a href="NlsArgumentsKeys.html#KEY_KEY"><code>NlsArgumentsKeys.KEY_KEY</code></a>.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>an instance of <a href="NlsArguments.html" title="interface in io.github.mmm.nls.argument"><code>NlsArguments</code></a> containing the single specified arguments.</dd>
 </dl>

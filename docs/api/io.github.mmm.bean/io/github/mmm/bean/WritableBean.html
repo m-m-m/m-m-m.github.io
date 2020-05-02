@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":18,"i2":6,"i3":18,"i4":18,"i5":6,"i6":6,"i7":6,"i8":1,"i9":18,"i10":18,"i11":18,"i12":18,"i13":18};
+var data = {"i0":6,"i1":18,"i2":6,"i3":18,"i4":18,"i5":6,"i6":6,"i7":6,"i8":1,"i9":18,"i10":6,"i11":1,"i12":18,"i13":18,"i14":18,"i15":18};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -125,7 +125,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Superinterfaces:</dt>
-<dd><code><a href="../../../../../io.github.mmm.marshall/io/github/mmm/marshall/MarshallableObject.html" title="interface in io.github.mmm.marshall">MarshallableObject</a></code>, <code><a href="ReadableBean.html" title="interface in io.github.mmm.bean">ReadableBean</a></code>, <code><a href="../../../../../io.github.mmm.marshall/io/github/mmm/marshall/UnmarshallableObject.html" title="interface in io.github.mmm.marshall">UnmarshallableObject</a></code>, <code><a href="../../../../../io.github.mmm.validation/io/github/mmm/validation/Validatable.html" title="interface in io.github.mmm.validation">Validatable</a></code></dd>
+<dd><code><a href="../../../../../io.github.mmm.marshall/io/github/mmm/marshall/MarshallableObject.html" title="interface in io.github.mmm.marshall">MarshallableObject</a></code>, <code><a href="../../../../../io.github.mmm.marshall/io/github/mmm/marshall/Marshaller.html" title="interface in io.github.mmm.marshall">Marshaller</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&gt;</code>, <code><a href="../../../../../io.github.mmm.marshall/io/github/mmm/marshall/Marshalling.html" title="interface in io.github.mmm.marshall">Marshalling</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&gt;</code>, <code><a href="../../../../../io.github.mmm.marshall/io/github/mmm/marshall/MarshallingObject.html" title="interface in io.github.mmm.marshall">MarshallingObject</a></code>, <code><a href="ReadableBean.html" title="interface in io.github.mmm.bean">ReadableBean</a></code>, <code><a href="../../../../../io.github.mmm.marshall/io/github/mmm/marshall/UnmarshallableObject.html" title="interface in io.github.mmm.marshall">UnmarshallableObject</a></code>, <code><a href="../../../../../io.github.mmm.marshall/io/github/mmm/marshall/Unmarshaller.html" title="interface in io.github.mmm.marshall">Unmarshaller</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&gt;</code>, <code><a href="../../../../../io.github.mmm.validation/io/github/mmm/validation/Validatable.html" title="interface in io.github.mmm.validation">Validatable</a></code></dd>
 </dl>
 <dl>
 <dt>All Known Subinterfaces:</dt>
@@ -137,7 +137,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 <hr>
 <pre>public interface <span class="typeNameLabel">WritableBean</span>
-extends <a href="ReadableBean.html" title="interface in io.github.mmm.bean">ReadableBean</a>, <a href="../../../../../io.github.mmm.marshall/io/github/mmm/marshall/UnmarshallableObject.html" title="interface in io.github.mmm.marshall">UnmarshallableObject</a></pre>
+extends <a href="ReadableBean.html" title="interface in io.github.mmm.bean">ReadableBean</a>, <a href="../../../../../io.github.mmm.marshall/io/github/mmm/marshall/MarshallingObject.html" title="interface in io.github.mmm.marshall">MarshallingObject</a></pre>
 <div class="block">Writable interface of <a href="ReadableBean.html" title="interface in io.github.mmm.bean"><code>ReadableBean</code></a>.</div>
 </li>
 </ul>
@@ -245,11 +245,21 @@ extends <a href="ReadableBean.html" title="interface in io.github.mmm.bean">Read
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
+<td class="colFirst"><code><a href="WritableBean.html" title="interface in io.github.mmm.bean">WritableBean</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#newInstance()">newInstance</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code>static &lt;B extends <a href="WritableBean.html" title="interface in io.github.mmm.bean">WritableBean</a>&gt;<br>B</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#newInstance(B)">newInstance</a></span>&#8203;(B&nbsp;bean)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>default void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#read(io.github.mmm.marshall.StructuredReader)">read</a></span>&#8203;(<a href="../../../../../io.github.mmm.marshall/io/github/mmm/marshall/StructuredReader.html" title="interface in io.github.mmm.marshall">StructuredReader</a>&nbsp;reader)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>default void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#set(java.lang.String,java.lang.Object)">set</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
    <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;value)</code></th>
@@ -258,7 +268,7 @@ extends <a href="ReadableBean.html" title="interface in io.github.mmm.bean">Read
  given value.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>default &lt;V&gt;&nbsp;void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#set(java.lang.String,V,java.lang.Class)">set</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
    V&nbsp;value,
@@ -268,7 +278,7 @@ extends <a href="ReadableBean.html" title="interface in io.github.mmm.bean">Read
  given <code>name</code> to the given value.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>default &lt;V&gt;&nbsp;void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#set(java.lang.String,V,java.lang.Class,java.lang.reflect.Type)">set</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
    V&nbsp;value,
@@ -281,11 +291,25 @@ extends <a href="ReadableBean.html" title="interface in io.github.mmm.bean">Read
 </tr>
 </table>
 <ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.marshall.MarshallableObject">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;io.github.mmm.marshall.<a href="../../../../../io.github.mmm.marshall/io/github/mmm/marshall/MarshallableObject.html" title="interface in io.github.mmm.marshall">MarshallableObject</a></h3>
+<code><a href="../../../../../io.github.mmm.marshall/io/github/mmm/marshall/MarshallableObject.html#writeObject(io.github.mmm.marshall.StructuredWriter,java.lang.Object)">writeObject</a></code></li>
+</ul>
+<ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.bean.ReadableBean">
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;io.github.mmm.bean.<a href="ReadableBean.html" title="interface in io.github.mmm.bean">ReadableBean</a></h3>
 <code><a href="ReadableBean.html#get(java.lang.String)">get</a>, <a href="ReadableBean.html#getPropertyCount()">getPropertyCount</a>, <a href="ReadableBean.html#getPropertyNameForAlias(java.lang.String)">getPropertyNameForAlias</a>, <a href="ReadableBean.html#getType()">getType</a>, <a href="ReadableBean.html#isDynamic()">isDynamic</a>, <a href="ReadableBean.html#isEqualTo(io.github.mmm.bean.ReadableBean)">isEqualTo</a>, <a href="ReadableBean.html#isPolymorphic()">isPolymorphic</a>, <a href="ReadableBean.html#isPrototype()">isPrototype</a>, <a href="ReadableBean.html#isReadOnly()">isReadOnly</a>, <a href="ReadableBean.html#validate()">validate</a>, <a href="ReadableBean.html#write(io.github.mmm.marshall.StructuredWriter)">write</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.marshall.UnmarshallableObject">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;io.github.mmm.marshall.<a href="../../../../../io.github.mmm.marshall/io/github/mmm/marshall/UnmarshallableObject.html" title="interface in io.github.mmm.marshall">UnmarshallableObject</a></h3>
+<code><a href="../../../../../io.github.mmm.marshall/io/github/mmm/marshall/UnmarshallableObject.html#readObject(io.github.mmm.marshall.StructuredReader)">readObject</a></code></li>
 </ul>
 </li>
 </ul>
@@ -559,11 +583,40 @@ extends <a href="ReadableBean.html" title="interface in io.github.mmm.bean">Read
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../../io.github.mmm.marshall/io/github/mmm/marshall/UnmarshallableObject.html#read(io.github.mmm.marshall.StructuredReader)">read</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../io.github.mmm.marshall/io/github/mmm/marshall/UnmarshallableObject.html" title="interface in io.github.mmm.marshall">UnmarshallableObject</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>reader</code> - the <a href="../../../../../io.github.mmm.marshall/io/github/mmm/marshall/StructuredReader.html" title="interface in io.github.mmm.marshall"><code>StructuredReader</code></a> where to read the data from. This object where this method is invoked on
-        will be modified such that the read data will be applied. This process is also called deserialization or
-        unmarshalling. For complex objects (e.g. beans with multiple properties) those properties not defined in the
-        data that is read will not be overwritten. In order to get a clean representation of the data from the given
-        reader you should invoke this method on an empty object.</dd>
+<dd><code>reader</code> - the <a href="../../../../../io.github.mmm.marshall/io/github/mmm/marshall/StructuredReader.html" title="interface in io.github.mmm.marshall"><code>StructuredReader</code></a> where to read the data from. This object will be modified such that the
+        read data will be applied. For complex objects (e.g. beans with multiple properties) those properties not
+        defined in the data that is read will not be overwritten. In order to get a clean representation of the data
+        from the given reader you should invoke this method on an empty object.</dd>
+</dl>
+</li>
+</ul>
+<a id="newInstance()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>newInstance</h4>
+<pre class="methodSignature"><a href="WritableBean.html" title="interface in io.github.mmm.bean">WritableBean</a>&nbsp;newInstance()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new instance of this <a href="WritableBean.html" title="interface in io.github.mmm.bean"><code>WritableBean</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="getReadOnly()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getReadOnly</h4>
+<pre class="methodSignature"><a href="WritableBean.html" title="interface in io.github.mmm.bean">WritableBean</a>&nbsp;getReadOnly()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a <a href="ReadableBean.html#isReadOnly()"><code>immutable</code></a> view of this <a href="WritableBean.html" title="interface in io.github.mmm.bean"><code>WritableBean</code></a>. Read operations on this
+         <a href="ReadableBean.html#isReadOnly()"><code>immutable</code></a> view will produce the exact same results as on the original
+         <a href="WritableBean.html" title="interface in io.github.mmm.bean"><code>WritableBean</code></a>. However, all write operations will fail.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="#getReadOnly(B)"><code>getReadOnly(WritableBean)</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -586,20 +639,22 @@ extends <a href="ReadableBean.html" title="interface in io.github.mmm.bean">Read
 </dl>
 </li>
 </ul>
-<a id="getReadOnly()">
+<a id="newInstance(io.github.mmm.bean.WritableBean)">
+<!--   -->
+</a><a id="newInstance(B)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>getReadOnly</h4>
-<pre class="methodSignature"><a href="WritableBean.html" title="interface in io.github.mmm.bean">WritableBean</a>&nbsp;getReadOnly()</pre>
+<h4>newInstance</h4>
+<pre class="methodSignature">static&nbsp;&lt;B extends <a href="WritableBean.html" title="interface in io.github.mmm.bean">WritableBean</a>&gt;&nbsp;B&nbsp;newInstance&#8203;(B&nbsp;bean)</pre>
 <dl>
+<dt><span class="paramLabel">Type Parameters:</span></dt>
+<dd><code>B</code> - type of the <a href="WritableBean.html" title="interface in io.github.mmm.bean"><code>WritableBean</code></a>.</dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>bean</code> - the <a href="WritableBean.html" title="interface in io.github.mmm.bean"><code>WritableBean</code></a> to create a new instance of.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>a <a href="ReadableBean.html#isReadOnly()"><code>immutable</code></a> view of this <a href="WritableBean.html" title="interface in io.github.mmm.bean"><code>WritableBean</code></a>. Read operations on this
-         <a href="ReadableBean.html#isReadOnly()"><code>immutable</code></a> view will produce the exact same results as on the original
-         <a href="WritableBean.html" title="interface in io.github.mmm.bean"><code>WritableBean</code></a>. However, all write operations will fail.</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="#getReadOnly(B)"><code>getReadOnly(WritableBean)</code></a></dd>
+<dd>the <a href="#newInstance()"><code>new instance</code></a>.</dd>
 </dl>
 </li>
 </ul>

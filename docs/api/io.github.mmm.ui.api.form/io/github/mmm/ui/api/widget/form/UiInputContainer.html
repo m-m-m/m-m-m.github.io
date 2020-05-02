@@ -1,0 +1,389 @@
+<!DOCTYPE HTML>
+<!-- NewPage -->
+<html lang="en">
+<head>
+<title>UiInputContainer (JavaDocs for mmm-all 1.0.0-SNAPSHOT)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="../../../../../../../../stylesheet.css" title="Style">
+<link rel="stylesheet" type="text/css" href="../../../../../../../../jquery/jquery-ui.css" title="Style">
+<script type="text/javascript" src="../../../../../../../../script.js"></script>
+<script type="text/javascript" src="../../../../../../../../jquery/jszip/dist/jszip.min.js"></script>
+<script type="text/javascript" src="../../../../../../../../jquery/jszip-utils/dist/jszip-utils.min.js"></script>
+<!--[if IE]>
+<script type="text/javascript" src="../../../../../../../../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="../../../../../../../../jquery/jquery-3.3.1.js"></script>
+<script type="text/javascript" src="../../../../../../../../jquery/jquery-migrate-3.0.1.js"></script>
+<script type="text/javascript" src="../../../../../../../../jquery/jquery-ui.js"></script>
+</head>
+<body>
+<script type="text/javascript"><!--
+    try {
+        if (location.href.indexOf('is-external=true') == -1) {
+            parent.document.title="UiInputContainer (JavaDocs for mmm-all 1.0.0-SNAPSHOT)";
+        }
+    }
+    catch(err) {
+    }
+//-->
+var data = {"i0":6,"i1":1,"i2":6};
+var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
+var altColor = "altColor";
+var rowColor = "rowColor";
+var tableTab = "tableTab";
+var activeTableTab = "activeTableTab";
+var pathtoroot = "../../../../../../../../";
+var useModuleDirectories = true;
+loadScripts(document, 'script');</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<header role="banner">
+<nav role="navigation">
+<div class="fixedNav">
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a id="navbar.top">
+<!--   -->
+</a>
+<div class="skipNav"><a href="#skip.navbar.top" title="Skip navigation links">Skip navigation links</a></div>
+<a id="navbar.top.firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../../../index.html">Overview</a></li>
+<li><a href="../../../../../../../module-summary.html">Module</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/UiInputContainer.html">Use</a></li>
+<li><a href="../../../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../../../../allclasses.html">All&nbsp;Classes</a></li>
+</ul>
+<ul class="navListSearch">
+<li><label for="search">SEARCH:</label>
+<input type="text" id="search" value="search" disabled="disabled">
+<input type="reset" id="reset" value="reset" disabled="disabled">
+</li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method.summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method.detail">Method</a></li>
+</ul>
+</div>
+<a id="skip.navbar.top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+</div>
+<div class="navPadding">&nbsp;</div>
+<script type="text/javascript"><!--
+$('.navPadding').css('padding-top', $('.fixedNav').css("height"));
+//-->
+</script>
+</nav>
+</header>
+<!-- ======== START OF CLASS DATA ======== -->
+<main role="main">
+<div class="header">
+<div class="subTitle"><span class="moduleLabelInType">Module</span>&nbsp;<a href="../../../../../../../module-summary.html">io.github.mmm.ui.api.form</a></div>
+<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">io.github.mmm.ui.api.widget.form</a></div>
+<h2 title="Interface UiInputContainer" class="title">Interface UiInputContainer&lt;V&gt;</h2>
+</div>
+<div class="contentContainer">
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt><span class="paramLabel">Type Parameters:</span></dt>
+<dd><code>V</code> - type of the <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#getValue()"><code>input value</code></a>.</dd>
+</dl>
+<dl>
+<dt>All Superinterfaces:</dt>
+<dd><code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadId.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadId</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadValid.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadValid</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadVisible.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadVisible</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteId.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteId</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteVisible.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteVisible</a></code>, <code><a href="../../../../../../../../io.github.mmm.event/io/github/mmm/event/EventSource.html" title="interface in io.github.mmm.event">EventSource</a>&lt;<a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/event/UiEvent.html" title="class in io.github.mmm.ui.api.event">UiEvent</a>,&#8203;<a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/event/UiEventListener.html" title="interface in io.github.mmm.ui.api.event">UiEventListener</a>&gt;</code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiComposite.html" title="interface in io.github.mmm.ui.api.widget.composite">UiComposite</a>&lt;<a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/input/UiInput.html" title="interface in io.github.mmm.ui.api.widget.input">UiInput</a>&lt;V&gt;&gt;</code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiMutableSingleComposite.html" title="interface in io.github.mmm.ui.api.widget.composite">UiMutableSingleComposite</a>&lt;<a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/input/UiInput.html" title="interface in io.github.mmm.ui.api.widget.input">UiInput</a>&lt;V&gt;&gt;</code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiNativeWidget.html" title="interface in io.github.mmm.ui.api.widget">UiNativeWidget</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiRegularWidget.html" title="interface in io.github.mmm.ui.api.widget">UiRegularWidget</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiSingleComposite.html" title="interface in io.github.mmm.ui.api.widget.composite">UiSingleComposite</a>&lt;<a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/input/UiInput.html" title="interface in io.github.mmm.ui.api.widget.input">UiInput</a>&lt;V&gt;&gt;</code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html" title="interface in io.github.mmm.ui.api.widget">UiWidget</a></code></dd>
+</dl>
+<dl>
+<dt>All Known Implementing Classes:</dt>
+<dd><code><a href="../../../../../../../../io.github.mmm.ui.fx.form/io/github/mmm/ui/fx/widget/form/FxInputContainer.html" title="class in io.github.mmm.ui.fx.widget.form">FxInputContainer</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.fx.form.grid/io/github/mmm/ui/fx/widget/form/grid/FxInputContainer.html" title="class in io.github.mmm.ui.fx.widget.form.grid">FxInputContainer</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.test.form/io/github/mmm/ui/test/widget/form/TestInputContainer.html" title="class in io.github.mmm.ui.test.widget.form">TestInputContainer</a></code></dd>
+</dl>
+<hr>
+<pre>public interface <span class="typeNameLabel">UiInputContainer&lt;V&gt;</span>
+extends <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiMutableSingleComposite.html" title="interface in io.github.mmm.ui.api.widget.composite">UiMutableSingleComposite</a>&lt;<a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/input/UiInput.html" title="interface in io.github.mmm.ui.api.widget.input">UiInput</a>&lt;V&gt;&gt;, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiRegularWidget.html" title="interface in io.github.mmm.ui.api.widget">UiRegularWidget</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiNativeWidget.html" title="interface in io.github.mmm.ui.api.widget">UiNativeWidget</a></pre>
+<div class="block"><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiRegularWidget.html" title="interface in io.github.mmm.ui.api.widget"><code>UiRegularWidget</code></a> for the <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/input/UiInput.html#getContainerWidget()"><code>container</code></a> of a <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/input/UiInput.html" title="interface in io.github.mmm.ui.api.widget.input"><code>UiInput</code></a>. It composes the
+ <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/input/UiInput.html" title="interface in io.github.mmm.ui.api.widget.input"><code>UiInput</code></a> itself together with its <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/input/UiInput.html#getNameWidget()"><code>name widget</code></a> (label).</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/input/UiInput.html#getContainerWidget()"><code>UiInput.getContainerWidget()</code></a>, 
+<a href="#of(io.github.mmm.ui.api.widget.input.UiInput)"><code>of(UiInput)</code></a></dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<section role="region">
+<ul class="blockList">
+<li class="blockList"><a id="field.summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<ul class="blockList">
+<li class="blockList"><a id="fields.inherited.from.class.io.github.mmm.ui.api.attribute.AttributeReadId">
+<!--   -->
+</a>
+<h3>Fields inherited from interface&nbsp;io.github.mmm.ui.api.attribute.<a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadId.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadId</a></h3>
+<code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadId.html#ID_SEPARATOR">ID_SEPARATOR</a></code></li>
+</ul>
+</li>
+</ul>
+</section>
+<!-- ========== METHOD SUMMARY =========== -->
+<section role="region">
+<ul class="blockList">
+<li class="blockList"><a id="method.summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="memberSummary">
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tr id="i0" class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/input/UiInput.html" title="interface in io.github.mmm.ui.api.widget.input">UiInput</a>&lt;<a href="UiInputContainer.html" title="type parameter in UiInputContainer">V</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getChild()">getChild</a></span>()</code></th>
+<td class="colLast">
+<div class="block">This method gets the single <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiSingleComposite.html#getChild(int)"><code>child</code></a> of this composite.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>static &lt;V&gt;&nbsp;<a href="UiInputContainer.html" title="interface in io.github.mmm.ui.api.widget.form">UiInputContainer</a>&lt;V&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(io.github.mmm.ui.api.widget.input.UiInput)">of</a></span>&#8203;(<a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/input/UiInput.html" title="interface in io.github.mmm.ui.api.widget.input">UiInput</a>&lt;V&gt;&nbsp;input)</code></th>
+<td class="colLast">
+<div class="block"><b>ATTENTION:</b> Instances of <a href="UiInputContainer.html" title="interface in io.github.mmm.ui.api.widget.form"><code>UiInputContainer</code></a> shall only be created from <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/input/UiInput.html" title="interface in io.github.mmm.ui.api.widget.input"><code>UiInput</code></a> for
+ <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/input/UiInput.html#getContainerWidget()"><code>UiInput.getContainerWidget()</code></a>.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setChild(io.github.mmm.ui.api.widget.input.UiInput)">setChild</a></span>&#8203;(<a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/input/UiInput.html" title="interface in io.github.mmm.ui.api.widget.input">UiInput</a>&lt;<a href="UiInputContainer.html" title="type parameter in UiInputContainer">V</a>&gt;&nbsp;child)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.api.attribute.AttributeReadId">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;io.github.mmm.ui.api.attribute.<a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadId.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadId</a></h3>
+<code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadId.html#getId()">getId</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.api.attribute.AttributeWriteId">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;io.github.mmm.ui.api.attribute.<a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteId.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteId</a></h3>
+<code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteId.html#setId(java.lang.String)">setId</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.event.EventSource">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;io.github.mmm.event.<a href="../../../../../../../../io.github.mmm.event/io/github/mmm/event/EventSource.html" title="interface in io.github.mmm.event">EventSource</a></h3>
+<code><a href="../../../../../../../../io.github.mmm.event/io/github/mmm/event/EventSource.html#addListener(L)">addListener</a>, <a href="../../../../../../../../io.github.mmm.event/io/github/mmm/event/EventSource.html#addListener(L,boolean)">addListener</a>, <a href="../../../../../../../../io.github.mmm.event/io/github/mmm/event/EventSource.html#addWeakListener(L)">addWeakListener</a>, <a href="../../../../../../../../io.github.mmm.event/io/github/mmm/event/EventSource.html#removeListener(L)">removeListener</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.api.widget.composite.UiComposite">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;io.github.mmm.ui.api.widget.composite.<a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiComposite.html" title="interface in io.github.mmm.ui.api.widget.composite">UiComposite</a></h3>
+<code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiComposite.html#getDescendant(java.lang.String)">getDescendant</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiComposite.html#getModificationTimestamp()">getModificationTimestamp</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiComposite.html#getPropagation()">getPropagation</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiComposite.html#isModified()">isModified</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiComposite.html#isValid()">isValid</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiComposite.html#setFocused()">setFocused</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.api.widget.composite.UiSingleComposite">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;io.github.mmm.ui.api.widget.composite.<a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiSingleComposite.html" title="interface in io.github.mmm.ui.api.widget.composite">UiSingleComposite</a></h3>
+<code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiSingleComposite.html#getChild(int)">getChild</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiSingleComposite.html#getChild(java.lang.String)">getChild</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiSingleComposite.html#getChildCount()">getChildCount</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiSingleComposite.html#getChildIndex(C)">getChildIndex</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.api.widget.UiWidget">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;io.github.mmm.ui.api.widget.<a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html" title="interface in io.github.mmm.ui.api.widget">UiWidget</a></h3>
+<code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#cast()">cast</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#dispose()">dispose</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#getParent()">getParent</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#getReadOnlyFixed()">getReadOnlyFixed</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#getStyles()">getStyles</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#isDisposed()">isDisposed</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#isEnabled()">isEnabled</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#isEnabled(io.github.mmm.ui.api.datatype.bitmask.BitMask)">isEnabled</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#isFocused()">isFocused</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#isReadOnly()">isReadOnly</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#isVisible()">isVisible</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#isVisible(io.github.mmm.ui.api.datatype.bitmask.BitMask)">isVisible</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#setEnabled(boolean)">setEnabled</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#setEnabled(boolean,io.github.mmm.ui.api.datatype.bitmask.BitMask)">setEnabled</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#setReadOnly(boolean)">setReadOnly</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#setReadOnlyFixed(java.lang.Boolean)">setReadOnlyFixed</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#setVisible(boolean)">setVisible</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#setVisible(boolean,io.github.mmm.ui.api.datatype.bitmask.BitMask)">setVisible</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#validate()">validate</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#validate(boolean)">validate</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#validate(io.github.mmm.ui.api.datatype.UiValidState)">validate</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#validateDown(io.github.mmm.ui.api.datatype.UiValidState)">validateDown</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#validateUp(io.github.mmm.ui.api.datatype.UiValidState)">validateUp</a></code></li>
+</ul>
+</li>
+</ul>
+</section>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ METHOD DETAIL ========== -->
+<section role="region">
+<ul class="blockList">
+<li class="blockList"><a id="method.detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a id="getChild()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getChild</h4>
+<pre class="methodSignature"><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/input/UiInput.html" title="interface in io.github.mmm.ui.api.widget.input">UiInput</a>&lt;<a href="UiInputContainer.html" title="type parameter in UiInputContainer">V</a>&gt;&nbsp;getChild()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiSingleComposite.html#getChild()">UiSingleComposite</a></code></span></div>
+<div class="block">This method gets the single <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiSingleComposite.html#getChild(int)"><code>child</code></a> of this composite.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiSingleComposite.html#getChild()">getChild</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiSingleComposite.html" title="interface in io.github.mmm.ui.api.widget.composite">UiSingleComposite</a>&lt;<a href="UiInputContainer.html" title="type parameter in UiInputContainer">V</a>&gt;</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the contained <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/input/UiInput.html" title="interface in io.github.mmm.ui.api.widget.input"><code>UiInput</code></a>. Will initially be <code>null</code> but is set on initialization and will never
+         be <code>null</code> if retrieved via <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/input/UiInput.html#getContainerWidget()"><code>UiInput.getContainerWidget()</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="setChild(io.github.mmm.ui.api.widget.input.UiInput)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setChild</h4>
+<pre class="methodSignature">void&nbsp;setChild&#8203;(<a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/input/UiInput.html" title="interface in io.github.mmm.ui.api.widget.input">UiInput</a>&lt;<a href="UiInputContainer.html" title="type parameter in UiInputContainer">V</a>&gt;&nbsp;child)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiMutableSingleComposite.html#setChild(C)">setChild</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiMutableSingleComposite.html" title="interface in io.github.mmm.ui.api.widget.composite">UiMutableSingleComposite</a>&lt;<a href="UiInputContainer.html" title="type parameter in UiInputContainer">V</a>&gt;</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>child</code> - the <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/input/UiInput.html" title="interface in io.github.mmm.ui.api.widget.input"><code>UiInput</code></a> to set as <a href="#getChild()"><code>child</code></a>. May only be set from <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/input/UiInput.html" title="interface in io.github.mmm.ui.api.widget.input"><code>UiInput</code></a> itself.
+        Once set, it can not be changed anymore.</dd>
+</dl>
+</li>
+</ul>
+<a id="of(io.github.mmm.ui.api.widget.input.UiInput)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>of</h4>
+<pre class="methodSignature">static&nbsp;&lt;V&gt;&nbsp;<a href="UiInputContainer.html" title="interface in io.github.mmm.ui.api.widget.form">UiInputContainer</a>&lt;V&gt;&nbsp;of&#8203;(<a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/input/UiInput.html" title="interface in io.github.mmm.ui.api.widget.input">UiInput</a>&lt;V&gt;&nbsp;input)</pre>
+<div class="block"><b>ATTENTION:</b> Instances of <a href="UiInputContainer.html" title="interface in io.github.mmm.ui.api.widget.form"><code>UiInputContainer</code></a> shall only be created from <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/input/UiInput.html" title="interface in io.github.mmm.ui.api.widget.input"><code>UiInput</code></a> for
+ <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/input/UiInput.html#getContainerWidget()"><code>UiInput.getContainerWidget()</code></a>.</div>
+<dl>
+<dt><span class="paramLabel">Type Parameters:</span></dt>
+<dd><code>V</code> - type of the <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#getValue()"><code>input value</code></a>.</dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>input</code> - the <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/input/UiInput.html" title="interface in io.github.mmm.ui.api.widget.input"><code>UiInput</code></a> to associate.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the new <a href="UiInputContainer.html" title="interface in io.github.mmm.ui.api.widget.form"><code>UiInputContainer</code></a>.</dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+</li>
+</ul>
+</div>
+</div>
+</main>
+<!-- ========= END OF CLASS DATA ========= -->
+<footer role="contentinfo">
+<nav role="navigation">
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a id="navbar.bottom">
+<!--   -->
+</a>
+<div class="skipNav"><a href="#skip.navbar.bottom" title="Skip navigation links">Skip navigation links</a></div>
+<a id="navbar.bottom.firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../../../index.html">Overview</a></li>
+<li><a href="../../../../../../../module-summary.html">Module</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/UiInputContainer.html">Use</a></li>
+<li><a href="../../../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../../../../allclasses.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method.summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method.detail">Method</a></li>
+</ul>
+</div>
+<a id="skip.navbar.bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+</nav>
+<p class="legalCopy"><small>Copyright &#169; 2001&#x2013;2020 <a href="https://m-m-m.github.io">mmm-team</a>. All rights reserved.</small></p>
+</footer>
+</body>
+</html>

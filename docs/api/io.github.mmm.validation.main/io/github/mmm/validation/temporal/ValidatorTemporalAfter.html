@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":6,"i4":10,"i5":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":6,"i5":10,"i6":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -247,24 +247,29 @@ extends <a href="../../../../../../io.github.mmm.validation/io/github/mmm/valida
 </td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getMin()">getMin</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hashCode()">hashCode</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>protected abstract boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isAfter(V,V)">isAfter</a></span>&#8203;(<a href="ValidatorTemporalAfter.html" title="type parameter in ValidatorTemporalAfter">V</a>&nbsp;value,
        <a href="ValidatorTemporalAfter.html" title="type parameter in ValidatorTemporalAfter">V</a>&nbsp;limit)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isDynamic()">isDynamic</a></span>()</code></th>
 <td class="colLast">
 <div class="block">This method determines if this <a href="../../../../../../io.github.mmm.validation/io/github/mmm/validation/Validator.html" title="interface in io.github.mmm.validation"><code>Validator</code></a> is <em>dynamic</em>.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>protected <a href="../../../../../../io.github.mmm.nls/io/github/mmm/nls/NlsMessage.html" title="interface in io.github.mmm.nls">NlsMessage</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#validateNotNull(V)">validateNotNull</a></span>&#8203;(<a href="ValidatorTemporalAfter.html" title="type parameter in ValidatorTemporalAfter">V</a>&nbsp;value)</code></th>
 <td class="colLast">
@@ -312,7 +317,7 @@ extends <a href="../../../../../../io.github.mmm.validation/io/github/mmm/valida
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;io.github.mmm.validation.<a href="../../../../../../io.github.mmm.validation/io/github/mmm/validation/Validator.html" title="interface in io.github.mmm.validation">Validator</a></h3>
-<code><a href="../../../../../../io.github.mmm.validation/io/github/mmm/validation/Validator.html#isMandatory()">isMandatory</a>, <a href="../../../../../../io.github.mmm.validation/io/github/mmm/validation/Validator.html#validate(V)">validate</a></code></li>
+<code><a href="../../../../../../io.github.mmm.validation/io/github/mmm/validation/Validator.html#getMax()">getMax</a>, <a href="../../../../../../io.github.mmm.validation/io/github/mmm/validation/Validator.html#isMandatory()">isMandatory</a>, <a href="../../../../../../io.github.mmm.validation/io/github/mmm/validation/Validator.html#validate(V)">validate</a></code></li>
 </ul>
 </li>
 </ul>
@@ -476,6 +481,19 @@ extends <a href="../../../../../../io.github.mmm.validation/io/github/mmm/valida
 <dd><code>limit</code> - the upper bound to compare to.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd><code>true</code> if <code>value</code> is after <code>limit</code>, <code>false</code> otherwise.</dd>
+</dl>
+</li>
+</ul>
+<a id="getMin()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getMin</h4>
+<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;getMin()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the minimum allowed value. Typically of type &lt;V&gt; but this can not be guaranteed.</dd>
 </dl>
 </li>
 </ul>

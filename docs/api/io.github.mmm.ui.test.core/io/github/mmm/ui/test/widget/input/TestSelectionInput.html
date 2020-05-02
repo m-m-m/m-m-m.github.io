@@ -1,0 +1,485 @@
+<!DOCTYPE HTML>
+<!-- NewPage -->
+<html lang="en">
+<head>
+<title>TestSelectionInput (JavaDocs for mmm-all 1.0.0-SNAPSHOT)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="../../../../../../../../stylesheet.css" title="Style">
+<link rel="stylesheet" type="text/css" href="../../../../../../../../jquery/jquery-ui.css" title="Style">
+<script type="text/javascript" src="../../../../../../../../script.js"></script>
+<script type="text/javascript" src="../../../../../../../../jquery/jszip/dist/jszip.min.js"></script>
+<script type="text/javascript" src="../../../../../../../../jquery/jszip-utils/dist/jszip-utils.min.js"></script>
+<!--[if IE]>
+<script type="text/javascript" src="../../../../../../../../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="../../../../../../../../jquery/jquery-3.3.1.js"></script>
+<script type="text/javascript" src="../../../../../../../../jquery/jquery-migrate-3.0.1.js"></script>
+<script type="text/javascript" src="../../../../../../../../jquery/jquery-ui.js"></script>
+</head>
+<body>
+<script type="text/javascript"><!--
+    try {
+        if (location.href.indexOf('is-external=true') == -1) {
+            parent.document.title="TestSelectionInput (JavaDocs for mmm-all 1.0.0-SNAPSHOT)";
+        }
+    }
+    catch(err) {
+    }
+//-->
+var pathtoroot = "../../../../../../../../";
+var useModuleDirectories = true;
+loadScripts(document, 'script');</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<header role="banner">
+<nav role="navigation">
+<div class="fixedNav">
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a id="navbar.top">
+<!--   -->
+</a>
+<div class="skipNav"><a href="#skip.navbar.top" title="Skip navigation links">Skip navigation links</a></div>
+<a id="navbar.top.firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../../../index.html">Overview</a></li>
+<li><a href="../../../../../../../module-summary.html">Module</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/TestSelectionInput.html">Use</a></li>
+<li><a href="../../../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../../../../allclasses.html">All&nbsp;Classes</a></li>
+</ul>
+<ul class="navListSearch">
+<li><label for="search">SEARCH:</label>
+<input type="text" id="search" value="search" disabled="disabled">
+<input type="reset" id="reset" value="reset" disabled="disabled">
+</li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method.summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
+<li>Method</li>
+</ul>
+</div>
+<a id="skip.navbar.top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+</div>
+<div class="navPadding">&nbsp;</div>
+<script type="text/javascript"><!--
+$('.navPadding').css('padding-top', $('.fixedNav').css("height"));
+//-->
+</script>
+</nav>
+</header>
+<!-- ======== START OF CLASS DATA ======== -->
+<main role="main">
+<div class="header">
+<div class="subTitle"><span class="moduleLabelInType">Module</span>&nbsp;<a href="../../../../../../../module-summary.html">io.github.mmm.ui.test.core</a></div>
+<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">io.github.mmm.ui.test.widget.input</a></div>
+<h2 title="Class TestSelectionInput" class="title">Class TestSelectionInput</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/AbstractUiWidget.html" title="class in io.github.mmm.ui.api.widget">io.github.mmm.ui.api.widget.AbstractUiWidget</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html" title="class in io.github.mmm.ui.spi.widget">io.github.mmm.ui.spi.widget.AbstractUiNativeWidget</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidgetWrapper.html" title="class in io.github.mmm.ui.spi.widget">io.github.mmm.ui.spi.widget.AbstractUiNativeWidgetWrapper</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Void.html?is-external=true" title="class or interface in java.lang" class="externalLink">Void</a>&gt;</li>
+<li>
+<ul class="inheritance">
+<li><a href="../TestWidget.html" title="class in io.github.mmm.ui.test.widget">io.github.mmm.ui.test.widget.TestWidget</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../TestActiveWidget.html" title="class in io.github.mmm.ui.test.widget">io.github.mmm.ui.test.widget.TestActiveWidget</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../TestActiveValidatableWidget.html" title="class in io.github.mmm.ui.test.widget">io.github.mmm.ui.test.widget.TestActiveValidatableWidget</a>&lt;V&gt;</li>
+<li>
+<ul class="inheritance">
+<li><a href="TestInput.html" title="class in io.github.mmm.ui.test.widget.input">io.github.mmm.ui.test.widget.input.TestInput</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;</li>
+<li>
+<ul class="inheritance">
+<li>io.github.mmm.ui.test.widget.input.TestSelectionInput</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><code><a href="../../../../../../../../io.github.mmm.event/io/github/mmm/event/EventSource.html" title="interface in io.github.mmm.event">EventSource</a>&lt;<a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/event/UiEvent.html" title="class in io.github.mmm.ui.api.event">UiEvent</a>,&#8203;<a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/event/UiEventListener.html" title="interface in io.github.mmm.ui.api.event">UiEventListener</a>&gt;</code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadId.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadId</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadValid.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadValid</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadValue.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadValue</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;</code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadVisible.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadVisible</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteId.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteId</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWritePlaceholder.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWritePlaceholder</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteSelected.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteSelected</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteText.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteText</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteTooltip.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteTooltip</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteValidationFailure.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteValidationFailure</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteValue.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteValue</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;</code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteValueForUser.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteValueForUser</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;</code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteVisible.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteVisible</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/attribute/UiWidgetWithSelection.html" title="interface in io.github.mmm.ui.api.widget.attribute">UiWidgetWithSelection</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/input/UiAbstractInput.html" title="interface in io.github.mmm.ui.api.widget.input">UiAbstractInput</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;</code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/input/UiInput.html" title="interface in io.github.mmm.ui.api.widget.input">UiInput</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;</code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiActiveWidget.html" title="interface in io.github.mmm.ui.api.widget">UiActiveWidget</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiAtomicWidget.html" title="interface in io.github.mmm.ui.api.widget">UiAtomicWidget</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiNativeWidget.html" title="interface in io.github.mmm.ui.api.widget">UiNativeWidget</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiRegularWidget.html" title="interface in io.github.mmm.ui.api.widget">UiRegularWidget</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html" title="interface in io.github.mmm.ui.api.widget">UiWidget</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html" title="interface in io.github.mmm.ui.api.widget.value">UiValidatableWidget</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;</code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValuedWidget.html" title="interface in io.github.mmm.ui.api.widget.value">UiValuedWidget</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;</code>, <code><a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/UiNativeWidgetWrapper.html" title="interface in io.github.mmm.ui.spi.widget">UiNativeWidgetWrapper</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Void.html?is-external=true" title="class or interface in java.lang" class="externalLink">Void</a>&gt;</code></dd>
+</dl>
+<dl>
+<dt>Direct Known Subclasses:</dt>
+<dd><code><a href="TestAbstractRadioButton.html" title="class in io.github.mmm.ui.test.widget.input">TestAbstractRadioButton</a></code>, <code><a href="TestCheckbox.html" title="class in io.github.mmm.ui.test.widget.input">TestCheckbox</a></code></dd>
+</dl>
+<hr>
+<pre>public abstract class <span class="typeNameLabel">TestSelectionInput</span>
+extends <a href="TestInput.html" title="class in io.github.mmm.ui.test.widget.input">TestInput</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink">Boolean</a>&gt;
+implements <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/attribute/UiWidgetWithSelection.html" title="interface in io.github.mmm.ui.api.widget.attribute">UiWidgetWithSelection</a></pre>
+<div class="block">Implementation of <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/attribute/UiWidgetWithSelection.html" title="interface in io.github.mmm.ui.api.widget.attribute"><code>UiWidgetWithSelection</code></a> for testing.</div>
+<dl>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>1.0.0</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<section role="region">
+<ul class="blockList">
+<li class="blockList"><a id="field.summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<ul class="blockList">
+<li class="blockList"><a id="fields.inherited.from.class.io.github.mmm.ui.test.widget.TestWidget">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;io.github.mmm.ui.test.widget.<a href="../TestWidget.html" title="class in io.github.mmm.ui.test.widget">TestWidget</a></h3>
+<code><a href="../TestWidget.html#focussedWidget">focussedWidget</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="fields.inherited.from.class.io.github.mmm.ui.api.attribute.AttributeReadId">
+<!--   -->
+</a>
+<h3>Fields inherited from interface&nbsp;io.github.mmm.ui.api.attribute.<a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadId.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadId</a></h3>
+<code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadId.html#ID_SEPARATOR">ID_SEPARATOR</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="fields.inherited.from.class.io.github.mmm.ui.api.attribute.AttributeWriteValidationFailure">
+<!--   -->
+</a>
+<h3>Fields inherited from interface&nbsp;io.github.mmm.ui.api.attribute.<a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteValidationFailure.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteValidationFailure</a></h3>
+<code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteValidationFailure.html#STYLE_INVALID">STYLE_INVALID</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="fields.inherited.from.class.io.github.mmm.ui.api.widget.UiActiveWidget">
+<!--   -->
+</a>
+<h3>Fields inherited from interface&nbsp;io.github.mmm.ui.api.widget.<a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiActiveWidget.html" title="interface in io.github.mmm.ui.api.widget">UiActiveWidget</a></h3>
+<code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiActiveWidget.html#ACCESS_KEY_NONE">ACCESS_KEY_NONE</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="fields.inherited.from.class.io.github.mmm.ui.api.widget.value.UiValidatableWidget">
+<!--   -->
+</a>
+<h3>Fields inherited from interface&nbsp;io.github.mmm.ui.api.widget.value.<a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html" title="interface in io.github.mmm.ui.api.widget.value">UiValidatableWidget</a></h3>
+<code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#STYLE_MANDATORY">STYLE_MANDATORY</a></code></li>
+</ul>
+</li>
+</ul>
+</section>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<section role="region">
+<ul class="blockList">
+<li class="blockList"><a id="constructor.summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="memberSummary">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Constructor</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tr class="altColor">
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E()">TestSelectionInput</a></span>()</code></th>
+<td class="colLast">
+<div class="block">The constructor.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+</section>
+<!-- ========== METHOD SUMMARY =========== -->
+<section role="region">
+<ul class="blockList">
+<li class="blockList"><a id="method.summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.test.widget.input.TestInput">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;io.github.mmm.ui.test.widget.input.<a href="TestInput.html" title="class in io.github.mmm.ui.test.widget.input">TestInput</a></h3>
+<code><a href="TestInput.html#getContainerWidget()">getContainerWidget</a>, <a href="TestInput.html#getName()">getName</a>, <a href="TestInput.html#getNameWidget()">getNameWidget</a>, <a href="TestInput.html#getPlaceholder()">getPlaceholder</a>, <a href="TestInput.html#hasContainerWidget()">hasContainerWidget</a>, <a href="TestInput.html#hasNameWidget()">hasNameWidget</a>, <a href="TestInput.html#setMandatory(boolean)">setMandatory</a>, <a href="TestInput.html#setName(java.lang.String)">setName</a>, <a href="TestInput.html#setPlaceholder(java.lang.String)">setPlaceholder</a>, <a href="TestInput.html#setVisible(boolean,io.github.mmm.ui.api.datatype.bitmask.BitMask)">setVisible</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.test.widget.TestActiveValidatableWidget">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;io.github.mmm.ui.test.widget.<a href="../TestActiveValidatableWidget.html" title="class in io.github.mmm.ui.test.widget">TestActiveValidatableWidget</a></h3>
+<code><a href="../TestActiveValidatableWidget.html#getModificationTimestamp()">getModificationTimestamp</a>, <a href="../TestActiveValidatableWidget.html#getOriginalValue()">getOriginalValue</a>, <a href="../TestActiveValidatableWidget.html#getValidator()">getValidator</a>, <a href="../TestActiveValidatableWidget.html#getValueOrThrow()">getValueOrThrow</a>, <a href="../TestActiveValidatableWidget.html#setOriginalValue(V)">setOriginalValue</a>, <a href="../TestActiveValidatableWidget.html#setValidator(io.github.mmm.validation.Validator)">setValidator</a>, <a href="../TestActiveValidatableWidget.html#setValue(V,boolean)">setValue</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.test.widget.TestActiveWidget">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;io.github.mmm.ui.test.widget.<a href="../TestActiveWidget.html" title="class in io.github.mmm.ui.test.widget">TestActiveWidget</a></h3>
+<code><a href="../TestActiveWidget.html#getAccessKey()">getAccessKey</a>, <a href="../TestActiveWidget.html#isFocused()">isFocused</a>, <a href="../TestActiveWidget.html#setAccessKey(char)">setAccessKey</a>, <a href="../TestActiveWidget.html#setFocused()">setFocused</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.test.widget.TestWidget">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;io.github.mmm.ui.test.widget.<a href="../TestWidget.html" title="class in io.github.mmm.ui.test.widget">TestWidget</a></h3>
+<code><a href="../TestWidget.html#getId()">getId</a>, <a href="../TestWidget.html#getText()">getText</a>, <a href="../TestWidget.html#getTooltip()">getTooltip</a>, <a href="../TestWidget.html#getWidget()">getWidget</a>, <a href="../TestWidget.html#setEnabledNative(boolean)">setEnabledNative</a>, <a href="../TestWidget.html#setId(java.lang.String)">setId</a>, <a href="../TestWidget.html#setReadOnlyNative(boolean)">setReadOnlyNative</a>, <a href="../TestWidget.html#setText(java.lang.String)">setText</a>, <a href="../TestWidget.html#setTooltip(java.lang.String)">setTooltip</a>, <a href="../TestWidget.html#setVisibleNative(boolean)">setVisibleNative</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.spi.widget.AbstractUiNativeWidgetWrapper">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;io.github.mmm.ui.spi.widget.<a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidgetWrapper.html" title="class in io.github.mmm.ui.spi.widget">AbstractUiNativeWidgetWrapper</a></h3>
+<code><a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidgetWrapper.html#createStyles()">createStyles</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidgetWrapper.html#getStyles()">getStyles</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidgetWrapper.html#onStylesChanged(java.lang.String)">onStylesChanged</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.spi.widget.AbstractUiNativeWidget">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;io.github.mmm.ui.spi.widget.<a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html" title="class in io.github.mmm.ui.spi.widget">AbstractUiNativeWidget</a></h3>
+<code><a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#addListener(io.github.mmm.ui.api.event.UiEventListener,boolean)">addListener</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#dispose()">dispose</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#doDispose()">doDispose</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#doGetEnabledState(io.github.mmm.ui.spi.widget.AbstractUiNativeWidget)">doGetEnabledState</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#doGetVisibleState(io.github.mmm.ui.spi.widget.AbstractUiNativeWidget)">doGetVisibleState</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#doSetEnabledState(int)">doSetEnabledState</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#doSetEnabledState(io.github.mmm.ui.spi.widget.AbstractUiNativeWidget,int)">doSetEnabledState</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#doSetValidationFailure(java.lang.String)">doSetValidationFailure</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#doSetVisibleState(int)">doSetVisibleState</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#doSetVisibleState(io.github.mmm.ui.spi.widget.AbstractUiNativeWidget,int)">doSetVisibleState</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#ensureHandlers()">ensureHandlers</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#fireEvent(io.github.mmm.ui.api.event.UiEvent)">fireEvent</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#getEventAdapter()">getEventAdapter</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#getParent()">getParent</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#getProgrammaticEventType()">getProgrammaticEventType</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#getReadOnlyFixed()">getReadOnlyFixed</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#getValidationFailure()">getValidationFailure</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#hasListeners()">hasListeners</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#isDisposed()">isDisposed</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#isEnabled(io.github.mmm.ui.api.datatype.bitmask.BitMask)">isEnabled</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#isInitiallyVisible()">isInitiallyVisible</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#isReadOnly()">isReadOnly</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#isValid()">isValid</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#isVisible(io.github.mmm.ui.api.datatype.bitmask.BitMask)">isVisible</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#isVisibleWithoutRoot()">isVisibleWithoutRoot</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#registerHandlers()">registerHandlers</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#removeListener(io.github.mmm.ui.api.event.UiEventListener)">removeListener</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#requireNotDisposed()">requireNotDisposed</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#setEnabled(boolean,io.github.mmm.ui.api.datatype.bitmask.BitMask)">setEnabled</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#setParent(io.github.mmm.ui.api.widget.composite.UiComposite)">setParent</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#setProgrammaticEventType(io.github.mmm.ui.api.event.UiEventType)">setProgrammaticEventType</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#setReadOnly(boolean)">setReadOnly</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#setReadOnlyFixed(java.lang.Boolean)">setReadOnlyFixed</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#setValidationFailure(java.lang.String)">setValidationFailure</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#unwrap()">unwrap</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#validateDown(io.github.mmm.ui.api.datatype.UiValidState)">validateDown</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.api.widget.AbstractUiWidget">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;io.github.mmm.ui.api.widget.<a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/AbstractUiWidget.html" title="class in io.github.mmm.ui.api.widget">AbstractUiWidget</a></h3>
+<code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/AbstractUiWidget.html#isEmpty(java.lang.String)">isEmpty</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/AbstractUiWidget.html#setParent(io.github.mmm.ui.api.widget.UiWidget,io.github.mmm.ui.api.widget.composite.UiComposite)">setParent</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/AbstractUiWidget.html#unwrap(io.github.mmm.ui.api.widget.UiWidget)">unwrap</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></h3>
+<code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang" class="externalLink">clone</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang" class="externalLink">equals</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang" class="externalLink">finalize</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang" class="externalLink">getClass</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang" class="externalLink">hashCode</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang" class="externalLink">notify</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang" class="externalLink">notifyAll</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang" class="externalLink">toString</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#wait(long,int)" title="class or interface in java.lang" class="externalLink">wait</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.api.attribute.AttributeReadId">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;io.github.mmm.ui.api.attribute.<a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadId.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadId</a></h3>
+<code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadId.html#getId()">getId</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.api.attribute.AttributeWriteId">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;io.github.mmm.ui.api.attribute.<a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteId.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteId</a></h3>
+<code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteId.html#setId(java.lang.String)">setId</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.api.attribute.AttributeWriteTooltip">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;io.github.mmm.ui.api.attribute.<a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteTooltip.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteTooltip</a></h3>
+<code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteTooltip.html#getTooltip()">getTooltip</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteTooltip.html#setTooltip(java.lang.String)">setTooltip</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.api.attribute.AttributeWriteValidationFailure">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;io.github.mmm.ui.api.attribute.<a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteValidationFailure.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteValidationFailure</a></h3>
+<code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteValidationFailure.html#getValidationFailure()">getValidationFailure</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteValidationFailure.html#setValidationFailure(java.lang.String)">setValidationFailure</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.event.EventSource">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;io.github.mmm.event.<a href="../../../../../../../../io.github.mmm.event/io/github/mmm/event/EventSource.html" title="interface in io.github.mmm.event">EventSource</a></h3>
+<code><a href="../../../../../../../../io.github.mmm.event/io/github/mmm/event/EventSource.html#addListener(L)">addListener</a>, <a href="../../../../../../../../io.github.mmm.event/io/github/mmm/event/EventSource.html#addListener(L,boolean)">addListener</a>, <a href="../../../../../../../../io.github.mmm.event/io/github/mmm/event/EventSource.html#addWeakListener(L)">addWeakListener</a>, <a href="../../../../../../../../io.github.mmm.event/io/github/mmm/event/EventSource.html#removeListener(L)">removeListener</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.api.widget.UiActiveWidget">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;io.github.mmm.ui.api.widget.<a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiActiveWidget.html" title="interface in io.github.mmm.ui.api.widget">UiActiveWidget</a></h3>
+<code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiActiveWidget.html#getAccessKey()">getAccessKey</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiActiveWidget.html#setAccessKey(char)">setAccessKey</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.spi.widget.UiNativeWidgetWrapper">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;io.github.mmm.ui.spi.widget.<a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/UiNativeWidgetWrapper.html" title="interface in io.github.mmm.ui.spi.widget">UiNativeWidgetWrapper</a></h3>
+<code><a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/UiNativeWidgetWrapper.html#getTopWidget()">getTopWidget</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.api.widget.value.UiValidatableWidget">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;io.github.mmm.ui.api.widget.value.<a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html" title="interface in io.github.mmm.ui.api.widget.value">UiValidatableWidget</a></h3>
+<code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#getOriginalValue()">getOriginalValue</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#getValidator()">getValidator</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#getValue()">getValue</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#getValueOrThrow()">getValueOrThrow</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#isValid()">isValid</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#resetValue()">resetValue</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#setOriginalValue(V)">setOriginalValue</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#setValidator(io.github.mmm.validation.Validator)">setValidator</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#setValue(V)">setValue</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#setValue(V,boolean)">setValue</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#setValueForUser(V)">setValueForUser</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.api.widget.UiWidget">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;io.github.mmm.ui.api.widget.<a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html" title="interface in io.github.mmm.ui.api.widget">UiWidget</a></h3>
+<code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#cast()">cast</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#dispose()">dispose</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#getModificationTimestamp()">getModificationTimestamp</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#getParent()">getParent</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#getReadOnlyFixed()">getReadOnlyFixed</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#getStyles()">getStyles</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#isDisposed()">isDisposed</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#isEnabled()">isEnabled</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#isEnabled(io.github.mmm.ui.api.datatype.bitmask.BitMask)">isEnabled</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#isFocused()">isFocused</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#isModified()">isModified</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#isReadOnly()">isReadOnly</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#isVisible()">isVisible</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#isVisible(io.github.mmm.ui.api.datatype.bitmask.BitMask)">isVisible</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#setEnabled(boolean)">setEnabled</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#setEnabled(boolean,io.github.mmm.ui.api.datatype.bitmask.BitMask)">setEnabled</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#setFocused()">setFocused</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#setReadOnly(boolean)">setReadOnly</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#setReadOnlyFixed(java.lang.Boolean)">setReadOnlyFixed</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#setVisible(boolean)">setVisible</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#setVisible(boolean,io.github.mmm.ui.api.datatype.bitmask.BitMask)">setVisible</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#validate()">validate</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#validate(boolean)">validate</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#validate(io.github.mmm.ui.api.datatype.UiValidState)">validate</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#validateDown(io.github.mmm.ui.api.datatype.UiValidState)">validateDown</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#validateUp(io.github.mmm.ui.api.datatype.UiValidState)">validateUp</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.api.widget.attribute.UiWidgetWithSelection">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;io.github.mmm.ui.api.widget.attribute.<a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/attribute/UiWidgetWithSelection.html" title="interface in io.github.mmm.ui.api.widget.attribute">UiWidgetWithSelection</a></h3>
+<code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/attribute/UiWidgetWithSelection.html#isSelected()">isSelected</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/attribute/UiWidgetWithSelection.html#setSelected(boolean)">setSelected</a></code></li>
+</ul>
+</li>
+</ul>
+</section>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<section role="region">
+<ul class="blockList">
+<li class="blockList"><a id="constructor.detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a id="&lt;init&gt;()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>TestSelectionInput</h4>
+<pre>public&nbsp;TestSelectionInput()</pre>
+<div class="block">The constructor.</div>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+</li>
+</ul>
+</div>
+</div>
+</main>
+<!-- ========= END OF CLASS DATA ========= -->
+<footer role="contentinfo">
+<nav role="navigation">
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a id="navbar.bottom">
+<!--   -->
+</a>
+<div class="skipNav"><a href="#skip.navbar.bottom" title="Skip navigation links">Skip navigation links</a></div>
+<a id="navbar.bottom.firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../../../index.html">Overview</a></li>
+<li><a href="../../../../../../../module-summary.html">Module</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/TestSelectionInput.html">Use</a></li>
+<li><a href="../../../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../../../../allclasses.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method.summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
+<li>Method</li>
+</ul>
+</div>
+<a id="skip.navbar.bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+</nav>
+<p class="legalCopy"><small>Copyright &#169; 2001&#x2013;2020 <a href="https://m-m-m.github.io">mmm-team</a>. All rights reserved.</small></p>
+</footer>
+</body>
+</html>

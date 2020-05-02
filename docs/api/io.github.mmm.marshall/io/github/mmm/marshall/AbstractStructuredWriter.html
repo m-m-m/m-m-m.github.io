@@ -161,11 +161,28 @@ implements <a href="StructuredWriter.html" title="interface in io.github.mmm.mar
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>protected <a href="MarshallingConfig.html" title="class in io.github.mmm.marshall">MarshallingConfig</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#config">config</a></span></code></th>
+<td class="colLast">
+<div class="block">The <a href="MarshallingConfig.html" title="class in io.github.mmm.marshall"><code>MarshallingConfig</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#indendation">indendation</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>protected <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#name">name</a></span></code></th>
 <td class="colLast">
 <div class="block">The current name.</div>
 </td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#writeNullValues">writeNullValues</a></span></code></th>
+<td class="colLast">&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -185,8 +202,10 @@ implements <a href="StructuredWriter.html" title="interface in io.github.mmm.mar
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E()">AbstractStructuredWriter</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(io.github.mmm.marshall.MarshallingConfig)">AbstractStructuredWriter</a></span>&#8203;(<a href="MarshallingConfig.html" title="class in io.github.mmm.marshall">MarshallingConfig</a>&nbsp;config)</code></th>
+<td class="colLast">
+<div class="block">The constructor.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -244,6 +263,42 @@ implements <a href="StructuredWriter.html" title="interface in io.github.mmm.mar
 <!--   -->
 </a>
 <h3>Field Detail</h3>
+<a id="config">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>config</h4>
+<pre>protected final&nbsp;<a href="MarshallingConfig.html" title="class in io.github.mmm.marshall">MarshallingConfig</a> config</pre>
+<div class="block">The <a href="MarshallingConfig.html" title="class in io.github.mmm.marshall"><code>MarshallingConfig</code></a>.</div>
+</li>
+</ul>
+<a id="writeNullValues">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>writeNullValues</h4>
+<pre>protected final&nbsp;boolean writeNullValues</pre>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="StructuredWriter.html#writeValueAsNull()"><code>StructuredWriter.writeValueAsNull()</code></a></dd>
+</dl>
+</li>
+</ul>
+<a id="indendation">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>indendation</h4>
+<pre>protected final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> indendation</pre>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="MarshallingConfig.html#INDENDATION"><code>MarshallingConfig.INDENDATION</code></a></dd>
+</dl>
+</li>
+</ul>
 <a id="name">
 <!--   -->
 </a>
@@ -268,13 +323,18 @@ implements <a href="StructuredWriter.html" title="interface in io.github.mmm.mar
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a id="&lt;init&gt;()">
+<a id="&lt;init&gt;(io.github.mmm.marshall.MarshallingConfig)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>AbstractStructuredWriter</h4>
-<pre>public&nbsp;AbstractStructuredWriter()</pre>
+<pre>public&nbsp;AbstractStructuredWriter&#8203;(<a href="MarshallingConfig.html" title="class in io.github.mmm.marshall">MarshallingConfig</a>&nbsp;config)</pre>
+<div class="block">The constructor.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>config</code> - the <a href="MarshallingConfig.html" title="class in io.github.mmm.marshall"><code>MarshallingConfig</code></a>.</dd>
+</dl>
 </li>
 </ul>
 </li>

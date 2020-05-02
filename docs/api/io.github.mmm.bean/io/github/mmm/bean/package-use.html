@@ -113,29 +113,25 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="rowColor">
-<th class="colFirst" scope="row"><a href="#io.github.mmm.bean.factory">io.github.mmm.bean.factory</a></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
 <th class="colFirst" scope="row"><a href="#io.github.mmm.bean.impl">io.github.mmm.bean.impl</a></th>
 <td class="colLast">
 <div class="block">Contains internal implementation.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="#io.github.mmm.bean.property">io.github.mmm.bean.property</a></th>
 <td class="colLast">
 <div class="block">Contains <a href="property/BeanProperty.html" title="class in io.github.mmm.bean.property"><code>BeanProperty</code></a> to allow a bean to contain another bean.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="#io.github.mmm.entity.bean">io.github.mmm.entity.bean</a></th>
 <td class="colLast">
 <div class="block">Contains the API for entity beans.</div>
 </td>
 </tr>
-<tr class="rowColor">
-<th class="colFirst" scope="row"><a href="#io.github.mmm.ui.binding">io.github.mmm.ui.binding</a></th>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="#io.github.mmm.ui.api.binding.data">io.github.mmm.ui.api.binding.data</a></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </tbody>
@@ -182,6 +178,18 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="rowColor">
+<th class="colFirst" scope="row"><a href="class-use/BeanContext.html#io.github.mmm.bean">BeanContext</a></th>
+<td class="colLast">
+<div class="block">Interface with the context to construct a <a href="AbstractBean.html" title="class in io.github.mmm.bean"><code>bean</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="class-use/BeanFactory.html#io.github.mmm.bean">BeanFactory</a></th>
+<td class="colLast">
+<div class="block">Interface for a factory to create instances of <a href="WritableBean.html" title="interface in io.github.mmm.bean"><code>WritableBean</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="class-use/BeanType.html#io.github.mmm.bean">BeanType</a></th>
 <td class="colLast">
 <div class="block">A <a href="BeanType.html" title="interface in io.github.mmm.bean"><code>BeanType</code></a> reflects a <a href="Bean.html" title="class in io.github.mmm.bean"><code>Bean</code></a> (similar to a Java <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Class</code></a>).</div>
@@ -223,25 +231,6 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tbody>
 </table>
 </li>
-<li class="blockList"><a id="io.github.mmm.bean.factory">
-<!--   -->
-</a>
-<table class="useSummary">
-<caption><span>Classes in <a href="package-summary.html">io.github.mmm.bean</a> used by <a href="../../../../../io.github.mmm.bean.factory/io/github/mmm/bean/factory/package-summary.html">io.github.mmm.bean.factory</a></span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Class</th>
-<th class="colLast" scope="col">Description</th>
-</tr>
-<tbody>
-<tr class="altColor">
-<th class="colFirst" scope="row"><a href="class-use/WritableBean.html#io.github.mmm.bean.factory">WritableBean</a></th>
-<td class="colLast">
-<div class="block">Writable interface of <a href="ReadableBean.html" title="interface in io.github.mmm.bean"><code>ReadableBean</code></a>.</div>
-</td>
-</tr>
-</tbody>
-</table>
-</li>
 <li class="blockList"><a id="io.github.mmm.bean.impl">
 <!--   -->
 </a>
@@ -262,6 +251,18 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colFirst" scope="row"><a href="class-use/BeanClass.html#io.github.mmm.bean.impl">BeanClass</a></th>
 <td class="colLast">
 <div class="block"><a href="BeanClass.html" title="interface in io.github.mmm.bean"><code>BeanClass</code></a> extends <a href="BeanType.html" title="interface in io.github.mmm.bean"><code>BeanType</code></a> for a <a href="VirtualBean.html" title="interface in io.github.mmm.bean"><code>VirtualBean</code></a> with extended information.</div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="class-use/BeanContext.html#io.github.mmm.bean.impl">BeanContext</a></th>
+<td class="colLast">
+<div class="block">Interface with the context to construct a <a href="AbstractBean.html" title="class in io.github.mmm.bean"><code>bean</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="class-use/BeanFactory.html#io.github.mmm.bean.impl">BeanFactory</a></th>
+<td class="colLast">
+<div class="block">Interface for a factory to create instances of <a href="WritableBean.html" title="interface in io.github.mmm.bean"><code>WritableBean</code></a>.</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -356,24 +357,24 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tbody>
 </table>
 </li>
-<li class="blockList"><a id="io.github.mmm.ui.binding">
+<li class="blockList"><a id="io.github.mmm.ui.api.binding.data">
 <!--   -->
 </a>
 <table class="useSummary">
-<caption><span>Classes in <a href="package-summary.html">io.github.mmm.bean</a> used by <a href="../../../../../io.github.mmm.ui.binding/io/github/mmm/ui/binding/package-summary.html">io.github.mmm.ui.binding</a></span><span class="tabEnd">&nbsp;</span></caption>
+<caption><span>Classes in <a href="package-summary.html">io.github.mmm.bean</a> used by <a href="../../../../../io.github.mmm.ui.api.binding/io/github/mmm/ui/api/binding/data/package-summary.html">io.github.mmm.ui.api.binding.data</a></span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
 <th class="colFirst" scope="col">Class</th>
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tbody>
 <tr class="altColor">
-<th class="colFirst" scope="row"><a href="class-use/ReadableBean.html#io.github.mmm.ui.binding">ReadableBean</a></th>
+<th class="colFirst" scope="row"><a href="class-use/ReadableBean.html#io.github.mmm.ui.api.binding.data">ReadableBean</a></th>
 <td class="colLast">
 <div class="block">Read interface of a <a href="Bean.html" title="class in io.github.mmm.bean"><code>Bean</code></a> holding arbitrary <a href="ReadableBean.html#getProperty(java.lang.String)"><code>properties</code></a>.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<th class="colFirst" scope="row"><a href="class-use/WritableBean.html#io.github.mmm.ui.binding">WritableBean</a></th>
+<th class="colFirst" scope="row"><a href="class-use/WritableBean.html#io.github.mmm.ui.api.binding.data">WritableBean</a></th>
 <td class="colLast">
 <div class="block">Writable interface of <a href="ReadableBean.html" title="interface in io.github.mmm.bean"><code>ReadableBean</code></a>.</div>
 </td>

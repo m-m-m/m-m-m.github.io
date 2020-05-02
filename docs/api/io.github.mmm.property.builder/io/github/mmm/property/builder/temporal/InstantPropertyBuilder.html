@@ -124,10 +124,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li><a href="../PropertyBuilder.html" title="class in io.github.mmm.property.builder">io.github.mmm.property.builder.PropertyBuilder</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html?is-external=true" title="class or interface in java.time" class="externalLink">Instant</a>,&#8203;<a href="../../../../../../../io.github.mmm.property/io/github/mmm/property/temporal/instant/InstantProperty.html" title="class in io.github.mmm.property.temporal.instant">InstantProperty</a>,&#8203;<a href="../../../../../../../io.github.mmm.validation.main/io/github/mmm/validation/temporal/instant/ValidatorBuilderInstant.html" title="class in io.github.mmm.validation.temporal.instant">ValidatorBuilderInstant</a>&lt;<a href="InstantPropertyBuilder.html" title="class in io.github.mmm.property.builder.temporal">InstantPropertyBuilder</a>&gt;,&#8203;<a href="InstantPropertyBuilder.html" title="class in io.github.mmm.property.builder.temporal">InstantPropertyBuilder</a>&gt;</li>
+<li><a href="../PropertyBuilder.html" title="class in io.github.mmm.property.builder">io.github.mmm.property.builder.PropertyBuilder</a>&lt;V,&#8203;P,&#8203;B,&#8203;SELF&gt;</li>
+<li>
+<ul class="inheritance">
+<li><a href="../lang/ComparablePropertyBuilder.html" title="class in io.github.mmm.property.builder.lang">io.github.mmm.property.builder.lang.ComparablePropertyBuilder</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html?is-external=true" title="class or interface in java.time" class="externalLink">Instant</a>,&#8203;<a href="../../../../../../../io.github.mmm.property/io/github/mmm/property/temporal/instant/InstantProperty.html" title="class in io.github.mmm.property.temporal.instant">InstantProperty</a>,&#8203;<a href="../../../../../../../io.github.mmm.validation.main/io/github/mmm/validation/temporal/instant/ValidatorBuilderInstant.html" title="class in io.github.mmm.validation.temporal.instant">ValidatorBuilderInstant</a>&lt;<a href="InstantPropertyBuilder.html" title="class in io.github.mmm.property.builder.temporal">InstantPropertyBuilder</a>&gt;,&#8203;<a href="InstantPropertyBuilder.html" title="class in io.github.mmm.property.builder.temporal">InstantPropertyBuilder</a>&gt;</li>
 <li>
 <ul class="inheritance">
 <li>io.github.mmm.property.builder.temporal.InstantPropertyBuilder</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -138,8 +143,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <hr>
 <pre>public final class <span class="typeNameLabel">InstantPropertyBuilder</span>
-extends <a href="../PropertyBuilder.html" title="class in io.github.mmm.property.builder">PropertyBuilder</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html?is-external=true" title="class or interface in java.time" class="externalLink">Instant</a>,&#8203;<a href="../../../../../../../io.github.mmm.property/io/github/mmm/property/temporal/instant/InstantProperty.html" title="class in io.github.mmm.property.temporal.instant">InstantProperty</a>,&#8203;<a href="../../../../../../../io.github.mmm.validation.main/io/github/mmm/validation/temporal/instant/ValidatorBuilderInstant.html" title="class in io.github.mmm.validation.temporal.instant">ValidatorBuilderInstant</a>&lt;<a href="InstantPropertyBuilder.html" title="class in io.github.mmm.property.builder.temporal">InstantPropertyBuilder</a>&gt;,&#8203;<a href="InstantPropertyBuilder.html" title="class in io.github.mmm.property.builder.temporal">InstantPropertyBuilder</a>&gt;</pre>
+extends <a href="../lang/ComparablePropertyBuilder.html" title="class in io.github.mmm.property.builder.lang">ComparablePropertyBuilder</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html?is-external=true" title="class or interface in java.time" class="externalLink">Instant</a>,&#8203;<a href="../../../../../../../io.github.mmm.property/io/github/mmm/property/temporal/instant/InstantProperty.html" title="class in io.github.mmm.property.temporal.instant">InstantProperty</a>,&#8203;<a href="../../../../../../../io.github.mmm.validation.main/io/github/mmm/validation/temporal/instant/ValidatorBuilderInstant.html" title="class in io.github.mmm.validation.temporal.instant">ValidatorBuilderInstant</a>&lt;<a href="InstantPropertyBuilder.html" title="class in io.github.mmm.property.builder.temporal">InstantPropertyBuilder</a>&gt;,&#8203;<a href="InstantPropertyBuilder.html" title="class in io.github.mmm.property.builder.temporal">InstantPropertyBuilder</a>&gt;</pre>
 <div class="block"><a href="../PropertyBuilder.html" title="class in io.github.mmm.property.builder"><code>PropertyBuilder</code></a> for <a href="../../../../../../../io.github.mmm.property/io/github/mmm/property/temporal/instant/InstantProperty.html" title="class in io.github.mmm.property.temporal.instant"><code>InstantProperty</code></a>.</div>
+<dl>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>1.0.0</dd>
+</dl>
 </li>
 </ul>
 </div>
@@ -158,7 +167,7 @@ extends <a href="../PropertyBuilder.html" title="class in io.github.mmm.property
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;io.github.mmm.property.builder.<a href="../PropertyBuilder.html" title="class in io.github.mmm.property.builder">PropertyBuilder</a></h3>
-<code><a href="../PropertyBuilder.html#expression">expression</a>, <a href="../PropertyBuilder.html#metadataMap">metadataMap</a>, <a href="../PropertyBuilder.html#value">value</a></code></li>
+<code><a href="../PropertyBuilder.html#expression">expression</a>, <a href="../PropertyBuilder.html#value">value</a></code></li>
 </ul>
 </li>
 </ul>
@@ -213,11 +222,18 @@ extends <a href="../PropertyBuilder.html" title="class in io.github.mmm.property
 </tr>
 </table>
 <ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.property.builder.lang.ComparablePropertyBuilder">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;io.github.mmm.property.builder.lang.<a href="../lang/ComparablePropertyBuilder.html" title="class in io.github.mmm.property.builder.lang">ComparablePropertyBuilder</a></h3>
+<code><a href="../lang/ComparablePropertyBuilder.html#asRange()">asRange</a></code></li>
+</ul>
+<ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.property.builder.PropertyBuilder">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;io.github.mmm.property.builder.<a href="../PropertyBuilder.html" title="class in io.github.mmm.property.builder">PropertyBuilder</a></h3>
-<code><a href="../PropertyBuilder.html#asList()">asList</a>, <a href="../PropertyBuilder.html#asMap()">asMap</a>, <a href="../PropertyBuilder.html#asMap(io.github.mmm.property.object.SimpleProperty)">asMap</a>, <a href="../PropertyBuilder.html#asSet()">asSet</a>, <a href="../PropertyBuilder.html#build(java.lang.String)">build</a>, <a href="../PropertyBuilder.html#build(java.lang.String,boolean)">build</a>, <a href="../PropertyBuilder.html#factory(java.util.function.Function)">factory</a>, <a href="../PropertyBuilder.html#metadata(java.lang.String,java.lang.Object)">metadata</a>, <a href="../PropertyBuilder.html#registry(java.util.function.Consumer)">registry</a>, <a href="../PropertyBuilder.html#self()">self</a>, <a href="../PropertyBuilder.html#value(V)">value</a>, <a href="../PropertyBuilder.html#valueExpression(java.util.function.Supplier)">valueExpression</a>, <a href="../PropertyBuilder.html#withValidator()">withValidator</a></code></li>
+<code><a href="../PropertyBuilder.html#asList()">asList</a>, <a href="../PropertyBuilder.html#asMap()">asMap</a>, <a href="../PropertyBuilder.html#asMap(io.github.mmm.property.object.SimpleProperty)">asMap</a>, <a href="../PropertyBuilder.html#asSet()">asSet</a>, <a href="../PropertyBuilder.html#build(java.lang.String)">build</a>, <a href="../PropertyBuilder.html#build(java.lang.String,boolean)">build</a>, <a href="../PropertyBuilder.html#builder(T)">builder</a>, <a href="../PropertyBuilder.html#factory(java.util.function.Function)">factory</a>, <a href="../PropertyBuilder.html#metadata(io.github.mmm.property.PropertyMetadata)">metadata</a>, <a href="../PropertyBuilder.html#metadata(java.lang.String,java.lang.Object)">metadata</a>, <a href="../PropertyBuilder.html#registry(java.util.function.Consumer)">registry</a>, <a href="../PropertyBuilder.html#self()">self</a>, <a href="../PropertyBuilder.html#value(V)">value</a>, <a href="../PropertyBuilder.html#valueExpression(java.util.function.Supplier)">valueExpression</a>, <a href="../PropertyBuilder.html#withValidator()">withValidator</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">

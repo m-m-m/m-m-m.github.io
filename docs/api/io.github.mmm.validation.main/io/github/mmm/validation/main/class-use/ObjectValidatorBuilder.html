@@ -113,21 +113,33 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="rowColor">
+<th class="colFirst" scope="row"><a href="#io.github.mmm.property.builder.lang">io.github.mmm.property.builder.lang</a></th>
+<td class="colLast">
+<div class="block">Contains property builders for fundamental types such as <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>String</code></a> or <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Boolean</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="#io.github.mmm.validation.collection">io.github.mmm.validation.collection</a></th>
 <td class="colLast">
 <div class="block">Contains validation support for <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Collection</code></a>s and <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Map</code></a>s.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="#io.github.mmm.validation.main">io.github.mmm.validation.main</a></th>
 <td class="colLast">
 <div class="block">Contains validation support combined with native language support (NLS).</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="#io.github.mmm.validation.number">io.github.mmm.validation.number</a></th>
 <td class="colLast">
 <div class="block">Contains validation support for <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Number.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Number</code></a> and its common sub-types.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="#io.github.mmm.validation.range">io.github.mmm.validation.range</a></th>
+<td class="colLast">
+<div class="block">Contains validation support for <a href="../../../../../../../io.github.mmm.base/io/github/mmm/base/range/Range.html" title="interface in io.github.mmm.base.range"><code>Range</code></a>.</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -208,6 +220,30 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colLast">
 <div class="block">Abstract base class for a <a href="../../../../../../../io.github.mmm.base/io/github/mmm/base/lang/Builder.html" title="interface in io.github.mmm.base.lang"><code>Builder</code></a> to create instances of a particular type of
  <a href="../../../../../../../io.github.mmm.property/io/github/mmm/property/Property.html" title="class in io.github.mmm.property"><code>Property</code></a>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
+<section role="region"><a id="io.github.mmm.property.builder.lang">
+<!--   -->
+</a>
+<h3>Uses of <a href="../ObjectValidatorBuilder.html" title="class in io.github.mmm.validation.main">ObjectValidatorBuilder</a> in <a href="../../../../../../../io.github.mmm.property.builder/io/github/mmm/property/builder/lang/package-summary.html">io.github.mmm.property.builder.lang</a></h3>
+<table class="useSummary">
+<caption><span>Classes in <a href="../../../../../../../io.github.mmm.property.builder/io/github/mmm/property/builder/lang/package-summary.html">io.github.mmm.property.builder.lang</a> with type parameters of type <a href="../ObjectValidatorBuilder.html" title="class in io.github.mmm.validation.main">ObjectValidatorBuilder</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Class</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../../io.github.mmm.property.builder/io/github/mmm/property/builder/lang/ComparablePropertyBuilder.html" title="class in io.github.mmm.property.builder.lang">ComparablePropertyBuilder</a>&lt;V extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>,&#8203;P extends <a href="../../../../../../../io.github.mmm.property/io/github/mmm/property/Property.html" title="class in io.github.mmm.property">Property</a>&lt;V&gt;,&#8203;B extends <a href="../ObjectValidatorBuilder.html" title="class in io.github.mmm.validation.main">ObjectValidatorBuilder</a>&lt;V,&#8203;? extends <a href="../../../../../../../io.github.mmm.property.builder/io/github/mmm/property/builder/lang/ComparablePropertyBuilder.html" title="class in io.github.mmm.property.builder.lang">ComparablePropertyBuilder</a>&lt;V,&#8203;P,&#8203;B,&#8203;SELF&gt;,&#8203;?&gt;,&#8203;SELF extends <a href="../../../../../../../io.github.mmm.property.builder/io/github/mmm/property/builder/lang/ComparablePropertyBuilder.html" title="class in io.github.mmm.property.builder.lang">ComparablePropertyBuilder</a>&lt;V,&#8203;P,&#8203;B,&#8203;SELF&gt;&gt;</span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../../io.github.mmm.property.builder/io/github/mmm/property/builder/PropertyBuilder.html" title="class in io.github.mmm.property.builder"><code>PropertyBuilder</code></a> for <a href="../../../../../../../io.github.mmm.property/io/github/mmm/property/number/integers/IntegerProperty.html" title="class in io.github.mmm.property.number.integers"><code>IntegerProperty</code></a>.</div>
 </td>
 </tr>
 </tbody>
@@ -471,6 +507,30 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../number/ValidatorBuilderShort.html" title="class in io.github.mmm.validation.number">ValidatorBuilderShort</a>&lt;PARENT&gt;</span></code></th>
 <td class="colLast">
 <div class="block">The <a href="../../number/NumberValidatorBuilder.html" title="class in io.github.mmm.validation.number"><code>Validator builder</code></a> for <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Short</code></a> values.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
+<section role="region"><a id="io.github.mmm.validation.range">
+<!--   -->
+</a>
+<h3>Uses of <a href="../ObjectValidatorBuilder.html" title="class in io.github.mmm.validation.main">ObjectValidatorBuilder</a> in <a href="../../range/package-summary.html">io.github.mmm.validation.range</a></h3>
+<table class="useSummary">
+<caption><span>Subclasses of <a href="../ObjectValidatorBuilder.html" title="class in io.github.mmm.validation.main">ObjectValidatorBuilder</a> in <a href="../../range/package-summary.html">io.github.mmm.validation.range</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Class</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../range/ValidatorBuilderRange.html" title="class in io.github.mmm.validation.range">ValidatorBuilderRange</a>&lt;V,&#8203;PARENT&gt;</span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../string/CharSequenceValidatorBuilder.html" title="class in io.github.mmm.validation.string"><code>Validator builder</code></a> for <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>String</code></a>.</div>
 </td>
 </tr>
 </tbody>

@@ -137,30 +137,50 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="rowColor">
+<th class="colFirst" scope="row"><a href="#io.github.mmm.marshall.standard">io.github.mmm.marshall.standard</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="#io.github.mmm.property">io.github.mmm.property</a></th>
 <td class="colLast">
 <div class="block">Provides the API for generic and powerful properties.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="#io.github.mmm.property.booleans">io.github.mmm.property.booleans</a></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<th class="colFirst" scope="row"><a href="#io.github.mmm.property.container.map">io.github.mmm.property.container.map</a></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Contains property infrastructure for <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Boolean</code></a>.</div>
+</td>
 </tr>
 <tr class="altColor">
-<th class="colFirst" scope="row"><a href="#io.github.mmm.property.number">io.github.mmm.property.number</a></th>
-<td class="colLast">&nbsp;</td>
+<th class="colFirst" scope="row"><a href="#io.github.mmm.property.container.map">io.github.mmm.property.container.map</a></th>
+<td class="colLast">
+<div class="block">Contains property infrastructure for <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Map</code></a>.</div>
+</td>
 </tr>
 <tr class="rowColor">
+<th class="colFirst" scope="row"><a href="#io.github.mmm.property.number">io.github.mmm.property.number</a></th>
+<td class="colLast">
+<div class="block">Contains property infrastructure for <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Number.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Number</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="#io.github.mmm.property.object">io.github.mmm.property.object</a></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Contains property infrastructure for <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Object</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="#io.github.mmm.property.range">io.github.mmm.property.range</a></th>
+<td class="colLast">
+<div class="block">Contains property infrastructure for <a href="../../../../../../io.github.mmm.base/io/github/mmm/base/range/Range.html" title="interface in io.github.mmm.base.range"><code>Range</code></a>.</div>
+</td>
 </tr>
 <tr class="altColor">
 <th class="colFirst" scope="row"><a href="#io.github.mmm.property.temporal">io.github.mmm.property.temporal</a></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Contains property infrastructure for <code>java.time</code>.</div>
+</td>
 </tr>
 </tbody>
 </table>
@@ -311,6 +331,47 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colSecond" scope="row"><span class="typeNameLabel">MarshallableObject.</span><code><span class="memberNameLink"><a href="../MarshallableObject.html#write(io.github.mmm.marshall.StructuredWriter)">write</a></span>&#8203;(<a href="../StructuredWriter.html" title="interface in io.github.mmm.marshall">StructuredWriter</a>&nbsp;writer)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
+<tr class="rowColor">
+<td class="colFirst"><code>default void</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">MarshallableObject.</span><code><span class="memberNameLink"><a href="../MarshallableObject.html#writeObject(io.github.mmm.marshall.StructuredWriter,java.lang.Object)">writeObject</a></span>&#8203;(<a href="../StructuredWriter.html" title="interface in io.github.mmm.marshall">StructuredWriter</a>&nbsp;writer,
+           <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;object)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">Marshaller.</span><code><span class="memberNameLink"><a href="../Marshaller.html#writeObject(io.github.mmm.marshall.StructuredWriter,T)">writeObject</a></span>&#8203;(<a href="../StructuredWriter.html" title="interface in io.github.mmm.marshall">StructuredWriter</a>&nbsp;writer,
+           <a href="../Marshaller.html" title="type parameter in Marshaller">T</a>&nbsp;object)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
+<section role="region"><a id="io.github.mmm.marshall.standard">
+<!--   -->
+</a>
+<h3>Uses of <a href="../StructuredWriter.html" title="interface in io.github.mmm.marshall">StructuredWriter</a> in <a href="../standard/package-summary.html">io.github.mmm.marshall.standard</a></h3>
+<table class="useSummary">
+<caption><span>Methods in <a href="../standard/package-summary.html">io.github.mmm.marshall.standard</a> with parameters of type <a href="../StructuredWriter.html" title="interface in io.github.mmm.marshall">StructuredWriter</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">DatatypeMarshalling.</span><code><span class="memberNameLink"><a href="../standard/DatatypeMarshalling.html#writeObject(io.github.mmm.marshall.StructuredWriter,T)">writeObject</a></span>&#8203;(<a href="../StructuredWriter.html" title="interface in io.github.mmm.marshall">StructuredWriter</a>&nbsp;writer,
+           <a href="../standard/DatatypeMarshalling.html" title="type parameter in DatatypeMarshalling">T</a>&nbsp;object)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">ListMarshalling.</span><code><span class="memberNameLink"><a href="../standard/ListMarshalling.html#writeObject(io.github.mmm.marshall.StructuredWriter,java.util.List)">writeObject</a></span>&#8203;(<a href="../StructuredWriter.html" title="interface in io.github.mmm.marshall">StructuredWriter</a>&nbsp;writer,
+           <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../standard/ListMarshalling.html" title="type parameter in ListMarshalling">T</a>&gt;&nbsp;list)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
 </tbody>
 </table>
 </section>
@@ -331,6 +392,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tr class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Property.</span><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.property/io/github/mmm/property/Property.html#write(io.github.mmm.marshall.StructuredWriter)">write</a></span>&#8203;(<a href="../StructuredWriter.html" title="interface in io.github.mmm.marshall">StructuredWriter</a>&nbsp;writer)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">Property.</span><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.property/io/github/mmm/property/Property.html#writeObject(io.github.mmm.marshall.StructuredWriter,java.lang.Object)">writeObject</a></span>&#8203;(<a href="../StructuredWriter.html" title="interface in io.github.mmm.marshall">StructuredWriter</a>&nbsp;writer,
+           <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;object)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </tbody>
@@ -435,6 +502,28 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tr class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">SimpleProperty.</span><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.property/io/github/mmm/property/object/SimpleProperty.html#write(io.github.mmm.marshall.StructuredWriter)">write</a></span>&#8203;(<a href="../StructuredWriter.html" title="interface in io.github.mmm.marshall">StructuredWriter</a>&nbsp;writer)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
+<section role="region"><a id="io.github.mmm.property.range">
+<!--   -->
+</a>
+<h3>Uses of <a href="../StructuredWriter.html" title="interface in io.github.mmm.marshall">StructuredWriter</a> in <a href="../../../../../../io.github.mmm.property/io/github/mmm/property/range/package-summary.html">io.github.mmm.property.range</a></h3>
+<table class="useSummary">
+<caption><span>Methods in <a href="../../../../../../io.github.mmm.property/io/github/mmm/property/range/package-summary.html">io.github.mmm.property.range</a> with parameters of type <a href="../StructuredWriter.html" title="interface in io.github.mmm.marshall">StructuredWriter</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">RangeProperty.</span><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.property/io/github/mmm/property/range/RangeProperty.html#write(io.github.mmm.marshall.StructuredWriter)">write</a></span>&#8203;(<a href="../StructuredWriter.html" title="interface in io.github.mmm.marshall">StructuredWriter</a>&nbsp;writer)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </tbody>

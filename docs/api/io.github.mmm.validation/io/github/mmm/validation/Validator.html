@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":18,"i1":18,"i2":1,"i3":18,"i4":6};
+var data = {"i0":18,"i1":18,"i2":18,"i3":18,"i4":1,"i5":18,"i6":6};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -182,23 +182,33 @@ extends <a href="../../../../../io.github.mmm.base/io/github/mmm/base/lang/Compo
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>default <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getMax()">getMax</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>default <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getMin()">getMin</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>default boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isMandatory()">isMandatory</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;<a href="Validator.html" title="interface in io.github.mmm.validation">Validator</a>&lt;T&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#none()">none</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>default <a href="ValidationResult.html" title="interface in io.github.mmm.validation">ValidationResult</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#validate(V)">validate</a></span>&#8203;(<a href="Validator.html" title="type parameter in Validator">V</a>&nbsp;value)</code></th>
 <td class="colLast">
 <div class="block">This method validates the given <code>value</code>.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="ValidationResult.html" title="interface in io.github.mmm.validation">ValidationResult</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#validate(V,java.lang.Object)">validate</a></span>&#8203;(<a href="Validator.html" title="type parameter in Validator">V</a>&nbsp;value,
         <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;valueSource)</code></th>
@@ -290,6 +300,32 @@ extends <a href="../../../../../io.github.mmm.base/io/github/mmm/base/lang/Compo
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd><code>true</code> if this is a validator for mandatory fields (that will not accept <code>null</code> or empty
          values), <code>false</code> otherwise.</dd>
+</dl>
+</li>
+</ul>
+<a id="getMin()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getMin</h4>
+<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;getMin()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the minimum allowed value. Typically of type &lt;V&gt; but this can not be guaranteed.</dd>
+</dl>
+</li>
+</ul>
+<a id="getMax()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getMax</h4>
+<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;getMax()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the maximum allowed value. Typically of type &lt;V&gt; but this can not be guaranteed.</dd>
 </dl>
 </li>
 </ul>

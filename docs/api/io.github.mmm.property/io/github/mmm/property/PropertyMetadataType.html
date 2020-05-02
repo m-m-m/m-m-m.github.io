@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -239,6 +239,11 @@ implements <a href="PropertyMetadata.html" title="interface in io.github.mmm.pro
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getValueType()">getValueType</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code><a href="PropertyMetadata.html" title="interface in io.github.mmm.property">PropertyMetadata</a>&lt;<a href="PropertyMetadataType.html" title="type parameter in PropertyMetadataType">V</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withValidator(io.github.mmm.validation.Validator)">withValidator</a></span>&#8203;(<a href="../../../../../io.github.mmm.validation/io/github/mmm/validation/Validator.html" title="interface in io.github.mmm.validation">Validator</a>&lt;? super <a href="PropertyMetadataType.html" title="type parameter in PropertyMetadataType">V</a>&gt;&nbsp;newValidator)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
 </table>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
@@ -252,7 +257,7 @@ implements <a href="PropertyMetadata.html" title="interface in io.github.mmm.pro
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;io.github.mmm.property.<a href="PropertyMetadata.html" title="interface in io.github.mmm.property">PropertyMetadata</a></h3>
-<code><a href="PropertyMetadata.html#get(java.lang.Class)">get</a>, <a href="PropertyMetadata.html#get(java.lang.String,java.lang.Class)">get</a></code></li>
+<code><a href="PropertyMetadata.html#get(java.lang.Class)">get</a>, <a href="PropertyMetadata.html#get(java.lang.String,java.lang.Class)">get</a>, <a href="PropertyMetadata.html#getMarshalling()">getMarshalling</a>, <a href="PropertyMetadata.html#isTransient()">isTransient</a></code></li>
 </ul>
 </li>
 </ul>
@@ -419,7 +424,7 @@ implements <a href="PropertyMetadata.html" title="interface in io.github.mmm.pro
 <a id="getKeys()">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getKeys</h4>
 <pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;getKeys()</pre>
@@ -428,6 +433,24 @@ implements <a href="PropertyMetadata.html" title="interface in io.github.mmm.pro
 <dd><code><a href="PropertyMetadata.html#getKeys()">getKeys</a></code>&nbsp;in interface&nbsp;<code><a href="PropertyMetadata.html" title="interface in io.github.mmm.property">PropertyMetadata</a>&lt;<a href="PropertyMetadataType.html" title="type parameter in PropertyMetadataType">V</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Iterable</code></a> of all <a href="PropertyMetadata.html#get(java.lang.String)"><code>metadata keys</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="withValidator(io.github.mmm.validation.Validator)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>withValidator</h4>
+<pre class="methodSignature">public&nbsp;<a href="PropertyMetadata.html" title="interface in io.github.mmm.property">PropertyMetadata</a>&lt;<a href="PropertyMetadataType.html" title="type parameter in PropertyMetadataType">V</a>&gt;&nbsp;withValidator&#8203;(<a href="../../../../../io.github.mmm.validation/io/github/mmm/validation/Validator.html" title="interface in io.github.mmm.validation">Validator</a>&lt;? super <a href="PropertyMetadataType.html" title="type parameter in PropertyMetadataType">V</a>&gt;&nbsp;newValidator)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="PropertyMetadata.html#withValidator(io.github.mmm.validation.Validator)">withValidator</a></code>&nbsp;in interface&nbsp;<code><a href="PropertyMetadata.html" title="interface in io.github.mmm.property">PropertyMetadata</a>&lt;<a href="PropertyMetadataType.html" title="type parameter in PropertyMetadataType">V</a>&gt;</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>newValidator</code> - the new <a href="../../../../../io.github.mmm.validation/io/github/mmm/validation/Validator.html" title="interface in io.github.mmm.validation"><code>Validator</code></a>.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new instance of <a href="PropertyMetadata.html" title="interface in io.github.mmm.property"><code>PropertyMetadata</code></a> with the given <a href="../../../../../io.github.mmm.validation/io/github/mmm/validation/Validator.html" title="interface in io.github.mmm.validation"><code>Validator</code></a> used for
+         <a href="PropertyMetadata.html#getValidator()"><code>PropertyMetadata.getValidator()</code></a>.</dd>
 </dl>
 </li>
 </ul>

@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":18,"i1":6,"i2":18,"i3":6,"i4":6,"i5":6,"i6":6};
+var data = {"i0":18,"i1":6,"i2":18,"i3":6,"i4":6,"i5":18,"i6":6,"i7":6,"i8":18,"i9":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -190,13 +190,28 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
+<td class="colFirst"><code>default <a href="../../../../../io.github.mmm.marshall/io/github/mmm/marshall/Marshalling.html" title="interface in io.github.mmm.marshall">Marshalling</a>&lt;<a href="PropertyMetadata.html" title="type parameter in PropertyMetadata">V</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getMarshalling()">getMarshalling</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../../../io.github.mmm.validation/io/github/mmm/validation/Validator.html" title="interface in io.github.mmm.validation">Validator</a>&lt;? super <a href="PropertyMetadata.html" title="type parameter in PropertyMetadata">V</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getValidator()">getValidator</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Type.html?is-external=true" title="class or interface in java.lang.reflect" class="externalLink">Type</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getValueType()">getValueType</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>default boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isTransient()">isTransient</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code><a href="PropertyMetadata.html" title="interface in io.github.mmm.property">PropertyMetadata</a>&lt;<a href="PropertyMetadata.html" title="type parameter in PropertyMetadata">V</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withValidator(io.github.mmm.validation.Validator)">withValidator</a></span>&#8203;(<a href="../../../../../io.github.mmm.validation/io/github/mmm/validation/Validator.html" title="interface in io.github.mmm.validation">Validator</a>&lt;? super <a href="PropertyMetadata.html" title="type parameter in PropertyMetadata">V</a>&gt;&nbsp;validator)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -323,7 +338,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <a id="getValueType()">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getValueType</h4>
 <pre class="methodSignature"><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Type.html?is-external=true" title="class or interface in java.lang.reflect" class="externalLink">Type</a>&nbsp;getValueType()</pre>
@@ -332,6 +347,52 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>the optional <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Type.html?is-external=true" title="class or interface in java.lang.reflect" class="externalLink"><code>Type</code></a> of the <a href="Property.html#get()"><code>property value</code></a>. May be <code>null</code>.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../io.github.mmm.value/io/github/mmm/value/ReadableTypedValue.html#getValueClass()"><code>ReadableTypedValue.getValueClass()</code></a></dd>
+</dl>
+</li>
+</ul>
+<a id="getMarshalling()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getMarshalling</h4>
+<pre class="methodSignature">default&nbsp;<a href="../../../../../io.github.mmm.marshall/io/github/mmm/marshall/Marshalling.html" title="interface in io.github.mmm.marshall">Marshalling</a>&lt;<a href="PropertyMetadata.html" title="type parameter in PropertyMetadata">V</a>&gt;&nbsp;getMarshalling()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the optional custom <a href="../../../../../io.github.mmm.marshall/io/github/mmm/marshall/Marshalling.html" title="interface in io.github.mmm.marshall"><code>Marshalling</code></a>. If <code>null</code> the default marshalling of the <a href="Property.html" title="class in io.github.mmm.property"><code>Property</code></a> is
+         used. Overriding also allows to extend or replace the property value with more complex data from this
+         metadata - e.g. to reuse a <code>Bean</code> to represent a query to find instances of that <code>Bean</code>.</dd>
+</dl>
+</li>
+</ul>
+<a id="isTransient()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isTransient</h4>
+<pre class="methodSignature">default&nbsp;boolean&nbsp;isTransient()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>true</code> if transient (e.g. computed and therefore not to be marshalled), <code>false</code> otherwise.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="ReadableProperty.html#isTransient()"><code>ReadableProperty.isTransient()</code></a></dd>
+</dl>
+</li>
+</ul>
+<a id="withValidator(io.github.mmm.validation.Validator)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>withValidator</h4>
+<pre class="methodSignature"><a href="PropertyMetadata.html" title="interface in io.github.mmm.property">PropertyMetadata</a>&lt;<a href="PropertyMetadata.html" title="type parameter in PropertyMetadata">V</a>&gt;&nbsp;withValidator&#8203;(<a href="../../../../../io.github.mmm.validation/io/github/mmm/validation/Validator.html" title="interface in io.github.mmm.validation">Validator</a>&lt;? super <a href="PropertyMetadata.html" title="type parameter in PropertyMetadata">V</a>&gt;&nbsp;validator)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>validator</code> - the new <a href="../../../../../io.github.mmm.validation/io/github/mmm/validation/Validator.html" title="interface in io.github.mmm.validation"><code>Validator</code></a>.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new instance of <a href="PropertyMetadata.html" title="interface in io.github.mmm.property"><code>PropertyMetadata</code></a> with the given <a href="../../../../../io.github.mmm.validation/io/github/mmm/validation/Validator.html" title="interface in io.github.mmm.validation"><code>Validator</code></a> used for
+         <a href="#getValidator()"><code>getValidator()</code></a>.</dd>
 </dl>
 </li>
 </ul>

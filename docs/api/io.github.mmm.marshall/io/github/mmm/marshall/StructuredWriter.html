@@ -406,7 +406,9 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 <li class="blockList">
 <h4>writeValueAsNull</h4>
 <pre class="methodSignature">void&nbsp;writeValueAsNull()</pre>
-<div class="block">Writes the value <code>null</code> (undefined).</div>
+<div class="block">Writes the value <code>null</code> (undefined). Called from all other <code>writeValue*</code> methods in case <code>null</code>
+ is provided as value. Via <a href="MarshallingConfig.html#WRITE_NULL_VALUES"><code>MarshallingConfig.WRITE_NULL_VALUES</code></a> one can configure if <code>null</code> values
+ should be written or omitted (to save bandwidth).</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="#writeValue(java.lang.Object)"><code>writeValue(Object)</code></a></dd>

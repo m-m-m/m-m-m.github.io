@@ -114,18 +114,34 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="rowColor">
+<th class="colFirst" scope="row"><a href="#io.github.mmm.property.builder.lang">io.github.mmm.property.builder.lang</a></th>
+<td class="colLast">
+<div class="block">Contains property builders for fundamental types such as <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>String</code></a> or <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Boolean</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="#io.github.mmm.property.range">io.github.mmm.property.range</a></th>
+<td class="colLast">
+<div class="block">Contains property infrastructure for <a href="../Range.html" title="interface in io.github.mmm.base.range"><code>Range</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="#io.github.mmm.ui.spi.range">io.github.mmm.ui.spi.range</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="#io.github.mmm.validation.collection">io.github.mmm.validation.collection</a></th>
 <td class="colLast">
 <div class="block">Contains validation support for <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Collection</code></a>s and <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Map</code></a>s.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="#io.github.mmm.validation.main">io.github.mmm.validation.main</a></th>
 <td class="colLast">
 <div class="block">Contains validation support combined with native language support (NLS).</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="#io.github.mmm.validation.string">io.github.mmm.validation.string</a></th>
 <td class="colLast">
 <div class="block">Contains validation support for <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>String</code></a> and <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>CharSequence</code></a>.</div>
@@ -142,6 +158,23 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </a>
 <h3>Uses of <a href="../Range.html" title="interface in io.github.mmm.base.range">Range</a> in <a href="../package-summary.html">io.github.mmm.base.range</a></h3>
 <table class="useSummary">
+<caption><span>Subinterfaces of <a href="../Range.html" title="interface in io.github.mmm.base.range">Range</a> in <a href="../package-summary.html">io.github.mmm.base.range</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Interface</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../WritableRange.html" title="interface in io.github.mmm.base.range">WritableRange</a>&lt;V&gt;</span></code></th>
+<td class="colLast">
+<div class="block">A mutable <a href="../Range.html" title="interface in io.github.mmm.base.range"><code>Range</code></a> allowing to <a href="../WritableRange.html#setMin(V)"><code>set minimum</code></a> and <a href="../WritableRange.html#setMax(V)"><code>maximum</code></a>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary">
 <caption><span>Classes in <a href="../package-summary.html">io.github.mmm.base.range</a> that implement <a href="../Range.html" title="interface in io.github.mmm.base.range">Range</a></span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
@@ -151,16 +184,203 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../GenericRange.html" title="class in io.github.mmm.base.range">GenericRange</a>&lt;V&gt;</span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../AbstractRange.html" title="class in io.github.mmm.base.range">AbstractRange</a>&lt;V&gt;</span></code></th>
 <td class="colLast">
 <div class="block">Implementation of <a href="../Range.html" title="interface in io.github.mmm.base.range"><code>Range</code></a>.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../NumberRange.html" title="class in io.github.mmm.base.range">NumberRange</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../NumberRangeType.html" title="class in io.github.mmm.base.range">NumberRangeType</a></span></code></th>
 <td class="colLast">
 <div class="block">This class extends <a href="../Range.html" title="interface in io.github.mmm.base.range"><code>Range</code></a> to allow mixed types of <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Number.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Number</code></a> to be used.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../RangeType.html" title="class in io.github.mmm.base.range">RangeType</a>&lt;V&gt;</span></code></th>
+<td class="colLast">
+<div class="block">Implementation of <a href="../Range.html" title="interface in io.github.mmm.base.range"><code>Range</code></a>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary">
+<caption><span>Methods in <a href="../package-summary.html">io.github.mmm.base.range</a> that return <a href="../Range.html" title="interface in io.github.mmm.base.range">Range</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>static &lt;T&gt;&nbsp;<a href="../Range.html" title="interface in io.github.mmm.base.range">Range</a>&lt;T&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">Range.</span><code><span class="memberNameLink"><a href="../Range.html#unbounded()">unbounded</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
+<section role="region"><a id="io.github.mmm.property.builder.lang">
+<!--   -->
+</a>
+<h3>Uses of <a href="../Range.html" title="interface in io.github.mmm.base.range">Range</a> in <a href="../../../../../../../io.github.mmm.property.builder/io/github/mmm/property/builder/lang/package-summary.html">io.github.mmm.property.builder.lang</a></h3>
+<table class="useSummary">
+<caption><span>Method parameters in <a href="../../../../../../../io.github.mmm.property.builder/io/github/mmm/property/builder/lang/package-summary.html">io.github.mmm.property.builder.lang</a> with type arguments of type <a href="../Range.html" title="interface in io.github.mmm.base.range">Range</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../../../../../io.github.mmm.property/io/github/mmm/property/range/RangeProperty.html" title="class in io.github.mmm.property.range">RangeProperty</a>&lt;<a href="../../../../../../../io.github.mmm.property.builder/io/github/mmm/property/builder/lang/RangePropertyBuilder.html" title="type parameter in RangePropertyBuilder">V</a>&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">RangePropertyBuilder.</span><code><span class="memberNameLink"><a href="../../../../../../../io.github.mmm.property.builder/io/github/mmm/property/builder/lang/RangePropertyBuilder.html#build(java.lang.String,io.github.mmm.property.PropertyMetadata)">build</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
+     <a href="../../../../../../../io.github.mmm.property/io/github/mmm/property/PropertyMetadata.html" title="interface in io.github.mmm.property">PropertyMetadata</a>&lt;<a href="../Range.html" title="interface in io.github.mmm.base.range">Range</a>&lt;<a href="../../../../../../../io.github.mmm.property.builder/io/github/mmm/property/builder/lang/RangePropertyBuilder.html" title="type parameter in RangePropertyBuilder">V</a>&gt;&gt;&nbsp;metadata)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
+<section role="region"><a id="io.github.mmm.property.range">
+<!--   -->
+</a>
+<h3>Uses of <a href="../Range.html" title="interface in io.github.mmm.base.range">Range</a> in <a href="../../../../../../../io.github.mmm.property/io/github/mmm/property/range/package-summary.html">io.github.mmm.property.range</a></h3>
+<table class="useSummary">
+<caption><span>Methods in <a href="../../../../../../../io.github.mmm.property/io/github/mmm/property/range/package-summary.html">io.github.mmm.property.range</a> that return <a href="../Range.html" title="interface in io.github.mmm.base.range">Range</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../Range.html" title="interface in io.github.mmm.base.range">Range</a>&lt;<a href="../../../../../../../io.github.mmm.property/io/github/mmm/property/range/RangeProperty.html" title="type parameter in RangeProperty">V</a>&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">RangeProperty.</span><code><span class="memberNameLink"><a href="../../../../../../../io.github.mmm.property/io/github/mmm/property/range/RangeProperty.html#doGet()">doGet</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>default <a href="../Range.html" title="interface in io.github.mmm.base.range">Range</a>&lt;<a href="../../../../../../../io.github.mmm.property/io/github/mmm/property/range/ReadableRangeProperty.html" title="type parameter in ReadableRangeProperty">V</a>&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">ReadableRangeProperty.</span><code><span class="memberNameLink"><a href="../../../../../../../io.github.mmm.property/io/github/mmm/property/range/ReadableRangeProperty.html#getSafe()">getSafe</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../Range.html" title="interface in io.github.mmm.base.range">Range</a>&lt;<a href="../../../../../../../io.github.mmm.property/io/github/mmm/property/range/RangeProperty.html" title="type parameter in RangeProperty">V</a>&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">RangeProperty.</span><code><span class="memberNameLink"><a href="../../../../../../../io.github.mmm.property/io/github/mmm/property/range/RangeProperty.html#parse(java.lang.String)">parse</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;valueAsString)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary">
+<caption><span>Methods in <a href="../../../../../../../io.github.mmm.property/io/github/mmm/property/range/package-summary.html">io.github.mmm.property.range</a> that return types with arguments of type <a href="../Range.html" title="interface in io.github.mmm.base.range">Range</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../../../../../../../io.github.mmm.property/io/github/mmm/property/ReadableProperty.html" title="interface in io.github.mmm.property">ReadableProperty</a>&lt;<a href="../Range.html" title="interface in io.github.mmm.base.range">Range</a>&lt;<a href="../../../../../../../io.github.mmm.property/io/github/mmm/property/range/PropertyFactoryRange.html" title="type parameter in PropertyFactoryRange">V</a>&gt;&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">PropertyFactoryRange.</span><code><span class="memberNameLink"><a href="../../../../../../../io.github.mmm.property/io/github/mmm/property/range/PropertyFactoryRange.html#getReadableInterface()">getReadableInterface</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../Range.html" title="interface in io.github.mmm.base.range">Range</a>&lt;<a href="../../../../../../../io.github.mmm.property/io/github/mmm/property/range/PropertyFactoryRange.html" title="type parameter in PropertyFactoryRange">V</a>&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">PropertyFactoryRange.</span><code><span class="memberNameLink"><a href="../../../../../../../io.github.mmm.property/io/github/mmm/property/range/PropertyFactoryRange.html#getValueClass()">getValueClass</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>default <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;<a href="../Range.html" title="interface in io.github.mmm.base.range">Range</a>&lt;<a href="../../../../../../../io.github.mmm.property/io/github/mmm/property/range/ReadableRangeProperty.html" title="type parameter in ReadableRangeProperty">V</a>&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">ReadableRangeProperty.</span><code><span class="memberNameLink"><a href="../../../../../../../io.github.mmm.property/io/github/mmm/property/range/ReadableRangeProperty.html#getValueClass()">getValueClass</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../../../../../../../io.github.mmm.property/io/github/mmm/property/WritableProperty.html" title="interface in io.github.mmm.property">WritableProperty</a>&lt;<a href="../Range.html" title="interface in io.github.mmm.base.range">Range</a>&lt;<a href="../../../../../../../io.github.mmm.property/io/github/mmm/property/range/PropertyFactoryRange.html" title="type parameter in PropertyFactoryRange">V</a>&gt;&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">PropertyFactoryRange.</span><code><span class="memberNameLink"><a href="../../../../../../../io.github.mmm.property/io/github/mmm/property/range/PropertyFactoryRange.html#getWritableInterface()">getWritableInterface</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary">
+<caption><span>Methods in <a href="../../../../../../../io.github.mmm.property/io/github/mmm/property/range/package-summary.html">io.github.mmm.property.range</a> with parameters of type <a href="../Range.html" title="interface in io.github.mmm.base.range">Range</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">RangeProperty.</span><code><span class="memberNameLink"><a href="../../../../../../../io.github.mmm.property/io/github/mmm/property/range/RangeProperty.html#doSet(io.github.mmm.base.range.Range)">doSet</a></span>&#8203;(<a href="../Range.html" title="interface in io.github.mmm.base.range">Range</a>&lt;<a href="../../../../../../../io.github.mmm.property/io/github/mmm/property/range/RangeProperty.html" title="type parameter in RangeProperty">V</a>&gt;&nbsp;newValue)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary">
+<caption><span>Method parameters in <a href="../../../../../../../io.github.mmm.property/io/github/mmm/property/range/package-summary.html">io.github.mmm.property.range</a> with type arguments of type <a href="../Range.html" title="interface in io.github.mmm.base.range">Range</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../io.github.mmm.property/io/github/mmm/property/range/RangeProperty.html" title="class in io.github.mmm.property.range">RangeProperty</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">PropertyFactoryRange.</span><code><span class="memberNameLink"><a href="../../../../../../../io.github.mmm.property/io/github/mmm/property/range/PropertyFactoryRange.html#create(java.lang.String,java.lang.Class,io.github.mmm.property.PropertyMetadata)">create</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
+      <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../Range.html" title="interface in io.github.mmm.base.range">Range</a>&lt;<a href="../../../../../../../io.github.mmm.property/io/github/mmm/property/range/PropertyFactoryRange.html" title="type parameter in PropertyFactoryRange">V</a>&gt;&gt;&nbsp;valueClass,
+      <a href="../../../../../../../io.github.mmm.property/io/github/mmm/property/PropertyMetadata.html" title="interface in io.github.mmm.property">PropertyMetadata</a>&lt;<a href="../Range.html" title="interface in io.github.mmm.base.range">Range</a>&lt;<a href="../../../../../../../io.github.mmm.property/io/github/mmm/property/range/PropertyFactoryRange.html" title="type parameter in PropertyFactoryRange">V</a>&gt;&gt;&nbsp;metadata)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../io.github.mmm.property/io/github/mmm/property/range/RangeProperty.html" title="class in io.github.mmm.property.range">RangeProperty</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">PropertyFactoryRange.</span><code><span class="memberNameLink"><a href="../../../../../../../io.github.mmm.property/io/github/mmm/property/range/PropertyFactoryRange.html#create(java.lang.String,java.lang.Class,io.github.mmm.property.PropertyMetadata)">create</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
+      <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../Range.html" title="interface in io.github.mmm.base.range">Range</a>&lt;<a href="../../../../../../../io.github.mmm.property/io/github/mmm/property/range/PropertyFactoryRange.html" title="type parameter in PropertyFactoryRange">V</a>&gt;&gt;&nbsp;valueClass,
+      <a href="../../../../../../../io.github.mmm.property/io/github/mmm/property/PropertyMetadata.html" title="interface in io.github.mmm.property">PropertyMetadata</a>&lt;<a href="../Range.html" title="interface in io.github.mmm.base.range">Range</a>&lt;<a href="../../../../../../../io.github.mmm.property/io/github/mmm/property/range/PropertyFactoryRange.html" title="type parameter in PropertyFactoryRange">V</a>&gt;&gt;&nbsp;metadata)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary">
+<caption><span>Constructor parameters in <a href="../../../../../../../io.github.mmm.property/io/github/mmm/property/range/package-summary.html">io.github.mmm.property.range</a> with type arguments of type <a href="../Range.html" title="interface in io.github.mmm.base.range">Range</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Constructor</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../../io.github.mmm.property/io/github/mmm/property/range/RangeProperty.html#%3Cinit%3E(java.lang.String,io.github.mmm.property.object.SimpleProperty,io.github.mmm.property.PropertyMetadata)">RangeProperty</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
+             <a href="../../../../../../../io.github.mmm.property/io/github/mmm/property/object/SimpleProperty.html" title="class in io.github.mmm.property.object">SimpleProperty</a>&lt;<a href="../../../../../../../io.github.mmm.property/io/github/mmm/property/range/RangeProperty.html" title="type parameter in RangeProperty">V</a>&gt;&nbsp;valueProperty,
+             <a href="../../../../../../../io.github.mmm.property/io/github/mmm/property/PropertyMetadata.html" title="interface in io.github.mmm.property">PropertyMetadata</a>&lt;<a href="../Range.html" title="interface in io.github.mmm.base.range">Range</a>&lt;<a href="../../../../../../../io.github.mmm.property/io/github/mmm/property/range/RangeProperty.html" title="type parameter in RangeProperty">V</a>&gt;&gt;&nbsp;metadata)</code></th>
+<td class="colLast">
+<div class="block">The constructor.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
+<section role="region"><a id="io.github.mmm.ui.spi.range">
+<!--   -->
+</a>
+<h3>Uses of <a href="../Range.html" title="interface in io.github.mmm.base.range">Range</a> in <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/range/package-summary.html">io.github.mmm.ui.spi.range</a></h3>
+<table class="useSummary">
+<caption><span>Classes in <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/range/package-summary.html">io.github.mmm.ui.spi.range</a> that implement <a href="../Range.html" title="interface in io.github.mmm.base.range">Range</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Class</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/range/NumericRange.html" title="class in io.github.mmm.ui.spi.range">NumericRange</a>&lt;V extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Number.html?is-external=true" title="class or interface in java.lang" class="externalLink">Number</a>&gt;</span></code></th>
+<td class="colLast">
+<div class="block">Implementation of <a href="../WritableRange.html" title="interface in io.github.mmm.base.range"><code>WritableRange</code></a> for <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/input/UiNumericInput.html" title="interface in io.github.mmm.ui.api.widget.input"><code>UiNumericInput</code></a>.</div>
 </td>
 </tr>
 </tbody>
@@ -220,6 +440,21 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!--   -->
 </a>
 <h3>Uses of <a href="../Range.html" title="interface in io.github.mmm.base.range">Range</a> in <a href="../../../../../../../io.github.mmm.validation.main/io/github/mmm/validation/main/package-summary.html">io.github.mmm.validation.main</a></h3>
+<table class="useSummary">
+<caption><span>Fields in <a href="../../../../../../../io.github.mmm.validation.main/io/github/mmm/validation/main/package-summary.html">io.github.mmm.validation.main</a> declared as <a href="../Range.html" title="interface in io.github.mmm.base.range">Range</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Field</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../Range.html" title="interface in io.github.mmm.base.range">Range</a>&lt;<a href="../../../../../../../io.github.mmm.validation.main/io/github/mmm/validation/main/AbstractValidatorRange.html" title="type parameter in AbstractValidatorRange">R</a>&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">AbstractValidatorRange.</span><code><span class="memberNameLink"><a href="../../../../../../../io.github.mmm.validation.main/io/github/mmm/validation/main/AbstractValidatorRange.html#range">range</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+</tbody>
+</table>
 <table class="useSummary">
 <caption><span>Methods in <a href="../../../../../../../io.github.mmm.validation.main/io/github/mmm/validation/main/package-summary.html">io.github.mmm.validation.main</a> that return <a href="../Range.html" title="interface in io.github.mmm.base.range">Range</a></span><span class="tabEnd">&nbsp;</span></caption>
 <tr>

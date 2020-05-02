@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -184,6 +184,13 @@ extends <a href="AbstractComposedValidator.html" title="class in io.github.mmm.v
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
+<ul class="blockList">
+<li class="blockList"><a id="fields.inherited.from.class.io.github.mmm.validation.AbstractComposedValidator">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;io.github.mmm.validation.<a href="AbstractComposedValidator.html" title="class in io.github.mmm.validation">AbstractComposedValidator</a></h3>
+<code><a href="AbstractComposedValidator.html#children">children</a></code></li>
+</ul>
 </li>
 </ul>
 </section>
@@ -233,6 +240,16 @@ extends <a href="AbstractComposedValidator.html" title="class in io.github.mmm.v
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getMax()">getMax</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getMin()">getMin</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="ValidationResult.html" title="interface in io.github.mmm.validation">ValidationResult</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#validate(V,java.lang.Object)">validate</a></span>&#8203;(<a href="ComposedValidator.html" title="type parameter in ComposedValidator">V</a>&nbsp;value,
         <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;valueSource)</code></th>
@@ -376,7 +393,7 @@ public&nbsp;ComposedValidator&#8203;(<a href="Validator.html" title="interface i
 </a><a id="validate(V,java.lang.Object)">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>validate</h4>
 <pre class="methodSignature">public&nbsp;<a href="ValidationResult.html" title="interface in io.github.mmm.validation">ValidationResult</a>&nbsp;validate&#8203;(<a href="ComposedValidator.html" title="type parameter in ComposedValidator">V</a>&nbsp;value,
@@ -392,6 +409,32 @@ public&nbsp;ComposedValidator&#8203;(<a href="Validator.html" title="interface i
         directly pass a <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>String</code></a>.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the <a href="ValidationResult.html" title="interface in io.github.mmm.validation"><code>ValidationResult</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="getMin()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getMin</h4>
+<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;getMin()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the minimum allowed value. Typically of type &lt;V&gt; but this can not be guaranteed.</dd>
+</dl>
+</li>
+</ul>
+<a id="getMax()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getMax</h4>
+<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;getMax()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the maximum allowed value. Typically of type &lt;V&gt; but this can not be guaranteed.</dd>
 </dl>
 </li>
 </ul>

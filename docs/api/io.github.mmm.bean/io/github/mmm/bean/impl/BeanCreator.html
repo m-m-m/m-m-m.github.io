@@ -26,8 +26,8 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9};
-var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
+var data = {"i0":10,"i1":9};
+var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -90,13 +90,13 @@ loadScripts(document, 'script');</script>
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
@@ -131,9 +131,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><code><a href="../BeanFactory.html" title="interface in io.github.mmm.bean">BeanFactory</a></code></dd>
+</dl>
 <hr>
 <pre>public final class <span class="typeNameLabel">BeanCreator</span>
-extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></pre>
+extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>
+implements <a href="../BeanFactory.html" title="interface in io.github.mmm.bean">BeanFactory</a></pre>
 <div class="block">Creator of <a href="../AbstractBean.html" title="class in io.github.mmm.bean"><code>AbstractBean</code></a> instances.</div>
 <dl>
 <dt><span class="simpleTagLabel">Since:</span></dt>
@@ -147,6 +152,29 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<section role="region">
+<ul class="blockList">
+<li class="blockList"><a id="constructor.summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="memberSummary">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Constructor</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tr class="altColor">
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E()">BeanCreator</a></span>()</code></th>
+<td class="colLast">
+<div class="block">The constructor.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+</section>
 <!-- ========== METHOD SUMMARY =========== -->
 <section role="region">
 <ul class="blockList">
@@ -155,13 +183,19 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colSecond" scope="col">Method</th>
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>&lt;B extends <a href="../WritableBean.html" title="interface in io.github.mmm.bean">WritableBean</a>&gt;<br>B</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#create(java.lang.Class,boolean)">create</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;B&gt;&nbsp;type,
+      boolean&nbsp;dynamic)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>static &lt;B extends <a href="../AbstractBean.html" title="class in io.github.mmm.bean">AbstractBean</a>&gt;<br>B</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#create(java.lang.Class,io.github.mmm.bean.AbstractBean,boolean)">create</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;B&gt;&nbsp;type,
       <a href="../AbstractBean.html" title="class in io.github.mmm.bean">AbstractBean</a>&nbsp;writableBean,
@@ -176,6 +210,13 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 <h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></h3>
 <code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang" class="externalLink">clone</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang" class="externalLink">equals</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang" class="externalLink">finalize</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang" class="externalLink">getClass</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang" class="externalLink">hashCode</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang" class="externalLink">notify</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang" class="externalLink">notifyAll</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang" class="externalLink">toString</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#wait(long,int)" title="class or interface in java.lang" class="externalLink">wait</a></code></li>
 </ul>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.bean.BeanFactory">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;io.github.mmm.bean.<a href="../BeanFactory.html" title="interface in io.github.mmm.bean">BeanFactory</a></h3>
+<code><a href="../BeanFactory.html#create(java.lang.Class)">create</a></code></li>
+</ul>
 </li>
 </ul>
 </section>
@@ -185,6 +226,26 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<section role="region">
+<ul class="blockList">
+<li class="blockList"><a id="constructor.detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a id="&lt;init&gt;()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>BeanCreator</h4>
+<pre>public&nbsp;BeanCreator()</pre>
+<div class="block">The constructor.</div>
+</li>
+</ul>
+</li>
+</ul>
+</section>
 <!-- ============ METHOD DETAIL ========== -->
 <section role="region">
 <ul class="blockList">
@@ -192,6 +253,29 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a id="create(java.lang.Class,boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>create</h4>
+<pre class="methodSignature">public&nbsp;&lt;B extends <a href="../WritableBean.html" title="interface in io.github.mmm.bean">WritableBean</a>&gt;&nbsp;B&nbsp;create&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;B&gt;&nbsp;type,
+                                         boolean&nbsp;dynamic)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../BeanFactory.html#create(java.lang.Class,boolean)">create</a></code>&nbsp;in interface&nbsp;<code><a href="../BeanFactory.html" title="interface in io.github.mmm.bean">BeanFactory</a></code></dd>
+<dt><span class="paramLabel">Type Parameters:</span></dt>
+<dd><code>B</code> - type of the <a href="../WritableBean.html" title="interface in io.github.mmm.bean"><code>WritableBean</code></a>.</dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>type</code> - the <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Class</code></a> reflecting the <a href="../WritableBean.html" title="interface in io.github.mmm.bean"><code>WritableBean</code></a>.</dd>
+<dd><code>dynamic</code> - the <a href="../ReadableBean.html#isDynamic()"><code>dynamic</code></a> flag.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new instance of the <a href="../WritableBean.html" title="interface in io.github.mmm.bean"><code>WritableBean</code></a> specified by the given <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Class</code></a>. If <code>type</code> is an
+         interface, a dynamic proxy implementation is generated. Otherwise if a class is given it needs to extend
+         <a href="../Bean.html" title="class in io.github.mmm.bean"><code>Bean</code></a>, be non-abstract and requires a non-arg constructor.</dd>
+</dl>
+</li>
+</ul>
 <a id="create(java.lang.Class,io.github.mmm.bean.AbstractBean,boolean)">
 <!--   -->
 </a>
@@ -270,13 +354,13 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
 </div>

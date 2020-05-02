@@ -114,18 +114,52 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="rowColor">
+<th class="colFirst" scope="row"><a href="#io.github.mmm.property.builder.lang">io.github.mmm.property.builder.lang</a></th>
+<td class="colLast">
+<div class="block">Contains property builders for fundamental types such as <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>String</code></a> or <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Boolean</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="#io.github.mmm.property.range">io.github.mmm.property.range</a></th>
+<td class="colLast">
+<div class="block">Contains property infrastructure for <a href="Range.html" title="interface in io.github.mmm.base.range"><code>Range</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="#io.github.mmm.ui.api.widget.input">io.github.mmm.ui.api.widget.input</a></th>
+<td class="colLast">
+<div class="block">Contains the API for all kind of <a href="../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/input/UiInput.html" title="interface in io.github.mmm.ui.api.widget.input"><code>UiInput</code></a> widgets.</div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="#io.github.mmm.ui.fx.widget.input">io.github.mmm.ui.fx.widget.input</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="#io.github.mmm.ui.spi.range">io.github.mmm.ui.spi.range</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="#io.github.mmm.ui.test.widget.input">io.github.mmm.ui.test.widget.input</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="#io.github.mmm.ui.tvm.widget.input">io.github.mmm.ui.tvm.widget.input</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="#io.github.mmm.validation.collection">io.github.mmm.validation.collection</a></th>
 <td class="colLast">
 <div class="block">Contains validation support for <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Collection</code></a>s and <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Map</code></a>s.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="#io.github.mmm.validation.main">io.github.mmm.validation.main</a></th>
 <td class="colLast">
 <div class="block">Contains validation support combined with native language support (NLS).</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="#io.github.mmm.validation.string">io.github.mmm.validation.string</a></th>
 <td class="colLast">
 <div class="block">Contains validation support for <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>String</code></a> and <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>CharSequence</code></a>.</div>
@@ -145,13 +179,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
-<th class="colFirst" scope="row"><a href="class-use/GenericRange.html#io.github.mmm.base.range">GenericRange</a></th>
+<th class="colFirst" scope="row"><a href="class-use/AbstractRange.html#io.github.mmm.base.range">AbstractRange</a></th>
 <td class="colLast">
 <div class="block">Implementation of <a href="Range.html" title="interface in io.github.mmm.base.range"><code>Range</code></a>.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<th class="colFirst" scope="row"><a href="class-use/NumberRange.html#io.github.mmm.base.range">NumberRange</a></th>
+<th class="colFirst" scope="row"><a href="class-use/NumberRangeType.html#io.github.mmm.base.range">NumberRangeType</a></th>
 <td class="colLast">
 <div class="block">This class extends <a href="Range.html" title="interface in io.github.mmm.base.range"><code>Range</code></a> to allow mixed types of <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Number.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Number</code></a> to be used.</div>
 </td>
@@ -160,6 +194,157 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colFirst" scope="row"><a href="class-use/Range.html#io.github.mmm.base.range">Range</a></th>
 <td class="colLast">
 <div class="block">This class represents a range from <a href="Range.html#getMin()"><code>minimum</code></a> to <a href="Range.html#getMax()"><code>maximum</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="class-use/RangeType.html#io.github.mmm.base.range">RangeType</a></th>
+<td class="colLast">
+<div class="block">Implementation of <a href="Range.html" title="interface in io.github.mmm.base.range"><code>Range</code></a>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a id="io.github.mmm.property.builder.lang">
+<!--   -->
+</a>
+<table class="useSummary">
+<caption><span>Classes in <a href="package-summary.html">io.github.mmm.base.range</a> used by <a href="../../../../../../io.github.mmm.property.builder/io/github/mmm/property/builder/lang/package-summary.html">io.github.mmm.property.builder.lang</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Class</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="class-use/Range.html#io.github.mmm.property.builder.lang">Range</a></th>
+<td class="colLast">
+<div class="block">This class represents a range from <a href="Range.html#getMin()"><code>minimum</code></a> to <a href="Range.html#getMax()"><code>maximum</code></a>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a id="io.github.mmm.property.range">
+<!--   -->
+</a>
+<table class="useSummary">
+<caption><span>Classes in <a href="package-summary.html">io.github.mmm.base.range</a> used by <a href="../../../../../../io.github.mmm.property/io/github/mmm/property/range/package-summary.html">io.github.mmm.property.range</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Class</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="class-use/Range.html#io.github.mmm.property.range">Range</a></th>
+<td class="colLast">
+<div class="block">This class represents a range from <a href="Range.html#getMin()"><code>minimum</code></a> to <a href="Range.html#getMax()"><code>maximum</code></a>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a id="io.github.mmm.ui.api.widget.input">
+<!--   -->
+</a>
+<table class="useSummary">
+<caption><span>Classes in <a href="package-summary.html">io.github.mmm.base.range</a> used by <a href="../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/input/package-summary.html">io.github.mmm.ui.api.widget.input</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Class</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="class-use/WritableRange.html#io.github.mmm.ui.api.widget.input">WritableRange</a></th>
+<td class="colLast">
+<div class="block">A mutable <a href="Range.html" title="interface in io.github.mmm.base.range"><code>Range</code></a> allowing to <a href="WritableRange.html#setMin(V)"><code>set minimum</code></a> and <a href="WritableRange.html#setMax(V)"><code>maximum</code></a>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a id="io.github.mmm.ui.fx.widget.input">
+<!--   -->
+</a>
+<table class="useSummary">
+<caption><span>Classes in <a href="package-summary.html">io.github.mmm.base.range</a> used by <a href="../../../../../../io.github.mmm.ui.fx.core/io/github/mmm/ui/fx/widget/input/package-summary.html">io.github.mmm.ui.fx.widget.input</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Class</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="class-use/WritableRange.html#io.github.mmm.ui.fx.widget.input">WritableRange</a></th>
+<td class="colLast">
+<div class="block">A mutable <a href="Range.html" title="interface in io.github.mmm.base.range"><code>Range</code></a> allowing to <a href="WritableRange.html#setMin(V)"><code>set minimum</code></a> and <a href="WritableRange.html#setMax(V)"><code>maximum</code></a>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a id="io.github.mmm.ui.spi.range">
+<!--   -->
+</a>
+<table class="useSummary">
+<caption><span>Classes in <a href="package-summary.html">io.github.mmm.base.range</a> used by <a href="../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/range/package-summary.html">io.github.mmm.ui.spi.range</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Class</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="class-use/AbstractRange.html#io.github.mmm.ui.spi.range">AbstractRange</a></th>
+<td class="colLast">
+<div class="block">Implementation of <a href="Range.html" title="interface in io.github.mmm.base.range"><code>Range</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="class-use/Range.html#io.github.mmm.ui.spi.range">Range</a></th>
+<td class="colLast">
+<div class="block">This class represents a range from <a href="Range.html#getMin()"><code>minimum</code></a> to <a href="Range.html#getMax()"><code>maximum</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="class-use/WritableRange.html#io.github.mmm.ui.spi.range">WritableRange</a></th>
+<td class="colLast">
+<div class="block">A mutable <a href="Range.html" title="interface in io.github.mmm.base.range"><code>Range</code></a> allowing to <a href="WritableRange.html#setMin(V)"><code>set minimum</code></a> and <a href="WritableRange.html#setMax(V)"><code>maximum</code></a>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a id="io.github.mmm.ui.test.widget.input">
+<!--   -->
+</a>
+<table class="useSummary">
+<caption><span>Classes in <a href="package-summary.html">io.github.mmm.base.range</a> used by <a href="../../../../../../io.github.mmm.ui.test.core/io/github/mmm/ui/test/widget/input/package-summary.html">io.github.mmm.ui.test.widget.input</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Class</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="class-use/WritableRange.html#io.github.mmm.ui.test.widget.input">WritableRange</a></th>
+<td class="colLast">
+<div class="block">A mutable <a href="Range.html" title="interface in io.github.mmm.base.range"><code>Range</code></a> allowing to <a href="WritableRange.html#setMin(V)"><code>set minimum</code></a> and <a href="WritableRange.html#setMax(V)"><code>maximum</code></a>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a id="io.github.mmm.ui.tvm.widget.input">
+<!--   -->
+</a>
+<table class="useSummary">
+<caption><span>Classes in <a href="package-summary.html">io.github.mmm.base.range</a> used by <a href="../../../../../../io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/input/package-summary.html">io.github.mmm.ui.tvm.widget.input</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Class</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="class-use/WritableRange.html#io.github.mmm.ui.tvm.widget.input">WritableRange</a></th>
+<td class="colLast">
+<div class="block">A mutable <a href="Range.html" title="interface in io.github.mmm.base.range"><code>Range</code></a> allowing to <a href="WritableRange.html#setMin(V)"><code>set minimum</code></a> and <a href="WritableRange.html#setMax(V)"><code>maximum</code></a>.</div>
 </td>
 </tr>
 </tbody>

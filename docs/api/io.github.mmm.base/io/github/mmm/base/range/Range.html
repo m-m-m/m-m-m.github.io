@@ -26,8 +26,8 @@
     catch(err) {
     }
 //-->
-var data = {"i0":18,"i1":6,"i2":6,"i3":18};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
+var data = {"i0":18,"i1":18,"i2":18,"i3":6,"i4":6,"i5":1};
+var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -128,16 +128,20 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd><code>V</code> - type of the contained values.</dd>
 </dl>
 <dl>
+<dt>All Known Subinterfaces:</dt>
+<dd><code><a href="WritableRange.html" title="interface in io.github.mmm.base.range">WritableRange</a>&lt;V&gt;</code></dd>
+</dl>
+<dl>
 <dt>All Known Implementing Classes:</dt>
-<dd><code><a href="GenericRange.html" title="class in io.github.mmm.base.range">GenericRange</a></code>, <code><a href="NumberRange.html" title="class in io.github.mmm.base.range">NumberRange</a></code></dd>
+<dd><code><a href="AbstractRange.html" title="class in io.github.mmm.base.range">AbstractRange</a></code>, <code><a href="NumberRangeType.html" title="class in io.github.mmm.base.range">NumberRangeType</a></code>, <code><a href="../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/range/NumericRange.html" title="class in io.github.mmm.ui.spi.range">NumericRange</a></code>, <code><a href="RangeType.html" title="class in io.github.mmm.base.range">RangeType</a></code></dd>
 </dl>
 <hr>
 <pre>public interface <span class="typeNameLabel">Range&lt;V&gt;</span></pre>
 <div class="block">This class represents a range from <a href="#getMin()"><code>minimum</code></a> to <a href="#getMax()"><code>maximum</code></a>. Implementations shall
  validate at construction so a given <a href="Range.html" title="interface in io.github.mmm.base.range"><code>Range</code></a> should always be valid. <br>
  <b>ATTENTION:</b><br>
- The <a href="#getMin()"><code>minimum</code></a> and <a href="#getMax()"><code>maximum</code></a> may be <code>null</code> for unbounded ranges. It is still
- recommended to use fixed bounds such as <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html?is-external=true#MAX_VALUE" title="class or interface in java.lang" class="externalLink"><code>Long.MAX_VALUE</code></a>. However, for types such as
+ The <a href="#getMin()"><code>minimum</code></a> and <a href="#getMax()"><code>maximum</code></a> may be <code>null</code> for <a href="#unbounded()"><code>unbounded
+ ranges</code></a>. It is still recommended to use fixed bounds such as <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html?is-external=true#MAX_VALUE" title="class or interface in java.lang" class="externalLink"><code>Long.MAX_VALUE</code></a>. However, for types such as
  <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink"><code>BigDecimal</code></a> this is not possible.</div>
 <dl>
 <dt><span class="simpleTagLabel">Since:</span></dt>
@@ -164,17 +168,66 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>static char</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#BOUND_END_EXCLUSIVE">BOUND_END_EXCLUSIVE</a></span></code></th>
+<td class="colLast">
+<div class="block">Char indicating end with exclusive maximum.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static char</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#BOUND_END_INCLUSIVE">BOUND_END_INCLUSIVE</a></span></code></th>
+<td class="colLast">
+<div class="block">Char indicating end with inclusive maximum.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static char</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#BOUND_SEPARATOR">BOUND_SEPARATOR</a></span></code></th>
+<td class="colLast">
+<div class="block">Char to separate minimum and maximum.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static char</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#BOUND_START_EXCLUSIVE">BOUND_START_EXCLUSIVE</a></span></code></th>
+<td class="colLast">
+<div class="block">Char indicating start with exclusive minimum.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static char</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#BOUND_START_INCLUSIVE">BOUND_START_INCLUSIVE</a></span></code></th>
+<td class="colLast">
+<div class="block">Char indicating start with inclusive minimum.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>static <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#MAX_UNBOUND">MAX_UNBOUND</a></span></code></th>
 <td class="colLast">
 <div class="block">The unbound maximum.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#MIN_UNBOUND">MIN_UNBOUND</a></span></code></th>
 <td class="colLast">
 <div class="block">The unbound minimum.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#PROPERTY_MAX">PROPERTY_MAX</a></span></code></th>
+<td class="colLast">
+<div class="block">Property name of <a href="#getMax()"><code>getMax()</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#PROPERTY_MIN">PROPERTY_MIN</a></span></code></th>
+<td class="colLast">
+<div class="block">Property name of <a href="#getMin()"><code>getMin()</code></a>.</div>
 </td>
 </tr>
 </table>
@@ -189,34 +242,47 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t5" class="tableTab"><span><a href="javascript:show(16);">Default Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t5" class="tableTab"><span><a href="javascript:show(16);">Default Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colSecond" scope="col">Method</th>
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>default <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html?is-external=true" title="class or interface in java.util" class="externalLink">Comparator</a>&lt;? super <a href="Range.html" title="type parameter in Range">V</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getComparator()">getComparator</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colFirst"><code>default <a href="Range.html" title="type parameter in Range">V</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#clip(V)">clip</a></span>&#8203;(<a href="Range.html" title="type parameter in Range">V</a>&nbsp;value)</code></th>
+<td class="colLast">
+<div class="block">This method clips the given <code>value</code> so the result is <a href="#contains(V)"><code>contained</code></a> in this
+ <a href="Range.html" title="interface in io.github.mmm.base.range"><code>Range</code></a> unless the given <code>value</code> is <code>null</code>.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="Range.html" title="type parameter in Range">V</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getMax()">getMax</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="Range.html" title="type parameter in Range">V</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getMin()">getMin</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i3" class="rowColor">
 <td class="colFirst"><code>default boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isContained(V)">isContained</a></span>&#8203;(<a href="Range.html" title="type parameter in Range">V</a>&nbsp;value)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#contains(V)">contains</a></span>&#8203;(<a href="Range.html" title="type parameter in Range">V</a>&nbsp;value)</code></th>
 <td class="colLast">
 <div class="block">This method determines if the given <code>value</code> is within this <a href="Range.html" title="interface in io.github.mmm.base.range"><code>Range</code></a> from <a href="#getMin()"><code>minimum</code></a> to
  <a href="#getMax()"><code>maximum</code></a>.</div>
 </td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>default <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html?is-external=true" title="class or interface in java.util" class="externalLink">Comparator</a>&lt;? super <a href="Range.html" title="type parameter in Range">V</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getComparator()">getComparator</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="Range.html" title="type parameter in Range">V</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getMax()">getMax</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="Range.html" title="type parameter in Range">V</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getMin()">getMin</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>static &lt;T&gt;&nbsp;<a href="Range.html" title="interface in io.github.mmm.base.range">Range</a>&lt;T&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#unbounded()">unbounded</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -235,6 +301,78 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!--   -->
 </a>
 <h3>Field Detail</h3>
+<a id="BOUND_START_INCLUSIVE">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>BOUND_START_INCLUSIVE</h4>
+<pre>static final&nbsp;char BOUND_START_INCLUSIVE</pre>
+<div class="block">Char indicating start with inclusive minimum.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../constant-values.html#io.github.mmm.base.range.Range.BOUND_START_INCLUSIVE">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a id="BOUND_START_EXCLUSIVE">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>BOUND_START_EXCLUSIVE</h4>
+<pre>static final&nbsp;char BOUND_START_EXCLUSIVE</pre>
+<div class="block">Char indicating start with exclusive minimum.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../constant-values.html#io.github.mmm.base.range.Range.BOUND_START_EXCLUSIVE">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a id="BOUND_END_INCLUSIVE">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>BOUND_END_INCLUSIVE</h4>
+<pre>static final&nbsp;char BOUND_END_INCLUSIVE</pre>
+<div class="block">Char indicating end with inclusive maximum.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../constant-values.html#io.github.mmm.base.range.Range.BOUND_END_INCLUSIVE">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a id="BOUND_END_EXCLUSIVE">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>BOUND_END_EXCLUSIVE</h4>
+<pre>static final&nbsp;char BOUND_END_EXCLUSIVE</pre>
+<div class="block">Char indicating end with exclusive maximum.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../constant-values.html#io.github.mmm.base.range.Range.BOUND_END_EXCLUSIVE">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a id="BOUND_SEPARATOR">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>BOUND_SEPARATOR</h4>
+<pre>static final&nbsp;char BOUND_SEPARATOR</pre>
+<div class="block">Char to separate minimum and maximum. Mathematical convention would be to use a comma (','), but this causes
+ problems when parsing <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang" class="externalLink"><code>string representations</code></a> as a comma may also occur in the minimum or
+ maximum value.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../constant-values.html#io.github.mmm.base.range.Range.BOUND_SEPARATOR">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
 <a id="MIN_UNBOUND">
 <!--   -->
 </a>
@@ -252,7 +390,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <a id="MAX_UNBOUND">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>MAX_UNBOUND</h4>
 <pre>static final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> MAX_UNBOUND</pre>
@@ -260,6 +398,34 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../../constant-values.html#io.github.mmm.base.range.Range.MAX_UNBOUND">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a id="PROPERTY_MIN">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>PROPERTY_MIN</h4>
+<pre>static final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> PROPERTY_MIN</pre>
+<div class="block">Property name of <a href="#getMin()"><code>getMin()</code></a>.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../constant-values.html#io.github.mmm.base.range.Range.PROPERTY_MIN">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a id="PROPERTY_MAX">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>PROPERTY_MAX</h4>
+<pre>static final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> PROPERTY_MAX</pre>
+<div class="block">Property name of <a href="#getMax()"><code>getMax()</code></a>.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../constant-values.html#io.github.mmm.base.range.Range.PROPERTY_MAX">Constant Field Values</a></dd>
 </dl>
 </li>
 </ul>
@@ -316,15 +482,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 </li>
 </ul>
-<a id="isContained(java.lang.Object)">
+<a id="contains(java.lang.Object)">
 <!--   -->
-</a><a id="isContained(V)">
+</a><a id="contains(V)">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
-<h4>isContained</h4>
-<pre class="methodSignature">default&nbsp;boolean&nbsp;isContained&#8203;(<a href="Range.html" title="type parameter in Range">V</a>&nbsp;value)</pre>
+<h4>contains</h4>
+<pre class="methodSignature">default&nbsp;boolean&nbsp;contains&#8203;(<a href="Range.html" title="type parameter in Range">V</a>&nbsp;value)</pre>
 <div class="block">This method determines if the given <code>value</code> is within this <a href="Range.html" title="interface in io.github.mmm.base.range"><code>Range</code></a> from <a href="#getMin()"><code>minimum</code></a> to
  <a href="#getMax()"><code>maximum</code></a>.</div>
 <dl>
@@ -334,6 +500,42 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd><code>true</code> if contained (<a href="#getMin()"><code>minimum</code></a> &lt;= <code>value</code> &gt;=
          <a href="#getMax()"><code>maximum</code></a>), <code>false</code> otherwise. If the given value is <code>null</code>, <code>false</code> will
          be returned.</dd>
+</dl>
+</li>
+</ul>
+<a id="clip(java.lang.Object)">
+<!--   -->
+</a><a id="clip(V)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>clip</h4>
+<pre class="methodSignature">default&nbsp;<a href="Range.html" title="type parameter in Range">V</a>&nbsp;clip&#8203;(<a href="Range.html" title="type parameter in Range">V</a>&nbsp;value)</pre>
+<div class="block">This method clips the given <code>value</code> so the result is <a href="#contains(V)"><code>contained</code></a> in this
+ <a href="Range.html" title="interface in io.github.mmm.base.range"><code>Range</code></a> unless the given <code>value</code> is <code>null</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>value</code> - is the vale to clip. May be <code>null</code>.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the given <code>value</code> clipped to this range. If the given <code>value</code> is less than the <a href="#getMin()"><code>minimum</code></a>, that <a href="#getMin()"><code>minimum</code></a> will be returned. If the given <code>value</code> is greater than the
+         <a href="#getMax()"><code>maximum</code></a>, that <a href="#getMax()"><code>maximum</code></a> will be returned. Otherwise the given
+         <code>value</code> is returned.</dd>
+</dl>
+</li>
+</ul>
+<a id="unbounded()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>unbounded</h4>
+<pre class="methodSignature">static&nbsp;&lt;T&gt;&nbsp;<a href="Range.html" title="interface in io.github.mmm.base.range">Range</a>&lt;T&gt;&nbsp;unbounded()</pre>
+<dl>
+<dt><span class="paramLabel">Type Parameters:</span></dt>
+<dd><code>T</code> - type of the <a href="#contains(V)"><code>contained value</code></a>.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the unbounded <a href="Range.html" title="interface in io.github.mmm.base.range"><code>Range</code></a> instance (with <a href="#getMin()"><code>getMin()</code></a> and <a href="#getMax()"><code>getMax()</code></a> being <code>null</code>).</dd>
 </dl>
 </li>
 </ul>

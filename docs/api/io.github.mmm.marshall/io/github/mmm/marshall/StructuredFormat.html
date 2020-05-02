@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":18,"i1":6,"i2":18,"i3":18,"i4":6};
+var data = {"i0":18,"i1":6,"i2":18,"i3":18,"i4":18,"i5":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -161,16 +161,21 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code>default <a href="StructuredReader.html" title="interface in io.github.mmm.marshall">StructuredReader</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#reader(java.lang.String)">reader</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;result)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>default <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#write(io.github.mmm.marshall.MarshallableObject)">write</a></span>&#8203;(<a href="MarshallableObject.html" title="interface in io.github.mmm.marshall">MarshallableObject</a>&nbsp;object)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>default <a href="StructuredWriter.html" title="interface in io.github.mmm.marshall">StructuredWriter</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#writer(java.io.OutputStream)">writer</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/OutputStream.html?is-external=true" title="class or interface in java.io" class="externalLink">OutputStream</a>&nbsp;out)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="StructuredWriter.html" title="interface in io.github.mmm.marshall">StructuredWriter</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#writer(java.io.Writer)">writer</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Writer.html?is-external=true" title="class or interface in java.io" class="externalLink">Writer</a>&nbsp;writer)</code></th>
 <td class="colLast">&nbsp;</td>
@@ -203,7 +208,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>reader</code> - the <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html?is-external=true" title="class or interface in java.io" class="externalLink"><code>Reader</code></a> pointing to the structured data to read and parse.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the wrapped <a href="StructuredReader.html" title="interface in io.github.mmm.marshall"><code>StructuredReader</code></a>.</dd>
+<dd>the <a href="StructuredReader.html" title="interface in io.github.mmm.marshall"><code>StructuredReader</code></a>.</dd>
 </dl>
 </li>
 </ul>
@@ -218,7 +223,22 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>in</code> - the <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStream.html?is-external=true" title="class or interface in java.io" class="externalLink"><code>InputStream</code></a> pointing to the structured data to read (in UTF-8) and parse.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the wrapped <a href="StructuredReader.html" title="interface in io.github.mmm.marshall"><code>StructuredReader</code></a>.</dd>
+<dd>the <a href="StructuredReader.html" title="interface in io.github.mmm.marshall"><code>StructuredReader</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="reader(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>reader</h4>
+<pre class="methodSignature">default&nbsp;<a href="StructuredReader.html" title="interface in io.github.mmm.marshall">StructuredReader</a>&nbsp;reader&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;result)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>result</code> - the structured data as <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>String</code></a>.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the <a href="StructuredReader.html" title="interface in io.github.mmm.marshall"><code>StructuredReader</code></a>.</dd>
 </dl>
 </li>
 </ul>
