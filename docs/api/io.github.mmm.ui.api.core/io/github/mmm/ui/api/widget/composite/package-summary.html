@@ -115,7 +115,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tr class="altColor">
 <th class="colFirst" scope="row"><a href="UiCollapsibleComposite.html" title="interface in io.github.mmm.ui.api.widget.composite">UiCollapsibleComposite</a>&lt;C extends <a href="../UiWidget.html" title="interface in io.github.mmm.ui.api.widget">UiWidget</a>&gt;</th>
 <td class="colLast">
-<div class="block"><a href="UiMutableComposite.html" title="interface in io.github.mmm.ui.api.widget.composite"><code>UiMutableComposite</code></a> that allows to <a href="../../attribute/AttributeWriteCollapsible.html#setCollapsed(boolean)"><code>collapse and expand</code></a> its
+<div class="block"><a href="UiMutableComposite.html" title="interface in io.github.mmm.ui.api.widget.composite"><code>UiMutableComposite</code></a> that allows to <a href="../../attribute/AttributeWriteCollapsed.html#setCollapsed(boolean)"><code>collapse and expand</code></a> its
  <a href="UiComposite.html#getChild(int)"><code>children</code></a>.</div>
 </td>
 </tr>
@@ -134,8 +134,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tr class="rowColor">
 <th class="colFirst" scope="row"><a href="UiMutableComposite.html" title="interface in io.github.mmm.ui.api.widget.composite">UiMutableComposite</a>&lt;C extends <a href="../UiWidget.html" title="interface in io.github.mmm.ui.api.widget">UiWidget</a>&gt;</th>
 <td class="colLast">
-<div class="block"><a href="UiComposite.html" title="interface in io.github.mmm.ui.api.widget.composite"><code>UiComposite</code></a> that allows to <a href="UiMutableComposite.html#addChild(C)"><code>add</code></a> and <a href="UiMutableComposite.html#removeChild(C)"><code>remove</code></a> its
- children dynamically with no additional arguments (e.g.</div>
+<div class="block"><a href="UiComposite.html" title="interface in io.github.mmm.ui.api.widget.composite"><code>UiComposite</code></a> that allows to <a href="UiMutableComposite.html#addChild(C)"><code>add</code></a> and <a href="UiRemovableComposite.html#removeChild(C)"><code>remove</code></a> its
+ children dynamically.</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -145,27 +145,74 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="rowColor">
+<th class="colFirst" scope="row"><a href="UiRemovableComposite.html" title="interface in io.github.mmm.ui.api.widget.composite">UiRemovableComposite</a>&lt;C extends <a href="../UiWidget.html" title="interface in io.github.mmm.ui.api.widget">UiWidget</a>&gt;</th>
+<td class="colLast">
+<div class="block"><a href="UiComposite.html" title="interface in io.github.mmm.ui.api.widget.composite"><code>UiComposite</code></a> that allows to <a href="UiRemovableComposite.html#removeChild(C)"><code>remove</code></a> its children dynamically.</div>
+</td>
+</tr>
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="UiSingleComposite.html" title="interface in io.github.mmm.ui.api.widget.composite">UiSingleComposite</a>&lt;C extends <a href="../UiWidget.html" title="interface in io.github.mmm.ui.api.widget">UiWidget</a>&gt;</th>
 <td class="colLast">
 <div class="block"><a href="UiComposite.html" title="interface in io.github.mmm.ui.api.widget.composite"><code>UiComposite</code></a> that contains a single <a href="UiSingleComposite.html#getChild()"><code>child</code></a>.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="UiSlot.html" title="interface in io.github.mmm.ui.api.widget.composite">UiSlot</a></th>
 <td class="colLast">
 <div class="block"><a href="UiMutableSingleComposite.html" title="interface in io.github.mmm.ui.api.widget.composite"><code>Single composite widget</code></a> that represents a <code>slot</code>.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="UiSwitchComposite.html" title="interface in io.github.mmm.ui.api.widget.composite">UiSwitchComposite</a>&lt;C extends <a href="../UiWidget.html" title="interface in io.github.mmm.ui.api.widget">UiWidget</a>&gt;</th>
 <td class="colLast">
 <div class="block"><a href="UiMutableComposite.html" title="interface in io.github.mmm.ui.api.widget.composite"><code>UiMutableComposite</code></a> that only shows a single <a href="UiComposite.html#getChild(int)"><code>child</code></a> at a time.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="UiValuedComposite.html" title="interface in io.github.mmm.ui.api.widget.composite">UiValuedComposite</a>&lt;C extends <a href="../UiWidget.html" title="interface in io.github.mmm.ui.api.widget">UiWidget</a>,&#8203;V&gt;</th>
 <td class="colLast">
 <div class="block"><a href="UiMutableComposite.html" title="interface in io.github.mmm.ui.api.widget.composite"><code>UiMutableComposite</code></a> with <a href="../value/UiValidatableWidget.html" title="interface in io.github.mmm.ui.api.widget.value"><code>value and validation support</code></a>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList">
+<table class="typeSummary">
+<caption><span>Class Summary</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Class</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="UiCustomComposite.html" title="class in io.github.mmm.ui.api.widget.composite">UiCustomComposite</a>&lt;C extends <a href="../UiWidget.html" title="interface in io.github.mmm.ui.api.widget">UiWidget</a>,&#8203;W extends <a href="UiComposite.html" title="interface in io.github.mmm.ui.api.widget.composite">UiComposite</a>&lt;C&gt;&gt;</th>
+<td class="colLast">
+<div class="block"><a href="../AbstractUiCustomWidget.html" title="class in io.github.mmm.ui.api.widget"><code>AbstractUiCustomWidget</code></a> that is a <a href="UiComposite.html" title="interface in io.github.mmm.ui.api.widget.composite"><code>UiComposite</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="UiCustomMutableComposite.html" title="class in io.github.mmm.ui.api.widget.composite">UiCustomMutableComposite</a>&lt;C extends <a href="../UiWidget.html" title="interface in io.github.mmm.ui.api.widget">UiWidget</a>,&#8203;W extends <a href="UiMutableComposite.html" title="interface in io.github.mmm.ui.api.widget.composite">UiMutableComposite</a>&lt;C&gt;&gt;</th>
+<td class="colLast">
+<div class="block"><a href="../AbstractUiCustomWidget.html" title="class in io.github.mmm.ui.api.widget"><code>AbstractUiCustomWidget</code></a> that is a <a href="UiMutableComposite.html" title="interface in io.github.mmm.ui.api.widget.composite"><code>UiMutableComposite</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="UiCustomMutableSingleComposite.html" title="class in io.github.mmm.ui.api.widget.composite">UiCustomMutableSingleComposite</a>&lt;C extends <a href="../UiWidget.html" title="interface in io.github.mmm.ui.api.widget">UiWidget</a>,&#8203;W extends <a href="UiMutableSingleComposite.html" title="interface in io.github.mmm.ui.api.widget.composite">UiMutableSingleComposite</a>&lt;C&gt;&gt;</th>
+<td class="colLast">
+<div class="block"><a href="../AbstractUiCustomWidget.html" title="class in io.github.mmm.ui.api.widget"><code>AbstractUiCustomWidget</code></a> that is a <a href="UiMutableComposite.html" title="interface in io.github.mmm.ui.api.widget.composite"><code>UiMutableComposite</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="UiCustomRemovableComposite.html" title="class in io.github.mmm.ui.api.widget.composite">UiCustomRemovableComposite</a>&lt;C extends <a href="../UiWidget.html" title="interface in io.github.mmm.ui.api.widget">UiWidget</a>,&#8203;W extends <a href="UiRemovableComposite.html" title="interface in io.github.mmm.ui.api.widget.composite">UiRemovableComposite</a>&lt;C&gt;&gt;</th>
+<td class="colLast">
+<div class="block"><a href="UiCustomComposite.html" title="class in io.github.mmm.ui.api.widget.composite"><code>UiCustomComposite</code></a> that is a <a href="UiRemovableComposite.html" title="interface in io.github.mmm.ui.api.widget.composite"><code>UiRemovableComposite</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="UiCustomValuedComposite.html" title="class in io.github.mmm.ui.api.widget.composite">UiCustomValuedComposite</a>&lt;V,&#8203;C extends <a href="../UiWidget.html" title="interface in io.github.mmm.ui.api.widget">UiWidget</a>,&#8203;W extends <a href="UiValuedComposite.html" title="interface in io.github.mmm.ui.api.widget.composite">UiValuedComposite</a>&lt;C,&#8203;V&gt;&gt;</th>
+<td class="colLast">
+<div class="block"><a href="../AbstractUiCustomWidget.html" title="class in io.github.mmm.ui.api.widget"><code>AbstractUiCustomWidget</code></a> that is a <a href="UiValuedComposite.html" title="interface in io.github.mmm.ui.api.widget.composite"><code>UiValuedComposite</code></a>.</div>
 </td>
 </tr>
 </tbody>

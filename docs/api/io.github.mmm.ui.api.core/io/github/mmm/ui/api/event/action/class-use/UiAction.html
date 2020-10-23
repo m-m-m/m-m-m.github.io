@@ -111,20 +111,32 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<th class="colFirst" scope="row"><a href="#io.github.mmm.ui.api.controller.action">io.github.mmm.ui.api.controller.action</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="#io.github.mmm.ui.api.event.action">io.github.mmm.ui.api.event.action</a></th>
 <td class="colLast">
 <div class="block">Contains <a href="../UiAction.html" title="interface in io.github.mmm.ui.api.event.action"><code>UiAction</code></a> and its sub-interfaces for UI actions.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="#io.github.mmm.ui.api.notifier">io.github.mmm.ui.api.notifier</a></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="#io.github.mmm.ui.api.widget.button">io.github.mmm.ui.api.widget.button</a></th>
 <td class="colLast">
 <div class="block">Contains the API for all kind of button widgets such as <a href="../../../widget/button/UiButton.html" title="interface in io.github.mmm.ui.api.widget.button"><code>UiButton</code></a>.</div>
 </td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="#io.github.mmm.ui.api.widget.link">io.github.mmm.ui.api.widget.link</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="#io.github.mmm.ui.api.widget.menu">io.github.mmm.ui.api.widget.menu</a></th>
+<td class="colLast">&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -149,6 +161,30 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colSecond" scope="row"><span class="typeNameLabel">UiActionBinding.</span><code><span class="memberNameLink"><a href="../../../binding/UiActionBinding.html#bind(io.github.mmm.ui.api.event.action.UiAction,io.github.mmm.ui.api.widget.button.UiAbstractButton)">bind</a></span>&#8203;(<a href="../UiAction.html" title="interface in io.github.mmm.ui.api.event.action">UiAction</a>&nbsp;action,
     <a href="../../../widget/button/UiAbstractButton.html" title="interface in io.github.mmm.ui.api.widget.button">UiAbstractButton</a>&nbsp;button)</code></th>
 <td class="colLast">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
+<section role="region"><a id="io.github.mmm.ui.api.controller.action">
+<!--   -->
+</a>
+<h3>Uses of <a href="../UiAction.html" title="interface in io.github.mmm.ui.api.event.action">UiAction</a> in <a href="../../../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/action/package-summary.html">io.github.mmm.ui.api.controller.action</a></h3>
+<table class="useSummary">
+<caption><span>Subinterfaces of <a href="../UiAction.html" title="interface in io.github.mmm.ui.api.event.action">UiAction</a> in <a href="../../../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/action/package-summary.html">io.github.mmm.ui.api.controller.action</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Interface</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/action/UiActionNavigate.html" title="interface in io.github.mmm.ui.api.controller.action">UiActionNavigate</a></span></code></th>
+<td class="colLast">
+<div class="block"><a href="../UiAction.html" title="interface in io.github.mmm.ui.api.event.action"><code>UiAction</code></a> for <em>close</em>.</div>
+</td>
 </tr>
 </tbody>
 </table>
@@ -211,65 +247,79 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../UiActionDiscard.html" title="interface in io.github.mmm.ui.api.event.action">UiActionDiscard</a></span></code></th>
+<td class="colLast">
+<div class="block"><a href="../UiAction.html" title="interface in io.github.mmm.ui.api.event.action"><code>UiAction</code></a> for <em>cancel</em>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../UiActionEdit.html" title="interface in io.github.mmm.ui.api.event.action">UiActionEdit</a></span></code></th>
 <td class="colLast">
 <div class="block"><a href="../UiAction.html" title="interface in io.github.mmm.ui.api.event.action"><code>UiAction</code></a> for <em>edit</em>.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>interface&nbsp;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../UiActionNext.html" title="interface in io.github.mmm.ui.api.event.action">UiActionNext</a></span></code></th>
 <td class="colLast">
 <div class="block"><a href="../UiAction.html" title="interface in io.github.mmm.ui.api.event.action"><code>UiAction</code></a> for <em>edit</em>.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>interface&nbsp;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../UiActionNo.html" title="interface in io.github.mmm.ui.api.event.action">UiActionNo</a></span></code></th>
 <td class="colLast">
 <div class="block"><a href="../UiAction.html" title="interface in io.github.mmm.ui.api.event.action"><code>UiAction</code></a> for <em>no</em>.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>interface&nbsp;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../UiActionOk.html" title="interface in io.github.mmm.ui.api.event.action">UiActionOk</a></span></code></th>
 <td class="colLast">
 <div class="block"><a href="../UiAction.html" title="interface in io.github.mmm.ui.api.event.action"><code>UiAction</code></a> for <em>ok</em>.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>interface&nbsp;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../UiActionOpen.html" title="interface in io.github.mmm.ui.api.event.action">UiActionOpen</a></span></code></th>
 <td class="colLast">
 <div class="block"><a href="../UiAction.html" title="interface in io.github.mmm.ui.api.event.action"><code>UiAction</code></a> for <em>open</em>.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>interface&nbsp;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../UiActionPrevious.html" title="interface in io.github.mmm.ui.api.event.action">UiActionPrevious</a></span></code></th>
 <td class="colLast">
 <div class="block"><a href="../UiAction.html" title="interface in io.github.mmm.ui.api.event.action"><code>UiAction</code></a> for <em>edit</em>.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>interface&nbsp;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../UiActionRemove.html" title="interface in io.github.mmm.ui.api.event.action">UiActionRemove</a></span></code></th>
 <td class="colLast">
 <div class="block"><a href="../UiAction.html" title="interface in io.github.mmm.ui.api.event.action"><code>UiAction</code></a> for <em>edit</em>.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>interface&nbsp;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../UiActionReset.html" title="interface in io.github.mmm.ui.api.event.action">UiActionReset</a></span></code></th>
 <td class="colLast">
 <div class="block"><a href="../UiAction.html" title="interface in io.github.mmm.ui.api.event.action"><code>UiAction</code></a> for <em>reset</em>.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>interface&nbsp;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../UiActionSave.html" title="interface in io.github.mmm.ui.api.event.action">UiActionSave</a></span></code></th>
 <td class="colLast">
 <div class="block"><a href="../UiAction.html" title="interface in io.github.mmm.ui.api.event.action"><code>UiAction</code></a> for <em>save</em>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../UiActionSearch.html" title="interface in io.github.mmm.ui.api.event.action">UiActionSearch</a></span></code></th>
+<td class="colLast">
+<div class="block"><a href="../UiAction.html" title="interface in io.github.mmm.ui.api.event.action"><code>UiAction</code></a> for <em>search</em>.</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -354,6 +404,56 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tr class="altColor">
 <td class="colFirst"><code>static <a href="../../../widget/button/UiButton.html" title="interface in io.github.mmm.ui.api.widget.button">UiButton</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">UiButton.</span><code><span class="memberNameLink"><a href="../../../widget/button/UiButton.html#of(io.github.mmm.ui.api.event.action.UiAction)">of</a></span>&#8203;(<a href="../UiAction.html" title="interface in io.github.mmm.ui.api.event.action">UiAction</a>&nbsp;action)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
+<section role="region"><a id="io.github.mmm.ui.api.widget.link">
+<!--   -->
+</a>
+<h3>Uses of <a href="../UiAction.html" title="interface in io.github.mmm.ui.api.event.action">UiAction</a> in <a href="../../../widget/link/package-summary.html">io.github.mmm.ui.api.widget.link</a></h3>
+<table class="useSummary">
+<caption><span>Methods in <a href="../../../widget/link/package-summary.html">io.github.mmm.ui.api.widget.link</a> with parameters of type <a href="../UiAction.html" title="interface in io.github.mmm.ui.api.event.action">UiAction</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../widget/link/UiInternalLink.html" title="interface in io.github.mmm.ui.api.widget.link">UiInternalLink</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">UiInternalLink.</span><code><span class="memberNameLink"><a href="../../../widget/link/UiInternalLink.html#of(io.github.mmm.ui.api.event.action.UiAction)">of</a></span>&#8203;(<a href="../UiAction.html" title="interface in io.github.mmm.ui.api.event.action">UiAction</a>&nbsp;action)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
+<section role="region"><a id="io.github.mmm.ui.api.widget.menu">
+<!--   -->
+</a>
+<h3>Uses of <a href="../UiAction.html" title="interface in io.github.mmm.ui.api.event.action">UiAction</a> in <a href="../../../../../../../../../io.github.mmm.ui.api.menu/io/github/mmm/ui/api/widget/menu/package-summary.html">io.github.mmm.ui.api.widget.menu</a></h3>
+<table class="useSummary">
+<caption><span>Methods in <a href="../../../../../../../../../io.github.mmm.ui.api.menu/io/github/mmm/ui/api/widget/menu/package-summary.html">io.github.mmm.ui.api.widget.menu</a> with parameters of type <a href="../UiAction.html" title="interface in io.github.mmm.ui.api.event.action">UiAction</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>default <a href="../../../../../../../../../io.github.mmm.ui.api.menu/io/github/mmm/ui/api/widget/menu/UiMenuItem.html" title="interface in io.github.mmm.ui.api.widget.menu">UiMenuItem</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">UiAbstractMenuWithItems.</span><code><span class="memberNameLink"><a href="../../../../../../../../../io.github.mmm.ui.api.menu/io/github/mmm/ui/api/widget/menu/UiAbstractMenuWithItems.html#addItem(io.github.mmm.ui.api.event.action.UiAction)">addItem</a></span>&#8203;(<a href="../UiAction.html" title="interface in io.github.mmm.ui.api.event.action">UiAction</a>&nbsp;action)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>default <a href="../../../../../../../../../io.github.mmm.ui.api.menu/io/github/mmm/ui/api/widget/menu/UiMenuItem.html" title="interface in io.github.mmm.ui.api.widget.menu">UiMenuItem</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">UiAbstractMenuWithItems.</span><code><span class="memberNameLink"><a href="../../../../../../../../../io.github.mmm.ui.api.menu/io/github/mmm/ui/api/widget/menu/UiAbstractMenuWithItems.html#addItem(io.github.mmm.ui.api.event.action.UiAction,int)">addItem</a></span>&#8203;(<a href="../UiAction.html" title="interface in io.github.mmm.ui.api.event.action">UiAction</a>&nbsp;action,
+       int&nbsp;index)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </tbody>

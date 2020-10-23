@@ -133,13 +133,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadLanguage.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadLanguage</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadMimetype.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadMimetype</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadSource.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadSource</a></code></dd>
+<dd><code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadLanguage.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadLanguage</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadMimetype.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadMimetype</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadUrl.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadUrl</a></code></dd>
 </dl>
 <hr>
 <pre>public final class <span class="typeNameLabel">UiMediaSource</span>
 extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>
-implements <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadSource.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadSource</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadMimetype.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadMimetype</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadLanguage.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadLanguage</a></pre>
-<div class="block">Datatype representing a single source of a <a href="UiMedia.html" title="interface in io.github.mmm.ui.api.datatype.media"><code>UiMedia</code></a>. It <a href="#getSource()"><code>points</code></a> to the actual content.</div>
+implements <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadUrl.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadUrl</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadMimetype.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadMimetype</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadLanguage.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadLanguage</a></pre>
+<div class="block">Datatype representing a single source of a <a href="UiMedia.html" title="interface in io.github.mmm.ui.api.datatype.media"><code>UiMedia</code></a>. It <a href="#getUrl()"><code>points</code></a> to the actual content.</div>
 <dl>
 <dt><span class="simpleTagLabel">Since:</span></dt>
 <dd>1.0.0</dd>
@@ -181,14 +181,14 @@ implements <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.String,java.lang.String)">UiMediaSource</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;source,
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.String,java.lang.String)">UiMediaSource</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;url,
              <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;mimetype)</code></th>
 <td class="colLast">
 <div class="block">The constructor.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String)">UiMediaSource</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;source,
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String)">UiMediaSource</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;url,
              <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;mimetype,
              <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;language)</code></th>
 <td class="colLast">
@@ -225,7 +225,7 @@ implements <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSource()">getSource</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getUrl()">getUrl</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -258,12 +258,12 @@ implements <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/
 <ul class="blockList">
 <li class="blockList">
 <h4>UiMediaSource</h4>
-<pre>public&nbsp;UiMediaSource&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;source,
+<pre>public&nbsp;UiMediaSource&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;url,
                      <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;mimetype)</pre>
 <div class="block">The constructor.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>source</code> - the <a href="#getSource()"><code>source</code></a>.</dd>
+<dd><code>url</code> - the <a href="#getUrl()"><code>URL</code></a>.</dd>
 <dd><code>mimetype</code> - the <a href="#getMimetype()"><code>mimetype</code></a>.</dd>
 </dl>
 </li>
@@ -274,13 +274,13 @@ implements <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/
 <ul class="blockListLast">
 <li class="blockList">
 <h4>UiMediaSource</h4>
-<pre>public&nbsp;UiMediaSource&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;source,
+<pre>public&nbsp;UiMediaSource&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;url,
                      <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;mimetype,
                      <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;language)</pre>
 <div class="block">The constructor.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>source</code> - the <a href="#getSource()"><code>source</code></a>.</dd>
+<dd><code>url</code> - the <a href="#getUrl()"><code>URL</code></a>.</dd>
 <dd><code>mimetype</code> - the <a href="#getMimetype()"><code>mimetype</code></a>.</dd>
 <dd><code>language</code> - the <a href="#getLanguage()"><code>language</code></a>.</dd>
 </dl>
@@ -296,19 +296,18 @@ implements <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="getSource()">
+<a id="getUrl()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getSource</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getSource()</pre>
+<h4>getUrl</h4>
+<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getUrl()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadSource.html#getSource()">getSource</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadSource.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadSource</a></code></dd>
+<dd><code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadUrl.html#getUrl()">getUrl</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadUrl.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadUrl</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the source to external data. The value may be an absolute URL or a path relative to the current location
-         (base URL).</dd>
+<dd>the source to external data as URL or URI.</dd>
 </dl>
 </li>
 </ul>

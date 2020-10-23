@@ -144,7 +144,7 @@ implements <a href="../BeanFactory.html" title="interface in io.github.mmm.bean"
 <dt><span class="simpleTagLabel">Since:</span></dt>
 <dd>1.0.0</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="#create(java.lang.Class,io.github.mmm.bean.AbstractBean,boolean)"><code>create(Class, AbstractBean, boolean)</code></a></dd>
+<dd><a href="#doCreate(java.lang.Class)"><code>doCreate(Class)</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -197,9 +197,7 @@ implements <a href="../BeanFactory.html" title="interface in io.github.mmm.bean"
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>static &lt;B extends <a href="../AbstractBean.html" title="class in io.github.mmm.bean">AbstractBean</a>&gt;<br>B</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#create(java.lang.Class,io.github.mmm.bean.AbstractBean,boolean)">create</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;B&gt;&nbsp;type,
-      <a href="../AbstractBean.html" title="class in io.github.mmm.bean">AbstractBean</a>&nbsp;writableBean,
-      boolean&nbsp;dynamicFlag)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#doCreate(java.lang.Class)">doCreate</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;B&gt;&nbsp;type)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -276,23 +274,19 @@ implements <a href="../BeanFactory.html" title="interface in io.github.mmm.bean"
 </dl>
 </li>
 </ul>
-<a id="create(java.lang.Class,io.github.mmm.bean.AbstractBean,boolean)">
+<a id="doCreate(java.lang.Class)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>create</h4>
-<pre class="methodSignature">public static&nbsp;&lt;B extends <a href="../AbstractBean.html" title="class in io.github.mmm.bean">AbstractBean</a>&gt;&nbsp;B&nbsp;create&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;B&gt;&nbsp;type,
-                                                <a href="../AbstractBean.html" title="class in io.github.mmm.bean">AbstractBean</a>&nbsp;writableBean,
-                                                boolean&nbsp;dynamicFlag)
-                                         throws <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ReflectiveOperationException.html?is-external=true" title="class or interface in java.lang" class="externalLink">ReflectiveOperationException</a></pre>
+<h4>doCreate</h4>
+<pre class="methodSignature">public static&nbsp;&lt;B extends <a href="../AbstractBean.html" title="class in io.github.mmm.bean">AbstractBean</a>&gt;&nbsp;B&nbsp;doCreate&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;B&gt;&nbsp;type)
+                                           throws <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ReflectiveOperationException.html?is-external=true" title="class or interface in java.lang" class="externalLink">ReflectiveOperationException</a></pre>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
 <dd><code>B</code> - type of <a href="../AbstractBean.html" title="class in io.github.mmm.bean"><code>AbstractBean</code></a>.</dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>type</code> - <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Class</code></a> of <a href="../AbstractBean.html" title="class in io.github.mmm.bean"><code>AbstractBean</code></a>.</dd>
-<dd><code>writableBean</code> - the <a href="../AbstractBean.html" title="class in io.github.mmm.bean"><code>AbstractBean</code></a> to create a <a href="../AbstractBean.html#getReadOnly()"><code>read-only</code></a> copy of.</dd>
-<dd><code>dynamicFlag</code> - the <a href="../AbstractBean.html#isDynamic()"><code>dynamic flag</code></a>.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the new bean instance.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>

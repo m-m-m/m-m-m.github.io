@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":18,"i1":6,"i2":18,"i3":18,"i4":18};
+var data = {"i0":18,"i1":18,"i2":6,"i3":18,"i4":18,"i5":18};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -129,7 +129,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 <dl>
 <dt>All Known Subinterfaces:</dt>
-<dd><code><a href="UiActionApply.html" title="interface in io.github.mmm.ui.api.event.action">UiActionApply</a></code>, <code><a href="UiActionApprove.html" title="interface in io.github.mmm.ui.api.event.action">UiActionApprove</a></code>, <code><a href="UiActionCancel.html" title="interface in io.github.mmm.ui.api.event.action">UiActionCancel</a></code>, <code><a href="UiActionClose.html" title="interface in io.github.mmm.ui.api.event.action">UiActionClose</a></code>, <code><a href="UiActionConfirm.html" title="interface in io.github.mmm.ui.api.event.action">UiActionConfirm</a></code>, <code><a href="UiActionDelete.html" title="interface in io.github.mmm.ui.api.event.action">UiActionDelete</a></code>, <code><a href="UiActionEdit.html" title="interface in io.github.mmm.ui.api.event.action">UiActionEdit</a></code>, <code><a href="UiActionNext.html" title="interface in io.github.mmm.ui.api.event.action">UiActionNext</a></code>, <code><a href="UiActionNo.html" title="interface in io.github.mmm.ui.api.event.action">UiActionNo</a></code>, <code><a href="UiActionOk.html" title="interface in io.github.mmm.ui.api.event.action">UiActionOk</a></code>, <code><a href="UiActionOpen.html" title="interface in io.github.mmm.ui.api.event.action">UiActionOpen</a></code>, <code><a href="UiActionPrevious.html" title="interface in io.github.mmm.ui.api.event.action">UiActionPrevious</a></code>, <code><a href="UiActionRemove.html" title="interface in io.github.mmm.ui.api.event.action">UiActionRemove</a></code>, <code><a href="UiActionReset.html" title="interface in io.github.mmm.ui.api.event.action">UiActionReset</a></code>, <code><a href="UiActionSave.html" title="interface in io.github.mmm.ui.api.event.action">UiActionSave</a></code>, <code><a href="UiActionSubmit.html" title="interface in io.github.mmm.ui.api.event.action">UiActionSubmit</a></code>, <code><a href="UiActionYes.html" title="interface in io.github.mmm.ui.api.event.action">UiActionYes</a></code></dd>
+<dd><code><a href="UiActionApply.html" title="interface in io.github.mmm.ui.api.event.action">UiActionApply</a></code>, <code><a href="UiActionApprove.html" title="interface in io.github.mmm.ui.api.event.action">UiActionApprove</a></code>, <code><a href="UiActionCancel.html" title="interface in io.github.mmm.ui.api.event.action">UiActionCancel</a></code>, <code><a href="UiActionClose.html" title="interface in io.github.mmm.ui.api.event.action">UiActionClose</a></code>, <code><a href="UiActionConfirm.html" title="interface in io.github.mmm.ui.api.event.action">UiActionConfirm</a></code>, <code><a href="UiActionDelete.html" title="interface in io.github.mmm.ui.api.event.action">UiActionDelete</a></code>, <code><a href="UiActionDiscard.html" title="interface in io.github.mmm.ui.api.event.action">UiActionDiscard</a></code>, <code><a href="UiActionEdit.html" title="interface in io.github.mmm.ui.api.event.action">UiActionEdit</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/action/UiActionNavigate.html" title="interface in io.github.mmm.ui.api.controller.action">UiActionNavigate</a></code>, <code><a href="UiActionNext.html" title="interface in io.github.mmm.ui.api.event.action">UiActionNext</a></code>, <code><a href="UiActionNo.html" title="interface in io.github.mmm.ui.api.event.action">UiActionNo</a></code>, <code><a href="UiActionOk.html" title="interface in io.github.mmm.ui.api.event.action">UiActionOk</a></code>, <code><a href="UiActionOpen.html" title="interface in io.github.mmm.ui.api.event.action">UiActionOpen</a></code>, <code><a href="UiActionPrevious.html" title="interface in io.github.mmm.ui.api.event.action">UiActionPrevious</a></code>, <code><a href="UiActionRemove.html" title="interface in io.github.mmm.ui.api.event.action">UiActionRemove</a></code>, <code><a href="UiActionReset.html" title="interface in io.github.mmm.ui.api.event.action">UiActionReset</a></code>, <code><a href="UiActionSave.html" title="interface in io.github.mmm.ui.api.event.action">UiActionSave</a></code>, <code><a href="UiActionSearch.html" title="interface in io.github.mmm.ui.api.event.action">UiActionSearch</a></code>, <code><a href="UiActionSubmit.html" title="interface in io.github.mmm.ui.api.event.action">UiActionSubmit</a></code>, <code><a href="UiActionYes.html" title="interface in io.github.mmm.ui.api.event.action">UiActionYes</a></code></dd>
 </dl>
 <hr>
 <pre>public interface <span class="typeNameLabel">UiAction</span>
@@ -171,21 +171,26 @@ extends <a href="../UiEventListener.html" title="interface in io.github.mmm.ui.a
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>default <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getIconId()">getIconId</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getId()">getId</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>default <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getLabel()">getLabel</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>default <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getTooltip()">getTooltip</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>default boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#requireConfirmation()">requireConfirmation</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
@@ -251,6 +256,20 @@ extends <a href="../UiEventListener.html" title="interface in io.github.mmm.ui.a
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the custom tooltip for this action. If <code>null</code> the tooltip will be derived from <a href="#getId()"><code>ID</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="getIconId()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getIconId</h4>
+<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getIconId()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the custom <a href="../../widget/img/UiIcon.html#getIconId()"><code>icon ID</code></a> for this action. If
+         <code>null</code> typically no icon is used, but it may be derived from <a href="#getId()"><code>ID</code></a> via localization.</dd>
 </dl>
 </li>
 </ul>

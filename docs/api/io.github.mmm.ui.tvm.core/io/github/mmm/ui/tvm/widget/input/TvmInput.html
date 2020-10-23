@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":6,"i22":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":6,"i29":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -133,7 +133,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li><a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidgetWrapper.html" title="class in io.github.mmm.ui.spi.widget">io.github.mmm.ui.spi.widget.AbstractUiNativeWidgetWrapper</a>&lt;W&gt;</li>
 <li>
 <ul class="inheritance">
-<li><a href="../TvmWidgetJsObject.html" title="class in io.github.mmm.ui.tvm.widget">io.github.mmm.ui.tvm.widget.TvmWidgetJsObject</a>&lt;W&gt;</li>
+<li><a href="../TvmWidget.html" title="class in io.github.mmm.ui.tvm.widget">io.github.mmm.ui.tvm.widget.TvmWidget</a>&lt;W&gt;</li>
 <li>
 <ul class="inheritance">
 <li><a href="../TvmWidgetHtmlElement.html" title="class in io.github.mmm.ui.tvm.widget">io.github.mmm.ui.tvm.widget.TvmWidgetHtmlElement</a>&lt;W&gt;</li>
@@ -163,16 +163,16 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
-<dd><code>W</code> - type of <a href="../TvmWidgetJsObject.html#getWidget()"><code>TeaVM widget</code></a>.</dd>
+<dd><code>W</code> - type of <a href="../TvmWidget.html#getWidget()"><code>TeaVM widget</code></a>.</dd>
 <dd><code>V</code> - type of <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#getValue()"><code>value</code></a>.</dd>
 </dl>
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../../../../../../../../io.github.mmm.event/io/github/mmm/event/EventSource.html" title="interface in io.github.mmm.event">EventSource</a>&lt;<a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/event/UiEvent.html" title="class in io.github.mmm.ui.api.event">UiEvent</a>,&#8203;<a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/event/UiEventListener.html" title="interface in io.github.mmm.ui.api.event">UiEventListener</a>&gt;</code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadId.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadId</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadValid.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadValid</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadValue.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadValue</a>&lt;V&gt;</code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadVisible.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadVisible</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteAutocomplete.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteAutocomplete</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteId.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteId</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteTooltip.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteTooltip</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteValidationFailure.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteValidationFailure</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteValue.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteValue</a>&lt;V&gt;</code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteValueForUser.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteValueForUser</a>&lt;V&gt;</code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteVisible.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteVisible</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/input/UiAbstractInput.html" title="interface in io.github.mmm.ui.api.widget.input">UiAbstractInput</a>&lt;V&gt;</code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/input/UiInput.html" title="interface in io.github.mmm.ui.api.widget.input">UiInput</a>&lt;V&gt;</code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiActiveWidget.html" title="interface in io.github.mmm.ui.api.widget">UiActiveWidget</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiAtomicWidget.html" title="interface in io.github.mmm.ui.api.widget">UiAtomicWidget</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiNativeWidget.html" title="interface in io.github.mmm.ui.api.widget">UiNativeWidget</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiRegularWidget.html" title="interface in io.github.mmm.ui.api.widget">UiRegularWidget</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html" title="interface in io.github.mmm.ui.api.widget">UiWidget</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html" title="interface in io.github.mmm.ui.api.widget.value">UiValidatableWidget</a>&lt;V&gt;</code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValuedWidget.html" title="interface in io.github.mmm.ui.api.widget.value">UiValuedWidget</a>&lt;V&gt;</code>, <code><a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/UiNativeWidgetWrapper.html" title="interface in io.github.mmm.ui.spi.widget">UiNativeWidgetWrapper</a>&lt;W&gt;</code></dd>
+<dd><code><a href="../../../../../../../../io.github.mmm.event/io/github/mmm/event/EventSource.html" title="interface in io.github.mmm.event">EventSource</a>&lt;<a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/event/UiEvent.html" title="class in io.github.mmm.ui.api.event">UiEvent</a>,&#8203;<a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/event/UiEventListener.html" title="interface in io.github.mmm.ui.api.event">UiEventListener</a>&gt;</code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadEnabled.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadEnabled</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadId.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadId</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadValid.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadValid</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadValue.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadValue</a>&lt;V&gt;</code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadVisible.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadVisible</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteAutocomplete.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteAutocomplete</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteEnabled.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteEnabled</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteId.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteId</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWritePrefix.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWritePrefix</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteReadOnly.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteReadOnly</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteSuffix.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteSuffix</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteTooltip.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteTooltip</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteValidationFailure.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteValidationFailure</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteValue.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteValue</a>&lt;V&gt;</code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteValueForUser.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteValueForUser</a>&lt;V&gt;</code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteVisible.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteVisible</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/input/UiAbstractInput.html" title="interface in io.github.mmm.ui.api.widget.input">UiAbstractInput</a>&lt;V&gt;</code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/input/UiInput.html" title="interface in io.github.mmm.ui.api.widget.input">UiInput</a>&lt;V&gt;</code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiActiveWidget.html" title="interface in io.github.mmm.ui.api.widget">UiActiveWidget</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiNativeWidget.html" title="interface in io.github.mmm.ui.api.widget">UiNativeWidget</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiRegularWidget.html" title="interface in io.github.mmm.ui.api.widget">UiRegularWidget</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html" title="interface in io.github.mmm.ui.api.widget">UiWidget</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html" title="interface in io.github.mmm.ui.api.widget.value">UiValidatableWidget</a>&lt;V&gt;</code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValuedWidget.html" title="interface in io.github.mmm.ui.api.widget.value">UiValuedWidget</a>&lt;V&gt;</code>, <code><a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/UiNativeWidgetWrapper.html" title="interface in io.github.mmm.ui.spi.widget">UiNativeWidgetWrapper</a>&lt;W&gt;</code></dd>
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><code><a href="TvmHtmlInput.html" title="class in io.github.mmm.ui.tvm.widget.input">TvmHtmlInput</a></code>, <code><a href="TvmHtmlSelect.html" title="class in io.github.mmm.ui.tvm.widget.input">TvmHtmlSelect</a></code>, <code><a href="TvmTextArea.html" title="class in io.github.mmm.ui.tvm.widget.input">TvmTextArea</a></code></dd>
+<dd><code><a href="TvmAbstractTextArea.html" title="class in io.github.mmm.ui.tvm.widget.input">TvmAbstractTextArea</a></code>, <code><a href="TvmHtmlInput.html" title="class in io.github.mmm.ui.tvm.widget.input">TvmHtmlInput</a></code>, <code><a href="TvmHtmlSelect.html" title="class in io.github.mmm.ui.tvm.widget.input">TvmHtmlSelect</a></code>, <code><a href="TvmRadioChoice.html" title="class in io.github.mmm.ui.tvm.widget.input">TvmRadioChoice</a></code></dd>
 </dl>
 <hr>
 <pre>public abstract class <span class="typeNameLabel">TvmInput&lt;V,&#8203;W extends org.teavm.jso.dom.html.HTMLElement&gt;</span>
@@ -197,18 +197,11 @@ implements <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/
 </a>
 <h3>Field Summary</h3>
 <ul class="blockList">
-<li class="blockList"><a id="fields.inherited.from.class.io.github.mmm.ui.tvm.widget.TvmWidgetJsObject">
+<li class="blockList"><a id="fields.inherited.from.class.io.github.mmm.ui.tvm.widget.TvmWidget">
 <!--   -->
 </a>
-<h3>Fields inherited from class&nbsp;io.github.mmm.ui.tvm.widget.<a href="../TvmWidgetJsObject.html" title="class in io.github.mmm.ui.tvm.widget">TvmWidgetJsObject</a></h3>
-<code><a href="../TvmWidgetJsObject.html#ATR_ARIA_HIDDEN">ATR_ARIA_HIDDEN</a>, <a href="../TvmWidgetJsObject.html#ATR_ARIA_LABEL">ATR_ARIA_LABEL</a>, <a href="../TvmWidgetJsObject.html#ATR_ARIA_SELECTED">ATR_ARIA_SELECTED</a>, <a href="../TvmWidgetJsObject.html#ATR_FOR">ATR_FOR</a>, <a href="../TvmWidgetJsObject.html#ATR_ID">ATR_ID</a>, <a href="../TvmWidgetJsObject.html#ATR_REQUIRED">ATR_REQUIRED</a>, <a href="../TvmWidgetJsObject.html#ATR_ROLE">ATR_ROLE</a>, <a href="../TvmWidgetJsObject.html#ATR_STYLE">ATR_STYLE</a>, <a href="../TvmWidgetJsObject.html#ATR_TABINDEX">ATR_TABINDEX</a>, <a href="../TvmWidgetJsObject.html#CLASS_COLLAPSE">CLASS_COLLAPSE</a>, <a href="../TvmWidgetJsObject.html#CLASS_ERROR">CLASS_ERROR</a>, <a href="../TvmWidgetJsObject.html#CLASS_EXPAND">CLASS_EXPAND</a>, <a href="../TvmWidgetJsObject.html#CLASS_INFO">CLASS_INFO</a>, <a href="../TvmWidgetJsObject.html#CLASS_QUESTION">CLASS_QUESTION</a>, <a href="../TvmWidgetJsObject.html#CLASS_WARNING">CLASS_WARNING</a>, <a href="../TvmWidgetJsObject.html#DOC">DOC</a>, <a href="../TvmWidgetJsObject.html#EVENT_TYPE_BLUR">EVENT_TYPE_BLUR</a>, <a href="../TvmWidgetJsObject.html#EVENT_TYPE_CHANGE">EVENT_TYPE_CHANGE</a>, <a href="../TvmWidgetJsObject.html#EVENT_TYPE_CLICK">EVENT_TYPE_CLICK</a>, <a href="../TvmWidgetJsObject.html#EVENT_TYPE_FOCUS">EVENT_TYPE_FOCUS</a>, <a href="../TvmWidgetJsObject.html#EVENT_TYPE_INPUT">EVENT_TYPE_INPUT</a>, <a href="../TvmWidgetJsObject.html#EVENT_TYPE_KEYDOWN">EVENT_TYPE_KEYDOWN</a>, <a href="../TvmWidgetJsObject.html#EVENT_TYPE_POINTERDOWN">EVENT_TYPE_POINTERDOWN</a>, <a href="../TvmWidgetJsObject.html#EVENT_TYPE_POINTERMOVE">EVENT_TYPE_POINTERMOVE</a>, <a href="../TvmWidgetJsObject.html#EVENT_TYPE_POINTERUP">EVENT_TYPE_POINTERUP</a>, <a href="../TvmWidgetJsObject.html#STYLE_COLLAPSED">STYLE_COLLAPSED</a>, <a href="../TvmWidgetJsObject.html#STYLE_COLLAPSIBLE">STYLE_COLLAPSIBLE</a>, <a href="../TvmWidgetJsObject.html#TAG_NAME_UI_ICON">TAG_NAME_UI_ICON</a>, <a href="../TvmWidgetJsObject.html#widget">widget</a></code></li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a id="fields.inherited.from.class.io.github.mmm.ui.api.attribute.AttributeReadId">
-<!--   -->
-</a>
-<h3>Fields inherited from interface&nbsp;io.github.mmm.ui.api.attribute.<a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadId.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadId</a></h3>
-<code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadId.html#ID_SEPARATOR">ID_SEPARATOR</a></code></li>
+<h3>Fields inherited from class&nbsp;io.github.mmm.ui.tvm.widget.<a href="../TvmWidget.html" title="class in io.github.mmm.ui.tvm.widget">TvmWidget</a></h3>
+<code><a href="../TvmWidget.html#ATR_ARIA_HIDDEN">ATR_ARIA_HIDDEN</a>, <a href="../TvmWidget.html#ATR_ARIA_LABEL">ATR_ARIA_LABEL</a>, <a href="../TvmWidget.html#ATR_ARIA_SELECTED">ATR_ARIA_SELECTED</a>, <a href="../TvmWidget.html#ATR_COLSPAN">ATR_COLSPAN</a>, <a href="../TvmWidget.html#ATR_FOR">ATR_FOR</a>, <a href="../TvmWidget.html#ATR_ID">ATR_ID</a>, <a href="../TvmWidget.html#ATR_LIST">ATR_LIST</a>, <a href="../TvmWidget.html#ATR_MAX">ATR_MAX</a>, <a href="../TvmWidget.html#ATR_MIN">ATR_MIN</a>, <a href="../TvmWidget.html#ATR_REQUIRED">ATR_REQUIRED</a>, <a href="../TvmWidget.html#ATR_ROLE">ATR_ROLE</a>, <a href="../TvmWidget.html#ATR_ROWSPAN">ATR_ROWSPAN</a>, <a href="../TvmWidget.html#ATR_STYLE">ATR_STYLE</a>, <a href="../TvmWidget.html#ATR_TABINDEX">ATR_TABINDEX</a>, <a href="../TvmWidget.html#CLASS_COLLAPSE">CLASS_COLLAPSE</a>, <a href="../TvmWidget.html#CLASS_ERROR">CLASS_ERROR</a>, <a href="../TvmWidget.html#CLASS_EXPAND">CLASS_EXPAND</a>, <a href="../TvmWidget.html#CLASS_INFO">CLASS_INFO</a>, <a href="../TvmWidget.html#CLASS_QUESTION">CLASS_QUESTION</a>, <a href="../TvmWidget.html#CLASS_WARNING">CLASS_WARNING</a>, <a href="../TvmWidget.html#DOC">DOC</a>, <a href="../TvmWidget.html#EVENT_TYPE_BLUR">EVENT_TYPE_BLUR</a>, <a href="../TvmWidget.html#EVENT_TYPE_CHANGE">EVENT_TYPE_CHANGE</a>, <a href="../TvmWidget.html#EVENT_TYPE_CLICK">EVENT_TYPE_CLICK</a>, <a href="../TvmWidget.html#EVENT_TYPE_FOCUS">EVENT_TYPE_FOCUS</a>, <a href="../TvmWidget.html#EVENT_TYPE_INPUT">EVENT_TYPE_INPUT</a>, <a href="../TvmWidget.html#EVENT_TYPE_KEYDOWN">EVENT_TYPE_KEYDOWN</a>, <a href="../TvmWidget.html#EVENT_TYPE_POINTERDOWN">EVENT_TYPE_POINTERDOWN</a>, <a href="../TvmWidget.html#EVENT_TYPE_POINTERMOVE">EVENT_TYPE_POINTERMOVE</a>, <a href="../TvmWidget.html#EVENT_TYPE_POINTERUP">EVENT_TYPE_POINTERUP</a>, <a href="../TvmWidget.html#ROLE_PRESENTATION">ROLE_PRESENTATION</a>, <a href="../TvmWidget.html#STYLE_COLLAPSED">STYLE_COLLAPSED</a>, <a href="../TvmWidget.html#STYLE_COLLAPSIBLE">STYLE_COLLAPSIBLE</a>, <a href="../TvmWidget.html#STYLE_DISABLED">STYLE_DISABLED</a>, <a href="../TvmWidget.html#STYLE_RESIZABLE">STYLE_RESIZABLE</a>, <a href="../TvmWidget.html#TAG_NAME_UI_ICON">TAG_NAME_UI_ICON</a>, <a href="../TvmWidget.html#widget">widget</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="fields.inherited.from.class.io.github.mmm.ui.api.attribute.AttributeWriteAutocomplete">
@@ -216,6 +209,20 @@ implements <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/
 </a>
 <h3>Fields inherited from interface&nbsp;io.github.mmm.ui.api.attribute.<a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteAutocomplete.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteAutocomplete</a></h3>
 <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteAutocomplete.html#AUTOCOMPLETE_BIRTHDAY">AUTOCOMPLETE_BIRTHDAY</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteAutocomplete.html#AUTOCOMPLETE_CC_CSC">AUTOCOMPLETE_CC_CSC</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteAutocomplete.html#AUTOCOMPLETE_CC_EXPIRY">AUTOCOMPLETE_CC_EXPIRY</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteAutocomplete.html#AUTOCOMPLETE_CC_NUMBER">AUTOCOMPLETE_CC_NUMBER</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteAutocomplete.html#AUTOCOMPLETE_CC_TYPE">AUTOCOMPLETE_CC_TYPE</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteAutocomplete.html#AUTOCOMPLETE_COUNTRY_CODE">AUTOCOMPLETE_COUNTRY_CODE</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteAutocomplete.html#AUTOCOMPLETE_COUNTRY_NAME">AUTOCOMPLETE_COUNTRY_NAME</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteAutocomplete.html#AUTOCOMPLETE_CURRENT_PASSWORD">AUTOCOMPLETE_CURRENT_PASSWORD</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteAutocomplete.html#AUTOCOMPLETE_EMAIL">AUTOCOMPLETE_EMAIL</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteAutocomplete.html#AUTOCOMPLETE_FAMILY_NAME">AUTOCOMPLETE_FAMILY_NAME</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteAutocomplete.html#AUTOCOMPLETE_GIVEN_NAME">AUTOCOMPLETE_GIVEN_NAME</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteAutocomplete.html#AUTOCOMPLETE_HONORIFIC_PREFIX">AUTOCOMPLETE_HONORIFIC_PREFIX</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteAutocomplete.html#AUTOCOMPLETE_IMPP">AUTOCOMPLETE_IMPP</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteAutocomplete.html#AUTOCOMPLETE_JOB_TITLE">AUTOCOMPLETE_JOB_TITLE</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteAutocomplete.html#AUTOCOMPLETE_LANGUAGE_CODE">AUTOCOMPLETE_LANGUAGE_CODE</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteAutocomplete.html#AUTOCOMPLETE_NEW_PASSWORD">AUTOCOMPLETE_NEW_PASSWORD</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteAutocomplete.html#AUTOCOMPLETE_NICKNAME">AUTOCOMPLETE_NICKNAME</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteAutocomplete.html#AUTOCOMPLETE_OFF">AUTOCOMPLETE_OFF</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteAutocomplete.html#AUTOCOMPLETE_ORGANIZATION">AUTOCOMPLETE_ORGANIZATION</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteAutocomplete.html#AUTOCOMPLETE_POSTAL_CODE">AUTOCOMPLETE_POSTAL_CODE</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteAutocomplete.html#AUTOCOMPLETE_SEX">AUTOCOMPLETE_SEX</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteAutocomplete.html#AUTOCOMPLETE_STREET">AUTOCOMPLETE_STREET</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteAutocomplete.html#AUTOCOMPLETE_TELEPHONE">AUTOCOMPLETE_TELEPHONE</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteAutocomplete.html#AUTOCOMPLETE_TX_AMOUNT">AUTOCOMPLETE_TX_AMOUNT</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteAutocomplete.html#AUTOCOMPLETE_TX_CURRENCY">AUTOCOMPLETE_TX_CURRENCY</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteAutocomplete.html#AUTOCOMPLETE_URL">AUTOCOMPLETE_URL</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteAutocomplete.html#AUTOCOMPLETE_USERNAME">AUTOCOMPLETE_USERNAME</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="fields.inherited.from.class.io.github.mmm.ui.api.attribute.AttributeWritePrefix">
+<!--   -->
+</a>
+<h3>Fields inherited from interface&nbsp;io.github.mmm.ui.api.attribute.<a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWritePrefix.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWritePrefix</a></h3>
+<code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWritePrefix.html#STYLE_PREFIX">STYLE_PREFIX</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWritePrefix.html#STYLE_WITH_PREFIX">STYLE_WITH_PREFIX</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="fields.inherited.from.class.io.github.mmm.ui.api.attribute.AttributeWriteSuffix">
+<!--   -->
+</a>
+<h3>Fields inherited from interface&nbsp;io.github.mmm.ui.api.attribute.<a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteSuffix.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteSuffix</a></h3>
+<code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteSuffix.html#STYLE_SUFFIX">STYLE_SUFFIX</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteSuffix.html#STYLE_WITH_SUFFIX">STYLE_WITH_SUFFIX</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="fields.inherited.from.class.io.github.mmm.ui.api.attribute.AttributeWriteValidationFailure">
@@ -230,6 +237,13 @@ implements <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/
 </a>
 <h3>Fields inherited from interface&nbsp;io.github.mmm.ui.api.widget.<a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiActiveWidget.html" title="interface in io.github.mmm.ui.api.widget">UiActiveWidget</a></h3>
 <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiActiveWidget.html#ACCESS_KEY_NONE">ACCESS_KEY_NONE</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="fields.inherited.from.class.io.github.mmm.ui.api.widget.input.UiInput">
+<!--   -->
+</a>
+<h3>Fields inherited from interface&nbsp;io.github.mmm.ui.api.widget.input.<a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/input/UiInput.html" title="interface in io.github.mmm.ui.api.widget.input">UiInput</a></h3>
+<code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/input/UiInput.html#STYLE_INPUT">STYLE_INPUT</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="fields.inherited.from.class.io.github.mmm.ui.api.widget.value.UiValidatableWidget">
@@ -279,20 +293,18 @@ implements <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>protected void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#doSetValidationFailure(java.lang.String)">doSetValidationFailure</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;error)</code></th>
-<td class="colLast">
-<div class="block">Called from <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#setValidationFailure(java.lang.String)"><code>AbstractUiNativeWidget.setValidationFailure(String)</code></a> if the failure actually changed.</div>
-</td>
-</tr>
-<tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getAutocomplete()">getAutocomplete</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiRegularWidget.html" title="interface in io.github.mmm.ui.api.widget">UiRegularWidget</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getContainerWidget()">getContainerWidget</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>org.teavm.jso.dom.html.HTMLElement</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getHPanel()">getHPanel</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
@@ -316,86 +328,119 @@ implements <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPrefix()">getPrefix</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>protected org.teavm.jso.dom.html.HTMLElement</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPrefixLabel()">getPrefixLabel</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSuffix()">getSuffix</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code>protected org.teavm.jso.dom.html.HTMLElement</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSuffixLabel()">getSuffixLabel</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code>org.teavm.jso.dom.html.HTMLElement</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getTopWidget()">getTopWidget</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../../io.github.mmm.validation/io/github/mmm/validation/Validator.html" title="interface in io.github.mmm.validation">Validator</a>&lt;? super <a href="TvmInput.html" title="type parameter in TvmInput">V</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getValidator()">getValidator</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hasContainerWidget()">hasContainerWidget</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hasNameWidget()">hasNameWidget</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i15" class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#initHPanel(org.teavm.jso.dom.html.HTMLElement)">initHPanel</a></span>&#8203;(org.teavm.jso.dom.html.HTMLElement&nbsp;panel)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onChange(org.teavm.jso.dom.events.Event)">onChange</a></span>&#8203;(org.teavm.jso.dom.events.Event&nbsp;event)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
-<td class="colFirst"><code>protected void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onFocusGain(org.teavm.jso.dom.events.Event)">onFocusGain</a></span>&#8203;(org.teavm.jso.dom.events.Event&nbsp;event)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i12" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onFocusLoss(org.teavm.jso.dom.events.Event)">onFocusLoss</a></span>&#8203;(org.teavm.jso.dom.events.Event&nbsp;event)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#registerHandlers()">registerHandlers</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Registers the according handlers to the underlying native widget.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setAutocomplete(java.lang.String)">setAutocomplete</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;autocomplete)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setId(java.lang.String)">setId</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;id)</code></th>
-<td class="colLast">
-<div class="block">Use this method to give the object a meaningful identifier after creation.</div>
-</td>
+<tr id="i20" class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setIdNative(java.lang.String)">setIdNative</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;id)</code></th>
+<td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setMandatory(boolean)">setMandatory</a></span>&#8203;(boolean&nbsp;mandatory)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setName(java.lang.String)">setName</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setOriginalValue(V)">setOriginalValue</a></span>&#8203;(<a href="TvmInput.html" title="type parameter in TvmInput">V</a>&nbsp;originalValue)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i24" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setPrefix(java.lang.String)">setPrefix</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;prefix)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i25" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setSuffix(java.lang.String)">setSuffix</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;suffix)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setValidator(io.github.mmm.validation.Validator)">setValidator</a></span>&#8203;(<a href="../../../../../../../../io.github.mmm.validation/io/github/mmm/validation/Validator.html" title="interface in io.github.mmm.validation">Validator</a>&lt;? super <a href="TvmInput.html" title="type parameter in TvmInput">V</a>&gt;&nbsp;validator)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setValue(V,boolean)">setValue</a></span>&#8203;(<a href="TvmInput.html" title="type parameter in TvmInput">V</a>&nbsp;value,
         boolean&nbsp;forUser)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>protected abstract void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setValueNative(V)">setValueNative</a></span>&#8203;(<a href="TvmInput.html" title="type parameter in TvmInput">V</a>&nbsp;value)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setVisible(boolean,io.github.mmm.ui.api.datatype.bitmask.BitMask)">setVisible</a></span>&#8203;(boolean&nbsp;visible,
           <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/datatype/bitmask/BitMask.html" title="class in io.github.mmm.ui.api.datatype.bitmask">BitMask</a>&nbsp;flagMode)</code></th>
@@ -407,35 +452,35 @@ implements <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;io.github.mmm.ui.tvm.widget.<a href="../TvmActiveWidget.html" title="class in io.github.mmm.ui.tvm.widget">TvmActiveWidget</a></h3>
-<code><a href="../TvmActiveWidget.html#getAccessKey()">getAccessKey</a>, <a href="../TvmActiveWidget.html#isFocused()">isFocused</a>, <a href="../TvmActiveWidget.html#setAccessKey(char)">setAccessKey</a>, <a href="../TvmActiveWidget.html#setEnabledNative(boolean)">setEnabledNative</a>, <a href="../TvmActiveWidget.html#setFocused()">setFocused</a>, <a href="../TvmActiveWidget.html#setParent(io.github.mmm.ui.api.widget.composite.UiComposite)">setParent</a></code></li>
+<code><a href="../TvmActiveWidget.html#getAccessKey()">getAccessKey</a>, <a href="../TvmActiveWidget.html#isFocused()">isFocused</a>, <a href="../TvmActiveWidget.html#onFocusGain(org.teavm.jso.dom.events.Event)">onFocusGain</a>, <a href="../TvmActiveWidget.html#setAccessKey(char)">setAccessKey</a>, <a href="../TvmActiveWidget.html#setEnabledNative(boolean)">setEnabledNative</a>, <a href="../TvmActiveWidget.html#setFocused()">setFocused</a>, <a href="../TvmActiveWidget.html#setParent(io.github.mmm.ui.api.widget.composite.UiComposite)">setParent</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.tvm.widget.TvmWidgetHtmlElement">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;io.github.mmm.ui.tvm.widget.<a href="../TvmWidgetHtmlElement.html" title="class in io.github.mmm.ui.tvm.widget">TvmWidgetHtmlElement</a></h3>
-<code><a href="../TvmWidgetHtmlElement.html#getElement()">getElement</a>, <a href="../TvmWidgetHtmlElement.html#getTooltip()">getTooltip</a>, <a href="../TvmWidgetHtmlElement.html#getTopWidget()">getTopWidget</a>, <a href="../TvmWidgetHtmlElement.html#onStylesChanged(java.lang.String)">onStylesChanged</a>, <a href="../TvmWidgetHtmlElement.html#setTextContent(java.lang.String)">setTextContent</a>, <a href="../TvmWidgetHtmlElement.html#setTooltip(java.lang.String)">setTooltip</a>, <a href="../TvmWidgetHtmlElement.html#setVisibleNative(boolean)">setVisibleNative</a></code></li>
+<code><a href="../TvmWidgetHtmlElement.html#getElement()">getElement</a>, <a href="../TvmWidgetHtmlElement.html#onStylesChanged(java.lang.String)">onStylesChanged</a>, <a href="../TvmWidgetHtmlElement.html#setTooltipNative(java.lang.String)">setTooltipNative</a>, <a href="../TvmWidgetHtmlElement.html#setVisibleNative(boolean)">setVisibleNative</a></code></li>
 </ul>
 <ul class="blockList">
-<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.tvm.widget.TvmWidgetJsObject">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.tvm.widget.TvmWidget">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;io.github.mmm.ui.tvm.widget.<a href="../TvmWidgetJsObject.html" title="class in io.github.mmm.ui.tvm.widget">TvmWidgetJsObject</a></h3>
-<code><a href="../TvmWidgetJsObject.html#getId()">getId</a>, <a href="../TvmWidgetJsObject.html#getTopNode(io.github.mmm.ui.api.widget.UiWidget)">getTopNode</a>, <a href="../TvmWidgetJsObject.html#getWidget()">getWidget</a>, <a href="../TvmWidgetJsObject.html#insertAt(org.teavm.jso.dom.xml.Node,org.teavm.jso.dom.xml.Node,int)">insertAt</a>, <a href="../TvmWidgetJsObject.html#insertFirst(org.teavm.jso.dom.xml.Node,org.teavm.jso.dom.xml.Node)">insertFirst</a>, <a href="../TvmWidgetJsObject.html#newAudio()">newAudio</a>, <a href="../TvmWidgetJsObject.html#newButton()">newButton</a>, <a href="../TvmWidgetJsObject.html#newCanvas()">newCanvas</a>, <a href="../TvmWidgetJsObject.html#newDatalist()">newDatalist</a>, <a href="../TvmWidgetJsObject.html#newDiv()">newDiv</a>, <a href="../TvmWidgetJsObject.html#newElement(java.lang.String)">newElement</a>, <a href="../TvmWidgetJsObject.html#newFieldSet()">newFieldSet</a>, <a href="../TvmWidgetJsObject.html#newForm()">newForm</a>, <a href="../TvmWidgetJsObject.html#newIcon(java.lang.String)">newIcon</a>, <a href="../TvmWidgetJsObject.html#newImage()">newImage</a>, <a href="../TvmWidgetJsObject.html#newInput()">newInput</a>, <a href="../TvmWidgetJsObject.html#newInput(java.lang.String)">newInput</a>, <a href="../TvmWidgetJsObject.html#newLabel()">newLabel</a>, <a href="../TvmWidgetJsObject.html#newLegend()">newLegend</a>, <a href="../TvmWidgetJsObject.html#newOutput()">newOutput</a>, <a href="../TvmWidgetJsObject.html#newSelect()">newSelect</a>, <a href="../TvmWidgetJsObject.html#newSpan()">newSpan</a>, <a href="../TvmWidgetJsObject.html#newTable()">newTable</a>, <a href="../TvmWidgetJsObject.html#newTextArea()">newTextArea</a>, <a href="../TvmWidgetJsObject.html#newVideo()">newVideo</a>, <a href="../TvmWidgetJsObject.html#onClick(org.teavm.jso.dom.events.Event)">onClick</a>, <a href="../TvmWidgetJsObject.html#removeAllChildren(org.teavm.jso.dom.xml.Node)">removeAllChildren</a>, <a href="../TvmWidgetJsObject.html#setReadOnlyNative(boolean)">setReadOnlyNative</a>, <a href="../TvmWidgetJsObject.html#setTextContent(org.teavm.jso.dom.html.HTMLElement,java.lang.String)">setTextContent</a></code></li>
+<h3>Methods inherited from class&nbsp;io.github.mmm.ui.tvm.widget.<a href="../TvmWidget.html" title="class in io.github.mmm.ui.tvm.widget">TvmWidget</a></h3>
+<code><a href="../TvmWidget.html#getTopNode(io.github.mmm.ui.api.widget.UiWidget)">getTopNode</a>, <a href="../TvmWidget.html#getWidget()">getWidget</a>, <a href="../TvmWidget.html#insertAt(org.teavm.jso.dom.xml.Node,org.teavm.jso.dom.xml.Node,int)">insertAt</a>, <a href="../TvmWidget.html#insertFirst(org.teavm.jso.dom.xml.Node,org.teavm.jso.dom.xml.Node)">insertFirst</a>, <a href="../TvmWidget.html#newAnchor()">newAnchor</a>, <a href="../TvmWidget.html#newASide()">newASide</a>, <a href="../TvmWidget.html#newAudio()">newAudio</a>, <a href="../TvmWidget.html#newButton()">newButton</a>, <a href="../TvmWidget.html#newCanvas()">newCanvas</a>, <a href="../TvmWidget.html#newDatalist()">newDatalist</a>, <a href="../TvmWidget.html#newDiv()">newDiv</a>, <a href="../TvmWidget.html#newElement(java.lang.String)">newElement</a>, <a href="../TvmWidget.html#newFieldSet()">newFieldSet</a>, <a href="../TvmWidget.html#newFooter()">newFooter</a>, <a href="../TvmWidget.html#newForm()">newForm</a>, <a href="../TvmWidget.html#newHeader()">newHeader</a>, <a href="../TvmWidget.html#newHr()">newHr</a>, <a href="../TvmWidget.html#newIcon(java.lang.String)">newIcon</a>, <a href="../TvmWidget.html#newImage()">newImage</a>, <a href="../TvmWidget.html#newInput()">newInput</a>, <a href="../TvmWidget.html#newInput(java.lang.String)">newInput</a>, <a href="../TvmWidget.html#newLabel()">newLabel</a>, <a href="../TvmWidget.html#newLegend()">newLegend</a>, <a href="../TvmWidget.html#newLi()">newLi</a>, <a href="../TvmWidget.html#newMain()">newMain</a>, <a href="../TvmWidget.html#newNav()">newNav</a>, <a href="../TvmWidget.html#newOption(org.teavm.jso.dom.html.HTMLDocument)">newOption</a>, <a href="../TvmWidget.html#newOption(org.teavm.jso.dom.html.HTMLElement,java.lang.String)">newOption</a>, <a href="../TvmWidget.html#newOutput()">newOutput</a>, <a href="../TvmWidget.html#newSection()">newSection</a>, <a href="../TvmWidget.html#newSelect()">newSelect</a>, <a href="../TvmWidget.html#newSpan()">newSpan</a>, <a href="../TvmWidget.html#newTable()">newTable</a>, <a href="../TvmWidget.html#newTableBody()">newTableBody</a>, <a href="../TvmWidget.html#newTableDataCell()">newTableDataCell</a>, <a href="../TvmWidget.html#newTableFoot()">newTableFoot</a>, <a href="../TvmWidget.html#newTableHead()">newTableHead</a>, <a href="../TvmWidget.html#newTableHeaderCell()">newTableHeaderCell</a>, <a href="../TvmWidget.html#newTableRow()">newTableRow</a>, <a href="../TvmWidget.html#newTextArea()">newTextArea</a>, <a href="../TvmWidget.html#newUl()">newUl</a>, <a href="../TvmWidget.html#newVideo()">newVideo</a>, <a href="../TvmWidget.html#onClick(org.teavm.jso.dom.events.Event)">onClick</a>, <a href="../TvmWidget.html#removeAllChildren(org.teavm.jso.dom.xml.Node)">removeAllChildren</a>, <a href="../TvmWidget.html#setReadOnlyNative(boolean)">setReadOnlyNative</a>, <a href="../TvmWidget.html#setWidget(W)">setWidget</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.spi.widget.AbstractUiNativeWidgetWrapper">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;io.github.mmm.ui.spi.widget.<a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidgetWrapper.html" title="class in io.github.mmm.ui.spi.widget">AbstractUiNativeWidgetWrapper</a></h3>
-<code><a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidgetWrapper.html#createStyles()">createStyles</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidgetWrapper.html#getStyles()">getStyles</a></code></li>
+<code><a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidgetWrapper.html#createDefaultStyles()">createDefaultStyles</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidgetWrapper.html#createStyles()">createStyles</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidgetWrapper.html#getId()">getId</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidgetWrapper.html#getStyles()">getStyles</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidgetWrapper.html#getTooltip()">getTooltip</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidgetWrapper.html#setId(java.lang.String)">setId</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidgetWrapper.html#setTooltip(java.lang.String)">setTooltip</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.spi.widget.AbstractUiNativeWidget">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;io.github.mmm.ui.spi.widget.<a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html" title="class in io.github.mmm.ui.spi.widget">AbstractUiNativeWidget</a></h3>
-<code><a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#addListener(io.github.mmm.ui.api.event.UiEventListener,boolean)">addListener</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#dispose()">dispose</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#doDispose()">doDispose</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#doGetEnabledState(io.github.mmm.ui.spi.widget.AbstractUiNativeWidget)">doGetEnabledState</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#doGetVisibleState(io.github.mmm.ui.spi.widget.AbstractUiNativeWidget)">doGetVisibleState</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#doSetEnabledState(int)">doSetEnabledState</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#doSetEnabledState(io.github.mmm.ui.spi.widget.AbstractUiNativeWidget,int)">doSetEnabledState</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#doSetVisibleState(int)">doSetVisibleState</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#doSetVisibleState(io.github.mmm.ui.spi.widget.AbstractUiNativeWidget,int)">doSetVisibleState</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#ensureHandlers()">ensureHandlers</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#fireEvent(io.github.mmm.ui.api.event.UiEvent)">fireEvent</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#getEventAdapter()">getEventAdapter</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#getParent()">getParent</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#getProgrammaticEventType()">getProgrammaticEventType</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#getReadOnlyFixed()">getReadOnlyFixed</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#getValidationFailure()">getValidationFailure</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#hasListeners()">hasListeners</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#isDisposed()">isDisposed</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#isEnabled(io.github.mmm.ui.api.datatype.bitmask.BitMask)">isEnabled</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#isInitiallyVisible()">isInitiallyVisible</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#isReadOnly()">isReadOnly</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#isValid()">isValid</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#isVisible(io.github.mmm.ui.api.datatype.bitmask.BitMask)">isVisible</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#isVisibleWithoutRoot()">isVisibleWithoutRoot</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#removeListener(io.github.mmm.ui.api.event.UiEventListener)">removeListener</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#requireNotDisposed()">requireNotDisposed</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#setEnabled(boolean,io.github.mmm.ui.api.datatype.bitmask.BitMask)">setEnabled</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#setProgrammaticEventType(io.github.mmm.ui.api.event.UiEventType)">setProgrammaticEventType</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#setReadOnly(boolean)">setReadOnly</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#setReadOnlyFixed(java.lang.Boolean)">setReadOnlyFixed</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#setValidationFailure(java.lang.String)">setValidationFailure</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#unwrap()">unwrap</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#validateDown(io.github.mmm.ui.api.datatype.UiValidState)">validateDown</a></code></li>
+<code><a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#addListener(io.github.mmm.ui.api.event.UiEventListener,boolean)">addListener</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#dispose()">dispose</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#doDispose()">doDispose</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#doGetEnabledState(io.github.mmm.ui.spi.widget.AbstractUiNativeWidget)">doGetEnabledState</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#doGetVisibleState(io.github.mmm.ui.spi.widget.AbstractUiNativeWidget)">doGetVisibleState</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#doSetEnabledState(int)">doSetEnabledState</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#doSetEnabledState(io.github.mmm.ui.spi.widget.AbstractUiNativeWidget,int)">doSetEnabledState</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#doSetValidationFailure(java.lang.String)">doSetValidationFailure</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#doSetVisibleState(int)">doSetVisibleState</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#doSetVisibleState(io.github.mmm.ui.spi.widget.AbstractUiNativeWidget,int)">doSetVisibleState</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#ensureHandlers()">ensureHandlers</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#fireEvent(io.github.mmm.ui.api.event.UiEvent)">fireEvent</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#getEventAdapter()">getEventAdapter</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#getParent()">getParent</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#getProgrammaticEventType()">getProgrammaticEventType</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#getReadOnlyFixed()">getReadOnlyFixed</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#getValidationFailure()">getValidationFailure</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#hasListeners()">hasListeners</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#isDisposed()">isDisposed</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#isEnabled(io.github.mmm.ui.api.datatype.bitmask.BitMask)">isEnabled</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#isInitiallyVisible()">isInitiallyVisible</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#isReadOnly()">isReadOnly</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#isValid()">isValid</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#isVisible(io.github.mmm.ui.api.datatype.bitmask.BitMask)">isVisible</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#isVisibleWithoutRoot()">isVisibleWithoutRoot</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#removeListener(io.github.mmm.ui.api.event.UiEventListener)">removeListener</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#requireNotDisposed()">requireNotDisposed</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#setEnabled(boolean,io.github.mmm.ui.api.datatype.bitmask.BitMask)">setEnabled</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#setProgrammaticEventType(io.github.mmm.ui.api.event.UiEventType)">setProgrammaticEventType</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#setReadOnly(boolean)">setReadOnly</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#setReadOnlyFixed(java.lang.Boolean)">setReadOnlyFixed</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#setValidationFailure(java.lang.String,boolean)">setValidationFailure</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#unwrap()">unwrap</a>, <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#validateDown(io.github.mmm.ui.api.datatype.UiValidState)">validateDown</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.api.widget.AbstractUiWidget">
@@ -466,6 +511,13 @@ implements <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/
 <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteAutocomplete.html#setAutocompleteOff()">setAutocompleteOff</a></code></li>
 </ul>
 <ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.api.attribute.AttributeWriteId">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;io.github.mmm.ui.api.attribute.<a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteId.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteId</a></h3>
+<code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteId.html#setId(java.lang.String)">setId</a></code></li>
+</ul>
+<ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.api.attribute.AttributeWriteTooltip">
 <!--   -->
 </a>
@@ -477,7 +529,7 @@ implements <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;io.github.mmm.ui.api.attribute.<a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteValidationFailure.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteValidationFailure</a></h3>
-<code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteValidationFailure.html#getValidationFailure()">getValidationFailure</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteValidationFailure.html#setValidationFailure(java.lang.String)">setValidationFailure</a></code></li>
+<code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteValidationFailure.html#getValidationFailure()">getValidationFailure</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteValidationFailure.html#setValidationFailure(java.lang.String)">setValidationFailure</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteValidationFailure.html#setValidationFailure(java.lang.String,boolean)">setValidationFailure</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.event.EventSource">
@@ -491,7 +543,7 @@ implements <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;io.github.mmm.ui.api.widget.value.<a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html" title="interface in io.github.mmm.ui.api.widget.value">UiValidatableWidget</a></h3>
-<code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#getValue()">getValue</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#getValueOrThrow()">getValueOrThrow</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#isValid()">isValid</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#resetValue()">resetValue</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#setValue(V)">setValue</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#setValueForUser(V)">setValueForUser</a></code></li>
+<code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#getValue()">getValue</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#getValueOrThrow()">getValueOrThrow</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#isValid()">isValid</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#reset()">reset</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#setValue(V)">setValue</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#setValueForUser(V)">setValueForUser</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.api.widget.UiWidget">
@@ -528,7 +580,7 @@ implements <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/
 <div class="block">The constructor.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>widget</code> - the <a href="../TvmWidgetJsObject.html#getWidget()"><code>TeaVM widget</code></a>.</dd>
+<dd><code>widget</code> - the <a href="../TvmWidget.html#getWidget()"><code>TeaVM widget</code></a>.</dd>
 </dl>
 </li>
 </ul>
@@ -571,6 +623,51 @@ implements <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/
 </dl>
 </li>
 </ul>
+<a id="getTopWidget()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTopWidget</h4>
+<pre class="methodSignature">public&nbsp;org.teavm.jso.dom.html.HTMLElement&nbsp;getTopWidget()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/UiNativeWidgetWrapper.html#getTopWidget()">getTopWidget</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/UiNativeWidgetWrapper.html" title="interface in io.github.mmm.ui.spi.widget">UiNativeWidgetWrapper</a>&lt;<a href="TvmInput.html" title="type parameter in TvmInput">V</a>&gt;</code></dd>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../TvmWidgetHtmlElement.html#getTopWidget()">getTopWidget</a></code>&nbsp;in class&nbsp;<code><a href="../TvmWidgetHtmlElement.html" title="class in io.github.mmm.ui.tvm.widget">TvmWidgetHtmlElement</a>&lt;<a href="TvmInput.html" title="type parameter in TvmInput">W</a> extends org.teavm.jso.dom.html.HTMLElement&gt;</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the top-level native widget of this wrapper. In many cases this is the same as <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/UiNativeWidgetWrapper.html#getWidget()"><code>UiNativeWidgetWrapper.getWidget()</code></a> but in
+         some cases this may be some kind of internal composite containing the <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/UiNativeWidgetWrapper.html#getWidget()"><code>main widget</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="getHPanel()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getHPanel</h4>
+<pre class="methodSignature">public&nbsp;org.teavm.jso.dom.html.HTMLElement&nbsp;getHPanel()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the <code>HTMLElement</code> used as <a href="#getTopWidget()"><code>top widget</code></a>. Will be lazily initialized on the first
+         call of this method.</dd>
+</dl>
+</li>
+</ul>
+<a id="initHPanel(org.teavm.jso.dom.html.HTMLElement)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>initHPanel</h4>
+<pre class="methodSignature">protected&nbsp;void&nbsp;initHPanel&#8203;(org.teavm.jso.dom.html.HTMLElement&nbsp;panel)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>panel</code> - the <code>HTMLElement</code> used as <a href="#getTopWidget()"><code>top widget</code></a>.</dd>
+</dl>
+</li>
+</ul>
 <a id="getName()">
 <!--   -->
 </a>
@@ -602,27 +699,18 @@ implements <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/
 </dl>
 </li>
 </ul>
-<a id="setId(java.lang.String)">
+<a id="setIdNative(java.lang.String)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>setId</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;setId&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;id)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteId.html#setId(java.lang.String)">AttributeWriteId</a></code></span></div>
-<div class="block">Use this method to give the object a meaningful identifier after creation. <br>
- <b>ATTENTION:</b><br>
- See JavaDoc of <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadId.html#getId()"><code>AttributeReadId.getId()</code></a> for the syntax constraints of IDs.</div>
+<h4>setIdNative</h4>
+<pre class="methodSignature">protected&nbsp;void&nbsp;setIdNative&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;id)</pre>
 <dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteId.html#setId(java.lang.String)">setId</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteId.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteId</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../TvmWidgetJsObject.html#setId(java.lang.String)">setId</a></code>&nbsp;in class&nbsp;<code><a href="../TvmWidgetJsObject.html" title="class in io.github.mmm.ui.tvm.widget">TvmWidgetJsObject</a>&lt;<a href="TvmInput.html" title="type parameter in TvmInput">W</a> extends org.teavm.jso.dom.html.HTMLElement&gt;</code></dd>
+<dd><code><a href="../TvmWidget.html#setIdNative(java.lang.String)">setIdNative</a></code>&nbsp;in class&nbsp;<code><a href="../TvmWidget.html" title="class in io.github.mmm.ui.tvm.widget">TvmWidget</a>&lt;<a href="TvmInput.html" title="type parameter in TvmInput">W</a> extends org.teavm.jso.dom.html.HTMLElement&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>id</code> - is the new <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadId.html#getId()"><code>ID</code></a> for the object.</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadId.html#getId()"><code>AttributeReadId.getId()</code></a>, 
-<a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadId.html#ID_SEPARATOR"><code>AttributeReadId.ID_SEPARATOR</code></a></dd>
+<dd><code>id</code> - the new <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidgetWrapper.html#getId()"><code>ID</code></a>.</dd>
 </dl>
 </li>
 </ul>
@@ -690,6 +778,94 @@ implements <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/
 </dl>
 </li>
 </ul>
+<a id="getPrefix()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPrefix</h4>
+<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getPrefix()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWritePrefix.html#getPrefix()">getPrefix</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWritePrefix.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWritePrefix</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the optional prefix text shown in front of the actual input (e.g. for a currency like $ or £). Will be
+         <code>null</code> if not set.</dd>
+</dl>
+</li>
+</ul>
+<a id="setPrefix(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setPrefix</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setPrefix&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;prefix)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWritePrefix.html#setPrefix(java.lang.String)">setPrefix</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWritePrefix.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWritePrefix</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>prefix</code> - the new <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWritePrefix.html#getPrefix()"><code>prefix</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="getPrefixLabel()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPrefixLabel</h4>
+<pre class="methodSignature">protected&nbsp;org.teavm.jso.dom.html.HTMLElement&nbsp;getPrefixLabel()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the <code>HTMLElement</code> for the <a href="#getPrefix()"><code>prefix</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="getSuffix()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSuffix</h4>
+<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getSuffix()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteSuffix.html#getSuffix()">getSuffix</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteSuffix.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteSuffix</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the optional suffix text shown after of the actual input (e.g. for a unit, currencies like €, etc.). Will
+         be <code>null</code> if not set.</dd>
+</dl>
+</li>
+</ul>
+<a id="setSuffix(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setSuffix</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setSuffix&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;suffix)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteSuffix.html#setSuffix(java.lang.String)">setSuffix</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteSuffix.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteSuffix</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>suffix</code> - the new <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteSuffix.html#getSuffix()"><code>suffix</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="getSuffixLabel()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSuffixLabel</h4>
+<pre class="methodSignature">protected&nbsp;org.teavm.jso.dom.html.HTMLElement&nbsp;getSuffixLabel()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the <code>HTMLElement</code> for the <a href="#getSuffix()"><code>suffix</code></a>.</dd>
+</dl>
+</li>
+</ul>
 <a id="setVisible(boolean,io.github.mmm.ui.api.datatype.bitmask.BitMask)">
 <!--   -->
 </a>
@@ -728,9 +904,9 @@ implements <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/
          return the current value as entered by the end-user while this method will still return the original value.
          <br>
          <b>ATTENTION:</b> The original value shall never be modified to avoid undesired side effects. Various
-         features such as <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#resetValue()"><code>UiValidatableWidget.resetValue()</code></a> rely on this fact.</dd>
+         features such as <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#reset()"><code>UiValidatableWidget.reset()</code></a> rely on this fact.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#resetValue()"><code>UiValidatableWidget.resetValue()</code></a></dd>
+<dd><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#reset()"><code>UiValidatableWidget.reset()</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -748,23 +924,6 @@ implements <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/
 <dd><code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#setOriginalValue(V)">setOriginalValue</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html" title="interface in io.github.mmm.ui.api.widget.value">UiValidatableWidget</a>&lt;<a href="TvmInput.html" title="type parameter in TvmInput">V</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>originalValue</code> - the new value of <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#getOriginalValue()"><code>UiValidatableWidget.getOriginalValue()</code></a>.</dd>
-</dl>
-</li>
-</ul>
-<a id="doSetValidationFailure(java.lang.String)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>doSetValidationFailure</h4>
-<pre class="methodSignature">protected&nbsp;void&nbsp;doSetValidationFailure&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;error)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#doSetValidationFailure(java.lang.String)">AbstractUiNativeWidget</a></code></span></div>
-<div class="block">Called from <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#setValidationFailure(java.lang.String)"><code>AbstractUiNativeWidget.setValidationFailure(String)</code></a> if the failure actually changed. Do not call manually.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#doSetValidationFailure(java.lang.String)">doSetValidationFailure</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html" title="class in io.github.mmm.ui.spi.widget">AbstractUiNativeWidget</a></code></dd>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>error</code> - the new <a href="../../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#getValidationFailure()"><code>validation failure</code></a>. Will be <code>null</code> if valid.</dd>
 </dl>
 </li>
 </ul>
@@ -860,21 +1019,6 @@ implements <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>value</code> - the new <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#getValue()"><code>value</code></a> to set in the native widget.</dd>
-</dl>
-</li>
-</ul>
-<a id="onFocusGain(org.teavm.jso.dom.events.Event)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>onFocusGain</h4>
-<pre class="methodSignature">protected&nbsp;void&nbsp;onFocusGain&#8203;(org.teavm.jso.dom.events.Event&nbsp;event)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../TvmActiveWidget.html#onFocusGain(org.teavm.jso.dom.events.Event)">onFocusGain</a></code>&nbsp;in class&nbsp;<code><a href="../TvmActiveWidget.html" title="class in io.github.mmm.ui.tvm.widget">TvmActiveWidget</a>&lt;<a href="TvmInput.html" title="type parameter in TvmInput">W</a> extends org.teavm.jso.dom.html.HTMLElement&gt;</code></dd>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>event</code> - the focus <code>Event</code>.</dd>
 </dl>
 </li>
 </ul>

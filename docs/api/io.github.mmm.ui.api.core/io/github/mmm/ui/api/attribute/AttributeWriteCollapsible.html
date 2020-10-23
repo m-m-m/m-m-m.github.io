@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":6};
+var data = {"i0":6,"i1":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -129,11 +129,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 <dl>
 <dt>All Known Implementing Classes:</dt>
-<dd><code><a href="../../../../../../../io.github.mmm.ui.fx.form/io/github/mmm/ui/fx/widget/form/FxFormGroup.html" title="class in io.github.mmm.ui.fx.widget.form">FxFormGroup</a></code>, <code><a href="../../../../../../../io.github.mmm.ui.fx.form.grid/io/github/mmm/ui/fx/widget/form/grid/FxFormGroup.html" title="class in io.github.mmm.ui.fx.widget.form.grid">FxFormGroup</a></code>, <code><a href="../../../../../../../io.github.mmm.ui.test.core/io/github/mmm/ui/test/widget/composite/TestCollapsibleComposite.html" title="class in io.github.mmm.ui.test.widget.composite">TestCollapsibleComposite</a></code>, <code><a href="../../../../../../../io.github.mmm.ui.test.form/io/github/mmm/ui/test/widget/form/TestFormGroup.html" title="class in io.github.mmm.ui.test.widget.form">TestFormGroup</a></code></dd>
+<dd><code><a href="../../../../../../../io.github.mmm.ui.fx.core/io/github/mmm/ui/fx/widget/panel/FxCollapsiblePanel.html" title="class in io.github.mmm.ui.fx.widget.panel">FxCollapsiblePanel</a></code>, <code><a href="../../../../../../../io.github.mmm.ui.fx.form/io/github/mmm/ui/fx/widget/form/FxFormGroup.html" title="class in io.github.mmm.ui.fx.widget.form">FxFormGroup</a></code>, <code><a href="../../../../../../../io.github.mmm.ui.fx.form.grid/io/github/mmm/ui/fx/widget/form/grid/FxFormGroup.html" title="class in io.github.mmm.ui.fx.widget.form.grid">FxFormGroup</a></code>, <code><a href="../../../../../../../io.github.mmm.ui.test.core/io/github/mmm/ui/test/widget/composite/TestCollapsibleComposite.html" title="class in io.github.mmm.ui.test.widget.composite">TestCollapsibleComposite</a></code>, <code><a href="../../../../../../../io.github.mmm.ui.test.core/io/github/mmm/ui/test/widget/panel/TestCollapsiblePanel.html" title="class in io.github.mmm.ui.test.widget.panel">TestCollapsiblePanel</a></code>, <code><a href="../../../../../../../io.github.mmm.ui.test.form/io/github/mmm/ui/test/widget/form/TestFormGroup.html" title="class in io.github.mmm.ui.test.widget.form">TestFormGroup</a></code></dd>
 </dl>
 <hr>
 <pre>public interface <span class="typeNameLabel">AttributeWriteCollapsible</span></pre>
-<div class="block">Interface to read and write the <a href="#isCollapsed()"><code>collapsed</code></a> and <a href="#isCollapsible()"><code>collapsible</code></a> flags.</div>
+<div class="block">Interface to read and write the <a href="#isCollapsible()"><code>collapsible</code></a> flag.</div>
 <dl>
 <dt><span class="simpleTagLabel">Since:</span></dt>
 <dd>1.0.0</dd>
@@ -160,20 +160,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isCollapsed()">isCollapsed</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i1" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isCollapsible()">isCollapsible</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setCollapsed(boolean)">setCollapsed</a></span>&#8203;(boolean&nbsp;collapsed)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i3" class="rowColor">
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setCollapsible(boolean)">setCollapsible</a></span>&#8203;(boolean&nbsp;collapsible)</code></th>
 <td class="colLast">&nbsp;</td>
@@ -195,33 +185,6 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="isCollapsed()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>isCollapsed</h4>
-<pre class="methodSignature">boolean&nbsp;isCollapsed()</pre>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd><code>true</code> if this object is currently collapsed (minimized, hiding its details), <code>false</code> otherwise
-         (if expanded).</dd>
-</dl>
-</li>
-</ul>
-<a id="setCollapsed(boolean)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setCollapsed</h4>
-<pre class="methodSignature">void&nbsp;setCollapsed&#8203;(boolean&nbsp;collapsed)</pre>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>collapsed</code> - the new value of <a href="#isCollapsed()"><code>isCollapsed()</code></a>.</dd>
-</dl>
-</li>
-</ul>
 <a id="isCollapsible()">
 <!--   -->
 </a>
@@ -231,8 +194,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <pre class="methodSignature">boolean&nbsp;isCollapsible()</pre>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd><code>true</code> if this widget can be <a href="#setCollapsed(boolean)"><code>collapsed and expanded</code></a> by the end-user
-         (e.g. via some icon button), <code>false</code> otherwise.</dd>
+<dd><code>true</code> if this widget can be <a href="AttributeWriteCollapsed.html#setCollapsed(boolean)"><code>collapsed and
+         expanded</code></a> by the end-user (e.g. via some icon button), <code>false</code> otherwise.</dd>
 </dl>
 </li>
 </ul>

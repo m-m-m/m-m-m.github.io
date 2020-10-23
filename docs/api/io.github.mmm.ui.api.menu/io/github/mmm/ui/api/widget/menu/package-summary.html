@@ -107,51 +107,84 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
-<th class="colFirst" scope="row"><a href="UiAbstractActiveMenuItem.html" title="interface in io.github.mmm.ui.api.widget.menu">UiAbstractActiveMenuItem</a></th>
+<th class="colFirst" scope="row"><a href="UiAbstractMenu.html" title="interface in io.github.mmm.ui.api.widget.menu">UiAbstractMenu</a>&lt;E extends <a href="UiAbstractMenuEntry.html" title="interface in io.github.mmm.ui.api.widget.menu">UiAbstractMenuEntry</a>&gt;</th>
 <td class="colLast">
-<div class="block"><a href="UiAbstractMenuItem.html" title="interface in io.github.mmm.ui.api.widget.menu"><code>UiAbstractMenuItem</code></a> for a active menu item that can be <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/attribute/UiWidgetWithClick.html#click()"><code>clicked</code></a>.</div>
+<div class="block"><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiRemovableComposite.html" title="interface in io.github.mmm.ui.api.widget.composite"><code>UiRemovableComposite</code></a> that groups <a href="UiAbstractMenuEntry.html" title="interface in io.github.mmm.ui.api.widget.menu"><code>menu entries</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="UiAbstractMenuBar.html" title="interface in io.github.mmm.ui.api.widget.menu">UiAbstractMenuBar</a>&lt;E extends <a href="UiAbstractMenuEntry.html" title="interface in io.github.mmm.ui.api.widget.menu">UiAbstractMenuEntry</a>&gt;</th>
+<td class="colLast">
+<div class="block"><a href="UiAbstractMenu.html" title="interface in io.github.mmm.ui.api.widget.menu"><code>UiAbstractMenu</code></a> that acts as the toplevel container for a menu or navigation bar.</div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="UiAbstractMenuEntry.html" title="interface in io.github.mmm.ui.api.widget.menu">UiAbstractMenuEntry</a></th>
+<td class="colLast">
+<div class="block">Abstract <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html" title="interface in io.github.mmm.ui.api.widget"><code>UiWidget</code></a> for any entry of a <a href="UiAbstractMenuBar.html" title="interface in io.github.mmm.ui.api.widget.menu"><code>menu or navigation bar</code></a>.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <th class="colFirst" scope="row"><a href="UiAbstractMenuItem.html" title="interface in io.github.mmm.ui.api.widget.menu">UiAbstractMenuItem</a></th>
 <td class="colLast">
-<div class="block"><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html" title="interface in io.github.mmm.ui.api.widget"><code>widget</code></a> representing a <em>menu item</em>.</div>
+<div class="block"><a href="UiAbstractMenuEntry.html" title="interface in io.github.mmm.ui.api.widget.menu"><code>UiAbstractMenuEntry</code></a> for a menu item.</div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="UiAbstractMenuWithItems.html" title="interface in io.github.mmm.ui.api.widget.menu">UiAbstractMenuWithItems</a></th>
+<td class="colLast">
+<div class="block"><a href="UiAbstractMenu.html" title="interface in io.github.mmm.ui.api.widget.menu"><code>UiAbstractMenu</code></a> that can also have <a href="UiMenuItem.html" title="interface in io.github.mmm.ui.api.widget.menu"><code>UiMenuItem</code></a>s and <a href="UiMenuItemSeparator.html" title="interface in io.github.mmm.ui.api.widget.menu"><code>UiMenuItemSeparator</code></a>s as
+ <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiComposite.html#getChild(int)"><code>children</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="UiAdvancedMenu.html" title="interface in io.github.mmm.ui.api.widget.menu">UiAdvancedMenu</a></th>
+<td class="colLast">
+<div class="block"><a href="UiMenu.html" title="interface in io.github.mmm.ui.api.widget.menu"><code>UiMenu</code></a> with advanced features such as support for <a href="UiMenuItemCheckbox.html" title="interface in io.github.mmm.ui.api.widget.menu"><code>UiMenuItemCheckbox</code></a> and
+ <a href="UiMenuItemRadioButton.html" title="interface in io.github.mmm.ui.api.widget.menu"><code>UiMenuItemRadioButton</code></a>.</div>
 </td>
 </tr>
 <tr class="altColor">
 <th class="colFirst" scope="row"><a href="UiMenu.html" title="interface in io.github.mmm.ui.api.widget.menu">UiMenu</a></th>
 <td class="colLast">
-<div class="block"><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiMutableComposite.html" title="interface in io.github.mmm.ui.api.widget.composite"><code>UiMutableComposite</code></a> representing a <em>menu</em>.</div>
+<div class="block"><a href="UiAbstractMenuEntry.html" title="interface in io.github.mmm.ui.api.widget.menu"><code>Navigation entry</code></a> that represents a group of other <a href="UiAbstractMenuEntry.html" title="interface in io.github.mmm.ui.api.widget.menu"><code>navigation
+ entries</code></a>.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <th class="colFirst" scope="row"><a href="UiMenuBar.html" title="interface in io.github.mmm.ui.api.widget.menu">UiMenuBar</a></th>
 <td class="colLast">
-<div class="block"><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiMutableComposite.html" title="interface in io.github.mmm.ui.api.widget.composite"><code>UiMutableComposite</code></a> representing a <em>menu bar</em>.</div>
+<div class="block"><a href="UiAbstractMenuBar.html" title="interface in io.github.mmm.ui.api.widget.menu"><code>UiAbstractMenuBar</code></a> representing a regular <em>menu bar</em>.</div>
 </td>
 </tr>
 <tr class="altColor">
 <th class="colFirst" scope="row"><a href="UiMenuItem.html" title="interface in io.github.mmm.ui.api.widget.menu">UiMenuItem</a></th>
 <td class="colLast">
-<div class="block"><a href="UiAbstractMenuItem.html" title="interface in io.github.mmm.ui.api.widget.menu"><code>UiAbstractMenuItem</code></a> for a normal menu item that acts like a button.</div>
+<div class="block"><a href="UiAbstractMenuItem.html" title="interface in io.github.mmm.ui.api.widget.menu"><code>UiAbstractMenuItem</code></a> for a normal menu item.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <th class="colFirst" scope="row"><a href="UiMenuItemCheckbox.html" title="interface in io.github.mmm.ui.api.widget.menu">UiMenuItemCheckbox</a></th>
 <td class="colLast">
-<div class="block"><a href="UiAbstractActiveMenuItem.html" title="interface in io.github.mmm.ui.api.widget.menu"><code>UiAbstractActiveMenuItem</code></a> that additionally has a <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiAbstractCheckbox.html" title="interface in io.github.mmm.ui.api.widget.value"><code>checkbox</code></a>.</div>
+<div class="block">Like <a href="UiAbstractMenuItem.html" title="interface in io.github.mmm.ui.api.widget.menu"><code>UiAbstractMenuItem</code></a> that additionally has a <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiAbstractCheckbox.html" title="interface in io.github.mmm.ui.api.widget.value"><code>checkbox</code></a>.</div>
 </td>
 </tr>
 <tr class="altColor">
 <th class="colFirst" scope="row"><a href="UiMenuItemRadioButton.html" title="interface in io.github.mmm.ui.api.widget.menu">UiMenuItemRadioButton</a></th>
 <td class="colLast">
-<div class="block"><a href="UiAbstractActiveMenuItem.html" title="interface in io.github.mmm.ui.api.widget.menu"><code>UiAbstractActiveMenuItem</code></a> that additionally has a <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiAbstractRadioButton.html" title="interface in io.github.mmm.ui.api.widget.value"><code>radio button</code></a>.</div>
+<div class="block"><a href="UiAbstractMenuItem.html" title="interface in io.github.mmm.ui.api.widget.menu"><code>UiAbstractMenuItem</code></a> that additionally has a <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiAbstractRadioButton.html" title="interface in io.github.mmm.ui.api.widget.value"><code>radio button</code></a>.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <th class="colFirst" scope="row"><a href="UiMenuItemSeparator.html" title="interface in io.github.mmm.ui.api.widget.menu">UiMenuItemSeparator</a></th>
 <td class="colLast">
 <div class="block"><a href="UiAbstractMenuItem.html" title="interface in io.github.mmm.ui.api.widget.menu"><code>UiAbstractMenuItem</code></a> that acts as a <em>separator</em>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="UiNavigationBar.html" title="interface in io.github.mmm.ui.api.widget.menu">UiNavigationBar</a></th>
+<td class="colLast">
+<div class="block"><a href="UiAbstractMenuBar.html" title="interface in io.github.mmm.ui.api.widget.menu"><code>UiAbstractMenuBar</code></a> that represents a vertical navigation bar.</div>
 </td>
 </tr>
 </tbody>

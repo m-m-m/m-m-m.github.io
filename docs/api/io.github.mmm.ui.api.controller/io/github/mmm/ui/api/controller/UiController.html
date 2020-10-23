@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":18,"i2":6,"i3":6,"i4":6};
+var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":18};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -117,7 +117,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="header">
 <div class="subTitle"><span class="moduleLabelInType">Module</span>&nbsp;<a href="../../../../../../module-summary.html">io.github.mmm.ui.api.controller</a></div>
 <div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">io.github.mmm.ui.api.controller</a></div>
-<h2 title="Interface UiController" class="title">Interface UiController&lt;W extends <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html" title="interface in io.github.mmm.ui.api.widget">UiWidget</a>&gt;</h2>
+<h2 title="Interface UiController" class="title">Interface UiController&lt;V extends <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiRegularWidget.html" title="interface in io.github.mmm.ui.api.widget">UiRegularWidget</a>&gt;</h2>
 </div>
 <div class="contentContainer">
 <div class="description">
@@ -125,7 +125,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
-<dd><code>W</code> - type of the <a href="#getView()"><code>view</code></a>.</dd>
+<dd><code>V</code> - type of the <a href="#getView()"><code>view</code></a>.</dd>
 </dl>
 <dl>
 <dt>All Superinterfaces:</dt>
@@ -133,10 +133,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 <dl>
 <dt>All Known Implementing Classes:</dt>
-<dd><code><a href="AbstractUiController.html" title="class in io.github.mmm.ui.api.controller">AbstractUiController</a></code>, <code><a href="AbstractUiControllerMain.html" title="class in io.github.mmm.ui.api.controller">AbstractUiControllerMain</a></code></dd>
+<dd><code><a href="../../../../../../../io.github.mmm.ui.spi.controller/io/github/mmm/ui/spi/controller/AbstractUiController.html" title="class in io.github.mmm.ui.spi.controller">AbstractUiController</a></code>, <code><a href="../../../../../../../io.github.mmm.ui.spi.controller/io/github/mmm/ui/spi/controller/AbstractUiControllerContent.html" title="class in io.github.mmm.ui.spi.controller">AbstractUiControllerContent</a></code>, <code><a href="../../../../../../../io.github.mmm.ui.spi.controller/io/github/mmm/ui/spi/controller/AbstractUiControllerNavigation.html" title="class in io.github.mmm.ui.spi.controller">AbstractUiControllerNavigation</a></code>, <code><a href="../../../../../../../io.github.mmm.ui.spi.controller/io/github/mmm/ui/spi/controller/AbstractUiControllerPage.html" title="class in io.github.mmm.ui.spi.controller">AbstractUiControllerPage</a></code>, <code><a href="../../../../../../../io.github.mmm.ui.spi.controller/io/github/mmm/ui/spi/controller/UiControllerRoot.html" title="class in io.github.mmm.ui.spi.controller">UiControllerRoot</a></code></dd>
 </dl>
 <hr>
-<pre>public interface <span class="typeNameLabel">UiController&lt;W extends <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html" title="interface in io.github.mmm.ui.api.widget">UiWidget</a>&gt;</span>
+<pre>public interface <span class="typeNameLabel">UiController&lt;V extends <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiRegularWidget.html" title="interface in io.github.mmm.ui.api.widget">UiRegularWidget</a>&gt;</span>
 extends <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadTitle.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadTitle</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadId.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadId</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadVisible.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadVisible</a></pre>
 <div class="block">This is the interface for a dialog of the client application. It displays itself in the page of the main application
  window. It is a singleton instance that is addressed via a <a href="UiPlace.html" title="class in io.github.mmm.ui.api.controller"><code>UiPlace</code></a>. A <a href="UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a> is not a
@@ -169,96 +169,61 @@ extends <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ID_CONTENT">ID_CONTENT</a></span></code></th>
+<td class="colLast">
+<div class="block">The <a href="#getId()"><code>id</code></a> of the content <a href="UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ID_FOOTER">ID_FOOTER</a></span></code></th>
+<td class="colLast">
+<div class="block">The <a href="#getId()"><code>id</code></a> of the header <a href="UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ID_HEADER">ID_HEADER</a></span></code></th>
+<td class="colLast">
+<div class="block">The <a href="#getId()"><code>id</code></a> of the header <a href="UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ID_HOME">ID_HOME</a></span></code></th>
 <td class="colLast">
-<div class="block">The <a href="#getId()"><code>id</code></a> of the <a href="#TYPE_MAIN"><code>main</code></a> <a href="UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a> for the home page.</div>
+<div class="block">The <a href="#getId()"><code>id</code></a> of the <a href="UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a> for the home page.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ID_MARGIN">ID_MARGIN</a></span></code></th>
+<td class="colLast">
+<div class="block">The <a href="#getId()"><code>id</code></a> of the margin <a href="UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a>.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ID_NAVIGATION">ID_NAVIGATION</a></span></code></th>
 <td class="colLast">
-<div class="block">The <a href="#getId()"><code>id</code></a> of the (default) <a href="#TYPE_NAVIGATION"><code>navigation</code></a> <a href="UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a>.</div>
+<div class="block">The <a href="#getId()"><code>id</code></a> of the navigation <a href="UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a>.</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ID_PAGE">ID_PAGE</a></span></code></th>
 <td class="colLast">
-<div class="block">The <a href="#getId()"><code>id</code></a> of the <a href="#TYPE_PAGE"><code>page</code></a> <a href="UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a>.</div>
+<div class="block">The <a href="#getId()"><code>id</code></a> of the page <a href="UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a>.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ID_ROOT">ID_ROOT</a></span></code></th>
 <td class="colLast">
-<div class="block">The <a href="#getId()"><code>id</code></a> of the <a href="#TYPE_ROOT"><code>root</code></a> <a href="UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a>.</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>static <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#PATTERN_DIALOG_ID">PATTERN_DIALOG_ID</a></span></code></th>
-<td class="colLast">
-<div class="block">The regex pattern <a href="#getId()"><code>dialog IDs</code></a> have to match.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>static <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#TYPE_FOOTER">TYPE_FOOTER</a></span></code></th>
-<td class="colLast">
-<div class="block"><a href="#getType()"><code>Type</code></a> of a <em>footer</em> <a href="UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a>.</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>static <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#TYPE_HEADER">TYPE_HEADER</a></span></code></th>
-<td class="colLast">
-<div class="block"><a href="#getType()"><code>Type</code></a> of a <em>header</em> <a href="UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a>.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>static <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#TYPE_MAIN">TYPE_MAIN</a></span></code></th>
-<td class="colLast">
-<div class="block"><a href="#getType()"><code>Type</code></a> of a <em>main</em> <a href="UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a>.</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>static <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#TYPE_NAVIGATION">TYPE_NAVIGATION</a></span></code></th>
-<td class="colLast">
-<div class="block"><a href="#getType()"><code>Type</code></a> of a <em>navigation</em> <a href="UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a>.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>static <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#TYPE_PAGE">TYPE_PAGE</a></span></code></th>
-<td class="colLast">
-<div class="block"><a href="#getType()"><code>Type</code></a> of the <em>page</em> <a href="UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a>.</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>static <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#TYPE_ROOT">TYPE_ROOT</a></span></code></th>
-<td class="colLast">
-<div class="block"><a href="#getType()"><code>Type</code></a> of the <em>root</em> <a href="UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a>.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>static <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#TYPE_SIDE">TYPE_SIDE</a></span></code></th>
-<td class="colLast">
-<div class="block"><a href="#getType()"><code>Type</code></a> of a <em>side</em> <a href="UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a>.</div>
+<div class="block">The <a href="#getId()"><code>id</code></a> of the root <a href="UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a>.</div>
 </td>
 </tr>
 </table>
-<ul class="blockList">
-<li class="blockList"><a id="fields.inherited.from.class.io.github.mmm.ui.api.attribute.AttributeReadId">
-<!--   -->
-</a>
-<h3>Fields inherited from interface&nbsp;io.github.mmm.ui.api.attribute.<a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadId.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadId</a></h3>
-<code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadId.html#ID_SEPARATOR">ID_SEPARATOR</a></code></li>
-</ul>
 </li>
 </ul>
 </section>
@@ -277,16 +242,20 @@ extends <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getId()">getId</a></span>()</code></th>
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#embed(io.github.mmm.ui.api.controller.UiEmbedding,io.github.mmm.ui.api.controller.UiController)">embed</a></span>&#8203;(<a href="UiEmbedding.html" title="class in io.github.mmm.ui.api.controller">UiEmbedding</a>&nbsp;embedding,
+     <a href="UiController.html" title="interface in io.github.mmm.ui.api.controller">UiController</a>&lt;?&gt;&nbsp;childController)</code></th>
 <td class="colLast">
-<div class="block">This method gets the unique identifier of this object.</div>
+<div class="block">Embeds the <a href="#getView()"><code>view</code></a> of the given child <a href="UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a> into the
+ <a href="UiEmbedding.html#getSlotId()"><code>specified slot</code></a> of this controllers <a href="#getView()"><code>view</code></a>.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>default <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiMutableSingleComposite.html" title="interface in io.github.mmm.ui.api.widget.composite">UiMutableSingleComposite</a>&lt;? extends <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiRegularWidget.html" title="interface in io.github.mmm.ui.api.widget">UiRegularWidget</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSlot(java.lang.String)">getSlot</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;slot)</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getId()">getId</a></span>()</code></th>
+<td class="colLast">
+<div class="block">The ID of a controller should only contain ASCII letters, Latin digits, hyphens or underscores.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
@@ -294,15 +263,13 @@ extends <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getType()">getType</a></span>()</code></th>
-<td class="colLast">
-<div class="block">This method determines the type of this <a href="UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a>.</div>
-</td>
+<td class="colFirst"><code><a href="UiController.html" title="type parameter in UiController">V</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getView()">getView</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="UiController.html" title="type parameter in UiController">W</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getView()">getView</a></span>()</code></th>
+<td class="colFirst"><code>default boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isNavigable()">isNavigable</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -329,134 +296,6 @@ extends <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a id="PATTERN_DIALOG_ID">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>PATTERN_DIALOG_ID</h4>
-<pre>static final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> PATTERN_DIALOG_ID</pre>
-<div class="block">The regex pattern <a href="#getId()"><code>dialog IDs</code></a> have to match.</div>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../../constant-values.html#io.github.mmm.ui.api.controller.UiController.PATTERN_DIALOG_ID">Constant Field Values</a></dd>
-</dl>
-</li>
-</ul>
-<a id="TYPE_ROOT">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>TYPE_ROOT</h4>
-<pre>static final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> TYPE_ROOT</pre>
-<div class="block"><a href="#getType()"><code>Type</code></a> of the <em>root</em> <a href="UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a>. This is the top-level
- <a href="UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a> of the application and holds the <a href="../../../../../../../io.github.mmm.ui.api.window/io/github/mmm/ui/api/widget/window/UiMainWindow.html" title="interface in io.github.mmm.ui.api.widget.window"><code>UiMainWindow</code></a> as
- <a href="#getView()"><code>view</code></a>.</div>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><code>UiControllerRoot</code>, 
-<a href="../../../../../../../constant-values.html#io.github.mmm.ui.api.controller.UiController.TYPE_ROOT">Constant Field Values</a></dd>
-</dl>
-</li>
-</ul>
-<a id="TYPE_PAGE">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>TYPE_PAGE</h4>
-<pre>static final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> TYPE_PAGE</pre>
-<div class="block"><a href="#getType()"><code>Type</code></a> of the <em>page</em> <a href="UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a>. This is the first custom dialog that
- defines the structure of the application. It is supposed to embed itself into the <a href="#TYPE_ROOT"><code>root</code></a> page and
- provide <a href="#getSlot(java.lang.String)"><code>slots</code></a> for child <a href="UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a>s. At least a <a href="#TYPE_MAIN"><code>main</code></a> slot
- shall be present.</div>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../../constant-values.html#io.github.mmm.ui.api.controller.UiController.TYPE_PAGE">Constant Field Values</a></dd>
-</dl>
-</li>
-</ul>
-<a id="TYPE_MAIN">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>TYPE_MAIN</h4>
-<pre>static final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> TYPE_MAIN</pre>
-<div class="block"><a href="#getType()"><code>Type</code></a> of a <em>main</em> <a href="UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a>. Its <a href="#getView()"><code>view</code></a> is
- supposed to be displayed in the main <a href="#getSlot(java.lang.String)"><code>slot</code></a> of the <a href="#TYPE_PAGE"><code>page</code></a>
- <a href="UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a>.</div>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../../constant-values.html#io.github.mmm.ui.api.controller.UiController.TYPE_MAIN">Constant Field Values</a></dd>
-</dl>
-</li>
-</ul>
-<a id="TYPE_HEADER">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>TYPE_HEADER</h4>
-<pre>static final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> TYPE_HEADER</pre>
-<div class="block"><a href="#getType()"><code>Type</code></a> of a <em>header</em> <a href="UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a>. Its <a href="#getView()"><code>view</code></a> is
- supposed to be displayed at the top <a href="#getSlot(java.lang.String)"><code>slot</code></a> of the <a href="#TYPE_PAGE"><code>page</code></a>
- <a href="UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a> above <a href="#TYPE_MAIN"><code>main</code></a>.</div>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../../constant-values.html#io.github.mmm.ui.api.controller.UiController.TYPE_HEADER">Constant Field Values</a></dd>
-</dl>
-</li>
-</ul>
-<a id="TYPE_FOOTER">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>TYPE_FOOTER</h4>
-<pre>static final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> TYPE_FOOTER</pre>
-<div class="block"><a href="#getType()"><code>Type</code></a> of a <em>footer</em> <a href="UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a>. Its <a href="#getView()"><code>view</code></a> is
- supposed to be displayed at the bottom <a href="#getSlot(java.lang.String)"><code>slot</code></a> of the <a href="#TYPE_PAGE"><code>page</code></a>
- <a href="UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a> below <a href="#TYPE_MAIN"><code>main</code></a>.</div>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../../constant-values.html#io.github.mmm.ui.api.controller.UiController.TYPE_FOOTER">Constant Field Values</a></dd>
-</dl>
-</li>
-</ul>
-<a id="TYPE_NAVIGATION">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>TYPE_NAVIGATION</h4>
-<pre>static final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> TYPE_NAVIGATION</pre>
-<div class="block"><a href="#getType()"><code>Type</code></a> of a <em>navigation</em> <a href="UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a>. The navigation offers a
- structured way for the user to navigate through the application. Typically it is displayed as a list or tree of
- links beside the <a href="#TYPE_MAIN"><code>main dialog</code></a> (typically on the left).</div>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../../constant-values.html#io.github.mmm.ui.api.controller.UiController.TYPE_NAVIGATION">Constant Field Values</a></dd>
-</dl>
-</li>
-</ul>
-<a id="TYPE_SIDE">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>TYPE_SIDE</h4>
-<pre>static final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> TYPE_SIDE</pre>
-<div class="block"><a href="#getType()"><code>Type</code></a> of a <em>side</em> <a href="UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a>. Typically it is displayed on the right
- of the <a href="#TYPE_MAIN"><code>main</code></a> content area and shows additional information or a summary of the current state
- (e.g. shopping cart). However, it may also be used to display advertisements.</div>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../../constant-values.html#io.github.mmm.ui.api.controller.UiController.TYPE_SIDE">Constant Field Values</a></dd>
-</dl>
-</li>
-</ul>
 <a id="ID_ROOT">
 <!--   -->
 </a>
@@ -464,10 +303,24 @@ extends <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui
 <li class="blockList">
 <h4>ID_ROOT</h4>
 <pre>static final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> ID_ROOT</pre>
-<div class="block">The <a href="#getId()"><code>id</code></a> of the <a href="#TYPE_ROOT"><code>root</code></a> <a href="UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a>.</div>
+<div class="block">The <a href="#getId()"><code>id</code></a> of the root <a href="UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a>.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../../../constant-values.html#io.github.mmm.ui.api.controller.UiController.ID_ROOT">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a id="ID_HOME">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ID_HOME</h4>
+<pre>static final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> ID_HOME</pre>
+<div class="block">The <a href="#getId()"><code>id</code></a> of the <a href="UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a> for the home page.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../../constant-values.html#io.github.mmm.ui.api.controller.UiController.ID_HOME">Constant Field Values</a></dd>
 </dl>
 </li>
 </ul>
@@ -478,10 +331,24 @@ extends <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui
 <li class="blockList">
 <h4>ID_PAGE</h4>
 <pre>static final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> ID_PAGE</pre>
-<div class="block">The <a href="#getId()"><code>id</code></a> of the <a href="#TYPE_PAGE"><code>page</code></a> <a href="UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a>.</div>
+<div class="block">The <a href="#getId()"><code>id</code></a> of the page <a href="UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a>.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../../../constant-values.html#io.github.mmm.ui.api.controller.UiController.ID_PAGE">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a id="ID_CONTENT">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ID_CONTENT</h4>
+<pre>static final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> ID_CONTENT</pre>
+<div class="block">The <a href="#getId()"><code>id</code></a> of the content <a href="UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a>.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../../constant-values.html#io.github.mmm.ui.api.controller.UiController.ID_CONTENT">Constant Field Values</a></dd>
 </dl>
 </li>
 </ul>
@@ -492,24 +359,55 @@ extends <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui
 <li class="blockList">
 <h4>ID_NAVIGATION</h4>
 <pre>static final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> ID_NAVIGATION</pre>
-<div class="block">The <a href="#getId()"><code>id</code></a> of the (default) <a href="#TYPE_NAVIGATION"><code>navigation</code></a> <a href="UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a>.</div>
+<div class="block">The <a href="#getId()"><code>id</code></a> of the navigation <a href="UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a>.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../../../constant-values.html#io.github.mmm.ui.api.controller.UiController.ID_NAVIGATION">Constant Field Values</a></dd>
 </dl>
 </li>
 </ul>
-<a id="ID_HOME">
+<a id="ID_HEADER">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ID_HEADER</h4>
+<pre>static final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> ID_HEADER</pre>
+<div class="block">The <a href="#getId()"><code>id</code></a> of the header <a href="UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a>. Its <a href="#getView()"><code>view</code></a> is supposed to be
+ <a href="#embed(io.github.mmm.ui.api.controller.UiEmbedding,io.github.mmm.ui.api.controller.UiController)"><code>embedded</code></a> at the top of the page.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../../constant-values.html#io.github.mmm.ui.api.controller.UiController.ID_HEADER">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a id="ID_FOOTER">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ID_FOOTER</h4>
+<pre>static final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> ID_FOOTER</pre>
+<div class="block">The <a href="#getId()"><code>id</code></a> of the header <a href="UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a>. Its <a href="#getView()"><code>view</code></a> is supposed to be
+ <a href="#embed(io.github.mmm.ui.api.controller.UiEmbedding,io.github.mmm.ui.api.controller.UiController)"><code>embedded</code></a> at the bottom of the page.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../../constant-values.html#io.github.mmm.ui.api.controller.UiController.ID_FOOTER">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a id="ID_MARGIN">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>ID_HOME</h4>
-<pre>static final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> ID_HOME</pre>
-<div class="block">The <a href="#getId()"><code>id</code></a> of the <a href="#TYPE_MAIN"><code>main</code></a> <a href="UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a> for the home page.</div>
+<h4>ID_MARGIN</h4>
+<pre>static final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> ID_MARGIN</pre>
+<div class="block">The <a href="#getId()"><code>id</code></a> of the margin <a href="UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a>. Its <a href="#getView()"><code>view</code></a> is supposed to be
+ <a href="#embed(io.github.mmm.ui.api.controller.UiEmbedding,io.github.mmm.ui.api.controller.UiController)"><code>embedded</code></a> at the right of the page (in the margin column).</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../../constant-values.html#io.github.mmm.ui.api.controller.UiController.ID_HOME">Constant Field Values</a></dd>
+<dd><a href="../../../../../../../constant-values.html#io.github.mmm.ui.api.controller.UiController.ID_MARGIN">Constant Field Values</a></dd>
 </dl>
 </li>
 </ul>
@@ -530,14 +428,8 @@ extends <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui
 <li class="blockList">
 <h4>getId</h4>
 <pre class="methodSignature"><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getId()</pre>
-<div class="block">This method gets the unique identifier of this object. <br>
- <b>ATTENTION:</b><br>
- In order to be compliant with all possible UI toolkit implementations, a valid ID has to fulfill ECMA-262, Section
- 7.6. It is recommended to use IDs of the form <code>[a-zA-Z][a-zA-Z0-9_$]*</code>. Invalid IDs (e.g. containing colon,
- hash or period) will cause complications with CSS selectors.
-
- The ID of a dialog should only contain ASCII letters, Latin digits, hyphens or underscores. It must not contain
- ':', ';', '&', '?', '=', '/', '\\' or ' '.</div>
+<div class="block">The ID of a controller should only contain ASCII letters, Latin digits, hyphens or underscores. It may also contain
+ slashes ('/') or the hash sign ('#'). It must not contain '?', '&', '=', ':', ';', '\\' or ' '.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadId.html#getId()">getId</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadId.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadId</a></code></dd>
@@ -566,13 +458,28 @@ extends <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui
 </dl>
 </li>
 </ul>
+<a id="isNavigable()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isNavigable</h4>
+<pre class="methodSignature">default&nbsp;boolean&nbsp;isNavigable()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>true</code> if this <a href="UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a> can be <a href="UiNavigationManager.html#navigateTo(io.github.mmm.ui.api.controller.UiPlace)"><code>navigated</code></a>
+         directly (default), <code>false</code> otherwise. Override this method for internal parent controllers than may
+         not be navigated directly.</dd>
+</dl>
+</li>
+</ul>
 <a id="getView()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getView</h4>
-<pre class="methodSignature"><a href="UiController.html" title="type parameter in UiController">W</a>&nbsp;getView()</pre>
+<pre class="methodSignature"><a href="UiController.html" title="type parameter in UiController">V</a>&nbsp;getView()</pre>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the view of this <a href="UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a>. The view is the actual UI represented by a <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html" title="interface in io.github.mmm.ui.api.widget"><code>UiWidget</code></a>,
@@ -580,41 +487,21 @@ extends <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui
 </dl>
 </li>
 </ul>
-<a id="getType()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getType</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getType()</pre>
-<div class="block">This method determines the type of this <a href="UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a>. There are <code>TYPE_*</code> constants predefined here
- for common types. However, you can simply create additional custom types for your needs.</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the type of this <a href="UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a>.</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="#TYPE_MAIN"><code>TYPE_MAIN</code></a>, 
-<a href="#TYPE_HEADER"><code>TYPE_HEADER</code></a>, 
-<a href="#TYPE_FOOTER"><code>TYPE_FOOTER</code></a>, 
-<a href="#TYPE_NAVIGATION"><code>TYPE_NAVIGATION</code></a>, 
-<a href="#TYPE_SIDE"><code>TYPE_SIDE</code></a>, 
-<a href="#TYPE_ROOT"><code>TYPE_ROOT</code></a></dd>
-</dl>
-</li>
-</ul>
-<a id="getSlot(java.lang.String)">
+<a id="embed(io.github.mmm.ui.api.controller.UiEmbedding,io.github.mmm.ui.api.controller.UiController)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>getSlot</h4>
-<pre class="methodSignature">default&nbsp;<a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiMutableSingleComposite.html" title="interface in io.github.mmm.ui.api.widget.composite">UiMutableSingleComposite</a>&lt;? extends <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiRegularWidget.html" title="interface in io.github.mmm.ui.api.widget">UiRegularWidget</a>&gt;&nbsp;getSlot&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;slot)</pre>
+<h4>embed</h4>
+<pre class="methodSignature">void&nbsp;embed&#8203;(<a href="UiEmbedding.html" title="class in io.github.mmm.ui.api.controller">UiEmbedding</a>&nbsp;embedding,
+           <a href="UiController.html" title="interface in io.github.mmm.ui.api.controller">UiController</a>&lt;?&gt;&nbsp;childController)</pre>
+<div class="block">Embeds the <a href="#getView()"><code>view</code></a> of the given child <a href="UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a> into the
+ <a href="UiEmbedding.html#getSlotId()"><code>specified slot</code></a> of this controllers <a href="#getView()"><code>view</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>slot</code> - the <a href="UiControllerSlot.html#getSlot()"><code>slot name</code></a>.</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiMutableSingleComposite.html" title="interface in io.github.mmm.ui.api.widget.composite"><code>UiMutableSingleComposite</code></a> where to embed the <a href="#getView()"><code>view</code></a> of a child
-         <a href="UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a> or <code>null</code> if no such slot is defined by this <a href="UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a>.</dd>
+<dd><code>embedding</code> - the <a href="UiEmbedding.html#getSlotId()"><code>slotId</code></a> where to embed the given child <a href="UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a>s
+        <a href="#getView()"><code>view</code></a>.</dd>
+<dd><code>childController</code> - the child controller to embed.</dd>
 </dl>
 </li>
 </ul>

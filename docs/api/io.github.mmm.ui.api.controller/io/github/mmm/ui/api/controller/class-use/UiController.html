@@ -110,6 +110,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colFirst" scope="row"><a href="#io.github.mmm.ui.api.controller">io.github.mmm.ui.api.controller</a></th>
 <td class="colLast">&nbsp;</td>
 </tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="#io.github.mmm.ui.spi.controller">io.github.mmm.ui.spi.controller</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
 </tbody>
 </table>
 </li>
@@ -121,30 +125,6 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </a>
 <h3>Uses of <a href="../UiController.html" title="interface in io.github.mmm.ui.api.controller">UiController</a> in <a href="../package-summary.html">io.github.mmm.ui.api.controller</a></h3>
 <table class="useSummary">
-<caption><span>Classes in <a href="../package-summary.html">io.github.mmm.ui.api.controller</a> that implement <a href="../UiController.html" title="interface in io.github.mmm.ui.api.controller">UiController</a></span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colSecond" scope="col">Class</th>
-<th class="colLast" scope="col">Description</th>
-</tr>
-<tbody>
-<tr class="altColor">
-<td class="colFirst"><code>class&nbsp;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../AbstractUiController.html" title="class in io.github.mmm.ui.api.controller">AbstractUiController</a>&lt;W extends <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html" title="interface in io.github.mmm.ui.api.widget">UiWidget</a>&gt;</span></code></th>
-<td class="colLast">
-<div class="block">Abstract base implementation of <a href="../UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a>.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>class&nbsp;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../AbstractUiControllerMain.html" title="class in io.github.mmm.ui.api.controller">AbstractUiControllerMain</a>&lt;W extends <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiRegularWidget.html" title="interface in io.github.mmm.ui.api.widget">UiRegularWidget</a>&gt;</span></code></th>
-<td class="colLast">
-<div class="block"><a href="../AbstractUiController.html" title="class in io.github.mmm.ui.api.controller"><code>AbstractUiController</code></a> with <a href="../AbstractUiControllerMain.html#getType()"><code>type</code></a> <a href="../UiController.html#TYPE_MAIN"><code>main</code></a>.</div>
-</td>
-</tr>
-</tbody>
-</table>
-<table class="useSummary">
 <caption><span>Methods in <a href="../package-summary.html">io.github.mmm.ui.api.controller</a> that return <a href="../UiController.html" title="interface in io.github.mmm.ui.api.controller">UiController</a></span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
@@ -153,28 +133,121 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code>&lt;W extends <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html" title="interface in io.github.mmm.ui.api.widget">UiWidget</a>&gt;<br><a href="../UiController.html" title="interface in io.github.mmm.ui.api.controller">UiController</a>&lt;W&gt;</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">UiControllerManager.</span><code><span class="memberNameLink"><a href="../UiControllerManager.html#getController(java.lang.String)">getController</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;id)</code></th>
+<td class="colFirst"><code>&lt;W extends <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiRegularWidget.html" title="interface in io.github.mmm.ui.api.widget">UiRegularWidget</a>&gt;<br><a href="../UiController.html" title="interface in io.github.mmm.ui.api.controller">UiController</a>&lt;W&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">UiNavigationManager.</span><code><span class="memberNameLink"><a href="../UiNavigationManager.html#getController(java.lang.String)">getController</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;id)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>&lt;W extends <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html" title="interface in io.github.mmm.ui.api.widget">UiWidget</a>&gt;<br><a href="../UiController.html" title="interface in io.github.mmm.ui.api.controller">UiController</a>&lt;W&gt;</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">AbstractUiControllerManager.</span><code><span class="memberNameLink"><a href="../AbstractUiControllerManager.html#getCurrentDialog(java.lang.String)">getCurrentDialog</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;type)</code></th>
+<td class="colFirst"><code>default &lt;W extends <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiRegularWidget.html" title="interface in io.github.mmm.ui.api.widget">UiRegularWidget</a>&gt;<br><a href="../UiController.html" title="interface in io.github.mmm.ui.api.controller">UiController</a>&lt;W&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">UiNavigationManager.</span><code><span class="memberNameLink"><a href="../UiNavigationManager.html#getRequiredController(java.lang.String)">getRequiredController</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;id)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary">
+<caption><span>Methods in <a href="../package-summary.html">io.github.mmm.ui.api.controller</a> with parameters of type <a href="../UiController.html" title="interface in io.github.mmm.ui.api.controller">UiController</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">UiController.</span><code><span class="memberNameLink"><a href="../UiController.html#embed(io.github.mmm.ui.api.controller.UiEmbedding,io.github.mmm.ui.api.controller.UiController)">embed</a></span>&#8203;(<a href="../UiEmbedding.html" title="class in io.github.mmm.ui.api.controller">UiEmbedding</a>&nbsp;embedding,
+     <a href="../UiController.html" title="interface in io.github.mmm.ui.api.controller">UiController</a>&lt;?&gt;&nbsp;childController)</code></th>
+<td class="colLast">
+<div class="block">Embeds the <a href="../UiController.html#getView()"><code>view</code></a> of the given child <a href="../UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a> into the
+ <a href="../UiEmbedding.html#getSlotId()"><code>specified slot</code></a> of this controllers <a href="../UiController.html#getView()"><code>view</code></a>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
+<section role="region"><a id="io.github.mmm.ui.spi.controller">
+<!--   -->
+</a>
+<h3>Uses of <a href="../UiController.html" title="interface in io.github.mmm.ui.api.controller">UiController</a> in <a href="../../../../../../../../io.github.mmm.ui.spi.controller/io/github/mmm/ui/spi/controller/package-summary.html">io.github.mmm.ui.spi.controller</a></h3>
+<table class="useSummary">
+<caption><span>Classes in <a href="../../../../../../../../io.github.mmm.ui.spi.controller/io/github/mmm/ui/spi/controller/package-summary.html">io.github.mmm.ui.spi.controller</a> that implement <a href="../UiController.html" title="interface in io.github.mmm.ui.api.controller">UiController</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Class</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../../../io.github.mmm.ui.spi.controller/io/github/mmm/ui/spi/controller/AbstractUiController.html" title="class in io.github.mmm.ui.spi.controller">AbstractUiController</a>&lt;V extends <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiRegularWidget.html" title="interface in io.github.mmm.ui.api.widget">UiRegularWidget</a>&gt;</span></code></th>
+<td class="colLast">
+<div class="block">Abstract base implementation of <a href="../UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../../../io.github.mmm.ui.spi.controller/io/github/mmm/ui/spi/controller/AbstractUiControllerContent.html" title="class in io.github.mmm.ui.spi.controller">AbstractUiControllerContent</a>&lt;V extends <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiRegularWidget.html" title="interface in io.github.mmm.ui.api.widget">UiRegularWidget</a>&gt;</span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../../../io.github.mmm.ui.spi.controller/io/github/mmm/ui/spi/controller/AbstractUiController.html" title="class in io.github.mmm.ui.spi.controller"><code>AbstractUiController</code></a> for <a href="../UiController.html#ID_CONTENT"><code>content</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../../../io.github.mmm.ui.spi.controller/io/github/mmm/ui/spi/controller/AbstractUiControllerNavigation.html" title="class in io.github.mmm.ui.spi.controller">AbstractUiControllerNavigation</a>&lt;V extends <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiRegularWidget.html" title="interface in io.github.mmm.ui.api.widget">UiRegularWidget</a>&gt;</span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../../../io.github.mmm.ui.spi.controller/io/github/mmm/ui/spi/controller/AbstractUiController.html" title="class in io.github.mmm.ui.spi.controller"><code>AbstractUiController</code></a> for <a href="../UiController.html#ID_NAVIGATION"><code>navigation</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../../../io.github.mmm.ui.spi.controller/io/github/mmm/ui/spi/controller/AbstractUiControllerPage.html" title="class in io.github.mmm.ui.spi.controller">AbstractUiControllerPage</a></span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../../../io.github.mmm.ui.spi.controller/io/github/mmm/ui/spi/controller/AbstractUiController.html" title="class in io.github.mmm.ui.spi.controller"><code>Controller</code></a> for the <a href="../UiController.html#ID_PAGE"><code>page</code></a> dialog.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../../../io.github.mmm.ui.spi.controller/io/github/mmm/ui/spi/controller/UiControllerRoot.html" title="class in io.github.mmm.ui.spi.controller">UiControllerRoot</a></span></code></th>
+<td class="colLast">
+<div class="block"><a href="../UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a> with <a href="../../../../../../../../io.github.mmm.ui.spi.controller/io/github/mmm/ui/spi/controller/UiControllerRoot.html#getId()"><code>ID</code></a>
+ <a href="../UiController.html#ID_ROOT"><code>root</code></a>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary">
+<caption><span>Methods in <a href="../../../../../../../../io.github.mmm.ui.spi.controller/io/github/mmm/ui/spi/controller/package-summary.html">io.github.mmm.ui.spi.controller</a> with parameters of type <a href="../UiController.html" title="interface in io.github.mmm.ui.api.controller">UiController</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">AbstractUiController.</span><code><span class="memberNameLink"><a href="../../../../../../../../io.github.mmm.ui.spi.controller/io/github/mmm/ui/spi/controller/AbstractUiController.html#doEmbed(java.lang.String,io.github.mmm.ui.api.controller.UiController)">doEmbed</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;slotId,
+       <a href="../UiController.html" title="interface in io.github.mmm.ui.api.controller">UiController</a>&lt;?&gt;&nbsp;childController)</code></th>
+<td class="colLast">
+<div class="block">Override this method for parent controllers to embed children.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">AbstractUiControllerPage.</span><code><span class="memberNameLink"><a href="../../../../../../../../io.github.mmm.ui.spi.controller/io/github/mmm/ui/spi/controller/AbstractUiControllerPage.html#doEmbed(java.lang.String,io.github.mmm.ui.api.controller.UiController)">doEmbed</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;slotId,
+       <a href="../UiController.html" title="interface in io.github.mmm.ui.api.controller">UiController</a>&lt;?&gt;&nbsp;childController)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>&lt;W extends <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html" title="interface in io.github.mmm.ui.api.widget">UiWidget</a>&gt;<br><a href="../UiController.html" title="interface in io.github.mmm.ui.api.controller">UiController</a>&lt;W&gt;</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">UiControllerManager.</span><code><span class="memberNameLink"><a href="../UiControllerManager.html#getCurrentDialog(java.lang.String)">getCurrentDialog</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;type)</code></th>
+<td class="colFirst"><code>protected boolean</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">UiControllerRoot.</span><code><span class="memberNameLink"><a href="../../../../../../../../io.github.mmm.ui.spi.controller/io/github/mmm/ui/spi/controller/UiControllerRoot.html#doEmbed(java.lang.String,io.github.mmm.ui.api.controller.UiController)">doEmbed</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;slotId,
+       <a href="../UiController.html" title="interface in io.github.mmm.ui.api.controller">UiController</a>&lt;?&gt;&nbsp;childController)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>default <a href="../UiController.html" title="interface in io.github.mmm.ui.api.controller">UiController</a>&lt;?&gt;</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">UiControllerManager.</span><code><span class="memberNameLink"><a href="../UiControllerManager.html#getCurrentMainDialog()">getCurrentMainDialog</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>default &lt;W extends <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html" title="interface in io.github.mmm.ui.api.widget">UiWidget</a>&gt;<br><a href="../UiController.html" title="interface in io.github.mmm.ui.api.controller">UiController</a>&lt;W&gt;</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">UiControllerManager.</span><code><span class="memberNameLink"><a href="../UiControllerManager.html#getRequiredController(java.lang.String)">getRequiredController</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;id)</code></th>
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">AbstractUiController.</span><code><span class="memberNameLink"><a href="../../../../../../../../io.github.mmm.ui.spi.controller/io/github/mmm/ui/spi/controller/AbstractUiController.html#embed(io.github.mmm.ui.api.controller.UiEmbedding,io.github.mmm.ui.api.controller.UiController)">embed</a></span>&#8203;(<a href="../UiEmbedding.html" title="class in io.github.mmm.ui.api.controller">UiEmbedding</a>&nbsp;newEmbedding,
+     <a href="../UiController.html" title="interface in io.github.mmm.ui.api.controller">UiController</a>&lt;?&gt;&nbsp;childController)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </tbody>

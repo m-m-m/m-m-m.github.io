@@ -149,19 +149,29 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="rowColor">
+<th class="colFirst" scope="row"><a href="#io.github.mmm.marshall.json">io.github.mmm.marshall.json</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="#io.github.mmm.marshall.jsonp">io.github.mmm.marshall.jsonp</a></th>
 <td class="colLast">
 <div class="block">Contains <a href="../../../../../io.github.mmm.marshall.jsonp/io/github/mmm/marshall/jsonp/JsonpMarshalling.html" title="class in io.github.mmm.marshall.jsonp"><code>JsonpMarshalling</code></a> for JSON marshaling support based on JSON-P.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="#io.github.mmm.marshall.standard">io.github.mmm.marshall.standard</a></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="#io.github.mmm.marshall.stax">io.github.mmm.marshall.stax</a></th>
 <td class="colLast">
 <div class="block">Contains <a href="../../../../../io.github.mmm.marshall.stax/io/github/mmm/marshall/stax/StaxMarshalling.html" title="class in io.github.mmm.marshall.stax"><code>StaxMarshalling</code></a> for XML marshaling support based on StAX.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="#io.github.mmm.marshall.tvm.xml">io.github.mmm.marshall.tvm.xml</a></th>
+<td class="colLast">
+<div class="block">Contains marshalling for XML format based on TeaVM.</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -669,79 +679,116 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
+<th class="colFirst" scope="row"><a href="class-use/AbstractStructuredWriter.html#io.github.mmm.marshall">AbstractStructuredWriter</a></th>
+<td class="colLast">
+<div class="block">Abstract base implementation of <a href="StructuredWriter.html" title="interface in io.github.mmm.marshall"><code>StructuredWriter</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="class-use/MarshallableObject.html#io.github.mmm.marshall">MarshallableObject</a></th>
 <td class="colLast">
 <div class="block">Interface for an object that can <a href="MarshallableObject.html#write(io.github.mmm.marshall.StructuredWriter)"><code>write itself</code></a> to structured formats such as JSON or
  XML.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="class-use/Marshaller.html#io.github.mmm.marshall">Marshaller</a></th>
 <td class="colLast">
 <div class="block">Interface for a marshaller that can <a href="Marshaller.html#writeObject(io.github.mmm.marshall.StructuredWriter,T)"><code>write</code></a> (marshall or serialize) an
  object to structured formats such as JSON or XML.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="class-use/Marshalling.html#io.github.mmm.marshall">Marshalling</a></th>
 <td class="colLast">
 <div class="block">A combination of <a href="Marshaller.html" title="interface in io.github.mmm.marshall"><code>Marshaller</code></a> and <a href="Unmarshaller.html" title="interface in io.github.mmm.marshall"><code>Unmarshaller</code></a>.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="class-use/MarshallingConfig.html#io.github.mmm.marshall">MarshallingConfig</a></th>
 <td class="colLast">
 <div class="block"><a href="../../../../../io.github.mmm.base/io/github/mmm/base/config/ConfigMap.html" title="class in io.github.mmm.base.config"><code>ConfigMap</code></a> for marshalling.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="class-use/StructuredFormat.html#io.github.mmm.marshall">StructuredFormat</a></th>
 <td class="colLast">
 <div class="block">Interface providing a structured format such as JSON or XML.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="class-use/StructuredFormatFactory.html#io.github.mmm.marshall">StructuredFormatFactory</a></th>
 <td class="colLast">
 <div class="block">Factory to create instances of <a href="StructuredFormat.html" title="interface in io.github.mmm.marshall"><code>StructuredFormat</code></a>.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="class-use/StructuredFormatProvider.html#io.github.mmm.marshall">StructuredFormatProvider</a></th>
 <td class="colLast">
 <div class="block">Factory to create instances of <a href="StructuredFormat.html" title="interface in io.github.mmm.marshall"><code>StructuredFormat</code></a>.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="class-use/StructuredReader.html#io.github.mmm.marshall">StructuredReader</a></th>
 <td class="colLast">
 <div class="block">Interface for a reader to parse a <a href="StructuredFormat.html" title="interface in io.github.mmm.marshall"><code>structured format</code></a> such as JSON or XML.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="class-use/StructuredReader.State.html#io.github.mmm.marshall">StructuredReader.State</a></th>
 <td class="colLast">
 <div class="block">Enum with the possible states of a <a href="StructuredReader.html" title="interface in io.github.mmm.marshall"><code>StructuredReader</code></a>.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="class-use/StructuredWriter.html#io.github.mmm.marshall">StructuredWriter</a></th>
 <td class="colLast">
 <div class="block">Interface for a writer to produce a <a href="StructuredFormat.html" title="interface in io.github.mmm.marshall"><code>structured format</code></a> such as JSON or XML.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="class-use/UnmarshallableObject.html#io.github.mmm.marshall">UnmarshallableObject</a></th>
 <td class="colLast">
 <div class="block">Interface for an object that can <a href="UnmarshallableObject.html#read(io.github.mmm.marshall.StructuredReader)"><code>read its data</code></a> from structured formats such as JSON
  or XML.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="class-use/Unmarshaller.html#io.github.mmm.marshall">Unmarshaller</a></th>
 <td class="colLast">
 <div class="block">Interface for an unmarshaller that can <a href="Unmarshaller.html#readObject(io.github.mmm.marshall.StructuredReader)"><code>read</code></a> (unmarshall or de-serialize) an
  object from structured formats such as JSON or XML.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a id="io.github.mmm.marshall.json">
+<!--   -->
+</a>
+<table class="useSummary">
+<caption><span>Classes in <a href="package-summary.html">io.github.mmm.marshall</a> used by <a href="../../../../../io.github.mmm.marshall.json/io/github/mmm/marshall/json/package-summary.html">io.github.mmm.marshall.json</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Class</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="class-use/MarshallingConfig.html#io.github.mmm.marshall.json">MarshallingConfig</a></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../io.github.mmm.base/io/github/mmm/base/config/ConfigMap.html" title="class in io.github.mmm.base.config"><code>ConfigMap</code></a> for marshalling.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="class-use/StructuredFormat.html#io.github.mmm.marshall.json">StructuredFormat</a></th>
+<td class="colLast">
+<div class="block">Interface providing a structured format such as JSON or XML.</div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="class-use/StructuredFormatProvider.html#io.github.mmm.marshall.json">StructuredFormatProvider</a></th>
+<td class="colLast">
+<div class="block">Factory to create instances of <a href="StructuredFormat.html" title="interface in io.github.mmm.marshall"><code>StructuredFormat</code></a>.</div>
 </td>
 </tr>
 </tbody>
@@ -847,6 +894,37 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr class="altColor">
 <th class="colFirst" scope="row"><a href="class-use/StructuredFormatProvider.html#io.github.mmm.marshall.stax">StructuredFormatProvider</a></th>
+<td class="colLast">
+<div class="block">Factory to create instances of <a href="StructuredFormat.html" title="interface in io.github.mmm.marshall"><code>StructuredFormat</code></a>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a id="io.github.mmm.marshall.tvm.xml">
+<!--   -->
+</a>
+<table class="useSummary">
+<caption><span>Classes in <a href="package-summary.html">io.github.mmm.marshall</a> used by <a href="../../../../../io.github.mmm.marshall.tvm.xml/io/github/mmm/marshall/tvm/xml/package-summary.html">io.github.mmm.marshall.tvm.xml</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Class</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="class-use/MarshallingConfig.html#io.github.mmm.marshall.tvm.xml">MarshallingConfig</a></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../io.github.mmm.base/io/github/mmm/base/config/ConfigMap.html" title="class in io.github.mmm.base.config"><code>ConfigMap</code></a> for marshalling.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="class-use/StructuredFormat.html#io.github.mmm.marshall.tvm.xml">StructuredFormat</a></th>
+<td class="colLast">
+<div class="block">Interface providing a structured format such as JSON or XML.</div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="class-use/StructuredFormatProvider.html#io.github.mmm.marshall.tvm.xml">StructuredFormatProvider</a></th>
 <td class="colLast">
 <div class="block">Factory to create instances of <a href="StructuredFormat.html" title="interface in io.github.mmm.marshall"><code>StructuredFormat</code></a>.</div>
 </td>

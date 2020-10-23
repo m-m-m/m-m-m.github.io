@@ -89,7 +89,7 @@ loadScripts(document, 'script');</script>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
@@ -158,6 +158,23 @@ implements <a href="Validator.html" title="interface in io.github.mmm.validation
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<section role="region">
+<ul class="blockList">
+<li class="blockList"><a id="field.summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<ul class="blockList">
+<li class="blockList"><a id="fields.inherited.from.class.io.github.mmm.validation.Validator">
+<!--   -->
+</a>
+<h3>Fields inherited from interface&nbsp;io.github.mmm.validation.<a href="Validator.html" title="interface in io.github.mmm.validation">Validator</a></h3>
+<code><a href="Validator.html#ID_MANDATORY">ID_MANDATORY</a></code></li>
+</ul>
+</li>
+</ul>
+</section>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
 <section role="region">
 <ul class="blockList">
@@ -196,38 +213,40 @@ implements <a href="Validator.html" title="interface in io.github.mmm.validation
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="Validator.html" title="interface in io.github.mmm.validation">Validator</a>&lt;<a href="AbstractValidator.html" title="type parameter in AbstractValidator">V</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#append(io.github.mmm.validation.Validator...)">append</a></span>&#8203;(<a href="Validator.html" title="interface in io.github.mmm.validation">Validator</a>&lt;? super <a href="AbstractValidator.html" title="type parameter in AbstractValidator">V</a>&gt;...&nbsp;validators)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i1" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#equals(java.lang.Object)">equals</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;obj)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
-<td class="colFirst"><code>protected <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getCode()">getCode</a></span>()</code></th>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getId()">getId</a></span>()</code></th>
 <td class="colLast">
-<div class="block">This is the default implementation to retrieve the <a href="ValidationResult.html#getCode()"><code>code</code></a> of this
- <a href="Validator.html" title="interface in io.github.mmm.validation"><code>Validator</code></a>.</div>
+<div class="block"><a href="AbstractValidator.html" title="class in io.github.mmm.validation"><code>AbstractValidator</code></a> only provides a default implementation of this method.<br>
+ <b>ATTENTION:</b><br>
+ This default implementation returns the <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true#getSimpleName()" title="class or interface in java.lang" class="externalLink"><code>simple class name</code></a> of the actual
+ <a href="Validator.html" title="interface in io.github.mmm.validation"><code>Validator</code></a> implementation.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hashCode()">hashCode</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isDynamic()">isDynamic</a></span>()</code></th>
 <td class="colLast">
 <div class="block">This method determines if this <a href="Validator.html" title="interface in io.github.mmm.validation"><code>Validator</code></a> is <em>dynamic</em>.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>protected <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#source2string(java.lang.Object)">source2string</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;source)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toString()">toString</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -236,7 +255,7 @@ implements <a href="Validator.html" title="interface in io.github.mmm.validation
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></h3>
-<code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang" class="externalLink">clone</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang" class="externalLink">finalize</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang" class="externalLink">getClass</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang" class="externalLink">notify</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang" class="externalLink">notifyAll</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang" class="externalLink">toString</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#wait(long,int)" title="class or interface in java.lang" class="externalLink">wait</a></code></li>
+<code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang" class="externalLink">clone</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang" class="externalLink">finalize</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang" class="externalLink">getClass</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang" class="externalLink">notify</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang" class="externalLink">notifyAll</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#wait(long,int)" title="class or interface in java.lang" class="externalLink">wait</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.base.lang.Composable">
@@ -257,7 +276,7 @@ implements <a href="Validator.html" title="interface in io.github.mmm.validation
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;io.github.mmm.validation.<a href="Validator.html" title="interface in io.github.mmm.validation">Validator</a></h3>
-<code><a href="Validator.html#getMax()">getMax</a>, <a href="Validator.html#getMin()">getMin</a>, <a href="Validator.html#isMandatory()">isMandatory</a>, <a href="Validator.html#validate(V)">validate</a>, <a href="Validator.html#validate(V,java.lang.Object)">validate</a></code></li>
+<code><a href="Validator.html#append(io.github.mmm.validation.Validator)">append</a>, <a href="Validator.html#append(io.github.mmm.validation.Validator...)">append</a>, <a href="Validator.html#containsId(java.lang.String)">containsId</a>, <a href="Validator.html#getMax()">getMax</a>, <a href="Validator.html#getMin()">getMin</a>, <a href="Validator.html#isMandatory()">isMandatory</a>, <a href="Validator.html#validate(V)">validate</a>, <a href="Validator.html#validate(V,java.lang.Object)">validate</a></code></li>
 </ul>
 </li>
 </ul>
@@ -295,23 +314,26 @@ implements <a href="Validator.html" title="interface in io.github.mmm.validation
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="getCode()">
+<a id="getId()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getCode</h4>
-<pre class="methodSignature">protected&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getCode()</pre>
-<div class="block">This is the default implementation to retrieve the <a href="ValidationResult.html#getCode()"><code>code</code></a> of this
- <a href="Validator.html" title="interface in io.github.mmm.validation"><code>Validator</code></a>. <br>
+<h4>getId</h4>
+<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getId()</pre>
+<div class="block"><a href="AbstractValidator.html" title="class in io.github.mmm.validation"><code>AbstractValidator</code></a> only provides a default implementation of this method.<br>
  <b>ATTENTION:</b><br>
- This default implementation returns the <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true#getSimpleName()" title="class or interface in java.lang" class="externalLink"><code>classname</code></a> of the actual <a href="Validator.html" title="interface in io.github.mmm.validation"><code>Validator</code></a>
- implementation. This strategy is chosen for simplicity when implementing a new validator. To ensure stable codes
- override this method and return a string constant. This shall at least be done when the name of the class is
- changed.</div>
+ This default implementation returns the <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true#getSimpleName()" title="class or interface in java.lang" class="externalLink"><code>simple class name</code></a> of the actual
+ <a href="Validator.html" title="interface in io.github.mmm.validation"><code>Validator</code></a> implementation. This strategy is chosen for simplicity when implementing a new <a href="Validator.html" title="interface in io.github.mmm.validation"><code>Validator</code></a>.
+ To ensure stable IDs override this method and return a string constant. This shall at least be done when the name
+ of the class is changed to provide backwards compatibility.</div>
 <dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="Validator.html#getId()">getId</a></code>&nbsp;in interface&nbsp;<code><a href="Validator.html" title="interface in io.github.mmm.validation">Validator</a>&lt;<a href="AbstractValidator.html" title="type parameter in AbstractValidator">V</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the <a href="ValidationResult.html#getCode()"><code>code</code></a>.</dd>
+<dd>the identifier of this <a href="Validator.html" title="interface in io.github.mmm.validation"><code>Validator</code></a>.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="ValidationResult.html#getCode()"><code>ValidationResult.getCode()</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -328,23 +350,6 @@ implements <a href="Validator.html" title="interface in io.github.mmm.validation
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd><code>true</code> if this <a href="Validator.html" title="interface in io.github.mmm.validation"><code>Validator</code></a> is dynamic, <code>false</code> otherwise.</dd>
-</dl>
-</li>
-</ul>
-<a id="append(io.github.mmm.validation.Validator...)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>append</h4>
-<pre class="methodSignature">public&nbsp;<a href="Validator.html" title="interface in io.github.mmm.validation">Validator</a>&lt;<a href="AbstractValidator.html" title="type parameter in AbstractValidator">V</a>&gt;&nbsp;append&#8203;(<a href="Validator.html" title="interface in io.github.mmm.validation">Validator</a>&lt;? super <a href="AbstractValidator.html" title="type parameter in AbstractValidator">V</a>&gt;...&nbsp;validators)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="Validator.html#append(io.github.mmm.validation.Validator...)">append</a></code>&nbsp;in interface&nbsp;<code><a href="Validator.html" title="interface in io.github.mmm.validation">Validator</a>&lt;<a href="AbstractValidator.html" title="type parameter in AbstractValidator">V</a>&gt;</code></dd>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>validators</code> - the <a href="Validator.html" title="interface in io.github.mmm.validation"><code>Validator</code></a>s to append.</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>a new <a href="Validator.html" title="interface in io.github.mmm.validation"><code>Validator</code></a> instance composing this <a href="Validator.html" title="interface in io.github.mmm.validation"><code>Validator</code></a> with the given <code>validators</code>.</dd>
 </dl>
 </li>
 </ul>
@@ -379,13 +384,26 @@ implements <a href="Validator.html" title="interface in io.github.mmm.validation
 <a id="equals(java.lang.Object)">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>equals</h4>
 <pre class="methodSignature">public&nbsp;boolean&nbsp;equals&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;obj)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang" class="externalLink">equals</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="toString()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>toString</h4>
+<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;toString()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang" class="externalLink">toString</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -442,7 +460,7 @@ implements <a href="Validator.html" title="interface in io.github.mmm.validation
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>

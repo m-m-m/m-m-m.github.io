@@ -129,7 +129,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../UiTab.html" title="interface in io.github.mmm.ui.api.widget.tab">UiTab</a></code></td>
+<td class="colFirst"><code>default <a href="../UiTab.html" title="interface in io.github.mmm.ui.api.widget.tab">UiTab</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">UiTabPanel.</span><code><span class="memberNameLink"><a href="../UiTabPanel.html#addTab(java.lang.String,io.github.mmm.ui.api.widget.UiRegularWidget)">addTab</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;text,
       <a href="../../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiRegularWidget.html" title="interface in io.github.mmm.ui.api.widget">UiRegularWidget</a>&nbsp;child)</code></th>
 <td class="colLast">
@@ -140,12 +140,30 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../UiTab.html" title="interface in io.github.mmm.ui.api.widget.tab">UiTab</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">UiTabPanel.</span><code><span class="memberNameLink"><a href="../UiTabPanel.html#addTab(java.lang.String,io.github.mmm.ui.api.widget.UiRegularWidget,int)">addTab</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;text,
+      <a href="../../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiRegularWidget.html" title="interface in io.github.mmm.ui.api.widget">UiRegularWidget</a>&nbsp;child,
+      int&nbsp;index)</code></th>
+<td class="colLast">
+<div class="block">Adds the given <a href="../../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiRegularWidget.html" title="interface in io.github.mmm.ui.api.widget"><code>UiRegularWidget</code></a> as new tab at the given <code>index</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>default <a href="../UiTab.html" title="interface in io.github.mmm.ui.api.widget.tab">UiTab</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">UiTabPanel.</span><code><span class="memberNameLink"><a href="../UiTabPanel.html#addTab(java.lang.String,java.util.function.Supplier)">addTab</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;text,
       <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;<a href="../../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiRegularWidget.html" title="interface in io.github.mmm.ui.api.widget">UiRegularWidget</a>&gt;&nbsp;childSupplier)</code></th>
 <td class="colLast">
-<div class="block">Adds the given <a href="../../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiRegularWidget.html" title="interface in io.github.mmm.ui.api.widget"><code>UiRegularWidget</code></a> as new tab (and the end of all existing tabs).<br>
- <b>IMPORTANT:</b> In case you <a href="../../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteClosable.html#setClosable(boolean)"><code>make</code></a> the <a href="../UiTab.html" title="interface in io.github.mmm.ui.api.widget.tab"><code>UiTab</code></a> <a href="../../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteClosable.html#isClosable()"><code>closable</code></a>, it will remove itself as <a href="../../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiComposite.html#getChild(int)"><code>child</code></a> from this <a href="../UiTabPanel.html" title="interface in io.github.mmm.ui.api.widget.tab"><code>UiTabPanel</code></a> when the end-user
- closes it.</div>
+<div class="block">Adds a new tab (and the end of all existing tabs) with the content provided lazily from the given <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink"><code>Supplier</code></a>
+ (when the tab is selected for the first time).<br></div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../UiTab.html" title="interface in io.github.mmm.ui.api.widget.tab">UiTab</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">UiTabPanel.</span><code><span class="memberNameLink"><a href="../UiTabPanel.html#addTab(java.lang.String,java.util.function.Supplier,int)">addTab</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;text,
+      <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;<a href="../../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiRegularWidget.html" title="interface in io.github.mmm.ui.api.widget">UiRegularWidget</a>&gt;&nbsp;childSupplier,
+      int&nbsp;index)</code></th>
+<td class="colLast">
+<div class="block">Adds a new tab at the given <code>index</code> with the content provided lazily from the given <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink"><code>Supplier</code></a> (when
+ the tab is selected for the first time).</div>
 </td>
 </tr>
 </tbody>

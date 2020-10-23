@@ -138,21 +138,27 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>default &lt;V&gt;&nbsp;<a href="../UiColumn.html" title="interface in io.github.mmm.ui.api.widget.data">UiColumn</a>&lt;<a href="../UiAbstractDataTable.html" title="type parameter in UiAbstractDataTable">R</a>,&#8203;V&gt;</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">UiAbstractDataTable.</span><code><span class="memberNameLink"><a href="../UiAbstractDataTable.html#addColumn(io.github.mmm.value.PropertyPath)">addColumn</a></span>&#8203;(<a href="../../../../../../../../../io.github.mmm.value/io/github/mmm/value/PropertyPath.html" title="interface in io.github.mmm.value">PropertyPath</a>&lt;V&gt;&nbsp;property)</code></th>
+<th class="colSecond" scope="row"><span class="typeNameLabel">UiAbstractDataTable.</span><code><span class="memberNameLink"><a href="../UiAbstractDataTable.html#addColumn(io.github.mmm.value.TypedPropertyPath)">addColumn</a></span>&#8203;(<a href="../../../../../../../../../io.github.mmm.value/io/github/mmm/value/TypedPropertyPath.html" title="interface in io.github.mmm.value">TypedPropertyPath</a>&lt;V&gt;&nbsp;property)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>&lt;V&gt;&nbsp;<a href="../UiColumn.html" title="interface in io.github.mmm.ui.api.widget.data">UiColumn</a>&lt;<a href="../UiAbstractDataTable.html" title="type parameter in UiAbstractDataTable">R</a>,&#8203;V&gt;</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">UiAbstractDataTable.</span><code><span class="memberNameLink"><a href="../UiAbstractDataTable.html#createColumn(io.github.mmm.value.PropertyPath)">createColumn</a></span>&#8203;(<a href="../../../../../../../../../io.github.mmm.value/io/github/mmm/value/PropertyPath.html" title="interface in io.github.mmm.value">PropertyPath</a>&lt;V&gt;&nbsp;property)</code></th>
+<td class="colFirst"><code>default &lt;V&gt;&nbsp;<a href="../UiColumn.html" title="interface in io.github.mmm.ui.api.widget.data">UiColumn</a>&lt;<a href="../UiAbstractDataTable.html" title="type parameter in UiAbstractDataTable">R</a>,&#8203;V&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">UiAbstractDataTable.</span><code><span class="memberNameLink"><a href="../UiAbstractDataTable.html#addColumn(io.github.mmm.value.TypedPropertyPath,int)">addColumn</a></span>&#8203;(<a href="../../../../../../../../../io.github.mmm.value/io/github/mmm/value/TypedPropertyPath.html" title="interface in io.github.mmm.value">TypedPropertyPath</a>&lt;V&gt;&nbsp;property,
+         int&nbsp;index)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>&lt;V&gt;&nbsp;<a href="../UiColumn.html" title="interface in io.github.mmm.ui.api.widget.data">UiColumn</a>&lt;<a href="../UiAbstractDataTable.html" title="type parameter in UiAbstractDataTable">R</a>,&#8203;V&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">UiAbstractDataTable.</span><code><span class="memberNameLink"><a href="../UiAbstractDataTable.html#createColumn(io.github.mmm.value.TypedPropertyPath)">createColumn</a></span>&#8203;(<a href="../../../../../../../../../io.github.mmm.value/io/github/mmm/value/TypedPropertyPath.html" title="interface in io.github.mmm.value">TypedPropertyPath</a>&lt;V&gt;&nbsp;property)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>&lt;V&gt;&nbsp;<a href="../UiColumn.html" title="interface in io.github.mmm.ui.api.widget.data">UiColumn</a>&lt;<a href="../UiAbstractDataTable.html" title="type parameter in UiAbstractDataTable">R</a>,&#8203;V&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">UiAbstractDataTable.</span><code><span class="memberNameLink"><a href="../UiAbstractDataTable.html#createColumn(java.lang.String,io.github.mmm.ui.api.widget.data.UiAbstractDataWidget.ColumnAdapter)">createColumn</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;title,
             <a href="../UiAbstractDataWidget.ColumnAdapter.html" title="interface in io.github.mmm.ui.api.widget.data">UiAbstractDataWidget.ColumnAdapter</a>&lt;<a href="../UiAbstractDataTable.html" title="type parameter in UiAbstractDataTable">R</a>,&#8203;V&gt;&nbsp;adapter)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../UiColumn.html" title="interface in io.github.mmm.ui.api.widget.data">UiColumn</a>&lt;<a href="../UiAbstractDataTable.html" title="type parameter in UiAbstractDataTable">R</a>,&#8203;?&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">UiAbstractDataTable.</span><code><span class="memberNameLink"><a href="../UiAbstractDataTable.html#getColumn(int)">getColumn</a></span>&#8203;(int&nbsp;index)</code></th>
 <td class="colLast">&nbsp;</td>
@@ -168,22 +174,28 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code>void</code></td>
+<td class="colFirst"><code>default void</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">UiAbstractDataTable.</span><code><span class="memberNameLink"><a href="../UiAbstractDataTable.html#addColumn(io.github.mmm.ui.api.widget.data.UiColumn)">addColumn</a></span>&#8203;(<a href="../UiColumn.html" title="interface in io.github.mmm.ui.api.widget.data">UiColumn</a>&lt;<a href="../UiAbstractDataTable.html" title="type parameter in UiAbstractDataTable">R</a>,&#8203;?&gt;&nbsp;column)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">UiAbstractDataTable.</span><code><span class="memberNameLink"><a href="../UiAbstractDataTable.html#addColumn(io.github.mmm.ui.api.widget.data.UiColumn,int)">addColumn</a></span>&#8203;(<a href="../UiColumn.html" title="interface in io.github.mmm.ui.api.widget.data">UiColumn</a>&lt;<a href="../UiAbstractDataTable.html" title="type parameter in UiAbstractDataTable">R</a>,&#8203;?&gt;&nbsp;column,
+         int&nbsp;index)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>default void</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">UiAbstractDataTable.</span><code><span class="memberNameLink"><a href="../UiAbstractDataTable.html#addColumns(io.github.mmm.ui.api.widget.data.UiColumn...)">addColumns</a></span>&#8203;(<a href="../UiColumn.html" title="interface in io.github.mmm.ui.api.widget.data">UiColumn</a>&lt;<a href="../UiAbstractDataTable.html" title="type parameter in UiAbstractDataTable">R</a>,&#8203;?&gt;...&nbsp;columns)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">UiAbstractDataTable.FilterHandler.</span><code><span class="memberNameLink"><a href="../UiAbstractDataTable.FilterHandler.html#onFilter(io.github.mmm.ui.api.widget.data.UiColumn,boolean)">onFilter</a></span>&#8203;(<a href="../UiColumn.html" title="interface in io.github.mmm.ui.api.widget.data">UiColumn</a>&lt;<a href="../UiAbstractDataTable.FilterHandler.html" title="type parameter in UiAbstractDataTable.FilterHandler">R</a>,&#8203;?&gt;&nbsp;column,
         boolean&nbsp;complete)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">UiAbstractDataTable.</span><code><span class="memberNameLink"><a href="../UiAbstractDataTable.html#sort(io.github.mmm.base.sort.SortOrder,io.github.mmm.ui.api.widget.data.UiColumn...)">sort</a></span>&#8203;(<a href="../../../../../../../../../io.github.mmm.base/io/github/mmm/base/sort/SortOrder.html" title="enum in io.github.mmm.base.sort">SortOrder</a>&nbsp;order,
     <a href="../UiColumn.html" title="interface in io.github.mmm.ui.api.widget.data">UiColumn</a>&lt;<a href="../UiAbstractDataTable.html" title="type parameter in UiAbstractDataTable">R</a>,&#8203;?&gt;...&nbsp;columns)</code></th>
@@ -226,19 +238,19 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code>&lt;V&gt;&nbsp;<a href="../UiColumn.html" title="interface in io.github.mmm.ui.api.widget.data">UiColumn</a>&lt;<a href="../../../../../../../../../io.github.mmm.ui.fx.data/io/github/mmm/ui/fx/widget/data/FxDataList.html" title="type parameter in FxDataList">R</a>,&#8203;V&gt;</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">FxDataList.</span><code><span class="memberNameLink"><a href="../../../../../../../../../io.github.mmm.ui.fx.data/io/github/mmm/ui/fx/widget/data/FxDataList.html#createColumn(io.github.mmm.value.PropertyPath)">createColumn</a></span>&#8203;(<a href="../../../../../../../../../io.github.mmm.value/io/github/mmm/value/PropertyPath.html" title="interface in io.github.mmm.value">PropertyPath</a>&lt;V&gt;&nbsp;property)</code></th>
+<td class="colFirst"><code>&lt;V&gt;&nbsp;<a href="../UiColumn.html" title="interface in io.github.mmm.ui.api.widget.data">UiColumn</a>&lt;<a href="../../../../../../../../../io.github.mmm.ui.fx.data/io/github/mmm/ui/fx/widget/data/FxDataTable.html" title="type parameter in FxDataTable">R</a>,&#8203;V&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">FxDataTable.</span><code><span class="memberNameLink"><a href="../../../../../../../../../io.github.mmm.ui.fx.data/io/github/mmm/ui/fx/widget/data/FxDataTable.html#createColumn(io.github.mmm.value.TypedPropertyPath)">createColumn</a></span>&#8203;(<a href="../../../../../../../../../io.github.mmm.value/io/github/mmm/value/TypedPropertyPath.html" title="interface in io.github.mmm.value">TypedPropertyPath</a>&lt;V&gt;&nbsp;property)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>&lt;V&gt;&nbsp;<a href="../UiColumn.html" title="interface in io.github.mmm.ui.api.widget.data">UiColumn</a>&lt;<a href="../../../../../../../../../io.github.mmm.ui.fx.data/io/github/mmm/ui/fx/widget/data/FxDataList.html" title="type parameter in FxDataList">R</a>,&#8203;V&gt;</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">FxDataList.</span><code><span class="memberNameLink"><a href="../../../../../../../../../io.github.mmm.ui.fx.data/io/github/mmm/ui/fx/widget/data/FxDataList.html#createColumn(java.lang.String,io.github.mmm.ui.api.widget.data.UiAbstractDataWidget.ColumnAdapter)">createColumn</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;title,
-            <a href="../UiAbstractDataWidget.ColumnAdapter.html" title="interface in io.github.mmm.ui.api.widget.data">UiAbstractDataWidget.ColumnAdapter</a>&lt;<a href="../../../../../../../../../io.github.mmm.ui.fx.data/io/github/mmm/ui/fx/widget/data/FxDataList.html" title="type parameter in FxDataList">R</a>,&#8203;V&gt;&nbsp;adapter)</code></th>
+<td class="colFirst"><code>&lt;V&gt;&nbsp;<a href="../UiColumn.html" title="interface in io.github.mmm.ui.api.widget.data">UiColumn</a>&lt;<a href="../../../../../../../../../io.github.mmm.ui.fx.data/io/github/mmm/ui/fx/widget/data/FxDataTable.html" title="type parameter in FxDataTable">R</a>,&#8203;V&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">FxDataTable.</span><code><span class="memberNameLink"><a href="../../../../../../../../../io.github.mmm.ui.fx.data/io/github/mmm/ui/fx/widget/data/FxDataTable.html#createColumn(java.lang.String,io.github.mmm.ui.api.widget.data.UiAbstractDataWidget.ColumnAdapter)">createColumn</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;title,
+            <a href="../UiAbstractDataWidget.ColumnAdapter.html" title="interface in io.github.mmm.ui.api.widget.data">UiAbstractDataWidget.ColumnAdapter</a>&lt;<a href="../../../../../../../../../io.github.mmm.ui.fx.data/io/github/mmm/ui/fx/widget/data/FxDataTable.html" title="type parameter in FxDataTable">R</a>,&#8203;V&gt;&nbsp;adapter)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../UiColumn.html" title="interface in io.github.mmm.ui.api.widget.data">UiColumn</a>&lt;<a href="../../../../../../../../../io.github.mmm.ui.fx.data/io/github/mmm/ui/fx/widget/data/FxDataList.html" title="type parameter in FxDataList">R</a>,&#8203;?&gt;</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">FxDataList.</span><code><span class="memberNameLink"><a href="../../../../../../../../../io.github.mmm.ui.fx.data/io/github/mmm/ui/fx/widget/data/FxDataList.html#getColumn(int)">getColumn</a></span>&#8203;(int&nbsp;index)</code></th>
+<td class="colFirst"><code><a href="../UiColumn.html" title="interface in io.github.mmm.ui.api.widget.data">UiColumn</a>&lt;<a href="../../../../../../../../../io.github.mmm.ui.fx.data/io/github/mmm/ui/fx/widget/data/FxDataTable.html" title="type parameter in FxDataTable">R</a>,&#8203;?&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">FxDataTable.</span><code><span class="memberNameLink"><a href="../../../../../../../../../io.github.mmm.ui.fx.data/io/github/mmm/ui/fx/widget/data/FxDataTable.html#getColumn(int)">getColumn</a></span>&#8203;(int&nbsp;index)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </tbody>
@@ -253,13 +265,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">FxDataList.</span><code><span class="memberNameLink"><a href="../../../../../../../../../io.github.mmm.ui.fx.data/io/github/mmm/ui/fx/widget/data/FxDataList.html#addColumn(io.github.mmm.ui.api.widget.data.UiColumn)">addColumn</a></span>&#8203;(<a href="../UiColumn.html" title="interface in io.github.mmm.ui.api.widget.data">UiColumn</a>&lt;<a href="../../../../../../../../../io.github.mmm.ui.fx.data/io/github/mmm/ui/fx/widget/data/FxDataList.html" title="type parameter in FxDataList">R</a>,&#8203;?&gt;&nbsp;column)</code></th>
+<th class="colSecond" scope="row"><span class="typeNameLabel">FxDataTable.</span><code><span class="memberNameLink"><a href="../../../../../../../../../io.github.mmm.ui.fx.data/io/github/mmm/ui/fx/widget/data/FxDataTable.html#addColumn(io.github.mmm.ui.api.widget.data.UiColumn,int)">addColumn</a></span>&#8203;(<a href="../UiColumn.html" title="interface in io.github.mmm.ui.api.widget.data">UiColumn</a>&lt;<a href="../../../../../../../../../io.github.mmm.ui.fx.data/io/github/mmm/ui/fx/widget/data/FxDataTable.html" title="type parameter in FxDataTable">R</a>,&#8203;?&gt;&nbsp;column,
+         int&nbsp;index)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">FxDataList.</span><code><span class="memberNameLink"><a href="../../../../../../../../../io.github.mmm.ui.fx.data/io/github/mmm/ui/fx/widget/data/FxDataList.html#sort(io.github.mmm.base.sort.SortOrder,io.github.mmm.ui.api.widget.data.UiColumn...)">sort</a></span>&#8203;(<a href="../../../../../../../../../io.github.mmm.base/io/github/mmm/base/sort/SortOrder.html" title="enum in io.github.mmm.base.sort">SortOrder</a>&nbsp;order,
-    <a href="../UiColumn.html" title="interface in io.github.mmm.ui.api.widget.data">UiColumn</a>&lt;<a href="../../../../../../../../../io.github.mmm.ui.fx.data/io/github/mmm/ui/fx/widget/data/FxDataList.html" title="type parameter in FxDataList">R</a>,&#8203;?&gt;...&nbsp;sortColumns)</code></th>
+<th class="colSecond" scope="row"><span class="typeNameLabel">FxDataTable.</span><code><span class="memberNameLink"><a href="../../../../../../../../../io.github.mmm.ui.fx.data/io/github/mmm/ui/fx/widget/data/FxDataTable.html#sort(io.github.mmm.base.sort.SortOrder,io.github.mmm.ui.api.widget.data.UiColumn...)">sort</a></span>&#8203;(<a href="../../../../../../../../../io.github.mmm.base/io/github/mmm/base/sort/SortOrder.html" title="enum in io.github.mmm.base.sort">SortOrder</a>&nbsp;order,
+    <a href="../UiColumn.html" title="interface in io.github.mmm.ui.api.widget.data">UiColumn</a>&lt;<a href="../../../../../../../../../io.github.mmm.ui.fx.data/io/github/mmm/ui/fx/widget/data/FxDataTable.html" title="type parameter in FxDataTable">R</a>,&#8203;?&gt;...&nbsp;sortColumns)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </tbody>
@@ -298,7 +311,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>&lt;V&gt;&nbsp;<a href="../UiColumn.html" title="interface in io.github.mmm.ui.api.widget.data">UiColumn</a>&lt;<a href="../../../../../../../../../io.github.mmm.ui.test.data/io/github/mmm/ui/test/widget/data/TestDataList.html" title="type parameter in TestDataList">R</a>,&#8203;V&gt;</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">TestDataList.</span><code><span class="memberNameLink"><a href="../../../../../../../../../io.github.mmm.ui.test.data/io/github/mmm/ui/test/widget/data/TestDataList.html#createColumn(io.github.mmm.value.PropertyPath)">createColumn</a></span>&#8203;(<a href="../../../../../../../../../io.github.mmm.value/io/github/mmm/value/PropertyPath.html" title="interface in io.github.mmm.value">PropertyPath</a>&lt;V&gt;&nbsp;property)</code></th>
+<th class="colSecond" scope="row"><span class="typeNameLabel">TestDataList.</span><code><span class="memberNameLink"><a href="../../../../../../../../../io.github.mmm.ui.test.data/io/github/mmm/ui/test/widget/data/TestDataList.html#createColumn(io.github.mmm.value.TypedPropertyPath)">createColumn</a></span>&#8203;(<a href="../../../../../../../../../io.github.mmm.value/io/github/mmm/value/TypedPropertyPath.html" title="interface in io.github.mmm.value">TypedPropertyPath</a>&lt;V&gt;&nbsp;property)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -324,7 +337,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">TestDataList.</span><code><span class="memberNameLink"><a href="../../../../../../../../../io.github.mmm.ui.test.data/io/github/mmm/ui/test/widget/data/TestDataList.html#addColumn(io.github.mmm.ui.api.widget.data.UiColumn)">addColumn</a></span>&#8203;(<a href="../UiColumn.html" title="interface in io.github.mmm.ui.api.widget.data">UiColumn</a>&lt;<a href="../../../../../../../../../io.github.mmm.ui.test.data/io/github/mmm/ui/test/widget/data/TestDataList.html" title="type parameter in TestDataList">R</a>,&#8203;?&gt;&nbsp;column)</code></th>
+<th class="colSecond" scope="row"><span class="typeNameLabel">TestDataList.</span><code><span class="memberNameLink"><a href="../../../../../../../../../io.github.mmm.ui.test.data/io/github/mmm/ui/test/widget/data/TestDataList.html#addColumn(io.github.mmm.ui.api.widget.data.UiColumn,int)">addColumn</a></span>&#8203;(<a href="../UiColumn.html" title="interface in io.github.mmm.ui.api.widget.data">UiColumn</a>&lt;<a href="../../../../../../../../../io.github.mmm.ui.test.data/io/github/mmm/ui/test/widget/data/TestDataList.html" title="type parameter in TestDataList">R</a>,&#8203;?&gt;&nbsp;column,
+         int&nbsp;index)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">

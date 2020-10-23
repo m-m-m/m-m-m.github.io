@@ -26,8 +26,8 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
+var data = {"i0":6,"i1":18,"i2":6,"i3":18};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -125,7 +125,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
-<dd><code>V</code> - is the generic type of the <a href="#getType()"><code>property</code></a>.</dd>
+<dd><code>V</code> - type of the <a href="#getType()"><code>properties</code></a> <a href="../../../../../../../io.github.mmm.value/io/github/mmm/value/ReadableValue.html#get()"><code>value</code></a>
+        <a href="../../../../../../../io.github.mmm.value/io/github/mmm/value/ReadableTypedValue.html#getValueClass()"><code>type</code></a>.</dd>
 </dl>
 <dl>
 <dt>All Superinterfaces:</dt>
@@ -153,7 +154,7 @@ extends <a href="UiSingleWidgetFactory.html" title="interface in io.github.mmm.u
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t5" class="tableTab"><span><a href="javascript:show(16);">Default Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colSecond" scope="col">Method</th>
@@ -168,9 +169,21 @@ extends <a href="UiSingleWidgetFactory.html" title="interface in io.github.mmm.u
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>default <a href="../widget/input/UiInput.html" title="interface in io.github.mmm.ui.api.widget.input">UiInput</a>&lt;<a href="UiSingleWidgetFactoryProperty.html" title="type parameter in UiSingleWidgetFactoryProperty">V</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#create(io.github.mmm.value.ReadableTypedValue)">create</a></span>&#8203;(<a href="../../../../../../../io.github.mmm.value/io/github/mmm/value/ReadableTypedValue.html" title="interface in io.github.mmm.value">ReadableTypedValue</a>&lt;<a href="UiSingleWidgetFactoryProperty.html" title="type parameter in UiSingleWidgetFactoryProperty">V</a>&gt;&nbsp;property)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../../../../../../../io.github.mmm.value/io/github/mmm/value/ReadableTypedValue.html" title="interface in io.github.mmm.value">ReadableTypedValue</a>&lt;<a href="UiSingleWidgetFactoryProperty.html" title="type parameter in UiSingleWidgetFactoryProperty">V</a>&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getType()">getType</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>default boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isResponsible(io.github.mmm.value.ReadableTypedValue)">isResponsible</a></span>&#8203;(<a href="../../../../../../../io.github.mmm.value/io/github/mmm/value/ReadableTypedValue.html" title="interface in io.github.mmm.value">ReadableTypedValue</a>&lt;<a href="UiSingleWidgetFactoryProperty.html" title="type parameter in UiSingleWidgetFactoryProperty">V</a>&gt;&nbsp;property)</code></th>
+<td class="colLast">
+<div class="block">Override this method for a special factory on a given property <a href="#getType()"><code>type</code></a>.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -200,7 +213,42 @@ extends <a href="UiSingleWidgetFactory.html" title="interface in io.github.mmm.u
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="UiSingleWidgetFactory.html#getType()">getType</a></code>&nbsp;in interface&nbsp;<code><a href="UiSingleWidgetFactory.html" title="interface in io.github.mmm.ui.api.factory">UiSingleWidgetFactory</a>&lt;<a href="UiSingleWidgetFactoryProperty.html" title="type parameter in UiSingleWidgetFactoryProperty">V</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the class reflecting the <a href="../../../../../../../io.github.mmm.value/io/github/mmm/value/ReadableTypedValue.html" title="interface in io.github.mmm.value"><code>property</code></a>.</dd>
+<dd>the class reflecting the <a href="../../../../../../../io.github.mmm.value/io/github/mmm/value/ReadableTypedValue.html" title="interface in io.github.mmm.value"><code>property</code></a>. May be <code>null</code> if a custom
+         <a href="#isResponsible(io.github.mmm.value.ReadableTypedValue)"><code>responsibility check</code></a> is implemented.</dd>
+</dl>
+</li>
+</ul>
+<a id="isResponsible(io.github.mmm.value.ReadableTypedValue)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isResponsible</h4>
+<pre class="methodSignature">default&nbsp;boolean&nbsp;isResponsible&#8203;(<a href="../../../../../../../io.github.mmm.value/io/github/mmm/value/ReadableTypedValue.html" title="interface in io.github.mmm.value">ReadableTypedValue</a>&lt;<a href="UiSingleWidgetFactoryProperty.html" title="type parameter in UiSingleWidgetFactoryProperty">V</a>&gt;&nbsp;property)</pre>
+<div class="block">Override this method for a special factory on a given property <a href="#getType()"><code>type</code></a>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>property</code> - the <a href="../../../../../../../io.github.mmm.value/io/github/mmm/value/ReadableTypedValue.html" title="interface in io.github.mmm.value"><code>property</code></a> to check. May be <code>null</code> to check for the default
+        factory of a given property <a href="#getType()"><code>type</code></a>.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>true</code> if this factory is responsible for <a href="#create()"><code>creating</code></a> <a href="../widget/input/UiInput.html" title="interface in io.github.mmm.ui.api.widget.input"><code>UiInput</code></a> widgets for the
+         given <code>property</code> in advance to another factory for the same property <a href="#getType()"><code>type</code></a>,
+         <code>false</code> otherwise.</dd>
+</dl>
+</li>
+</ul>
+<a id="create(io.github.mmm.value.ReadableTypedValue)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>create</h4>
+<pre class="methodSignature">default&nbsp;<a href="../widget/input/UiInput.html" title="interface in io.github.mmm.ui.api.widget.input">UiInput</a>&lt;<a href="UiSingleWidgetFactoryProperty.html" title="type parameter in UiSingleWidgetFactoryProperty">V</a>&gt;&nbsp;create&#8203;(<a href="../../../../../../../io.github.mmm.value/io/github/mmm/value/ReadableTypedValue.html" title="interface in io.github.mmm.value">ReadableTypedValue</a>&lt;<a href="UiSingleWidgetFactoryProperty.html" title="type parameter in UiSingleWidgetFactoryProperty">V</a>&gt;&nbsp;property)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>property</code> - the <a href="../../../../../../../io.github.mmm.value/io/github/mmm/value/ReadableTypedValue.html" title="interface in io.github.mmm.value"><code>property</code></a> to create the <a href="../widget/input/UiInput.html" title="interface in io.github.mmm.ui.api.widget.input"><code>UiInput</code></a> widget for.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the new <a href="../widget/input/UiInput.html" title="interface in io.github.mmm.ui.api.widget.input"><code>UiInput</code></a>.</dd>
 </dl>
 </li>
 </ul>

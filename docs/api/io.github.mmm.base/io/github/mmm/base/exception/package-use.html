@@ -113,16 +113,24 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="rowColor">
+<th class="colFirst" scope="row"><a href="#io.github.mmm.base.io">io.github.mmm.base.io</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="#io.github.mmm.cli.exception">io.github.mmm.cli.exception</a></th>
 <td class="colLast">
 <div class="block">Contains common exceptions for CLI.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="#io.github.mmm.nls.cli.exception">io.github.mmm.nls.cli.exception</a></th>
 <td class="colLast">
 <div class="block">Contains common CLI exceptions with native language support.</div>
 </td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="#io.github.mmm.nls.exception">io.github.mmm.nls.exception</a></th>
+<td class="colLast">&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -156,6 +164,26 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colFirst" scope="row"><a href="class-use/DuplicateObjectException.html#io.github.mmm.base.exception">DuplicateObjectException</a></th>
 <td class="colLast">
 <div class="block">An <a href="DuplicateObjectException.html" title="class in io.github.mmm.base.exception"><code>DuplicateObjectException</code></a> is thrown if an object was rejected because it is a duplicate.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a id="io.github.mmm.base.io">
+<!--   -->
+</a>
+<table class="useSummary">
+<caption><span>Classes in <a href="package-summary.html">io.github.mmm.base.exception</a> used by <a href="../io/package-summary.html">io.github.mmm.base.io</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Class</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="class-use/RuntimeIoException.html#io.github.mmm.base.io">RuntimeIoException</a></th>
+<td class="colLast">
+<div class="block">A <a href="RuntimeIoException.html" title="class in io.github.mmm.base.exception"><code>RuntimeIoException</code></a> is like an <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/IOException.html?is-external=true" title="class or interface in java.io" class="externalLink"><code>IOException</code></a> but as a <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>unchecked</code></a>
+ <a href="ApplicationException.html" title="class in io.github.mmm.base.exception"><code>ApplicationException</code></a>.</div>
 </td>
 </tr>
 </tbody>
@@ -212,6 +240,40 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
  
  <b>NOTE:</b><br>
  Exceptions should only occur in unexpected or undesired situations.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a id="io.github.mmm.nls.exception">
+<!--   -->
+</a>
+<table class="useSummary">
+<caption><span>Classes in <a href="package-summary.html">io.github.mmm.base.exception</a> used by <a href="../../../../../../io.github.mmm.nls/io/github/mmm/nls/exception/package-summary.html">io.github.mmm.nls.exception</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Class</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="class-use/ApplicationException.html#io.github.mmm.nls.exception">ApplicationException</a></th>
+<td class="colLast">
+<div class="block">Extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>RuntimeException</code></a> with the following features:
+ 
+ a <a href="ApplicationException.html#getUuid()"><code>UUID</code></a> unique per exception instance automatically generated once per exception
+ <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Throwable.html?is-external=true#getCause()" title="class or interface in java.lang" class="externalLink"><code>chain</code></a>.
+ an <a href="ApplicationException.html#getCode()"><code>error code</code></a> that should be unique per exception type.
+ distinction between <a href="ApplicationException.html#isTechnical()"><code>technical</code></a> exceptions and exceptions <a href="ApplicationException.html#isForUser()"><code>intended for
+ end-users</code></a>.
+ 
+ <b>NOTE:</b><br>
+ Exceptions should only occur in unexpected or undesired situations.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="class-use/ObjectNotFoundException.html#io.github.mmm.nls.exception">ObjectNotFoundException</a></th>
+<td class="colLast">
+<div class="block">An <a href="ObjectNotFoundException.html" title="class in io.github.mmm.base.exception"><code>ObjectNotFoundException</code></a> is thrown if an object was requested but does not exist or could not be found.</div>
 </td>
 </tr>
 </tbody>

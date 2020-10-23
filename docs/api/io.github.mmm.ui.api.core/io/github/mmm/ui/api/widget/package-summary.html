@@ -109,7 +109,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
  widgets such as e.g. <a href="../../../../../../../io.github.mmm.ui.api.window/io/github/mmm/ui/api/widget/window/UiWindow.html" title="interface in io.github.mmm.ui.api.widget.window"><code>windows</code></a> or
  <a href="../../../../../../../io.github.mmm.ui.api.menu/io/github/mmm/ui/api/widget/menu/UiMenuItem.html" title="interface in io.github.mmm.ui.api.widget.menu"><code>menu items</code></a> a regular widget can be placed anywhere on the UI and
  therefore be added to <a href="panel/UiMutablePanel.html" title="interface in io.github.mmm.ui.api.widget.panel"><code>panels</code></a> and other generic containers. Also
- widgets are either <a href="UiAtomicWidget.html" title="interface in io.github.mmm.ui.api.widget"><code>atomic</code></a> or
+ widgets are either <code>atomic</code> or
  <a href="composite/UiComposite.html" title="interface in io.github.mmm.ui.api.widget.composite"><code>composite</code></a>.
 
  Finally we provide custom widgets via <code>io.github.mmm.ui.api.widget.custom.UiCustomWidget</code> that support you to make
@@ -132,49 +132,43 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="rowColor">
-<th class="colFirst" scope="row"><a href="UiAtomicWidget.html" title="interface in io.github.mmm.ui.api.widget">UiAtomicWidget</a></th>
+<th class="colFirst" scope="row"><a href="UiClickableWidget.html" title="interface in io.github.mmm.ui.api.widget">UiClickableWidget</a></th>
 <td class="colLast">
-<div class="block">Abstract interface for an <em>atomic</em> <a href="UiWidget.html" title="interface in io.github.mmm.ui.api.widget"><code>UiWidget</code></a>.</div>
+<div class="block"><a href="UiActiveWidget.html" title="interface in io.github.mmm.ui.api.widget"><code>UiActiveWidget</code></a> that has a <a href="../attribute/AttributeWriteText.html#getText()"><code>label</code></a> and is <a href="../attribute/AttributeFeatureClick.html#click()"><code>clickable</code></a>.</div>
 </td>
 </tr>
 <tr class="altColor">
-<th class="colFirst" scope="row"><a href="UiClickableWidget.html" title="interface in io.github.mmm.ui.api.widget">UiClickableWidget</a></th>
-<td class="colLast">
-<div class="block"><a href="UiActiveWidget.html" title="interface in io.github.mmm.ui.api.widget"><code>UiActiveWidget</code></a> that has a <a href="../attribute/AttributeWriteText.html#getText()"><code>label</code></a> and is <a href="attribute/UiWidgetWithClick.html#click()"><code>clickable</code></a>.</div>
-</td>
-</tr>
-<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="UiCustomWidget.html" title="interface in io.github.mmm.ui.api.widget">UiCustomWidget</a>&lt;W extends <a href="UiWidget.html" title="interface in io.github.mmm.ui.api.widget">UiWidget</a>&gt;</th>
 <td class="colLast">
 <div class="block">Interface for <em>custom widgets</em>.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="UiLabel.html" title="interface in io.github.mmm.ui.api.widget">UiLabel</a></th>
 <td class="colLast">
 <div class="block"><a href="UiRegularWidget.html" title="interface in io.github.mmm.ui.api.widget"><code>UiRegularWidget</code></a> that represents a label.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="UiNativeWidget.html" title="interface in io.github.mmm.ui.api.widget">UiNativeWidget</a></th>
 <td class="colLast">
 <div class="block">This is the marker interface for native <a href="UiWidget.html" title="interface in io.github.mmm.ui.api.widget"><code>UiWidget</code></a>s that can be
  <a href="../factory/UiWidgetFactoryNative.html#create(java.lang.Class)"><code>created from their interface</code></a>.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="UiRegularWidget.html" title="interface in io.github.mmm.ui.api.widget">UiRegularWidget</a></th>
 <td class="colLast">
 <div class="block">Interface for a <em>regular</em> <a href="UiWidget.html" title="interface in io.github.mmm.ui.api.widget"><code>UiWidget</code></a>.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="UiText.html" title="interface in io.github.mmm.ui.api.widget">UiText</a></th>
 <td class="colLast">
 <div class="block"><a href="UiRegularWidget.html" title="interface in io.github.mmm.ui.api.widget"><code>UiRegularWidget</code></a> that represents regular text.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="UiWidget.html" title="interface in io.github.mmm.ui.api.widget">UiWidget</a></th>
 <td class="colLast">
 <div class="block">Interface for an adapter to a physical <em>widget</em> of the underlying native widget toolkit.</div>
@@ -192,6 +186,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
+<th class="colFirst" scope="row"><a href="AbstractUiCustomWidget.html" title="class in io.github.mmm.ui.api.widget">AbstractUiCustomWidget</a>&lt;W extends <a href="UiWidget.html" title="interface in io.github.mmm.ui.api.widget">UiWidget</a>&gt;</th>
+<td class="colLast">
+<div class="block">This is the abstract base implementation of <a href="UiCustomWidget.html" title="interface in io.github.mmm.ui.api.widget"><code>UiCustomWidget</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="AbstractUiWidget.html" title="class in io.github.mmm.ui.api.widget">AbstractUiWidget</a></th>
 <td class="colLast">
 <div class="block">Abstract base implementation of <a href="UiWidget.html" title="interface in io.github.mmm.ui.api.widget"><code>UiWidget</code></a>.</div>

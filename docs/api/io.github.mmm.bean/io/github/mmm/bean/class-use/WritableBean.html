@@ -202,7 +202,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colFirst"><code>class&nbsp;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../DynamicBean.html" title="class in io.github.mmm.bean">DynamicBean</a></span></code></th>
 <td class="colLast">
-<div class="block">A <a href="../Bean.html" title="class in io.github.mmm.bean"><code>Bean</code></a> that is always <a href="../AbstractBean.html#isDynamic()"><code>dynamic</code></a>.</div>
+<div class="block">A <a href="../Bean.html" title="class in io.github.mmm.bean"><code>Bean</code></a> that is always <a href="../DynamicBean.html#isDynamic()"><code>dynamic</code></a>.</div>
 </td>
 </tr>
 </tbody>
@@ -226,16 +226,6 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
       boolean&nbsp;dynamic)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
-<td class="colFirst"><code>static &lt;B extends <a href="../WritableBean.html" title="interface in io.github.mmm.bean">WritableBean</a>&gt;<br>B</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">WritableBean.</span><code><span class="memberNameLink"><a href="../WritableBean.html#getReadOnly(B)">getReadOnly</a></span>&#8203;(B&nbsp;bean)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>static &lt;B extends <a href="../WritableBean.html" title="interface in io.github.mmm.bean">WritableBean</a>&gt;<br>B</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">WritableBean.</span><code><span class="memberNameLink"><a href="../WritableBean.html#newInstance(B)">newInstance</a></span>&#8203;(B&nbsp;bean)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
 </tbody>
 </table>
 <table class="useSummary">
@@ -248,17 +238,22 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../WritableBean.html" title="interface in io.github.mmm.bean">WritableBean</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">WritableBean.</span><code><span class="memberNameLink"><a href="../WritableBean.html#getReadOnly()">getReadOnly</a></span>()</code></th>
+<th class="colSecond" scope="row"><span class="typeNameLabel">AbstractBean.</span><code><span class="memberNameLink"><a href="../AbstractBean.html#copy(boolean)">copy</a></span>&#8203;(boolean&nbsp;isReadOnly)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="../WritableBean.html" title="interface in io.github.mmm.bean">WritableBean</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">AbstractBean.</span><code><span class="memberNameLink"><a href="../AbstractBean.html#newInstance()">newInstance</a></span>()</code></th>
+<td class="colFirst"><code>default <a href="../WritableBean.html" title="interface in io.github.mmm.bean">WritableBean</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">ReadableBean.</span><code><span class="memberNameLink"><a href="../ReadableBean.html#copy()">copy</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../WritableBean.html" title="interface in io.github.mmm.bean">WritableBean</a></code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">WritableBean.</span><code><span class="memberNameLink"><a href="../WritableBean.html#newInstance()">newInstance</a></span>()</code></th>
+<th class="colSecond" scope="row"><span class="typeNameLabel">ReadableBean.</span><code><span class="memberNameLink"><a href="../ReadableBean.html#copy(boolean)">copy</a></span>&#8203;(boolean&nbsp;readOnly)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../WritableBean.html" title="interface in io.github.mmm.bean">WritableBean</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">ReadableBean.</span><code><span class="memberNameLink"><a href="../ReadableBean.html#newInstance()">newInstance</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </tbody>

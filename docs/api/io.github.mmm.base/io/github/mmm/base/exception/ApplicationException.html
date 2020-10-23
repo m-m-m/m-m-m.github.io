@@ -26,8 +26,8 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":9,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10};
+var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -152,7 +152,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><code><a href="../../../../../../io.github.mmm.cli/io/github/mmm/cli/exception/CliException.html" title="class in io.github.mmm.cli.exception">CliException</a></code>, <code><a href="DuplicateObjectException.html" title="class in io.github.mmm.base.exception">DuplicateObjectException</a></code>, <code><a href="ObjectMismatchException.html" title="class in io.github.mmm.base.exception">ObjectMismatchException</a></code>, <code><a href="ObjectNotFoundException.html" title="class in io.github.mmm.base.exception">ObjectNotFoundException</a></code>, <code><a href="ReadOnlyException.html" title="class in io.github.mmm.base.exception">ReadOnlyException</a></code>, <code><a href="RuntimeIoException.html" title="class in io.github.mmm.base.exception">RuntimeIoException</a></code></dd>
+<dd><code><a href="../../../../../../io.github.mmm.cli/io/github/mmm/cli/exception/CliException.html" title="class in io.github.mmm.cli.exception">CliException</a></code>, <code><a href="DuplicateObjectException.html" title="class in io.github.mmm.base.exception">DuplicateObjectException</a></code>, <code><a href="ObjectMismatchException.html" title="class in io.github.mmm.base.exception">ObjectMismatchException</a></code>, <code><a href="ObjectNotFoundException.html" title="class in io.github.mmm.base.exception">ObjectNotFoundException</a></code>, <code><a href="ReadOnlyException.html" title="class in io.github.mmm.base.exception">ReadOnlyException</a></code>, <code><a href="RuntimeIoException.html" title="class in io.github.mmm.base.exception">RuntimeIoException</a></code>, <code><a href="../../../../../../io.github.mmm.nls/io/github/mmm/nls/exception/TechnicalErrorUserException.html" title="class in io.github.mmm.nls.exception">TechnicalErrorUserException</a></code></dd>
 </dl>
 <hr>
 <pre>public abstract class <span class="typeNameLabel">ApplicationException</span>
@@ -252,7 +252,7 @@ implements <a href="../i18n/Localizable.html" title="interface in io.github.mmm.
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colSecond" scope="col">Method</th>
@@ -299,13 +299,18 @@ implements <a href="../i18n/Localizable.html" title="interface in io.github.mmm.
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
+<td class="colFirst"><code>static <a href="../i18n/Localizable.html" title="interface in io.github.mmm.base.i18n">Localizable</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getNlsMessage(java.lang.Throwable)">getNlsMessage</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Throwable</a>&nbsp;error)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html?is-external=true" title="class or interface in java.util" class="externalLink">UUID</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getUuid()">getUuid</a></span>()</code></th>
 <td class="colLast">
 <div class="block">This method gets the <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>UUID</code></a> of this <a href="ApplicationException.html" title="class in io.github.mmm.base.exception"><code>ApplicationException</code></a>.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isForUser()">isForUser</a></span>()</code></th>
 <td class="colLast">
@@ -313,14 +318,14 @@ implements <a href="../i18n/Localizable.html" title="interface in io.github.mmm.
  creating exceptions for end-users.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isTechnical()">isTechnical</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Determines if this is a <em>technical exception</em>.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#printStackTrace(java.util.Locale,java.lang.Appendable)">printStackTrace</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html?is-external=true" title="class or interface in java.util" class="externalLink">Locale</a>&nbsp;locale,
                <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Appendable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Appendable</a>&nbsp;buffer)</code></th>
@@ -328,19 +333,19 @@ implements <a href="../i18n/Localizable.html" title="interface in io.github.mmm.
 <div class="block">This method prints the stack trace with localized exception message(s).</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toString()">toString</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toString(java.util.Locale)">toString</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html?is-external=true" title="class or interface in java.util" class="externalLink">Locale</a>&nbsp;locale)</code></th>
 <td class="colLast">
 <div class="block">Like <a href="#toString()"><code>toString()</code></a> but using the specified <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Locale</code></a>.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Appendable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Appendable</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toString(java.util.Locale,java.lang.Appendable)">toString</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html?is-external=true" title="class or interface in java.util" class="externalLink">Locale</a>&nbsp;locale,
         <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Appendable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Appendable</a>&nbsp;appendable)</code></th>
@@ -600,8 +605,8 @@ implements <a href="../i18n/Localizable.html" title="interface in io.github.mmm.
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../i18n/Localizable.html#getLocalizedMessage(java.util.Locale,java.lang.Appendable)">getLocalizedMessage</a></code>&nbsp;in interface&nbsp;<code><a href="../i18n/Localizable.html" title="interface in io.github.mmm.base.i18n">Localizable</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>locale</code> - is the locale to translate to.</dd>
-<dd><code>appendable</code> - is the <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Appendable.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Appendable</code></a> where to <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Appendable.html?is-external=true#append(java.lang.CharSequence)" title="class or interface in java.lang" class="externalLink"><code>write</code></a> the message to.</dd>
+<dd><code>locale</code> - the <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Locale</code></a> to translate to.</dd>
+<dd><code>appendable</code> - the <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Appendable.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Appendable</code></a> where to <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Appendable.html?is-external=true#append(java.lang.CharSequence)" title="class or interface in java.lang" class="externalLink"><code>write</code></a> the message to.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../i18n/Localizable.html#getLocalizedMessage(java.util.Locale)"><code>Localizable.getLocalizedMessage(Locale)</code></a></dd>
 </dl>
@@ -720,7 +725,7 @@ implements <a href="../i18n/Localizable.html" title="interface in io.github.mmm.
 <a id="toString(java.util.Locale,java.lang.Appendable)">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>toString</h4>
 <pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Appendable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Appendable</a>&nbsp;toString&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html?is-external=true" title="class or interface in java.util" class="externalLink">Locale</a>&nbsp;locale,
@@ -738,6 +743,21 @@ implements <a href="../i18n/Localizable.html" title="interface in io.github.mmm.
         <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StringBuilder.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>StringBuilder</code></a> if <code>null</code> is provided.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the provided <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Appendable.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Appendable</code></a> or the created one if <code>null</code> was given.</dd>
+</dl>
+</li>
+</ul>
+<a id="getNlsMessage(java.lang.Throwable)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getNlsMessage</h4>
+<pre class="methodSignature">public static&nbsp;<a href="../i18n/Localizable.html" title="interface in io.github.mmm.base.i18n">Localizable</a>&nbsp;getNlsMessage&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Throwable</a>&nbsp;error)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>error</code> - the <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Throwable</code></a>.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the <a href="#getNlsMessage()"><code>NLS message</code></a>.</dd>
 </dl>
 </li>
 </ul>

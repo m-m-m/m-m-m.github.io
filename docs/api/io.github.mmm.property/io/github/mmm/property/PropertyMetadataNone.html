@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":9,"i3":10,"i4":10,"i5":10,"i6":10};
+var data = {"i0":9,"i1":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -124,7 +124,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
+<li><a href="AbstractPropertyMetadata.html" title="class in io.github.mmm.property">io.github.mmm.property.AbstractPropertyMetadata</a>&lt;V&gt;</li>
+<li>
+<ul class="inheritance">
 <li>io.github.mmm.property.PropertyMetadataNone&lt;V&gt;</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -141,8 +146,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 <hr>
 <pre>public final class <span class="typeNameLabel">PropertyMetadataNone&lt;V&gt;</span>
-extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>
-implements <a href="PropertyMetadata.html" title="interface in io.github.mmm.property">PropertyMetadata</a>&lt;V&gt;</pre>
+extends <a href="AbstractPropertyMetadata.html" title="class in io.github.mmm.property">AbstractPropertyMetadata</a>&lt;V&gt;</pre>
 <div class="block">Implementation of <a href="PropertyMetadata.html" title="interface in io.github.mmm.property"><code>PropertyMetadata</code></a> that is entirely empty.</div>
 <dl>
 <dt><span class="simpleTagLabel">Since:</span></dt>
@@ -169,41 +173,23 @@ implements <a href="PropertyMetadata.html" title="interface in io.github.mmm.pro
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#get(java.lang.String)">get</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;key)</code></th>
+<td class="colFirst"><code>static &lt;V&gt;&nbsp;<a href="PropertyMetadataNone.html" title="class in io.github.mmm.property">PropertyMetadataNone</a>&lt;V&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#get()">get</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;? extends <a href="PropertyMetadataNone.html" title="type parameter in PropertyMetadataNone">V</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getExpression()">getExpression</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i2" class="altColor">
-<td class="colFirst"><code>static &lt;V&gt;&nbsp;<a href="PropertyMetadataNone.html" title="class in io.github.mmm.property">PropertyMetadataNone</a>&lt;V&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getInstance()">getInstance</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getKeys()">getKeys</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="../../../../../io.github.mmm.validation/io/github/mmm/validation/Validator.html" title="interface in io.github.mmm.validation">Validator</a>&lt;? super <a href="PropertyMetadataNone.html" title="type parameter in PropertyMetadataNone">V</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getValidator()">getValidator</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Type.html?is-external=true" title="class or interface in java.lang.reflect" class="externalLink">Type</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getValueType()">getValueType</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="PropertyMetadata.html" title="interface in io.github.mmm.property">PropertyMetadata</a>&lt;<a href="PropertyMetadataNone.html" title="type parameter in PropertyMetadataNone">V</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withValidator(io.github.mmm.validation.Validator)">withValidator</a></span>&#8203;(<a href="../../../../../io.github.mmm.validation/io/github/mmm/validation/Validator.html" title="interface in io.github.mmm.validation">Validator</a>&lt;? super <a href="PropertyMetadataNone.html" title="type parameter in PropertyMetadataNone">V</a>&gt;&nbsp;validator)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.property.AbstractPropertyMetadata">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;io.github.mmm.property.<a href="AbstractPropertyMetadata.html" title="class in io.github.mmm.property">AbstractPropertyMetadata</a></h3>
+<code><a href="AbstractPropertyMetadata.html#asMap()">asMap</a>, <a href="AbstractPropertyMetadata.html#get(java.lang.String)">get</a>, <a href="AbstractPropertyMetadata.html#getExpression()">getExpression</a>, <a href="AbstractPropertyMetadata.html#getKeyCount()">getKeyCount</a>, <a href="AbstractPropertyMetadata.html#getKeys()">getKeys</a>, <a href="AbstractPropertyMetadata.html#getValidator()">getValidator</a>, <a href="AbstractPropertyMetadata.html#getValueType()">getValueType</a></code></li>
+</ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
 <!--   -->
@@ -216,7 +202,7 @@ implements <a href="PropertyMetadata.html" title="interface in io.github.mmm.pro
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;io.github.mmm.property.<a href="PropertyMetadata.html" title="interface in io.github.mmm.property">PropertyMetadata</a></h3>
-<code><a href="PropertyMetadata.html#get(java.lang.Class)">get</a>, <a href="PropertyMetadata.html#get(java.lang.String,java.lang.Class)">get</a>, <a href="PropertyMetadata.html#getMarshalling()">getMarshalling</a>, <a href="PropertyMetadata.html#isTransient()">isTransient</a></code></li>
+<code><a href="PropertyMetadata.html#get(java.lang.Class)">get</a>, <a href="PropertyMetadata.html#get(java.lang.String,java.lang.Class)">get</a>, <a href="PropertyMetadata.html#getMarshalling()">getMarshalling</a>, <a href="PropertyMetadata.html#hasKeys()">hasKeys</a>, <a href="PropertyMetadata.html#isTransient()">isTransient</a></code></li>
 </ul>
 </li>
 </ul>
@@ -234,90 +220,6 @@ implements <a href="PropertyMetadata.html" title="interface in io.github.mmm.pro
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="getValidator()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getValidator</h4>
-<pre class="methodSignature">public&nbsp;<a href="../../../../../io.github.mmm.validation/io/github/mmm/validation/Validator.html" title="interface in io.github.mmm.validation">Validator</a>&lt;? super <a href="PropertyMetadataNone.html" title="type parameter in PropertyMetadataNone">V</a>&gt;&nbsp;getValidator()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="PropertyMetadata.html#getValidator()">getValidator</a></code>&nbsp;in interface&nbsp;<code><a href="PropertyMetadata.html" title="interface in io.github.mmm.property">PropertyMetadata</a>&lt;<a href="PropertyMetadataNone.html" title="type parameter in PropertyMetadataNone">V</a>&gt;</code></dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the <a href="../../../../../io.github.mmm.validation/io/github/mmm/validation/Validator.html" title="interface in io.github.mmm.validation"><code>Validator</code></a> used to <a href="../../../../../io.github.mmm.validation/io/github/mmm/validation/Validatable.html#validate()"><code>validate</code></a> the property.</dd>
-</dl>
-</li>
-</ul>
-<a id="getExpression()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getExpression</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;? extends <a href="PropertyMetadataNone.html" title="type parameter in PropertyMetadataNone">V</a>&gt;&nbsp;getExpression()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="PropertyMetadata.html#getExpression()">getExpression</a></code>&nbsp;in interface&nbsp;<code><a href="PropertyMetadata.html" title="interface in io.github.mmm.property">PropertyMetadata</a>&lt;<a href="PropertyMetadataNone.html" title="type parameter in PropertyMetadataNone">V</a>&gt;</code></dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the optional <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink"><code>Supplier</code></a> that calculates the <a href="../../../../../io.github.mmm.value/io/github/mmm/value/ReadableValue.html#get()"><code>value</code></a> dynamically. May be
-         <code>null</code> for a regular property. If it is not <code>null</code> the property will automatically be
-         <a href="ReadableProperty.html#isReadOnly()"><code>read-only</code></a>. You should not provide an explicit <a href="PropertyMetadata.html#getValidator()"><code>validator</code></a> if you provide an expression.</dd>
-</dl>
-</li>
-</ul>
-<a id="getValueType()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getValueType</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Type.html?is-external=true" title="class or interface in java.lang.reflect" class="externalLink">Type</a>&nbsp;getValueType()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="PropertyMetadata.html#getValueType()">getValueType</a></code>&nbsp;in interface&nbsp;<code><a href="PropertyMetadata.html" title="interface in io.github.mmm.property">PropertyMetadata</a>&lt;<a href="PropertyMetadataNone.html" title="type parameter in PropertyMetadataNone">V</a>&gt;</code></dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the optional <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Type.html?is-external=true" title="class or interface in java.lang.reflect" class="externalLink"><code>Type</code></a> of the <a href="Property.html#get()"><code>property value</code></a>. May be <code>null</code>.</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../io.github.mmm.value/io/github/mmm/value/ReadableTypedValue.html#getValueClass()"><code>ReadableTypedValue.getValueClass()</code></a></dd>
-</dl>
-</li>
-</ul>
-<a id="get(java.lang.String)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>get</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;get&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;key)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="PropertyMetadata.html#get(java.lang.String)">get</a></code>&nbsp;in interface&nbsp;<code><a href="PropertyMetadata.html" title="interface in io.github.mmm.property">PropertyMetadata</a>&lt;<a href="PropertyMetadataNone.html" title="type parameter in PropertyMetadataNone">V</a>&gt;</code></dd>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>key</code> - the <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html?is-external=true#containsKey(java.lang.Object)" title="class or interface in java.util" class="externalLink"><code>key</code></a> of the requested metadata.</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the value of the metadata for the given <code>key</code>. Will be <code>null</code> if no metadata exists for the
-         given <code>key</code>.</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="PropertyMetadata.html#get(java.lang.String,java.lang.Class)"><code>PropertyMetadata.get(String, Class)</code></a></dd>
-</dl>
-</li>
-</ul>
-<a id="getKeys()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getKeys</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;getKeys()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="PropertyMetadata.html#getKeys()">getKeys</a></code>&nbsp;in interface&nbsp;<code><a href="PropertyMetadata.html" title="interface in io.github.mmm.property">PropertyMetadata</a>&lt;<a href="PropertyMetadataNone.html" title="type parameter in PropertyMetadataNone">V</a>&gt;</code></dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Iterable</code></a> of all <a href="PropertyMetadata.html#get(java.lang.String)"><code>metadata keys</code></a>.</dd>
-</dl>
-</li>
-</ul>
 <a id="withValidator(io.github.mmm.validation.Validator)">
 <!--   -->
 </a>
@@ -326,8 +228,6 @@ implements <a href="PropertyMetadata.html" title="interface in io.github.mmm.pro
 <h4>withValidator</h4>
 <pre class="methodSignature">public&nbsp;<a href="PropertyMetadata.html" title="interface in io.github.mmm.property">PropertyMetadata</a>&lt;<a href="PropertyMetadataNone.html" title="type parameter in PropertyMetadataNone">V</a>&gt;&nbsp;withValidator&#8203;(<a href="../../../../../io.github.mmm.validation/io/github/mmm/validation/Validator.html" title="interface in io.github.mmm.validation">Validator</a>&lt;? super <a href="PropertyMetadataNone.html" title="type parameter in PropertyMetadataNone">V</a>&gt;&nbsp;validator)</pre>
 <dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="PropertyMetadata.html#withValidator(io.github.mmm.validation.Validator)">withValidator</a></code>&nbsp;in interface&nbsp;<code><a href="PropertyMetadata.html" title="interface in io.github.mmm.property">PropertyMetadata</a>&lt;<a href="PropertyMetadataNone.html" title="type parameter in PropertyMetadataNone">V</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>validator</code> - the new <a href="../../../../../io.github.mmm.validation/io/github/mmm/validation/Validator.html" title="interface in io.github.mmm.validation"><code>Validator</code></a>.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -336,13 +236,13 @@ implements <a href="PropertyMetadata.html" title="interface in io.github.mmm.pro
 </dl>
 </li>
 </ul>
-<a id="getInstance()">
+<a id="get()">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>getInstance</h4>
-<pre class="methodSignature">public static&nbsp;&lt;V&gt;&nbsp;<a href="PropertyMetadataNone.html" title="class in io.github.mmm.property">PropertyMetadataNone</a>&lt;V&gt;&nbsp;getInstance()</pre>
+<h4>get</h4>
+<pre class="methodSignature">public static&nbsp;&lt;V&gt;&nbsp;<a href="PropertyMetadataNone.html" title="class in io.github.mmm.property">PropertyMetadataNone</a>&lt;V&gt;&nbsp;get()</pre>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
 <dd><code>V</code> - type of the <a href="Property.html#get()"><code>property value</code></a>.</dd>

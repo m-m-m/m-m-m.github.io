@@ -1040,7 +1040,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <table class="constantsSummary">
-<caption><span>io.github.mmm.marshall.<a href="io.github.mmm.marshall/io/github/mmm/marshall/StructuredFormatFactory.html" title="interface in io.github.mmm.marshall">StructuredFormatFactory</a></span><span class="tabEnd">&nbsp;</span></caption>
+<caption><span>io.github.mmm.marshall.<a href="io.github.mmm.marshall/io/github/mmm/marshall/StructuredFormat.html" title="interface in io.github.mmm.marshall">StructuredFormat</a></span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colSecond" scope="col">Constant Field</th>
@@ -1048,25 +1048,88 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><a id="io.github.mmm.marshall.StructuredFormatFactory.NAME_JSON">
+<td class="colFirst"><a id="io.github.mmm.marshall.StructuredFormat.ART_BOOLEAN_VALUE">
 <!--   -->
 </a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><a href="io.github.mmm.marshall/io/github/mmm/marshall/StructuredFormatFactory.html#NAME_JSON">NAME_JSON</a></code></th>
-<td class="colLast"><code>"json"</code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.marshall/io/github/mmm/marshall/StructuredFormat.html#ART_BOOLEAN_VALUE">ART_BOOLEAN_VALUE</a></code></th>
+<td class="colLast"><code>"b"</code></td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><a id="io.github.mmm.marshall.StructuredFormatFactory.NAME_XML">
+<td class="colFirst"><a id="io.github.mmm.marshall.StructuredFormat.ART_NUMBER_VALUE">
 <!--   -->
 </a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><a href="io.github.mmm.marshall/io/github/mmm/marshall/StructuredFormatFactory.html#NAME_XML">NAME_XML</a></code></th>
-<td class="colLast"><code>"xml"</code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.marshall/io/github/mmm/marshall/StructuredFormat.html#ART_NUMBER_VALUE">ART_NUMBER_VALUE</a></code></th>
+<td class="colLast"><code>"n"</code></td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><a id="io.github.mmm.marshall.StructuredFormatFactory.NAME_YAML">
+<td class="colFirst"><a id="io.github.mmm.marshall.StructuredFormat.ART_STRING_VALUE">
 <!--   -->
 </a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><a href="io.github.mmm.marshall/io/github/mmm/marshall/StructuredFormatFactory.html#NAME_YAML">NAME_YAML</a></code></th>
-<td class="colLast"><code>"yml"</code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.marshall/io/github/mmm/marshall/StructuredFormat.html#ART_STRING_VALUE">ART_STRING_VALUE</a></code></th>
+<td class="colLast"><code>"s"</code></td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a id="io.github.mmm.marshall.StructuredFormat.ID_JSON">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.marshall/io/github/mmm/marshall/StructuredFormat.html#ID_JSON">ID_JSON</a></code></th>
+<td class="colLast"><code>"application/json"</code></td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a id="io.github.mmm.marshall.StructuredFormat.ID_XML">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.marshall/io/github/mmm/marshall/StructuredFormat.html#ID_XML">ID_XML</a></code></th>
+<td class="colLast"><code>"text/xml"</code></td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a id="io.github.mmm.marshall.StructuredFormat.ID_YAML">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.marshall/io/github/mmm/marshall/StructuredFormat.html#ID_YAML">ID_YAML</a></code></th>
+<td class="colLast"><code>"text/yaml"</code></td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a id="io.github.mmm.marshall.StructuredFormat.NS_PREFIX_ARRAY">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.marshall/io/github/mmm/marshall/StructuredFormat.html#NS_PREFIX_ARRAY">NS_PREFIX_ARRAY</a></code></th>
+<td class="colLast"><code>"a"</code></td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a id="io.github.mmm.marshall.StructuredFormat.NS_PREFIX_OBJECT">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.marshall/io/github/mmm/marshall/StructuredFormat.html#NS_PREFIX_OBJECT">NS_PREFIX_OBJECT</a></code></th>
+<td class="colLast"><code>"o"</code></td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a id="io.github.mmm.marshall.StructuredFormat.NS_URI_ARRAY">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.marshall/io/github/mmm/marshall/StructuredFormat.html#NS_URI_ARRAY">NS_URI_ARRAY</a></code></th>
+<td class="colLast"><code>"array"</code></td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a id="io.github.mmm.marshall.StructuredFormat.NS_URI_OBJECT">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.marshall/io/github/mmm/marshall/StructuredFormat.html#NS_URI_OBJECT">NS_URI_OBJECT</a></code></th>
+<td class="colLast"><code>"object"</code></td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a id="io.github.mmm.marshall.StructuredFormat.TAG_ITEM">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.marshall/io/github/mmm/marshall/StructuredFormat.html#TAG_ITEM">TAG_ITEM</a></code></th>
+<td class="colLast"><code>"i"</code></td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a id="io.github.mmm.marshall.StructuredFormat.TAG_ROOT">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.marshall/io/github/mmm/marshall/StructuredFormat.html#TAG_ROOT">TAG_ROOT</a></code></th>
+<td class="colLast"><code>"json"</code></td>
 </tr>
 </tbody>
 </table>
@@ -1355,6 +1418,27 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <table class="constantsSummary">
+<caption><span>io.github.mmm.nls.exception.<a href="io.github.mmm.nls/io/github/mmm/nls/exception/TechnicalErrorUserException.html" title="class in io.github.mmm.nls.exception">TechnicalErrorUserException</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Constant Field</th>
+<th class="colLast" scope="col">Value</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a id="io.github.mmm.nls.exception.TechnicalErrorUserException.CODE">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.nls/io/github/mmm/nls/exception/TechnicalErrorUserException.html#CODE">CODE</a></code></th>
+<td class="colLast"><code>"TechnicalError"</code></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<ul class="blockList">
+<li class="blockList">
+<table class="constantsSummary">
 <caption><span>io.github.mmm.nls.formatter.<a href="io.github.mmm.nls/io/github/mmm/nls/formatter/NlsFormatterManager.html" title="interface in io.github.mmm.nls.formatter">NlsFormatterManager</a></span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
@@ -1552,50 +1636,38 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><a id="io.github.mmm.ui.api.UiLocalizer.CONTEXT_CONFIRM">
+<td class="colFirst"><a id="io.github.mmm.ui.api.UiLocalizer.KEY_CONFIRM">
 <!--   -->
 </a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.core/io/github/mmm/ui/api/UiLocalizer.html#CONTEXT_CONFIRM">CONTEXT_CONFIRM</a></code></th>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.core/io/github/mmm/ui/api/UiLocalizer.html#KEY_CONFIRM">KEY_CONFIRM</a></code></th>
 <td class="colLast"><code>"_confirm"</code></td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><a id="io.github.mmm.ui.api.UiLocalizer.CONTEXT_TOOLTIP">
-<!--   -->
-</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.core/io/github/mmm/ui/api/UiLocalizer.html#CONTEXT_TOOLTIP">CONTEXT_TOOLTIP</a></code></th>
-<td class="colLast"><code>"_tooltip"</code></td>
-</tr>
-<tr class="altColor">
 <td class="colFirst"><a id="io.github.mmm.ui.api.UiLocalizer.KEY_DEFAULT_VALIDATION_FAILURE">
 <!--   -->
 </a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.core/io/github/mmm/ui/api/UiLocalizer.html#KEY_DEFAULT_VALIDATION_FAILURE">KEY_DEFAULT_VALIDATION_FAILURE</a></code></th>
 <td class="colLast"><code>"_invalid"</code></td>
 </tr>
+<tr class="altColor">
+<td class="colFirst"><a id="io.github.mmm.ui.api.UiLocalizer.KEY_ICON">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.core/io/github/mmm/ui/api/UiLocalizer.html#KEY_ICON">KEY_ICON</a></code></th>
+<td class="colLast"><code>"_icon"</code></td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a id="io.github.mmm.ui.api.UiLocalizer.KEY_TOOLTIP">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.core/io/github/mmm/ui/api/UiLocalizer.html#KEY_TOOLTIP">KEY_TOOLTIP</a></code></th>
+<td class="colLast"><code>"_tooltip"</code></td>
+</tr>
 </tbody>
 </table>
 </li>
 </ul>
 <ul class="blockList">
-<li class="blockList">
-<table class="constantsSummary">
-<caption><span>io.github.mmm.ui.api.attribute.<a href="io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadId.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadId</a></span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colSecond" scope="col">Constant Field</th>
-<th class="colLast" scope="col">Value</th>
-</tr>
-<tbody>
-<tr class="altColor">
-<td class="colFirst"><a id="io.github.mmm.ui.api.attribute.AttributeReadId.ID_SEPARATOR">
-<!--   -->
-</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadId.html#ID_SEPARATOR">ID_SEPARATOR</a></code></th>
-<td class="colLast"><code>"_"</code></td>
-</tr>
-</tbody>
-</table>
-</li>
 <li class="blockList">
 <table class="constantsSummary">
 <caption><span>io.github.mmm.ui.api.attribute.<a href="io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadMimetype.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadMimetype</a></span><span class="tabEnd">&nbsp;</span></caption>
@@ -1846,6 +1918,122 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </li>
 <li class="blockList">
 <table class="constantsSummary">
+<caption><span>io.github.mmm.ui.api.attribute.<a href="io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteMultiSelection.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteMultiSelection</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Constant Field</th>
+<th class="colLast" scope="col">Value</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a id="io.github.mmm.ui.api.attribute.AttributeWriteMultiSelection.STYLE_SELECTION">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteMultiSelection.html#STYLE_SELECTION">STYLE_SELECTION</a></code></th>
+<td class="colLast"><code>"sel"</code></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList">
+<table class="constantsSummary">
+<caption><span>io.github.mmm.ui.api.attribute.<a href="io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWritePrefix.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWritePrefix</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Constant Field</th>
+<th class="colLast" scope="col">Value</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a id="io.github.mmm.ui.api.attribute.AttributeWritePrefix.STYLE_PREFIX">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWritePrefix.html#STYLE_PREFIX">STYLE_PREFIX</a></code></th>
+<td class="colLast"><code>"ui-prefix"</code></td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a id="io.github.mmm.ui.api.attribute.AttributeWritePrefix.STYLE_WITH_PREFIX">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWritePrefix.html#STYLE_WITH_PREFIX">STYLE_WITH_PREFIX</a></code></th>
+<td class="colLast"><code>"with-prefix"</code></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList">
+<table class="constantsSummary">
+<caption><span>io.github.mmm.ui.api.attribute.<a href="io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteSelected.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteSelected</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Constant Field</th>
+<th class="colLast" scope="col">Value</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a id="io.github.mmm.ui.api.attribute.AttributeWriteSelected.STYLE_SELECTED">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteSelected.html#STYLE_SELECTED">STYLE_SELECTED</a></code></th>
+<td class="colLast"><code>"selected"</code></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList">
+<table class="constantsSummary">
+<caption><span>io.github.mmm.ui.api.attribute.<a href="io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteShowRowNumbers.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteShowRowNumbers</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Constant Field</th>
+<th class="colLast" scope="col">Value</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a id="io.github.mmm.ui.api.attribute.AttributeWriteShowRowNumbers.ROW_NUMBER_HEADER_TITLE">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteShowRowNumbers.html#ROW_NUMBER_HEADER_TITLE">ROW_NUMBER_HEADER_TITLE</a></code></th>
+<td class="colLast"><code>"#"</code></td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a id="io.github.mmm.ui.api.attribute.AttributeWriteShowRowNumbers.STYLE_ROW_NUMBER">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteShowRowNumbers.html#STYLE_ROW_NUMBER">STYLE_ROW_NUMBER</a></code></th>
+<td class="colLast"><code>"rownum"</code></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList">
+<table class="constantsSummary">
+<caption><span>io.github.mmm.ui.api.attribute.<a href="io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteSuffix.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteSuffix</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Constant Field</th>
+<th class="colLast" scope="col">Value</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a id="io.github.mmm.ui.api.attribute.AttributeWriteSuffix.STYLE_SUFFIX">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteSuffix.html#STYLE_SUFFIX">STYLE_SUFFIX</a></code></th>
+<td class="colLast"><code>"ui-suffix"</code></td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a id="io.github.mmm.ui.api.attribute.AttributeWriteSuffix.STYLE_WITH_SUFFIX">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteSuffix.html#STYLE_WITH_SUFFIX">STYLE_WITH_SUFFIX</a></code></th>
+<td class="colLast"><code>"with-suffix"</code></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList">
+<table class="constantsSummary">
 <caption><span>io.github.mmm.ui.api.attribute.<a href="io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteValidationFailure.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteValidationFailure</a></span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
@@ -1867,7 +2055,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <table class="constantsSummary">
-<caption><span>io.github.mmm.ui.api.controller.<a href="io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiController.html" title="interface in io.github.mmm.ui.api.controller">UiController</a>&lt;<a href="io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiController.html" title="type parameter in UiController">W</a> extends <a href="io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html" title="interface in io.github.mmm.ui.api.widget">UiWidget</a>&gt;</span><span class="tabEnd">&nbsp;</span></caption>
+<caption><span>io.github.mmm.ui.api.controller.<a href="io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiController.html" title="interface in io.github.mmm.ui.api.controller">UiController</a>&lt;<a href="io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiController.html" title="type parameter in UiController">V</a> extends <a href="io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiRegularWidget.html" title="interface in io.github.mmm.ui.api.widget">UiRegularWidget</a>&gt;</span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colSecond" scope="col">Constant Field</th>
@@ -1875,18 +2063,46 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
+<td class="colFirst"><a id="io.github.mmm.ui.api.controller.UiController.ID_CONTENT">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiController.html#ID_CONTENT">ID_CONTENT</a></code></th>
+<td class="colLast"><code>"content"</code></td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a id="io.github.mmm.ui.api.controller.UiController.ID_FOOTER">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiController.html#ID_FOOTER">ID_FOOTER</a></code></th>
+<td class="colLast"><code>"footer"</code></td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a id="io.github.mmm.ui.api.controller.UiController.ID_HEADER">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiController.html#ID_HEADER">ID_HEADER</a></code></th>
+<td class="colLast"><code>"header"</code></td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><a id="io.github.mmm.ui.api.controller.UiController.ID_HOME">
 <!--   -->
 </a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiController.html#ID_HOME">ID_HOME</a></code></th>
 <td class="colLast"><code>"home"</code></td>
 </tr>
+<tr class="altColor">
+<td class="colFirst"><a id="io.github.mmm.ui.api.controller.UiController.ID_MARGIN">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiController.html#ID_MARGIN">ID_MARGIN</a></code></th>
+<td class="colLast"><code>"margin"</code></td>
+</tr>
 <tr class="rowColor">
 <td class="colFirst"><a id="io.github.mmm.ui.api.controller.UiController.ID_NAVIGATION">
 <!--   -->
 </a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiController.html#ID_NAVIGATION">ID_NAVIGATION</a></code></th>
-<td class="colLast"><code>"nav"</code></td>
+<td class="colLast"><code>"navigation"</code></td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><a id="io.github.mmm.ui.api.controller.UiController.ID_PAGE">
@@ -1902,62 +2118,6 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiController.html#ID_ROOT">ID_ROOT</a></code></th>
 <td class="colLast"><code>"root"</code></td>
 </tr>
-<tr class="altColor">
-<td class="colFirst"><a id="io.github.mmm.ui.api.controller.UiController.PATTERN_DIALOG_ID">
-<!--   -->
-</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiController.html#PATTERN_DIALOG_ID">PATTERN_DIALOG_ID</a></code></th>
-<td class="colLast"><code>"[^:;=?&amp;\\s/\\\\]+"</code></td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><a id="io.github.mmm.ui.api.controller.UiController.TYPE_FOOTER">
-<!--   -->
-</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiController.html#TYPE_FOOTER">TYPE_FOOTER</a></code></th>
-<td class="colLast"><code>"Footer"</code></td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><a id="io.github.mmm.ui.api.controller.UiController.TYPE_HEADER">
-<!--   -->
-</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiController.html#TYPE_HEADER">TYPE_HEADER</a></code></th>
-<td class="colLast"><code>"Header"</code></td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><a id="io.github.mmm.ui.api.controller.UiController.TYPE_MAIN">
-<!--   -->
-</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiController.html#TYPE_MAIN">TYPE_MAIN</a></code></th>
-<td class="colLast"><code>"Main"</code></td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><a id="io.github.mmm.ui.api.controller.UiController.TYPE_NAVIGATION">
-<!--   -->
-</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiController.html#TYPE_NAVIGATION">TYPE_NAVIGATION</a></code></th>
-<td class="colLast"><code>"Navigation"</code></td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><a id="io.github.mmm.ui.api.controller.UiController.TYPE_PAGE">
-<!--   -->
-</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiController.html#TYPE_PAGE">TYPE_PAGE</a></code></th>
-<td class="colLast"><code>"Page"</code></td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><a id="io.github.mmm.ui.api.controller.UiController.TYPE_ROOT">
-<!--   -->
-</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiController.html#TYPE_ROOT">TYPE_ROOT</a></code></th>
-<td class="colLast"><code>"Root"</code></td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><a id="io.github.mmm.ui.api.controller.UiController.TYPE_SIDE">
-<!--   -->
-</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiController.html#TYPE_SIDE">TYPE_SIDE</a></code></th>
-<td class="colLast"><code>"Side"</code></td>
-</tr>
 </tbody>
 </table>
 </li>
@@ -1971,39 +2131,39 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><a id="io.github.mmm.ui.api.controller.UiPlace.PATTERN_DIALOG_ID">
-<!--   -->
-</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiPlace.html#PATTERN_DIALOG_ID">PATTERN_DIALOG_ID</a></code></th>
-<td class="colLast"><code>"[^:;=?&amp;\\s/\\\\]+"</code></td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><a id="io.github.mmm.ui.api.controller.UiPlace.PATTERN_KEY">
 <!--   -->
 </a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiPlace.html#PATTERN_KEY">PATTERN_KEY</a></code></th>
 <td class="colLast"><code>"[^;:=&amp;/]+"</code></td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a id="io.github.mmm.ui.api.controller.UiPlace.PATTERN_VALUE">
 <!--   -->
 </a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiPlace.html#PATTERN_VALUE">PATTERN_VALUE</a></code></th>
 <td class="colLast"><code>"[^;]*"</code></td>
 </tr>
+<tr class="altColor">
+<td class="colFirst"><a id="io.github.mmm.ui.api.controller.UiPlace.SEPARATOR_ANCHOR">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;char</code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiPlace.html#SEPARATOR_ANCHOR">SEPARATOR_ANCHOR</a></code></th>
+<td class="colLast"><code>35</code></td>
+</tr>
 <tr class="rowColor">
 <td class="colFirst"><a id="io.github.mmm.ui.api.controller.UiPlace.SEPARATOR_PARAMETER">
 <!--   -->
 </a><code>public&nbsp;static&nbsp;final&nbsp;char</code></td>
 <th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiPlace.html#SEPARATOR_PARAMETER">SEPARATOR_PARAMETER</a></code></th>
-<td class="colLast"><code>59</code></td>
+<td class="colLast"><code>38</code></td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><a id="io.github.mmm.ui.api.controller.UiPlace.SEPARATOR_STATE">
 <!--   -->
 </a><code>public&nbsp;static&nbsp;final&nbsp;char</code></td>
 <th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiPlace.html#SEPARATOR_STATE">SEPARATOR_STATE</a></code></th>
-<td class="colLast"><code>58</code></td>
+<td class="colLast"><code>63</code></td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><a id="io.github.mmm.ui.api.controller.UiPlace.SEPARATOR_VALUE">
@@ -2011,6 +2171,27 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </a><code>public&nbsp;static&nbsp;final&nbsp;char</code></td>
 <th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiPlace.html#SEPARATOR_VALUE">SEPARATOR_VALUE</a></code></th>
 <td class="colLast"><code>61</code></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<ul class="blockList">
+<li class="blockList">
+<table class="constantsSummary">
+<caption><span>io.github.mmm.ui.api.controller.action.<a href="io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/action/UiActionNavigate.html" title="interface in io.github.mmm.ui.api.controller.action">UiActionNavigate</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Constant Field</th>
+<th class="colLast" scope="col">Value</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a id="io.github.mmm.ui.api.controller.action.UiActionNavigate.ACTION_ID">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/action/UiActionNavigate.html#ACTION_ID">ACTION_ID</a></code></th>
+<td class="colLast"><code>"Navigate"</code></td>
 </tr>
 </tbody>
 </table>
@@ -2283,6 +2464,25 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </li>
 <li class="blockList">
 <table class="constantsSummary">
+<caption><span>io.github.mmm.ui.api.event.action.<a href="io.github.mmm.ui.api.core/io/github/mmm/ui/api/event/action/UiActionDiscard.html" title="interface in io.github.mmm.ui.api.event.action">UiActionDiscard</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Constant Field</th>
+<th class="colLast" scope="col">Value</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a id="io.github.mmm.ui.api.event.action.UiActionDiscard.ACTION_ID">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.core/io/github/mmm/ui/api/event/action/UiActionDiscard.html#ACTION_ID">ACTION_ID</a></code></th>
+<td class="colLast"><code>"Discard"</code></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList">
+<table class="constantsSummary">
 <caption><span>io.github.mmm.ui.api.event.action.<a href="io.github.mmm.ui.api.core/io/github/mmm/ui/api/event/action/UiActionEdit.html" title="interface in io.github.mmm.ui.api.event.action">UiActionEdit</a></span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
@@ -2454,6 +2654,25 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </li>
 <li class="blockList">
 <table class="constantsSummary">
+<caption><span>io.github.mmm.ui.api.event.action.<a href="io.github.mmm.ui.api.core/io/github/mmm/ui/api/event/action/UiActionSearch.html" title="interface in io.github.mmm.ui.api.event.action">UiActionSearch</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Constant Field</th>
+<th class="colLast" scope="col">Value</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a id="io.github.mmm.ui.api.event.action.UiActionSearch.ACTION_ID">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.core/io/github/mmm/ui/api/event/action/UiActionSearch.html#ACTION_ID">ACTION_ID</a></code></th>
+<td class="colLast"><code>"Search"</code></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList">
+<table class="constantsSummary">
 <caption><span>io.github.mmm.ui.api.event.action.<a href="io.github.mmm.ui.api.core/io/github/mmm/ui/api/event/action/UiActionSubmit.html" title="interface in io.github.mmm.ui.api.event.action">UiActionSubmit</a></span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
@@ -2507,6 +2726,382 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </a><code>public&nbsp;static&nbsp;final&nbsp;char</code></td>
 <th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiActiveWidget.html#ACCESS_KEY_NONE">ACCESS_KEY_NONE</a></code></th>
 <td class="colLast"><code>0</code></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<ul class="blockList">
+<li class="blockList">
+<table class="constantsSummary">
+<caption><span>io.github.mmm.ui.api.widget.button.<a href="io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/button/UiButton.html" title="interface in io.github.mmm.ui.api.widget.button">UiButton</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Constant Field</th>
+<th class="colLast" scope="col">Value</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a id="io.github.mmm.ui.api.widget.button.UiButton.STYLE">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/button/UiButton.html#STYLE">STYLE</a></code></th>
+<td class="colLast"><code>"ui-button"</code></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<ul class="blockList">
+<li class="blockList">
+<table class="constantsSummary">
+<caption><span>io.github.mmm.ui.api.widget.data.<a href="io.github.mmm.ui.api.data/io/github/mmm/ui/api/widget/data/UiAbstractDataWidget.html" title="interface in io.github.mmm.ui.api.widget.data">UiAbstractDataWidget</a>&lt;<a href="io.github.mmm.ui.api.data/io/github/mmm/ui/api/widget/data/UiAbstractDataWidget.html" title="type parameter in UiAbstractDataWidget">R</a>&gt;</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Constant Field</th>
+<th class="colLast" scope="col">Value</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a id="io.github.mmm.ui.api.widget.data.UiAbstractDataWidget.STYLE">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.data/io/github/mmm/ui/api/widget/data/UiAbstractDataWidget.html#STYLE">STYLE</a></code></th>
+<td class="colLast"><code>"ui-data"</code></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<ul class="blockList">
+<li class="blockList">
+<table class="constantsSummary">
+<caption><span>io.github.mmm.ui.api.widget.form.<a href="io.github.mmm.ui.api.form/io/github/mmm/ui/api/widget/form/UiFormPanel.html" title="interface in io.github.mmm.ui.api.widget.form">UiFormPanel</a>&lt;<a href="io.github.mmm.ui.api.form/io/github/mmm/ui/api/widget/form/UiFormPanel.html" title="type parameter in UiFormPanel">V</a>&gt;</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Constant Field</th>
+<th class="colLast" scope="col">Value</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a id="io.github.mmm.ui.api.widget.form.UiFormPanel.STYLE">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.form/io/github/mmm/ui/api/widget/form/UiFormPanel.html#STYLE">STYLE</a></code></th>
+<td class="colLast"><code>"ui-form"</code></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList">
+<table class="constantsSummary">
+<caption><span>io.github.mmm.ui.api.widget.form.<a href="io.github.mmm.ui.api.form/io/github/mmm/ui/api/widget/form/UiInputContainer.html" title="interface in io.github.mmm.ui.api.widget.form">UiInputContainer</a>&lt;<a href="io.github.mmm.ui.api.form/io/github/mmm/ui/api/widget/form/UiInputContainer.html" title="type parameter in UiInputContainer">V</a>&gt;</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Constant Field</th>
+<th class="colLast" scope="col">Value</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a id="io.github.mmm.ui.api.widget.form.UiInputContainer.STYLE">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.form/io/github/mmm/ui/api/widget/form/UiInputContainer.html#STYLE">STYLE</a></code></th>
+<td class="colLast"><code>"ui-inputcontainer"</code></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<ul class="blockList">
+<li class="blockList">
+<table class="constantsSummary">
+<caption><span>io.github.mmm.ui.api.widget.img.<a href="io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/img/UiIcon.html" title="interface in io.github.mmm.ui.api.widget.img">UiIcon</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Constant Field</th>
+<th class="colLast" scope="col">Value</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a id="io.github.mmm.ui.api.widget.img.UiIcon.ID_COLLAPSE">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/img/UiIcon.html#ID_COLLAPSE">ID_COLLAPSE</a></code></th>
+<td class="colLast"><code>"collapse"</code></td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a id="io.github.mmm.ui.api.widget.img.UiIcon.ID_EXPAND">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/img/UiIcon.html#ID_EXPAND">ID_EXPAND</a></code></th>
+<td class="colLast"><code>"expand"</code></td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a id="io.github.mmm.ui.api.widget.img.UiIcon.ID_MUTE">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/img/UiIcon.html#ID_MUTE">ID_MUTE</a></code></th>
+<td class="colLast"><code>"mute"</code></td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a id="io.github.mmm.ui.api.widget.img.UiIcon.ID_NEXT">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/img/UiIcon.html#ID_NEXT">ID_NEXT</a></code></th>
+<td class="colLast"><code>"next"</code></td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a id="io.github.mmm.ui.api.widget.img.UiIcon.ID_PAUSE">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/img/UiIcon.html#ID_PAUSE">ID_PAUSE</a></code></th>
+<td class="colLast"><code>"pause"</code></td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a id="io.github.mmm.ui.api.widget.img.UiIcon.ID_PLAY">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/img/UiIcon.html#ID_PLAY">ID_PLAY</a></code></th>
+<td class="colLast"><code>"play"</code></td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a id="io.github.mmm.ui.api.widget.img.UiIcon.ID_PREVIOUS">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/img/UiIcon.html#ID_PREVIOUS">ID_PREVIOUS</a></code></th>
+<td class="colLast"><code>"previous"</code></td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a id="io.github.mmm.ui.api.widget.img.UiIcon.ID_UNMUTE">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/img/UiIcon.html#ID_UNMUTE">ID_UNMUTE</a></code></th>
+<td class="colLast"><code>"unmute"</code></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<ul class="blockList">
+<li class="blockList">
+<table class="constantsSummary">
+<caption><span>io.github.mmm.ui.api.widget.input.<a href="io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/input/UiInput.html" title="interface in io.github.mmm.ui.api.widget.input">UiInput</a>&lt;<a href="io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/input/UiInput.html" title="type parameter in UiInput">V</a>&gt;</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Constant Field</th>
+<th class="colLast" scope="col">Value</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a id="io.github.mmm.ui.api.widget.input.UiInput.STYLE_INPUT">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/input/UiInput.html#STYLE_INPUT">STYLE_INPUT</a></code></th>
+<td class="colLast"><code>"ui-input"</code></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<ul class="blockList">
+<li class="blockList">
+<table class="constantsSummary">
+<caption><span>io.github.mmm.ui.api.widget.menu.<a href="io.github.mmm.ui.api.menu/io/github/mmm/ui/api/widget/menu/UiMenu.html" title="interface in io.github.mmm.ui.api.widget.menu">UiMenu</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Constant Field</th>
+<th class="colLast" scope="col">Value</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a id="io.github.mmm.ui.api.widget.menu.UiMenu.STYLE_NAV">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.menu/io/github/mmm/ui/api/widget/menu/UiMenu.html#STYLE_NAV">STYLE_NAV</a></code></th>
+<td class="colLast"><code>"ui-navmenu"</code></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList">
+<table class="constantsSummary">
+<caption><span>io.github.mmm.ui.api.widget.menu.<a href="io.github.mmm.ui.api.menu/io/github/mmm/ui/api/widget/menu/UiMenuItem.html" title="interface in io.github.mmm.ui.api.widget.menu">UiMenuItem</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Constant Field</th>
+<th class="colLast" scope="col">Value</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a id="io.github.mmm.ui.api.widget.menu.UiMenuItem.STYLE_NAV">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.menu/io/github/mmm/ui/api/widget/menu/UiMenuItem.html#STYLE_NAV">STYLE_NAV</a></code></th>
+<td class="colLast"><code>"ui-navitem"</code></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList">
+<table class="constantsSummary">
+<caption><span>io.github.mmm.ui.api.widget.menu.<a href="io.github.mmm.ui.api.menu/io/github/mmm/ui/api/widget/menu/UiNavigationBar.html" title="interface in io.github.mmm.ui.api.widget.menu">UiNavigationBar</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Constant Field</th>
+<th class="colLast" scope="col">Value</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a id="io.github.mmm.ui.api.widget.menu.UiNavigationBar.STYLE">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.menu/io/github/mmm/ui/api/widget/menu/UiNavigationBar.html#STYLE">STYLE</a></code></th>
+<td class="colLast"><code>"ui-navbar"</code></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<ul class="blockList">
+<li class="blockList">
+<table class="constantsSummary">
+<caption><span>io.github.mmm.ui.api.widget.panel.<a href="io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/panel/UiBorderPanel.html" title="interface in io.github.mmm.ui.api.widget.panel">UiBorderPanel</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Constant Field</th>
+<th class="colLast" scope="col">Value</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a id="io.github.mmm.ui.api.widget.panel.UiBorderPanel.INDEX_BOTTOM">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;int</code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/panel/UiBorderPanel.html#INDEX_BOTTOM">INDEX_BOTTOM</a></code></th>
+<td class="colLast"><code>3</code></td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a id="io.github.mmm.ui.api.widget.panel.UiBorderPanel.INDEX_CENTER">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;int</code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/panel/UiBorderPanel.html#INDEX_CENTER">INDEX_CENTER</a></code></th>
+<td class="colLast"><code>0</code></td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a id="io.github.mmm.ui.api.widget.panel.UiBorderPanel.INDEX_LEFT">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;int</code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/panel/UiBorderPanel.html#INDEX_LEFT">INDEX_LEFT</a></code></th>
+<td class="colLast"><code>2</code></td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a id="io.github.mmm.ui.api.widget.panel.UiBorderPanel.INDEX_RIGHT">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;int</code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/panel/UiBorderPanel.html#INDEX_RIGHT">INDEX_RIGHT</a></code></th>
+<td class="colLast"><code>4</code></td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a id="io.github.mmm.ui.api.widget.panel.UiBorderPanel.INDEX_TOP">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;int</code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/panel/UiBorderPanel.html#INDEX_TOP">INDEX_TOP</a></code></th>
+<td class="colLast"><code>1</code></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList">
+<table class="constantsSummary">
+<caption><span>io.github.mmm.ui.api.widget.panel.<a href="io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/panel/UiButtonPanel.html" title="interface in io.github.mmm.ui.api.widget.panel">UiButtonPanel</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Constant Field</th>
+<th class="colLast" scope="col">Value</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a id="io.github.mmm.ui.api.widget.panel.UiButtonPanel.STYLE">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/panel/UiButtonPanel.html#STYLE">STYLE</a></code></th>
+<td class="colLast"><code>"ui-buttons"</code></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList">
+<table class="constantsSummary">
+<caption><span>io.github.mmm.ui.api.widget.panel.<a href="io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/panel/UiGridPanel.html" title="interface in io.github.mmm.ui.api.widget.panel">UiGridPanel</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Constant Field</th>
+<th class="colLast" scope="col">Value</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a id="io.github.mmm.ui.api.widget.panel.UiGridPanel.STYLE">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/panel/UiGridPanel.html#STYLE">STYLE</a></code></th>
+<td class="colLast"><code>"ui-grid"</code></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList">
+<table class="constantsSummary">
+<caption><span>io.github.mmm.ui.api.widget.panel.<a href="io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/panel/UiGridRow.html" title="interface in io.github.mmm.ui.api.widget.panel">UiGridRow</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Constant Field</th>
+<th class="colLast" scope="col">Value</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a id="io.github.mmm.ui.api.widget.panel.UiGridRow.STYLE">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/panel/UiGridRow.html#STYLE">STYLE</a></code></th>
+<td class="colLast"><code>"ui-gridrow"</code></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList">
+<table class="constantsSummary">
+<caption><span>io.github.mmm.ui.api.widget.panel.<a href="io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/panel/UiHorizontalPanel.html" title="interface in io.github.mmm.ui.api.widget.panel">UiHorizontalPanel</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Constant Field</th>
+<th class="colLast" scope="col">Value</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a id="io.github.mmm.ui.api.widget.panel.UiHorizontalPanel.STYLE">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/panel/UiHorizontalPanel.html#STYLE">STYLE</a></code></th>
+<td class="colLast"><code>"ui-hpanel"</code></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList">
+<table class="constantsSummary">
+<caption><span>io.github.mmm.ui.api.widget.panel.<a href="io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/panel/UiVerticalPanel.html" title="interface in io.github.mmm.ui.api.widget.panel">UiVerticalPanel</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Constant Field</th>
+<th class="colLast" scope="col">Value</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a id="io.github.mmm.ui.api.widget.panel.UiVerticalPanel.STYLE">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/panel/UiVerticalPanel.html#STYLE">STYLE</a></code></th>
+<td class="colLast"><code>"ui-vpanel"</code></td>
 </tr>
 </tbody>
 </table>
@@ -2578,7 +3173,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <table class="constantsSummary">
-<caption><span>io.github.mmm.ui.tvm.widget.<a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidgetJsObject.html" title="class in io.github.mmm.ui.tvm.widget">TvmWidgetJsObject</a>&lt;<a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidgetJsObject.html" title="type parameter in TvmWidgetJsObject">W</a> extends org.teavm.jso.JSObject&gt;</span><span class="tabEnd">&nbsp;</span></caption>
+<caption><span>io.github.mmm.ui.tvm.widget.<a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidget.html" title="class in io.github.mmm.ui.tvm.widget">TvmWidget</a>&lt;<a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidget.html" title="type parameter in TvmWidget">W</a> extends org.teavm.jso.JSObject&gt;</span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colSecond" scope="col">Constant Field</th>
@@ -2586,192 +3181,248 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><a id="io.github.mmm.ui.tvm.widget.TvmWidgetJsObject.ATR_ARIA_HIDDEN">
+<td class="colFirst"><a id="io.github.mmm.ui.tvm.widget.TvmWidget.ATR_ARIA_HIDDEN">
 <!--   -->
 </a><code>protected&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidgetJsObject.html#ATR_ARIA_HIDDEN">ATR_ARIA_HIDDEN</a></code></th>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidget.html#ATR_ARIA_HIDDEN">ATR_ARIA_HIDDEN</a></code></th>
 <td class="colLast"><code>"aria-hidden"</code></td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><a id="io.github.mmm.ui.tvm.widget.TvmWidgetJsObject.ATR_ARIA_LABEL">
+<td class="colFirst"><a id="io.github.mmm.ui.tvm.widget.TvmWidget.ATR_ARIA_LABEL">
 <!--   -->
 </a><code>protected&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidgetJsObject.html#ATR_ARIA_LABEL">ATR_ARIA_LABEL</a></code></th>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidget.html#ATR_ARIA_LABEL">ATR_ARIA_LABEL</a></code></th>
 <td class="colLast"><code>"aria-label"</code></td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><a id="io.github.mmm.ui.tvm.widget.TvmWidgetJsObject.ATR_ARIA_SELECTED">
+<td class="colFirst"><a id="io.github.mmm.ui.tvm.widget.TvmWidget.ATR_ARIA_SELECTED">
 <!--   -->
 </a><code>protected&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidgetJsObject.html#ATR_ARIA_SELECTED">ATR_ARIA_SELECTED</a></code></th>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidget.html#ATR_ARIA_SELECTED">ATR_ARIA_SELECTED</a></code></th>
 <td class="colLast"><code>"aria-selected"</code></td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><a id="io.github.mmm.ui.tvm.widget.TvmWidgetJsObject.ATR_FOR">
+<td class="colFirst"><a id="io.github.mmm.ui.tvm.widget.TvmWidget.ATR_COLSPAN">
 <!--   -->
 </a><code>protected&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidgetJsObject.html#ATR_FOR">ATR_FOR</a></code></th>
-<td class="colLast"><code>"for"</code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidget.html#ATR_COLSPAN">ATR_COLSPAN</a></code></th>
+<td class="colLast"><code>"colspan"</code></td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><a id="io.github.mmm.ui.tvm.widget.TvmWidgetJsObject.ATR_ID">
+<td class="colFirst"><a id="io.github.mmm.ui.tvm.widget.TvmWidget.ATR_FOR">
 <!--   -->
 </a><code>protected&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidgetJsObject.html#ATR_ID">ATR_ID</a></code></th>
-<td class="colLast"><code>"id"</code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidget.html#ATR_FOR">ATR_FOR</a></code></th>
+<td class="colLast"><code>"for"</code></td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><a id="io.github.mmm.ui.tvm.widget.TvmWidgetJsObject.ATR_REQUIRED">
+<td class="colFirst"><a id="io.github.mmm.ui.tvm.widget.TvmWidget.ATR_ID">
 <!--   -->
 </a><code>protected&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidgetJsObject.html#ATR_REQUIRED">ATR_REQUIRED</a></code></th>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidget.html#ATR_ID">ATR_ID</a></code></th>
+<td class="colLast"><code>"id"</code></td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a id="io.github.mmm.ui.tvm.widget.TvmWidget.ATR_LIST">
+<!--   -->
+</a><code>protected&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidget.html#ATR_LIST">ATR_LIST</a></code></th>
+<td class="colLast"><code>"list"</code></td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a id="io.github.mmm.ui.tvm.widget.TvmWidget.ATR_MAX">
+<!--   -->
+</a><code>protected&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidget.html#ATR_MAX">ATR_MAX</a></code></th>
+<td class="colLast"><code>"max"</code></td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a id="io.github.mmm.ui.tvm.widget.TvmWidget.ATR_MIN">
+<!--   -->
+</a><code>protected&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidget.html#ATR_MIN">ATR_MIN</a></code></th>
+<td class="colLast"><code>"min"</code></td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a id="io.github.mmm.ui.tvm.widget.TvmWidget.ATR_REQUIRED">
+<!--   -->
+</a><code>protected&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidget.html#ATR_REQUIRED">ATR_REQUIRED</a></code></th>
 <td class="colLast"><code>"required"</code></td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><a id="io.github.mmm.ui.tvm.widget.TvmWidgetJsObject.ATR_ROLE">
+<td class="colFirst"><a id="io.github.mmm.ui.tvm.widget.TvmWidget.ATR_ROLE">
 <!--   -->
 </a><code>protected&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidgetJsObject.html#ATR_ROLE">ATR_ROLE</a></code></th>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidget.html#ATR_ROLE">ATR_ROLE</a></code></th>
 <td class="colLast"><code>"role"</code></td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><a id="io.github.mmm.ui.tvm.widget.TvmWidgetJsObject.ATR_STYLE">
+<td class="colFirst"><a id="io.github.mmm.ui.tvm.widget.TvmWidget.ATR_ROWSPAN">
 <!--   -->
 </a><code>protected&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidgetJsObject.html#ATR_STYLE">ATR_STYLE</a></code></th>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidget.html#ATR_ROWSPAN">ATR_ROWSPAN</a></code></th>
+<td class="colLast"><code>"rowspan"</code></td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a id="io.github.mmm.ui.tvm.widget.TvmWidget.ATR_STYLE">
+<!--   -->
+</a><code>protected&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidget.html#ATR_STYLE">ATR_STYLE</a></code></th>
 <td class="colLast"><code>"style"</code></td>
 </tr>
-<tr class="altColor">
-<td class="colFirst"><a id="io.github.mmm.ui.tvm.widget.TvmWidgetJsObject.ATR_TABINDEX">
+<tr class="rowColor">
+<td class="colFirst"><a id="io.github.mmm.ui.tvm.widget.TvmWidget.ATR_TABINDEX">
 <!--   -->
 </a><code>protected&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidgetJsObject.html#ATR_TABINDEX">ATR_TABINDEX</a></code></th>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidget.html#ATR_TABINDEX">ATR_TABINDEX</a></code></th>
 <td class="colLast"><code>"tabindex"</code></td>
 </tr>
-<tr class="rowColor">
-<td class="colFirst"><a id="io.github.mmm.ui.tvm.widget.TvmWidgetJsObject.CLASS_COLLAPSE">
+<tr class="altColor">
+<td class="colFirst"><a id="io.github.mmm.ui.tvm.widget.TvmWidget.CLASS_COLLAPSE">
 <!--   -->
 </a><code>protected&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidgetJsObject.html#CLASS_COLLAPSE">CLASS_COLLAPSE</a></code></th>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidget.html#CLASS_COLLAPSE">CLASS_COLLAPSE</a></code></th>
 <td class="colLast"><code>"collapse"</code></td>
 </tr>
-<tr class="altColor">
-<td class="colFirst"><a id="io.github.mmm.ui.tvm.widget.TvmWidgetJsObject.CLASS_ERROR">
+<tr class="rowColor">
+<td class="colFirst"><a id="io.github.mmm.ui.tvm.widget.TvmWidget.CLASS_ERROR">
 <!--   -->
 </a><code>protected&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidgetJsObject.html#CLASS_ERROR">CLASS_ERROR</a></code></th>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidget.html#CLASS_ERROR">CLASS_ERROR</a></code></th>
 <td class="colLast"><code>"error"</code></td>
 </tr>
-<tr class="rowColor">
-<td class="colFirst"><a id="io.github.mmm.ui.tvm.widget.TvmWidgetJsObject.CLASS_EXPAND">
+<tr class="altColor">
+<td class="colFirst"><a id="io.github.mmm.ui.tvm.widget.TvmWidget.CLASS_EXPAND">
 <!--   -->
 </a><code>protected&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidgetJsObject.html#CLASS_EXPAND">CLASS_EXPAND</a></code></th>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidget.html#CLASS_EXPAND">CLASS_EXPAND</a></code></th>
 <td class="colLast"><code>"expand"</code></td>
 </tr>
-<tr class="altColor">
-<td class="colFirst"><a id="io.github.mmm.ui.tvm.widget.TvmWidgetJsObject.CLASS_INFO">
+<tr class="rowColor">
+<td class="colFirst"><a id="io.github.mmm.ui.tvm.widget.TvmWidget.CLASS_INFO">
 <!--   -->
 </a><code>protected&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidgetJsObject.html#CLASS_INFO">CLASS_INFO</a></code></th>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidget.html#CLASS_INFO">CLASS_INFO</a></code></th>
 <td class="colLast"><code>"info"</code></td>
 </tr>
-<tr class="rowColor">
-<td class="colFirst"><a id="io.github.mmm.ui.tvm.widget.TvmWidgetJsObject.CLASS_QUESTION">
+<tr class="altColor">
+<td class="colFirst"><a id="io.github.mmm.ui.tvm.widget.TvmWidget.CLASS_QUESTION">
 <!--   -->
 </a><code>protected&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidgetJsObject.html#CLASS_QUESTION">CLASS_QUESTION</a></code></th>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidget.html#CLASS_QUESTION">CLASS_QUESTION</a></code></th>
 <td class="colLast"><code>"question"</code></td>
 </tr>
-<tr class="altColor">
-<td class="colFirst"><a id="io.github.mmm.ui.tvm.widget.TvmWidgetJsObject.CLASS_WARNING">
+<tr class="rowColor">
+<td class="colFirst"><a id="io.github.mmm.ui.tvm.widget.TvmWidget.CLASS_WARNING">
 <!--   -->
 </a><code>protected&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidgetJsObject.html#CLASS_WARNING">CLASS_WARNING</a></code></th>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidget.html#CLASS_WARNING">CLASS_WARNING</a></code></th>
 <td class="colLast"><code>"warning"</code></td>
 </tr>
-<tr class="rowColor">
-<td class="colFirst"><a id="io.github.mmm.ui.tvm.widget.TvmWidgetJsObject.EVENT_TYPE_BLUR">
+<tr class="altColor">
+<td class="colFirst"><a id="io.github.mmm.ui.tvm.widget.TvmWidget.EVENT_TYPE_BLUR">
 <!--   -->
 </a><code>protected&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidgetJsObject.html#EVENT_TYPE_BLUR">EVENT_TYPE_BLUR</a></code></th>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidget.html#EVENT_TYPE_BLUR">EVENT_TYPE_BLUR</a></code></th>
 <td class="colLast"><code>"blur"</code></td>
 </tr>
-<tr class="altColor">
-<td class="colFirst"><a id="io.github.mmm.ui.tvm.widget.TvmWidgetJsObject.EVENT_TYPE_CHANGE">
+<tr class="rowColor">
+<td class="colFirst"><a id="io.github.mmm.ui.tvm.widget.TvmWidget.EVENT_TYPE_CHANGE">
 <!--   -->
 </a><code>protected&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidgetJsObject.html#EVENT_TYPE_CHANGE">EVENT_TYPE_CHANGE</a></code></th>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidget.html#EVENT_TYPE_CHANGE">EVENT_TYPE_CHANGE</a></code></th>
 <td class="colLast"><code>"change"</code></td>
 </tr>
-<tr class="rowColor">
-<td class="colFirst"><a id="io.github.mmm.ui.tvm.widget.TvmWidgetJsObject.EVENT_TYPE_CLICK">
+<tr class="altColor">
+<td class="colFirst"><a id="io.github.mmm.ui.tvm.widget.TvmWidget.EVENT_TYPE_CLICK">
 <!--   -->
 </a><code>protected&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidgetJsObject.html#EVENT_TYPE_CLICK">EVENT_TYPE_CLICK</a></code></th>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidget.html#EVENT_TYPE_CLICK">EVENT_TYPE_CLICK</a></code></th>
 <td class="colLast"><code>"click"</code></td>
 </tr>
-<tr class="altColor">
-<td class="colFirst"><a id="io.github.mmm.ui.tvm.widget.TvmWidgetJsObject.EVENT_TYPE_FOCUS">
+<tr class="rowColor">
+<td class="colFirst"><a id="io.github.mmm.ui.tvm.widget.TvmWidget.EVENT_TYPE_FOCUS">
 <!--   -->
 </a><code>protected&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidgetJsObject.html#EVENT_TYPE_FOCUS">EVENT_TYPE_FOCUS</a></code></th>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidget.html#EVENT_TYPE_FOCUS">EVENT_TYPE_FOCUS</a></code></th>
 <td class="colLast"><code>"focus"</code></td>
 </tr>
-<tr class="rowColor">
-<td class="colFirst"><a id="io.github.mmm.ui.tvm.widget.TvmWidgetJsObject.EVENT_TYPE_INPUT">
+<tr class="altColor">
+<td class="colFirst"><a id="io.github.mmm.ui.tvm.widget.TvmWidget.EVENT_TYPE_INPUT">
 <!--   -->
 </a><code>protected&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidgetJsObject.html#EVENT_TYPE_INPUT">EVENT_TYPE_INPUT</a></code></th>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidget.html#EVENT_TYPE_INPUT">EVENT_TYPE_INPUT</a></code></th>
 <td class="colLast"><code>"input"</code></td>
 </tr>
-<tr class="altColor">
-<td class="colFirst"><a id="io.github.mmm.ui.tvm.widget.TvmWidgetJsObject.EVENT_TYPE_KEYDOWN">
+<tr class="rowColor">
+<td class="colFirst"><a id="io.github.mmm.ui.tvm.widget.TvmWidget.EVENT_TYPE_KEYDOWN">
 <!--   -->
 </a><code>protected&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidgetJsObject.html#EVENT_TYPE_KEYDOWN">EVENT_TYPE_KEYDOWN</a></code></th>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidget.html#EVENT_TYPE_KEYDOWN">EVENT_TYPE_KEYDOWN</a></code></th>
 <td class="colLast"><code>"keydown"</code></td>
 </tr>
-<tr class="rowColor">
-<td class="colFirst"><a id="io.github.mmm.ui.tvm.widget.TvmWidgetJsObject.EVENT_TYPE_POINTERDOWN">
+<tr class="altColor">
+<td class="colFirst"><a id="io.github.mmm.ui.tvm.widget.TvmWidget.EVENT_TYPE_POINTERDOWN">
 <!--   -->
 </a><code>protected&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidgetJsObject.html#EVENT_TYPE_POINTERDOWN">EVENT_TYPE_POINTERDOWN</a></code></th>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidget.html#EVENT_TYPE_POINTERDOWN">EVENT_TYPE_POINTERDOWN</a></code></th>
 <td class="colLast"><code>"pointerdown"</code></td>
 </tr>
-<tr class="altColor">
-<td class="colFirst"><a id="io.github.mmm.ui.tvm.widget.TvmWidgetJsObject.EVENT_TYPE_POINTERMOVE">
+<tr class="rowColor">
+<td class="colFirst"><a id="io.github.mmm.ui.tvm.widget.TvmWidget.EVENT_TYPE_POINTERMOVE">
 <!--   -->
 </a><code>protected&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidgetJsObject.html#EVENT_TYPE_POINTERMOVE">EVENT_TYPE_POINTERMOVE</a></code></th>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidget.html#EVENT_TYPE_POINTERMOVE">EVENT_TYPE_POINTERMOVE</a></code></th>
 <td class="colLast"><code>"pointermove"</code></td>
 </tr>
-<tr class="rowColor">
-<td class="colFirst"><a id="io.github.mmm.ui.tvm.widget.TvmWidgetJsObject.EVENT_TYPE_POINTERUP">
+<tr class="altColor">
+<td class="colFirst"><a id="io.github.mmm.ui.tvm.widget.TvmWidget.EVENT_TYPE_POINTERUP">
 <!--   -->
 </a><code>protected&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidgetJsObject.html#EVENT_TYPE_POINTERUP">EVENT_TYPE_POINTERUP</a></code></th>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidget.html#EVENT_TYPE_POINTERUP">EVENT_TYPE_POINTERUP</a></code></th>
 <td class="colLast"><code>"pointerup"</code></td>
 </tr>
-<tr class="altColor">
-<td class="colFirst"><a id="io.github.mmm.ui.tvm.widget.TvmWidgetJsObject.STYLE_COLLAPSED">
+<tr class="rowColor">
+<td class="colFirst"><a id="io.github.mmm.ui.tvm.widget.TvmWidget.ROLE_PRESENTATION">
 <!--   -->
 </a><code>protected&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidgetJsObject.html#STYLE_COLLAPSED">STYLE_COLLAPSED</a></code></th>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidget.html#ROLE_PRESENTATION">ROLE_PRESENTATION</a></code></th>
+<td class="colLast"><code>"presentation"</code></td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a id="io.github.mmm.ui.tvm.widget.TvmWidget.STYLE_COLLAPSED">
+<!--   -->
+</a><code>protected&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidget.html#STYLE_COLLAPSED">STYLE_COLLAPSED</a></code></th>
 <td class="colLast"><code>"collapsed"</code></td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><a id="io.github.mmm.ui.tvm.widget.TvmWidgetJsObject.STYLE_COLLAPSIBLE">
+<td class="colFirst"><a id="io.github.mmm.ui.tvm.widget.TvmWidget.STYLE_COLLAPSIBLE">
 <!--   -->
 </a><code>protected&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidgetJsObject.html#STYLE_COLLAPSIBLE">STYLE_COLLAPSIBLE</a></code></th>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidget.html#STYLE_COLLAPSIBLE">STYLE_COLLAPSIBLE</a></code></th>
 <td class="colLast"><code>"collapsible"</code></td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><a id="io.github.mmm.ui.tvm.widget.TvmWidgetJsObject.TAG_NAME_UI_ICON">
+<td class="colFirst"><a id="io.github.mmm.ui.tvm.widget.TvmWidget.STYLE_DISABLED">
 <!--   -->
 </a><code>protected&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidgetJsObject.html#TAG_NAME_UI_ICON">TAG_NAME_UI_ICON</a></code></th>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidget.html#STYLE_DISABLED">STYLE_DISABLED</a></code></th>
+<td class="colLast"><code>"disabled"</code></td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a id="io.github.mmm.ui.tvm.widget.TvmWidget.STYLE_RESIZABLE">
+<!--   -->
+</a><code>protected&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidget.html#STYLE_RESIZABLE">STYLE_RESIZABLE</a></code></th>
+<td class="colLast"><code>"resizable"</code></td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a id="io.github.mmm.ui.tvm.widget.TvmWidget.TAG_NAME_UI_ICON">
+<!--   -->
+</a><code>protected&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidget.html#TAG_NAME_UI_ICON">TAG_NAME_UI_ICON</a></code></th>
 <td class="colLast"><code>"ui-icon"</code></td>
 </tr>
 </tbody>
@@ -2828,7 +3479,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!--   -->
 </a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><a href="io.github.mmm.validation/io/github/mmm/validation/ComposedValidationFailure.html#CODE">CODE</a></code></th>
-<td class="colLast"><code>"ComposedValidator"</code></td>
+<td class="colLast"><code>"Composed"</code></td>
 </tr>
 </tbody>
 </table>
@@ -2843,11 +3494,30 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><a id="io.github.mmm.validation.ComposedValidator.CODE">
+<td class="colFirst"><a id="io.github.mmm.validation.ComposedValidator.ID">
 <!--   -->
 </a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><a href="io.github.mmm.validation/io/github/mmm/validation/ComposedValidator.html#CODE">CODE</a></code></th>
-<td class="colLast"><code>"ComposedValidator"</code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.validation/io/github/mmm/validation/ComposedValidator.html#ID">ID</a></code></th>
+<td class="colLast"><code>"Composed"</code></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList">
+<table class="constantsSummary">
+<caption><span>io.github.mmm.validation.<a href="io.github.mmm.validation/io/github/mmm/validation/Validator.html" title="interface in io.github.mmm.validation">Validator</a>&lt;<a href="io.github.mmm.validation/io/github/mmm/validation/Validator.html" title="type parameter in Validator">V</a>&gt;</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Constant Field</th>
+<th class="colLast" scope="col">Value</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a id="io.github.mmm.validation.Validator.ID_MANDATORY">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.validation/io/github/mmm/validation/Validator.html#ID_MANDATORY">ID_MANDATORY</a></code></th>
+<td class="colLast"><code>"Mandatory"</code></td>
 </tr>
 </tbody>
 </table>
@@ -2864,10 +3534,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><a id="io.github.mmm.validation.main.AbstractValidatorRange.CODE">
+<td class="colFirst"><a id="io.github.mmm.validation.main.AbstractValidatorRange.ID">
 <!--   -->
 </a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><a href="io.github.mmm.validation.main/io/github/mmm/validation/main/AbstractValidatorRange.html#CODE">CODE</a></code></th>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.validation.main/io/github/mmm/validation/main/AbstractValidatorRange.html#ID">ID</a></code></th>
 <td class="colLast"><code>"Range"</code></td>
 </tr>
 </tbody>
@@ -2883,10 +3553,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><a id="io.github.mmm.validation.main.ValidatorMandatory.CODE">
+<td class="colFirst"><a id="io.github.mmm.validation.main.ValidatorMandatory.ID">
 <!--   -->
 </a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><a href="io.github.mmm.validation.main/io/github/mmm/validation/main/ValidatorMandatory.html#CODE">CODE</a></code></th>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.validation.main/io/github/mmm/validation/main/ValidatorMandatory.html#ID">ID</a></code></th>
 <td class="colLast"><code>"Mandatory"</code></td>
 </tr>
 </tbody>
@@ -2894,6 +3564,139 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </li>
 </ul>
 <ul class="blockList">
+<li class="blockList">
+<table class="constantsSummary">
+<caption><span>io.github.mmm.validation.string.<a href="io.github.mmm.validation.main/io/github/mmm/validation/string/ValidatorEmail.html" title="class in io.github.mmm.validation.string">ValidatorEmail</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Constant Field</th>
+<th class="colLast" scope="col">Value</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a id="io.github.mmm.validation.string.ValidatorEmail.ID">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.validation.main/io/github/mmm/validation/string/ValidatorEmail.html#ID">ID</a></code></th>
+<td class="colLast"><code>"Email"</code></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList">
+<table class="constantsSummary">
+<caption><span>io.github.mmm.validation.string.<a href="io.github.mmm.validation.main/io/github/mmm/validation/string/ValidatorEmailSpec.html" title="class in io.github.mmm.validation.string">ValidatorEmailSpec</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Constant Field</th>
+<th class="colLast" scope="col">Value</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a id="io.github.mmm.validation.string.ValidatorEmailSpec.ID">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.validation.main/io/github/mmm/validation/string/ValidatorEmailSpec.html#ID">ID</a></code></th>
+<td class="colLast"><code>"EmailSpec"</code></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList">
+<table class="constantsSummary">
+<caption><span>io.github.mmm.validation.string.<a href="io.github.mmm.validation.main/io/github/mmm/validation/string/ValidatorHost.html" title="class in io.github.mmm.validation.string">ValidatorHost</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Constant Field</th>
+<th class="colLast" scope="col">Value</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a id="io.github.mmm.validation.string.ValidatorHost.ID">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.validation.main/io/github/mmm/validation/string/ValidatorHost.html#ID">ID</a></code></th>
+<td class="colLast"><code>"Host"</code></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList">
+<table class="constantsSummary">
+<caption><span>io.github.mmm.validation.string.<a href="io.github.mmm.validation.main/io/github/mmm/validation/string/ValidatorHostName.html" title="class in io.github.mmm.validation.string">ValidatorHostName</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Constant Field</th>
+<th class="colLast" scope="col">Value</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a id="io.github.mmm.validation.string.ValidatorHostName.ID">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.validation.main/io/github/mmm/validation/string/ValidatorHostName.html#ID">ID</a></code></th>
+<td class="colLast"><code>"HostName"</code></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList">
+<table class="constantsSummary">
+<caption><span>io.github.mmm.validation.string.<a href="io.github.mmm.validation.main/io/github/mmm/validation/string/ValidatorIpAddress.html" title="class in io.github.mmm.validation.string">ValidatorIpAddress</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Constant Field</th>
+<th class="colLast" scope="col">Value</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a id="io.github.mmm.validation.string.ValidatorIpAddress.ID">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.validation.main/io/github/mmm/validation/string/ValidatorIpAddress.html#ID">ID</a></code></th>
+<td class="colLast"><code>"IP-Address"</code></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList">
+<table class="constantsSummary">
+<caption><span>io.github.mmm.validation.string.<a href="io.github.mmm.validation.main/io/github/mmm/validation/string/ValidatorIpV4Address.html" title="class in io.github.mmm.validation.string">ValidatorIpV4Address</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Constant Field</th>
+<th class="colLast" scope="col">Value</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a id="io.github.mmm.validation.string.ValidatorIpV4Address.ID">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.validation.main/io/github/mmm/validation/string/ValidatorIpV4Address.html#ID">ID</a></code></th>
+<td class="colLast"><code>"IPv4-Address"</code></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList">
+<table class="constantsSummary">
+<caption><span>io.github.mmm.validation.string.<a href="io.github.mmm.validation.main/io/github/mmm/validation/string/ValidatorIpV6Address.html" title="class in io.github.mmm.validation.string">ValidatorIpV6Address</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Constant Field</th>
+<th class="colLast" scope="col">Value</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a id="io.github.mmm.validation.string.ValidatorIpV6Address.ID">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.validation.main/io/github/mmm/validation/string/ValidatorIpV6Address.html#ID">ID</a></code></th>
+<td class="colLast"><code>"IPv6-Address"</code></td>
+</tr>
+</tbody>
+</table>
+</li>
 <li class="blockList">
 <table class="constantsSummary">
 <caption><span>io.github.mmm.validation.string.<a href="io.github.mmm.validation.main/io/github/mmm/validation/string/ValidatorPasswordConfirmation.html" title="class in io.github.mmm.validation.string">ValidatorPasswordConfirmation</a></span><span class="tabEnd">&nbsp;</span></caption>
@@ -2904,10 +3707,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><a id="io.github.mmm.validation.string.ValidatorPasswordConfirmation.CODE">
+<td class="colFirst"><a id="io.github.mmm.validation.string.ValidatorPasswordConfirmation.ID">
 <!--   -->
 </a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><a href="io.github.mmm.validation.main/io/github/mmm/validation/string/ValidatorPasswordConfirmation.html#CODE">CODE</a></code></th>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.validation.main/io/github/mmm/validation/string/ValidatorPasswordConfirmation.html#ID">ID</a></code></th>
 <td class="colLast"><code>"PwdConfirm"</code></td>
 </tr>
 </tbody>
@@ -2923,11 +3726,30 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><a id="io.github.mmm.validation.string.ValidatorPattern.CODE">
+<td class="colFirst"><a id="io.github.mmm.validation.string.ValidatorPattern.ID">
 <!--   -->
 </a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><a href="io.github.mmm.validation.main/io/github/mmm/validation/string/ValidatorPattern.html#CODE">CODE</a></code></th>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.validation.main/io/github/mmm/validation/string/ValidatorPattern.html#ID">ID</a></code></th>
 <td class="colLast"><code>"Pattern"</code></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList">
+<table class="constantsSummary">
+<caption><span>io.github.mmm.validation.string.<a href="io.github.mmm.validation.main/io/github/mmm/validation/string/ValidatorPhoneNumber.html" title="class in io.github.mmm.validation.string">ValidatorPhoneNumber</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Constant Field</th>
+<th class="colLast" scope="col">Value</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a id="io.github.mmm.validation.string.ValidatorPhoneNumber.ID">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.validation.main/io/github/mmm/validation/string/ValidatorPhoneNumber.html#ID">ID</a></code></th>
+<td class="colLast"><code>"PhoneNumber"</code></td>
 </tr>
 </tbody>
 </table>
@@ -2944,10 +3766,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><a id="io.github.mmm.validation.temporal.ValidatorTemporalAfter.CODE">
+<td class="colFirst"><a id="io.github.mmm.validation.temporal.ValidatorTemporalAfter.ID">
 <!--   -->
 </a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><a href="io.github.mmm.validation.main/io/github/mmm/validation/temporal/ValidatorTemporalAfter.html#CODE">CODE</a></code></th>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.validation.main/io/github/mmm/validation/temporal/ValidatorTemporalAfter.html#ID">ID</a></code></th>
 <td class="colLast"><code>"After"</code></td>
 </tr>
 </tbody>
@@ -2963,10 +3785,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><a id="io.github.mmm.validation.temporal.ValidatorTemporalBefore.CODE">
+<td class="colFirst"><a id="io.github.mmm.validation.temporal.ValidatorTemporalBefore.ID">
 <!--   -->
 </a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><a href="io.github.mmm.validation.main/io/github/mmm/validation/temporal/ValidatorTemporalBefore.html#CODE">CODE</a></code></th>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.validation.main/io/github/mmm/validation/temporal/ValidatorTemporalBefore.html#ID">ID</a></code></th>
 <td class="colLast"><code>"Before"</code></td>
 </tr>
 </tbody>
@@ -2982,10 +3804,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><a id="io.github.mmm.validation.temporal.ValidatorTemporalFuture.CODE">
+<td class="colFirst"><a id="io.github.mmm.validation.temporal.ValidatorTemporalFuture.ID">
 <!--   -->
 </a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><a href="io.github.mmm.validation.main/io/github/mmm/validation/temporal/ValidatorTemporalFuture.html#CODE">CODE</a></code></th>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.validation.main/io/github/mmm/validation/temporal/ValidatorTemporalFuture.html#ID">ID</a></code></th>
 <td class="colLast"><code>"Future"</code></td>
 </tr>
 </tbody>
@@ -3001,10 +3823,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><a id="io.github.mmm.validation.temporal.ValidatorTemporalPast.CODE">
+<td class="colFirst"><a id="io.github.mmm.validation.temporal.ValidatorTemporalPast.ID">
 <!--   -->
 </a><code>public&nbsp;static&nbsp;final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><a href="io.github.mmm.validation.main/io/github/mmm/validation/temporal/ValidatorTemporalPast.html#CODE">CODE</a></code></th>
+<th class="colSecond" scope="row"><code><a href="io.github.mmm.validation.main/io/github/mmm/validation/temporal/ValidatorTemporalPast.html#ID">ID</a></code></th>
 <td class="colLast"><code>"Past"</code></td>
 </tr>
 </tbody>

@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -185,8 +185,7 @@ implements <a href="WritableBean.html" title="interface in io.github.mmm.bean">W
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(io.github.mmm.bean.AbstractBean,boolean)">AbstractBean</a></span>&#8203;(<a href="AbstractBean.html" title="class in io.github.mmm.bean">AbstractBean</a>&nbsp;writable,
-            boolean&nbsp;dynamic)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E()">AbstractBean</a></span>()</code></th>
 <td class="colLast">
 <div class="block">The constructor.</div>
 </td>
@@ -215,7 +214,7 @@ implements <a href="WritableBean.html" title="interface in io.github.mmm.bean">W
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>protected &lt;P extends <a href="../../../../../io.github.mmm.property/io/github/mmm/property/WritableProperty.html" title="interface in io.github.mmm.property">WritableProperty</a>&lt;?&gt;&gt;<br>P</code></td>
+<td class="colFirst"><code>protected &lt;V,&#8203;P extends <a href="../../../../../io.github.mmm.property/io/github/mmm/property/WritableProperty.html" title="interface in io.github.mmm.property">WritableProperty</a>&lt;V&gt;&gt;<br>P</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#add(P)">add</a></span>&#8203;(P&nbsp;property)</code></th>
 <td class="colLast">
 <div class="block">Internal method for <a href="#addProperty(P)"><code>addProperty(WritableProperty)</code></a>, without verification.</div>
@@ -229,14 +228,18 @@ implements <a href="WritableBean.html" title="interface in io.github.mmm.bean">W
 </td>
 </tr>
 <tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="WritableBean.html" title="interface in io.github.mmm.bean">WritableBean</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#copy(boolean)">copy</a></span>&#8203;(boolean&nbsp;isReadOnly)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>protected <a href="AbstractBean.html" title="class in io.github.mmm.bean">AbstractBean</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#create(io.github.mmm.bean.AbstractBean,boolean)">create</a></span>&#8203;(<a href="AbstractBean.html" title="class in io.github.mmm.bean">AbstractBean</a>&nbsp;writableBean,
-      boolean&nbsp;dynamicFlag)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#create()">create</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Creates a new instance of this <a href="Bean.html" title="class in io.github.mmm.bean"><code>Bean</code></a> implementation.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>&lt;V&gt;&nbsp;<a href="../../../../../io.github.mmm.property/io/github/mmm/property/WritableProperty.html" title="interface in io.github.mmm.property">WritableProperty</a>&lt;V&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createProperty(java.lang.String,java.lang.Class,java.lang.reflect.Type)">createProperty</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
               <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;V&gt;&nbsp;valueClass,
@@ -246,31 +249,26 @@ implements <a href="WritableBean.html" title="interface in io.github.mmm.bean">W
  <a href="../../../../../io.github.mmm.value/io/github/mmm/value/ReadableTypedValue.html#getValueClass()"><code>value class</code></a> dynamically.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>protected <a href="PropertyBuilders.html" title="class in io.github.mmm.bean">PropertyBuilders</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createPropertyBuilders()">createPropertyBuilders</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Internal method that may be overridden to replace the <a href="PropertyBuilders.html" title="class in io.github.mmm.bean"><code>PropertyBuilders</code></a> implementation.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;? extends <a href="../../../../../io.github.mmm.property/io/github/mmm/property/WritableProperty.html" title="interface in io.github.mmm.property">WritableProperty</a>&lt;?&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getProperties()">getProperties</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../../../io.github.mmm.property/io/github/mmm/property/WritableProperty.html" title="interface in io.github.mmm.property">WritableProperty</a>&lt;?&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getProperty(java.lang.String)">getProperty</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPropertyCount()">getPropertyCount</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i9" class="rowColor">
-<td class="colFirst"><code><a href="AbstractBean.html" title="class in io.github.mmm.bean">AbstractBean</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getReadOnly()">getReadOnly</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
@@ -289,7 +287,7 @@ implements <a href="WritableBean.html" title="interface in io.github.mmm.bean">W
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i13" class="rowColor">
-<td class="colFirst"><code><a href="WritableBean.html" title="interface in io.github.mmm.bean">WritableBean</a></code></td>
+<td class="colFirst"><code><a href="AbstractBean.html" title="class in io.github.mmm.bean">AbstractBean</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#newInstance()">newInstance</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -322,14 +320,6 @@ implements <a href="WritableBean.html" title="interface in io.github.mmm.bean">W
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toString(java.lang.StringBuilder)">toString</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StringBuilder.html?is-external=true" title="class or interface in java.lang" class="externalLink">StringBuilder</a>&nbsp;sb)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
-<td class="colFirst"><code>protected void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#updateProperties()">updateProperties</a></span>()</code></th>
-<td class="colLast">
-<div class="block">Called before properties are accessed if <a href="#isDynamic()"><code>dynamic</code></a> and not <a href="#isReadOnly()"><code>read-only</code></a> to
- allow implementations to update properties internally before.</div>
-</td>
-</tr>
 </table>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
@@ -350,7 +340,7 @@ implements <a href="WritableBean.html" title="interface in io.github.mmm.bean">W
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;io.github.mmm.bean.<a href="ReadableBean.html" title="interface in io.github.mmm.bean">ReadableBean</a></h3>
-<code><a href="ReadableBean.html#get(java.lang.String)">get</a>, <a href="ReadableBean.html#getPropertyNameForAlias(java.lang.String)">getPropertyNameForAlias</a>, <a href="ReadableBean.html#getType()">getType</a>, <a href="ReadableBean.html#isEqualTo(io.github.mmm.bean.ReadableBean)">isEqualTo</a>, <a href="ReadableBean.html#isPolymorphic()">isPolymorphic</a>, <a href="ReadableBean.html#isPrototype()">isPrototype</a>, <a href="ReadableBean.html#validate()">validate</a>, <a href="ReadableBean.html#write(io.github.mmm.marshall.StructuredWriter)">write</a></code></li>
+<code><a href="ReadableBean.html#copy()">copy</a>, <a href="ReadableBean.html#get(java.lang.String)">get</a>, <a href="ReadableBean.html#getPropertyNameForAlias(java.lang.String)">getPropertyNameForAlias</a>, <a href="ReadableBean.html#getType()">getType</a>, <a href="ReadableBean.html#isEqualTo(io.github.mmm.bean.ReadableBean)">isEqualTo</a>, <a href="ReadableBean.html#isPolymorphic()">isPolymorphic</a>, <a href="ReadableBean.html#isPrototype()">isPrototype</a>, <a href="ReadableBean.html#validate()">validate</a>, <a href="ReadableBean.html#write(io.github.mmm.marshall.StructuredWriter)">write</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.marshall.UnmarshallableObject">
@@ -382,21 +372,14 @@ implements <a href="WritableBean.html" title="interface in io.github.mmm.bean">W
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a id="&lt;init&gt;(io.github.mmm.bean.AbstractBean,boolean)">
+<a id="&lt;init&gt;()">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>AbstractBean</h4>
-<pre>public&nbsp;AbstractBean&#8203;(<a href="AbstractBean.html" title="class in io.github.mmm.bean">AbstractBean</a>&nbsp;writable,
-                    boolean&nbsp;dynamic)</pre>
+<pre>public&nbsp;AbstractBean()</pre>
 <div class="block">The constructor.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>writable</code> - the writable <a href="Bean.html" title="class in io.github.mmm.bean"><code>Bean</code></a> to create a <a href="#isReadOnly()"><code>read-only</code></a> view on or <code>null</code> to
-        create a regular mutable <a href="Bean.html" title="class in io.github.mmm.bean"><code>Bean</code></a>.</dd>
-<dd><code>dynamic</code> - the <a href="#isDynamic()"><code>dynamic flag</code></a>.</dd>
-</dl>
 </li>
 </ul>
 </li>
@@ -467,12 +450,30 @@ implements <a href="WritableBean.html" title="interface in io.github.mmm.bean">W
 <ul class="blockList">
 <li class="blockList">
 <h4>newInstance</h4>
-<pre class="methodSignature">public&nbsp;<a href="WritableBean.html" title="interface in io.github.mmm.bean">WritableBean</a>&nbsp;newInstance()</pre>
+<pre class="methodSignature">public&nbsp;<a href="AbstractBean.html" title="class in io.github.mmm.bean">AbstractBean</a>&nbsp;newInstance()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="WritableBean.html#newInstance()">newInstance</a></code>&nbsp;in interface&nbsp;<code><a href="WritableBean.html" title="interface in io.github.mmm.bean">WritableBean</a></code></dd>
+<dd><code><a href="ReadableBean.html#newInstance()">newInstance</a></code>&nbsp;in interface&nbsp;<code><a href="ReadableBean.html" title="interface in io.github.mmm.bean">ReadableBean</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a new instance of this <a href="WritableBean.html" title="interface in io.github.mmm.bean"><code>WritableBean</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="copy(boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>copy</h4>
+<pre class="methodSignature">public&nbsp;<a href="WritableBean.html" title="interface in io.github.mmm.bean">WritableBean</a>&nbsp;copy&#8203;(boolean&nbsp;isReadOnly)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="ReadableBean.html#copy(boolean)">copy</a></code>&nbsp;in interface&nbsp;<code><a href="ReadableBean.html" title="interface in io.github.mmm.bean">ReadableBean</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>isReadOnly</code> - - <code>true</code> if the copy shall be <a href="ReadableBean.html#isReadOnly()"><code>read-only</code></a>.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a <a href="ReadableBean.html#copy()"><code>copy</code></a> of this <a href="WritableBean.html" title="interface in io.github.mmm.bean"><code>WritableBean</code></a>. If <code>readOnly</code> is <code>true</code> and this bean is
+         already <a href="ReadableBean.html#isReadOnly()"><code>read-only</code></a>, the same instance will be returned.</dd>
 </dl>
 </li>
 </ul>
@@ -488,46 +489,20 @@ implements <a href="WritableBean.html" title="interface in io.github.mmm.bean">W
 <dd><code><a href="ReadableBean.html#isReadOnly()">isReadOnly</a></code>&nbsp;in interface&nbsp;<code><a href="ReadableBean.html" title="interface in io.github.mmm.bean">ReadableBean</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd><code>true</code> if this <a href="Bean.html" title="class in io.github.mmm.bean"><code>Bean</code></a> is read-only (immutable), <code>false</code> otherwise.</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="WritableBean.html#getReadOnly(B)"><code>WritableBean.getReadOnly(WritableBean)</code></a></dd>
 </dl>
 </li>
 </ul>
-<a id="getReadOnly()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getReadOnly</h4>
-<pre class="methodSignature">public final&nbsp;<a href="AbstractBean.html" title="class in io.github.mmm.bean">AbstractBean</a>&nbsp;getReadOnly()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="WritableBean.html#getReadOnly()">getReadOnly</a></code>&nbsp;in interface&nbsp;<code><a href="WritableBean.html" title="interface in io.github.mmm.bean">WritableBean</a></code></dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>a <a href="ReadableBean.html#isReadOnly()"><code>immutable</code></a> view of this <a href="WritableBean.html" title="interface in io.github.mmm.bean"><code>WritableBean</code></a>. Read operations on this
-         <a href="ReadableBean.html#isReadOnly()"><code>immutable</code></a> view will produce the exact same results as on the original
-         <a href="WritableBean.html" title="interface in io.github.mmm.bean"><code>WritableBean</code></a>. However, all write operations will fail.</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="WritableBean.html#getReadOnly(B)"><code>WritableBean.getReadOnly(WritableBean)</code></a></dd>
-</dl>
-</li>
-</ul>
-<a id="create(io.github.mmm.bean.AbstractBean,boolean)">
+<a id="create()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>create</h4>
-<pre class="methodSignature">protected&nbsp;<a href="AbstractBean.html" title="class in io.github.mmm.bean">AbstractBean</a>&nbsp;create&#8203;(<a href="AbstractBean.html" title="class in io.github.mmm.bean">AbstractBean</a>&nbsp;writableBean,
-                              boolean&nbsp;dynamicFlag)</pre>
+<pre class="methodSignature">protected&nbsp;<a href="AbstractBean.html" title="class in io.github.mmm.bean">AbstractBean</a>&nbsp;create()</pre>
 <div class="block">Creates a new instance of this <a href="Bean.html" title="class in io.github.mmm.bean"><code>Bean</code></a> implementation. The default implementation uses reflection. To improve
  performance please override this method. Please note, that if you do so, you also need to override this method
  again for all sub-classes of the hierarchy.</div>
 <dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>writableBean</code> - the writable <a href="Bean.html" title="class in io.github.mmm.bean"><code>Bean</code></a> to create a <a href="#isReadOnly()"><code>read-only</code></a> view on, or <code>null</code>
-        to create a regular mutable <a href="Bean.html" title="class in io.github.mmm.bean"><code>Bean</code></a>.</dd>
-<dd><code>dynamicFlag</code> - the <a href="#isDynamic()"><code>dynamic flag</code></a>.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the new <a href="Bean.html" title="class in io.github.mmm.bean"><code>Bean</code></a> instance. Has to be of the same type as the <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang" class="externalLink"><code>current class</code></a>.</dd>
 </dl>
@@ -588,17 +563,6 @@ implements <a href="WritableBean.html" title="interface in io.github.mmm.bean">W
 </dl>
 </li>
 </ul>
-<a id="updateProperties()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>updateProperties</h4>
-<pre class="methodSignature">protected&nbsp;void&nbsp;updateProperties()</pre>
-<div class="block">Called before properties are accessed if <a href="#isDynamic()"><code>dynamic</code></a> and not <a href="#isReadOnly()"><code>read-only</code></a> to
- allow implementations to update properties internally before.</div>
-</li>
-</ul>
 <a id="createProperty(java.lang.String,java.lang.Class,java.lang.reflect.Type)">
 <!--   -->
 </a>
@@ -656,11 +620,12 @@ implements <a href="WritableBean.html" title="interface in io.github.mmm.bean">W
 <ul class="blockList">
 <li class="blockList">
 <h4>add</h4>
-<pre class="methodSignature">protected&nbsp;&lt;P extends <a href="../../../../../io.github.mmm.property/io/github/mmm/property/WritableProperty.html" title="interface in io.github.mmm.property">WritableProperty</a>&lt;?&gt;&gt;&nbsp;P&nbsp;add&#8203;(P&nbsp;property)</pre>
+<pre class="methodSignature">protected&nbsp;&lt;V,&#8203;P extends <a href="../../../../../io.github.mmm.property/io/github/mmm/property/WritableProperty.html" title="interface in io.github.mmm.property">WritableProperty</a>&lt;V&gt;&gt;&nbsp;P&nbsp;add&#8203;(P&nbsp;property)</pre>
 <div class="block">Internal method for <a href="#addProperty(P)"><code>addProperty(WritableProperty)</code></a>, without verification. Will be called from constructor
  of bean class implementations to register properties.</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
+<dd><code>V</code> - type of the <a href="../../../../../io.github.mmm.value/io/github/mmm/value/ReadableValue.html#get()"><code>property value</code></a>.</dd>
 <dd><code>P</code> - type of the <a href="../../../../../io.github.mmm.property/io/github/mmm/property/WritableProperty.html" title="interface in io.github.mmm.property"><code>WritableProperty</code></a> to add.</dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>property</code> - the <a href="../../../../../io.github.mmm.property/io/github/mmm/property/WritableProperty.html" title="interface in io.github.mmm.property"><code>WritableProperty</code></a> to add.</dd>

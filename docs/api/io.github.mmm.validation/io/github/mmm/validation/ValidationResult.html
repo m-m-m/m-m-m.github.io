@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":18};
+var data = {"i0":6,"i1":18,"i2":6,"i3":18,"i4":18,"i5":18,"i6":6,"i7":18,"i8":18,"i9":6,"i10":18};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -135,7 +135,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <pre>public interface <span class="typeNameLabel">ValidationResult</span>
 extends <a href="../../../../../io.github.mmm.base/io/github/mmm/base/lang/Composable.html" title="interface in io.github.mmm.base.lang">Composable</a>&lt;<a href="ValidationResult.html" title="interface in io.github.mmm.validation">ValidationResult</a>&gt;, <a href="../../../../../io.github.mmm.base/io/github/mmm/base/i18n/Localizable.html" title="interface in io.github.mmm.base.i18n">Localizable</a></pre>
 <div class="block">Result of a <a href="Validator.html#validate(V)"><code>validation</code></a>. If <a href="#isValid()"><code>valid</code></a> is <code>true</code>, the
- <a href="../../../../../io.github.mmm.base/io/github/mmm/base/i18n/Localizable.html#getMessage()"><code>message</code></a> is <code>null</code>. Otherwise the message shall be filled and explain the reason of the
+ <a href="#getMessage()"><code>message</code></a> is <code>null</code>. Otherwise the message shall be filled and explain the reason of the
  failure in a understandable but short form to end-users. Examples are "Value may not be blank." or "Value has to be
  in the range from 5 to 9.". Depending on the <a href="Validator.html#validate(V,java.lang.Object)"><code>usage</code></a> the message may also
  contain additional context information in order to determine the source of the problem.</div>
@@ -169,18 +169,64 @@ extends <a href="../../../../../io.github.mmm.base/io/github/mmm/base/lang/Compo
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getCode()">getCode</a></span>()</code></th>
-<td class="colLast">
-<div class="block">This method gets the <em>code</em> of this <a href="ValidationResult.html" title="interface in io.github.mmm.validation"><code>ValidationResult</code></a>.</div>
-</td>
+<td class="colFirst"><code>default boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#containsCode(java.lang.String)">containsCode</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;code)</code></th>
+<td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getCode()">getCode</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>default <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getLocalizedMessage(boolean)">getLocalizedMessage</a></span>&#8203;(boolean&nbsp;verbose)</code></th>
+<td class="colLast">
+<div class="block">This method gets the resolved and localized message.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>default <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getLocalizedMessage(java.util.Locale,boolean)">getLocalizedMessage</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html?is-external=true" title="class or interface in java.util" class="externalLink">Locale</a>&nbsp;locale,
+                   boolean&nbsp;verbose)</code></th>
+<td class="colLast">
+<div class="block">This method gets the resolved and localized message.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>default void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getLocalizedMessage(java.util.Locale,java.lang.Appendable)">getLocalizedMessage</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html?is-external=true" title="class or interface in java.util" class="externalLink">Locale</a>&nbsp;locale,
+                   <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Appendable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Appendable</a>&nbsp;buffer)</code></th>
+<td class="colLast">
+<div class="block">This method writes the <a href="../../../../../io.github.mmm.base/io/github/mmm/base/i18n/Localizable.html#getLocalizedMessage(java.util.Locale)"><code>localized message</code></a> to the given <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Appendable.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Appendable</code></a>.</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getLocalizedMessage(java.util.Locale,java.lang.Appendable,boolean)">getLocalizedMessage</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html?is-external=true" title="class or interface in java.util" class="externalLink">Locale</a>&nbsp;locale,
+                   <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Appendable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Appendable</a>&nbsp;buffer,
+                   boolean&nbsp;verbose)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>default <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getMessage()">getMessage</a></span>()</code></th>
+<td class="colLast">
+<div class="block"><b>ATTENTION:</b><br>
+ In most cases you wand to use <a href="../../../../../io.github.mmm.base/io/github/mmm/base/i18n/Localizable.html#getLocalizedMessage(java.util.Locale)"><code>Localizable.getLocalizedMessage(Locale)</code></a> instead of this method.</div>
+</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>default <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getMessage(boolean)">getMessage</a></span>&#8203;(boolean&nbsp;verbose)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSource()">getSource</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>default boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isValid()">isValid</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
@@ -205,7 +251,7 @@ extends <a href="../../../../../io.github.mmm.base/io/github/mmm/base/lang/Compo
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;io.github.mmm.base.i18n.<a href="../../../../../io.github.mmm.base/io/github/mmm/base/i18n/Localizable.html" title="interface in io.github.mmm.base.i18n">Localizable</a></h3>
-<code><a href="../../../../../io.github.mmm.base/io/github/mmm/base/i18n/Localizable.html#getArgument(java.lang.String)">getArgument</a>, <a href="../../../../../io.github.mmm.base/io/github/mmm/base/i18n/Localizable.html#getLocalizedMessage()">getLocalizedMessage</a>, <a href="../../../../../io.github.mmm.base/io/github/mmm/base/i18n/Localizable.html#getLocalizedMessage(java.util.Locale)">getLocalizedMessage</a>, <a href="../../../../../io.github.mmm.base/io/github/mmm/base/i18n/Localizable.html#getLocalizedMessage(java.util.Locale,java.lang.Appendable)">getLocalizedMessage</a>, <a href="../../../../../io.github.mmm.base/io/github/mmm/base/i18n/Localizable.html#getMessage()">getMessage</a>, <a href="../../../../../io.github.mmm.base/io/github/mmm/base/i18n/Localizable.html#toLocalizable()">toLocalizable</a></code></li>
+<code><a href="../../../../../io.github.mmm.base/io/github/mmm/base/i18n/Localizable.html#getArgument(java.lang.String)">getArgument</a>, <a href="../../../../../io.github.mmm.base/io/github/mmm/base/i18n/Localizable.html#getLocalizedMessage()">getLocalizedMessage</a>, <a href="../../../../../io.github.mmm.base/io/github/mmm/base/i18n/Localizable.html#getLocalizedMessage(java.util.Locale)">getLocalizedMessage</a>, <a href="../../../../../io.github.mmm.base/io/github/mmm/base/i18n/Localizable.html#toLocalizable()">toLocalizable</a></code></li>
 </ul>
 </li>
 </ul>
@@ -260,19 +306,134 @@ extends <a href="../../../../../io.github.mmm.base/io/github/mmm/base/lang/Compo
 <li class="blockList">
 <h4>getCode</h4>
 <pre class="methodSignature"><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getCode()</pre>
-<div class="block">This method gets the <em>code</em> of this <a href="ValidationResult.html" title="interface in io.github.mmm.validation"><code>ValidationResult</code></a>. The code is a stable identifier that indicates
- the type of the failure. It can be used for automated testing in order to make the test-cases independent from the
- actual message texts so they are maintainable and will not break e.g. if typos are fixed in the messages.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the failure code.</dd>
+<dd>the failure code or <code>null</code> if <a href="#isValid()"><code>valid</code></a>. For a single <a href="ValidationFailure.html" title="class in io.github.mmm.validation"><code>ValidationFailure</code></a> this
+         will be the <a href="Validator.html#getId()"><code>ID</code></a> of the failing <a href="Validator.html" title="interface in io.github.mmm.validation"><code>Validator</code></a>. The code is a stable identifier
+         that indicates the type of the failure. It can be used for automated testing in order to make the
+         test-cases independent from the actual message texts so they are maintainable and will not break e.g. if
+         typos are fixed in the messages.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="ComposedValidationFailure.html#CODE"><code>ComposedValidationFailure.CODE</code></a></dd>
+</dl>
+</li>
+</ul>
+<a id="getMessage()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getMessage</h4>
+<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getMessage()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../io.github.mmm.base/io/github/mmm/base/i18n/Localizable.html#getMessage()">Localizable</a></code></span></div>
+<div class="block"><b>ATTENTION:</b><br>
+ In most cases you wand to use <a href="../../../../../io.github.mmm.base/io/github/mmm/base/i18n/Localizable.html#getLocalizedMessage(java.util.Locale)"><code>Localizable.getLocalizedMessage(Locale)</code></a> instead of this method.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../io.github.mmm.base/io/github/mmm/base/i18n/Localizable.html#getMessage()">getMessage</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../io.github.mmm.base/io/github/mmm/base/i18n/Localizable.html" title="interface in io.github.mmm.base.i18n">Localizable</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the untranslated message with arguments filled in. This results in the message in its original language
+         that should typically be English.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="#getMessage(boolean)"><code>getMessage(boolean)</code></a></dd>
+</dl>
+</li>
+</ul>
+<a id="getMessage(boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getMessage</h4>
+<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getMessage&#8203;(boolean&nbsp;verbose)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>verbose</code> - </dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the localized message.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="#getMessage()"><code>getMessage()</code></a></dd>
+</dl>
+</li>
+</ul>
+<a id="getLocalizedMessage(boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getLocalizedMessage</h4>
+<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getLocalizedMessage&#8203;(boolean&nbsp;verbose)</pre>
+<div class="block">This method gets the resolved and localized message.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>verbose</code> - the verbose flag (to include <a href="#getCode()"><code>code</code></a>(s), etc.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the localized message.</dd>
+</dl>
+</li>
+</ul>
+<a id="getLocalizedMessage(java.util.Locale,boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getLocalizedMessage</h4>
+<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getLocalizedMessage&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html?is-external=true" title="class or interface in java.util" class="externalLink">Locale</a>&nbsp;locale,
+                                   boolean&nbsp;verbose)</pre>
+<div class="block">This method gets the resolved and localized message.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>locale</code> - is the <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Locale</code></a> to translate to.</dd>
+<dd><code>verbose</code> - the verbose flag (to include <a href="#getCode()"><code>code</code></a>(s), etc.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the localized message.</dd>
+</dl>
+</li>
+</ul>
+<a id="getLocalizedMessage(java.util.Locale,java.lang.Appendable)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getLocalizedMessage</h4>
+<pre class="methodSignature">default&nbsp;void&nbsp;getLocalizedMessage&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html?is-external=true" title="class or interface in java.util" class="externalLink">Locale</a>&nbsp;locale,
+                                 <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Appendable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Appendable</a>&nbsp;buffer)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../io.github.mmm.base/io/github/mmm/base/i18n/Localizable.html#getLocalizedMessage(java.util.Locale,java.lang.Appendable)">Localizable</a></code></span></div>
+<div class="block">This method writes the <a href="../../../../../io.github.mmm.base/io/github/mmm/base/i18n/Localizable.html#getLocalizedMessage(java.util.Locale)"><code>localized message</code></a> to the given <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Appendable.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Appendable</code></a>. <br></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../io.github.mmm.base/io/github/mmm/base/i18n/Localizable.html#getLocalizedMessage(java.util.Locale,java.lang.Appendable)">getLocalizedMessage</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../io.github.mmm.base/io/github/mmm/base/i18n/Localizable.html" title="interface in io.github.mmm.base.i18n">Localizable</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>locale</code> - the <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Locale</code></a> to translate to.</dd>
+<dd><code>buffer</code> - the <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Appendable.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Appendable</code></a> where to <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Appendable.html?is-external=true#append(java.lang.CharSequence)" title="class or interface in java.lang" class="externalLink"><code>write</code></a> the message to.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="#getLocalizedMessage(java.util.Locale,java.lang.Appendable,boolean)"><code>getLocalizedMessage(Locale, Appendable, boolean)</code></a></dd>
+</dl>
+</li>
+</ul>
+<a id="getLocalizedMessage(java.util.Locale,java.lang.Appendable,boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getLocalizedMessage</h4>
+<pre class="methodSignature">void&nbsp;getLocalizedMessage&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html?is-external=true" title="class or interface in java.util" class="externalLink">Locale</a>&nbsp;locale,
+                         <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Appendable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Appendable</a>&nbsp;buffer,
+                         boolean&nbsp;verbose)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>locale</code> - is the <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Locale</code></a> to translate to.</dd>
+<dd><code>buffer</code> - the <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Appendable.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Appendable</code></a> where to <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Appendable.html?is-external=true#append(java.lang.CharSequence)" title="class or interface in java.lang" class="externalLink"><code>write</code></a> the message to.</dd>
+<dd><code>verbose</code> - the verbose flag (to include <a href="#getCode()"><code>code</code></a>(s), etc.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="#getLocalizedMessage(java.util.Locale,java.lang.Appendable)"><code>getLocalizedMessage(Locale, Appendable)</code></a></dd>
 </dl>
 </li>
 </ul>
 <a id="add(io.github.mmm.validation.ValidationResult)">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>add</h4>
 <pre class="methodSignature"><a href="ValidationResult.html" title="interface in io.github.mmm.validation">ValidationResult</a>&nbsp;add&#8203;(<a href="ValidationResult.html" title="interface in io.github.mmm.validation">ValidationResult</a>&nbsp;result)</pre>
@@ -283,6 +444,23 @@ extends <a href="../../../../../io.github.mmm.base/io/github/mmm/base/lang/Compo
 <dd>the <a href="ValidationResult.html" title="interface in io.github.mmm.validation"><code>ValidationResult</code></a> composed out of this with the given <code>result</code>.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="ValidationResultBuilder.html" title="class in io.github.mmm.validation"><code>ValidationResultBuilder</code></a></dd>
+</dl>
+</li>
+</ul>
+<a id="containsCode(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>containsCode</h4>
+<pre class="methodSignature">default&nbsp;boolean&nbsp;containsCode&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;code)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>code</code> - the <a href="#getCode()"><code>code</code></a> to check for.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>true</code> if this <a href="ValidationResult.html" title="interface in io.github.mmm.validation"><code>ValidationResult</code></a> itself <a href="#getCode()"><code>has</code></a> the given <code>code</code> or
+         recursively <a href="AbstractComposedValidator.html#getChild(int)"><code>contains</code></a> such <a href="ValidationResult.html" title="interface in io.github.mmm.validation"><code>ValidationResult</code></a>s, <code>false</code>
+         otherwise.</dd>
 </dl>
 </li>
 </ul>

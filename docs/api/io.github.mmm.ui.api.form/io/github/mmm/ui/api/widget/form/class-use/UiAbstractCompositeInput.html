@@ -142,7 +142,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>interface&nbsp;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../UiCompositeInput.html" title="interface in io.github.mmm.ui.api.widget.form">UiCompositeInput</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../UiCompositeInput.html" title="interface in io.github.mmm.ui.api.widget.form">UiCompositeInput</a>&lt;V&gt;</span></code></th>
 <td class="colLast">
 <div class="block"><a href="../../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/input/UiInput.html" title="interface in io.github.mmm.ui.api.widget.input"><code>UiInput</code></a> that acts as <a href="../../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiComposite.html" title="interface in io.github.mmm.ui.api.widget.composite"><code>UiComposite</code></a> to contain multiple <a href="../../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/input/UiInput.html" title="interface in io.github.mmm.ui.api.widget.input"><code>UiInput</code></a>s or other <a href="../../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiRegularWidget.html" title="interface in io.github.mmm.ui.api.widget"><code>regular widgets</code></a>.</div>
 </td>
@@ -156,17 +156,42 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>interface&nbsp;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../UiInputColumns.html" title="interface in io.github.mmm.ui.api.widget.form">UiInputColumns</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../UiHorizontalInput.html" title="interface in io.github.mmm.ui.api.widget.form">UiHorizontalInput</a>&lt;V&gt;</span></code></th>
 <td class="colLast">
-<div class="block"><a href="../UiCompositeInput.html" title="interface in io.github.mmm.ui.api.widget.form"><code>UiCompositeInput</code></a> that represents multiple <a href="../../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/input/UiInput.html" title="interface in io.github.mmm.ui.api.widget.input"><code>UiInput</code></a>s (or other
- <a href="../../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiRegularWidget.html" title="interface in io.github.mmm.ui.api.widget"><code>regular widgets</code></a>) as a single row with a <a href="../../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/input/UiInput.html#getNameWidget()"><code>label</code></a>.</div>
+<div class="block"><a href="../UiCompositeInput.html" title="interface in io.github.mmm.ui.api.widget.form"><code>UiCompositeInput</code></a> that displays multiple <a href="../../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/input/UiInput.html" title="interface in io.github.mmm.ui.api.widget.input"><code>UiInput</code></a>s or other <a href="../../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiRegularWidget.html" title="interface in io.github.mmm.ui.api.widget"><code>regular widgets</code></a>
+ horizontally.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>interface&nbsp;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../UiInputRows.html" title="interface in io.github.mmm.ui.api.widget.form">UiInputRows</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../UiVerticalInput.html" title="interface in io.github.mmm.ui.api.widget.form">UiVerticalInput</a>&lt;V&gt;</span></code></th>
 <td class="colLast">
-<div class="block"><a href="../UiCompositeInput.html" title="interface in io.github.mmm.ui.api.widget.form"><code>UiCompositeInput</code></a> that represents multiple rows of <a href="../../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/input/UiInput.html" title="interface in io.github.mmm.ui.api.widget.input"><code>UiInput</code></a>s.</div>
+<div class="block"><a href="../UiCompositeInput.html" title="interface in io.github.mmm.ui.api.widget.form"><code>UiCompositeInput</code></a> that displays multiple <a href="../../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/input/UiInput.html" title="interface in io.github.mmm.ui.api.widget.input"><code>UiInput</code></a>s or other <a href="../../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiRegularWidget.html" title="interface in io.github.mmm.ui.api.widget"><code>regular widgets</code></a>
+ vertically.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary">
+<caption><span>Classes in <a href="../package-summary.html">io.github.mmm.ui.api.widget.form</a> that implement <a href="../UiAbstractCompositeInput.html" title="interface in io.github.mmm.ui.api.widget.form">UiAbstractCompositeInput</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Class</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../UiCustomCompositeInput.html" title="class in io.github.mmm.ui.api.widget.form">UiCustomCompositeInput</a>&lt;V,&#8203;W extends <a href="../UiCompositeInput.html" title="interface in io.github.mmm.ui.api.widget.form">UiCompositeInput</a>&lt;V&gt;&gt;</span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/AbstractUiCustomWidget.html" title="class in io.github.mmm.ui.api.widget"><code>AbstractUiCustomWidget</code></a> that is a <a href="../UiFormPanel.html" title="interface in io.github.mmm.ui.api.widget.form"><code>UiFormPanel</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../UiCustomHorizontalInput.html" title="class in io.github.mmm.ui.api.widget.form">UiCustomHorizontalInput</a>&lt;V&gt;</span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/AbstractUiCustomWidget.html" title="class in io.github.mmm.ui.api.widget"><code>AbstractUiCustomWidget</code></a> that is a <a href="../UiFormPanel.html" title="interface in io.github.mmm.ui.api.widget.form"><code>UiFormPanel</code></a>.</div>
 </td>
 </tr>
 </tbody>
@@ -188,9 +213,23 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../../../../io.github.mmm.ui.fx.form/io/github/mmm/ui/fx/widget/form/FxCompositeInput.html" title="class in io.github.mmm.ui.fx.widget.form">FxCompositeInput</a>&lt;V,&#8203;W extends javafx.scene.layout.Pane&gt;</span></code></th>
+<td class="colLast">
+<div class="block">Implementation of <a href="../UiCompositeInput.html" title="interface in io.github.mmm.ui.api.widget.form"><code>UiCompositeInput</code></a> for JavaFx.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../../../../io.github.mmm.ui.fx.form/io/github/mmm/ui/fx/widget/form/FxFormGroup.html" title="class in io.github.mmm.ui.fx.widget.form">FxFormGroup</a>&lt;V&gt;</span></code></th>
 <td class="colLast">
 <div class="block">Implementation of <a href="../UiFormGroup.html" title="interface in io.github.mmm.ui.api.widget.form"><code>UiFormGroup</code></a> for JavaFx.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../../../../io.github.mmm.ui.fx.form/io/github/mmm/ui/fx/widget/form/FxHorizontalInput.html" title="class in io.github.mmm.ui.fx.widget.form">FxHorizontalInput</a>&lt;V&gt;</span></code></th>
+<td class="colLast">
+<div class="block">Implementation of <a href="../UiHorizontalInput.html" title="interface in io.github.mmm.ui.api.widget.form"><code>UiHorizontalInput</code></a> for JavaFx.</div>
 </td>
 </tr>
 </tbody>

@@ -125,7 +125,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Known Implementing Classes:</dt>
-<dd><code><a href="../../../../../io.github.mmm.marshall.jsonp/io/github/mmm/marshall/jsonp/JsonFormatProvider.html" title="class in io.github.mmm.marshall.jsonp">JsonFormatProvider</a></code>, <code><a href="../../../../../io.github.mmm.marshall.stax/io/github/mmm/marshall/stax/XmlFormatProvider.html" title="class in io.github.mmm.marshall.stax">XmlFormatProvider</a></code></dd>
+<dd><code><a href="../../../../../io.github.mmm.marshall.json/io/github/mmm/marshall/json/JsonFormatProvider.html" title="class in io.github.mmm.marshall.json">JsonFormatProvider</a></code>, <code><a href="../../../../../io.github.mmm.marshall.jsonp/io/github/mmm/marshall/jsonp/JsonpFormatProvider.html" title="class in io.github.mmm.marshall.jsonp">JsonpFormatProvider</a></code>, <code><a href="../../../../../io.github.mmm.marshall.stax/io/github/mmm/marshall/stax/StaxFormatProvider.html" title="class in io.github.mmm.marshall.stax">StaxFormatProvider</a></code>, <code><a href="../../../../../io.github.mmm.marshall.tvm.xml/io/github/mmm/marshall/tvm/xml/TvmXmlFormatProvider.html" title="class in io.github.mmm.marshall.tvm.xml">TvmXmlFormatProvider</a></code></dd>
 </dl>
 <hr>
 <pre>public interface <span class="typeNameLabel">StructuredFormatProvider</span></pre>
@@ -166,7 +166,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getName()">getName</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getId()">getId</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -186,17 +186,16 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="getName()">
+<a id="getId()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getName</h4>
-<pre class="methodSignature"><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getName()</pre>
+<h4>getId</h4>
+<pre class="methodSignature"><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getId()</pre>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the name of this format. E.g. <a href="StructuredFormatFactory.html#NAME_JSON"><code>JSON</code></a>,
-         <a href="StructuredFormatFactory.html#NAME_XML"><code>XML</code></a>, or <a href="StructuredFormatFactory.html#NAME_YAML"><code>YAML</code></a>.</dd>
+<dd>the <a href="StructuredFormat.html#getId()"><code>ID</code></a> of the <a href="StructuredFormat.html" title="interface in io.github.mmm.marshall"><code>StructuredFormat</code></a> to <a href="#create()"><code>create()</code></a>.</dd>
 </dl>
 </li>
 </ul>
@@ -209,7 +208,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <pre class="methodSignature"><a href="StructuredFormat.html" title="interface in io.github.mmm.marshall">StructuredFormat</a>&nbsp;create()</pre>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>a new <a href="StructuredFormat.html" title="interface in io.github.mmm.marshall"><code>StructuredFormat</code></a> for <a href="#getName()"><code>this</code></a> format using default configuration.</dd>
+<dd>a new <a href="StructuredFormat.html" title="interface in io.github.mmm.marshall"><code>StructuredFormat</code></a> for <a href="#getId()"><code>this</code></a> format using default configuration.</dd>
 </dl>
 </li>
 </ul>
@@ -224,7 +223,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>config</code> - the <a href="MarshallingConfig.html" title="class in io.github.mmm.marshall"><code>MarshallingConfig</code></a> to customize the format.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>a new <a href="StructuredFormat.html" title="interface in io.github.mmm.marshall"><code>StructuredFormat</code></a> for <a href="#getName()"><code>this</code></a> format using the given <code>config</code>.</dd>
+<dd>a new <a href="StructuredFormat.html" title="interface in io.github.mmm.marshall"><code>StructuredFormat</code></a> for <a href="#getId()"><code>this</code></a> format using the given <code>config</code>.</dd>
 </dl>
 </li>
 </ul>

@@ -107,10 +107,35 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
-<th class="colFirst" scope="row"><a href="#io.github.mmm.ui.api.widget.custom">io.github.mmm.ui.api.widget.custom</a></th>
+<th class="colFirst" scope="row"><a href="#io.github.mmm.ui.api.widget">io.github.mmm.ui.api.widget</a></th>
 <td class="colLast">
-<div class="block">Contains the API for <a href="../../../../../../../../io.github.mmm.ui.api.custom/io/github/mmm/ui/api/widget/custom/AbstractUiCustomWidget.html" title="class in io.github.mmm.ui.api.widget.custom"><code>AbstractUiCustomWidget</code></a> and its sub-classes.</div>
+<div class="block">Contains the API for widgets what are the first-class citizens of a UI.</div>
 </td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="#io.github.mmm.ui.api.widget.composite">io.github.mmm.ui.api.widget.composite</a></th>
+<td class="colLast">
+<div class="block">Contains the API for <a href="../composite/UiComposite.html" title="interface in io.github.mmm.ui.api.widget.composite"><code>UiComposite</code></a> and all sub-interfaces of widgets that
+ contain and compose other widgets.</div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="#io.github.mmm.ui.api.widget.form">io.github.mmm.ui.api.widget.form</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="#io.github.mmm.ui.api.widget.input">io.github.mmm.ui.api.widget.input</a></th>
+<td class="colLast">
+<div class="block">Contains the API for all kind of <a href="../input/UiInput.html" title="interface in io.github.mmm.ui.api.widget.input"><code>UiInput</code></a> widgets.</div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="#io.github.mmm.ui.api.widget.panel">io.github.mmm.ui.api.widget.panel</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="#io.github.mmm.ui.api.widget.value">io.github.mmm.ui.api.widget.value</a></th>
+<td class="colLast">&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -118,12 +143,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <ul class="blockList">
 <li class="blockList">
-<section role="region"><a id="io.github.mmm.ui.api.widget.custom">
+<section role="region"><a id="io.github.mmm.ui.api.widget">
 <!--   -->
 </a>
-<h3>Uses of <a href="../UiCustomWidget.html" title="interface in io.github.mmm.ui.api.widget">UiCustomWidget</a> in <a href="../../../../../../../../io.github.mmm.ui.api.custom/io/github/mmm/ui/api/widget/custom/package-summary.html">io.github.mmm.ui.api.widget.custom</a></h3>
+<h3>Uses of <a href="../UiCustomWidget.html" title="interface in io.github.mmm.ui.api.widget">UiCustomWidget</a> in <a href="../package-summary.html">io.github.mmm.ui.api.widget</a></h3>
 <table class="useSummary">
-<caption><span>Classes in <a href="../../../../../../../../io.github.mmm.ui.api.custom/io/github/mmm/ui/api/widget/custom/package-summary.html">io.github.mmm.ui.api.widget.custom</a> that implement <a href="../UiCustomWidget.html" title="interface in io.github.mmm.ui.api.widget">UiCustomWidget</a></span><span class="tabEnd">&nbsp;</span></caption>
+<caption><span>Classes in <a href="../package-summary.html">io.github.mmm.ui.api.widget</a> that implement <a href="../UiCustomWidget.html" title="interface in io.github.mmm.ui.api.widget">UiCustomWidget</a></span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colSecond" scope="col">Class</th>
@@ -132,37 +157,214 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../../../io.github.mmm.ui.api.custom/io/github/mmm/ui/api/widget/custom/AbstractUiCustomWidget.html" title="class in io.github.mmm.ui.api.widget.custom">AbstractUiCustomWidget</a>&lt;W extends <a href="../UiWidget.html" title="interface in io.github.mmm.ui.api.widget">UiWidget</a>&gt;</span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../AbstractUiCustomWidget.html" title="class in io.github.mmm.ui.api.widget">AbstractUiCustomWidget</a>&lt;W extends <a href="../UiWidget.html" title="interface in io.github.mmm.ui.api.widget">UiWidget</a>&gt;</span></code></th>
 <td class="colLast">
 <div class="block">This is the abstract base implementation of <a href="../UiCustomWidget.html" title="interface in io.github.mmm.ui.api.widget"><code>UiCustomWidget</code></a>.</div>
 </td>
 </tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
+<section role="region"><a id="io.github.mmm.ui.api.widget.composite">
+<!--   -->
+</a>
+<h3>Uses of <a href="../UiCustomWidget.html" title="interface in io.github.mmm.ui.api.widget">UiCustomWidget</a> in <a href="../composite/package-summary.html">io.github.mmm.ui.api.widget.composite</a></h3>
+<table class="useSummary">
+<caption><span>Classes in <a href="../composite/package-summary.html">io.github.mmm.ui.api.widget.composite</a> that implement <a href="../UiCustomWidget.html" title="interface in io.github.mmm.ui.api.widget">UiCustomWidget</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Class</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../composite/UiCustomComposite.html" title="class in io.github.mmm.ui.api.widget.composite">UiCustomComposite</a>&lt;C extends <a href="../UiWidget.html" title="interface in io.github.mmm.ui.api.widget">UiWidget</a>,&#8203;W extends <a href="../composite/UiComposite.html" title="interface in io.github.mmm.ui.api.widget.composite">UiComposite</a>&lt;C&gt;&gt;</span></code></th>
+<td class="colLast">
+<div class="block"><a href="../AbstractUiCustomWidget.html" title="class in io.github.mmm.ui.api.widget"><code>AbstractUiCustomWidget</code></a> that is a <a href="../composite/UiComposite.html" title="interface in io.github.mmm.ui.api.widget.composite"><code>UiComposite</code></a>.</div>
+</td>
+</tr>
 <tr class="rowColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../../../io.github.mmm.ui.api.custom/io/github/mmm/ui/api/widget/custom/UiCustomComposite.html" title="class in io.github.mmm.ui.api.widget.custom">UiCustomComposite</a>&lt;W extends <a href="../composite/UiComposite.html" title="interface in io.github.mmm.ui.api.widget.composite">UiComposite</a>&lt;C&gt;,&#8203;C extends <a href="../UiWidget.html" title="interface in io.github.mmm.ui.api.widget">UiWidget</a>&gt;</span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../composite/UiCustomMutableComposite.html" title="class in io.github.mmm.ui.api.widget.composite">UiCustomMutableComposite</a>&lt;C extends <a href="../UiWidget.html" title="interface in io.github.mmm.ui.api.widget">UiWidget</a>,&#8203;W extends <a href="../composite/UiMutableComposite.html" title="interface in io.github.mmm.ui.api.widget.composite">UiMutableComposite</a>&lt;C&gt;&gt;</span></code></th>
 <td class="colLast">
-<div class="block"><a href="../../../../../../../../io.github.mmm.ui.api.custom/io/github/mmm/ui/api/widget/custom/AbstractUiCustomWidget.html" title="class in io.github.mmm.ui.api.widget.custom"><code>AbstractUiCustomWidget</code></a> that is a <a href="../composite/UiComposite.html" title="interface in io.github.mmm.ui.api.widget.composite"><code>UiComposite</code></a>.</div>
+<div class="block"><a href="../AbstractUiCustomWidget.html" title="class in io.github.mmm.ui.api.widget"><code>AbstractUiCustomWidget</code></a> that is a <a href="../composite/UiMutableComposite.html" title="interface in io.github.mmm.ui.api.widget.composite"><code>UiMutableComposite</code></a>.</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../../../io.github.mmm.ui.api.custom/io/github/mmm/ui/api/widget/custom/UiCustomDynamicComposite.html" title="class in io.github.mmm.ui.api.widget.custom">UiCustomDynamicComposite</a>&lt;W extends <a href="../composite/UiMutableComposite.html" title="interface in io.github.mmm.ui.api.widget.composite">UiMutableComposite</a>&lt;C&gt;,&#8203;C extends <a href="../UiWidget.html" title="interface in io.github.mmm.ui.api.widget">UiWidget</a>&gt;</span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../composite/UiCustomMutableSingleComposite.html" title="class in io.github.mmm.ui.api.widget.composite">UiCustomMutableSingleComposite</a>&lt;C extends <a href="../UiWidget.html" title="interface in io.github.mmm.ui.api.widget">UiWidget</a>,&#8203;W extends <a href="../composite/UiMutableSingleComposite.html" title="interface in io.github.mmm.ui.api.widget.composite">UiMutableSingleComposite</a>&lt;C&gt;&gt;</span></code></th>
 <td class="colLast">
-<div class="block"><a href="../../../../../../../../io.github.mmm.ui.api.custom/io/github/mmm/ui/api/widget/custom/AbstractUiCustomWidget.html" title="class in io.github.mmm.ui.api.widget.custom"><code>AbstractUiCustomWidget</code></a> that is a <a href="../composite/UiMutableComposite.html" title="interface in io.github.mmm.ui.api.widget.composite"><code>UiMutableComposite</code></a>.</div>
+<div class="block"><a href="../AbstractUiCustomWidget.html" title="class in io.github.mmm.ui.api.widget"><code>AbstractUiCustomWidget</code></a> that is a <a href="../composite/UiMutableComposite.html" title="interface in io.github.mmm.ui.api.widget.composite"><code>UiMutableComposite</code></a>.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../../../io.github.mmm.ui.api.custom/io/github/mmm/ui/api/widget/custom/UiCustomFormPanel.html" title="class in io.github.mmm.ui.api.widget.custom">UiCustomFormPanel</a>&lt;V&gt;</span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../composite/UiCustomRemovableComposite.html" title="class in io.github.mmm.ui.api.widget.composite">UiCustomRemovableComposite</a>&lt;C extends <a href="../UiWidget.html" title="interface in io.github.mmm.ui.api.widget">UiWidget</a>,&#8203;W extends <a href="../composite/UiRemovableComposite.html" title="interface in io.github.mmm.ui.api.widget.composite">UiRemovableComposite</a>&lt;C&gt;&gt;</span></code></th>
 <td class="colLast">
-<div class="block"><a href="../../../../../../../../io.github.mmm.ui.api.custom/io/github/mmm/ui/api/widget/custom/AbstractUiCustomWidget.html" title="class in io.github.mmm.ui.api.widget.custom"><code>AbstractUiCustomWidget</code></a> that is a <a href="../../../../../../../../io.github.mmm.ui.api.form/io/github/mmm/ui/api/widget/form/UiFormPanel.html" title="interface in io.github.mmm.ui.api.widget.form"><code>UiFormPanel</code></a>.</div>
+<div class="block"><a href="../composite/UiCustomComposite.html" title="class in io.github.mmm.ui.api.widget.composite"><code>UiCustomComposite</code></a> that is a <a href="../composite/UiRemovableComposite.html" title="interface in io.github.mmm.ui.api.widget.composite"><code>UiRemovableComposite</code></a>.</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../../../io.github.mmm.ui.api.custom/io/github/mmm/ui/api/widget/custom/UiCustomValuedComposite.html" title="class in io.github.mmm.ui.api.widget.custom">UiCustomValuedComposite</a>&lt;W extends <a href="../composite/UiValuedComposite.html" title="interface in io.github.mmm.ui.api.widget.composite">UiValuedComposite</a>&lt;C,&#8203;V&gt;,&#8203;C extends <a href="../UiWidget.html" title="interface in io.github.mmm.ui.api.widget">UiWidget</a>,&#8203;V&gt;</span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../composite/UiCustomValuedComposite.html" title="class in io.github.mmm.ui.api.widget.composite">UiCustomValuedComposite</a>&lt;V,&#8203;C extends <a href="../UiWidget.html" title="interface in io.github.mmm.ui.api.widget">UiWidget</a>,&#8203;W extends <a href="../composite/UiValuedComposite.html" title="interface in io.github.mmm.ui.api.widget.composite">UiValuedComposite</a>&lt;C,&#8203;V&gt;&gt;</span></code></th>
 <td class="colLast">
-<div class="block"><a href="../../../../../../../../io.github.mmm.ui.api.custom/io/github/mmm/ui/api/widget/custom/AbstractUiCustomWidget.html" title="class in io.github.mmm.ui.api.widget.custom"><code>AbstractUiCustomWidget</code></a> that is a <a href="../../../../../../../../io.github.mmm.ui.api.form/io/github/mmm/ui/api/widget/form/UiFormPanel.html" title="interface in io.github.mmm.ui.api.widget.form"><code>UiFormPanel</code></a>.</div>
+<div class="block"><a href="../AbstractUiCustomWidget.html" title="class in io.github.mmm.ui.api.widget"><code>AbstractUiCustomWidget</code></a> that is a <a href="../composite/UiValuedComposite.html" title="interface in io.github.mmm.ui.api.widget.composite"><code>UiValuedComposite</code></a>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
+<section role="region"><a id="io.github.mmm.ui.api.widget.form">
+<!--   -->
+</a>
+<h3>Uses of <a href="../UiCustomWidget.html" title="interface in io.github.mmm.ui.api.widget">UiCustomWidget</a> in <a href="../../../../../../../../io.github.mmm.ui.api.form/io/github/mmm/ui/api/widget/form/package-summary.html">io.github.mmm.ui.api.widget.form</a></h3>
+<table class="useSummary">
+<caption><span>Classes in <a href="../../../../../../../../io.github.mmm.ui.api.form/io/github/mmm/ui/api/widget/form/package-summary.html">io.github.mmm.ui.api.widget.form</a> that implement <a href="../UiCustomWidget.html" title="interface in io.github.mmm.ui.api.widget">UiCustomWidget</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Class</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../../../io.github.mmm.ui.api.form/io/github/mmm/ui/api/widget/form/UiCustomCompositeInput.html" title="class in io.github.mmm.ui.api.widget.form">UiCustomCompositeInput</a>&lt;V,&#8203;W extends <a href="../../../../../../../../io.github.mmm.ui.api.form/io/github/mmm/ui/api/widget/form/UiCompositeInput.html" title="interface in io.github.mmm.ui.api.widget.form">UiCompositeInput</a>&lt;V&gt;&gt;</span></code></th>
+<td class="colLast">
+<div class="block"><a href="../AbstractUiCustomWidget.html" title="class in io.github.mmm.ui.api.widget"><code>AbstractUiCustomWidget</code></a> that is a <a href="../../../../../../../../io.github.mmm.ui.api.form/io/github/mmm/ui/api/widget/form/UiFormPanel.html" title="interface in io.github.mmm.ui.api.widget.form"><code>UiFormPanel</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../../../io.github.mmm.ui.api.form/io/github/mmm/ui/api/widget/form/UiCustomFormPanel.html" title="class in io.github.mmm.ui.api.widget.form">UiCustomFormPanel</a>&lt;V&gt;</span></code></th>
+<td class="colLast">
+<div class="block"><a href="../AbstractUiCustomWidget.html" title="class in io.github.mmm.ui.api.widget"><code>AbstractUiCustomWidget</code></a> that is a <a href="../../../../../../../../io.github.mmm.ui.api.form/io/github/mmm/ui/api/widget/form/UiFormPanel.html" title="interface in io.github.mmm.ui.api.widget.form"><code>UiFormPanel</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../../../io.github.mmm.ui.api.form/io/github/mmm/ui/api/widget/form/UiCustomHorizontalInput.html" title="class in io.github.mmm.ui.api.widget.form">UiCustomHorizontalInput</a>&lt;V&gt;</span></code></th>
+<td class="colLast">
+<div class="block"><a href="../AbstractUiCustomWidget.html" title="class in io.github.mmm.ui.api.widget"><code>AbstractUiCustomWidget</code></a> that is a <a href="../../../../../../../../io.github.mmm.ui.api.form/io/github/mmm/ui/api/widget/form/UiFormPanel.html" title="interface in io.github.mmm.ui.api.widget.form"><code>UiFormPanel</code></a>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
+<section role="region"><a id="io.github.mmm.ui.api.widget.input">
+<!--   -->
+</a>
+<h3>Uses of <a href="../UiCustomWidget.html" title="interface in io.github.mmm.ui.api.widget">UiCustomWidget</a> in <a href="../input/package-summary.html">io.github.mmm.ui.api.widget.input</a></h3>
+<table class="useSummary">
+<caption><span>Classes in <a href="../input/package-summary.html">io.github.mmm.ui.api.widget.input</a> that implement <a href="../UiCustomWidget.html" title="interface in io.github.mmm.ui.api.widget">UiCustomWidget</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Class</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../input/UiCustomInput.html" title="class in io.github.mmm.ui.api.widget.input">UiCustomInput</a>&lt;V,&#8203;W extends <a href="../input/UiInput.html" title="interface in io.github.mmm.ui.api.widget.input">UiInput</a>&lt;V&gt;&gt;</span></code></th>
+<td class="colLast">
+<div class="block"><a href="../AbstractUiCustomWidget.html" title="class in io.github.mmm.ui.api.widget"><code>AbstractUiCustomWidget</code></a> adapting a <a href="../input/UiInput.html" title="interface in io.github.mmm.ui.api.widget.input"><code>UiInput</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../input/UiCustomValidatableWidget.html" title="class in io.github.mmm.ui.api.widget.input">UiCustomValidatableWidget</a>&lt;V,&#8203;W extends <a href="../value/UiValidatableWidget.html" title="interface in io.github.mmm.ui.api.widget.value">UiValidatableWidget</a>&lt;V&gt;&gt;</span></code></th>
+<td class="colLast">
+<div class="block"><a href="../AbstractUiCustomWidget.html" title="class in io.github.mmm.ui.api.widget"><code>AbstractUiCustomWidget</code></a> adapting a <a href="../value/UiValidatableWidget.html" title="interface in io.github.mmm.ui.api.widget.value"><code>UiValidatableWidget</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../input/UiCustomValuedWidget.html" title="class in io.github.mmm.ui.api.widget.input">UiCustomValuedWidget</a>&lt;V,&#8203;W extends <a href="../value/UiValuedWidget.html" title="interface in io.github.mmm.ui.api.widget.value">UiValuedWidget</a>&lt;V&gt;&gt;</span></code></th>
+<td class="colLast">
+<div class="block"><a href="../AbstractUiCustomWidget.html" title="class in io.github.mmm.ui.api.widget"><code>AbstractUiCustomWidget</code></a> adapting a <a href="../value/UiValuedWidget.html" title="interface in io.github.mmm.ui.api.widget.value"><code>UiValuedWidget</code></a>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
+<section role="region"><a id="io.github.mmm.ui.api.widget.panel">
+<!--   -->
+</a>
+<h3>Uses of <a href="../UiCustomWidget.html" title="interface in io.github.mmm.ui.api.widget">UiCustomWidget</a> in <a href="../panel/package-summary.html">io.github.mmm.ui.api.widget.panel</a></h3>
+<table class="useSummary">
+<caption><span>Classes in <a href="../panel/package-summary.html">io.github.mmm.ui.api.widget.panel</a> that implement <a href="../UiCustomWidget.html" title="interface in io.github.mmm.ui.api.widget">UiCustomWidget</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Class</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../panel/UiCustomEditorButtonPanel.html" title="class in io.github.mmm.ui.api.widget.panel">UiCustomEditorButtonPanel</a></span></code></th>
+<td class="colLast">
+<div class="block"><a href="../composite/UiCustomMutableComposite.html" title="class in io.github.mmm.ui.api.widget.composite"><code>Custom widget</code></a> for the <a href="../panel/UiButtonPanel.html" title="interface in io.github.mmm.ui.api.widget.panel"><code>UiButtonPanel</code></a> of an
+ <a href="../value/UiCustomEditor.html" title="class in io.github.mmm.ui.api.widget.value"><code>editor</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../panel/UiCustomGridPanel.html" title="class in io.github.mmm.ui.api.widget.panel">UiCustomGridPanel</a></span></code></th>
+<td class="colLast">
+<div class="block"><a href="../panel/UiCustomMutablePanel.html" title="class in io.github.mmm.ui.api.widget.panel"><code>UiCustomMutablePanel</code></a> that is a <a href="../panel/UiGridPanel.html" title="interface in io.github.mmm.ui.api.widget.panel"><code>UiGridPanel</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../panel/UiCustomMutablePanel.html" title="class in io.github.mmm.ui.api.widget.panel">UiCustomMutablePanel</a>&lt;W extends <a href="../panel/UiMutablePanel.html" title="interface in io.github.mmm.ui.api.widget.panel">UiMutablePanel</a>&gt;</span></code></th>
+<td class="colLast">
+<div class="block"><a href="../composite/UiCustomMutableComposite.html" title="class in io.github.mmm.ui.api.widget.composite"><code>UiCustomMutableComposite</code></a> that is a <a href="../panel/UiMutablePanel.html" title="interface in io.github.mmm.ui.api.widget.panel"><code>UiMutablePanel</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../panel/UiCustomScrollPanel.html" title="class in io.github.mmm.ui.api.widget.panel">UiCustomScrollPanel</a></span></code></th>
+<td class="colLast">
+<div class="block"><a href="../composite/UiCustomMutableSingleComposite.html" title="class in io.github.mmm.ui.api.widget.composite"><code>UiCustomMutableSingleComposite</code></a> that is a <a href="../panel/UiScrollPanel.html" title="interface in io.github.mmm.ui.api.widget.panel"><code>UiScrollPanel</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../panel/UiCustomVerticalPanel.html" title="class in io.github.mmm.ui.api.widget.panel">UiCustomVerticalPanel</a></span></code></th>
+<td class="colLast">
+<div class="block"><a href="../panel/UiCustomMutablePanel.html" title="class in io.github.mmm.ui.api.widget.panel"><code>UiCustomMutablePanel</code></a> that is a <a href="../panel/UiVerticalPanel.html" title="interface in io.github.mmm.ui.api.widget.panel"><code>UiVerticalPanel</code></a>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
+<section role="region"><a id="io.github.mmm.ui.api.widget.value">
+<!--   -->
+</a>
+<h3>Uses of <a href="../UiCustomWidget.html" title="interface in io.github.mmm.ui.api.widget">UiCustomWidget</a> in <a href="../value/package-summary.html">io.github.mmm.ui.api.widget.value</a></h3>
+<table class="useSummary">
+<caption><span>Classes in <a href="../value/package-summary.html">io.github.mmm.ui.api.widget.value</a> that implement <a href="../UiCustomWidget.html" title="interface in io.github.mmm.ui.api.widget">UiCustomWidget</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Class</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../value/UiCustomEditor.html" title="class in io.github.mmm.ui.api.widget.value">UiCustomEditor</a>&lt;V&gt;</span></code></th>
+<td class="colLast">
+<div class="block"><a href="../AbstractUiCustomWidget.html" title="class in io.github.mmm.ui.api.widget"><code>Custom widget</code></a> that represents and editor allowing to display and edit an object.</div>
 </td>
 </tr>
 </tbody>

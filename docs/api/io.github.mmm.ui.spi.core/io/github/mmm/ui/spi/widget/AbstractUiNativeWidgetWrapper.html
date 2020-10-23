@@ -26,8 +26,8 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":6,"i8":10,"i9":6};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -147,11 +147,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../../../../../../../io.github.mmm.event/io/github/mmm/event/EventSource.html" title="interface in io.github.mmm.event">EventSource</a>&lt;<a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/event/UiEvent.html" title="class in io.github.mmm.ui.api.event">UiEvent</a>,&#8203;<a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/event/UiEventListener.html" title="interface in io.github.mmm.ui.api.event">UiEventListener</a>&gt;</code>, <code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadId.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadId</a></code>, <code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadValid.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadValid</a></code>, <code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadVisible.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadVisible</a></code>, <code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteId.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteId</a></code>, <code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteValidationFailure.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteValidationFailure</a></code>, <code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteVisible.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteVisible</a></code>, <code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiNativeWidget.html" title="interface in io.github.mmm.ui.api.widget">UiNativeWidget</a></code>, <code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html" title="interface in io.github.mmm.ui.api.widget">UiWidget</a></code>, <code><a href="UiNativeWidgetWrapper.html" title="interface in io.github.mmm.ui.spi.widget">UiNativeWidgetWrapper</a>&lt;W&gt;</code></dd>
+<dd><code><a href="../../../../../../../io.github.mmm.event/io/github/mmm/event/EventSource.html" title="interface in io.github.mmm.event">EventSource</a>&lt;<a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/event/UiEvent.html" title="class in io.github.mmm.ui.api.event">UiEvent</a>,&#8203;<a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/event/UiEventListener.html" title="interface in io.github.mmm.ui.api.event">UiEventListener</a>&gt;</code>, <code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadEnabled.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadEnabled</a></code>, <code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadId.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadId</a></code>, <code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadValid.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadValid</a></code>, <code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadVisible.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadVisible</a></code>, <code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteEnabled.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteEnabled</a></code>, <code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteId.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteId</a></code>, <code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteReadOnly.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteReadOnly</a></code>, <code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteTooltip.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteTooltip</a></code>, <code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteValidationFailure.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteValidationFailure</a></code>, <code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteVisible.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteVisible</a></code>, <code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiNativeWidget.html" title="interface in io.github.mmm.ui.api.widget">UiNativeWidget</a></code>, <code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html" title="interface in io.github.mmm.ui.api.widget">UiWidget</a></code>, <code><a href="UiNativeWidgetWrapper.html" title="interface in io.github.mmm.ui.spi.widget">UiNativeWidgetWrapper</a>&lt;W&gt;</code></dd>
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><code><a href="../../../../../../../io.github.mmm.ui.fx.core/io/github/mmm/ui/fx/widget/FxWidgetObject.html" title="class in io.github.mmm.ui.fx.widget">FxWidgetObject</a></code>, <code><a href="../../../../../../../io.github.mmm.ui.test.core/io/github/mmm/ui/test/widget/TestWidget.html" title="class in io.github.mmm.ui.test.widget">TestWidget</a></code>, <code><a href="../../../../../../../io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidgetJsObject.html" title="class in io.github.mmm.ui.tvm.widget">TvmWidgetJsObject</a></code></dd>
+<dd><code><a href="../../../../../../../io.github.mmm.ui.fx.core/io/github/mmm/ui/fx/widget/FxWidget.html" title="class in io.github.mmm.ui.fx.widget">FxWidget</a></code>, <code><a href="../../../../../../../io.github.mmm.ui.test.core/io/github/mmm/ui/test/widget/TestWidget.html" title="class in io.github.mmm.ui.test.widget">TestWidget</a></code>, <code><a href="../../../../../../../io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/TvmWidget.html" title="class in io.github.mmm.ui.tvm.widget">TvmWidget</a></code></dd>
 </dl>
 <hr>
 <pre>public abstract class <span class="typeNameLabel">AbstractUiNativeWidgetWrapper&lt;W&gt;</span>
@@ -175,13 +175,6 @@ implements <a href="UiNativeWidgetWrapper.html" title="interface in io.github.mm
 <!--   -->
 </a>
 <h3>Field Summary</h3>
-<ul class="blockList">
-<li class="blockList"><a id="fields.inherited.from.class.io.github.mmm.ui.api.attribute.AttributeReadId">
-<!--   -->
-</a>
-<h3>Fields inherited from interface&nbsp;io.github.mmm.ui.api.attribute.<a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadId.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadId</a></h3>
-<code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadId.html#ID_SEPARATOR">ID_SEPARATOR</a></code></li>
-</ul>
 <ul class="blockList">
 <li class="blockList"><a id="fields.inherited.from.class.io.github.mmm.ui.api.attribute.AttributeWriteValidationFailure">
 <!--   -->
@@ -223,7 +216,7 @@ implements <a href="UiNativeWidgetWrapper.html" title="interface in io.github.mm
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colSecond" scope="col">Method</th>
@@ -231,17 +224,56 @@ implements <a href="UiNativeWidgetWrapper.html" title="interface in io.github.mm
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>protected <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/datatype/UiStyles.html" title="interface in io.github.mmm.ui.api.datatype">UiStyles</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createStyles()">createStyles</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createDefaultStyles()">createDefaultStyles</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>protected <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/datatype/UiStyles.html" title="interface in io.github.mmm.ui.api.datatype">UiStyles</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createStyles()">createStyles</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getId()">getId</a></span>()</code></th>
+<td class="colLast">
+<div class="block">This method gets the unique identifier of this object.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/datatype/UiStyles.html" title="interface in io.github.mmm.ui.api.datatype">UiStyles</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getStyles()">getStyles</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getTooltip()">getTooltip</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onStylesChanged(java.lang.String)">onStylesChanged</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;newStyles)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setId(java.lang.String)">setId</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;id)</code></th>
+<td class="colLast">
+<div class="block">Use this method to give the object a meaningful identifier after creation.</div>
+</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>protected abstract void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setIdNative(java.lang.String)">setIdNative</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;id)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setTooltip(java.lang.String)">setTooltip</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;tooltip)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>protected abstract void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setTooltipNative(java.lang.String)">setTooltipNative</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;newTooltip)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -250,7 +282,7 @@ implements <a href="UiNativeWidgetWrapper.html" title="interface in io.github.mm
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;io.github.mmm.ui.spi.widget.<a href="AbstractUiNativeWidget.html" title="class in io.github.mmm.ui.spi.widget">AbstractUiNativeWidget</a></h3>
-<code><a href="AbstractUiNativeWidget.html#addListener(io.github.mmm.ui.api.event.UiEventListener,boolean)">addListener</a>, <a href="AbstractUiNativeWidget.html#dispose()">dispose</a>, <a href="AbstractUiNativeWidget.html#doDispose()">doDispose</a>, <a href="AbstractUiNativeWidget.html#doGetEnabledState(io.github.mmm.ui.spi.widget.AbstractUiNativeWidget)">doGetEnabledState</a>, <a href="AbstractUiNativeWidget.html#doGetVisibleState(io.github.mmm.ui.spi.widget.AbstractUiNativeWidget)">doGetVisibleState</a>, <a href="AbstractUiNativeWidget.html#doSetEnabledState(int)">doSetEnabledState</a>, <a href="AbstractUiNativeWidget.html#doSetEnabledState(io.github.mmm.ui.spi.widget.AbstractUiNativeWidget,int)">doSetEnabledState</a>, <a href="AbstractUiNativeWidget.html#doSetValidationFailure(java.lang.String)">doSetValidationFailure</a>, <a href="AbstractUiNativeWidget.html#doSetVisibleState(int)">doSetVisibleState</a>, <a href="AbstractUiNativeWidget.html#doSetVisibleState(io.github.mmm.ui.spi.widget.AbstractUiNativeWidget,int)">doSetVisibleState</a>, <a href="AbstractUiNativeWidget.html#ensureHandlers()">ensureHandlers</a>, <a href="AbstractUiNativeWidget.html#fireEvent(io.github.mmm.ui.api.event.UiEvent)">fireEvent</a>, <a href="AbstractUiNativeWidget.html#getEventAdapter()">getEventAdapter</a>, <a href="AbstractUiNativeWidget.html#getParent()">getParent</a>, <a href="AbstractUiNativeWidget.html#getProgrammaticEventType()">getProgrammaticEventType</a>, <a href="AbstractUiNativeWidget.html#getReadOnlyFixed()">getReadOnlyFixed</a>, <a href="AbstractUiNativeWidget.html#getValidationFailure()">getValidationFailure</a>, <a href="AbstractUiNativeWidget.html#hasListeners()">hasListeners</a>, <a href="AbstractUiNativeWidget.html#isDisposed()">isDisposed</a>, <a href="AbstractUiNativeWidget.html#isEnabled(io.github.mmm.ui.api.datatype.bitmask.BitMask)">isEnabled</a>, <a href="AbstractUiNativeWidget.html#isInitiallyVisible()">isInitiallyVisible</a>, <a href="AbstractUiNativeWidget.html#isReadOnly()">isReadOnly</a>, <a href="AbstractUiNativeWidget.html#isValid()">isValid</a>, <a href="AbstractUiNativeWidget.html#isVisible(io.github.mmm.ui.api.datatype.bitmask.BitMask)">isVisible</a>, <a href="AbstractUiNativeWidget.html#isVisibleWithoutRoot()">isVisibleWithoutRoot</a>, <a href="AbstractUiNativeWidget.html#registerHandlers()">registerHandlers</a>, <a href="AbstractUiNativeWidget.html#removeListener(io.github.mmm.ui.api.event.UiEventListener)">removeListener</a>, <a href="AbstractUiNativeWidget.html#requireNotDisposed()">requireNotDisposed</a>, <a href="AbstractUiNativeWidget.html#setEnabled(boolean,io.github.mmm.ui.api.datatype.bitmask.BitMask)">setEnabled</a>, <a href="AbstractUiNativeWidget.html#setEnabledNative(boolean)">setEnabledNative</a>, <a href="AbstractUiNativeWidget.html#setParent(io.github.mmm.ui.api.widget.composite.UiComposite)">setParent</a>, <a href="AbstractUiNativeWidget.html#setProgrammaticEventType(io.github.mmm.ui.api.event.UiEventType)">setProgrammaticEventType</a>, <a href="AbstractUiNativeWidget.html#setReadOnly(boolean)">setReadOnly</a>, <a href="AbstractUiNativeWidget.html#setReadOnlyFixed(java.lang.Boolean)">setReadOnlyFixed</a>, <a href="AbstractUiNativeWidget.html#setReadOnlyNative(boolean)">setReadOnlyNative</a>, <a href="AbstractUiNativeWidget.html#setValidationFailure(java.lang.String)">setValidationFailure</a>, <a href="AbstractUiNativeWidget.html#setVisible(boolean,io.github.mmm.ui.api.datatype.bitmask.BitMask)">setVisible</a>, <a href="AbstractUiNativeWidget.html#setVisibleNative(boolean)">setVisibleNative</a>, <a href="AbstractUiNativeWidget.html#unwrap()">unwrap</a>, <a href="AbstractUiNativeWidget.html#validateDown(io.github.mmm.ui.api.datatype.UiValidState)">validateDown</a></code></li>
+<code><a href="AbstractUiNativeWidget.html#addListener(io.github.mmm.ui.api.event.UiEventListener,boolean)">addListener</a>, <a href="AbstractUiNativeWidget.html#dispose()">dispose</a>, <a href="AbstractUiNativeWidget.html#doDispose()">doDispose</a>, <a href="AbstractUiNativeWidget.html#doGetEnabledState(io.github.mmm.ui.spi.widget.AbstractUiNativeWidget)">doGetEnabledState</a>, <a href="AbstractUiNativeWidget.html#doGetVisibleState(io.github.mmm.ui.spi.widget.AbstractUiNativeWidget)">doGetVisibleState</a>, <a href="AbstractUiNativeWidget.html#doSetEnabledState(int)">doSetEnabledState</a>, <a href="AbstractUiNativeWidget.html#doSetEnabledState(io.github.mmm.ui.spi.widget.AbstractUiNativeWidget,int)">doSetEnabledState</a>, <a href="AbstractUiNativeWidget.html#doSetValidationFailure(java.lang.String)">doSetValidationFailure</a>, <a href="AbstractUiNativeWidget.html#doSetVisibleState(int)">doSetVisibleState</a>, <a href="AbstractUiNativeWidget.html#doSetVisibleState(io.github.mmm.ui.spi.widget.AbstractUiNativeWidget,int)">doSetVisibleState</a>, <a href="AbstractUiNativeWidget.html#ensureHandlers()">ensureHandlers</a>, <a href="AbstractUiNativeWidget.html#fireEvent(io.github.mmm.ui.api.event.UiEvent)">fireEvent</a>, <a href="AbstractUiNativeWidget.html#getEventAdapter()">getEventAdapter</a>, <a href="AbstractUiNativeWidget.html#getParent()">getParent</a>, <a href="AbstractUiNativeWidget.html#getProgrammaticEventType()">getProgrammaticEventType</a>, <a href="AbstractUiNativeWidget.html#getReadOnlyFixed()">getReadOnlyFixed</a>, <a href="AbstractUiNativeWidget.html#getValidationFailure()">getValidationFailure</a>, <a href="AbstractUiNativeWidget.html#hasListeners()">hasListeners</a>, <a href="AbstractUiNativeWidget.html#isDisposed()">isDisposed</a>, <a href="AbstractUiNativeWidget.html#isEnabled(io.github.mmm.ui.api.datatype.bitmask.BitMask)">isEnabled</a>, <a href="AbstractUiNativeWidget.html#isInitiallyVisible()">isInitiallyVisible</a>, <a href="AbstractUiNativeWidget.html#isReadOnly()">isReadOnly</a>, <a href="AbstractUiNativeWidget.html#isValid()">isValid</a>, <a href="AbstractUiNativeWidget.html#isVisible(io.github.mmm.ui.api.datatype.bitmask.BitMask)">isVisible</a>, <a href="AbstractUiNativeWidget.html#isVisibleWithoutRoot()">isVisibleWithoutRoot</a>, <a href="AbstractUiNativeWidget.html#registerHandlers()">registerHandlers</a>, <a href="AbstractUiNativeWidget.html#removeListener(io.github.mmm.ui.api.event.UiEventListener)">removeListener</a>, <a href="AbstractUiNativeWidget.html#requireNotDisposed()">requireNotDisposed</a>, <a href="AbstractUiNativeWidget.html#setEnabled(boolean,io.github.mmm.ui.api.datatype.bitmask.BitMask)">setEnabled</a>, <a href="AbstractUiNativeWidget.html#setEnabledNative(boolean)">setEnabledNative</a>, <a href="AbstractUiNativeWidget.html#setParent(io.github.mmm.ui.api.widget.composite.UiComposite)">setParent</a>, <a href="AbstractUiNativeWidget.html#setProgrammaticEventType(io.github.mmm.ui.api.event.UiEventType)">setProgrammaticEventType</a>, <a href="AbstractUiNativeWidget.html#setReadOnly(boolean)">setReadOnly</a>, <a href="AbstractUiNativeWidget.html#setReadOnlyFixed(java.lang.Boolean)">setReadOnlyFixed</a>, <a href="AbstractUiNativeWidget.html#setReadOnlyNative(boolean)">setReadOnlyNative</a>, <a href="AbstractUiNativeWidget.html#setValidationFailure(java.lang.String,boolean)">setValidationFailure</a>, <a href="AbstractUiNativeWidget.html#setVisible(boolean,io.github.mmm.ui.api.datatype.bitmask.BitMask)">setVisible</a>, <a href="AbstractUiNativeWidget.html#setVisibleNative(boolean)">setVisibleNative</a>, <a href="AbstractUiNativeWidget.html#unwrap()">unwrap</a>, <a href="AbstractUiNativeWidget.html#validateDown(io.github.mmm.ui.api.datatype.UiValidState)">validateDown</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.api.widget.AbstractUiWidget">
@@ -267,18 +299,11 @@ implements <a href="UiNativeWidgetWrapper.html" title="interface in io.github.mm
 <code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang" class="externalLink">clone</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang" class="externalLink">equals</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang" class="externalLink">finalize</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang" class="externalLink">getClass</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang" class="externalLink">hashCode</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang" class="externalLink">notify</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang" class="externalLink">notifyAll</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang" class="externalLink">toString</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#wait(long,int)" title="class or interface in java.lang" class="externalLink">wait</a></code></li>
 </ul>
 <ul class="blockList">
-<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.api.attribute.AttributeReadId">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.api.attribute.AttributeWriteValidationFailure">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;io.github.mmm.ui.api.attribute.<a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadId.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadId</a></h3>
-<code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadId.html#getId()">getId</a></code></li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.api.attribute.AttributeWriteId">
-<!--   -->
-</a>
-<h3>Methods inherited from interface&nbsp;io.github.mmm.ui.api.attribute.<a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteId.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteId</a></h3>
-<code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteId.html#setId(java.lang.String)">setId</a></code></li>
+<h3>Methods inherited from interface&nbsp;io.github.mmm.ui.api.attribute.<a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteValidationFailure.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteValidationFailure</a></h3>
+<code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteValidationFailure.html#setValidationFailure(java.lang.String)">setValidationFailure</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.event.EventSource">
@@ -299,7 +324,7 @@ implements <a href="UiNativeWidgetWrapper.html" title="interface in io.github.mm
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;io.github.mmm.ui.api.widget.<a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html" title="interface in io.github.mmm.ui.api.widget">UiWidget</a></h3>
-<code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#cast()">cast</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#dispose()">dispose</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#getModificationTimestamp()">getModificationTimestamp</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#getParent()">getParent</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#getReadOnlyFixed()">getReadOnlyFixed</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#isDisposed()">isDisposed</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#isEnabled()">isEnabled</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#isEnabled(io.github.mmm.ui.api.datatype.bitmask.BitMask)">isEnabled</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#isFocused()">isFocused</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#isModified()">isModified</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#isReadOnly()">isReadOnly</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#isValid()">isValid</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#isVisible()">isVisible</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#isVisible(io.github.mmm.ui.api.datatype.bitmask.BitMask)">isVisible</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#setEnabled(boolean)">setEnabled</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#setEnabled(boolean,io.github.mmm.ui.api.datatype.bitmask.BitMask)">setEnabled</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#setFocused()">setFocused</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#setReadOnly(boolean)">setReadOnly</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#setReadOnlyFixed(java.lang.Boolean)">setReadOnlyFixed</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#setVisible(boolean)">setVisible</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#setVisible(boolean,io.github.mmm.ui.api.datatype.bitmask.BitMask)">setVisible</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#validate()">validate</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#validate(boolean)">validate</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#validate(io.github.mmm.ui.api.datatype.UiValidState)">validate</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#validateDown(io.github.mmm.ui.api.datatype.UiValidState)">validateDown</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#validateUp(io.github.mmm.ui.api.datatype.UiValidState)">validateUp</a></code></li>
+<code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#cast()">cast</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#dispose()">dispose</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#getModificationTimestamp()">getModificationTimestamp</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#getParent()">getParent</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#getReadOnlyFixed()">getReadOnlyFixed</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#isDisposed()">isDisposed</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#isEnabled()">isEnabled</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#isEnabled(io.github.mmm.ui.api.datatype.bitmask.BitMask)">isEnabled</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#isFocused()">isFocused</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#isModified()">isModified</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#isReadOnly()">isReadOnly</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#isValid()">isValid</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#isVisible()">isVisible</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#isVisible(io.github.mmm.ui.api.datatype.bitmask.BitMask)">isVisible</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#reset()">reset</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#setEnabled(boolean)">setEnabled</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#setEnabled(boolean,io.github.mmm.ui.api.datatype.bitmask.BitMask)">setEnabled</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#setFocused()">setFocused</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#setReadOnly(boolean)">setReadOnly</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#setReadOnlyFixed(java.lang.Boolean)">setReadOnlyFixed</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#setVisible(boolean)">setVisible</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#setVisible(boolean,io.github.mmm.ui.api.datatype.bitmask.BitMask)">setVisible</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#validate()">validate</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#validate(boolean)">validate</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#validate(io.github.mmm.ui.api.datatype.UiValidState)">validate</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#validateDown(io.github.mmm.ui.api.datatype.UiValidState)">validateDown</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#validateUp(io.github.mmm.ui.api.datatype.UiValidState)">validateUp</a></code></li>
 </ul>
 </li>
 </ul>
@@ -365,16 +390,128 @@ implements <a href="UiNativeWidgetWrapper.html" title="interface in io.github.mm
 </dl>
 </li>
 </ul>
+<a id="createDefaultStyles()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createDefaultStyles</h4>
+<pre class="methodSignature">protected final&nbsp;<a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/datatype/UiStyles.html" title="interface in io.github.mmm.ui.api.datatype">UiStyles</a>&nbsp;createDefaultStyles()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/datatype/UiStyles.html" title="interface in io.github.mmm.ui.api.datatype"><code>UiStyles</code></a> implementation used by <a href="#getStyles()"><code>getStyles()</code></a>.</dd>
+</dl>
+</li>
+</ul>
 <a id="onStylesChanged(java.lang.String)">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>onStylesChanged</h4>
 <pre class="methodSignature">protected&nbsp;void&nbsp;onStylesChanged&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;newStyles)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>newStyles</code> - the new styles.</dd>
+</dl>
+</li>
+</ul>
+<a id="getTooltip()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTooltip</h4>
+<pre class="methodSignature">public final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getTooltip()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteTooltip.html#getTooltip()">getTooltip</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteTooltip.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteTooltip</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the text of this object. It is a brief description that explains this object to the end-user. Will be the
+         empty <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>String</code></a> if no tooltip is specified.</dd>
+</dl>
+</li>
+</ul>
+<a id="setTooltip(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setTooltip</h4>
+<pre class="methodSignature">public final&nbsp;void&nbsp;setTooltip&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;tooltip)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteTooltip.html#setTooltip(java.lang.String)">setTooltip</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteTooltip.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteTooltip</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>tooltip</code> - is the new value of <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteTooltip.html#getTooltip()"><code>AttributeWriteTooltip.getTooltip()</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="setTooltipNative(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setTooltipNative</h4>
+<pre class="methodSignature">protected abstract&nbsp;void&nbsp;setTooltipNative&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;newTooltip)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>newTooltip</code> - the new tooltip to apply.</dd>
+</dl>
+</li>
+</ul>
+<a id="getId()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getId</h4>
+<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getId()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadId.html#getId()">AttributeReadId</a></code></span></div>
+<div class="block">This method gets the unique identifier of this object. <br>
+ <b>ATTENTION:</b><br>
+ In order to be compliant with all possible UI toolkit implementations, a valid ID has to fulfill ECMA-262, Section
+ 7.6. It is recommended to use IDs of the form <code>[a-zA-Z][a-zA-Z0-9_$]*</code>. Invalid IDs (e.g. containing colon,
+ hash or period) will cause complications with CSS selectors.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadId.html#getId()">getId</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadId.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadId</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the ID of this object.</dd>
+</dl>
+</li>
+</ul>
+<a id="setId(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setId</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setId&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;id)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteId.html#setId(java.lang.String)">AttributeWriteId</a></code></span></div>
+<div class="block">Use this method to give the object a meaningful identifier after creation. <br>
+ <b>ATTENTION:</b><br>
+ See JavaDoc of <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadId.html#getId()"><code>AttributeReadId.getId()</code></a> for the syntax constraints of IDs.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteId.html#setId(java.lang.String)">setId</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteId.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteId</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>id</code> - is the new <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadId.html#getId()"><code>ID</code></a> for the object.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadId.html#getId()"><code>AttributeReadId.getId()</code></a></dd>
+</dl>
+</li>
+</ul>
+<a id="setIdNative(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>setIdNative</h4>
+<pre class="methodSignature">protected abstract&nbsp;void&nbsp;setIdNative&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;id)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>id</code> - the new <a href="#getId()"><code>ID</code></a>.</dd>
 </dl>
 </li>
 </ul>

@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -262,23 +262,30 @@ implements <a href="StructuredReader.html" title="interface in io.github.mmm.mar
 </td>
 </tr>
 <tr id="i3" class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#expectNot(io.github.mmm.marshall.StructuredReader.State)">expectNot</a></span>&#8203;(<a href="StructuredReader.State.html" title="enum in io.github.mmm.marshall">StructuredReader.State</a>&nbsp;unexpected)</code></th>
+<td class="colLast">
+<div class="block">Verifies that the <a href="#getState()"><code>current state</code></a> is not the same as the given state.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="StructuredReader.State.html" title="enum in io.github.mmm.marshall">StructuredReader.State</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getState()">getState</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>protected <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang" class="externalLink">RuntimeException</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#handleValueParseError(java.lang.String,java.lang.Class,java.lang.Throwable)">handleValueParseError</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;value,
                      <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;?&gt;&nbsp;typeClass,
                      <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Throwable</a>&nbsp;e)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isDone()">isDone</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#readArray(java.util.Collection)">readArray</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&gt;&nbsp;array)</code></th>
 <td class="colLast">
@@ -286,12 +293,12 @@ implements <a href="StructuredReader.html" title="interface in io.github.mmm.mar
  array into the given <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Collection</code></a>.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#readEnd()">readEnd</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#readObject(java.util.Map)">readObject</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&gt;&nbsp;map)</code></th>
 <td class="colLast">
@@ -299,17 +306,17 @@ implements <a href="StructuredReader.html" title="interface in io.github.mmm.mar
  into the given <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Map</code></a>.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#readStartArray()">readStartArray</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#readStartObject()">readStartObject</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#readValue(boolean)">readValue</a></span>&#8203;(boolean&nbsp;recursive)</code></th>
 <td class="colLast">
@@ -317,34 +324,29 @@ implements <a href="StructuredReader.html" title="interface in io.github.mmm.mar
  <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Number.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Number</code></a>.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink">BigDecimal</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#readValueAsBigDecimal()">readValueAsBigDecimal</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html?is-external=true" title="class or interface in java.math" class="externalLink">BigInteger</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#readValueAsBigInteger()">readValueAsBigInteger</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html?is-external=true" title="class or interface in java.lang" class="externalLink">Byte</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#readValueAsByte()">readValueAsByte</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html?is-external=true" title="class or interface in java.lang" class="externalLink">Double</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#readValueAsDouble()">readValueAsDouble</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html?is-external=true" title="class or interface in java.lang" class="externalLink">Float</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#readValueAsFloat()">readValueAsFloat</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i17" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html?is-external=true" title="class or interface in java.time" class="externalLink">Instant</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#readValueAsInstant()">readValueAsInstant</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i18" class="altColor">
@@ -353,51 +355,21 @@ implements <a href="StructuredReader.html" title="interface in io.github.mmm.mar
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i19" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#readValueAsLocalDate()">readValueAsLocalDate</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i20" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDateTime.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDateTime</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#readValueAsLocalDateTime()">readValueAsLocalDateTime</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i21" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalTime</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#readValueAsLocalTime()">readValueAsLocalTime</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i22" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html?is-external=true" title="class or interface in java.lang" class="externalLink">Long</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#readValueAsLong()">readValueAsLong</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>protected <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#readValueAsNumberString()">readValueAsNumberString</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i24" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html?is-external=true" title="class or interface in java.time" class="externalLink">OffsetDateTime</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#readValueAsOffsetDateTime()">readValueAsOffsetDateTime</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i25" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html?is-external=true" title="class or interface in java.time" class="externalLink">OffsetTime</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#readValueAsOffsetTime()">readValueAsOffsetTime</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i26" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html?is-external=true" title="class or interface in java.lang" class="externalLink">Short</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#readValueAsShort()">readValueAsShort</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i27" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html?is-external=true" title="class or interface in java.time" class="externalLink">ZonedDateTime</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#readValueAsZonedDateTime()">readValueAsZonedDateTime</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i28" class="altColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#skipValue()">skipValue</a></span>()</code></th>
 <td class="colLast">
@@ -649,6 +621,20 @@ implements <a href="StructuredReader.html" title="interface in io.github.mmm.mar
 </dl>
 </li>
 </ul>
+<a id="expectNot(io.github.mmm.marshall.StructuredReader.State)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>expectNot</h4>
+<pre class="methodSignature">protected&nbsp;void&nbsp;expectNot&#8203;(<a href="StructuredReader.State.html" title="enum in io.github.mmm.marshall">StructuredReader.State</a>&nbsp;unexpected)</pre>
+<div class="block">Verifies that the <a href="#getState()"><code>current state</code></a> is not the same as the given state.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>unexpected</code> - the unexpected state.</dd>
+</dl>
+</li>
+</ul>
 <a id="handleValueParseError(java.lang.String,java.lang.Class,java.lang.Throwable)">
 <!--   -->
 </a>
@@ -800,125 +786,6 @@ implements <a href="StructuredReader.html" title="interface in io.github.mmm.mar
 <dd><code><a href="StructuredReader.html#readValueAsBigDecimal()">readValueAsBigDecimal</a></code>&nbsp;in interface&nbsp;<code><a href="StructuredReader.html" title="interface in io.github.mmm.marshall">StructuredReader</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>reads the value as <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math" class="externalLink"><code>BigDecimal</code></a>.</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="StructuredReader.html#readValue(java.lang.Class)"><code>StructuredReader.readValue(Class)</code></a></dd>
-</dl>
-</li>
-</ul>
-<a id="readValueAsInstant()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>readValueAsInstant</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html?is-external=true" title="class or interface in java.time" class="externalLink">Instant</a>&nbsp;readValueAsInstant()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="StructuredReader.html#readValueAsInstant()">readValueAsInstant</a></code>&nbsp;in interface&nbsp;<code><a href="StructuredReader.html" title="interface in io.github.mmm.marshall">StructuredReader</a></code></dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>reads the value as <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html?is-external=true" title="class or interface in java.time" class="externalLink"><code>Instant</code></a>.</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="StructuredReader.html#readValue(java.lang.Class)"><code>StructuredReader.readValue(Class)</code></a></dd>
-</dl>
-</li>
-</ul>
-<a id="readValueAsLocalDate()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>readValueAsLocalDate</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;readValueAsLocalDate()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="StructuredReader.html#readValueAsLocalDate()">readValueAsLocalDate</a></code>&nbsp;in interface&nbsp;<code><a href="StructuredReader.html" title="interface in io.github.mmm.marshall">StructuredReader</a></code></dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>reads the value as <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink"><code>LocalDate</code></a>.</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="StructuredReader.html#readValue(java.lang.Class)"><code>StructuredReader.readValue(Class)</code></a></dd>
-</dl>
-</li>
-</ul>
-<a id="readValueAsLocalDateTime()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>readValueAsLocalDateTime</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDateTime.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDateTime</a>&nbsp;readValueAsLocalDateTime()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="StructuredReader.html#readValueAsLocalDateTime()">readValueAsLocalDateTime</a></code>&nbsp;in interface&nbsp;<code><a href="StructuredReader.html" title="interface in io.github.mmm.marshall">StructuredReader</a></code></dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>reads the value as <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDateTime.html?is-external=true" title="class or interface in java.time" class="externalLink"><code>LocalDateTime</code></a>.</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="StructuredReader.html#readValue(java.lang.Class)"><code>StructuredReader.readValue(Class)</code></a></dd>
-</dl>
-</li>
-</ul>
-<a id="readValueAsLocalTime()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>readValueAsLocalTime</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalTime</a>&nbsp;readValueAsLocalTime()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="StructuredReader.html#readValueAsLocalTime()">readValueAsLocalTime</a></code>&nbsp;in interface&nbsp;<code><a href="StructuredReader.html" title="interface in io.github.mmm.marshall">StructuredReader</a></code></dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>reads the value as <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html?is-external=true" title="class or interface in java.time" class="externalLink"><code>LocalTime</code></a>.</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="StructuredReader.html#readValue(java.lang.Class)"><code>StructuredReader.readValue(Class)</code></a></dd>
-</dl>
-</li>
-</ul>
-<a id="readValueAsZonedDateTime()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>readValueAsZonedDateTime</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html?is-external=true" title="class or interface in java.time" class="externalLink">ZonedDateTime</a>&nbsp;readValueAsZonedDateTime()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="StructuredReader.html#readValueAsZonedDateTime()">readValueAsZonedDateTime</a></code>&nbsp;in interface&nbsp;<code><a href="StructuredReader.html" title="interface in io.github.mmm.marshall">StructuredReader</a></code></dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>reads the value as <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html?is-external=true" title="class or interface in java.time" class="externalLink"><code>ZonedDateTime</code></a>.</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="StructuredReader.html#readValue(java.lang.Class)"><code>StructuredReader.readValue(Class)</code></a></dd>
-</dl>
-</li>
-</ul>
-<a id="readValueAsOffsetDateTime()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>readValueAsOffsetDateTime</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html?is-external=true" title="class or interface in java.time" class="externalLink">OffsetDateTime</a>&nbsp;readValueAsOffsetDateTime()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="StructuredReader.html#readValueAsOffsetDateTime()">readValueAsOffsetDateTime</a></code>&nbsp;in interface&nbsp;<code><a href="StructuredReader.html" title="interface in io.github.mmm.marshall">StructuredReader</a></code></dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>reads the value as <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html?is-external=true" title="class or interface in java.time" class="externalLink"><code>OffsetDateTime</code></a>.</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="StructuredReader.html#readValue(java.lang.Class)"><code>StructuredReader.readValue(Class)</code></a></dd>
-</dl>
-</li>
-</ul>
-<a id="readValueAsOffsetTime()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>readValueAsOffsetTime</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html?is-external=true" title="class or interface in java.time" class="externalLink">OffsetTime</a>&nbsp;readValueAsOffsetTime()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="StructuredReader.html#readValueAsOffsetTime()">readValueAsOffsetTime</a></code>&nbsp;in interface&nbsp;<code><a href="StructuredReader.html" title="interface in io.github.mmm.marshall">StructuredReader</a></code></dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>reads the value as <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html?is-external=true" title="class or interface in java.time" class="externalLink"><code>OffsetTime</code></a>.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="StructuredReader.html#readValue(java.lang.Class)"><code>StructuredReader.readValue(Class)</code></a></dd>
 </dl>

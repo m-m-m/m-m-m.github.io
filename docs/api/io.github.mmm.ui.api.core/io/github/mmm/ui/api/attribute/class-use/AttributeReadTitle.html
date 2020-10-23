@@ -141,14 +141,18 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<th class="colFirst" scope="row"><a href="#io.github.mmm.ui.test.widget.chart">io.github.mmm.ui.test.widget.chart</a></th>
+<th class="colFirst" scope="row"><a href="#io.github.mmm.ui.spi.controller">io.github.mmm.ui.spi.controller</a></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<th class="colFirst" scope="row"><a href="#io.github.mmm.ui.test.widget.data">io.github.mmm.ui.test.widget.data</a></th>
+<th class="colFirst" scope="row"><a href="#io.github.mmm.ui.test.widget.chart">io.github.mmm.ui.test.widget.chart</a></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
+<th class="colFirst" scope="row"><a href="#io.github.mmm.ui.test.widget.data">io.github.mmm.ui.test.widget.data</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="#io.github.mmm.ui.test.widget.window">io.github.mmm.ui.test.widget.window</a></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -196,33 +200,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>interface&nbsp;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiController.html" title="interface in io.github.mmm.ui.api.controller">UiController</a>&lt;W extends <a href="../../widget/UiWidget.html" title="interface in io.github.mmm.ui.api.widget">UiWidget</a>&gt;</span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiController.html" title="interface in io.github.mmm.ui.api.controller">UiController</a>&lt;V extends <a href="../../widget/UiRegularWidget.html" title="interface in io.github.mmm.ui.api.widget">UiRegularWidget</a>&gt;</span></code></th>
 <td class="colLast">
 <div class="block">This is the interface for a dialog of the client application.</div>
-</td>
-</tr>
-</tbody>
-</table>
-<table class="useSummary">
-<caption><span>Classes in <a href="../../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/package-summary.html">io.github.mmm.ui.api.controller</a> that implement <a href="../AttributeReadTitle.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadTitle</a></span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colSecond" scope="col">Class</th>
-<th class="colLast" scope="col">Description</th>
-</tr>
-<tbody>
-<tr class="altColor">
-<td class="colFirst"><code>class&nbsp;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/AbstractUiController.html" title="class in io.github.mmm.ui.api.controller">AbstractUiController</a>&lt;W extends <a href="../../widget/UiWidget.html" title="interface in io.github.mmm.ui.api.widget">UiWidget</a>&gt;</span></code></th>
-<td class="colLast">
-<div class="block">Abstract base implementation of <a href="../../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a>.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>class&nbsp;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/AbstractUiControllerMain.html" title="class in io.github.mmm.ui.api.controller">AbstractUiControllerMain</a>&lt;W extends <a href="../../widget/UiRegularWidget.html" title="interface in io.github.mmm.ui.api.widget">UiRegularWidget</a>&gt;</span></code></th>
-<td class="colLast">
-<div class="block"><a href="../../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/AbstractUiController.html" title="class in io.github.mmm.ui.api.controller"><code>AbstractUiController</code></a> with <a href="../../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/AbstractUiControllerMain.html#getType()"><code>type</code></a> <a href="../../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiController.html#TYPE_MAIN"><code>main</code></a>.</div>
 </td>
 </tr>
 </tbody>
@@ -306,7 +286,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colFirst"><code>interface&nbsp;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../../../io.github.mmm.ui.api.data/io/github/mmm/ui/api/widget/data/UiColumn.html" title="interface in io.github.mmm.ui.api.widget.data">UiColumn</a>&lt;R,&#8203;V&gt;</span></code></th>
 <td class="colLast">
-<div class="block"><a href="../../widget/UiWidget.html" title="interface in io.github.mmm.ui.api.widget"><code>UiWidget</code></a> for a column of a <a href="../../../../../../../../io.github.mmm.ui.api.data/io/github/mmm/ui/api/widget/data/UiAbstractDataWidget.html" title="interface in io.github.mmm.ui.api.widget.data"><code>UiAbstractDataWidget</code></a>.</div>
+<div class="block"><a href="../../widget/UiWidget.html" title="interface in io.github.mmm.ui.api.widget"><code>UiWidget</code></a> for a column of a <a href="../../../../../../../../io.github.mmm.ui.api.data/io/github/mmm/ui/api/widget/data/UiAbstractDataWidget.html" title="interface in io.github.mmm.ui.api.widget.data"><code>UiAbstractDataWidget</code></a>.<br>
+ By default a column is <a href="../../widget/UiWidget.html#isReadOnly()"><code>read-only</code></a>.</div>
 </td>
 </tr>
 </tbody>
@@ -495,6 +476,59 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../../../io.github.mmm.ui.fx.window/io/github/mmm/ui/fx/widget/window/FxWindow.html" title="class in io.github.mmm.ui.fx.widget.window">FxWindow</a></span></code></th>
 <td class="colLast">
 <div class="block">Implementation of <a href="../../../../../../../../io.github.mmm.ui.api.window/io/github/mmm/ui/api/widget/window/UiWindow.html" title="interface in io.github.mmm.ui.api.widget.window"><code>UiWindow</code></a> for JavaFx.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
+<section role="region"><a id="io.github.mmm.ui.spi.controller">
+<!--   -->
+</a>
+<h3>Uses of <a href="../AttributeReadTitle.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadTitle</a> in <a href="../../../../../../../../io.github.mmm.ui.spi.controller/io/github/mmm/ui/spi/controller/package-summary.html">io.github.mmm.ui.spi.controller</a></h3>
+<table class="useSummary">
+<caption><span>Classes in <a href="../../../../../../../../io.github.mmm.ui.spi.controller/io/github/mmm/ui/spi/controller/package-summary.html">io.github.mmm.ui.spi.controller</a> that implement <a href="../AttributeReadTitle.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadTitle</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Class</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../../../io.github.mmm.ui.spi.controller/io/github/mmm/ui/spi/controller/AbstractUiController.html" title="class in io.github.mmm.ui.spi.controller">AbstractUiController</a>&lt;V extends <a href="../../widget/UiRegularWidget.html" title="interface in io.github.mmm.ui.api.widget">UiRegularWidget</a>&gt;</span></code></th>
+<td class="colLast">
+<div class="block">Abstract base implementation of <a href="../../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../../../io.github.mmm.ui.spi.controller/io/github/mmm/ui/spi/controller/AbstractUiControllerContent.html" title="class in io.github.mmm.ui.spi.controller">AbstractUiControllerContent</a>&lt;V extends <a href="../../widget/UiRegularWidget.html" title="interface in io.github.mmm.ui.api.widget">UiRegularWidget</a>&gt;</span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../../../io.github.mmm.ui.spi.controller/io/github/mmm/ui/spi/controller/AbstractUiController.html" title="class in io.github.mmm.ui.spi.controller"><code>AbstractUiController</code></a> for <a href="../../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiController.html#ID_CONTENT"><code>content</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../../../io.github.mmm.ui.spi.controller/io/github/mmm/ui/spi/controller/AbstractUiControllerNavigation.html" title="class in io.github.mmm.ui.spi.controller">AbstractUiControllerNavigation</a>&lt;V extends <a href="../../widget/UiRegularWidget.html" title="interface in io.github.mmm.ui.api.widget">UiRegularWidget</a>&gt;</span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../../../io.github.mmm.ui.spi.controller/io/github/mmm/ui/spi/controller/AbstractUiController.html" title="class in io.github.mmm.ui.spi.controller"><code>AbstractUiController</code></a> for <a href="../../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiController.html#ID_NAVIGATION"><code>navigation</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../../../io.github.mmm.ui.spi.controller/io/github/mmm/ui/spi/controller/AbstractUiControllerPage.html" title="class in io.github.mmm.ui.spi.controller">AbstractUiControllerPage</a></span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../../../io.github.mmm.ui.spi.controller/io/github/mmm/ui/spi/controller/AbstractUiController.html" title="class in io.github.mmm.ui.spi.controller"><code>Controller</code></a> for the <a href="../../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiController.html#ID_PAGE"><code>page</code></a> dialog.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../../../io.github.mmm.ui.spi.controller/io/github/mmm/ui/spi/controller/UiControllerRoot.html" title="class in io.github.mmm.ui.spi.controller">UiControllerRoot</a></span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a> with <a href="../../../../../../../../io.github.mmm.ui.spi.controller/io/github/mmm/ui/spi/controller/UiControllerRoot.html#getId()"><code>ID</code></a>
+ <a href="../../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiController.html#ID_ROOT"><code>root</code></a>.</div>
 </td>
 </tr>
 </tbody>

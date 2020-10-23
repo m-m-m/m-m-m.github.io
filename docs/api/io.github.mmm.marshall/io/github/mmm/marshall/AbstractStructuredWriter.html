@@ -135,6 +135,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt>All Implemented Interfaces:</dt>
 <dd><code><a href="StructuredWriter.html" title="interface in io.github.mmm.marshall">StructuredWriter</a></code>, <code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/AutoCloseable.html?is-external=true" title="class or interface in java.lang" class="externalLink">AutoCloseable</a></code></dd>
 </dl>
+<dl>
+<dt>Direct Known Subclasses:</dt>
+<dd><code><a href="AbstractStructuredStringWriter.html" title="class in io.github.mmm.marshall">AbstractStructuredStringWriter</a></code></dd>
+</dl>
 <hr>
 <pre>public abstract class <span class="typeNameLabel">AbstractStructuredWriter</span>
 extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>
@@ -169,7 +173,7 @@ implements <a href="StructuredWriter.html" title="interface in io.github.mmm.mar
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>protected <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#indendation">indendation</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#indentation">indentation</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -245,7 +249,7 @@ implements <a href="StructuredWriter.html" title="interface in io.github.mmm.mar
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;io.github.mmm.marshall.<a href="StructuredWriter.html" title="interface in io.github.mmm.marshall">StructuredWriter</a></h3>
-<code><a href="StructuredWriter.html#close()">close</a>, <a href="StructuredWriter.html#writeEnd()">writeEnd</a>, <a href="StructuredWriter.html#writeStartArray()">writeStartArray</a>, <a href="StructuredWriter.html#writeStartObject()">writeStartObject</a>, <a href="StructuredWriter.html#writeValue(java.lang.Object)">writeValue</a>, <a href="StructuredWriter.html#writeValueAsBigDecimal(java.math.BigDecimal)">writeValueAsBigDecimal</a>, <a href="StructuredWriter.html#writeValueAsBigInteger(java.math.BigInteger)">writeValueAsBigInteger</a>, <a href="StructuredWriter.html#writeValueAsBoolean(java.lang.Boolean)">writeValueAsBoolean</a>, <a href="StructuredWriter.html#writeValueAsByte(java.lang.Byte)">writeValueAsByte</a>, <a href="StructuredWriter.html#writeValueAsDouble(java.lang.Double)">writeValueAsDouble</a>, <a href="StructuredWriter.html#writeValueAsFloat(java.lang.Float)">writeValueAsFloat</a>, <a href="StructuredWriter.html#writeValueAsInstant(java.time.Instant)">writeValueAsInstant</a>, <a href="StructuredWriter.html#writeValueAsInteger(java.lang.Integer)">writeValueAsInteger</a>, <a href="StructuredWriter.html#writeValueAsLocalDate(java.time.LocalDate)">writeValueAsLocalDate</a>, <a href="StructuredWriter.html#writeValueAsLocalDateTime(java.time.LocalDateTime)">writeValueAsLocalDateTime</a>, <a href="StructuredWriter.html#writeValueAsLocalTime(java.time.LocalTime)">writeValueAsLocalTime</a>, <a href="StructuredWriter.html#writeValueAsLong(java.lang.Long)">writeValueAsLong</a>, <a href="StructuredWriter.html#writeValueAsNull()">writeValueAsNull</a>, <a href="StructuredWriter.html#writeValueAsNumber(java.lang.Number)">writeValueAsNumber</a>, <a href="StructuredWriter.html#writeValueAsOffsetDateTime(java.time.OffsetDateTime)">writeValueAsOffsetDateTime</a>, <a href="StructuredWriter.html#writeValueAsOffsetTime(java.time.OffsetTime)">writeValueAsOffsetTime</a>, <a href="StructuredWriter.html#writeValueAsShort(java.lang.Short)">writeValueAsShort</a>, <a href="StructuredWriter.html#writeValueAsString(java.lang.String)">writeValueAsString</a>, <a href="StructuredWriter.html#writeValueAsZonedDateTime(java.time.ZonedDateTime)">writeValueAsZonedDateTime</a></code></li>
+<code><a href="StructuredWriter.html#close()">close</a>, <a href="StructuredWriter.html#writeEnd()">writeEnd</a>, <a href="StructuredWriter.html#writeStartArray()">writeStartArray</a>, <a href="StructuredWriter.html#writeStartObject()">writeStartObject</a>, <a href="StructuredWriter.html#writeValue(java.lang.Object)">writeValue</a>, <a href="StructuredWriter.html#writeValueAsBigDecimal(java.math.BigDecimal)">writeValueAsBigDecimal</a>, <a href="StructuredWriter.html#writeValueAsBigInteger(java.math.BigInteger)">writeValueAsBigInteger</a>, <a href="StructuredWriter.html#writeValueAsBoolean(java.lang.Boolean)">writeValueAsBoolean</a>, <a href="StructuredWriter.html#writeValueAsByte(java.lang.Byte)">writeValueAsByte</a>, <a href="StructuredWriter.html#writeValueAsDouble(java.lang.Double)">writeValueAsDouble</a>, <a href="StructuredWriter.html#writeValueAsFloat(java.lang.Float)">writeValueAsFloat</a>, <a href="StructuredWriter.html#writeValueAsInteger(java.lang.Integer)">writeValueAsInteger</a>, <a href="StructuredWriter.html#writeValueAsLong(java.lang.Long)">writeValueAsLong</a>, <a href="StructuredWriter.html#writeValueAsNull()">writeValueAsNull</a>, <a href="StructuredWriter.html#writeValueAsNumber(java.lang.Number)">writeValueAsNumber</a>, <a href="StructuredWriter.html#writeValueAsShort(java.lang.Short)">writeValueAsShort</a>, <a href="StructuredWriter.html#writeValueAsString(java.lang.String)">writeValueAsString</a></code></li>
 </ul>
 </li>
 </ul>
@@ -286,16 +290,16 @@ implements <a href="StructuredWriter.html" title="interface in io.github.mmm.mar
 </dl>
 </li>
 </ul>
-<a id="indendation">
+<a id="indentation">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>indendation</h4>
-<pre>protected final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> indendation</pre>
+<h4>indentation</h4>
+<pre>protected final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> indentation</pre>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="MarshallingConfig.html#INDENDATION"><code>MarshallingConfig.INDENDATION</code></a></dd>
+<dd><a href="MarshallingConfig.html#INDENTATION"><code>MarshallingConfig.INDENTATION</code></a></dd>
 </dl>
 </li>
 </ul>

@@ -147,9 +147,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 <hr>
 <pre><a href="Name.html" title="annotation in io.github.mmm.bean">@Name</a>("mmm.DynamicBean")
-public final class <span class="typeNameLabel">DynamicBean</span>
+public class <span class="typeNameLabel">DynamicBean</span>
 extends <a href="Bean.html" title="class in io.github.mmm.bean">Bean</a></pre>
-<div class="block">A <a href="Bean.html" title="class in io.github.mmm.bean"><code>Bean</code></a> that is always <a href="AbstractBean.html#isDynamic()"><code>dynamic</code></a>. Only exists for simplicity.</div>
+<div class="block">A <a href="Bean.html" title="class in io.github.mmm.bean"><code>Bean</code></a> that is always <a href="#isDynamic()"><code>dynamic</code></a>. Only exists for simplicity.</div>
 </li>
 </ul>
 </div>
@@ -211,12 +211,9 @@ extends <a href="Bean.html" title="class in io.github.mmm.bean">Bean</a></pre>
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>protected <a href="Bean.html" title="class in io.github.mmm.bean">Bean</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#create(io.github.mmm.bean.AbstractBean,boolean)">create</a></span>&#8203;(<a href="AbstractBean.html" title="class in io.github.mmm.bean">AbstractBean</a>&nbsp;writableBean,
-      boolean&nbsp;dynamic)</code></th>
-<td class="colLast">
-<div class="block">Creates a new instance of this <a href="Bean.html" title="class in io.github.mmm.bean"><code>Bean</code></a> implementation.</div>
-</td>
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isDynamic()">isDynamic</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -231,7 +228,7 @@ extends <a href="Bean.html" title="class in io.github.mmm.bean">Bean</a></pre>
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;io.github.mmm.bean.<a href="AbstractBean.html" title="class in io.github.mmm.bean">AbstractBean</a></h3>
-<code><a href="AbstractBean.html#add()">add</a>, <a href="AbstractBean.html#add(P)">add</a>, <a href="AbstractBean.html#addProperty(P)">addProperty</a>, <a href="AbstractBean.html#createProperty(java.lang.String,java.lang.Class,java.lang.reflect.Type)">createProperty</a>, <a href="AbstractBean.html#createPropertyBuilders()">createPropertyBuilders</a>, <a href="AbstractBean.html#getProperties()">getProperties</a>, <a href="AbstractBean.html#getProperty(java.lang.String)">getProperty</a>, <a href="AbstractBean.html#getPropertyCount()">getPropertyCount</a>, <a href="AbstractBean.html#getReadOnly()">getReadOnly</a>, <a href="AbstractBean.html#isDynamic()">isDynamic</a>, <a href="AbstractBean.html#isReadOnly()">isReadOnly</a>, <a href="AbstractBean.html#isThreadSafe()">isThreadSafe</a>, <a href="AbstractBean.html#newInstance()">newInstance</a>, <a href="AbstractBean.html#onPropertyAdded(io.github.mmm.property.WritableProperty)">onPropertyAdded</a>, <a href="AbstractBean.html#requireDynamic()">requireDynamic</a>, <a href="AbstractBean.html#requireWritable()">requireWritable</a>, <a href="AbstractBean.html#toString()">toString</a>, <a href="AbstractBean.html#toString(java.lang.StringBuilder)">toString</a>, <a href="AbstractBean.html#updateProperties()">updateProperties</a></code></li>
+<code><a href="AbstractBean.html#add()">add</a>, <a href="AbstractBean.html#add(P)">add</a>, <a href="AbstractBean.html#addProperty(P)">addProperty</a>, <a href="AbstractBean.html#copy(boolean)">copy</a>, <a href="AbstractBean.html#create()">create</a>, <a href="AbstractBean.html#createProperty(java.lang.String,java.lang.Class,java.lang.reflect.Type)">createProperty</a>, <a href="AbstractBean.html#createPropertyBuilders()">createPropertyBuilders</a>, <a href="AbstractBean.html#getProperties()">getProperties</a>, <a href="AbstractBean.html#getProperty(java.lang.String)">getProperty</a>, <a href="AbstractBean.html#getPropertyCount()">getPropertyCount</a>, <a href="AbstractBean.html#isReadOnly()">isReadOnly</a>, <a href="AbstractBean.html#isThreadSafe()">isThreadSafe</a>, <a href="AbstractBean.html#newInstance()">newInstance</a>, <a href="AbstractBean.html#onPropertyAdded(io.github.mmm.property.WritableProperty)">onPropertyAdded</a>, <a href="AbstractBean.html#requireDynamic()">requireDynamic</a>, <a href="AbstractBean.html#requireWritable()">requireWritable</a>, <a href="AbstractBean.html#toString()">toString</a>, <a href="AbstractBean.html#toString(java.lang.StringBuilder)">toString</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
@@ -252,7 +249,7 @@ extends <a href="Bean.html" title="class in io.github.mmm.bean">Bean</a></pre>
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;io.github.mmm.bean.<a href="ReadableBean.html" title="interface in io.github.mmm.bean">ReadableBean</a></h3>
-<code><a href="ReadableBean.html#get(java.lang.String)">get</a>, <a href="ReadableBean.html#getPropertyNameForAlias(java.lang.String)">getPropertyNameForAlias</a>, <a href="ReadableBean.html#isEqualTo(io.github.mmm.bean.ReadableBean)">isEqualTo</a>, <a href="ReadableBean.html#isPolymorphic()">isPolymorphic</a>, <a href="ReadableBean.html#validate()">validate</a>, <a href="ReadableBean.html#write(io.github.mmm.marshall.StructuredWriter)">write</a></code></li>
+<code><a href="ReadableBean.html#copy()">copy</a>, <a href="ReadableBean.html#get(java.lang.String)">get</a>, <a href="ReadableBean.html#getPropertyNameForAlias(java.lang.String)">getPropertyNameForAlias</a>, <a href="ReadableBean.html#isEqualTo(io.github.mmm.bean.ReadableBean)">isEqualTo</a>, <a href="ReadableBean.html#isPolymorphic()">isPolymorphic</a>, <a href="ReadableBean.html#validate()">validate</a>, <a href="ReadableBean.html#write(io.github.mmm.marshall.StructuredWriter)">write</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.marshall.UnmarshallableObject">
@@ -304,27 +301,23 @@ extends <a href="Bean.html" title="class in io.github.mmm.bean">Bean</a></pre>
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="create(io.github.mmm.bean.AbstractBean,boolean)">
+<a id="isDynamic()">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>create</h4>
-<pre class="methodSignature">protected&nbsp;<a href="Bean.html" title="class in io.github.mmm.bean">Bean</a>&nbsp;create&#8203;(<a href="AbstractBean.html" title="class in io.github.mmm.bean">AbstractBean</a>&nbsp;writableBean,
-                      boolean&nbsp;dynamic)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="AbstractBean.html#create(io.github.mmm.bean.AbstractBean,boolean)">AbstractBean</a></code></span></div>
-<div class="block">Creates a new instance of this <a href="Bean.html" title="class in io.github.mmm.bean"><code>Bean</code></a> implementation. The default implementation uses reflection. To improve
- performance please override this method. Please note, that if you do so, you also need to override this method
- again for all sub-classes of the hierarchy.</div>
+<h4>isDynamic</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;isDynamic()</pre>
 <dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="ReadableBean.html#isDynamic()">isDynamic</a></code>&nbsp;in interface&nbsp;<code><a href="ReadableBean.html" title="interface in io.github.mmm.bean">ReadableBean</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="AbstractBean.html#create(io.github.mmm.bean.AbstractBean,boolean)">create</a></code>&nbsp;in class&nbsp;<code><a href="AbstractBean.html" title="class in io.github.mmm.bean">AbstractBean</a></code></dd>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>writableBean</code> - the writable <a href="Bean.html" title="class in io.github.mmm.bean"><code>Bean</code></a> to create a <a href="AbstractBean.html#isReadOnly()"><code>read-only</code></a> view on, or <code>null</code>
-        to create a regular mutable <a href="Bean.html" title="class in io.github.mmm.bean"><code>Bean</code></a>.</dd>
-<dd><code>dynamic</code> - the <a href="AbstractBean.html#isDynamic()"><code>dynamic flag</code></a>.</dd>
+<dd><code><a href="AbstractBean.html#isDynamic()">isDynamic</a></code>&nbsp;in class&nbsp;<code><a href="AbstractBean.html" title="class in io.github.mmm.bean">AbstractBean</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the new <a href="Bean.html" title="class in io.github.mmm.bean"><code>Bean</code></a> instance. Has to be of the same type as the <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang" class="externalLink"><code>current class</code></a>.</dd>
+<dd><code>true</code> if this <a href="Bean.html" title="class in io.github.mmm.bean"><code>Bean</code></a> is dynamic meaning that is not strictly typed but allows to dynamically
+         add properties, <code>false</code> otherwise.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="VirtualBean.html" title="interface in io.github.mmm.bean"><code>VirtualBean</code></a></dd>
 </dl>
 </li>
 </ul>

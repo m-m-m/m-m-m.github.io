@@ -120,59 +120,146 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="altColor">
+<th class="colFirst" scope="row"><a href="UiBorderPanel.html" title="interface in io.github.mmm.ui.api.widget.panel">UiBorderPanel</a></th>
+<td class="colLast">
+<div class="block"><a href="../composite/UiRemovableComposite.html" title="interface in io.github.mmm.ui.api.widget.composite"><code>UiRemovableComposite</code></a> representing a panel that lays out its children in predefined positions:
+ 
+ <a href="UiBorderPanel.html#getCenter()"><code>center</code></a>
+ <a href="UiBorderPanel.html#getTop()"><code>top</code></a>
+ <a href="UiBorderPanel.html#getBottom()"><code>bottom</code></a>
+ <a href="UiBorderPanel.html#getLeft()"><code>left</code></a>
+ <a href="UiBorderPanel.html#getRight()"><code>right</code></a>
+ 
+ Here you can see an example of the layout (HTML structure will differ):<br>
+ 
+ 
+ 
+ header
+ 
+  <tbdoy>
+ 
+ left
+ center
+ right
+ 
+  
+ 
+ footer
+ 
+ 
+ 
+ The <a href="UiBorderPanel.html#getCenter()"><code>center widget</code></a> will consume additional space if the owning window grows while the other
+ border widgets only get the required space.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="UiButtonPanel.html" title="interface in io.github.mmm.ui.api.widget.panel">UiButtonPanel</a></th>
 <td class="colLast">
 <div class="block"><a href="UiAbstractButtonContainer.html" title="interface in io.github.mmm.ui.api.widget.panel"><code>button container</code></a> showing a number of
  <a href="../button/UiAbstractButton.html" title="interface in io.github.mmm.ui.api.widget.button"><code>buttons</code></a> horizontally (e.g.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="UiCollapsiblePanel.html" title="interface in io.github.mmm.ui.api.widget.panel">UiCollapsiblePanel</a></th>
 <td class="colLast">
 <div class="block"><a href="../composite/UiCollapsibleComposite.html" title="interface in io.github.mmm.ui.api.widget.composite"><code>Collapsible</code></a> <a href="UiMutablePanel.html" title="interface in io.github.mmm.ui.api.widget.panel"><code>panel</code></a> as <a href="../UiNativeWidget.html" title="interface in io.github.mmm.ui.api.widget"><code>native widget</code></a>.</div>
 </td>
 </tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="UiGridPanel.html" title="interface in io.github.mmm.ui.api.widget.panel">UiGridPanel</a></th>
+<td class="colLast">
+<div class="block"><a href="../composite/UiRemovableComposite.html" title="interface in io.github.mmm.ui.api.widget.composite"><code>UiRemovableComposite</code></a> that allows to layout child <a href="../UiRegularWidget.html" title="interface in io.github.mmm.ui.api.widget"><code>widgets</code></a> in a grid.</div>
+</td>
+</tr>
 <tr class="altColor">
+<th class="colFirst" scope="row"><a href="UiGridRow.html" title="interface in io.github.mmm.ui.api.widget.panel">UiGridRow</a></th>
+<td class="colLast">
+<div class="block"><a href="UiMutablePanel.html" title="interface in io.github.mmm.ui.api.widget.panel"><code>UiMutablePanel</code></a> that represents a row in a <a href="UiGridPanel.html" title="interface in io.github.mmm.ui.api.widget.panel"><code>UiGridPanel</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="UiHorizontalPanel.html" title="interface in io.github.mmm.ui.api.widget.panel">UiHorizontalPanel</a></th>
 <td class="colLast">
 <div class="block"><a href="UiMutablePanel.html" title="interface in io.github.mmm.ui.api.widget.panel"><code>UiMutablePanel</code></a> that shows its <a href="../composite/UiComposite.html#getChild(int)"><code>children</code></a> horizontally from the left to the right.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="UiHorizontalSplitPanel.html" title="interface in io.github.mmm.ui.api.widget.panel">UiHorizontalSplitPanel</a></th>
 <td class="colLast">
 <div class="block"><a href="UiAbstractSplitPanel.html" title="interface in io.github.mmm.ui.api.widget.panel"><code>UiAbstractSplitPanel</code></a> that shows its <a href="../composite/UiComposite.html#getChild(int)"><code>children</code></a> horizontally from the left to the right.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="UiMutablePanel.html" title="interface in io.github.mmm.ui.api.widget.panel">UiMutablePanel</a></th>
 <td class="colLast">
 <div class="block"><a href="../composite/UiMutableComposite.html" title="interface in io.github.mmm.ui.api.widget.composite"><code>UiMutableComposite</code></a> for a generic panel that accepts any <a href="../UiRegularWidget.html" title="interface in io.github.mmm.ui.api.widget"><code>UiRegularWidget</code></a> as <a href="../composite/UiComposite.html#getChild(int)"><code>child</code></a>.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="UiResponsiveColumnPanel.html" title="interface in io.github.mmm.ui.api.widget.panel">UiResponsiveColumnPanel</a></th>
 <td class="colLast">
 <div class="block"><a href="../composite/UiMutableComposite.html" title="interface in io.github.mmm.ui.api.widget.composite"><code>UiMutableComposite</code></a> showing multiple <a href="../composite/UiComposite.html#getChild(int)"><code>children</code></a> as columns in a responsive layout.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="UiScrollPanel.html" title="interface in io.github.mmm.ui.api.widget.panel">UiScrollPanel</a></th>
 <td class="colLast">
 <div class="block"><a href="../composite/UiMutableSingleComposite.html" title="interface in io.github.mmm.ui.api.widget.composite"><code>UiMutableSingleComposite</code></a> for a <em>scroll panel</em>.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="UiVerticalPanel.html" title="interface in io.github.mmm.ui.api.widget.panel">UiVerticalPanel</a></th>
 <td class="colLast">
 <div class="block"><a href="UiMutablePanel.html" title="interface in io.github.mmm.ui.api.widget.panel"><code>UiMutablePanel</code></a> that shows its <a href="../composite/UiComposite.html#getChild(int)"><code>children</code></a> vertically from the top to the bottom.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="UiVerticalSplitPanel.html" title="interface in io.github.mmm.ui.api.widget.panel">UiVerticalSplitPanel</a></th>
 <td class="colLast">
 <div class="block">This is the interface for a <a href="UiAbstractSplitPanel.html" title="interface in io.github.mmm.ui.api.widget.panel"><code>split panel</code></a> that shows its <a href="../composite/UiComposite.html#getChild(int)"><code>children</code></a>
  vertically from the top to the bottom.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList">
+<table class="typeSummary">
+<caption><span>Class Summary</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Class</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="UiCustomEditorButtonPanel.html" title="class in io.github.mmm.ui.api.widget.panel">UiCustomEditorButtonPanel</a></th>
+<td class="colLast">
+<div class="block"><a href="../composite/UiCustomMutableComposite.html" title="class in io.github.mmm.ui.api.widget.composite"><code>Custom widget</code></a> for the <a href="UiButtonPanel.html" title="interface in io.github.mmm.ui.api.widget.panel"><code>UiButtonPanel</code></a> of an
+ <a href="../value/UiCustomEditor.html" title="class in io.github.mmm.ui.api.widget.value"><code>editor</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="UiCustomGridPanel.html" title="class in io.github.mmm.ui.api.widget.panel">UiCustomGridPanel</a></th>
+<td class="colLast">
+<div class="block"><a href="UiCustomMutablePanel.html" title="class in io.github.mmm.ui.api.widget.panel"><code>UiCustomMutablePanel</code></a> that is a <a href="UiGridPanel.html" title="interface in io.github.mmm.ui.api.widget.panel"><code>UiGridPanel</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="UiCustomMutablePanel.html" title="class in io.github.mmm.ui.api.widget.panel">UiCustomMutablePanel</a>&lt;W extends <a href="UiMutablePanel.html" title="interface in io.github.mmm.ui.api.widget.panel">UiMutablePanel</a>&gt;</th>
+<td class="colLast">
+<div class="block"><a href="../composite/UiCustomMutableComposite.html" title="class in io.github.mmm.ui.api.widget.composite"><code>UiCustomMutableComposite</code></a> that is a <a href="UiMutablePanel.html" title="interface in io.github.mmm.ui.api.widget.panel"><code>UiMutablePanel</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="UiCustomScrollPanel.html" title="class in io.github.mmm.ui.api.widget.panel">UiCustomScrollPanel</a></th>
+<td class="colLast">
+<div class="block"><a href="../composite/UiCustomMutableSingleComposite.html" title="class in io.github.mmm.ui.api.widget.composite"><code>UiCustomMutableSingleComposite</code></a> that is a <a href="UiScrollPanel.html" title="interface in io.github.mmm.ui.api.widget.panel"><code>UiScrollPanel</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="UiCustomVerticalPanel.html" title="class in io.github.mmm.ui.api.widget.panel">UiCustomVerticalPanel</a></th>
+<td class="colLast">
+<div class="block"><a href="UiCustomMutablePanel.html" title="class in io.github.mmm.ui.api.widget.panel"><code>UiCustomMutablePanel</code></a> that is a <a href="UiVerticalPanel.html" title="interface in io.github.mmm.ui.api.widget.panel"><code>UiVerticalPanel</code></a>.</div>
 </td>
 </tr>
 </tbody>

@@ -26,6 +26,12 @@
     catch(err) {
     }
 //-->
+var data = {"i0":10};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var altColor = "altColor";
+var rowColor = "rowColor";
+var tableTab = "tableTab";
+var activeTableTab = "activeTableTab";
 var pathtoroot = "../../../../../";
 var useModuleDirectories = true;
 loadScripts(document, 'script');</script>
@@ -91,7 +97,7 @@ loadScripts(document, 'script');</script>
 <li>Detail:&nbsp;</li>
 <li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
-<li>Method</li>
+<li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
 <a id="skip.navbar.top">
@@ -131,7 +137,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <hr>
-<pre>public class <span class="typeNameLabel">MarshallingConfig</span>
+<pre>public final class <span class="typeNameLabel">MarshallingConfig</span>
 extends <a href="../../../../../io.github.mmm.base/io/github/mmm/base/config/ConfigMap.html" title="class in io.github.mmm.base.config">ConfigMap</a></pre>
 <div class="block"><a href="../../../../../io.github.mmm.base/io/github/mmm/base/config/ConfigMap.html" title="class in io.github.mmm.base.config"><code>ConfigMap</code></a> for marshalling.</div>
 <dl>
@@ -167,9 +173,9 @@ extends <a href="../../../../../io.github.mmm.base/io/github/mmm/base/config/Con
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../../io.github.mmm.base/io/github/mmm/base/config/ConfigOption.html" title="class in io.github.mmm.base.config">ConfigOption</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#INDENDATION">INDENDATION</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#INDENTATION">INDENTATION</a></span></code></th>
 <td class="colLast">
-<div class="block"><a href="../../../../../io.github.mmm.base/io/github/mmm/base/config/ConfigOption.html" title="class in io.github.mmm.base.config"><code>ConfigOption</code></a> for the indendation used by <a href="StructuredWriter.html" title="interface in io.github.mmm.marshall"><code>StructuredWriter</code></a> to format the output.</div>
+<div class="block"><a href="../../../../../io.github.mmm.base/io/github/mmm/base/config/ConfigOption.html" title="class in io.github.mmm.base.config"><code>ConfigOption</code></a> for the indentation used by <a href="StructuredWriter.html" title="interface in io.github.mmm.marshall"><code>StructuredWriter</code></a> to format the output.</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -221,6 +227,20 @@ extends <a href="../../../../../io.github.mmm.base/io/github/mmm/base/config/Con
 <!--   -->
 </a>
 <h3>Method Summary</h3>
+<table class="memberSummary">
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tr id="i0" class="altColor">
+<td class="colFirst"><code>&lt;T&gt;&nbsp;<a href="MarshallingConfig.html" title="class in io.github.mmm.marshall">MarshallingConfig</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#with(io.github.mmm.base.config.ConfigOption,T)">with</a></span>&#8203;(<a href="../../../../../io.github.mmm.base/io/github/mmm/base/config/ConfigOption.html" title="class in io.github.mmm.base.config">ConfigOption</a>&lt;T&gt;&nbsp;option,
+    T&nbsp;value)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+</table>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.base.config.ConfigMap">
 <!--   -->
@@ -251,14 +271,14 @@ extends <a href="../../../../../io.github.mmm.base/io/github/mmm/base/config/Con
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a id="INDENDATION">
+<a id="INDENTATION">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>INDENDATION</h4>
-<pre>public static final&nbsp;<a href="../../../../../io.github.mmm.base/io/github/mmm/base/config/ConfigOption.html" title="class in io.github.mmm.base.config">ConfigOption</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt; INDENDATION</pre>
-<div class="block"><a href="../../../../../io.github.mmm.base/io/github/mmm/base/config/ConfigOption.html" title="class in io.github.mmm.base.config"><code>ConfigOption</code></a> for the indendation used by <a href="StructuredWriter.html" title="interface in io.github.mmm.marshall"><code>StructuredWriter</code></a> to format the output.</div>
+<h4>INDENTATION</h4>
+<pre>public static final&nbsp;<a href="../../../../../io.github.mmm.base/io/github/mmm/base/config/ConfigOption.html" title="class in io.github.mmm.base.config">ConfigOption</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt; INDENTATION</pre>
+<div class="block"><a href="../../../../../io.github.mmm.base/io/github/mmm/base/config/ConfigOption.html" title="class in io.github.mmm.base.config"><code>ConfigOption</code></a> for the indentation used by <a href="StructuredWriter.html" title="interface in io.github.mmm.marshall"><code>StructuredWriter</code></a> to format the output.</div>
 </li>
 </ul>
 <a id="WRITE_NULL_VALUES">
@@ -314,6 +334,38 @@ extends <a href="../../../../../io.github.mmm.base/io/github/mmm/base/config/Con
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>map</code> - the raw <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Map</code></a> with the configuration values.</dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<!-- ============ METHOD DETAIL ========== -->
+<section role="region">
+<ul class="blockList">
+<li class="blockList"><a id="method.detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a id="with(io.github.mmm.base.config.ConfigOption,java.lang.Object)">
+<!--   -->
+</a><a id="with(io.github.mmm.base.config.ConfigOption,T)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>with</h4>
+<pre class="methodSignature">public&nbsp;&lt;T&gt;&nbsp;<a href="MarshallingConfig.html" title="class in io.github.mmm.marshall">MarshallingConfig</a>&nbsp;with&#8203;(<a href="../../../../../io.github.mmm.base/io/github/mmm/base/config/ConfigOption.html" title="class in io.github.mmm.base.config">ConfigOption</a>&lt;T&gt;&nbsp;option,
+                                  T&nbsp;value)</pre>
+<dl>
+<dt><span class="paramLabel">Type Parameters:</span></dt>
+<dd><code>T</code> - type of the value.</dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>option</code> - the <a href="../../../../../io.github.mmm.base/io/github/mmm/base/config/ConfigOption.html" title="class in io.github.mmm.base.config"><code>ConfigOption</code></a> to set.</dd>
+<dd><code>value</code> - the value for the given <a href="../../../../../io.github.mmm.base/io/github/mmm/base/config/ConfigOption.html" title="class in io.github.mmm.base.config"><code>ConfigOption</code></a>.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new <a href="MarshallingConfig.html" title="class in io.github.mmm.marshall"><code>MarshallingConfig</code></a> with the given <a href="../../../../../io.github.mmm.base/io/github/mmm/base/config/ConfigOption.html" title="class in io.github.mmm.base.config"><code>ConfigOption</code></a> set to the given <code>value</code> or this
+         <a href="MarshallingConfig.html" title="class in io.github.mmm.marshall"><code>MarshallingConfig</code></a> if the given <code>value</code> is already configured.</dd>
 </dl>
 </li>
 </ul>
@@ -378,7 +430,7 @@ extends <a href="../../../../../io.github.mmm.base/io/github/mmm/base/config/Con
 <li>Detail:&nbsp;</li>
 <li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
-<li>Method</li>
+<li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
 <a id="skip.navbar.bottom">

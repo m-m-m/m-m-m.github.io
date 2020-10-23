@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -193,8 +193,24 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>protected <a href="AbstractUiWidgetFactory.html" title="type parameter in AbstractUiWidgetFactory">F</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getForType(java.lang.Class)">getForType</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;?&gt;&nbsp;type)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>protected <a href="AbstractUiWidgetFactory.html" title="type parameter in AbstractUiWidgetFactory">F</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#merge(F,F)">merge</a></span>&#8203;(<a href="AbstractUiWidgetFactory.html" title="type parameter in AbstractUiWidgetFactory">F</a>&nbsp;existingFactory,
+     <a href="AbstractUiWidgetFactory.html" title="type parameter in AbstractUiWidgetFactory">F</a>&nbsp;newFactory)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#registerFactory(F)">registerFactory</a></span>&#8203;(<a href="AbstractUiWidgetFactory.html" title="type parameter in AbstractUiWidgetFactory">F</a>&nbsp;factory)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#registerFactoryWithoutType(F)">registerFactoryWithoutType</a></span>&#8203;(<a href="AbstractUiWidgetFactory.html" title="type parameter in AbstractUiWidgetFactory">F</a>&nbsp;factory)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -257,6 +273,58 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>factory</code> - the <a href="UiSingleWidgetFactory.html" title="interface in io.github.mmm.ui.api.factory"><code>UiSingleWidgetFactory</code></a> to register.</dd>
+</dl>
+</li>
+</ul>
+<a id="merge(io.github.mmm.ui.api.factory.UiSingleWidgetFactory,io.github.mmm.ui.api.factory.UiSingleWidgetFactory)">
+<!--   -->
+</a><a id="merge(F,F)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>merge</h4>
+<pre class="methodSignature">protected&nbsp;<a href="AbstractUiWidgetFactory.html" title="type parameter in AbstractUiWidgetFactory">F</a>&nbsp;merge&#8203;(<a href="AbstractUiWidgetFactory.html" title="type parameter in AbstractUiWidgetFactory">F</a>&nbsp;existingFactory,
+                  <a href="AbstractUiWidgetFactory.html" title="type parameter in AbstractUiWidgetFactory">F</a>&nbsp;newFactory)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>existingFactory</code> - the existing <a href="UiSingleWidgetFactory.html" title="interface in io.github.mmm.ui.api.factory"><code>UiSingleWidgetFactory</code></a> to merge.</dd>
+<dd><code>newFactory</code> - the new <a href="UiSingleWidgetFactory.html" title="interface in io.github.mmm.ui.api.factory"><code>UiSingleWidgetFactory</code></a> to merge.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the merged <a href="UiSingleWidgetFactory.html" title="interface in io.github.mmm.ui.api.factory"><code>UiSingleWidgetFactory</code></a> or <code>null</code> if not able to merge and a
+         <a href="../../../../../../../io.github.mmm.base/io/github/mmm/base/exception/DuplicateObjectException.html" title="class in io.github.mmm.base.exception"><code>DuplicateObjectException</code></a> shall be thrown.</dd>
+</dl>
+</li>
+</ul>
+<a id="registerFactoryWithoutType(io.github.mmm.ui.api.factory.UiSingleWidgetFactory)">
+<!--   -->
+</a><a id="registerFactoryWithoutType(F)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>registerFactoryWithoutType</h4>
+<pre class="methodSignature">protected&nbsp;void&nbsp;registerFactoryWithoutType&#8203;(<a href="AbstractUiWidgetFactory.html" title="type parameter in AbstractUiWidgetFactory">F</a>&nbsp;factory)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>factory</code> - the <a href="UiSingleWidgetFactory.html" title="interface in io.github.mmm.ui.api.factory"><code>UiSingleWidgetFactory</code></a> without a <a href="UiSingleWidgetFactory.html#getType()"><code>type</code></a> to
+        register.</dd>
+</dl>
+</li>
+</ul>
+<a id="getForType(java.lang.Class)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getForType</h4>
+<pre class="methodSignature">protected&nbsp;<a href="AbstractUiWidgetFactory.html" title="type parameter in AbstractUiWidgetFactory">F</a>&nbsp;getForType&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;?&gt;&nbsp;type)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>type</code> - the <a href="UiSingleWidgetFactory.html#getType()"><code>type</code></a> of the according <a href="UiSingleWidgetFactory.html" title="interface in io.github.mmm.ui.api.factory"><code>UiSingleWidgetFactory</code></a>.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the <a href="UiSingleWidgetFactory.html" title="interface in io.github.mmm.ui.api.factory"><code>UiSingleWidgetFactory</code></a> <a href="UiSingleWidgetFactory.html#getType()"><code>of</code></a> the given <code>type</code> or
+         <code>null</code> if no such factory is registered.</dd>
 </dl>
 </li>
 </ul>

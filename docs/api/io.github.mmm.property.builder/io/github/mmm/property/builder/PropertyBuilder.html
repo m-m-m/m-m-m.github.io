@@ -283,13 +283,13 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="PropertyBuilder.html" title="type parameter in PropertyBuilder">SELF</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#metadata(io.github.mmm.property.PropertyMetadata)">metadata</a></span>&#8203;(<a href="../../../../../../io.github.mmm.property/io/github/mmm/property/PropertyMetadata.html" title="interface in io.github.mmm.property">PropertyMetadata</a>&lt;<a href="PropertyBuilder.html" title="type parameter in PropertyBuilder">V</a>&gt;&nbsp;newMetadata)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#metadata(java.lang.String,java.lang.Object)">metadata</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;metadataKey,
+        <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;metadataValue)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="PropertyBuilder.html" title="type parameter in PropertyBuilder">SELF</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#metadata(java.lang.String,java.lang.Object)">metadata</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;metadataKey,
-        <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;metadataValue)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#metadataFactory(io.github.mmm.property.PropertyMetadataFactory)">metadataFactory</a></span>&#8203;(<a href="../../../../../../io.github.mmm.property/io/github/mmm/property/PropertyMetadataFactory.html" title="interface in io.github.mmm.property">PropertyMetadataFactory</a>&nbsp;propertyMetadataFactory)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i12" class="altColor">
@@ -444,6 +444,23 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 </dl>
 </li>
 </ul>
+<a id="metadataFactory(io.github.mmm.property.PropertyMetadataFactory)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>metadataFactory</h4>
+<pre class="methodSignature">public&nbsp;<a href="PropertyBuilder.html" title="type parameter in PropertyBuilder">SELF</a>&nbsp;metadataFactory&#8203;(<a href="../../../../../../io.github.mmm.property/io/github/mmm/property/PropertyMetadataFactory.html" title="interface in io.github.mmm.property">PropertyMetadataFactory</a>&nbsp;propertyMetadataFactory)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>propertyMetadataFactory</code> - the <a href="../../../../../../io.github.mmm.property/io/github/mmm/property/PropertyMetadataFactory.html" title="interface in io.github.mmm.property"><code>PropertyMetadataFactory</code></a> used to
+        <a href="../../../../../../io.github.mmm.property/io/github/mmm/property/PropertyMetadataFactory.html#create(io.github.mmm.validation.Validator,java.util.function.Supplier,java.lang.reflect.Type,java.util.Map)"><code>create</code></a> instances of
+        <a href="../../../../../../io.github.mmm.property/io/github/mmm/property/PropertyMetadata.html" title="interface in io.github.mmm.property"><code>PropertyMetadata</code></a>.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>this builder itself (<code>this</code>) for fluent API calls.</dd>
+</dl>
+</li>
+</ul>
 <a id="valueExpression(java.util.function.Supplier)">
 <!--   -->
 </a>
@@ -472,21 +489,6 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>initialValue</code> - the <a href="../../../../../../io.github.mmm.property/io/github/mmm/property/Property.html#get()"><code>initial value</code></a> of the <a href="../../../../../../io.github.mmm.property/io/github/mmm/property/Property.html" title="class in io.github.mmm.property"><code>Property</code></a> to build.</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>this builder itself (<code>this</code>) for fluent API calls.</dd>
-</dl>
-</li>
-</ul>
-<a id="metadata(io.github.mmm.property.PropertyMetadata)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>metadata</h4>
-<pre class="methodSignature">public&nbsp;<a href="PropertyBuilder.html" title="type parameter in PropertyBuilder">SELF</a>&nbsp;metadata&#8203;(<a href="../../../../../../io.github.mmm.property/io/github/mmm/property/PropertyMetadata.html" title="interface in io.github.mmm.property">PropertyMetadata</a>&lt;<a href="PropertyBuilder.html" title="type parameter in PropertyBuilder">V</a>&gt;&nbsp;newMetadata)</pre>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>newMetadata</code> - the <a href="../../../../../../io.github.mmm.property/io/github/mmm/property/PropertyMetadata.html" title="interface in io.github.mmm.property"><code>PropertyMetadata</code></a>.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>this builder itself (<code>this</code>) for fluent API calls.</dd>
 </dl>

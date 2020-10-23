@@ -149,12 +149,16 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="rowColor">
+<th class="colFirst" scope="row"><a href="#io.github.mmm.nls.exception">io.github.mmm.nls.exception</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="#io.github.mmm.validation">io.github.mmm.validation</a></th>
 <td class="colLast">
 <div class="block">Contains a simple but powerful API for validation.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="#io.github.mmm.validation.string">io.github.mmm.validation.string</a></th>
 <td class="colLast">
 <div class="block">Contains validation support for <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>String</code></a> and <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>CharSequence</code></a>.</div>
@@ -243,6 +247,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tr class="altColor">
 <td class="colFirst"><code><a href="../Localizable.html" title="interface in io.github.mmm.base.i18n">Localizable</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">ApplicationException.</span><code><span class="memberNameLink"><a href="../../exception/ApplicationException.html#getNlsMessage()">getNlsMessage</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../Localizable.html" title="interface in io.github.mmm.base.i18n">Localizable</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">ApplicationException.</span><code><span class="memberNameLink"><a href="../../exception/ApplicationException.html#getNlsMessage(java.lang.Throwable)">getNlsMessage</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Throwable</a>&nbsp;error)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </tbody>
@@ -731,6 +740,38 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
                  <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>...&nbsp;names)</code></th>
 <td class="colLast">
 <div class="block">The constructor.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
+<section role="region"><a id="io.github.mmm.nls.exception">
+<!--   -->
+</a>
+<h3>Uses of <a href="../Localizable.html" title="interface in io.github.mmm.base.i18n">Localizable</a> in <a href="../../../../../../../io.github.mmm.nls/io/github/mmm/nls/exception/package-summary.html">io.github.mmm.nls.exception</a></h3>
+<table class="useSummary">
+<caption><span>Classes in <a href="../../../../../../../io.github.mmm.nls/io/github/mmm/nls/exception/package-summary.html">io.github.mmm.nls.exception</a> that implement <a href="../Localizable.html" title="interface in io.github.mmm.base.i18n">Localizable</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Class</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../../io.github.mmm.nls/io/github/mmm/nls/exception/ObjectNotFoundUserException.html" title="class in io.github.mmm.nls.exception">ObjectNotFoundUserException</a></span></code></th>
+<td class="colLast">
+<div class="block"><a href="../../exception/ObjectNotFoundException.html" title="class in io.github.mmm.base.exception"><code>ObjectNotFoundException</code></a> <a href="../../../../../../../io.github.mmm.nls/io/github/mmm/nls/exception/ObjectNotFoundUserException.html#isForUser()"><code>for user</code></a> with NLS support.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../../io.github.mmm.nls/io/github/mmm/nls/exception/TechnicalErrorUserException.html" title="class in io.github.mmm.nls.exception">TechnicalErrorUserException</a></span></code></th>
+<td class="colLast">
+<div class="block">A <a href="../../../../../../../io.github.mmm.nls/io/github/mmm/nls/exception/TechnicalErrorUserException.html" title="class in io.github.mmm.nls.exception"><code>TechnicalErrorUserException</code></a> is wrapping an arbitrary technical error to a generic exception for end-users
+ or clients.</div>
 </td>
 </tr>
 </tbody>

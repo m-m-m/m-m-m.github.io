@@ -117,7 +117,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="header">
 <div class="subTitle"><span class="moduleLabelInType">Module</span>&nbsp;<a href="../../../../../../module-summary.html">io.github.mmm.ui.fx.core</a></div>
 <div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">io.github.mmm.ui.fx.widget</a></div>
-<h2 title="Class FxActiveValidatableWidget" class="title">Class FxActiveValidatableWidget&lt;W extends javafx.scene.control.Control,&#8203;V&gt;</h2>
+<h2 title="Class FxActiveValidatableWidget" class="title">Class FxActiveValidatableWidget&lt;W extends javafx.scene.layout.Region,&#8203;V&gt;</h2>
 </div>
 <div class="contentContainer">
 <ul class="inheritance">
@@ -133,16 +133,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li><a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidgetWrapper.html" title="class in io.github.mmm.ui.spi.widget">io.github.mmm.ui.spi.widget.AbstractUiNativeWidgetWrapper</a>&lt;W&gt;</li>
 <li>
 <ul class="inheritance">
-<li><a href="FxWidgetObject.html" title="class in io.github.mmm.ui.fx.widget">io.github.mmm.ui.fx.widget.FxWidgetObject</a>&lt;W&gt;</li>
+<li><a href="FxWidget.html" title="class in io.github.mmm.ui.fx.widget">io.github.mmm.ui.fx.widget.FxWidget</a>&lt;W&gt;</li>
 <li>
 <ul class="inheritance">
 <li><a href="FxWidgetStyleable.html" title="class in io.github.mmm.ui.fx.widget">io.github.mmm.ui.fx.widget.FxWidgetStyleable</a>&lt;W&gt;</li>
 <li>
 <ul class="inheritance">
 <li><a href="FxWidgetNode.html" title="class in io.github.mmm.ui.fx.widget">io.github.mmm.ui.fx.widget.FxWidgetNode</a>&lt;W&gt;</li>
-<li>
-<ul class="inheritance">
-<li><a href="FxWidgetControl.html" title="class in io.github.mmm.ui.fx.widget">io.github.mmm.ui.fx.widget.FxWidgetControl</a>&lt;W&gt;</li>
 <li>
 <ul class="inheritance">
 <li><a href="FxActiveWidget.html" title="class in io.github.mmm.ui.fx.widget">io.github.mmm.ui.fx.widget.FxActiveWidget</a>&lt;W&gt;</li>
@@ -166,26 +163,24 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </ul>
 </li>
 </ul>
-</li>
-</ul>
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
-<dd><code>W</code> - type of <a href="FxWidgetObject.html#getWidget()"><code>JavaFx widget</code></a>.</dd>
+<dd><code>W</code> - type of <a href="FxWidget.html#getWidget()"><code>JavaFx widget</code></a>.</dd>
 <dd><code>V</code> - type of <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#getValue()"><code>value</code></a>.</dd>
 </dl>
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../../../../../../../io.github.mmm.event/io/github/mmm/event/EventSource.html" title="interface in io.github.mmm.event">EventSource</a>&lt;<a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/event/UiEvent.html" title="class in io.github.mmm.ui.api.event">UiEvent</a>,&#8203;<a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/event/UiEventListener.html" title="interface in io.github.mmm.ui.api.event">UiEventListener</a>&gt;</code>, <code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadId.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadId</a></code>, <code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadValid.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadValid</a></code>, <code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadValue.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadValue</a>&lt;V&gt;</code>, <code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadVisible.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadVisible</a></code>, <code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteId.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteId</a></code>, <code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteTooltip.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteTooltip</a></code>, <code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteValidationFailure.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteValidationFailure</a></code>, <code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteValue.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteValue</a>&lt;V&gt;</code>, <code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteValueForUser.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteValueForUser</a>&lt;V&gt;</code>, <code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteVisible.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteVisible</a></code>, <code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiActiveWidget.html" title="interface in io.github.mmm.ui.api.widget">UiActiveWidget</a></code>, <code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiAtomicWidget.html" title="interface in io.github.mmm.ui.api.widget">UiAtomicWidget</a></code>, <code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiNativeWidget.html" title="interface in io.github.mmm.ui.api.widget">UiNativeWidget</a></code>, <code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiRegularWidget.html" title="interface in io.github.mmm.ui.api.widget">UiRegularWidget</a></code>, <code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html" title="interface in io.github.mmm.ui.api.widget">UiWidget</a></code>, <code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html" title="interface in io.github.mmm.ui.api.widget.value">UiValidatableWidget</a>&lt;V&gt;</code>, <code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValuedWidget.html" title="interface in io.github.mmm.ui.api.widget.value">UiValuedWidget</a>&lt;V&gt;</code>, <code><a href="FxAtomicWidgetMixin.html" title="interface in io.github.mmm.ui.fx.widget">FxAtomicWidgetMixin</a>&lt;W&gt;</code>, <code><a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/UiNativeWidgetWrapper.html" title="interface in io.github.mmm.ui.spi.widget">UiNativeWidgetWrapper</a>&lt;W&gt;</code></dd>
+<dd><code><a href="../../../../../../../io.github.mmm.event/io/github/mmm/event/EventSource.html" title="interface in io.github.mmm.event">EventSource</a>&lt;<a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/event/UiEvent.html" title="class in io.github.mmm.ui.api.event">UiEvent</a>,&#8203;<a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/event/UiEventListener.html" title="interface in io.github.mmm.ui.api.event">UiEventListener</a>&gt;</code>, <code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadEnabled.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadEnabled</a></code>, <code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadId.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadId</a></code>, <code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadValid.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadValid</a></code>, <code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadValue.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadValue</a>&lt;V&gt;</code>, <code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadVisible.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadVisible</a></code>, <code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteEnabled.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteEnabled</a></code>, <code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteId.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteId</a></code>, <code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteReadOnly.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteReadOnly</a></code>, <code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteTooltip.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteTooltip</a></code>, <code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteValidationFailure.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteValidationFailure</a></code>, <code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteValue.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteValue</a>&lt;V&gt;</code>, <code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteValueForUser.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteValueForUser</a>&lt;V&gt;</code>, <code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteVisible.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteVisible</a></code>, <code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiActiveWidget.html" title="interface in io.github.mmm.ui.api.widget">UiActiveWidget</a></code>, <code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiNativeWidget.html" title="interface in io.github.mmm.ui.api.widget">UiNativeWidget</a></code>, <code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html" title="interface in io.github.mmm.ui.api.widget">UiWidget</a></code>, <code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html" title="interface in io.github.mmm.ui.api.widget.value">UiValidatableWidget</a>&lt;V&gt;</code>, <code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValuedWidget.html" title="interface in io.github.mmm.ui.api.widget.value">UiValuedWidget</a>&lt;V&gt;</code>, <code><a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/UiNativeWidgetWrapper.html" title="interface in io.github.mmm.ui.spi.widget">UiNativeWidgetWrapper</a>&lt;W&gt;</code></dd>
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><code><a href="../../../../../../../io.github.mmm.ui.fx.data/io/github/mmm/ui/fx/widget/data/FxDataList.html" title="class in io.github.mmm.ui.fx.widget.data">FxDataList</a></code>, <code><a href="input/FxInput.html" title="class in io.github.mmm.ui.fx.widget.input">FxInput</a></code></dd>
+<dd><code><a href="../../../../../../../io.github.mmm.ui.fx.data/io/github/mmm/ui/fx/widget/data/FxDataTable.html" title="class in io.github.mmm.ui.fx.widget.data">FxDataTable</a></code>, <code><a href="input/FxInput.html" title="class in io.github.mmm.ui.fx.widget.input">FxInput</a></code></dd>
 </dl>
 <hr>
-<pre>public abstract class <span class="typeNameLabel">FxActiveValidatableWidget&lt;W extends javafx.scene.control.Control,&#8203;V&gt;</span>
+<pre>public abstract class <span class="typeNameLabel">FxActiveValidatableWidget&lt;W extends javafx.scene.layout.Region,&#8203;V&gt;</span>
 extends <a href="FxActiveWidget.html" title="class in io.github.mmm.ui.fx.widget">FxActiveWidget</a>&lt;W&gt;
 implements <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html" title="interface in io.github.mmm.ui.api.widget.value">UiValidatableWidget</a>&lt;V&gt;</pre>
 <div class="block">Implementation of <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/input/UiInput.html" title="interface in io.github.mmm.ui.api.widget.input"><code>UiInput</code></a> for JavaFx.</div>
@@ -207,18 +202,11 @@ implements <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm
 </a>
 <h3>Field Summary</h3>
 <ul class="blockList">
-<li class="blockList"><a id="fields.inherited.from.class.io.github.mmm.ui.fx.widget.FxWidgetObject">
+<li class="blockList"><a id="fields.inherited.from.class.io.github.mmm.ui.fx.widget.FxWidget">
 <!--   -->
 </a>
-<h3>Fields inherited from class&nbsp;io.github.mmm.ui.fx.widget.<a href="FxWidgetObject.html" title="class in io.github.mmm.ui.fx.widget">FxWidgetObject</a></h3>
-<code><a href="FxWidgetObject.html#CLASS_INVALID">CLASS_INVALID</a>, <a href="FxWidgetObject.html#CLASS_READ_ONLY">CLASS_READ_ONLY</a>, <a href="FxWidgetObject.html#widget">widget</a></code></li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a id="fields.inherited.from.class.io.github.mmm.ui.api.attribute.AttributeReadId">
-<!--   -->
-</a>
-<h3>Fields inherited from interface&nbsp;io.github.mmm.ui.api.attribute.<a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadId.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadId</a></h3>
-<code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadId.html#ID_SEPARATOR">ID_SEPARATOR</a></code></li>
+<h3>Fields inherited from class&nbsp;io.github.mmm.ui.fx.widget.<a href="FxWidget.html" title="class in io.github.mmm.ui.fx.widget">FxWidget</a></h3>
+<code><a href="FxWidget.html#CLASS_INVALID">CLASS_INVALID</a>, <a href="FxWidget.html#CLASS_READ_ONLY">CLASS_READ_ONLY</a>, <a href="FxWidget.html#widget">widget</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="fields.inherited.from.class.io.github.mmm.ui.api.attribute.AttributeWriteValidationFailure">
@@ -285,7 +273,7 @@ implements <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#doSetValidationFailure(java.lang.String)">doSetValidationFailure</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;error)</code></th>
 <td class="colLast">
-<div class="block">Called from <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#setValidationFailure(java.lang.String)"><code>AbstractUiNativeWidget.setValidationFailure(String)</code></a> if the failure actually changed.</div>
+<div class="block">Called from <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteValidationFailure.html#setValidationFailure(java.lang.String)"><code>AttributeWriteValidationFailure.setValidationFailure(String)</code></a> if the failure actually changed.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
@@ -312,7 +300,7 @@ implements <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onValueChanged(boolean)">onValueChanged</a></span>&#8203;(boolean&nbsp;programmatic)</code></th>
 <td class="colLast">
-<div class="block">Called from <a href="FxWidgetObject.html#onValueChange(javafx.beans.value.ObservableValue,V,V)"><code>FxWidgetObject.onValueChange(ObservableValue, Object, Object)</code></a> if triggered by end-user.</div>
+<div class="block">Called from <a href="FxWidget.html#onValueChange(javafx.beans.value.ObservableValue,V,V)"><code>FxWidget.onValueChange(ObservableValue, Object, Object)</code></a> if triggered by end-user.</div>
 </td>
 </tr>
 <tr id="i6" class="altColor">
@@ -347,42 +335,42 @@ implements <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;io.github.mmm.ui.fx.widget.<a href="FxActiveWidget.html" title="class in io.github.mmm.ui.fx.widget">FxActiveWidget</a></h3>
-<code><a href="FxActiveWidget.html#getAccessKey()">getAccessKey</a>, <a href="FxActiveWidget.html#isFocused()">isFocused</a>, <a href="FxActiveWidget.html#registerHandlers()">registerHandlers</a>, <a href="FxActiveWidget.html#setAccessKey(char)">setAccessKey</a>, <a href="FxActiveWidget.html#setFocused()">setFocused</a>, <a href="FxActiveWidget.html#setParent(io.github.mmm.ui.api.widget.composite.UiComposite)">setParent</a></code></li>
+<code><a href="FxActiveWidget.html#getAccessKey()">getAccessKey</a>, <a href="FxActiveWidget.html#isFocused()">isFocused</a>, <a href="FxActiveWidget.html#registerFocusChangeHandler()">registerFocusChangeHandler</a>, <a href="FxActiveWidget.html#registerHandlers()">registerHandlers</a>, <a href="FxActiveWidget.html#setAccessKey(char)">setAccessKey</a>, <a href="FxActiveWidget.html#setFocused()">setFocused</a>, <a href="FxActiveWidget.html#setParent(io.github.mmm.ui.api.widget.composite.UiComposite)">setParent</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.fx.widget.FxWidgetNode">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;io.github.mmm.ui.fx.widget.<a href="FxWidgetNode.html" title="class in io.github.mmm.ui.fx.widget">FxWidgetNode</a></h3>
-<code><a href="FxWidgetNode.html#getTopWidget()">getTopWidget</a>, <a href="FxWidgetNode.html#setEnabledNative(boolean)">setEnabledNative</a>, <a href="FxWidgetNode.html#setId(java.lang.String)">setId</a>, <a href="FxWidgetNode.html#setReadOnlyNative(boolean)">setReadOnlyNative</a>, <a href="FxWidgetNode.html#setVisibleNative(boolean)">setVisibleNative</a></code></li>
+<code><a href="FxWidgetNode.html#getTopWidget()">getTopWidget</a>, <a href="FxWidgetNode.html#setEnabledNative(boolean)">setEnabledNative</a>, <a href="FxWidgetNode.html#setIdNative(java.lang.String)">setIdNative</a>, <a href="FxWidgetNode.html#setReadOnlyNative(boolean)">setReadOnlyNative</a>, <a href="FxWidgetNode.html#setTooltipNative(java.lang.String)">setTooltipNative</a>, <a href="FxWidgetNode.html#setVisibleNative(boolean)">setVisibleNative</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.fx.widget.FxWidgetStyleable">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;io.github.mmm.ui.fx.widget.<a href="FxWidgetStyleable.html" title="class in io.github.mmm.ui.fx.widget">FxWidgetStyleable</a></h3>
-<code><a href="FxWidgetStyleable.html#createStyles()">createStyles</a>, <a href="FxWidgetStyleable.html#getId()">getId</a></code></li>
+<code><a href="FxWidgetStyleable.html#createStyles()">createStyles</a></code></li>
 </ul>
 <ul class="blockList">
-<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.fx.widget.FxWidgetObject">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.fx.widget.FxWidget">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;io.github.mmm.ui.fx.widget.<a href="FxWidgetObject.html" title="class in io.github.mmm.ui.fx.widget">FxWidgetObject</a></h3>
-<code><a href="FxWidgetObject.html#getTopNode(io.github.mmm.ui.api.widget.UiWidget)">getTopNode</a>, <a href="FxWidgetObject.html#getWidget()">getWidget</a>, <a href="FxWidgetObject.html#onAction(javafx.event.ActionEvent)">onAction</a>, <a href="FxWidgetObject.html#onClose(javafx.beans.value.ObservableValue,java.lang.Boolean,java.lang.Boolean)">onClose</a>, <a href="FxWidgetObject.html#onFocusChange(javafx.beans.value.ObservableValue,java.lang.Boolean,java.lang.Boolean)">onFocusChange</a>, <a href="FxWidgetObject.html#onValueChange(javafx.beans.value.ObservableValue,V,V)">onValueChange</a></code></li>
+<h3>Methods inherited from class&nbsp;io.github.mmm.ui.fx.widget.<a href="FxWidget.html" title="class in io.github.mmm.ui.fx.widget">FxWidget</a></h3>
+<code><a href="FxWidget.html#getTopNode(io.github.mmm.ui.api.widget.UiWidget)">getTopNode</a>, <a href="FxWidget.html#getWidget()">getWidget</a>, <a href="FxWidget.html#onAction(javafx.event.ActionEvent)">onAction</a>, <a href="FxWidget.html#onClose(javafx.event.Event)">onClose</a>, <a href="FxWidget.html#onFocusChange(javafx.beans.value.ObservableValue,java.lang.Boolean,java.lang.Boolean)">onFocusChange</a>, <a href="FxWidget.html#onValueChange(javafx.beans.value.ObservableValue,V,V)">onValueChange</a>, <a href="FxWidget.html#setTooltip(javafx.scene.control.Control,java.lang.String)">setTooltip</a>, <a href="FxWidget.html#setWidget(W)">setWidget</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.spi.widget.AbstractUiNativeWidgetWrapper">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;io.github.mmm.ui.spi.widget.<a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidgetWrapper.html" title="class in io.github.mmm.ui.spi.widget">AbstractUiNativeWidgetWrapper</a></h3>
-<code><a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidgetWrapper.html#getStyles()">getStyles</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidgetWrapper.html#onStylesChanged(java.lang.String)">onStylesChanged</a></code></li>
+<code><a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidgetWrapper.html#createDefaultStyles()">createDefaultStyles</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidgetWrapper.html#getId()">getId</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidgetWrapper.html#getStyles()">getStyles</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidgetWrapper.html#getTooltip()">getTooltip</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidgetWrapper.html#onStylesChanged(java.lang.String)">onStylesChanged</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidgetWrapper.html#setId(java.lang.String)">setId</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidgetWrapper.html#setTooltip(java.lang.String)">setTooltip</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.spi.widget.AbstractUiNativeWidget">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;io.github.mmm.ui.spi.widget.<a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html" title="class in io.github.mmm.ui.spi.widget">AbstractUiNativeWidget</a></h3>
-<code><a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#addListener(io.github.mmm.ui.api.event.UiEventListener,boolean)">addListener</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#dispose()">dispose</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#doDispose()">doDispose</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#doGetEnabledState(io.github.mmm.ui.spi.widget.AbstractUiNativeWidget)">doGetEnabledState</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#doGetVisibleState(io.github.mmm.ui.spi.widget.AbstractUiNativeWidget)">doGetVisibleState</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#doSetEnabledState(int)">doSetEnabledState</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#doSetEnabledState(io.github.mmm.ui.spi.widget.AbstractUiNativeWidget,int)">doSetEnabledState</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#doSetVisibleState(int)">doSetVisibleState</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#doSetVisibleState(io.github.mmm.ui.spi.widget.AbstractUiNativeWidget,int)">doSetVisibleState</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#ensureHandlers()">ensureHandlers</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#fireEvent(io.github.mmm.ui.api.event.UiEvent)">fireEvent</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#getEventAdapter()">getEventAdapter</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#getParent()">getParent</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#getProgrammaticEventType()">getProgrammaticEventType</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#getReadOnlyFixed()">getReadOnlyFixed</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#getValidationFailure()">getValidationFailure</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#hasListeners()">hasListeners</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#isDisposed()">isDisposed</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#isEnabled(io.github.mmm.ui.api.datatype.bitmask.BitMask)">isEnabled</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#isInitiallyVisible()">isInitiallyVisible</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#isReadOnly()">isReadOnly</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#isValid()">isValid</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#isVisible(io.github.mmm.ui.api.datatype.bitmask.BitMask)">isVisible</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#isVisibleWithoutRoot()">isVisibleWithoutRoot</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#removeListener(io.github.mmm.ui.api.event.UiEventListener)">removeListener</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#requireNotDisposed()">requireNotDisposed</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#setEnabled(boolean,io.github.mmm.ui.api.datatype.bitmask.BitMask)">setEnabled</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#setProgrammaticEventType(io.github.mmm.ui.api.event.UiEventType)">setProgrammaticEventType</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#setReadOnly(boolean)">setReadOnly</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#setReadOnlyFixed(java.lang.Boolean)">setReadOnlyFixed</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#setValidationFailure(java.lang.String)">setValidationFailure</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#setVisible(boolean,io.github.mmm.ui.api.datatype.bitmask.BitMask)">setVisible</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#unwrap()">unwrap</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#validateDown(io.github.mmm.ui.api.datatype.UiValidState)">validateDown</a></code></li>
+<code><a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#addListener(io.github.mmm.ui.api.event.UiEventListener,boolean)">addListener</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#dispose()">dispose</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#doDispose()">doDispose</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#doGetEnabledState(io.github.mmm.ui.spi.widget.AbstractUiNativeWidget)">doGetEnabledState</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#doGetVisibleState(io.github.mmm.ui.spi.widget.AbstractUiNativeWidget)">doGetVisibleState</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#doSetEnabledState(int)">doSetEnabledState</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#doSetEnabledState(io.github.mmm.ui.spi.widget.AbstractUiNativeWidget,int)">doSetEnabledState</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#doSetVisibleState(int)">doSetVisibleState</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#doSetVisibleState(io.github.mmm.ui.spi.widget.AbstractUiNativeWidget,int)">doSetVisibleState</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#ensureHandlers()">ensureHandlers</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#fireEvent(io.github.mmm.ui.api.event.UiEvent)">fireEvent</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#getEventAdapter()">getEventAdapter</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#getParent()">getParent</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#getProgrammaticEventType()">getProgrammaticEventType</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#getReadOnlyFixed()">getReadOnlyFixed</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#getValidationFailure()">getValidationFailure</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#hasListeners()">hasListeners</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#isDisposed()">isDisposed</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#isEnabled(io.github.mmm.ui.api.datatype.bitmask.BitMask)">isEnabled</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#isInitiallyVisible()">isInitiallyVisible</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#isReadOnly()">isReadOnly</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#isValid()">isValid</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#isVisible(io.github.mmm.ui.api.datatype.bitmask.BitMask)">isVisible</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#isVisibleWithoutRoot()">isVisibleWithoutRoot</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#removeListener(io.github.mmm.ui.api.event.UiEventListener)">removeListener</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#requireNotDisposed()">requireNotDisposed</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#setEnabled(boolean,io.github.mmm.ui.api.datatype.bitmask.BitMask)">setEnabled</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#setProgrammaticEventType(io.github.mmm.ui.api.event.UiEventType)">setProgrammaticEventType</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#setReadOnly(boolean)">setReadOnly</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#setReadOnlyFixed(java.lang.Boolean)">setReadOnlyFixed</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#setValidationFailure(java.lang.String,boolean)">setValidationFailure</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#setVisible(boolean,io.github.mmm.ui.api.datatype.bitmask.BitMask)">setVisible</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#unwrap()">unwrap</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#validateDown(io.github.mmm.ui.api.datatype.UiValidState)">validateDown</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.api.widget.AbstractUiWidget">
@@ -413,11 +401,18 @@ implements <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm
 <code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteId.html#setId(java.lang.String)">setId</a></code></li>
 </ul>
 <ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.api.attribute.AttributeWriteTooltip">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;io.github.mmm.ui.api.attribute.<a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteTooltip.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteTooltip</a></h3>
+<code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteTooltip.html#getTooltip()">getTooltip</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteTooltip.html#setTooltip(java.lang.String)">setTooltip</a></code></li>
+</ul>
+<ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.api.attribute.AttributeWriteValidationFailure">
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;io.github.mmm.ui.api.attribute.<a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteValidationFailure.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteValidationFailure</a></h3>
-<code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteValidationFailure.html#getValidationFailure()">getValidationFailure</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteValidationFailure.html#setValidationFailure(java.lang.String)">setValidationFailure</a></code></li>
+<code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteValidationFailure.html#getValidationFailure()">getValidationFailure</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteValidationFailure.html#setValidationFailure(java.lang.String)">setValidationFailure</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteValidationFailure.html#setValidationFailure(java.lang.String,boolean)">setValidationFailure</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.event.EventSource">
@@ -427,25 +422,11 @@ implements <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm
 <code><a href="../../../../../../../io.github.mmm.event/io/github/mmm/event/EventSource.html#addListener(L)">addListener</a>, <a href="../../../../../../../io.github.mmm.event/io/github/mmm/event/EventSource.html#addListener(L,boolean)">addListener</a>, <a href="../../../../../../../io.github.mmm.event/io/github/mmm/event/EventSource.html#addWeakListener(L)">addWeakListener</a>, <a href="../../../../../../../io.github.mmm.event/io/github/mmm/event/EventSource.html#removeListener(L)">removeListener</a></code></li>
 </ul>
 <ul class="blockList">
-<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.fx.widget.FxAtomicWidgetMixin">
-<!--   -->
-</a>
-<h3>Methods inherited from interface&nbsp;io.github.mmm.ui.fx.widget.<a href="FxAtomicWidgetMixin.html" title="interface in io.github.mmm.ui.fx.widget">FxAtomicWidgetMixin</a></h3>
-<code><a href="FxAtomicWidgetMixin.html#getTooltip()">getTooltip</a>, <a href="FxAtomicWidgetMixin.html#setTooltip(java.lang.String)">setTooltip</a></code></li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.spi.widget.UiNativeWidgetWrapper">
-<!--   -->
-</a>
-<h3>Methods inherited from interface&nbsp;io.github.mmm.ui.spi.widget.<a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/UiNativeWidgetWrapper.html" title="interface in io.github.mmm.ui.spi.widget">UiNativeWidgetWrapper</a></h3>
-<code><a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/UiNativeWidgetWrapper.html#getTopWidget()">getTopWidget</a>, <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/UiNativeWidgetWrapper.html#getWidget()">getWidget</a></code></li>
-</ul>
-<ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.api.widget.value.UiValidatableWidget">
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;io.github.mmm.ui.api.widget.value.<a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html" title="interface in io.github.mmm.ui.api.widget.value">UiValidatableWidget</a></h3>
-<code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#getValue()">getValue</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#getValueOrThrow()">getValueOrThrow</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#isValid()">isValid</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#resetValue()">resetValue</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#setValue(V)">setValue</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#setValueForUser(V)">setValueForUser</a></code></li>
+<code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#getValue()">getValue</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#getValueOrThrow()">getValueOrThrow</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#isValid()">isValid</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#reset()">reset</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#setValue(V)">setValue</a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#setValueForUser(V)">setValueForUser</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.api.widget.UiWidget">
@@ -470,7 +451,7 @@ implements <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a id="&lt;init&gt;(javafx.scene.control.Control)">
+<a id="&lt;init&gt;(javafx.scene.layout.Region)">
 <!--   -->
 </a><a id="&lt;init&gt;(W)">
 <!--   -->
@@ -482,7 +463,7 @@ implements <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm
 <div class="block">The constructor.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>widget</code> - the <a href="FxWidgetObject.html#getWidget()"><code>JavaFx widget</code></a>.</dd>
+<dd><code>widget</code> - the <a href="FxWidget.html#getWidget()"><code>JavaFx widget</code></a>.</dd>
 </dl>
 </li>
 </ul>
@@ -505,16 +486,16 @@ implements <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm
 <pre class="methodSignature">public&nbsp;<a href="FxActiveValidatableWidget.html" title="type parameter in FxActiveValidatableWidget">V</a>&nbsp;getOriginalValue()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#getOriginalValue()">getOriginalValue</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html" title="interface in io.github.mmm.ui.api.widget.value">UiValidatableWidget</a>&lt;<a href="FxActiveValidatableWidget.html" title="type parameter in FxActiveValidatableWidget">W</a> extends javafx.scene.control.Control&gt;</code></dd>
+<dd><code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#getOriginalValue()">getOriginalValue</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html" title="interface in io.github.mmm.ui.api.widget.value">UiValidatableWidget</a>&lt;<a href="FxActiveValidatableWidget.html" title="type parameter in FxActiveValidatableWidget">W</a> extends javafx.scene.layout.Region&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the original value since it was last set via <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#setOriginalValue(V)"><code>UiValidatableWidget.setOriginalValue(Object)</code></a> or most probably indirectly
          via <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#setValue(V)"><code>UiValidatableWidget.setValue(Object)</code></a>. If this widget is <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html#isModified()"><code>modified</code></a>, <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#getValue()"><code>UiValidatableWidget.getValue()</code></a> will
          return the current value as entered by the end-user while this method will still return the original value.
          <br>
          <b>ATTENTION:</b> The original value shall never be modified to avoid undesired side effects. Various
-         features such as <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#resetValue()"><code>UiValidatableWidget.resetValue()</code></a> rely on this fact.</dd>
+         features such as <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#reset()"><code>UiValidatableWidget.reset()</code></a> rely on this fact.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#resetValue()"><code>UiValidatableWidget.resetValue()</code></a></dd>
+<dd><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#reset()"><code>UiValidatableWidget.reset()</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -529,7 +510,7 @@ implements <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm
 <pre class="methodSignature">public&nbsp;void&nbsp;setOriginalValue&#8203;(<a href="FxActiveValidatableWidget.html" title="type parameter in FxActiveValidatableWidget">V</a>&nbsp;originalValue)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#setOriginalValue(V)">setOriginalValue</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html" title="interface in io.github.mmm.ui.api.widget.value">UiValidatableWidget</a>&lt;<a href="FxActiveValidatableWidget.html" title="type parameter in FxActiveValidatableWidget">W</a> extends javafx.scene.control.Control&gt;</code></dd>
+<dd><code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#setOriginalValue(V)">setOriginalValue</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html" title="interface in io.github.mmm.ui.api.widget.value">UiValidatableWidget</a>&lt;<a href="FxActiveValidatableWidget.html" title="type parameter in FxActiveValidatableWidget">W</a> extends javafx.scene.layout.Region&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>originalValue</code> - the new value of <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#getOriginalValue()"><code>UiValidatableWidget.getOriginalValue()</code></a>.</dd>
 </dl>
@@ -543,7 +524,7 @@ implements <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm
 <h4>doSetValidationFailure</h4>
 <pre class="methodSignature">protected&nbsp;void&nbsp;doSetValidationFailure&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;error)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#doSetValidationFailure(java.lang.String)">AbstractUiNativeWidget</a></code></span></div>
-<div class="block">Called from <a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#setValidationFailure(java.lang.String)"><code>AbstractUiNativeWidget.setValidationFailure(String)</code></a> if the failure actually changed. Do not call manually.</div>
+<div class="block">Called from <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteValidationFailure.html#setValidationFailure(java.lang.String)"><code>AttributeWriteValidationFailure.setValidationFailure(String)</code></a> if the failure actually changed. Do not call manually.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html#doSetValidationFailure(java.lang.String)">doSetValidationFailure</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../io.github.mmm.ui.spi.core/io/github/mmm/ui/spi/widget/AbstractUiNativeWidget.html" title="class in io.github.mmm.ui.spi.widget">AbstractUiNativeWidget</a></code></dd>
@@ -561,7 +542,7 @@ implements <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm
 <pre class="methodSignature">protected&nbsp;void&nbsp;onFocusChanged&#8203;(boolean&nbsp;focusGain)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="FxWidgetObject.html#onFocusChanged(boolean)">onFocusChanged</a></code>&nbsp;in class&nbsp;<code><a href="FxWidgetObject.html" title="class in io.github.mmm.ui.fx.widget">FxWidgetObject</a>&lt;<a href="FxActiveValidatableWidget.html" title="type parameter in FxActiveValidatableWidget">W</a> extends javafx.scene.control.Control&gt;</code></dd>
+<dd><code><a href="FxWidget.html#onFocusChanged(boolean)">onFocusChanged</a></code>&nbsp;in class&nbsp;<code><a href="FxWidget.html" title="class in io.github.mmm.ui.fx.widget">FxWidget</a>&lt;<a href="FxActiveValidatableWidget.html" title="type parameter in FxActiveValidatableWidget">W</a> extends javafx.scene.layout.Region&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>focusGain</code> - <code>true</code> if the focus was gained, <code>false</code> otherwise (focus has been lost).</dd>
 </dl>
@@ -576,7 +557,7 @@ implements <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm
 <pre class="methodSignature">public&nbsp;<a href="../../../../../../../io.github.mmm.validation/io/github/mmm/validation/Validator.html" title="interface in io.github.mmm.validation">Validator</a>&lt;? super <a href="FxActiveValidatableWidget.html" title="type parameter in FxActiveValidatableWidget">V</a>&gt;&nbsp;getValidator()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#getValidator()">getValidator</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html" title="interface in io.github.mmm.ui.api.widget.value">UiValidatableWidget</a>&lt;<a href="FxActiveValidatableWidget.html" title="type parameter in FxActiveValidatableWidget">W</a> extends javafx.scene.control.Control&gt;</code></dd>
+<dd><code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#getValidator()">getValidator</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html" title="interface in io.github.mmm.ui.api.widget.value">UiValidatableWidget</a>&lt;<a href="FxActiveValidatableWidget.html" title="type parameter in FxActiveValidatableWidget">W</a> extends javafx.scene.layout.Region&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the <a href="../../../../../../../io.github.mmm.validation/io/github/mmm/validation/Validator.html" title="interface in io.github.mmm.validation"><code>Validator</code></a> to validate the <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#getValue()"><code>value</code></a> of this input.</dd>
 </dl>
@@ -591,7 +572,7 @@ implements <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm
 <pre class="methodSignature">public&nbsp;void&nbsp;setValidator&#8203;(<a href="../../../../../../../io.github.mmm.validation/io/github/mmm/validation/Validator.html" title="interface in io.github.mmm.validation">Validator</a>&lt;? super <a href="FxActiveValidatableWidget.html" title="type parameter in FxActiveValidatableWidget">V</a>&gt;&nbsp;validator)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#setValidator(io.github.mmm.validation.Validator)">setValidator</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html" title="interface in io.github.mmm.ui.api.widget.value">UiValidatableWidget</a>&lt;<a href="FxActiveValidatableWidget.html" title="type parameter in FxActiveValidatableWidget">W</a> extends javafx.scene.control.Control&gt;</code></dd>
+<dd><code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#setValidator(io.github.mmm.validation.Validator)">setValidator</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html" title="interface in io.github.mmm.ui.api.widget.value">UiValidatableWidget</a>&lt;<a href="FxActiveValidatableWidget.html" title="type parameter in FxActiveValidatableWidget">W</a> extends javafx.scene.layout.Region&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>validator</code> - the new <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#getValidator()"><code>validator</code></a>. To add multiple validators, simply use
         <a href="../../../../../../../io.github.mmm.validation/io/github/mmm/validation/ComposedValidator.html" title="class in io.github.mmm.validation"><code>ComposedValidator</code></a> or <a href="../../../../../../../io.github.mmm.validation/io/github/mmm/validation/Validator.html#append(io.github.mmm.validation.Validator...)"><code>Validator.append(Validator...)</code></a>.</dd>
@@ -638,9 +619,9 @@ implements <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm
                      boolean&nbsp;forUser)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteValueForUser.html#setValue(V,boolean)">setValue</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteValueForUser.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteValueForUser</a>&lt;<a href="FxActiveValidatableWidget.html" title="type parameter in FxActiveValidatableWidget">W</a> extends javafx.scene.control.Control&gt;</code></dd>
+<dd><code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteValueForUser.html#setValue(V,boolean)">setValue</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteValueForUser.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteValueForUser</a>&lt;<a href="FxActiveValidatableWidget.html" title="type parameter in FxActiveValidatableWidget">W</a> extends javafx.scene.layout.Region&gt;</code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#setValue(V,boolean)">setValue</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html" title="interface in io.github.mmm.ui.api.widget.value">UiValidatableWidget</a>&lt;<a href="FxActiveValidatableWidget.html" title="type parameter in FxActiveValidatableWidget">W</a> extends javafx.scene.control.Control&gt;</code></dd>
+<dd><code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#setValue(V,boolean)">setValue</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html" title="interface in io.github.mmm.ui.api.widget.value">UiValidatableWidget</a>&lt;<a href="FxActiveValidatableWidget.html" title="type parameter in FxActiveValidatableWidget">W</a> extends javafx.scene.layout.Region&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>value</code> - the new <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#getValue()"><code>value</code></a>.</dd>
 <dd><code>forUser</code> - - <code>true</code> for <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#setValueForUser(V)"><code>UiValidatableWidget.setValueForUser(Object)</code></a> and <code>false</code> for <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/value/UiValidatableWidget.html#setValue(V)"><code>UiValidatableWidget.setValue(Object)</code></a>.</dd>
@@ -669,11 +650,11 @@ implements <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm
 <li class="blockList">
 <h4>onValueChanged</h4>
 <pre class="methodSignature">protected&nbsp;void&nbsp;onValueChanged&#8203;(boolean&nbsp;programmatic)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="FxWidgetObject.html#onValueChanged(boolean)">FxWidgetObject</a></code></span></div>
-<div class="block">Called from <a href="FxWidgetObject.html#onValueChange(javafx.beans.value.ObservableValue,V,V)"><code>FxWidgetObject.onValueChange(ObservableValue, Object, Object)</code></a> if triggered by end-user.</div>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="FxWidget.html#onValueChanged(boolean)">FxWidget</a></code></span></div>
+<div class="block">Called from <a href="FxWidget.html#onValueChange(javafx.beans.value.ObservableValue,V,V)"><code>FxWidget.onValueChange(ObservableValue, Object, Object)</code></a> if triggered by end-user.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="FxWidgetObject.html#onValueChanged(boolean)">onValueChanged</a></code>&nbsp;in class&nbsp;<code><a href="FxWidgetObject.html" title="class in io.github.mmm.ui.fx.widget">FxWidgetObject</a>&lt;<a href="FxActiveValidatableWidget.html" title="type parameter in FxActiveValidatableWidget">W</a> extends javafx.scene.control.Control&gt;</code></dd>
+<dd><code><a href="FxWidget.html#onValueChanged(boolean)">onValueChanged</a></code>&nbsp;in class&nbsp;<code><a href="FxWidget.html" title="class in io.github.mmm.ui.fx.widget">FxWidget</a>&lt;<a href="FxActiveValidatableWidget.html" title="type parameter in FxActiveValidatableWidget">W</a> extends javafx.scene.layout.Region&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>programmatic</code> - - see <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/event/UiEvent.html#isProgrammatic()"><code>UiEvent.isProgrammatic()</code></a>.</dd>
 </dl>

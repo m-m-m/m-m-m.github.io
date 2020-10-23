@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":18,"i6":18,"i7":18,"i8":6,"i9":18,"i10":18,"i11":18,"i12":18,"i13":18,"i14":18,"i15":18,"i16":18,"i17":18,"i18":6,"i19":18,"i20":18,"i21":18,"i22":18,"i23":6,"i24":18};
+var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":18,"i6":18,"i7":18,"i8":6,"i9":18,"i10":18,"i11":18,"i12":18,"i13":18,"i14":6,"i15":18,"i16":18,"i17":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -129,7 +129,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 <dl>
 <dt>All Known Implementing Classes:</dt>
-<dd><code><a href="AbstractStructuredWriter.html" title="class in io.github.mmm.marshall">AbstractStructuredWriter</a></code></dd>
+<dd><code><a href="AbstractStructuredStringWriter.html" title="class in io.github.mmm.marshall">AbstractStructuredStringWriter</a></code>, <code><a href="AbstractStructuredWriter.html" title="class in io.github.mmm.marshall">AbstractStructuredWriter</a></code></dd>
 </dl>
 <hr>
 <pre>public interface <span class="typeNameLabel">StructuredWriter</span>
@@ -233,71 +233,36 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>default void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#writeValueAsInstant(java.time.Instant)">writeValueAsInstant</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html?is-external=true" title="class or interface in java.time" class="externalLink">Instant</a>&nbsp;value)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#writeValueAsInteger(java.lang.Integer)">writeValueAsInteger</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html?is-external=true" title="class or interface in java.lang" class="externalLink">Integer</a>&nbsp;value)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code>default void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#writeValueAsInteger(java.lang.Integer)">writeValueAsInteger</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html?is-external=true" title="class or interface in java.lang" class="externalLink">Integer</a>&nbsp;value)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i14" class="altColor">
-<td class="colFirst"><code>default void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#writeValueAsLocalDate(java.time.LocalDate)">writeValueAsLocalDate</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;value)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i15" class="rowColor">
-<td class="colFirst"><code>default void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#writeValueAsLocalDateTime(java.time.LocalDateTime)">writeValueAsLocalDateTime</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDateTime.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDateTime</a>&nbsp;value)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i16" class="altColor">
-<td class="colFirst"><code>default void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#writeValueAsLocalTime(java.time.LocalTime)">writeValueAsLocalTime</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalTime</a>&nbsp;value)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i17" class="rowColor">
-<td class="colFirst"><code>default void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#writeValueAsLong(java.lang.Long)">writeValueAsLong</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html?is-external=true" title="class or interface in java.lang" class="externalLink">Long</a>&nbsp;value)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#writeValueAsNull()">writeValueAsNull</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Writes the value <code>null</code> (undefined).</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>default void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#writeValueAsNumber(java.lang.Number)">writeValueAsNumber</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Number.html?is-external=true" title="class or interface in java.lang" class="externalLink">Number</a>&nbsp;value)</code></th>
 <td class="colLast">
 <div class="block">Writes a <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Number.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Number</code></a> value for the current property or <a href="#writeStartArray()"><code>array</code></a> element.<br></div>
 </td>
 </tr>
-<tr id="i20" class="altColor">
-<td class="colFirst"><code>default void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#writeValueAsOffsetDateTime(java.time.OffsetDateTime)">writeValueAsOffsetDateTime</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html?is-external=true" title="class or interface in java.time" class="externalLink">OffsetDateTime</a>&nbsp;value)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i21" class="rowColor">
-<td class="colFirst"><code>default void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#writeValueAsOffsetTime(java.time.OffsetTime)">writeValueAsOffsetTime</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html?is-external=true" title="class or interface in java.time" class="externalLink">OffsetTime</a>&nbsp;value)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i22" class="altColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>default void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#writeValueAsShort(java.lang.Short)">writeValueAsShort</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html?is-external=true" title="class or interface in java.lang" class="externalLink">Short</a>&nbsp;value)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#writeValueAsString(java.lang.String)">writeValueAsString</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;value)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i24" class="altColor">
-<td class="colFirst"><code>default void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#writeValueAsZonedDateTime(java.time.ZonedDateTime)">writeValueAsZonedDateTime</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html?is-external=true" title="class or interface in java.time" class="externalLink">ZonedDateTime</a>&nbsp;value)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -410,111 +375,6 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
  is provided as value. Via <a href="MarshallingConfig.html#WRITE_NULL_VALUES"><code>MarshallingConfig.WRITE_NULL_VALUES</code></a> one can configure if <code>null</code> values
  should be written or omitted (to save bandwidth).</div>
 <dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="#writeValue(java.lang.Object)"><code>writeValue(Object)</code></a></dd>
-</dl>
-</li>
-</ul>
-<a id="writeValueAsInstant(java.time.Instant)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>writeValueAsInstant</h4>
-<pre class="methodSignature">default&nbsp;void&nbsp;writeValueAsInstant&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html?is-external=true" title="class or interface in java.time" class="externalLink">Instant</a>&nbsp;value)</pre>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>value</code> - the value to write.</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="#writeValue(java.lang.Object)"><code>writeValue(Object)</code></a></dd>
-</dl>
-</li>
-</ul>
-<a id="writeValueAsLocalDateTime(java.time.LocalDateTime)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>writeValueAsLocalDateTime</h4>
-<pre class="methodSignature">default&nbsp;void&nbsp;writeValueAsLocalDateTime&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDateTime.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDateTime</a>&nbsp;value)</pre>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>value</code> - the value to write.</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="#writeValue(java.lang.Object)"><code>writeValue(Object)</code></a></dd>
-</dl>
-</li>
-</ul>
-<a id="writeValueAsLocalDate(java.time.LocalDate)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>writeValueAsLocalDate</h4>
-<pre class="methodSignature">default&nbsp;void&nbsp;writeValueAsLocalDate&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalDate</a>&nbsp;value)</pre>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>value</code> - the value to write.</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="#writeValue(java.lang.Object)"><code>writeValue(Object)</code></a></dd>
-</dl>
-</li>
-</ul>
-<a id="writeValueAsLocalTime(java.time.LocalTime)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>writeValueAsLocalTime</h4>
-<pre class="methodSignature">default&nbsp;void&nbsp;writeValueAsLocalTime&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html?is-external=true" title="class or interface in java.time" class="externalLink">LocalTime</a>&nbsp;value)</pre>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>value</code> - the value to write.</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="#writeValue(java.lang.Object)"><code>writeValue(Object)</code></a></dd>
-</dl>
-</li>
-</ul>
-<a id="writeValueAsZonedDateTime(java.time.ZonedDateTime)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>writeValueAsZonedDateTime</h4>
-<pre class="methodSignature">default&nbsp;void&nbsp;writeValueAsZonedDateTime&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html?is-external=true" title="class or interface in java.time" class="externalLink">ZonedDateTime</a>&nbsp;value)</pre>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>value</code> - the value to write.</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="#writeValue(java.lang.Object)"><code>writeValue(Object)</code></a></dd>
-</dl>
-</li>
-</ul>
-<a id="writeValueAsOffsetDateTime(java.time.OffsetDateTime)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>writeValueAsOffsetDateTime</h4>
-<pre class="methodSignature">default&nbsp;void&nbsp;writeValueAsOffsetDateTime&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html?is-external=true" title="class or interface in java.time" class="externalLink">OffsetDateTime</a>&nbsp;value)</pre>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>value</code> - the value to write.</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="#writeValue(java.lang.Object)"><code>writeValue(Object)</code></a></dd>
-</dl>
-</li>
-</ul>
-<a id="writeValueAsOffsetTime(java.time.OffsetTime)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>writeValueAsOffsetTime</h4>
-<pre class="methodSignature">default&nbsp;void&nbsp;writeValueAsOffsetTime&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html?is-external=true" title="class or interface in java.time" class="externalLink">OffsetTime</a>&nbsp;value)</pre>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>value</code> - the value to write.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="#writeValue(java.lang.Object)"><code>writeValue(Object)</code></a></dd>
 </dl>

@@ -107,13 +107,19 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
-<th class="colFirst" scope="row"><a href="UiController.html" title="interface in io.github.mmm.ui.api.controller">UiController</a>&lt;W extends <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html" title="interface in io.github.mmm.ui.api.widget">UiWidget</a>&gt;</th>
+<th class="colFirst" scope="row"><a href="UiController.html" title="interface in io.github.mmm.ui.api.controller">UiController</a>&lt;V extends <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiRegularWidget.html" title="interface in io.github.mmm.ui.api.widget">UiRegularWidget</a>&gt;</th>
 <td class="colLast">
 <div class="block">This is the interface for a dialog of the client application.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<th class="colFirst" scope="row"><a href="UiControllerManager.html" title="interface in io.github.mmm.ui.api.controller">UiControllerManager</a></th>
+<th class="colFirst" scope="row"><a href="UiNavigationEventListener.html" title="interface in io.github.mmm.ui.api.controller">UiNavigationEventListener</a></th>
+<td class="colLast">
+<div class="block">Interface for <a href="../../../../../../../io.github.mmm.event/io/github/mmm/event/EventListener.html" title="interface in io.github.mmm.event"><code>EventListener</code></a> receiving <a href="UiNavigationEvent.html" title="class in io.github.mmm.ui.api.controller"><code>UiNavigationEvent</code></a>s.</div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="UiNavigationManager.html" title="interface in io.github.mmm.ui.api.controller">UiNavigationManager</a></th>
 <td class="colLast">
 <div class="block">Interface to manage <a href="UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a>s.</div>
 </td>
@@ -130,28 +136,16 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
-<th class="colFirst" scope="row"><a href="AbstractUiController.html" title="class in io.github.mmm.ui.api.controller">AbstractUiController</a>&lt;W extends <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html" title="interface in io.github.mmm.ui.api.widget">UiWidget</a>&gt;</th>
+<th class="colFirst" scope="row"><a href="UiEmbedding.html" title="class in io.github.mmm.ui.api.controller">UiEmbedding</a></th>
 <td class="colLast">
-<div class="block">Abstract base implementation of <a href="UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a>.</div>
+<div class="block">A <a href="UiEmbedding.html" title="class in io.github.mmm.ui.api.controller"><code>UiEmbedding</code></a> represents a location within the <a href="UiController.html#getView()"><code>view</code></a> of a <a href="UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a>
+ where a sub-dialog shall be <a href="UiController.html#embed(io.github.mmm.ui.api.controller.UiEmbedding,io.github.mmm.ui.api.controller.UiController)"><code>embedded</code></a>.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<th class="colFirst" scope="row"><a href="AbstractUiControllerMain.html" title="class in io.github.mmm.ui.api.controller">AbstractUiControllerMain</a>&lt;W extends <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiRegularWidget.html" title="interface in io.github.mmm.ui.api.widget">UiRegularWidget</a>&gt;</th>
+<th class="colFirst" scope="row"><a href="UiNavigationEvent.html" title="class in io.github.mmm.ui.api.controller">UiNavigationEvent</a></th>
 <td class="colLast">
-<div class="block"><a href="AbstractUiController.html" title="class in io.github.mmm.ui.api.controller"><code>AbstractUiController</code></a> with <a href="AbstractUiControllerMain.html#getType()"><code>type</code></a> <a href="UiController.html#TYPE_MAIN"><code>main</code></a>.</div>
-</td>
-</tr>
-<tr class="altColor">
-<th class="colFirst" scope="row"><a href="AbstractUiControllerManager.html" title="class in io.github.mmm.ui.api.controller">AbstractUiControllerManager</a></th>
-<td class="colLast">
-<div class="block">Implementation of <a href="UiControllerManager.html" title="interface in io.github.mmm.ui.api.controller"><code>UiControllerManager</code></a>.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<th class="colFirst" scope="row"><a href="UiControllerSlot.html" title="class in io.github.mmm.ui.api.controller">UiControllerSlot</a></th>
-<td class="colLast">
-<div class="block">A <a href="UiControllerSlot.html" title="class in io.github.mmm.ui.api.controller"><code>UiControllerSlot</code></a> represents a location within the <a href="UiController.html#getView()"><code>view</code></a> of a
- <a href="UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a> where a sub-dialog can be embedded.</div>
+<div class="block">Event for <a href="UiNavigationManager.html#navigateTo(io.github.mmm.ui.api.controller.UiPlace)"><code>navigation</code></a>.</div>
 </td>
 </tr>
 <tr class="altColor">

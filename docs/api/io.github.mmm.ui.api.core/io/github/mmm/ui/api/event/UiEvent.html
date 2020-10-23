@@ -132,12 +132,17 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><code><a href="../attribute/AttributeReadProgrammatic.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadProgrammatic</a></code></dd>
+</dl>
+<dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><code><a href="UiClickEvent.html" title="class in io.github.mmm.ui.api.event">UiClickEvent</a></code>, <code><a href="UiEnablingEvent.html" title="class in io.github.mmm.ui.api.event">UiEnablingEvent</a></code>, <code><a href="UiFocusEvent.html" title="class in io.github.mmm.ui.api.event">UiFocusEvent</a></code>, <code><a href="UiValueChangeEvent.html" title="class in io.github.mmm.ui.api.event">UiValueChangeEvent</a></code>, <code><a href="UiVisibilityEvent.html" title="class in io.github.mmm.ui.api.event">UiVisibilityEvent</a></code></dd>
+<dd><code><a href="UiClickEvent.html" title="class in io.github.mmm.ui.api.event">UiClickEvent</a></code>, <code><a href="UiEnablingEvent.html" title="class in io.github.mmm.ui.api.event">UiEnablingEvent</a></code>, <code><a href="UiFocusEvent.html" title="class in io.github.mmm.ui.api.event">UiFocusEvent</a></code>, <code><a href="UiSelectionEvent.html" title="class in io.github.mmm.ui.api.event">UiSelectionEvent</a></code>, <code><a href="UiValueChangeEvent.html" title="class in io.github.mmm.ui.api.event">UiValueChangeEvent</a></code>, <code><a href="UiVisibilityEvent.html" title="class in io.github.mmm.ui.api.event">UiVisibilityEvent</a></code></dd>
 </dl>
 <hr>
 <pre>public abstract class <span class="typeNameLabel">UiEvent</span>
-extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></pre>
+extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>
+implements <a href="../attribute/AttributeReadProgrammatic.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadProgrammatic</a></pre>
 <div class="block">This is the interface for an event of the UI.</div>
 <dl>
 <dt><span class="simpleTagLabel">Since:</span></dt>
@@ -273,10 +278,12 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 <h4>isProgrammatic</h4>
 <pre class="methodSignature">public&nbsp;boolean&nbsp;isProgrammatic()</pre>
 <dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../attribute/AttributeReadProgrammatic.html#isProgrammatic()">isProgrammatic</a></code>&nbsp;in interface&nbsp;<code><a href="../attribute/AttributeReadProgrammatic.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadProgrammatic</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd><code>true</code> if this event was triggered by the program (e.g. via
-         <a href="../widget/attribute/UiWidgetWithClick.html#click()"><code>UiWidgetWithClick.click()</code></a>), <code>false</code> if performed by an end-user
-         interaction (e.g. keyboard, touch, or mouse).</dd>
+         <a href="../attribute/AttributeFeatureClick.html#click()"><code>AttributeFeatureClick.click()</code></a>), <code>false</code> if performed by an
+         end-user interaction (e.g. keyboard, touch, or mouse).</dd>
 </dl>
 </li>
 </ul>

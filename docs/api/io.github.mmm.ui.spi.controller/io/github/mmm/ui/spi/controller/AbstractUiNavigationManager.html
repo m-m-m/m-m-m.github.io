@@ -1,0 +1,616 @@
+<!DOCTYPE HTML>
+<!-- NewPage -->
+<html lang="en">
+<head>
+<title>AbstractUiNavigationManager (JavaDocs for mmm-all 1.0.0-SNAPSHOT)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="../../../../../../../stylesheet.css" title="Style">
+<link rel="stylesheet" type="text/css" href="../../../../../../../jquery/jquery-ui.css" title="Style">
+<script type="text/javascript" src="../../../../../../../script.js"></script>
+<script type="text/javascript" src="../../../../../../../jquery/jszip/dist/jszip.min.js"></script>
+<script type="text/javascript" src="../../../../../../../jquery/jszip-utils/dist/jszip-utils.min.js"></script>
+<!--[if IE]>
+<script type="text/javascript" src="../../../../../../../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="../../../../../../../jquery/jquery-3.3.1.js"></script>
+<script type="text/javascript" src="../../../../../../../jquery/jquery-migrate-3.0.1.js"></script>
+<script type="text/javascript" src="../../../../../../../jquery/jquery-ui.js"></script>
+</head>
+<body>
+<script type="text/javascript"><!--
+    try {
+        if (location.href.indexOf('is-external=true') == -1) {
+            parent.document.title="AbstractUiNavigationManager (JavaDocs for mmm-all 1.0.0-SNAPSHOT)";
+        }
+    }
+    catch(err) {
+    }
+//-->
+var data = {"i0":6,"i1":6,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":6,"i11":10};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"]};
+var altColor = "altColor";
+var rowColor = "rowColor";
+var tableTab = "tableTab";
+var activeTableTab = "activeTableTab";
+var pathtoroot = "../../../../../../../";
+var useModuleDirectories = true;
+loadScripts(document, 'script');</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<header role="banner">
+<nav role="navigation">
+<div class="fixedNav">
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a id="navbar.top">
+<!--   -->
+</a>
+<div class="skipNav"><a href="#skip.navbar.top" title="Skip navigation links">Skip navigation links</a></div>
+<a id="navbar.top.firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../../index.html">Overview</a></li>
+<li><a href="../../../../../../module-summary.html">Module</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/AbstractUiNavigationManager.html">Use</a></li>
+<li><a href="../../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../../../allclasses.html">All&nbsp;Classes</a></li>
+</ul>
+<ul class="navListSearch">
+<li><label for="search">SEARCH:</label>
+<input type="text" id="search" value="search" disabled="disabled">
+<input type="reset" id="reset" value="reset" disabled="disabled">
+</li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method.summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method.detail">Method</a></li>
+</ul>
+</div>
+<a id="skip.navbar.top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+</div>
+<div class="navPadding">&nbsp;</div>
+<script type="text/javascript"><!--
+$('.navPadding').css('padding-top', $('.fixedNav').css("height"));
+//-->
+</script>
+</nav>
+</header>
+<!-- ======== START OF CLASS DATA ======== -->
+<main role="main">
+<div class="header">
+<div class="subTitle"><span class="moduleLabelInType">Module</span>&nbsp;<a href="../../../../../../module-summary.html">io.github.mmm.ui.spi.controller</a></div>
+<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">io.github.mmm.ui.spi.controller</a></div>
+<h2 title="Class AbstractUiNavigationManager" class="title">Class AbstractUiNavigationManager</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../../../../../io.github.mmm.event/io/github/mmm/event/AbstractEventSource.html" title="class in io.github.mmm.event">io.github.mmm.event.AbstractEventSource</a>&lt;<a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiNavigationEvent.html" title="class in io.github.mmm.ui.api.controller">UiNavigationEvent</a>,&#8203;<a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiNavigationEventListener.html" title="interface in io.github.mmm.ui.api.controller">UiNavigationEventListener</a>&gt;</li>
+<li>
+<ul class="inheritance">
+<li>io.github.mmm.ui.spi.controller.AbstractUiNavigationManager</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><code><a href="../../../../../../../io.github.mmm.event/io/github/mmm/event/EventSource.html" title="interface in io.github.mmm.event">EventSource</a>&lt;<a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiNavigationEvent.html" title="class in io.github.mmm.ui.api.controller">UiNavigationEvent</a>,&#8203;<a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiNavigationEventListener.html" title="interface in io.github.mmm.ui.api.controller">UiNavigationEventListener</a>&gt;</code>, <code><a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiNavigationManager.html" title="interface in io.github.mmm.ui.api.controller">UiNavigationManager</a></code></dd>
+</dl>
+<dl>
+<dt>Direct Known Subclasses:</dt>
+<dd><code><a href="AbstractUiNavigationManagerImpl.html" title="class in io.github.mmm.ui.spi.controller">AbstractUiNavigationManagerImpl</a></code></dd>
+</dl>
+<hr>
+<pre>public abstract class <span class="typeNameLabel">AbstractUiNavigationManager</span>
+extends <a href="../../../../../../../io.github.mmm.event/io/github/mmm/event/AbstractEventSource.html" title="class in io.github.mmm.event">AbstractEventSource</a>&lt;<a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiNavigationEvent.html" title="class in io.github.mmm.ui.api.controller">UiNavigationEvent</a>,&#8203;<a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiNavigationEventListener.html" title="interface in io.github.mmm.ui.api.controller">UiNavigationEventListener</a>&gt;
+implements <a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiNavigationManager.html" title="interface in io.github.mmm.ui.api.controller">UiNavigationManager</a></pre>
+<div class="block">Abstract base implementation of <a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiNavigationManager.html" title="interface in io.github.mmm.ui.api.controller"><code>UiNavigationManager</code></a>.</div>
+<dl>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>1.0.0</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<section role="region">
+<ul class="blockList">
+<li class="blockList"><a id="constructor.summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="memberSummary">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Constructor</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tr class="altColor">
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E()">AbstractUiNavigationManager</a></span>()</code></th>
+<td class="colLast">
+<div class="block">The constructor.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+</section>
+<!-- ========== METHOD SUMMARY =========== -->
+<section role="region">
+<ul class="blockList">
+<li class="blockList"><a id="method.summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="memberSummary">
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tr id="i0" class="altColor">
+<td class="colFirst"><code>protected abstract void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addHistory(io.github.mmm.ui.api.controller.UiPlace)">addHistory</a></span>&#8203;(<a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiPlace.html" title="class in io.github.mmm.ui.api.controller">UiPlace</a>&nbsp;place)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>protected abstract void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#doInit()">doInit</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>&lt;W extends <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiRegularWidget.html" title="interface in io.github.mmm.ui.api.widget">UiRegularWidget</a>&gt;<br><a href="AbstractUiController.html" title="class in io.github.mmm.ui.spi.controller">AbstractUiController</a>&lt;W&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getController(java.lang.String)">getController</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;id)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiPlace.html" title="class in io.github.mmm.ui.api.controller">UiPlace</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getCurrentPlace()">getCurrentPlace</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>&lt;W extends <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiRegularWidget.html" title="interface in io.github.mmm.ui.api.widget">UiRegularWidget</a>&gt;<br><a href="AbstractUiController.html" title="class in io.github.mmm.ui.spi.controller">AbstractUiController</a>&lt;W&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getRequiredController(java.lang.String)">getRequiredController</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;id)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#init()">init</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Initializes this navigation manager and navigates to the initial <a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiPlace.html" title="class in io.github.mmm.ui.api.controller"><code>UiPlace</code></a>.</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>protected <a href="AbstractUiController.html" title="class in io.github.mmm.ui.spi.controller">AbstractUiController</a>&lt;?&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#navigateRecursive(io.github.mmm.ui.api.controller.UiPlace,io.github.mmm.ui.api.controller.UiEmbedding)">navigateRecursive</a></span>&#8203;(<a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiPlace.html" title="class in io.github.mmm.ui.api.controller">UiPlace</a>&nbsp;place,
+                 <a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiEmbedding.html" title="class in io.github.mmm.ui.api.controller">UiEmbedding</a>&nbsp;embedding)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#navigateTo(io.github.mmm.ui.api.controller.UiPlace,boolean)">navigateTo</a></span>&#8203;(<a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiPlace.html" title="class in io.github.mmm.ui.api.controller">UiPlace</a>&nbsp;place,
+          boolean&nbsp;replace)</code></th>
+<td class="colLast">
+<div class="block">Navigates to the given <a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiPlace.html" title="class in io.github.mmm.ui.api.controller"><code>UiPlace</code></a>.</div>
+</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#navigateTo(io.github.mmm.ui.api.controller.UiPlace,io.github.mmm.ui.spi.controller.UiNavigationMode,boolean)">navigateTo</a></span>&#8203;(<a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiPlace.html" title="class in io.github.mmm.ui.api.controller">UiPlace</a>&nbsp;place,
+          <a href="UiNavigationMode.html" title="enum in io.github.mmm.ui.spi.controller">UiNavigationMode</a>&nbsp;mode,
+          boolean&nbsp;programmatic)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onEmbedded(io.github.mmm.ui.api.controller.UiEmbedding,io.github.mmm.ui.spi.controller.AbstractUiController)">onEmbedded</a></span>&#8203;(<a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiEmbedding.html" title="class in io.github.mmm.ui.api.controller">UiEmbedding</a>&nbsp;embedding,
+          <a href="AbstractUiController.html" title="class in io.github.mmm.ui.spi.controller">AbstractUiController</a>&lt;?&gt;&nbsp;controller)</code></th>
+<td class="colLast">
+<div class="block">Called from <a href="AbstractUiController.html#embed(io.github.mmm.ui.api.controller.UiEmbedding,io.github.mmm.ui.api.controller.UiController)"><code>AbstractUiController.embed(UiEmbedding, UiController)</code></a> to register <a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a>s in
+ their current <a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiEmbedding.html" title="class in io.github.mmm.ui.api.controller"><code>UiEmbedding</code></a>s and hide previous <a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a>s when replaced in that
+ <a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiEmbedding.html#getSlotId()"><code>slot</code></a>.</div>
+</td>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code>protected abstract void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#replaceHistory(io.github.mmm.ui.api.controller.UiPlace)">replaceHistory</a></span>&#8203;(<a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiPlace.html" title="class in io.github.mmm.ui.api.controller">UiPlace</a>&nbsp;place)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#updatePlace(io.github.mmm.ui.api.controller.UiPlace)">updatePlace</a></span>&#8203;(<a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiPlace.html" title="class in io.github.mmm.ui.api.controller">UiPlace</a>&nbsp;place)</code></th>
+<td class="colLast">
+<div class="block">Replaces the <a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiNavigationManager.html#getCurrentPlace()"><code>current place</code></a> with the given <a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiPlace.html" title="class in io.github.mmm.ui.api.controller"><code>UiPlace</code></a> without creating a new entry
+ in the navigation history.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.event.AbstractEventSource">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;io.github.mmm.event.<a href="../../../../../../../io.github.mmm.event/io/github/mmm/event/AbstractEventSource.html" title="class in io.github.mmm.event">AbstractEventSource</a></h3>
+<code><a href="../../../../../../../io.github.mmm.event/io/github/mmm/event/AbstractEventSource.html#addListener(L,boolean)">addListener</a>, <a href="../../../../../../../io.github.mmm.event/io/github/mmm/event/AbstractEventSource.html#fireEvent(E)">fireEvent</a>, <a href="../../../../../../../io.github.mmm.event/io/github/mmm/event/AbstractEventSource.html#getEventAdapter()">getEventAdapter</a>, <a href="../../../../../../../io.github.mmm.event/io/github/mmm/event/AbstractEventSource.html#hasListeners()">hasListeners</a>, <a href="../../../../../../../io.github.mmm.event/io/github/mmm/event/AbstractEventSource.html#removeListener(L)">removeListener</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></h3>
+<code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang" class="externalLink">clone</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang" class="externalLink">equals</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang" class="externalLink">finalize</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang" class="externalLink">getClass</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang" class="externalLink">hashCode</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang" class="externalLink">notify</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang" class="externalLink">notifyAll</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang" class="externalLink">toString</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#wait(long,int)" title="class or interface in java.lang" class="externalLink">wait</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.event.EventSource">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;io.github.mmm.event.<a href="../../../../../../../io.github.mmm.event/io/github/mmm/event/EventSource.html" title="interface in io.github.mmm.event">EventSource</a></h3>
+<code><a href="../../../../../../../io.github.mmm.event/io/github/mmm/event/EventSource.html#addListener(L)">addListener</a>, <a href="../../../../../../../io.github.mmm.event/io/github/mmm/event/EventSource.html#addListener(L,boolean)">addListener</a>, <a href="../../../../../../../io.github.mmm.event/io/github/mmm/event/EventSource.html#addWeakListener(L)">addWeakListener</a>, <a href="../../../../../../../io.github.mmm.event/io/github/mmm/event/EventSource.html#removeListener(L)">removeListener</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.api.controller.UiNavigationManager">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;io.github.mmm.ui.api.controller.<a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiNavigationManager.html" title="interface in io.github.mmm.ui.api.controller">UiNavigationManager</a></h3>
+<code><a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiNavigationManager.html#navigateBack()">navigateBack</a>, <a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiNavigationManager.html#navigateForward()">navigateForward</a>, <a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiNavigationManager.html#navigateTo(io.github.mmm.ui.api.controller.UiPlace)">navigateTo</a></code></li>
+</ul>
+</li>
+</ul>
+</section>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<section role="region">
+<ul class="blockList">
+<li class="blockList"><a id="constructor.detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a id="&lt;init&gt;()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>AbstractUiNavigationManager</h4>
+<pre>public&nbsp;AbstractUiNavigationManager()</pre>
+<div class="block">The constructor.</div>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<!-- ============ METHOD DETAIL ========== -->
+<section role="region">
+<ul class="blockList">
+<li class="blockList"><a id="method.detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a id="getController(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getController</h4>
+<pre class="methodSignature">public&nbsp;&lt;W extends <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiRegularWidget.html" title="interface in io.github.mmm.ui.api.widget">UiRegularWidget</a>&gt;&nbsp;<a href="AbstractUiController.html" title="class in io.github.mmm.ui.spi.controller">AbstractUiController</a>&lt;W&gt;&nbsp;getController&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;id)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiNavigationManager.html#getController(java.lang.String)">getController</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiNavigationManager.html" title="interface in io.github.mmm.ui.api.controller">UiNavigationManager</a></code></dd>
+<dt><span class="paramLabel">Type Parameters:</span></dt>
+<dd><code>W</code> - type of the <a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiController.html#getView()"><code>view</code></a>.</dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>id</code> - the <a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiController.html#getId()"><code>ID</code></a> of the requested <a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a>.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the requested <a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a> or <code>null</code> if no such <a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a> exists.</dd>
+</dl>
+</li>
+</ul>
+<a id="getRequiredController(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getRequiredController</h4>
+<pre class="methodSignature">public&nbsp;&lt;W extends <a href="../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiRegularWidget.html" title="interface in io.github.mmm.ui.api.widget">UiRegularWidget</a>&gt;&nbsp;<a href="AbstractUiController.html" title="class in io.github.mmm.ui.spi.controller">AbstractUiController</a>&lt;W&gt;&nbsp;getRequiredController&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;id)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiNavigationManager.html#getRequiredController(java.lang.String)">getRequiredController</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiNavigationManager.html" title="interface in io.github.mmm.ui.api.controller">UiNavigationManager</a></code></dd>
+<dt><span class="paramLabel">Type Parameters:</span></dt>
+<dd><code>W</code> - type of the <a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiController.html#getView()"><code>view</code></a>.</dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>id</code> - the <a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiController.html#getId()"><code>ID</code></a> of the requested <a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a>.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the requested <a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="init()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>init</h4>
+<pre class="methodSignature">public final&nbsp;void&nbsp;init()</pre>
+<div class="block">Initializes this navigation manager and navigates to the initial <a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiPlace.html" title="class in io.github.mmm.ui.api.controller"><code>UiPlace</code></a>.</div>
+</li>
+</ul>
+<a id="doInit()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>doInit</h4>
+<pre class="methodSignature">protected abstract&nbsp;void&nbsp;doInit()</pre>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="#init()"><code>init()</code></a></dd>
+</dl>
+</li>
+</ul>
+<a id="getCurrentPlace()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCurrentPlace</h4>
+<pre class="methodSignature">public&nbsp;<a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiPlace.html" title="class in io.github.mmm.ui.api.controller">UiPlace</a>&nbsp;getCurrentPlace()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiNavigationManager.html#getCurrentPlace()">getCurrentPlace</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiNavigationManager.html" title="interface in io.github.mmm.ui.api.controller">UiNavigationManager</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the current <a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiPlace.html" title="class in io.github.mmm.ui.api.controller"><code>UiPlace</code></a>. Will be <code>null</code> until initialized by first
+         <a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiNavigationManager.html#navigateTo(io.github.mmm.ui.api.controller.UiPlace)"><code>navigation</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="navigateTo(io.github.mmm.ui.api.controller.UiPlace,boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>navigateTo</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;navigateTo&#8203;(<a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiPlace.html" title="class in io.github.mmm.ui.api.controller">UiPlace</a>&nbsp;place,
+                       boolean&nbsp;replace)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiNavigationManager.html#navigateTo(io.github.mmm.ui.api.controller.UiPlace,boolean)">UiNavigationManager</a></code></span></div>
+<div class="block">Navigates to the given <a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiPlace.html" title="class in io.github.mmm.ui.api.controller"><code>UiPlace</code></a>.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiNavigationManager.html#navigateTo(io.github.mmm.ui.api.controller.UiPlace,boolean)">navigateTo</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiNavigationManager.html" title="interface in io.github.mmm.ui.api.controller">UiNavigationManager</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>place</code> - is the <a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiPlace.html" title="class in io.github.mmm.ui.api.controller"><code>UiPlace</code></a> identifying the <a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a> to open.</dd>
+<dd><code>replace</code> - - if <code>true</code> the <a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiNavigationManager.html#getCurrentPlace()"><code>current place</code></a> will be replaced with the given
+        <a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiPlace.html" title="class in io.github.mmm.ui.api.controller"><code>UiPlace</code></a>, <code>false</code> otherwise (default). Replacing is e.g. helpful for <a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a>s that
+        do logical decisions and only redirect to the actual <a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiPlace.html" title="class in io.github.mmm.ui.api.controller"><code>UiPlace</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="navigateTo(io.github.mmm.ui.api.controller.UiPlace,io.github.mmm.ui.spi.controller.UiNavigationMode,boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>navigateTo</h4>
+<pre class="methodSignature">protected&nbsp;void&nbsp;navigateTo&#8203;(<a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiPlace.html" title="class in io.github.mmm.ui.api.controller">UiPlace</a>&nbsp;place,
+                          <a href="UiNavigationMode.html" title="enum in io.github.mmm.ui.spi.controller">UiNavigationMode</a>&nbsp;mode,
+                          boolean&nbsp;programmatic)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>place</code> - is the <a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiPlace.html" title="class in io.github.mmm.ui.api.controller"><code>UiPlace</code></a> identifying the <a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a> to open.</dd>
+<dd><code>mode</code> - the <a href="UiNavigationMode.html" title="enum in io.github.mmm.ui.spi.controller"><code>UiNavigationMode</code></a>.</dd>
+<dd><code>programmatic</code> - the <a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiNavigationEvent.html#isProgrammatic()"><code>programmatic flag</code></a>.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiNavigationManager.html#navigateTo(io.github.mmm.ui.api.controller.UiPlace)"><code>UiNavigationManager.navigateTo(UiPlace)</code></a></dd>
+</dl>
+</li>
+</ul>
+<a id="addHistory(io.github.mmm.ui.api.controller.UiPlace)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addHistory</h4>
+<pre class="methodSignature">protected abstract&nbsp;void&nbsp;addHistory&#8203;(<a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiPlace.html" title="class in io.github.mmm.ui.api.controller">UiPlace</a>&nbsp;place)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>place</code> - is the <a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiPlace.html" title="class in io.github.mmm.ui.api.controller"><code>UiPlace</code></a> to add to the history.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiNavigationManager.html#navigateTo(io.github.mmm.ui.api.controller.UiPlace)"><code>UiNavigationManager.navigateTo(UiPlace)</code></a></dd>
+</dl>
+</li>
+</ul>
+<a id="replaceHistory(io.github.mmm.ui.api.controller.UiPlace)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>replaceHistory</h4>
+<pre class="methodSignature">protected abstract&nbsp;void&nbsp;replaceHistory&#8203;(<a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiPlace.html" title="class in io.github.mmm.ui.api.controller">UiPlace</a>&nbsp;place)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>place</code> - is the <a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiPlace.html" title="class in io.github.mmm.ui.api.controller"><code>UiPlace</code></a> to replace the current place in the history.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiNavigationManager.html#navigateTo(io.github.mmm.ui.api.controller.UiPlace)"><code>UiNavigationManager.navigateTo(UiPlace)</code></a></dd>
+</dl>
+</li>
+</ul>
+<a id="updatePlace(io.github.mmm.ui.api.controller.UiPlace)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>updatePlace</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;updatePlace&#8203;(<a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiPlace.html" title="class in io.github.mmm.ui.api.controller">UiPlace</a>&nbsp;place)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiNavigationManager.html#updatePlace(io.github.mmm.ui.api.controller.UiPlace)">UiNavigationManager</a></code></span></div>
+<div class="block">Replaces the <a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiNavigationManager.html#getCurrentPlace()"><code>current place</code></a> with the given <a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiPlace.html" title="class in io.github.mmm.ui.api.controller"><code>UiPlace</code></a> without creating a new entry
+ in the navigation history.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiNavigationManager.html#updatePlace(io.github.mmm.ui.api.controller.UiPlace)">updatePlace</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiNavigationManager.html" title="interface in io.github.mmm.ui.api.controller">UiNavigationManager</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>place</code> - the updated <a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiPlace.html" title="class in io.github.mmm.ui.api.controller"><code>UiPlace</code></a>. Currently the <a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiPlace.html#getId()"><code>ID</code></a> of the <a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiNavigationManager.html#getCurrentPlace()"><code>current place</code></a> may not change. This is only to update <a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiPlace.html#getParameters()"><code>parameters</code></a>. E.g. if
+        you want to represent the selection of a master-detail dialog in the location (URL) you can use a
+        <a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiPlace.html#get(java.lang.String)"><code>parameter</code></a>. This method allows to update the <a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiPlace.html" title="class in io.github.mmm.ui.api.controller"><code>UiPlace</code></a> and therefore the
+        location without adding it to the history so <a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiNavigationManager.html#navigateBack()"><code>UiNavigationManager.navigateBack()</code></a> navigating back} is not replaying the
+        entire history of the end-users selection what is typically undesired.</dd>
+</dl>
+</li>
+</ul>
+<a id="navigateRecursive(io.github.mmm.ui.api.controller.UiPlace,io.github.mmm.ui.api.controller.UiEmbedding)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>navigateRecursive</h4>
+<pre class="methodSignature">protected&nbsp;<a href="AbstractUiController.html" title="class in io.github.mmm.ui.spi.controller">AbstractUiController</a>&lt;?&gt;&nbsp;navigateRecursive&#8203;(<a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiPlace.html" title="class in io.github.mmm.ui.api.controller">UiPlace</a>&nbsp;place,
+                                                    <a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiEmbedding.html" title="class in io.github.mmm.ui.api.controller">UiEmbedding</a>&nbsp;embedding)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>place</code> - the <a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiPlace.html" title="class in io.github.mmm.ui.api.controller"><code>UiPlace</code></a>.</dd>
+<dd><code>embedding</code> - the optional <a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiEmbedding.html" title="class in io.github.mmm.ui.api.controller"><code>UiEmbedding</code></a>.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the <a href="AbstractUiController.html" title="class in io.github.mmm.ui.spi.controller"><code>AbstractUiController</code></a> that has been <a href="AbstractUiController.html#show(io.github.mmm.ui.api.controller.UiPlace,io.github.mmm.ui.api.controller.UiEmbedding)"><code>shown</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="onEmbedded(io.github.mmm.ui.api.controller.UiEmbedding,io.github.mmm.ui.spi.controller.AbstractUiController)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>onEmbedded</h4>
+<pre class="methodSignature">protected&nbsp;void&nbsp;onEmbedded&#8203;(<a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiEmbedding.html" title="class in io.github.mmm.ui.api.controller">UiEmbedding</a>&nbsp;embedding,
+                          <a href="AbstractUiController.html" title="class in io.github.mmm.ui.spi.controller">AbstractUiController</a>&lt;?&gt;&nbsp;controller)</pre>
+<div class="block">Called from <a href="AbstractUiController.html#embed(io.github.mmm.ui.api.controller.UiEmbedding,io.github.mmm.ui.api.controller.UiController)"><code>AbstractUiController.embed(UiEmbedding, UiController)</code></a> to register <a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a>s in
+ their current <a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiEmbedding.html" title="class in io.github.mmm.ui.api.controller"><code>UiEmbedding</code></a>s and hide previous <a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiController.html" title="interface in io.github.mmm.ui.api.controller"><code>UiController</code></a>s when replaced in that
+ <a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiEmbedding.html#getSlotId()"><code>slot</code></a>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>embedding</code> - the <a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/UiEmbedding.html" title="class in io.github.mmm.ui.api.controller"><code>UiEmbedding</code></a>.</dd>
+<dd><code>controller</code> - the <a href="AbstractUiController.html" title="class in io.github.mmm.ui.spi.controller"><code>AbstractUiController</code></a>.</dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+</li>
+</ul>
+</div>
+</div>
+</main>
+<!-- ========= END OF CLASS DATA ========= -->
+<footer role="contentinfo">
+<nav role="navigation">
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a id="navbar.bottom">
+<!--   -->
+</a>
+<div class="skipNav"><a href="#skip.navbar.bottom" title="Skip navigation links">Skip navigation links</a></div>
+<a id="navbar.bottom.firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../../index.html">Overview</a></li>
+<li><a href="../../../../../../module-summary.html">Module</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/AbstractUiNavigationManager.html">Use</a></li>
+<li><a href="../../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../../../allclasses.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method.summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method.detail">Method</a></li>
+</ul>
+</div>
+<a id="skip.navbar.bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+</nav>
+<p class="legalCopy"><small>Copyright &#169; 2001&#x2013;2020 <a href="https://m-m-m.github.io">mmm-team</a>. All rights reserved.</small></p>
+</footer>
+</body>
+</html>

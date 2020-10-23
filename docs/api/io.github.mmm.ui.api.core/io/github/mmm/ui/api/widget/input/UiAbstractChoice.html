@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":18,"i5":1};
+var data = {"i0":18,"i1":6,"i2":6,"i3":6,"i4":6,"i5":18,"i6":1};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -131,7 +131,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 <dl>
 <dt>All Superinterfaces:</dt>
-<dd><code><a href="../../attribute/AttributeReadId.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadId</a></code>, <code><a href="../../attribute/AttributeReadValid.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadValid</a></code>, <code><a href="../../attribute/AttributeReadValue.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadValue</a>&lt;V&gt;</code>, <code><a href="../../attribute/AttributeReadVisible.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadVisible</a></code>, <code><a href="../../attribute/AttributeWriteId.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteId</a></code>, <code><a href="../../attribute/AttributeWriteTooltip.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteTooltip</a></code>, <code><a href="../../attribute/AttributeWriteValidationFailure.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteValidationFailure</a></code>, <code><a href="../../attribute/AttributeWriteValue.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteValue</a>&lt;V&gt;</code>, <code><a href="../../attribute/AttributeWriteValueForUser.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteValueForUser</a>&lt;V&gt;</code>, <code><a href="../../attribute/AttributeWriteVisible.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteVisible</a></code>, <code><a href="../../../../../../../../io.github.mmm.event/io/github/mmm/event/EventSource.html" title="interface in io.github.mmm.event">EventSource</a>&lt;<a href="../../event/UiEvent.html" title="class in io.github.mmm.ui.api.event">UiEvent</a>,&#8203;<a href="../../event/UiEventListener.html" title="interface in io.github.mmm.ui.api.event">UiEventListener</a>&gt;</code>, <code><a href="UiAbstractInput.html" title="interface in io.github.mmm.ui.api.widget.input">UiAbstractInput</a>&lt;V&gt;</code>, <code><a href="../UiAtomicWidget.html" title="interface in io.github.mmm.ui.api.widget">UiAtomicWidget</a></code>, <code><a href="UiInput.html" title="interface in io.github.mmm.ui.api.widget.input">UiInput</a>&lt;V&gt;</code>, <code><a href="../UiRegularWidget.html" title="interface in io.github.mmm.ui.api.widget">UiRegularWidget</a></code>, <code><a href="../value/UiValidatableWidget.html" title="interface in io.github.mmm.ui.api.widget.value">UiValidatableWidget</a>&lt;V&gt;</code>, <code><a href="../value/UiValuedWidget.html" title="interface in io.github.mmm.ui.api.widget.value">UiValuedWidget</a>&lt;V&gt;</code>, <code><a href="../UiWidget.html" title="interface in io.github.mmm.ui.api.widget">UiWidget</a></code></dd>
+<dd><code><a href="../../attribute/AttributeReadEnabled.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadEnabled</a></code>, <code><a href="../../attribute/AttributeReadId.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadId</a></code>, <code><a href="../../attribute/AttributeReadValid.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadValid</a></code>, <code><a href="../../attribute/AttributeReadValue.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadValue</a>&lt;V&gt;</code>, <code><a href="../../attribute/AttributeReadVisible.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadVisible</a></code>, <code><a href="../../attribute/AttributeWriteEnabled.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteEnabled</a></code>, <code><a href="../../attribute/AttributeWriteId.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteId</a></code>, <code><a href="../../attribute/AttributeWritePrefix.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWritePrefix</a></code>, <code><a href="../../attribute/AttributeWriteReadOnly.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteReadOnly</a></code>, <code><a href="../../attribute/AttributeWriteSuffix.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteSuffix</a></code>, <code><a href="../../attribute/AttributeWriteTooltip.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteTooltip</a></code>, <code><a href="../../attribute/AttributeWriteValidationFailure.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteValidationFailure</a></code>, <code><a href="../../attribute/AttributeWriteValue.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteValue</a>&lt;V&gt;</code>, <code><a href="../../attribute/AttributeWriteValueForUser.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteValueForUser</a>&lt;V&gt;</code>, <code><a href="../../attribute/AttributeWriteVisible.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteVisible</a></code>, <code><a href="../../../../../../../../io.github.mmm.event/io/github/mmm/event/EventSource.html" title="interface in io.github.mmm.event">EventSource</a>&lt;<a href="../../event/UiEvent.html" title="class in io.github.mmm.ui.api.event">UiEvent</a>,&#8203;<a href="../../event/UiEventListener.html" title="interface in io.github.mmm.ui.api.event">UiEventListener</a>&gt;</code>, <code><a href="UiAbstractInput.html" title="interface in io.github.mmm.ui.api.widget.input">UiAbstractInput</a>&lt;V&gt;</code>, <code><a href="UiInput.html" title="interface in io.github.mmm.ui.api.widget.input">UiInput</a>&lt;V&gt;</code>, <code><a href="../UiRegularWidget.html" title="interface in io.github.mmm.ui.api.widget">UiRegularWidget</a></code>, <code><a href="../value/UiValidatableWidget.html" title="interface in io.github.mmm.ui.api.widget.value">UiValidatableWidget</a>&lt;V&gt;</code>, <code><a href="../value/UiValuedWidget.html" title="interface in io.github.mmm.ui.api.widget.value">UiValuedWidget</a>&lt;V&gt;</code>, <code><a href="../UiWidget.html" title="interface in io.github.mmm.ui.api.widget">UiWidget</a></code></dd>
 </dl>
 <dl>
 <dt>All Known Subinterfaces:</dt>
@@ -139,7 +139,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 <dl>
 <dt>All Known Implementing Classes:</dt>
-<dd><code><a href="../../../../../../../../io.github.mmm.ui.fx.core/io/github/mmm/ui/fx/widget/input/FxRadioChoice.html" title="class in io.github.mmm.ui.fx.widget.input">FxRadioChoice</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.test.core/io/github/mmm/ui/test/widget/input/TestRadioChoice.html" title="class in io.github.mmm.ui.test.widget.input">TestRadioChoice</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/input/TvmComboBoxDataList.html" title="class in io.github.mmm.ui.tvm.widget.input">TvmComboBoxDataList</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/input/TvmComboBoxSelect.html" title="class in io.github.mmm.ui.tvm.widget.input">TvmComboBoxSelect</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/input/TvmRadioChoice.html" title="class in io.github.mmm.ui.tvm.widget.input">TvmRadioChoice</a></code></dd>
+<dd><code><a href="../../../../../../../../io.github.mmm.ui.fx.core/io/github/mmm/ui/fx/widget/input/FxAbstractChoice.html" title="class in io.github.mmm.ui.fx.widget.input">FxAbstractChoice</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.fx.core/io/github/mmm/ui/fx/widget/input/FxComboBox.html" title="class in io.github.mmm.ui.fx.widget.input">FxComboBox</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.fx.core/io/github/mmm/ui/fx/widget/input/FxRadioChoice.html" title="class in io.github.mmm.ui.fx.widget.input">FxRadioChoice</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.test.core/io/github/mmm/ui/test/widget/input/TestAbstractChoice.html" title="class in io.github.mmm.ui.test.widget.input">TestAbstractChoice</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.test.core/io/github/mmm/ui/test/widget/input/TestAbstractSingleChoice.html" title="class in io.github.mmm.ui.test.widget.input">TestAbstractSingleChoice</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.test.core/io/github/mmm/ui/test/widget/input/TestComboBox.html" title="class in io.github.mmm.ui.test.widget.input">TestComboBox</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.test.core/io/github/mmm/ui/test/widget/input/TestRadioChoice.html" title="class in io.github.mmm.ui.test.widget.input">TestRadioChoice</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/input/TvmComboBoxDataList.html" title="class in io.github.mmm.ui.tvm.widget.input">TvmComboBoxDataList</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/input/TvmComboBoxSelect.html" title="class in io.github.mmm.ui.tvm.widget.input">TvmComboBoxSelect</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.tvm.core/io/github/mmm/ui/tvm/widget/input/TvmRadioChoice.html" title="class in io.github.mmm.ui.tvm.widget.input">TvmRadioChoice</a></code></dd>
 </dl>
 <hr>
 <pre>public interface <span class="typeNameLabel">UiAbstractChoice&lt;O,&#8203;V&gt;</span>
@@ -163,11 +163,18 @@ extends <a href="UiInput.html" title="interface in io.github.mmm.ui.api.widget.i
 </a>
 <h3>Field Summary</h3>
 <ul class="blockList">
-<li class="blockList"><a id="fields.inherited.from.class.io.github.mmm.ui.api.attribute.AttributeReadId">
+<li class="blockList"><a id="fields.inherited.from.class.io.github.mmm.ui.api.attribute.AttributeWritePrefix">
 <!--   -->
 </a>
-<h3>Fields inherited from interface&nbsp;io.github.mmm.ui.api.attribute.<a href="../../attribute/AttributeReadId.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadId</a></h3>
-<code><a href="../../attribute/AttributeReadId.html#ID_SEPARATOR">ID_SEPARATOR</a></code></li>
+<h3>Fields inherited from interface&nbsp;io.github.mmm.ui.api.attribute.<a href="../../attribute/AttributeWritePrefix.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWritePrefix</a></h3>
+<code><a href="../../attribute/AttributeWritePrefix.html#STYLE_PREFIX">STYLE_PREFIX</a>, <a href="../../attribute/AttributeWritePrefix.html#STYLE_WITH_PREFIX">STYLE_WITH_PREFIX</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="fields.inherited.from.class.io.github.mmm.ui.api.attribute.AttributeWriteSuffix">
+<!--   -->
+</a>
+<h3>Fields inherited from interface&nbsp;io.github.mmm.ui.api.attribute.<a href="../../attribute/AttributeWriteSuffix.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteSuffix</a></h3>
+<code><a href="../../attribute/AttributeWriteSuffix.html#STYLE_SUFFIX">STYLE_SUFFIX</a>, <a href="../../attribute/AttributeWriteSuffix.html#STYLE_WITH_SUFFIX">STYLE_WITH_SUFFIX</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="fields.inherited.from.class.io.github.mmm.ui.api.attribute.AttributeWriteValidationFailure">
@@ -175,6 +182,13 @@ extends <a href="UiInput.html" title="interface in io.github.mmm.ui.api.widget.i
 </a>
 <h3>Fields inherited from interface&nbsp;io.github.mmm.ui.api.attribute.<a href="../../attribute/AttributeWriteValidationFailure.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteValidationFailure</a></h3>
 <code><a href="../../attribute/AttributeWriteValidationFailure.html#STYLE_INVALID">STYLE_INVALID</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="fields.inherited.from.class.io.github.mmm.ui.api.widget.input.UiInput">
+<!--   -->
+</a>
+<h3>Fields inherited from interface&nbsp;io.github.mmm.ui.api.widget.input.<a href="UiInput.html" title="interface in io.github.mmm.ui.api.widget.input">UiInput</a></h3>
+<code><a href="UiInput.html#STYLE_INPUT">STYLE_INPUT</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="fields.inherited.from.class.io.github.mmm.ui.api.widget.value.UiValidatableWidget">
@@ -201,35 +215,42 @@ extends <a href="UiInput.html" title="interface in io.github.mmm.ui.api.widget.i
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>default <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#format(O)">format</a></span>&#8203;(<a href="UiAbstractChoice.html" title="type parameter in UiAbstractChoice">O</a>&nbsp;option)</code></th>
+<td class="colLast">
+<div class="block">This method is intended for internal reuse.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;<a href="UiAbstractChoice.html" title="type parameter in UiAbstractChoice">O</a>,&#8203;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getFormatter()">getFormatter</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="UiAbstractChoice.html" title="type parameter in UiAbstractChoice">O</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getOptions()">getOptions</a></span>()</code></th>
 <td class="colLast">
 <div class="block">This method gets the <em>options</em> of this object.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setFormatter(java.util.function.Function)">setFormatter</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;<a href="UiAbstractChoice.html" title="type parameter in UiAbstractChoice">O</a>,&#8203;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;formatter)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setOptions(java.util.List)">setOptions</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="UiAbstractChoice.html" title="type parameter in UiAbstractChoice">O</a>&gt;&nbsp;options)</code></th>
 <td class="colLast">
 <div class="block">This method sets the <a href="#getOptions()"><code>options</code></a> of this object.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>default void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setOptions(O...)">setOptions</a></span>&#8203;(<a href="UiAbstractChoice.html" title="type parameter in UiAbstractChoice">O</a>...&nbsp;options)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>static &lt;O extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Enum.html?is-external=true" title="class or interface in java.lang" class="externalLink">Enum</a>&lt;?&gt;&gt;<br>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setOptionsByEnum(io.github.mmm.ui.api.widget.input.UiAbstractChoice,java.lang.Class)">setOptionsByEnum</a></span>&#8203;(<a href="UiAbstractChoice.html" title="interface in io.github.mmm.ui.api.widget.input">UiAbstractChoice</a>&lt;O,&#8203;?&gt;&nbsp;choice,
                 <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;O&gt;&nbsp;enumType)</code></th>
@@ -251,6 +272,20 @@ extends <a href="UiInput.html" title="interface in io.github.mmm.ui.api.widget.i
 <code><a href="../../attribute/AttributeWriteId.html#setId(java.lang.String)">setId</a></code></li>
 </ul>
 <ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.api.attribute.AttributeWritePrefix">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;io.github.mmm.ui.api.attribute.<a href="../../attribute/AttributeWritePrefix.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWritePrefix</a></h3>
+<code><a href="../../attribute/AttributeWritePrefix.html#getPrefix()">getPrefix</a>, <a href="../../attribute/AttributeWritePrefix.html#setPrefix(java.lang.String)">setPrefix</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.api.attribute.AttributeWriteSuffix">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;io.github.mmm.ui.api.attribute.<a href="../../attribute/AttributeWriteSuffix.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteSuffix</a></h3>
+<code><a href="../../attribute/AttributeWriteSuffix.html#getSuffix()">getSuffix</a>, <a href="../../attribute/AttributeWriteSuffix.html#setSuffix(java.lang.String)">setSuffix</a></code></li>
+</ul>
+<ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.api.attribute.AttributeWriteTooltip">
 <!--   -->
 </a>
@@ -262,7 +297,7 @@ extends <a href="UiInput.html" title="interface in io.github.mmm.ui.api.widget.i
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;io.github.mmm.ui.api.attribute.<a href="../../attribute/AttributeWriteValidationFailure.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteValidationFailure</a></h3>
-<code><a href="../../attribute/AttributeWriteValidationFailure.html#getValidationFailure()">getValidationFailure</a>, <a href="../../attribute/AttributeWriteValidationFailure.html#setValidationFailure(java.lang.String)">setValidationFailure</a></code></li>
+<code><a href="../../attribute/AttributeWriteValidationFailure.html#getValidationFailure()">getValidationFailure</a>, <a href="../../attribute/AttributeWriteValidationFailure.html#setValidationFailure(java.lang.String)">setValidationFailure</a>, <a href="../../attribute/AttributeWriteValidationFailure.html#setValidationFailure(java.lang.String,boolean)">setValidationFailure</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.event.EventSource">
@@ -290,7 +325,7 @@ extends <a href="UiInput.html" title="interface in io.github.mmm.ui.api.widget.i
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;io.github.mmm.ui.api.widget.value.<a href="../value/UiValidatableWidget.html" title="interface in io.github.mmm.ui.api.widget.value">UiValidatableWidget</a></h3>
-<code><a href="../value/UiValidatableWidget.html#getOriginalValue()">getOriginalValue</a>, <a href="../value/UiValidatableWidget.html#getValidator()">getValidator</a>, <a href="../value/UiValidatableWidget.html#getValue()">getValue</a>, <a href="../value/UiValidatableWidget.html#getValueOrThrow()">getValueOrThrow</a>, <a href="../value/UiValidatableWidget.html#isValid()">isValid</a>, <a href="../value/UiValidatableWidget.html#resetValue()">resetValue</a>, <a href="../value/UiValidatableWidget.html#setOriginalValue(V)">setOriginalValue</a>, <a href="../value/UiValidatableWidget.html#setValidator(io.github.mmm.validation.Validator)">setValidator</a>, <a href="../value/UiValidatableWidget.html#setValue(V)">setValue</a>, <a href="../value/UiValidatableWidget.html#setValue(V,boolean)">setValue</a>, <a href="../value/UiValidatableWidget.html#setValueForUser(V)">setValueForUser</a></code></li>
+<code><a href="../value/UiValidatableWidget.html#getOriginalValue()">getOriginalValue</a>, <a href="../value/UiValidatableWidget.html#getValidator()">getValidator</a>, <a href="../value/UiValidatableWidget.html#getValue()">getValue</a>, <a href="../value/UiValidatableWidget.html#getValueOrThrow()">getValueOrThrow</a>, <a href="../value/UiValidatableWidget.html#isValid()">isValid</a>, <a href="../value/UiValidatableWidget.html#reset()">reset</a>, <a href="../value/UiValidatableWidget.html#setOriginalValue(V)">setOriginalValue</a>, <a href="../value/UiValidatableWidget.html#setValidator(io.github.mmm.validation.Validator)">setValidator</a>, <a href="../value/UiValidatableWidget.html#setValue(V)">setValue</a>, <a href="../value/UiValidatableWidget.html#setValue(V,boolean)">setValue</a>, <a href="../value/UiValidatableWidget.html#setValueForUser(V)">setValueForUser</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.api.widget.UiWidget">
@@ -403,13 +438,31 @@ extends <a href="UiInput.html" title="interface in io.github.mmm.ui.api.widget.i
 <a id="setFormatter(java.util.function.Function)">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>setFormatter</h4>
 <pre class="methodSignature">void&nbsp;setFormatter&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;<a href="UiAbstractChoice.html" title="type parameter in UiAbstractChoice">O</a>,&#8203;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;formatter)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>formatter</code> - the new value of <a href="#getFormatter()"><code>getFormatter()</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="format(java.lang.Object)">
+<!--   -->
+</a><a id="format(O)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>format</h4>
+<pre class="methodSignature">default&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;format&#8203;(<a href="UiAbstractChoice.html" title="type parameter in UiAbstractChoice">O</a>&nbsp;option)</pre>
+<div class="block">This method is intended for internal reuse.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>option</code> - the option to format.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the formatted and localized <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>String</code></a>.</dd>
 </dl>
 </li>
 </ul>

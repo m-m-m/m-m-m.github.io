@@ -89,13 +89,13 @@ loadScripts(document, 'script');</script>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
@@ -132,45 +132,6 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
-<!-- =========== FIELD SUMMARY =========== -->
-<section role="region">
-<ul class="blockList">
-<li class="blockList"><a id="field.summary">
-<!--   -->
-</a>
-<h3>Field Summary</h3>
-<table class="memberSummary">
-<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colSecond" scope="col">Field</th>
-<th class="colLast" scope="col">Description</th>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>static <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#NAME_JSON">NAME_JSON</a></span></code></th>
-<td class="colLast">
-<div class="block"><a href="StructuredFormatProvider.html#getName()"><code>Name</code></a> of <a href="https://www.json.org/j">JSON format</a>.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>static <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#NAME_XML">NAME_XML</a></span></code></th>
-<td class="colLast">
-<div class="block"><a href="StructuredFormatProvider.html#getName()"><code>Name</code></a> of <a href="https://www.w3.org/XML/">XML format</a>.</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>static <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#NAME_YAML">NAME_YAML</a></span></code></th>
-<td class="colLast">
-<div class="block"><a href="StructuredFormatProvider.html#getName()"><code>Name</code></a> of <a href="https://en.wikipedia.org/wiki/YAML">YAML format</a>.</div>
-</td>
-</tr>
-</table>
-</li>
-</ul>
-</section>
 <!-- ========== METHOD SUMMARY =========== -->
 <section role="region">
 <ul class="blockList">
@@ -216,58 +177,6 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
-<!-- ============ FIELD DETAIL =========== -->
-<section role="region">
-<ul class="blockList">
-<li class="blockList"><a id="field.detail">
-<!--   -->
-</a>
-<h3>Field Detail</h3>
-<a id="NAME_JSON">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>NAME_JSON</h4>
-<pre>static final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> NAME_JSON</pre>
-<div class="block"><a href="StructuredFormatProvider.html#getName()"><code>Name</code></a> of <a href="https://www.json.org/j">JSON format</a>.</div>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../constant-values.html#io.github.mmm.marshall.StructuredFormatFactory.NAME_JSON">Constant Field Values</a></dd>
-</dl>
-</li>
-</ul>
-<a id="NAME_XML">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>NAME_XML</h4>
-<pre>static final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> NAME_XML</pre>
-<div class="block"><a href="StructuredFormatProvider.html#getName()"><code>Name</code></a> of <a href="https://www.w3.org/XML/">XML format</a>.</div>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../constant-values.html#io.github.mmm.marshall.StructuredFormatFactory.NAME_XML">Constant Field Values</a></dd>
-</dl>
-</li>
-</ul>
-<a id="NAME_YAML">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>NAME_YAML</h4>
-<pre>static final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> NAME_YAML</pre>
-<div class="block"><a href="StructuredFormatProvider.html#getName()"><code>Name</code></a> of <a href="https://en.wikipedia.org/wiki/YAML">YAML format</a>.</div>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../constant-values.html#io.github.mmm.marshall.StructuredFormatFactory.NAME_YAML">Constant Field Values</a></dd>
-</dl>
-</li>
-</ul>
-</li>
-</ul>
-</section>
 <!-- ============ METHOD DETAIL ========== -->
 <section role="region">
 <ul class="blockList">
@@ -284,8 +193,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <pre class="methodSignature"><a href="StructuredFormatProvider.html" title="interface in io.github.mmm.marshall">StructuredFormatProvider</a>&nbsp;getProvider&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;format)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>format</code> - the <a href="StructuredFormatProvider.html#getName()"><code>format name</code></a>. E.g. <a href="#NAME_JSON"><code>JSON</code></a>,
-        <a href="#NAME_XML"><code>XML</code></a>, or <a href="#NAME_YAML"><code>YAML</code></a>.</dd>
+<dd><code>format</code> - the <a href="StructuredFormatProvider.html#getId()"><code>format name</code></a>. E.g. <a href="StructuredFormat.html#ID_JSON"><code>JSON</code></a>,
+        <a href="StructuredFormat.html#ID_XML"><code>XML</code></a>, or <a href="StructuredFormat.html#ID_YAML"><code>YAML</code></a>.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a new <a href="StructuredFormatProvider.html" title="interface in io.github.mmm.marshall"><code>StructuredFormatProvider</code></a> for the given <code>format</code> or <code>null</code> if no such provider is
          registered.</dd>
@@ -303,8 +212,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <pre class="methodSignature">default&nbsp;<a href="StructuredFormat.html" title="interface in io.github.mmm.marshall">StructuredFormat</a>&nbsp;create&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;format)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>format</code> - the <a href="StructuredFormatProvider.html#getName()"><code>format name</code></a>. E.g. <a href="#NAME_JSON"><code>JSON</code></a>,
-        <a href="#NAME_XML"><code>XML</code></a>, or <a href="#NAME_YAML"><code>YAML</code></a>.</dd>
+<dd><code>format</code> - the <a href="StructuredFormatProvider.html#getId()"><code>format name</code></a>. E.g. <a href="StructuredFormat.html#ID_JSON"><code>JSON</code></a>,
+        <a href="StructuredFormat.html#ID_XML"><code>XML</code></a>, or <a href="StructuredFormat.html#ID_YAML"><code>YAML</code></a>.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a new <a href="StructuredFormat.html" title="interface in io.github.mmm.marshall"><code>StructuredFormat</code></a> for the given <code>format</code> using default configuration.</dd>
 </dl>
@@ -320,8 +229,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
                                 <a href="MarshallingConfig.html" title="class in io.github.mmm.marshall">MarshallingConfig</a>&nbsp;config)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>format</code> - the <a href="StructuredFormatProvider.html#getName()"><code>format name</code></a>. E.g. <a href="#NAME_JSON"><code>JSON</code></a>,
-        <a href="#NAME_XML"><code>XML</code></a>, or <a href="#NAME_YAML"><code>YAML</code></a>.</dd>
+<dd><code>format</code> - the <a href="StructuredFormatProvider.html#getId()"><code>format name</code></a>. E.g. <a href="StructuredFormat.html#ID_JSON"><code>JSON</code></a>,
+        <a href="StructuredFormat.html#ID_XML"><code>XML</code></a>, or <a href="StructuredFormat.html#ID_YAML"><code>YAML</code></a>.</dd>
 <dd><code>config</code> - the <a href="MarshallingConfig.html" title="class in io.github.mmm.marshall"><code>MarshallingConfig</code></a> to customize the format.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a new <a href="StructuredFormat.html" title="interface in io.github.mmm.marshall"><code>StructuredFormat</code></a> for the given <code>format</code> using the given <code>config</code>.</dd>
@@ -396,13 +305,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>

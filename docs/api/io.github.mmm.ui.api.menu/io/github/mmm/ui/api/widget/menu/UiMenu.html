@@ -26,12 +26,6 @@
     catch(err) {
     }
 //-->
-var data = {"i0":18,"i1":18,"i2":18,"i3":1};
-var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],16:["t5","Default Methods"]};
-var altColor = "altColor";
-var rowColor = "rowColor";
-var tableTab = "tableTab";
-var activeTableTab = "activeTableTab";
 var pathtoroot = "../../../../../../../../";
 var useModuleDirectories = true;
 loadScripts(document, 'script');</script>
@@ -95,9 +89,9 @@ loadScripts(document, 'script');</script>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
-<li><a href="#method.detail">Method</a></li>
+<li>Method</li>
 </ul>
 </div>
 <a id="skip.navbar.top">
@@ -125,15 +119,18 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Superinterfaces:</dt>
-<dd><code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadId.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadId</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadValid.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadValid</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadVisible.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadVisible</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteId.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteId</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteText.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteText</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteVisible.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteVisible</a></code>, <code><a href="../../../../../../../../io.github.mmm.event/io/github/mmm/event/EventSource.html" title="interface in io.github.mmm.event">EventSource</a>&lt;<a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/event/UiEvent.html" title="class in io.github.mmm.ui.api.event">UiEvent</a>,&#8203;<a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/event/UiEventListener.html" title="interface in io.github.mmm.ui.api.event">UiEventListener</a>&gt;</code>, <code><a href="UiAbstractMenuItem.html" title="interface in io.github.mmm.ui.api.widget.menu">UiAbstractMenuItem</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiComposite.html" title="interface in io.github.mmm.ui.api.widget.composite">UiComposite</a>&lt;<a href="UiAbstractMenuItem.html" title="interface in io.github.mmm.ui.api.widget.menu">UiAbstractMenuItem</a>&gt;</code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiMutableComposite.html" title="interface in io.github.mmm.ui.api.widget.composite">UiMutableComposite</a>&lt;<a href="UiAbstractMenuItem.html" title="interface in io.github.mmm.ui.api.widget.menu">UiAbstractMenuItem</a>&gt;</code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiNativeWidget.html" title="interface in io.github.mmm.ui.api.widget">UiNativeWidget</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html" title="interface in io.github.mmm.ui.api.widget">UiWidget</a></code></dd>
+<dd><code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadEnabled.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadEnabled</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadId.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadId</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadValid.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadValid</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadVisible.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadVisible</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteEnabled.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteEnabled</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteId.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteId</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteReadOnly.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteReadOnly</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteText.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteText</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteTooltip.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteTooltip</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteVisible.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteVisible</a></code>, <code><a href="../../../../../../../../io.github.mmm.event/io/github/mmm/event/EventSource.html" title="interface in io.github.mmm.event">EventSource</a>&lt;<a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/event/UiEvent.html" title="class in io.github.mmm.ui.api.event">UiEvent</a>,&#8203;<a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/event/UiEventListener.html" title="interface in io.github.mmm.ui.api.event">UiEventListener</a>&gt;</code>, <code><a href="UiAbstractMenu.html" title="interface in io.github.mmm.ui.api.widget.menu">UiAbstractMenu</a>&lt;<a href="UiAbstractMenuEntry.html" title="interface in io.github.mmm.ui.api.widget.menu">UiAbstractMenuEntry</a>&gt;</code>, <code><a href="UiAbstractMenuEntry.html" title="interface in io.github.mmm.ui.api.widget.menu">UiAbstractMenuEntry</a></code>, <code><a href="UiAbstractMenuWithItems.html" title="interface in io.github.mmm.ui.api.widget.menu">UiAbstractMenuWithItems</a></code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiComposite.html" title="interface in io.github.mmm.ui.api.widget.composite">UiComposite</a>&lt;<a href="UiAbstractMenuEntry.html" title="interface in io.github.mmm.ui.api.widget.menu">UiAbstractMenuEntry</a>&gt;</code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiRemovableComposite.html" title="interface in io.github.mmm.ui.api.widget.composite">UiRemovableComposite</a>&lt;<a href="UiAbstractMenuEntry.html" title="interface in io.github.mmm.ui.api.widget.menu">UiAbstractMenuEntry</a>&gt;</code>, <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiWidget.html" title="interface in io.github.mmm.ui.api.widget">UiWidget</a></code></dd>
+</dl>
+<dl>
+<dt>All Known Subinterfaces:</dt>
+<dd><code><a href="UiAdvancedMenu.html" title="interface in io.github.mmm.ui.api.widget.menu">UiAdvancedMenu</a></code></dd>
 </dl>
 <hr>
 <pre>public interface <span class="typeNameLabel">UiMenu</span>
-extends <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiMutableComposite.html" title="interface in io.github.mmm.ui.api.widget.composite">UiMutableComposite</a>&lt;<a href="UiAbstractMenuItem.html" title="interface in io.github.mmm.ui.api.widget.menu">UiAbstractMenuItem</a>&gt;, <a href="UiAbstractMenuItem.html" title="interface in io.github.mmm.ui.api.widget.menu">UiAbstractMenuItem</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteText.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteText</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/UiNativeWidget.html" title="interface in io.github.mmm.ui.api.widget">UiNativeWidget</a></pre>
-<div class="block"><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiMutableComposite.html" title="interface in io.github.mmm.ui.api.widget.composite"><code>UiMutableComposite</code></a> representing a <em>menu</em>. A menu is something that is displayed by its
- <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteText.html#getText()"><code>label</code></a> and opens a list of <a href="UiAbstractMenuItem.html" title="interface in io.github.mmm.ui.api.widget.menu"><code>menu items</code></a> if it is clicked. The user can
- click on one of these <a href="UiAbstractMenuItem.html" title="interface in io.github.mmm.ui.api.widget.menu"><code>menu items</code></a> to execute a specific functionality. <br>
- A <a href="UiMenu.html" title="interface in io.github.mmm.ui.api.widget.menu"><code>UiMenu</code></a> is also a <a href="UiAbstractMenuItem.html" title="interface in io.github.mmm.ui.api.widget.menu"><code>UiAbstractMenuItem</code></a> so you can add it to another menu as a <em>sub menu</em>.</div>
+extends <a href="UiAbstractMenuEntry.html" title="interface in io.github.mmm.ui.api.widget.menu">UiAbstractMenuEntry</a>, <a href="UiAbstractMenuWithItems.html" title="interface in io.github.mmm.ui.api.widget.menu">UiAbstractMenuWithItems</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteText.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteText</a></pre>
+<div class="block"><a href="UiAbstractMenuEntry.html" title="interface in io.github.mmm.ui.api.widget.menu"><code>Navigation entry</code></a> that represents a group of other <a href="UiAbstractMenuEntry.html" title="interface in io.github.mmm.ui.api.widget.menu"><code>navigation
+ entries</code></a>. If created via a <a href="UiMenuBar.html" title="interface in io.github.mmm.ui.api.widget.menu"><code>UiMenuBar</code></a> this will be a menu that can be opened and if created from a
+ <a href="UiNavigationBar.html" title="interface in io.github.mmm.ui.api.widget.menu"><code>UiNavigationBar</code></a> it will be a link that collapses or expands its <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiComposite.html#getChild(int)"><code>children</code></a>.</div>
 <dl>
 <dt><span class="simpleTagLabel">Since:</span></dt>
 <dd>1.0.0</dd>
@@ -151,13 +148,21 @@ extends <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm
 <!--   -->
 </a>
 <h3>Field Summary</h3>
-<ul class="blockList">
-<li class="blockList"><a id="fields.inherited.from.class.io.github.mmm.ui.api.attribute.AttributeReadId">
-<!--   -->
-</a>
-<h3>Fields inherited from interface&nbsp;io.github.mmm.ui.api.attribute.<a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadId.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadId</a></h3>
-<code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeReadId.html#ID_SEPARATOR">ID_SEPARATOR</a></code></li>
-</ul>
+<table class="memberSummary">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Field</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#STYLE_NAV">STYLE_NAV</a></span></code></th>
+<td class="colLast">
+<div class="block">The <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/datatype/UiStyles.html#add(java.lang.String)"><code>style</code></a> for this widget in <a href="UiNavigationBar.html" title="interface in io.github.mmm.ui.api.widget.menu"><code>UiNavigationBar</code></a>.</div>
+</td>
+</tr>
+</table>
 </li>
 </ul>
 </section>
@@ -168,37 +173,6 @@ extends <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm
 <!--   -->
 </a>
 <h3>Method Summary</h3>
-<table class="memberSummary">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t5" class="tableTab"><span><a href="javascript:show(16);">Default Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colSecond" scope="col">Method</th>
-<th class="colLast" scope="col">Description</th>
-</tr>
-<tr id="i0" class="altColor">
-<td class="colFirst"><code>default <a href="UiMenuItem.html" title="interface in io.github.mmm.ui.api.widget.menu">UiMenuItem</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addMenuItem(java.lang.String,io.github.mmm.ui.api.event.UiEventListener)">addMenuItem</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;text,
-           <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/event/UiEventListener.html" title="interface in io.github.mmm.ui.api.event">UiEventListener</a>&nbsp;listener)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i1" class="rowColor">
-<td class="colFirst"><code>default void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addSeparator()">addSeparator</a></span>()</code></th>
-<td class="colLast">
-<div class="block">This method <code>adds</code> a <a href="UiMenuItemSeparator.html" title="interface in io.github.mmm.ui.api.widget.menu"><code>separator</code></a> to this menu.</div>
-</td>
-</tr>
-<tr id="i2" class="altColor">
-<td class="colFirst"><code>default <a href="UiMenu.html" title="interface in io.github.mmm.ui.api.widget.menu">UiMenu</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addSubmenu(java.lang.String)">addSubmenu</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;text)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i3" class="rowColor">
-<td class="colFirst"><code>static <a href="UiMenu.html" title="interface in io.github.mmm.ui.api.widget.menu">UiMenu</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(java.lang.String)">of</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;text)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-</table>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.api.attribute.AttributeReadId">
 <!--   -->
@@ -221,6 +195,13 @@ extends <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm
 <code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteText.html#getText()">getText</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteText.html#setText(java.lang.String)">setText</a></code></li>
 </ul>
 <ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.api.attribute.AttributeWriteTooltip">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;io.github.mmm.ui.api.attribute.<a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteTooltip.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteTooltip</a></h3>
+<code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteTooltip.html#getTooltip()">getTooltip</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteTooltip.html#setTooltip(java.lang.String)">setTooltip</a></code></li>
+</ul>
+<ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.event.EventSource">
 <!--   -->
 </a>
@@ -228,18 +209,32 @@ extends <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm
 <code><a href="../../../../../../../../io.github.mmm.event/io/github/mmm/event/EventSource.html#addListener(L)">addListener</a>, <a href="../../../../../../../../io.github.mmm.event/io/github/mmm/event/EventSource.html#addListener(L,boolean)">addListener</a>, <a href="../../../../../../../../io.github.mmm.event/io/github/mmm/event/EventSource.html#addWeakListener(L)">addWeakListener</a>, <a href="../../../../../../../../io.github.mmm.event/io/github/mmm/event/EventSource.html#removeListener(L)">removeListener</a></code></li>
 </ul>
 <ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.api.widget.menu.UiAbstractMenu">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;io.github.mmm.ui.api.widget.menu.<a href="UiAbstractMenu.html" title="interface in io.github.mmm.ui.api.widget.menu">UiAbstractMenu</a></h3>
+<code><a href="UiAbstractMenu.html#addMenu(java.lang.String)">addMenu</a>, <a href="UiAbstractMenu.html#addMenu(java.lang.String,int)">addMenu</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.api.widget.menu.UiAbstractMenuWithItems">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;io.github.mmm.ui.api.widget.menu.<a href="UiAbstractMenuWithItems.html" title="interface in io.github.mmm.ui.api.widget.menu">UiAbstractMenuWithItems</a></h3>
+<code><a href="UiAbstractMenuWithItems.html#addItem(io.github.mmm.ui.api.event.action.UiAction)">addItem</a>, <a href="UiAbstractMenuWithItems.html#addItem(io.github.mmm.ui.api.event.action.UiAction,int)">addItem</a>, <a href="UiAbstractMenuWithItems.html#addItem(java.lang.String,io.github.mmm.ui.api.event.UiClickEventListener)">addItem</a>, <a href="UiAbstractMenuWithItems.html#addItem(java.lang.String,io.github.mmm.ui.api.event.UiClickEventListener,int)">addItem</a>, <a href="UiAbstractMenuWithItems.html#addSeparator()">addSeparator</a>, <a href="UiAbstractMenuWithItems.html#addSeparator(int)">addSeparator</a></code></li>
+</ul>
+<ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.api.widget.composite.UiComposite">
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;io.github.mmm.ui.api.widget.composite.<a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiComposite.html" title="interface in io.github.mmm.ui.api.widget.composite">UiComposite</a></h3>
-<code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiComposite.html#getChild(int)">getChild</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiComposite.html#getChild(java.lang.String)">getChild</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiComposite.html#getChildCount()">getChildCount</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiComposite.html#getChildIndex(C)">getChildIndex</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiComposite.html#getDescendant(java.lang.String)">getDescendant</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiComposite.html#getModificationTimestamp()">getModificationTimestamp</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiComposite.html#getPropagation()">getPropagation</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiComposite.html#isModified()">isModified</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiComposite.html#isValid()">isValid</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiComposite.html#setFocused()">setFocused</a></code></li>
+<code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiComposite.html#getChild(int)">getChild</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiComposite.html#getChild(java.lang.String)">getChild</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiComposite.html#getChildCount()">getChildCount</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiComposite.html#getChildIndex(C)">getChildIndex</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiComposite.html#getDescendant(java.lang.String)">getDescendant</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiComposite.html#getModificationTimestamp()">getModificationTimestamp</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiComposite.html#getPropagation()">getPropagation</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiComposite.html#isModified()">isModified</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiComposite.html#isValid()">isValid</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiComposite.html#reset()">reset</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiComposite.html#setFocused()">setFocused</a></code></li>
 </ul>
 <ul class="blockList">
-<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.api.widget.composite.UiMutableComposite">
+<li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.api.widget.composite.UiRemovableComposite">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;io.github.mmm.ui.api.widget.composite.<a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiMutableComposite.html" title="interface in io.github.mmm.ui.api.widget.composite">UiMutableComposite</a></h3>
-<code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiMutableComposite.html#addChild(C)">addChild</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiMutableComposite.html#addChild(C,int)">addChild</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiMutableComposite.html#removeChild(int)">removeChild</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiMutableComposite.html#removeChild(C)">removeChild</a></code></li>
+<h3>Methods inherited from interface&nbsp;io.github.mmm.ui.api.widget.composite.<a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiRemovableComposite.html" title="interface in io.github.mmm.ui.api.widget.composite">UiRemovableComposite</a></h3>
+<code><a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiRemovableComposite.html#removeChild(int)">removeChild</a>, <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/widget/composite/UiRemovableComposite.html#removeChild(C)">removeChild</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.ui.api.widget.UiWidget">
@@ -257,68 +252,24 @@ extends <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
-<!-- ============ METHOD DETAIL ========== -->
+<!-- ============ FIELD DETAIL =========== -->
 <section role="region">
 <ul class="blockList">
-<li class="blockList"><a id="method.detail">
+<li class="blockList"><a id="field.detail">
 <!--   -->
 </a>
-<h3>Method Detail</h3>
-<a id="addMenuItem(java.lang.String,io.github.mmm.ui.api.event.UiEventListener)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>addMenuItem</h4>
-<pre class="methodSignature">default&nbsp;<a href="UiMenuItem.html" title="interface in io.github.mmm.ui.api.widget.menu">UiMenuItem</a>&nbsp;addMenuItem&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;text,
-                               <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/event/UiEventListener.html" title="interface in io.github.mmm.ui.api.event">UiEventListener</a>&nbsp;listener)</pre>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>text</code> - the new <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteText.html#getText()"><code>label text</code></a> of the <a href="UiMenuItem.html" title="interface in io.github.mmm.ui.api.widget.menu"><code>UiMenuItem</code></a> to create.</dd>
-<dd><code>listener</code> - the <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/event/UiEventListener.html" title="interface in io.github.mmm.ui.api.event"><code>UiEventListener</code></a> to listen for <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/event/UiEvent.html" title="class in io.github.mmm.ui.api.event"><code>UiEvent</code></a>s such as
-        <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/event/UiClickEvent.html" title="class in io.github.mmm.ui.api.event"><code>UiClickEvent</code></a>.</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the created and added <a href="UiMenuItem.html" title="interface in io.github.mmm.ui.api.widget.menu"><code>UiMenuItem</code></a>.</dd>
-</dl>
-</li>
-</ul>
-<a id="addSeparator()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>addSeparator</h4>
-<pre class="methodSignature">default&nbsp;void&nbsp;addSeparator()</pre>
-<div class="block">This method <code>adds</code> a <a href="UiMenuItemSeparator.html" title="interface in io.github.mmm.ui.api.widget.menu"><code>separator</code></a> to this menu.</div>
-</li>
-</ul>
-<a id="addSubmenu(java.lang.String)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>addSubmenu</h4>
-<pre class="methodSignature">default&nbsp;<a href="UiMenu.html" title="interface in io.github.mmm.ui.api.widget.menu">UiMenu</a>&nbsp;addSubmenu&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;text)</pre>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>text</code> - the new <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteText.html#getText()"><code>label text</code></a> of the <a href="UiMenu.html" title="interface in io.github.mmm.ui.api.widget.menu"><code>UiMenu</code></a> to create.</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the new sub-menu.</dd>
-</dl>
-</li>
-</ul>
-<a id="of(java.lang.String)">
+<h3>Field Detail</h3>
+<a id="STYLE_NAV">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>of</h4>
-<pre class="methodSignature">static&nbsp;<a href="UiMenu.html" title="interface in io.github.mmm.ui.api.widget.menu">UiMenu</a>&nbsp;of&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;text)</pre>
+<h4>STYLE_NAV</h4>
+<pre>static final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> STYLE_NAV</pre>
+<div class="block">The <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/datatype/UiStyles.html#add(java.lang.String)"><code>style</code></a> for this widget in <a href="UiNavigationBar.html" title="interface in io.github.mmm.ui.api.widget.menu"><code>UiNavigationBar</code></a>.</div>
 <dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>text</code> - the new <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui/api/attribute/AttributeWriteText.html#getText()"><code>label text</code></a> of the <a href="UiMenu.html" title="interface in io.github.mmm.ui.api.widget.menu"><code>UiMenu</code></a> to create.</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the new <a href="UiMenu.html" title="interface in io.github.mmm.ui.api.widget.menu"><code>UiMenu</code></a>.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../../../constant-values.html#io.github.mmm.ui.api.widget.menu.UiMenu.STYLE_NAV">Constant Field Values</a></dd>
 </dl>
 </li>
 </ul>
@@ -381,9 +332,9 @@ extends <a href="../../../../../../../../io.github.mmm.ui.api.core/io/github/mmm
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
-<li><a href="#method.detail">Method</a></li>
+<li>Method</li>
 </ul>
 </div>
 <a id="skip.navbar.bottom">

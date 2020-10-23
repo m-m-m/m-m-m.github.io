@@ -313,7 +313,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code>protected &lt;P extends <a href="../WritableProperty.html" title="interface in io.github.mmm.property">WritableProperty</a>&lt;?&gt;&gt;<br>P</code></td>
+<td class="colFirst"><code>protected &lt;V,&#8203;P extends <a href="../WritableProperty.html" title="interface in io.github.mmm.property">WritableProperty</a>&lt;V&gt;&gt;<br>P</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">AbstractBean.</span><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/AbstractBean.html#add(P)">add</a></span>&#8203;(P&nbsp;property)</code></th>
 <td class="colLast">
 <div class="block">Internal method for <a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/AbstractBean.html#addProperty(P)"><code>AbstractBean.addProperty(WritableProperty)</code></a>, without verification.</div>
@@ -331,12 +331,6 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Adds the given <a href="../WritableProperty.html" title="interface in io.github.mmm.property"><code>WritableProperty</code></a> to this bean.</div>
 </td>
 </tr>
-<tr class="rowColor">
-<td class="colFirst"><code>default &lt;P extends <a href="../WritableProperty.html" title="interface in io.github.mmm.property">WritableProperty</a>&lt;?&gt;&gt;<br>P</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">BeanContext.</span><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/BeanContext.html#transform(P,io.github.mmm.bean.AbstractBean.AddMode)">transform</a></span>&#8203;(P&nbsp;property,
-         <a href="https://m-m-m.github.io/docs/api/io.github.mmm.bean/io/github/mmm/bean/AbstractBean.AddMode.html?is-external=true" title="class or interface in io.github.mmm.bean" class="externalLink">io.github.mmm.bean.AbstractBean.AddMode</a>&nbsp;mode)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
 </tbody>
 </table>
 <table class="useSummary">
@@ -348,18 +342,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../WritableProperty.html" title="interface in io.github.mmm.property">WritableProperty</a>&lt;?&gt;</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">PropertyBuilders.</span><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/PropertyBuilders.html#apply(java.lang.String)">apply</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>&lt;V&gt;&nbsp;<a href="../WritableProperty.html" title="interface in io.github.mmm.property">WritableProperty</a>&lt;V&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">AbstractBean.</span><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/AbstractBean.html#createProperty(java.lang.String,java.lang.Class,java.lang.reflect.Type)">createProperty</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
               <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;V&gt;&nbsp;valueClass,
               <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Type.html?is-external=true" title="class or interface in java.lang.reflect" class="externalLink">Type</a>&nbsp;valueType)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>default &lt;V&gt;&nbsp;<a href="../WritableProperty.html" title="interface in io.github.mmm.property">WritableProperty</a>&lt;V&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">WritableBean.</span><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/WritableBean.html#createProperty(java.lang.String,java.lang.Class)">createProperty</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
               <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;V&gt;&nbsp;valueClass)</code></th>
@@ -368,7 +357,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
  <a href="../../../../../../io.github.mmm.value/io/github/mmm/value/ReadableTypedValue.html#getValueClass()"><code>value class</code></a> dynamically.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>&lt;V&gt;&nbsp;<a href="../WritableProperty.html" title="interface in io.github.mmm.property">WritableProperty</a>&lt;V&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">WritableBean.</span><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/WritableBean.html#createProperty(java.lang.String,java.lang.Class,java.lang.reflect.Type)">createProperty</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
               <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;V&gt;&nbsp;valueClass,
@@ -378,7 +367,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
  <a href="../../../../../../io.github.mmm.value/io/github/mmm/value/ReadableTypedValue.html#getValueClass()"><code>value class</code></a> dynamically.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>default &lt;V&gt;&nbsp;<a href="../WritableProperty.html" title="interface in io.github.mmm.property">WritableProperty</a>&lt;V&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">WritableBean.</span><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/WritableBean.html#getOrCreateProperty(java.lang.String,java.lang.Class)">getOrCreateProperty</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
                    <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;V&gt;&nbsp;valueClass)</code></th>
@@ -386,7 +375,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block"><a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/WritableBean.html#getProperty(java.lang.String)"><code>Gets</code></a> or <a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/WritableBean.html#createProperty(java.lang.String,java.lang.Class)"><code>creates</code></a> the specified property.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>default &lt;V&gt;&nbsp;<a href="../WritableProperty.html" title="interface in io.github.mmm.property">WritableProperty</a>&lt;V&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">WritableBean.</span><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/WritableBean.html#getOrCreateProperty(java.lang.String,java.lang.Class,java.lang.reflect.Type)">getOrCreateProperty</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
                    <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;V&gt;&nbsp;valueClass,
@@ -395,9 +384,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block"><a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/WritableBean.html#getProperty(java.lang.String)"><code>Gets</code></a> or <a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/WritableBean.html#createProperty(java.lang.String,java.lang.Class,java.lang.reflect.Type)"><code>creates</code></a> the specified property.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../WritableProperty.html" title="interface in io.github.mmm.property">WritableProperty</a>&lt;?&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">AbstractBean.</span><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/AbstractBean.html#getProperty(java.lang.String)">getProperty</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../WritableProperty.html" title="interface in io.github.mmm.property">WritableProperty</a>&lt;?&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">AbstractVirtualBean.</span><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/AbstractVirtualBean.html#getProperty(java.lang.String)">getProperty</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -426,6 +420,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;? extends <a href="../WritableProperty.html" title="interface in io.github.mmm.property">WritableProperty</a>&lt;?&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">AbstractVirtualBean.</span><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/AbstractVirtualBean.html#getProperties()">getProperties</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;? extends <a href="../WritableProperty.html" title="interface in io.github.mmm.property">WritableProperty</a>&lt;?&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">WritableBean.</span><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.bean/io/github/mmm/bean/WritableBean.html#getProperties()">getProperties</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>

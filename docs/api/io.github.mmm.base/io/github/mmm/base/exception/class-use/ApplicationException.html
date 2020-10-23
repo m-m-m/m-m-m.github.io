@@ -124,6 +124,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Contains common CLI exceptions with native language support.</div>
 </td>
 </tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="#io.github.mmm.nls.exception">io.github.mmm.nls.exception</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
 </tbody>
 </table>
 </li>
@@ -261,6 +265,55 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../../io.github.mmm.nls.cli/io/github/mmm/nls/cli/exception/CliTypeNotExtendingException.html" title="class in io.github.mmm.nls.cli.exception">CliTypeNotExtendingException</a></span></code></th>
 <td class="colLast">
 <div class="block">Thrown if a mandatory <a href="../../../../../../../io.github.mmm.cli/io/github/mmm/cli/CliValue.html" title="class in io.github.mmm.cli"><code>CliValue</code></a> is missing.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
+<section role="region"><a id="io.github.mmm.nls.exception">
+<!--   -->
+</a>
+<h3>Uses of <a href="../ApplicationException.html" title="class in io.github.mmm.base.exception">ApplicationException</a> in <a href="../../../../../../../io.github.mmm.nls/io/github/mmm/nls/exception/package-summary.html">io.github.mmm.nls.exception</a></h3>
+<table class="useSummary">
+<caption><span>Subclasses of <a href="../ApplicationException.html" title="class in io.github.mmm.base.exception">ApplicationException</a> in <a href="../../../../../../../io.github.mmm.nls/io/github/mmm/nls/exception/package-summary.html">io.github.mmm.nls.exception</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Class</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../../io.github.mmm.nls/io/github/mmm/nls/exception/ObjectNotFoundUserException.html" title="class in io.github.mmm.nls.exception">ObjectNotFoundUserException</a></span></code></th>
+<td class="colLast">
+<div class="block"><a href="../ObjectNotFoundException.html" title="class in io.github.mmm.base.exception"><code>ObjectNotFoundException</code></a> <a href="../../../../../../../io.github.mmm.nls/io/github/mmm/nls/exception/ObjectNotFoundUserException.html#isForUser()"><code>for user</code></a> with NLS support.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../../../../../../../io.github.mmm.nls/io/github/mmm/nls/exception/TechnicalErrorUserException.html" title="class in io.github.mmm.nls.exception">TechnicalErrorUserException</a></span></code></th>
+<td class="colLast">
+<div class="block">A <a href="../../../../../../../io.github.mmm.nls/io/github/mmm/nls/exception/TechnicalErrorUserException.html" title="class in io.github.mmm.nls.exception"><code>TechnicalErrorUserException</code></a> is wrapping an arbitrary technical error to a generic exception for end-users
+ or clients.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary">
+<caption><span>Methods in <a href="../../../../../../../io.github.mmm.nls/io/github/mmm/nls/exception/package-summary.html">io.github.mmm.nls.exception</a> that return <a href="../ApplicationException.html" title="class in io.github.mmm.base.exception">ApplicationException</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../ApplicationException.html" title="class in io.github.mmm.base.exception">ApplicationException</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">TechnicalErrorUserException.</span><code><span class="memberNameLink"><a href="../../../../../../../io.github.mmm.nls/io/github/mmm/nls/exception/TechnicalErrorUserException.html#convert(java.lang.Throwable)">convert</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Throwable</a>&nbsp;exception)</code></th>
+<td class="colLast">
+<div class="block">Gets the given <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Throwable</code></a> as <a href="../../../../../../../io.github.mmm.nls/io/github/mmm/nls/exception/TechnicalErrorUserException.html#isForUser()"><code>user</code></a> <a href="../ApplicationException.html" title="class in io.github.mmm.base.exception"><code>ApplicationException</code></a> or converts it to such.</div>
 </td>
 </tr>
 </tbody>

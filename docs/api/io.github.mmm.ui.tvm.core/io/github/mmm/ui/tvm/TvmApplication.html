@@ -26,6 +26,12 @@
     catch(err) {
     }
 //-->
+var data = {"i0":9,"i1":9,"i2":9,"i3":9};
+var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
+var altColor = "altColor";
+var rowColor = "rowColor";
+var tableTab = "tableTab";
+var activeTableTab = "activeTableTab";
 var pathtoroot = "../../../../../../";
 var useModuleDirectories = true;
 loadScripts(document, 'script');</script>
@@ -91,7 +97,7 @@ loadScripts(document, 'script');</script>
 <li>Detail:&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
-<li>Method</li>
+<li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
 <a id="skip.navbar.top">
@@ -189,6 +195,34 @@ implements <a href="../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui
 <!--   -->
 </a>
 <h3>Method Summary</h3>
+<table class="memberSummary">
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tr id="i0" class="altColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getContextPath()">getContextPath</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>static boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isUseAnchor()">isUseAnchor</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>protected static void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setContextPath(java.lang.String)">setContextPath</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;contextPath)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>static void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setUseAnchor(boolean)">setUseAnchor</a></span>&#8203;(boolean&nbsp;useAnchor)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+</table>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
 <!--   -->
@@ -227,6 +261,71 @@ implements <a href="../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui
 <h4>TvmApplication</h4>
 <pre>public&nbsp;TvmApplication()</pre>
 <div class="block">The constructor.</div>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<!-- ============ METHOD DETAIL ========== -->
+<section role="region">
+<ul class="blockList">
+<li class="blockList"><a id="method.detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a id="getContextPath()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getContextPath</h4>
+<pre class="methodSignature">public static&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getContextPath()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the context path of this application. So if your application is running in the root context this should be
+         "/" what is the default. Otherwise you can <a href="#setContextPath(java.lang.String)"><code>set</code></a> the context path according
+         to your app (e.g. "/my-cool-app/" or even "/my-cool-app/index.html").</dd>
+</dl>
+</li>
+</ul>
+<a id="setContextPath(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setContextPath</h4>
+<pre class="methodSignature">protected static&nbsp;void&nbsp;setContextPath&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;contextPath)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>contextPath</code> - new value of <a href="#getContextPath()"><code>getContextPath()</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="isUseAnchor()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isUseAnchor</h4>
+<pre class="methodSignature">public static&nbsp;boolean&nbsp;isUseAnchor()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>true</code> to use the anchor (the URL part starting with the hash sign '#') for state management and
+         <code>UiPlace</code>s.</dd>
+</dl>
+</li>
+</ul>
+<a id="setUseAnchor(boolean)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>setUseAnchor</h4>
+<pre class="methodSignature">public static&nbsp;void&nbsp;setUseAnchor&#8203;(boolean&nbsp;useAnchor)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>useAnchor</code> - new value of <a href="#isUseAnchor()"><code>isUseAnchor()</code></a>.</dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -290,7 +389,7 @@ implements <a href="../../../../../../io.github.mmm.ui.api.core/io/github/mmm/ui
 <li>Detail:&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
-<li>Method</li>
+<li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
 <a id="skip.navbar.bottom">

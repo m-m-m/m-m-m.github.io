@@ -177,6 +177,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
+<td class="colFirst"><code><a href="../ValidationResult.html" title="interface in io.github.mmm.validation">ValidationResult</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">Property.</span><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.property/io/github/mmm/property/Property.html#doValidate(java.lang.String)">doValidate</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;source)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../ValidationResult.html" title="interface in io.github.mmm.validation">ValidationResult</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Property.</span><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.property/io/github/mmm/property/Property.html#doValidate(V,java.lang.String)">doValidate</a></span>&#8203;(<a href="../../../../../../io.github.mmm.property/io/github/mmm/property/Property.html" title="type parameter in Property">V</a>&nbsp;v,
           <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;source)</code></th>
@@ -184,7 +189,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Called from <a href="../../../../../../io.github.mmm.property/io/github/mmm/property/Property.html#validate()"><code>Property.validate()</code></a> in case re-validation is required.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../ValidationResult.html" title="interface in io.github.mmm.validation">ValidationResult</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Property.</span><code><span class="memberNameLink"><a href="../../../../../../io.github.mmm.property/io/github/mmm/property/Property.html#validate()">validate</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
@@ -311,19 +316,25 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../ValidationResult.html" title="interface in io.github.mmm.validation">ValidationResult</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">ProjectionValidator.</span><code><span class="memberNameLink"><a href="../ProjectionValidator.html#validate(V,java.lang.Object)">validate</a></span>&#8203;(<a href="../ProjectionValidator.html" title="type parameter in ProjectionValidator">V</a>&nbsp;value,
+        <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;valueSource)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../ValidationResult.html" title="interface in io.github.mmm.validation">ValidationResult</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Validatable.</span><code><span class="memberNameLink"><a href="../Validatable.html#validate()">validate</a></span>()</code></th>
 <td class="colLast">
 <div class="block">This method performs the actual validation.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>default <a href="../ValidationResult.html" title="interface in io.github.mmm.validation">ValidationResult</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Validator.</span><code><span class="memberNameLink"><a href="../Validator.html#validate(V)">validate</a></span>&#8203;(<a href="../Validator.html" title="type parameter in Validator">V</a>&nbsp;value)</code></th>
 <td class="colLast">
 <div class="block">This method validates the given <code>value</code>.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../ValidationResult.html" title="interface in io.github.mmm.validation">ValidationResult</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">Validator.</span><code><span class="memberNameLink"><a href="../Validator.html#validate(V,java.lang.Object)">validate</a></span>&#8203;(<a href="../Validator.html" title="type parameter in Validator">V</a>&nbsp;value,
         <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;valueSource)</code></th>
@@ -331,7 +342,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">This method validates the given <code>value</code>.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected <a href="../ValidationResult.html" title="interface in io.github.mmm.validation">ValidationResult</a></code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">AbstractComposedValidator.</span><code><span class="memberNameLink"><a href="../AbstractComposedValidator.html#validateChild(C,java.lang.String)">validateChild</a></span>&#8203;(<a href="../AbstractComposedValidator.html" title="type parameter in AbstractComposedValidator">C</a>&nbsp;value,
              <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;valueSource)</code></th>
@@ -382,15 +393,24 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../ComposedValidationFailure.html#%3Cinit%3E(java.lang.String,io.github.mmm.validation.ValidationResult...)">ComposedValidationFailure</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;source,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../ComposedValidationFailure.html#%3Cinit%3E(java.lang.String,boolean,io.github.mmm.validation.ValidationResult...)">ComposedValidationFailure</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;source,
+                         boolean&nbsp;appendSources,
                          <a href="../ValidationResult.html" title="interface in io.github.mmm.validation">ValidationResult</a>...&nbsp;failures)</code></th>
 <td class="colLast">
 <div class="block">The constructor.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../ComposedValidationFailure.html#%3Cinit%3E(java.lang.String,java.lang.String,io.github.mmm.validation.ValidationResult...)">ComposedValidationFailure</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;code,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../ComposedValidationFailure.html#%3Cinit%3E(java.lang.String,io.github.mmm.validation.ValidationResult...)">ComposedValidationFailure</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;source,
+                         <a href="../ValidationResult.html" title="interface in io.github.mmm.validation">ValidationResult</a>...&nbsp;failures)</code></th>
+<td class="colLast">
+<div class="block">The constructor.</div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="../ComposedValidationFailure.html#%3Cinit%3E(java.lang.String,java.lang.String,boolean,io.github.mmm.validation.ValidationResult...)">ComposedValidationFailure</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;code,
                          <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;source,
+                         boolean&nbsp;appendSources,
                          <a href="../ValidationResult.html" title="interface in io.github.mmm.validation">ValidationResult</a>...&nbsp;failures)</code></th>
 <td class="colLast">
 <div class="block">The constructor.</div>

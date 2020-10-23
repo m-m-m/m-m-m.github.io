@@ -111,9 +111,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<th class="colFirst" scope="row"><a href="#io.github.mmm.ui.api.widget.custom">io.github.mmm.ui.api.widget.custom</a></th>
+<th class="colFirst" scope="row"><a href="#io.github.mmm.ui.api.widget.composite">io.github.mmm.ui.api.widget.composite</a></th>
 <td class="colLast">
-<div class="block">Contains the API for <a href="../../../../../../../../io.github.mmm.ui.api.custom/io/github/mmm/ui/api/widget/custom/AbstractUiCustomWidget.html" title="class in io.github.mmm.ui.api.widget.custom"><code>AbstractUiCustomWidget</code></a> and its sub-classes.</div>
+<div class="block">Contains the API for <a href="../../widget/composite/UiComposite.html" title="interface in io.github.mmm.ui.api.widget.composite"><code>UiComposite</code></a> and all sub-interfaces of widgets that
+ contain and compose other widgets.</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -129,10 +130,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<th class="colFirst" scope="row"><a href="#io.github.mmm.ui.test.widget.composite">io.github.mmm.ui.test.widget.composite</a></th>
+<th class="colFirst" scope="row"><a href="#io.github.mmm.ui.fx.widget.form">io.github.mmm.ui.fx.widget.form</a></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
+<th class="colFirst" scope="row"><a href="#io.github.mmm.ui.test.widget.composite">io.github.mmm.ui.test.widget.composite</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="#io.github.mmm.ui.tvm.widget.composite">io.github.mmm.ui.tvm.widget.composite</a></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -166,12 +171,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </section>
 </li>
 <li class="blockList">
-<section role="region"><a id="io.github.mmm.ui.api.widget.custom">
+<section role="region"><a id="io.github.mmm.ui.api.widget.composite">
 <!--   -->
 </a>
-<h3>Uses of <a href="../UiValueBinding.html" title="interface in io.github.mmm.ui.api.binding">UiValueBinding</a> in <a href="../../../../../../../../io.github.mmm.ui.api.custom/io/github/mmm/ui/api/widget/custom/package-summary.html">io.github.mmm.ui.api.widget.custom</a></h3>
+<h3>Uses of <a href="../UiValueBinding.html" title="interface in io.github.mmm.ui.api.binding">UiValueBinding</a> in <a href="../../widget/composite/package-summary.html">io.github.mmm.ui.api.widget.composite</a></h3>
 <table class="useSummary">
-<caption><span>Methods in <a href="../../../../../../../../io.github.mmm.ui.api.custom/io/github/mmm/ui/api/widget/custom/package-summary.html">io.github.mmm.ui.api.widget.custom</a> with parameters of type <a href="../UiValueBinding.html" title="interface in io.github.mmm.ui.api.binding">UiValueBinding</a></span><span class="tabEnd">&nbsp;</span></caption>
+<caption><span>Methods in <a href="../../widget/composite/package-summary.html">io.github.mmm.ui.api.widget.composite</a> with parameters of type <a href="../UiValueBinding.html" title="interface in io.github.mmm.ui.api.binding">UiValueBinding</a></span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colSecond" scope="col">Method</th>
@@ -180,7 +185,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><span class="typeNameLabel">UiCustomValuedComposite.</span><code><span class="memberNameLink"><a href="../../../../../../../../io.github.mmm.ui.api.custom/io/github/mmm/ui/api/widget/custom/UiCustomValuedComposite.html#initBinding(io.github.mmm.ui.api.binding.UiValueBinding)">initBinding</a></span>&#8203;(<a href="../UiValueBinding.html" title="interface in io.github.mmm.ui.api.binding">UiValueBinding</a>&lt;<a href="../../../../../../../../io.github.mmm.ui.api.custom/io/github/mmm/ui/api/widget/custom/UiCustomValuedComposite.html" title="type parameter in UiCustomValuedComposite">V</a>&gt;&nbsp;binding)</code></th>
+<th class="colSecond" scope="row"><span class="typeNameLabel">UiCustomValuedComposite.</span><code><span class="memberNameLink"><a href="../../widget/composite/UiCustomValuedComposite.html#initBinding(io.github.mmm.ui.api.binding.UiValueBinding)">initBinding</a></span>&#8203;(<a href="../UiValueBinding.html" title="interface in io.github.mmm.ui.api.binding">UiValueBinding</a>&lt;<a href="../../widget/composite/UiCustomValuedComposite.html" title="type parameter in UiCustomValuedComposite">V</a>&gt;&nbsp;binding)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </tbody>
@@ -201,24 +206,29 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">UiCustomCompositeInput.</span><code><span class="memberNameLink"><a href="../../../../../../../../io.github.mmm.ui.api.form/io/github/mmm/ui/api/widget/form/UiCustomCompositeInput.html#initBinding(io.github.mmm.ui.api.binding.UiValueBinding)">initBinding</a></span>&#8203;(<a href="../UiValueBinding.html" title="interface in io.github.mmm.ui.api.binding">UiValueBinding</a>&lt;<a href="../../../../../../../../io.github.mmm.ui.api.form/io/github/mmm/ui/api/widget/form/UiCustomCompositeInput.html" title="type parameter in UiCustomCompositeInput">V</a>&gt;&nbsp;binding)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>static &lt;V&gt;&nbsp;<a href="../../../../../../../../io.github.mmm.ui.api.form/io/github/mmm/ui/api/widget/form/UiFormGroup.html" title="interface in io.github.mmm.ui.api.widget.form">UiFormGroup</a>&lt;V&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">UiFormGroup.</span><code><span class="memberNameLink"><a href="../../../../../../../../io.github.mmm.ui.api.form/io/github/mmm/ui/api/widget/form/UiFormGroup.html#of(io.github.mmm.ui.api.binding.UiValueBinding,java.lang.String)">of</a></span>&#8203;(<a href="../UiValueBinding.html" title="interface in io.github.mmm.ui.api.binding">UiValueBinding</a>&lt;V&gt;&nbsp;binding,
   <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static &lt;V&gt;&nbsp;<a href="../../../../../../../../io.github.mmm.ui.api.form/io/github/mmm/ui/api/widget/form/UiFormGroup.html" title="interface in io.github.mmm.ui.api.widget.form">UiFormGroup</a>&lt;V&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">UiFormGroup.</span><code><span class="memberNameLink"><a href="../../../../../../../../io.github.mmm.ui.api.form/io/github/mmm/ui/api/widget/form/UiFormGroup.html#of(io.github.mmm.ui.api.binding.UiValueBinding,java.lang.String,io.github.mmm.ui.api.widget.input.UiInput...)">of</a></span>&#8203;(<a href="../UiValueBinding.html" title="interface in io.github.mmm.ui.api.binding">UiValueBinding</a>&lt;V&gt;&nbsp;binding,
   <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
   <a href="../../widget/input/UiInput.html" title="interface in io.github.mmm.ui.api.widget.input">UiInput</a>&lt;?&gt;...&nbsp;children)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static &lt;V&gt;&nbsp;<a href="../../../../../../../../io.github.mmm.ui.api.form/io/github/mmm/ui/api/widget/form/UiFormPanel.html" title="interface in io.github.mmm.ui.api.widget.form">UiFormPanel</a>&lt;V&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">UiFormPanel.</span><code><span class="memberNameLink"><a href="../../../../../../../../io.github.mmm.ui.api.form/io/github/mmm/ui/api/widget/form/UiFormPanel.html#of(io.github.mmm.ui.api.binding.UiValueBinding)">of</a></span>&#8203;(<a href="../UiValueBinding.html" title="interface in io.github.mmm.ui.api.binding">UiValueBinding</a>&lt;V&gt;&nbsp;binding)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static &lt;V&gt;&nbsp;<a href="../../../../../../../../io.github.mmm.ui.api.form/io/github/mmm/ui/api/widget/form/UiFormPanel.html" title="interface in io.github.mmm.ui.api.widget.form">UiFormPanel</a>&lt;V&gt;</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">UiFormPanel.</span><code><span class="memberNameLink"><a href="../../../../../../../../io.github.mmm.ui.api.form/io/github/mmm/ui/api/widget/form/UiFormPanel.html#of(io.github.mmm.ui.api.binding.UiValueBinding,io.github.mmm.ui.api.widget.input.UiAbstractInput...)">of</a></span>&#8203;(<a href="../UiValueBinding.html" title="interface in io.github.mmm.ui.api.binding">UiValueBinding</a>&lt;V&gt;&nbsp;binding,
   <a href="../../widget/input/UiAbstractInput.html" title="interface in io.github.mmm.ui.api.widget.input">UiAbstractInput</a>&lt;?&gt;...&nbsp;children)</code></th>
@@ -268,6 +278,28 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tr class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><span class="typeNameLabel">FxValuedComposite.</span><code><span class="memberNameLink"><a href="../../../../../../../../io.github.mmm.ui.fx.core/io/github/mmm/ui/fx/widget/composite/FxValuedComposite.html#initBinding(io.github.mmm.ui.api.binding.UiValueBinding)">initBinding</a></span>&#8203;(<a href="../UiValueBinding.html" title="interface in io.github.mmm.ui.api.binding">UiValueBinding</a>&lt;<a href="../../../../../../../../io.github.mmm.ui.fx.core/io/github/mmm/ui/fx/widget/composite/FxValuedComposite.html" title="type parameter in FxValuedComposite">V</a>&gt;&nbsp;newBinding)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
+<section role="region"><a id="io.github.mmm.ui.fx.widget.form">
+<!--   -->
+</a>
+<h3>Uses of <a href="../UiValueBinding.html" title="interface in io.github.mmm.ui.api.binding">UiValueBinding</a> in <a href="../../../../../../../../io.github.mmm.ui.fx.form/io/github/mmm/ui/fx/widget/form/package-summary.html">io.github.mmm.ui.fx.widget.form</a></h3>
+<table class="useSummary">
+<caption><span>Methods in <a href="../../../../../../../../io.github.mmm.ui.fx.form/io/github/mmm/ui/fx/widget/form/package-summary.html">io.github.mmm.ui.fx.widget.form</a> with parameters of type <a href="../UiValueBinding.html" title="interface in io.github.mmm.ui.api.binding">UiValueBinding</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">FxCompositeInput.</span><code><span class="memberNameLink"><a href="../../../../../../../../io.github.mmm.ui.fx.form/io/github/mmm/ui/fx/widget/form/FxCompositeInput.html#initBinding(io.github.mmm.ui.api.binding.UiValueBinding)">initBinding</a></span>&#8203;(<a href="../UiValueBinding.html" title="interface in io.github.mmm.ui.api.binding">UiValueBinding</a>&lt;<a href="../../../../../../../../io.github.mmm.ui.fx.form/io/github/mmm/ui/fx/widget/form/FxCompositeInput.html" title="type parameter in FxCompositeInput">V</a>&gt;&nbsp;newBinding)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </tbody>

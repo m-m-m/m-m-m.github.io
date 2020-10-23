@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":6,"i4":6,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":6,"i4":6,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -247,16 +247,24 @@ implements <a href="WritableObservableValue.html" title="interface in io.github.
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isValueEqual(V,V)">isValueEqual</a></span>&#8203;(<a href="AbstractWritableObservableValue.html" title="type parameter in AbstractWritableObservableValue">V</a>&nbsp;newValue,
+            <a href="AbstractWritableObservableValue.html" title="type parameter in AbstractWritableObservableValue">V</a>&nbsp;oldValue)</code></th>
+<td class="colLast">
+<div class="block">Null-safe check if two <a href="#get()"><code>values</code></a> are considered equal (unchanged).</div>
+</td>
+</tr>
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#requireWritable()">requireWritable</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#set(V)">set</a></span>&#8203;(<a href="AbstractWritableObservableValue.html" title="type parameter in AbstractWritableObservableValue">V</a>&nbsp;value)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setWithChange(V,V)">setWithChange</a></span>&#8203;(<a href="AbstractWritableObservableValue.html" title="type parameter in AbstractWritableObservableValue">V</a>&nbsp;oldValue,
              <a href="AbstractWritableObservableValue.html" title="type parameter in AbstractWritableObservableValue">V</a>&nbsp;value)</code></th>
@@ -264,14 +272,14 @@ implements <a href="WritableObservableValue.html" title="interface in io.github.
 <div class="block">Internal method called from <a href="#set(V)"><code>set(Object)</code></a> if the value actually changed.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#unbindOneWay()">unbindOneWay</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Removes the <a href="WritableObservableValue.html#bindOneWay(io.github.mmm.value.observable.ObservableValue)"><code>unidirectional binding</code></a> from this object.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#unbindTwoWay(io.github.mmm.value.observable.WritableObservableValue)">unbindTwoWay</a></span>&#8203;(<a href="WritableObservableValue.html" title="interface in io.github.mmm.value.observable">WritableObservableValue</a>&lt;<a href="AbstractWritableObservableValue.html" title="type parameter in AbstractWritableObservableValue">V</a>&gt;&nbsp;other)</code></th>
 <td class="colLast">
@@ -522,6 +530,26 @@ implements <a href="WritableObservableValue.html" title="interface in io.github.
 <dd><code><a href="../../../../../../io.github.mmm.value/io/github/mmm/value/WritableValue.html#set(V)">set</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../io.github.mmm.value/io/github/mmm/value/WritableValue.html" title="interface in io.github.mmm.value">WritableValue</a>&lt;<a href="AbstractWritableObservableValue.html" title="type parameter in AbstractWritableObservableValue">V</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>value</code> - the new <a href="../../../../../../io.github.mmm.value/io/github/mmm/value/ReadableValue.html#get()"><code>value</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="isValueEqual(java.lang.Object,java.lang.Object)">
+<!--   -->
+</a><a id="isValueEqual(V,V)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isValueEqual</h4>
+<pre class="methodSignature">protected&nbsp;boolean&nbsp;isValueEqual&#8203;(<a href="AbstractWritableObservableValue.html" title="type parameter in AbstractWritableObservableValue">V</a>&nbsp;newValue,
+                               <a href="AbstractWritableObservableValue.html" title="type parameter in AbstractWritableObservableValue">V</a>&nbsp;oldValue)</pre>
+<div class="block">Null-safe check if two <a href="#get()"><code>values</code></a> are considered equal (unchanged).</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>newValue</code> - the new value.</dd>
+<dd><code>oldValue</code> - the old value.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>true</code> if equal (unchanged), <code>false</code> otherwise (changed),</dd>
 </dl>
 </li>
 </ul>

@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10};
+var data = {"i0":10,"i1":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -177,7 +177,14 @@ extends <a href="../main/AbstractValidatorRange.html" title="class in io.github.
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;io.github.mmm.validation.main.<a href="../main/AbstractValidatorRange.html" title="class in io.github.mmm.validation.main">AbstractValidatorRange</a></h3>
-<code><a href="../main/AbstractValidatorRange.html#CODE">CODE</a>, <a href="../main/AbstractValidatorRange.html#range">range</a></code></li>
+<code><a href="../main/AbstractValidatorRange.html#ID">ID</a>, <a href="../main/AbstractValidatorRange.html#range">range</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="fields.inherited.from.class.io.github.mmm.validation.Validator">
+<!--   -->
+</a>
+<h3>Fields inherited from interface&nbsp;io.github.mmm.validation.<a href="../../../../../../io.github.mmm.validation/io/github/mmm/validation/Validator.html" title="interface in io.github.mmm.validation">Validator</a></h3>
+<code><a href="../../../../../../io.github.mmm.validation/io/github/mmm/validation/Validator.html#ID_MANDATORY">ID_MANDATORY</a></code></li>
 </ul>
 </li>
 </ul>
@@ -232,13 +239,18 @@ extends <a href="../main/AbstractValidatorRange.html" title="class in io.github.
 <div class="block">Converts the value to the type of the range.</div>
 </td>
 </tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isLength()">isLength</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
 </table>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.validation.main.AbstractValidatorRange">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;io.github.mmm.validation.main.<a href="../main/AbstractValidatorRange.html" title="class in io.github.mmm.validation.main">AbstractValidatorRange</a></h3>
-<code><a href="../main/AbstractValidatorRange.html#equals(java.lang.Object)">equals</a>, <a href="../main/AbstractValidatorRange.html#getCode()">getCode</a>, <a href="../main/AbstractValidatorRange.html#getRange()">getRange</a>, <a href="../main/AbstractValidatorRange.html#hashCode()">hashCode</a>, <a href="../main/AbstractValidatorRange.html#validateNotNull(V)">validateNotNull</a></code></li>
+<code><a href="../main/AbstractValidatorRange.html#equals(java.lang.Object)">equals</a>, <a href="../main/AbstractValidatorRange.html#getId()">getId</a>, <a href="../main/AbstractValidatorRange.html#getRange()">getRange</a>, <a href="../main/AbstractValidatorRange.html#hashCode()">hashCode</a>, <a href="../main/AbstractValidatorRange.html#validateNotNull(V)">validateNotNull</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.validation.AbstractValueValidator">
@@ -252,14 +264,14 @@ extends <a href="../main/AbstractValidatorRange.html" title="class in io.github.
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;io.github.mmm.validation.<a href="../../../../../../io.github.mmm.validation/io/github/mmm/validation/AbstractValidator.html" title="class in io.github.mmm.validation">AbstractValidator</a></h3>
-<code><a href="../../../../../../io.github.mmm.validation/io/github/mmm/validation/AbstractValidator.html#append(io.github.mmm.validation.Validator...)">append</a>, <a href="../../../../../../io.github.mmm.validation/io/github/mmm/validation/AbstractValidator.html#isDynamic()">isDynamic</a>, <a href="../../../../../../io.github.mmm.validation/io/github/mmm/validation/AbstractValidator.html#source2string(java.lang.Object)">source2string</a></code></li>
+<code><a href="../../../../../../io.github.mmm.validation/io/github/mmm/validation/AbstractValidator.html#isDynamic()">isDynamic</a>, <a href="../../../../../../io.github.mmm.validation/io/github/mmm/validation/AbstractValidator.html#source2string(java.lang.Object)">source2string</a>, <a href="../../../../../../io.github.mmm.validation/io/github/mmm/validation/AbstractValidator.html#toString()">toString</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></h3>
-<code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang" class="externalLink">clone</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang" class="externalLink">finalize</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang" class="externalLink">getClass</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang" class="externalLink">notify</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang" class="externalLink">notifyAll</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang" class="externalLink">toString</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#wait(long,int)" title="class or interface in java.lang" class="externalLink">wait</a></code></li>
+<code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang" class="externalLink">clone</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang" class="externalLink">finalize</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang" class="externalLink">getClass</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang" class="externalLink">notify</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang" class="externalLink">notifyAll</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#wait(long,int)" title="class or interface in java.lang" class="externalLink">wait</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.io.github.mmm.base.lang.Composable">
@@ -280,7 +292,7 @@ extends <a href="../main/AbstractValidatorRange.html" title="class in io.github.
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;io.github.mmm.validation.<a href="../../../../../../io.github.mmm.validation/io/github/mmm/validation/Validator.html" title="interface in io.github.mmm.validation">Validator</a></h3>
-<code><a href="../../../../../../io.github.mmm.validation/io/github/mmm/validation/Validator.html#getMax()">getMax</a>, <a href="../../../../../../io.github.mmm.validation/io/github/mmm/validation/Validator.html#getMin()">getMin</a>, <a href="../../../../../../io.github.mmm.validation/io/github/mmm/validation/Validator.html#isMandatory()">isMandatory</a>, <a href="../../../../../../io.github.mmm.validation/io/github/mmm/validation/Validator.html#validate(V)">validate</a></code></li>
+<code><a href="../../../../../../io.github.mmm.validation/io/github/mmm/validation/Validator.html#append(io.github.mmm.validation.Validator)">append</a>, <a href="../../../../../../io.github.mmm.validation/io/github/mmm/validation/Validator.html#append(io.github.mmm.validation.Validator...)">append</a>, <a href="../../../../../../io.github.mmm.validation/io/github/mmm/validation/Validator.html#containsId(java.lang.String)">containsId</a>, <a href="../../../../../../io.github.mmm.validation/io/github/mmm/validation/Validator.html#getMax()">getMax</a>, <a href="../../../../../../io.github.mmm.validation/io/github/mmm/validation/Validator.html#getMin()">getMin</a>, <a href="../../../../../../io.github.mmm.validation/io/github/mmm/validation/Validator.html#isMandatory()">isMandatory</a>, <a href="../../../../../../io.github.mmm.validation/io/github/mmm/validation/Validator.html#validate(V)">validate</a></code></li>
 </ul>
 </li>
 </ul>
@@ -339,7 +351,7 @@ extends <a href="../main/AbstractValidatorRange.html" title="class in io.github.
 <a id="convertValue(java.util.Map)">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>convertValue</h4>
 <pre class="methodSignature">protected&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html?is-external=true" title="class or interface in java.lang" class="externalLink">Integer</a>&nbsp;convertValue&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;?,&#8203;?&gt;&nbsp;value)</pre>
@@ -352,6 +364,21 @@ extends <a href="../main/AbstractValidatorRange.html" title="class in io.github.
 <dd><code>value</code> - is the value to convert.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the converted value.</dd>
+</dl>
+</li>
+</ul>
+<a id="isLength()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>isLength</h4>
+<pre class="methodSignature">protected&nbsp;boolean&nbsp;isLength()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../main/AbstractValidatorRange.html#isLength()">isLength</a></code>&nbsp;in class&nbsp;<code><a href="../main/AbstractValidatorRange.html" title="class in io.github.mmm.validation.main">AbstractValidatorRange</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;?,&#8203;?&gt;,&#8203;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Number.html?is-external=true" title="class or interface in java.lang" class="externalLink">Number</a>&gt;</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>true</code> if validating the lenght of the value, <code>false</code> otherwise.</dd>
 </dl>
 </li>
 </ul>

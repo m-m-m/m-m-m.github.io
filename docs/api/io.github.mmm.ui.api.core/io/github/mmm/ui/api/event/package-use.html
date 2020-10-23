@@ -107,16 +107,26 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
+<th class="colFirst" scope="row"><a href="#io.github.mmm.ui.api.controller.action">io.github.mmm.ui.api.controller.action</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="#io.github.mmm.ui.api.event">io.github.mmm.ui.api.event</a></th>
 <td class="colLast">
 <div class="block">Contains the API for UI eventing with <a href="UiEvent.html" title="class in io.github.mmm.ui.api.event"><code>UiEvent</code></a> and
  <a href="UiEventListener.html" title="interface in io.github.mmm.ui.api.event"><code>UiEventListener</code></a>.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="#io.github.mmm.ui.api.event.action">io.github.mmm.ui.api.event.action</a></th>
 <td class="colLast">
 <div class="block">Contains <a href="action/UiAction.html" title="interface in io.github.mmm.ui.api.event.action"><code>UiAction</code></a> and its sub-interfaces for UI actions.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="#io.github.mmm.ui.api.widget">io.github.mmm.ui.api.widget</a></th>
+<td class="colLast">
+<div class="block">Contains the API for widgets what are the first-class citizens of a UI.</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -126,10 +136,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="rowColor">
-<th class="colFirst" scope="row"><a href="#io.github.mmm.ui.api.widget.custom">io.github.mmm.ui.api.widget.custom</a></th>
-<td class="colLast">
-<div class="block">Contains the API for <a href="../../../../../../../io.github.mmm.ui.api.custom/io/github/mmm/ui/api/widget/custom/AbstractUiCustomWidget.html" title="class in io.github.mmm.ui.api.widget.custom"><code>AbstractUiCustomWidget</code></a> and its sub-classes.</div>
-</td>
+<th class="colFirst" scope="row"><a href="#io.github.mmm.ui.api.widget.link">io.github.mmm.ui.api.widget.link</a></th>
+<td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
 <th class="colFirst" scope="row"><a href="#io.github.mmm.ui.api.widget.menu">io.github.mmm.ui.api.widget.menu</a></th>
@@ -139,6 +147,25 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colFirst" scope="row"><a href="#io.github.mmm.ui.spi.widget">io.github.mmm.ui.spi.widget</a></th>
 <td class="colLast">
 <div class="block">Contains the SPI for widget implementations.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a id="io.github.mmm.ui.api.controller.action">
+<!--   -->
+</a>
+<table class="useSummary">
+<caption><span>Classes in <a href="package-summary.html">io.github.mmm.ui.api.event</a> used by <a href="../../../../../../../io.github.mmm.ui.api.controller/io/github/mmm/ui/api/controller/action/package-summary.html">io.github.mmm.ui.api.controller.action</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Class</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="class-use/UiEventListener.html#io.github.mmm.ui.api.controller.action">UiEventListener</a></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../../io.github.mmm.event/io/github/mmm/event/EventListener.html" title="interface in io.github.mmm.event"><code>EventListener</code></a> for <a href="UiEvent.html" title="class in io.github.mmm.ui.api.event"><code>UiEvent</code></a>.</div>
 </td>
 </tr>
 </tbody>
@@ -221,18 +248,24 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="rowColor">
+<th class="colFirst" scope="row"><a href="class-use/UiSelectionEvent.html#io.github.mmm.ui.api.event">UiSelectionEvent</a></th>
+<td class="colLast">
+<div class="block"><a href="UiEvent.html" title="class in io.github.mmm.ui.api.event"><code>UiEvent</code></a> if the selection changed (something was selected or unselected).</div>
+</td>
+</tr>
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="class-use/UiShowEvent.html#io.github.mmm.ui.api.event">UiShowEvent</a></th>
 <td class="colLast">
 <div class="block"><a href="UiVisibilityEvent.html" title="class in io.github.mmm.ui.api.event"><code>UiVisibilityEvent</code></a> for a <a href="../widget/UiWidget.html" title="interface in io.github.mmm.ui.api.widget"><code>UiWidget</code></a> that is shown (set visible).</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="class-use/UiValueChangeEvent.html#io.github.mmm.ui.api.event">UiValueChangeEvent</a></th>
 <td class="colLast">
 <div class="block"><a href="UiEvent.html" title="class in io.github.mmm.ui.api.event"><code>UiEvent</code></a> for a <a href="../widget/UiWidget.html" title="interface in io.github.mmm.ui.api.widget"><code>UiWidget</code></a> that changed its value.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="class-use/UiVisibilityEvent.html#io.github.mmm.ui.api.event">UiVisibilityEvent</a></th>
 <td class="colLast">
 <div class="block"><a href="UiEvent.html" title="class in io.github.mmm.ui.api.event"><code>UiEvent</code></a> for a change of the visibility.</div>
@@ -260,6 +293,25 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tbody>
 </table>
 </li>
+<li class="blockList"><a id="io.github.mmm.ui.api.widget">
+<!--   -->
+</a>
+<table class="useSummary">
+<caption><span>Classes in <a href="package-summary.html">io.github.mmm.ui.api.event</a> used by <a href="../widget/package-summary.html">io.github.mmm.ui.api.widget</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Class</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="class-use/UiEventListener.html#io.github.mmm.ui.api.widget">UiEventListener</a></th>
+<td class="colLast">
+<div class="block"><a href="../../../../../../../io.github.mmm.event/io/github/mmm/event/EventListener.html" title="interface in io.github.mmm.event"><code>EventListener</code></a> for <a href="UiEvent.html" title="class in io.github.mmm.ui.api.event"><code>UiEvent</code></a>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
 <li class="blockList"><a id="io.github.mmm.ui.api.widget.button">
 <!--   -->
 </a>
@@ -279,20 +331,20 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tbody>
 </table>
 </li>
-<li class="blockList"><a id="io.github.mmm.ui.api.widget.custom">
+<li class="blockList"><a id="io.github.mmm.ui.api.widget.link">
 <!--   -->
 </a>
 <table class="useSummary">
-<caption><span>Classes in <a href="package-summary.html">io.github.mmm.ui.api.event</a> used by <a href="../../../../../../../io.github.mmm.ui.api.custom/io/github/mmm/ui/api/widget/custom/package-summary.html">io.github.mmm.ui.api.widget.custom</a></span><span class="tabEnd">&nbsp;</span></caption>
+<caption><span>Classes in <a href="package-summary.html">io.github.mmm.ui.api.event</a> used by <a href="../widget/link/package-summary.html">io.github.mmm.ui.api.widget.link</a></span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
 <th class="colFirst" scope="col">Class</th>
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tbody>
 <tr class="altColor">
-<th class="colFirst" scope="row"><a href="class-use/UiEventListener.html#io.github.mmm.ui.api.widget.custom">UiEventListener</a></th>
+<th class="colFirst" scope="row"><a href="class-use/UiClickEventListener.html#io.github.mmm.ui.api.widget.link">UiClickEventListener</a></th>
 <td class="colLast">
-<div class="block"><a href="../../../../../../../io.github.mmm.event/io/github/mmm/event/EventListener.html" title="interface in io.github.mmm.event"><code>EventListener</code></a> for <a href="UiEvent.html" title="class in io.github.mmm.ui.api.event"><code>UiEvent</code></a>.</div>
+<div class="block"><a href="UiEventListener.html" title="interface in io.github.mmm.ui.api.event"><code>UiEventListener</code></a> for <a href="UiClickEvent.html" title="class in io.github.mmm.ui.api.event"><code>UiClickEvent</code></a>s.</div>
 </td>
 </tr>
 </tbody>
@@ -309,9 +361,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
-<th class="colFirst" scope="row"><a href="class-use/UiEventListener.html#io.github.mmm.ui.api.widget.menu">UiEventListener</a></th>
+<th class="colFirst" scope="row"><a href="class-use/UiClickEventListener.html#io.github.mmm.ui.api.widget.menu">UiClickEventListener</a></th>
 <td class="colLast">
-<div class="block"><a href="../../../../../../../io.github.mmm.event/io/github/mmm/event/EventListener.html" title="interface in io.github.mmm.event"><code>EventListener</code></a> for <a href="UiEvent.html" title="class in io.github.mmm.ui.api.event"><code>UiEvent</code></a>.</div>
+<div class="block"><a href="UiEventListener.html" title="interface in io.github.mmm.ui.api.event"><code>UiEventListener</code></a> for <a href="UiClickEvent.html" title="class in io.github.mmm.ui.api.event"><code>UiClickEvent</code></a>s.</div>
 </td>
 </tr>
 </tbody>

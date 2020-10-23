@@ -112,9 +112,33 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor">
-<th class="colFirst" scope="row"><a href="AttributeManageMedia.html" title="interface in io.github.mmm.ui.api.attribute">AttributeManageMedia</a></th>
+<th class="colFirst" scope="row"><a href="AttributeFeatureClick.html" title="interface in io.github.mmm.ui.api.attribute">AttributeFeatureClick</a></th>
+<td class="colLast">
+<div class="block"><a href="../widget/UiWidget.html" title="interface in io.github.mmm.ui.api.widget"><code>UiWidget</code></a> that can be <a href="AttributeFeatureClick.html#click()"><code>clicked</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="AttributeFeatureMedia.html" title="interface in io.github.mmm.ui.api.attribute">AttributeFeatureMedia</a></th>
 <td class="colLast">
 <div class="block">Interface to read and write attributes of a media player.</div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="AttributeFeaturePlayback.html" title="interface in io.github.mmm.ui.api.attribute">AttributeFeaturePlayback</a></th>
+<td class="colLast">
+<div class="block">Interface to handle all features related to playback (of audio or video).</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="AttributeFeatureVolume.html" title="interface in io.github.mmm.ui.api.attribute">AttributeFeatureVolume</a></th>
+<td class="colLast">
+<div class="block">Interface to read and write attributes of a media player.</div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="AttributeReadEnabled.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadEnabled</a></th>
+<td class="colLast">
+<div class="block">Interface to <a href="AttributeReadEnabled.html#isEnabled()"><code>read</code></a> the <a href="AttributeReadEnabled.html#isEnabled()"><code>enabled flag</code></a> of an object.</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -148,27 +172,27 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="altColor">
+<th class="colFirst" scope="row"><a href="AttributeReadProgrammatic.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadProgrammatic</a></th>
+<td class="colLast">
+<div class="block">Interface to read an <a href="AttributeReadProgrammatic.html#isProgrammatic()"><code>programmatic flag</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="AttributeReadSelection.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadSelection</a>&lt;V&gt;</th>
 <td class="colLast">
 <div class="block">Interface to read a <a href="AttributeReadSelection.html#getSelection()"><code>single-selection</code></a>.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="AttributeReadSelections.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadSelections</a>&lt;V&gt;</th>
 <td class="colLast">
 <div class="block">Interface to read a <a href="AttributeReadSelections.html#getSelections()"><code>multi-selection</code></a>.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="AttributeReadSize.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadSize</a></th>
 <td class="colLast">
 <div class="block">Interface to read the size as <a href="AttributeReadSize.html#getWidth()"><code>width</code></a> and <a href="AttributeReadSize.html#getHeight()"><code>height</code></a>.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<th class="colFirst" scope="row"><a href="AttributeReadSource.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadSource</a></th>
-<td class="colLast">
-<div class="block">Interface to read <a href="AttributeReadSource.html#getSource()"><code>source</code></a>.</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -178,127 +202,167 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="rowColor">
+<th class="colFirst" scope="row"><a href="AttributeReadUrl.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadUrl</a></th>
+<td class="colLast">
+<div class="block">Interface to read a <a href="AttributeReadUrl.html#getUrl()"><code>URL</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="AttributeReadValid.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadValid</a></th>
 <td class="colLast">
 <div class="block">Interface to read the <a href="AttributeReadValid.html#isValid()"><code>valid flag</code></a>.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="AttributeReadValue.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadValue</a>&lt;V&gt;</th>
 <td class="colLast">
 <div class="block">Interface to read <a href="AttributeReadValue.html#getValue()"><code>value</code></a>.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="AttributeReadVisible.html" title="interface in io.github.mmm.ui.api.attribute">AttributeReadVisible</a></th>
 <td class="colLast">
 <div class="block">Interface to read the <a href="AttributeReadVisible.html#isVisible()"><code>visibility</code></a>.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="AttributeWriteAltText.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteAltText</a></th>
 <td class="colLast">
 <div class="block">Interface to read and write an <a href="AttributeWriteAltText.html#getAltText()"><code>alternative text</code></a>.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="AttributeWriteAutocomplete.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteAutocomplete</a></th>
 <td class="colLast">
 <div class="block"><a href="../widget/UiWidget.html" title="interface in io.github.mmm.ui.api.widget"><code>UiWidget</code></a> that has an <a href="AttributeWriteAutocomplete.html#getAutocomplete()"><code>autocompletion</code></a> (config).</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="AttributeWriteClosable.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteClosable</a></th>
 <td class="colLast">
 <div class="block">Interface to <a href="AttributeWriteClosable.html#isClosable()"><code>read</code></a> and <a href="AttributeWriteClosable.html#setClosable(boolean)"><code>write</code></a> the <a href="AttributeWriteClosable.html#isClosable()"><code>closable
  flag</code></a>.</div>
 </td>
 </tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="AttributeWriteCollapsed.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteCollapsed</a></th>
+<td class="colLast">
+<div class="block">Interface to read and write the <a href="AttributeWriteCollapsed.html#isCollapsed()"><code>collapsed</code></a> flag.</div>
+</td>
+</tr>
 <tr class="rowColor">
 <th class="colFirst" scope="row"><a href="AttributeWriteCollapsible.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteCollapsible</a></th>
 <td class="colLast">
-<div class="block">Interface to read and write the <a href="AttributeWriteCollapsible.html#isCollapsed()"><code>collapsed</code></a> and <a href="AttributeWriteCollapsible.html#isCollapsible()"><code>collapsible</code></a> flags.</div>
+<div class="block">Interface to read and write the <a href="AttributeWriteCollapsible.html#isCollapsible()"><code>collapsible</code></a> flag.</div>
 </td>
 </tr>
 <tr class="altColor">
+<th class="colFirst" scope="row"><a href="AttributeWriteEnabled.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteEnabled</a></th>
+<td class="colLast">
+<div class="block">Interface to <a href="AttributeReadEnabled.html#isEnabled()"><code>read</code></a> and <a href="AttributeWriteEnabled.html#setEnabled(boolean)"><code>write</code></a> the <a href="AttributeReadEnabled.html#isEnabled()"><code>enabled flag</code></a>
+ of an object.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="AttributeWriteId.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteId</a></th>
 <td class="colLast">
 <div class="block">Interface to read and write an <a href="AttributeReadId.html#getId()"><code>ID</code></a>.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="AttributeWriteImage.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteImage</a></th>
 <td class="colLast">
-<div class="block"><a href="../widget/UiWidget.html" title="interface in io.github.mmm.ui.api.widget"><code>UiWidget</code></a> with a <a href="AttributeWriteImage.html#getImage()"><code>image</code></a> (icon).</div>
+<div class="block">Interface to <a href="AttributeWriteImage.html#getImage()"><code>read</code></a> and <a href="AttributeWriteImage.html#setImage(io.github.mmm.ui.api.widget.img.UiAbstractImage)"><code>write</code></a> an <a href="AttributeWriteImage.html#getImage()"><code>image or
+ icon</code></a>.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="AttributeWriteMaximized.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteMaximized</a></th>
 <td class="colLast">
 <div class="block">Interface to read and <a href="AttributeWriteMaximized.html#setMaximized(boolean)"><code>write</code></a> the <a href="AttributeWriteMaximized.html#isMaximized()"><code>maximized</code></a> state.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="AttributeWriteMinimized.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteMinimized</a></th>
 <td class="colLast">
 <div class="block">Interface to read and <a href="AttributeWriteMinimized.html#setMinimized(boolean)"><code>write</code></a> the <a href="AttributeWriteMinimized.html#isMinimized()"><code>minimized</code></a> state.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="AttributeWriteMoveable.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteMoveable</a></th>
 <td class="colLast">
 <div class="block">Interface to <a href="AttributeWriteMoveable.html#isMovable()"><code>read</code></a> and <a href="AttributeWriteMoveable.html#setMovable(boolean)"><code>write</code></a> the <a href="AttributeWriteMoveable.html#isMovable()"><code>movable flag</code></a>.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="AttributeWriteMultiSelection.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteMultiSelection</a></th>
 <td class="colLast">
 <div class="block">Interface to <a href="AttributeReadMultiSelection.html#isMultiSelection()"><code>read</code></a> and <a href="AttributeWriteMultiSelection.html#setMultiSelection(boolean)"><code>write</code></a> a
  <a href="AttributeReadMultiSelection.html#isMultiSelection()"><code>multi-selection flag</code></a>.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="AttributeWritePlaceholder.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWritePlaceholder</a></th>
 <td class="colLast">
 <div class="block">Interface to <a href="AttributeWritePlaceholder.html#getPlaceholder()"><code>read</code></a> and <a href="AttributeWritePlaceholder.html#setPlaceholder(java.lang.String)"><code>write</code></a> a <a href="AttributeWritePlaceholder.html#getPlaceholder()"><code>placeholder</code></a>.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="AttributeWritePosition.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWritePosition</a></th>
 <td class="colLast">
 <div class="block">Interface to read and <a href="AttributeWritePosition.html#setPosition(double,double)"><code>write</code></a> a position.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="AttributeWritePositionRange.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWritePositionRange</a></th>
 <td class="colLast">
 <div class="block">Interface to read and write min/max ranges for the <a href="AttributeWritePosition.html#setPosition(double,double)"><code>position</code></a>.</div>
 </td>
 </tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="AttributeWritePrefix.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWritePrefix</a></th>
+<td class="colLast">
+<div class="block">Interface to <a href="AttributeWritePrefix.html#getPrefix()"><code>read</code></a> and <a href="AttributeWritePrefix.html#setPrefix(java.lang.String)"><code>write</code></a> a <a href="AttributeWritePrefix.html#getPrefix()"><code>prefix</code></a>.</div>
+</td>
+</tr>
 <tr class="rowColor">
+<th class="colFirst" scope="row"><a href="AttributeWriteReadOnly.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteReadOnly</a></th>
+<td class="colLast">
+<div class="block">Interface to <a href="AttributeWriteReadOnly.html#isReadOnly()"><code>read</code></a> and <a href="AttributeWriteReadOnly.html#setReadOnly(boolean)"><code>write</code></a> the <a href="AttributeWriteReadOnly.html#isReadOnly()"><code>read-only
+ flag</code></a> of an object.</div>
+</td>
+</tr>
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="AttributeWriteResizable.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteResizable</a></th>
 <td class="colLast">
 <div class="block">Interface to <a href="AttributeWriteResizable.html#isResizable()"><code>read</code></a> and <a href="AttributeWriteResizable.html#setResizable(boolean)"><code>write</code></a> the <a href="AttributeWriteResizable.html#isResizable()"><code>resizable
  flag</code></a> of an object.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="AttributeWriteSelected.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteSelected</a></th>
 <td class="colLast">
 <div class="block">Interface to <a href="AttributeWriteSelected.html#isSelected()"><code>read</code></a> and <a href="AttributeWriteSelected.html#setSelected(boolean)"><code>write</code></a> the <a href="AttributeWriteSelected.html#isSelected()"><code>selected
  flag</code></a>.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="AttributeWriteSelection.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteSelection</a>&lt;V&gt;</th>
 <td class="colLast">
 <div class="block">Interface to <a href="AttributeReadSelection.html#getSelection()"><code>read</code></a> and <a href="AttributeWriteSelection.html#setSelection(V)"><code>write</code></a> a <a href="AttributeReadSelection.html#getSelection()"><code>single-selection</code></a>.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="AttributeWriteSelections.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteSelections</a>&lt;V&gt;</th>
 <td class="colLast">
 <div class="block">Interface to <a href="AttributeReadSelections.html#getSelections()"><code>read</code></a> and <a href="AttributeWriteSelections.html#setSelections(java.util.Collection)"><code>write</code></a> a <a href="AttributeReadSelections.html#getSelections()"><code>multi-selection</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="AttributeWriteShowRowNumbers.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteShowRowNumbers</a></th>
+<td class="colLast">
+<div class="block">Interface to <a href="AttributeWriteShowRowNumbers.html#isShowRowNumbers()"><code>read</code></a> and <a href="AttributeWriteShowRowNumbers.html#setShowRowNumbers(boolean)"><code>write</code></a> the
+ <a href="AttributeWriteShowRowNumbers.html#isShowRowNumbers()"><code>show line numbers</code></a> flag.</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -321,9 +385,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="altColor">
-<th class="colFirst" scope="row"><a href="AttributeWriteSource.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteSource</a></th>
+<th class="colFirst" scope="row"><a href="AttributeWriteSuffix.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteSuffix</a></th>
 <td class="colLast">
-<div class="block">Interface to read and write a <a href="AttributeReadSource.html#getSource()"><code>source</code></a>.</div>
+<div class="block">Interface to <a href="AttributeWriteSuffix.html#getSuffix()"><code>read</code></a> and <a href="AttributeWriteSuffix.html#setSuffix(java.lang.String)"><code>write</code></a> a <a href="AttributeWriteSuffix.html#getSuffix()"><code>suffix</code></a>.</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -351,24 +415,30 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="rowColor">
+<th class="colFirst" scope="row"><a href="AttributeWriteUrl.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteUrl</a></th>
+<td class="colLast">
+<div class="block">Interface to read and write a <a href="AttributeReadUrl.html#getUrl()"><code>URL</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="AttributeWriteValidationFailure.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteValidationFailure</a></th>
 <td class="colLast">
 <div class="block"><a href="../widget/UiWidget.html" title="interface in io.github.mmm.ui.api.widget"><code>UiWidget</code></a> with <a href="AttributeWriteValidationFailure.html#getValidationFailure()"><code>validation failure</code></a>.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="AttributeWriteValue.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteValue</a>&lt;V&gt;</th>
 <td class="colLast">
 <div class="block">Interface to <a href="AttributeReadValue.html#getValue()"><code>read</code></a> and <a href="AttributeWriteValue.html#setValue(V)"><code>write</code></a> a value.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><a href="AttributeWriteValueForUser.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteValueForUser</a>&lt;V&gt;</th>
 <td class="colLast">
 <div class="block">Interface to <a href="AttributeReadValue.html#getValue()"><code>read</code></a> and <a href="AttributeWriteValueForUser.html#setValue(V,boolean)"><code>write</code></a> a value.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><a href="AttributeWriteVisible.html" title="interface in io.github.mmm.ui.api.attribute">AttributeWriteVisible</a></th>
 <td class="colLast">
 <div class="block">Interface to read and write the <a href="AttributeReadVisible.html#isVisible()"><code>visibility</code></a>.</div>
