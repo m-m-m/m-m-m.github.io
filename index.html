@@ -16,7 +16,8 @@
     <h2>Modules that let Java rock</h2>
     <a href="https://github.com/m-m-m" class="button">GitHub</a>
     <a href="https://github.com/m-m-m/mmm/wiki" class="button">Wiki</a>
-    <a href="docs/api/index.html" class="button">JavaDoc</a>
+    <a href="https://javadoc.io/doc/io.github.m-m-m" class="button">JavaDoc</a>
+    <a href="https://github.com/m-m-m/mmm/wiki/FAQ" class="button">FAQs</a>
   </header>
   <main class="content" role="main">
     <h1 id="overview">Vision</h1>
@@ -26,9 +27,17 @@
       Tired of dual-stack development with duplicated technology stacks?<br>
       But a fan of Java?
     </p>
-    With <code><a href="https://github.com/m-m-m/bean#mmm-bean">mmm-bean</a></code> we make Java dynamic and fun.
-    With <code><a href="https://github.com/m-m-m/ui-api#mmm-ui-api">mmm-ui-api</a></code> we create the missing Java API standard for user-interfaces that run on desktop (JavaFx), the web (<a href="http://teavm.org/">TeaVM</a>), and mobile (android). We can free you from the dual-stack development nonsense without the need to leave the Java world and switch to JavaScript.
-    <h1 id="overview">Overview</h1>
+    We make Java dynamic and fun.<br>
+    We boost your productivity to the speed of light.<br>
+    We bring back the original promise of Java <em>"<a href="https://en.wikipedia.org/wiki/Write_once,_run_anywhere">Write once, run anywhere</a>"</em>:
+    <ul>
+      <li>With our framework you can write code in Java for client and server.</li>
+      <li>It can obviously run on any JVM (Java11+).</li>
+      <li>However, our code can run as cloud-native binary with <a href="https://www.graalvm.org/">GraalVM</a>.</li>
+      <li>Even better it can also be compiled to JavaScript or WebAssembly using <a href="http://teavm.org/">TeaVM</a>.</li>
+      <li>From a single codebase you can implement clients again with pure Java that runs on the desktop using <a href="https://openjfx.io/">JavaFx</a>, it can run in the browser as HTML5 web app, and it can run on android. We can free you from the dual-stack development nonsense without the need to leave the Java world and switch to <a href="https://www.typescriptlang.org/">TypeScript</a> (<a href="https://angular.io/">Angular</a>/<a href="https://reactjs.org/">React</a> and <a href="https://nestjs.com/">NestJS</a>), <a href="https://dart.dev/">Dart</a> (<a href="https://flutter.dev/">Flutter</a>) or <a href="https://dotnet.microsoft.com/">.NET/C#</a> (<a href="https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor">Blazor</a> and <a href="https://visualstudio.microsoft.com/xamarin/">Xamarin</a>).</li>
+      <li>No boilerplate code, no redundancies, no waste - just pure efficiency with low or less code.</li>
+    </ul>
     The mmm project provides the following Java modules to be used for modern Java apps:
     <ul>
       <li><a href="https://github.com/m-m-m/ui-demo#mmm-ui-demo">mmm-ui-demo</a> provides a demo showcase of the features offered by <code>mmm-ui</code> and <code>mmm-bean</code>.</li>
@@ -38,6 +47,7 @@
       <li><a href="https://github.com/m-m-m/ui-android#mmm-ui-android">mmm-ui-android</a> provides an implementation of mmm-ui-api to run clients on android devices.</li>
       <li><a href="https://github.com/m-m-m/ui-test#mmm-ui-test">mmm-ui-test</a> provides an mock implementation of mmm-ui-api for headless unit tests of your UIs.</li>
       <li><a href="https://github.com/m-m-m/rpc#mmm-rpc">mmm-rpc</a> provides powerful and simple to use RPC framework for REST communication with minimum code.</li>
+      <li><a href="https://github.com/m-m-m/entity#mmm-entity">mmm-entity</a> provides powerful entity beans based on <a href="https://github.com/m-m-m/bean#mmm-bean">mmm-bean</a> with `Id` and `Link` to create data-models without limits.</li>
       <li><a href="https://github.com/m-m-m/bean#mmm-bean">mmm-bean</a> provides powerful Java beans based on <a href="https://github.com/m-m-m/property#mmm-property">mmm-property</a> to make your life easier.</li>
       <li><a href="https://github.com/m-m-m/property#mmm-property">mmm-property</a> provides powerful value properties (similar to JavaFx).</li>
       <li><a href="https://github.com/m-m-m/validation#mmm-validation">mmm-validation</a> provides validation support.</li>
@@ -46,9 +56,7 @@
       <li><a href="https://github.com/m-m-m/scanner#mmm-scanner">mmm-scanner</a> helps to parse character sequences efficient and easily.</li>
       <li><a href="https://github.com/m-m-m/event#mmm-event">mmm-event</a> provides a generic and reusable event infrastructure.</li>
       <li><a href="https://github.com/m-m-m/value#mmm-value">mmm-value</a> provides generic and observable value containers.</li>
-      <li><a href="https://github.com/m-m-m/entity#mmm-entity">mmm-entity</a> provides fundamentals for entities with `Id`, `Link`, and `EntityBean` based on <a href="https://github.com/m-m-m/bean#mmm-bean">mmm-bean</a>.</li>
-      <li><a href="https://github.com/m-m-m/query#mmm-query">mmm-query</a> provides typesafe and fluent API to build queries based on <a href="https://github.com/m-m-m/bean#mmm-bean">mmm-bean</a>.</li>
-      <li><a href="https://github.com/m-m-m/orient#mmm-orient">mmm-orient</a> provides a mapper for <a href="https://github.com/m-m-m/entity#mmm-entity">mmm-entity</a> and <a href="https://github.com/m-m-m/query#mmm-query">mmm-query</a> to <a href="https://orientdb.org/">OrientDB</a>.</li>
+      <li><a href="https://github.com/m-m-m/dbm#mmm-dbm">mmm-dbm</a> provides mapping for <a href="https://github.com/m-m-m/entity#mmm-entity">mmm-entity-bean</a> to databases.</li>
       <li><a href="https://github.com/m-m-m/crypto#mmm-crypto">mmm-crypto</a> provides simpler and safer usage of cryptography.</li>
       <li><a href="https://github.com/m-m-m/code#mmm-code">mmm-code</a> provides API for abstract syntax trees (AST) for Java byte- and source-code-reflection.</li>
       <li><a href="https://github.com/m-m-m/base#mmm-base">mmm-base</a> provides APIs and fundamental utils used by other modules.</li>
@@ -61,29 +69,15 @@
       <li>Provide small, reusable modules to run in any environment</li>
       <li>Fill gaps in the Java language or ecosystem</li>
       <li>Prevent boiler-plate code</li>
-      <li>Provide introspection without reflection</li>
+      <li>Provide introspection without deep reflection</li>
       <li>Make Java more dynamic (learn from JavaScript without loosing the strength of Java)</li>
     </ul>
-    Please note that some libraries we provide like <code>mmm-context</code> or <code>mmm-game</code> are created for different contexts and do not server or follow the last three of the above principles.
     Furhter we have the following mission statement:
     <ul>
       <li>Designed with beauty</li>
       <li>Coded with passion</li>
       <li>Tested with care</li>
       <li>Documented with devotion</li>
-    </ul>
-    <h1>But where is mmm-...?</h1>
-    With Java modules and split-packages we had been forced to do incompatible changes.
-    We used this as a chance to clenaup the code-base and massively simplified things.
-    The new code is in groupId `io.github.m-m-m` Java package/module namespace `io.github.mmm`.
-    You hopefully like it and easily jump on it.
-    However, if you are still on Java8 or started using things like `mmm-util` and do not want to migrate,
-    all is still there and currently still supported. So for the groupId `net.sf.m-m-m` and package `net.sf.mmm` you can look here:
-    <ul>
-      <li><a href="http://m-m-m.sourceforge.net/">m-m-m.sourceforge.net</a></li>
-      <li><a href="https://github.com/m-m-m/util/">mmm-util</a></li>
-      <li><a href="https://repo1.maven.org/maven2/net/sf/m-m-m/">net.sf.m-m-m@maven</a></li>
-      <li>In repositories that have been migrated you can find branches called `net.sf` for the previous codebase</li>
     </ul>
   </main>
 </body>
