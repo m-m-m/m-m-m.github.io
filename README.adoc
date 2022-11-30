@@ -1,6 +1,6 @@
 = mmm
 
-image:https://raw.github.com/m-m-m/mmm/master/src/site/resources/images/logo.png[logo]
+image:https://m-m-m.github.io/logo.svg[logo,width="150",link="https://m-m-m.github.io"]
 
 Welcome to the wonderful world of http://m-m-m.github.io[mmm]
 
